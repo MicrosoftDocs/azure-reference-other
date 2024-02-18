@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # HDInsightSparkStageTaskAccumulables
 
 Spark Stage Task Accumulables.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - HDInsight Clusters
 
-            
-
-
 ## Columns
   
-[!INCLUDE [hdinsightsparkstagetaskaccumulables](../includes/hdinsightsparkstagetaskaccumulables-include.md)]
+[!INCLUDE [hdinsightsparkstagetaskaccumulables](.././tables/includes/hdinsightsparkstagetaskaccumulables-include.md)]

@@ -6,23 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # Update
 
 Details for update schedule run. Includes information such as which updates where available and which were installed.
 
+
 ## Categories
 
 - IT & Management Tools
 - Security
+
 ## Solutions
 
 - Security
 - SecurityCenter
 - SecurityCenterFree
 - Updates
+
 ## Resource types
 
 - Virtual machines
@@ -32,9 +35,11 @@ Details for update schedule run. Includes information such as which updates wher
 - Virtual Machine Scale Sets
 - Automation account
 
-            
+## Queries
+
+ Sample queries for the [Update](../queries/update.md) table.
 
 
 ## Columns
   
-[!INCLUDE [update](../includes/update-include.md)]
+[!INCLUDE [update](.././tables/includes/update-include.md)]

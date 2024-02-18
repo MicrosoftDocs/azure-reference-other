@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # PowerBIDatasetsTenant
 
 Contains Analysis Services engine process events such as the start of a batch or transaction e.g. execute query, process partition. Typically used to monitor the performance, health and usage of Power BI's data engine. Contains information from the entire tenant.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Power BI Datasets
 
-            
-
-
 ## Columns
   
-[!INCLUDE [powerbidatasetstenant](../includes/powerbidatasetstenant-include.md)]
+[!INCLUDE [powerbidatasetstenant](.././tables/includes/powerbidatasetstenant-include.md)]

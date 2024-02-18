@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # HuntingBookmark
 
 Azure sentinel hunting bookmarks audit table
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - SecurityInsights
 
-            
-
-
 ## Columns
   
-[!INCLUDE [huntingbookmark](../includes/huntingbookmark-include.md)]
+[!INCLUDE [huntingbookmark](.././tables/includes/huntingbookmark-include.md)]

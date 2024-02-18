@@ -6,27 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/30/2023
+ms.date: 02/18/2024
 ---
 
 # AEWAssignmentBlobLogs
 
 Assignment blob upload events for the Experiment Workspace.
 
+
 ## Categories
 
 - Azure Resources
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Experiment Workspace
 
-            
-
-
 ## Columns
   
-[!INCLUDE [aewassignmentbloblogs](../includes/aewassignmentbloblogs-include.md)]
+[!INCLUDE [aewassignmentbloblogs](.././tables/includes/aewassignmentbloblogs-include.md)]

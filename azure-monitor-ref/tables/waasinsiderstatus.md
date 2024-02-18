@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # WaaSInsiderStatus
 
 Summary of each run of your update schedule with details like how many updates were not installed etc.
 
+
 ## Categories
 
 - Desktop Analytics
+
 ## Solutions
 
 - WaaSUpdateInsights
 
-            
-
-
 ## Columns
   
-[!INCLUDE [waasinsiderstatus](../includes/waasinsiderstatus-include.md)]
+[!INCLUDE [waasinsiderstatus](.././tables/includes/waasinsiderstatus-include.md)]

@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # StorageCacheUpgradeEvents
 
 Logs for Azure HPC Cache firmware upgrade events.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure HPC Cache
 
-            
+## Queries
+
+ Sample queries for the [StorageCacheUpgradeEvents](../queries/storagecacheupgradeevents.md) table.
 
 
 ## Columns
   
-[!INCLUDE [storagecacheupgradeevents](../includes/storagecacheupgradeevents-include.md)]
+[!INCLUDE [storagecacheupgradeevents](.././tables/includes/storagecacheupgradeevents-include.md)]

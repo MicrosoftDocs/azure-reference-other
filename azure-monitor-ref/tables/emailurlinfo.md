@@ -6,23 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # EmailUrlInfo
 
 Office 365 emails URLs information.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - SecurityInsights
 
-            
+## Queries
+
+ Sample queries for the [EmailUrlInfo](../queries/emailurlinfo.md) table.
 
 
 ## Columns
   
-[!INCLUDE [emailurlinfo](../includes/emailurlinfo-include.md)]
+[!INCLUDE [emailurlinfo](.././tables/includes/emailurlinfo-include.md)]

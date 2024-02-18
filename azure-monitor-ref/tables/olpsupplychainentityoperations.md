@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # OLPSupplyChainEntityOperations
 
 The OLPSupplyChainEntityOperations table captures every data plane operation performed on a supplychain entity in the workspace. Data Plane requests are operations executed to create, update, delete or retrieve supplychain entities such as Warehouse, Item, DeliveryNode, Shipment etc. within a workspace.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Microsoft.OpenLogisticsPlatform/Workspaces
 
-            
+## Queries
+
+ Sample queries for the [OLPSupplyChainEntityOperations](../queries/olpsupplychainentityoperations.md) table.
 
 
 ## Columns
   
-[!INCLUDE [olpsupplychainentityoperations](../includes/olpsupplychainentityoperations-include.md)]
+[!INCLUDE [olpsupplychainentityoperations](.././tables/includes/olpsupplychainentityoperations-include.md)]

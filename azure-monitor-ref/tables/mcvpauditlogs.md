@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # MCVPAuditLogs
 
 The MCVP audit logs. This table will include audit logs for MCVP service transactions.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Microsoft Connected Vehicle Platform
 
-            
-
-
 ## Columns
   
-[!INCLUDE [mcvpauditlogs](../includes/mcvpauditlogs-include.md)]
+[!INCLUDE [mcvpauditlogs](.././tables/includes/mcvpauditlogs-include.md)]

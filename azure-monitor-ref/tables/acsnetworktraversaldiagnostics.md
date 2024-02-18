@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ACSNetworkTraversalDiagnostics
 
 Diagnostics logs provide information about the relay session connectivity and the data relayed.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Communication Services
 
-            
+## Queries
+
+ Sample queries for the [ACSNetworkTraversalDiagnostics](../queries/acsnetworktraversaldiagnostics.md) table.
 
 
 ## Columns
   
-[!INCLUDE [acsnetworktraversaldiagnostics](../includes/acsnetworktraversaldiagnostics-include.md)]
+[!INCLUDE [acsnetworktraversaldiagnostics](.././tables/includes/acsnetworktraversaldiagnostics-include.md)]

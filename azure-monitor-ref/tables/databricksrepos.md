@@ -6,20 +6,18 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DatabricksRepos
 
 Databricks repos audit logs.
 
+
 ## Solutions
 
 - LogManagement
 
-            
-
-
 ## Columns
   
-[!INCLUDE [databricksrepos](../includes/databricksrepos-include.md)]
+[!INCLUDE [databricksrepos](.././tables/includes/databricksrepos-include.md)]

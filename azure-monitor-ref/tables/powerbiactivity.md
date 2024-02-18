@@ -6,24 +6,28 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # PowerBIActivity
 
 Contains Microsoft PowerBI audit logs. It's typically used to track PowerBI activities.
 
+
 ## Categories
 
 - Security
 - Audit
+
 ## Solutions
 
 - SecurityInsights
 
-            
+## Queries
+
+ Sample queries for the [PowerBIActivity](../queries/powerbiactivity.md) table.
 
 
 ## Columns
   
-[!INCLUDE [powerbiactivity](../includes/powerbiactivity-include.md)]
+[!INCLUDE [powerbiactivity](.././tables/includes/powerbiactivity-include.md)]

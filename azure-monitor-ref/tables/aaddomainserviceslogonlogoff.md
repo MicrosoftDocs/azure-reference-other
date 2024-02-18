@@ -6,10 +6,11 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AADDomainServicesLogonLogoff
+
 
 
 
@@ -17,16 +18,20 @@ ms.date: 08/28/2023
 
 - Azure Resources
 - Security
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure AD Domain Services
 
-            
+## Queries
+
+ Sample queries for the [AADDomainServicesLogonLogoff](../queries/aaddomainserviceslogonlogoff.md) table.
 
 
 ## Columns
   
-[!INCLUDE [aaddomainserviceslogonlogoff](../includes/aaddomainserviceslogonlogoff-include.md)]
+[!INCLUDE [aaddomainserviceslogonlogoff](.././tables/includes/aaddomainserviceslogonlogoff-include.md)]

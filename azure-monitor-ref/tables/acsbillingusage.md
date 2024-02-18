@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ACSBillingUsage
 
 Usage records across all modes of Communication Services.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Communication Services
 
-            
+## Queries
+
+ Sample queries for the [ACSBillingUsage](../queries/acsbillingusage.md) table.
 
 
 ## Columns
   
-[!INCLUDE [acsbillingusage](../includes/acsbillingusage-include.md)]
+[!INCLUDE [acsbillingusage](.././tables/includes/acsbillingusage-include.md)]

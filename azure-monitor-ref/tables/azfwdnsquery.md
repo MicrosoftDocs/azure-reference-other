@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AZFWDnsQuery
 
 Contains all DNS Proxy events log data.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Firewalls
 
-            
+## Queries
+
+ Sample queries for the [AZFWDnsQuery](../queries/azfwdnsquery.md) table.
 
 
 ## Columns
   
-[!INCLUDE [azfwdnsquery](../includes/azfwdnsquery-include.md)]
+[!INCLUDE [azfwdnsquery](.././tables/includes/azfwdnsquery-include.md)]

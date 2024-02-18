@@ -6,21 +6,24 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # SecurityBaselineSummary
 
 
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - Security
 - SecurityCenter
 - SecurityCenterFree
+
 ## Resource types
 
 - Virtual machines
@@ -28,9 +31,6 @@ ms.date: 08/28/2023
 - Azure Stack HCI
 - System Center Virtual Machine Manager
 
-            
-
-
 ## Columns
   
-[!INCLUDE [securitybaselinesummary](../includes/securitybaselinesummary-include.md)]
+[!INCLUDE [securitybaselinesummary](.././tables/includes/securitybaselinesummary-include.md)]

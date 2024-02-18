@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ADFSSISPackageExecutableStatistics
 
 ADF SSIS package execution executable statistics
 
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Data factories
 
-            
-
-
 ## Columns
   
-[!INCLUDE [adfssispackageexecutablestatistics](../includes/adfssispackageexecutablestatistics-include.md)]
+[!INCLUDE [adfssispackageexecutablestatistics](.././tables/includes/adfssispackageexecutablestatistics-include.md)]

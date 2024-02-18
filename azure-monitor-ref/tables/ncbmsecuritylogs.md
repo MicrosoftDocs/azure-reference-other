@@ -6,27 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # NCBMSecurityLogs
 
 Security log events on Nexus Baremetal Machines to monitor and detect user access to the system.
 
+
 ## Categories
 
 - Azure Resources
 - Security
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Nexus BareMetal Machines
 
-            
-
-
 ## Columns
   
-[!INCLUDE [ncbmsecuritylogs](../includes/ncbmsecuritylogs-include.md)]
+[!INCLUDE [ncbmsecuritylogs](.././tables/includes/ncbmsecuritylogs-include.md)]

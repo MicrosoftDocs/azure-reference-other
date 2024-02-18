@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # HDInsightHadoopAndYarnMetrics
 
 JMX metrics from Hadoop clusters and Yarn JMX metrics from any YARN-based cluster type.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - HDInsight Clusters
 
-            
-
-
 ## Columns
   
-[!INCLUDE [hdinsighthadoopandyarnmetrics](../includes/hdinsighthadoopandyarnmetrics-include.md)]
+[!INCLUDE [hdinsighthadoopandyarnmetrics](.././tables/includes/hdinsighthadoopandyarnmetrics-include.md)]

@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/23/2023
+ms.date: 02/18/2024
 ---
 
 # ASimDhcpEventLogs
 
 The ASIM DHCP schema represents DHCP server activity, including serving requests for DHCP IP address leased from client systems and updating a DNS server with the leases granted.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - SecurityInsights
+
 ## Resource types
 
 - Microsoft Sentinel ASim
 
-            
-
-
 ## Columns
   
-[!INCLUDE [asimdhcpeventlogs](../includes/asimdhcpeventlogs-include.md)]
+[!INCLUDE [asimdhcpeventlogs](.././tables/includes/asimdhcpeventlogs-include.md)]

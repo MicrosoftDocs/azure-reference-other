@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # UAComputerRank
 
 
 
+
 ## Categories
 
 - Desktop Analytics
+
 ## Solutions
 
 - CompatibilityAssessment
 
-            
-
-
 ## Columns
   
-[!INCLUDE [uacomputerrank](../includes/uacomputerrank-include.md)]
+[!INCLUDE [uacomputerrank](.././tables/includes/uacomputerrank-include.md)]

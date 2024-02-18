@@ -6,23 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # EmailPostDeliveryEvents
 
 Office 365 security events occurred post email delivery to recipient mailbox.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - SecurityInsights
 
-            
+## Queries
+
+ Sample queries for the [EmailPostDeliveryEvents](../queries/emailpostdeliveryevents.md) table.
 
 
 ## Columns
   
-[!INCLUDE [emailpostdeliveryevents](../includes/emailpostdeliveryevents-include.md)]
+[!INCLUDE [emailpostdeliveryevents](.././tables/includes/emailpostdeliveryevents-include.md)]

@@ -6,28 +6,33 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 11/06/2023
+ms.date: 02/18/2024
 ---
 
 # AVNMConnectivityConfigurationChange
 
 Includes logs related to application or removal of connectivity configuration, on network resources like a virtual network.
 
+
 ## Categories
 
 - Azure Resources
 - Network
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Virtual Network Manager
 
-            
+## Queries
+
+ Sample queries for the [AVNMConnectivityConfigurationChange](../queries/avnmconnectivityconfigurationchange.md) table.
 
 
 ## Columns
   
-[!INCLUDE [avnmconnectivityconfigurationchange](../includes/avnmconnectivityconfigurationchange-include.md)]
+[!INCLUDE [avnmconnectivityconfigurationchange](.././tables/includes/avnmconnectivityconfigurationchange-include.md)]

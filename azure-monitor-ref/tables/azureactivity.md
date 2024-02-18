@@ -6,21 +6,24 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 01/22/2024
+ms.date: 02/18/2024
 ---
 
 # AzureActivity
 
 Entries from the Azure Activity log that provides insight into any subscription-level or management group level events that have occurred in Azure.
 
+
 ## Categories
 
 - Azure Resources
 - Audit
 - Security
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure AD Domain Services
@@ -60,6 +63,7 @@ Entries from the Azure Activity log that provides insight into any subscription-
 - Azure Virtual Network Manager
 - Bot Services
 - Chaos Experiment
+- Cognitive Services
 - Microsoft Connected Cache
 - Microsoft Connected Vehicle Platform
 - Network Watcher - Connection Monitor
@@ -96,7 +100,6 @@ Entries from the Azure Activity log that provides insight into any subscription-
 - Analysis Services
 - Batch Accounts
 - Azure Spring Apps
-- Cognitive Services
 - Storage Accounts
 - SignalR
 - Container Registries
@@ -145,9 +148,11 @@ Entries from the Azure Activity log that provides insight into any subscription-
 - Bastions
 - Azure API for FHIR
 
-            
+## Queries
+
+ Sample queries for the [AzureActivity](../queries/azureactivity.md) table.
 
 
 ## Columns
   
-[!INCLUDE [azureactivity](../includes/azureactivity-include.md)]
+[!INCLUDE [azureactivity](.././tables/includes/azureactivity-include.md)]

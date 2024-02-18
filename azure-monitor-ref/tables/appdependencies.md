@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AppDependencies
 
 Application Insights dependencies.
 
+
 ## Categories
 
 - Applications
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Application Insights
 
-            
+## Queries
+
+ Sample queries for the [AppDependencies](../queries/appdependencies.md) table.
 
 
 ## Columns
   
-[!INCLUDE [appdependencies](../includes/appdependencies-include.md)]
+[!INCLUDE [appdependencies](.././tables/includes/appdependencies-include.md)]

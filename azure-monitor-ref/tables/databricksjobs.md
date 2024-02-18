@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DatabricksJobs
 
 Databricks Jobs audit logs.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Databricks Services
 
-            
-
-
 ## Columns
   
-[!INCLUDE [databricksjobs](../includes/databricksjobs-include.md)]
+[!INCLUDE [databricksjobs](.././tables/includes/databricksjobs-include.md)]

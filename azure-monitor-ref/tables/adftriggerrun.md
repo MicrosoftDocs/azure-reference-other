@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ADFTriggerRun
 
 
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Data factories
 
-            
+## Queries
+
+ Sample queries for the [ADFTriggerRun](../queries/adftriggerrun.md) table.
 
 
 ## Columns
   
-[!INCLUDE [adftriggerrun](../includes/adftriggerrun-include.md)]
+[!INCLUDE [adftriggerrun](.././tables/includes/adftriggerrun-include.md)]

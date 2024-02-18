@@ -6,27 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AmlDataStoreEvent
 
 Events when ML datastore is accessed (read, created, or deleted).
 
+
 ## Categories
 
 - Azure Resources
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Machine Learning
 
-            
-
-
 ## Columns
   
-[!INCLUDE [amldatastoreevent](../includes/amldatastoreevent-include.md)]
+[!INCLUDE [amldatastoreevent](.././tables/includes/amldatastoreevent-include.md)]

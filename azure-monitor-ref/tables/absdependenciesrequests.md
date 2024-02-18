@@ -6,20 +6,18 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ABSDependenciesRequests
 
 All logs of requests logs of requessts from Azure Bot Service to other dependencies such as external APIs that help to fulfill overall requests.
 
+
 ## Solutions
 
 - LogManagement
 
-            
-
-
 ## Columns
   
-[!INCLUDE [absdependenciesrequests](../includes/absdependenciesrequests-include.md)]
+[!INCLUDE [absdependenciesrequests](.././tables/includes/absdependenciesrequests-include.md)]

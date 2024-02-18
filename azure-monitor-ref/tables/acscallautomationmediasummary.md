@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ACSCallAutomationMediaSummary
 
 Communication Services summary logs of Call Automation Media operations. Every entry corresponds to the result of a call to the Call Automation Media APIs. (e.g. Play, Recognize).
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Communication Services
 
-            
+## Queries
+
+ Sample queries for the [ACSCallAutomationMediaSummary](../queries/acscallautomationmediasummary.md) table.
 
 
 ## Columns
   
-[!INCLUDE [acscallautomationmediasummary](../includes/acscallautomationmediasummary-include.md)]
+[!INCLUDE [acscallautomationmediasummary](.././tables/includes/acscallautomationmediasummary-include.md)]

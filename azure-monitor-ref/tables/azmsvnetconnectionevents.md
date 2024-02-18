@@ -6,29 +6,34 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AZMSVnetConnectionEvents
 
 Captures all virtual network and IP filtering logs for Azure Event Hubs and Azure Service Bus. These would only be emitted if namespace allows access from selected networks or from specific IP address (IP Filter rules).
 
+
 ## Categories
 
 - Azure Resources
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Event Hubs
 - Service Bus
 - Relay
 
-            
+## Queries
+
+ Sample queries for the [AZMSVnetConnectionEvents](../queries/azmsvnetconnectionevents.md) table.
 
 
 ## Columns
   
-[!INCLUDE [azmsvnetconnectionevents](../includes/azmsvnetconnectionevents-include.md)]
+[!INCLUDE [azmsvnetconnectionevents](.././tables/includes/azmsvnetconnectionevents-include.md)]

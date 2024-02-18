@@ -6,20 +6,18 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AirflowDagProcessingLogs
 
 ADF Airflow dag processing logs
 
+
 ## Solutions
 
 - LogManagement
 
-            
-
-
 ## Columns
   
-[!INCLUDE [airflowdagprocessinglogs](../includes/airflowdagprocessinglogs-include.md)]
+[!INCLUDE [airflowdagprocessinglogs](.././tables/includes/airflowdagprocessinglogs-include.md)]
