@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Storage/storageAccounts/fileServices, naam
@@ -11,8 +11,8 @@ ms.custom: Microsoft.Storage/storageAccounts/fileServices, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|StorageDelete |StorageDelete |Yes |
-|StorageRead |StorageRead |Yes |
-|StorageWrite |StorageWrite |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`StorageDelete` |StorageDelete |[StorageFileLogs](/azure/azure-monitor/reference/tables/storagefilelogs)<p>Storage File Service Logs Schema|Yes|Yes||Yes |
+|`StorageRead` |StorageRead |[StorageFileLogs](/azure/azure-monitor/reference/tables/storagefilelogs)<p>Storage File Service Logs Schema|Yes|Yes||Yes |
+|`StorageWrite` |StorageWrite |[StorageFileLogs](/azure/azure-monitor/reference/tables/storagefilelogs)<p>Storage File Service Logs Schema|Yes|Yes||Yes |

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.CustomProviders/resourceproviders, arm
@@ -10,9 +10,8 @@ ms.custom: Microsoft.CustomProviders/resourceproviders, arm
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Failed Requests**<p><p>Gets the available logs for Custom Resource Providers |`FailedRequests` |Count |Total |`HttpMethod`, `CallPath`, `StatusCode`|PT15M, PT1H, PT12H, P1D |Yes|
-|**Successful Requests**<p><p>Successful requests made by the custom provider |`SuccessfullRequests` |Count |Total |`HttpMethod`, `CallPath`, `StatusCode`|PT15M, PT1H, PT12H, P1D |Yes|
+|**Failed Requests**<br><br>Gets the available logs for Custom Resource Providers |`FailedRequests` |Count |Total |`HttpMethod`, `CallPath`, `StatusCode`|PT15M, PT1H, PT12H, P1D |Yes|
+|**Successful Requests**<br><br>Successful requests made by the custom provider |`SuccessfullRequests` |Count |Total |`HttpMethod`, `CallPath`, `StatusCode`|PT15M, PT1H, PT12H, P1D |Yes|

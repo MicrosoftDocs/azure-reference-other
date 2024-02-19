@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.SecurityDetonation/SecurityDetonationChambers, arm
@@ -10,8 +10,7 @@ ms.custom: Microsoft.SecurityDetonation/SecurityDetonationChambers, arm
  
 ---
 
-  
-  
+
 |Category|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|---|
-|Saturation|**% CPU**<p><p>Percent CPU utilization |`% Processor Time` |Percent |Average |\<none\>|PT1M |Yes|
+|Saturation|**% CPU**<br><br>Percent CPU utilization |`% Processor Time` |Percent |Average |\<none\>|PT1M |Yes|

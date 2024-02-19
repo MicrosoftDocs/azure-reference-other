@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Synapse/workspaces/scopePools, naam
@@ -10,10 +10,9 @@ ms.custom: Microsoft.Synapse/workspaces/scopePools, naam
  
 ---
 
-  
-  
+
 |Category|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|---|
-|SCOPE pool|**PN duration of SCOPE job**<p><p>PN (process node) duration (Milliseconds) used by each SCOPE job |`ScopePoolJobPNMetric` |Milliseconds |Maximum, Minimum, Average, Total, Count |`JobType`, `JobResult`|PT1M |Yes|
-|SCOPE pool|**Queued duration of SCOPE job**<p><p>Queued duration (Milliseconds) used by each SCOPE job |`ScopePoolJobQueuedDurationMetric` |Milliseconds |Maximum, Minimum, Average, Total, Count |`JobType`|PT1M |Yes|
-|SCOPE pool|**Running duration of SCOPE job**<p><p>Running duration (Milliseconds) used by each SCOPE job |`ScopePoolJobRunningDurationMetric` |Milliseconds |Maximum, Minimum, Average, Total, Count |`JobType`, `JobResult`|PT1M |Yes|
+|SCOPE pool|**PN duration of SCOPE job**<br><br>PN (process node) duration (Milliseconds) used by each SCOPE job |`ScopePoolJobPNMetric` |Milliseconds |Maximum, Minimum, Average, Total, Count |`JobType`, `JobResult`|PT1M |Yes|
+|SCOPE pool|**Queued duration of SCOPE job**<br><br>Queued duration (Milliseconds) used by each SCOPE job |`ScopePoolJobQueuedDurationMetric` |Milliseconds |Maximum, Minimum, Average, Total, Count |`JobType`|PT1M |Yes|
+|SCOPE pool|**Running duration of SCOPE job**<br><br>Running duration (Milliseconds) used by each SCOPE job |`ScopePoolJobRunningDurationMetric` |Milliseconds |Maximum, Minimum, Average, Total, Count |`JobType`, `JobResult`|PT1M |Yes|

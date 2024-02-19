@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Network/trafficManagerProfiles, arm
@@ -10,9 +10,8 @@ ms.custom: Microsoft.Network/trafficManagerProfiles, arm
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Endpoint Status by Endpoint**<p><p>1 if an endpoint's probe status is "Enabled", 0 otherwise. |`ProbeAgentCurrentEndpointStateByProfileResourceId` |Count |Maximum |`EndpointName`|PT1M, PT1H |Yes|
-|**Queries by Endpoint Returned**<p><p>Number of times a Traffic Manager endpoint was returned in the given time frame |`QpsByEndpoint` |Count |Total |`EndpointName`|PT1M, PT1H |Yes|
+|**Endpoint Status by Endpoint**<br><br>1 if an endpoint's probe status is "Enabled", 0 otherwise. |`ProbeAgentCurrentEndpointStateByProfileResourceId` |Count |Maximum |`EndpointName`|PT1M, PT1H |Yes|
+|**Queries by Endpoint Returned**<br><br>Number of times a Traffic Manager endpoint was returned in the given time frame |`QpsByEndpoint` |Count |Total |`EndpointName`|PT1M, PT1H |Yes|

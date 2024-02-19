@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Storage/storageAccounts/blobServices, naam
@@ -11,8 +11,8 @@ ms.custom: Microsoft.Storage/storageAccounts/blobServices, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|StorageDelete |Storage Delete |Yes |
-|StorageRead |Storage Read |Yes |
-|StorageWrite |Storage Write |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`StorageDelete` |Storage Delete |[StorageBlobLogs](/azure/azure-monitor/reference/tables/storagebloblogs)<p>Storage Blob Service Logs Schema|Yes|Yes|[Queries](../../queries/storagebloblogs.md)|Yes |
+|`StorageRead` |Storage Read |[StorageBlobLogs](/azure/azure-monitor/reference/tables/storagebloblogs)<p>Storage Blob Service Logs Schema|Yes|Yes|[Queries](../../queries/storagebloblogs.md)|Yes |
+|`StorageWrite` |Storage Write |[StorageBlobLogs](/azure/azure-monitor/reference/tables/storagebloblogs)<p>Storage Blob Service Logs Schema|Yes|Yes|[Queries](../../queries/storagebloblogs.md)|Yes |

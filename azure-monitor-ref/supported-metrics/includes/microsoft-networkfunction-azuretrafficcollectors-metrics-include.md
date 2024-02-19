@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkFunction/azureTrafficCollectors, naam
@@ -10,10 +10,9 @@ ms.custom: Microsoft.NetworkFunction/azureTrafficCollectors, naam
  
 ---
 
-  
-  
+
 |Category|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|---|
-|Performance|**Flow Records**<p><p>Flow Records Processed by ATC. |`count` |Count |Average, Total |`RoleInstance`, `Circuit`|PT1M |Yes|
-|Performance|**CPU Usage**<p><p>CPU Usage Percentage. |`usage_active` |Percent |Average, Minimum, Maximum |`Hostname`|PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
-|Performance|**Memory Usage**<p><p>Memory Usage Percentage. |`used_percent` |Percent |Average |`Hostname`|PT1M |Yes|
+|Performance|**Flow Records**<br><br>Flow Records Processed by ATC. |`count` |Count |Average, Total |`RoleInstance`, `Circuit`|PT1M |Yes|
+|Performance|**CPU Usage**<br><br>CPU Usage Percentage. |`usage_active` |Percent |Average, Minimum, Maximum |`Hostname`|PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
+|Performance|**Memory Usage**<br><br>Memory Usage Percentage. |`used_percent` |Percent |Average |`Hostname`|PT1M |Yes|

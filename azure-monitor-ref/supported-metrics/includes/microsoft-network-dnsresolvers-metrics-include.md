@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Network/dnsResolvers, naam
@@ -10,10 +10,9 @@ ms.custom: Microsoft.Network/dnsResolvers, naam
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Inbound Endpoint Count**<p><p>This metric indicates the number of inbound endpoints created for a DNS Resolver. |`InboundEndpointCount` |Count |Average, Minimum, Maximum, Count |\<none\>|PT1H, PT6H, PT12H, P1D |No|
-|**Outbound Endpoint Count**<p><p>This metric indicates the number of outbound endpoints created for a DNS Resolver. |`OutboundEndpointCount` |Count |Average, Minimum, Maximum, Count |\<none\>|PT1H, PT6H, PT12H, P1D |No|
-|**Queries Per Second**<p><p>This metric indicates the queries per second for a DNS Resolver. (Can be aggregated per EndpointId) |`QPS` |Count |Average, Minimum, Maximum, Count, Total |`EndpointId`|PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, PT24H |No|
+|**Inbound Endpoint Count**<br><br>This metric indicates the number of inbound endpoints created for a DNS Resolver. |`InboundEndpointCount` |Count |Average, Minimum, Maximum, Count |\<none\>|PT1H, PT6H, PT12H, P1D |No|
+|**Outbound Endpoint Count**<br><br>This metric indicates the number of outbound endpoints created for a DNS Resolver. |`OutboundEndpointCount` |Count |Average, Minimum, Maximum, Count |\<none\>|PT1H, PT6H, PT12H, P1D |No|
+|**Queries Per Second**<br><br>This metric indicates the queries per second for a DNS Resolver. (Can be aggregated per EndpointId) |`QPS` |Count |Average, Minimum, Maximum, Count, Total |`EndpointId`|PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, PT24H |No|

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: NGINX.NGINXPLUS/nginxDeployments, naam
@@ -10,8 +10,7 @@ ms.custom: NGINX.NGINXPLUS/nginxDeployments, naam
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**nginx**<p><p>The NGINX metric. |`nginx` |Count |Total |\<none\>|PT1M |Yes|
+|**nginx**<br><br>The NGINX metric. |`nginx` |Count |Total |\<none\>|PT1M |Yes|
