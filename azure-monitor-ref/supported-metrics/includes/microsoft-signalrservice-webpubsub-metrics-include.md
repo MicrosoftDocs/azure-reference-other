@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.SignalRService/WebPubSub, naam
@@ -10,14 +10,13 @@ ms.custom: Microsoft.SignalRService/WebPubSub, naam
  
 ---
 
-  
-  
+
 |Category|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|---|
-|Traffic|**Connection Close Count**<p><p>The count of connections closed by various reasons. |`ConnectionCloseCount` |Count |Total |`ConnectionCloseCategory`|PT1M |Yes|
-|Traffic|**Connection Open Count**<p><p>The count of new connections opened. |`ConnectionOpenCount` |Count |Total |\<none\>|PT1M |Yes|
-|Traffic|**Connection Quota Utilization**<p><p>The percentage of connection connected relative to connection quota. |`ConnectionQuotaUtilization` |Percent |Minimum, Maximum, Average |\<none\>|PT1M |Yes|
-|Traffic|**Inbound Traffic**<p><p>The traffic originating from outside to inside of the service. It is aggregated by adding all the bytes of the traffic. |`InboundTraffic` |Bytes |Total |\<none\>|PT1M |Yes|
-|Traffic|**Outbound Traffic**<p><p>The traffic originating from inside to outside of the service. It is aggregated by adding all the bytes of the traffic. |`OutboundTraffic` |Bytes |Total |\<none\>|PT1M |Yes|
-|Saturation|**Server Load**<p><p>SignalR server load. |`ServerLoad` |Percent |Minimum, Maximum, Average |\<none\>|PT1M |No|
-|Traffic|**Connection Count**<p><p>The number of user connections established to the service. It is aggregated by adding all the online connections. |`TotalConnectionCount` |Count |Maximum, Average |\<none\>|PT1M |Yes|
+|Traffic|**Connection Close Count**<br><br>The count of connections closed by various reasons. |`ConnectionCloseCount` |Count |Total |`ConnectionCloseCategory`|PT1M |Yes|
+|Traffic|**Connection Open Count**<br><br>The count of new connections opened. |`ConnectionOpenCount` |Count |Total |\<none\>|PT1M |Yes|
+|Traffic|**Connection Quota Utilization**<br><br>The percentage of connection connected relative to connection quota. |`ConnectionQuotaUtilization` |Percent |Minimum, Maximum, Average |\<none\>|PT1M |Yes|
+|Traffic|**Inbound Traffic**<br><br>The traffic originating from outside to inside of the service. It is aggregated by adding all the bytes of the traffic. |`InboundTraffic` |Bytes |Total |\<none\>|PT1M |Yes|
+|Traffic|**Outbound Traffic**<br><br>The traffic originating from inside to outside of the service. It is aggregated by adding all the bytes of the traffic. |`OutboundTraffic` |Bytes |Total |\<none\>|PT1M |Yes|
+|Saturation|**Server Load**<br><br>SignalR server load. |`ServerLoad` |Percent |Minimum, Maximum, Average |\<none\>|PT1M |No|
+|Traffic|**Connection Count**<br><br>The number of user connections established to the service. It is aggregated by adding all the online connections. |`TotalConnectionCount` |Count |Maximum, Average |\<none\>|PT1M |Yes|

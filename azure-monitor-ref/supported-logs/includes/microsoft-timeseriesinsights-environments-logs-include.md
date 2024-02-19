@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.TimeSeriesInsights/environments, arm
@@ -11,7 +11,7 @@ ms.custom: Microsoft.TimeSeriesInsights/environments, arm
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|Ingress |Ingress |No |
-|Management |Management |No |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`Ingress` |Ingress |[TSIIngress](/azure/azure-monitor/reference/tables/tsiingress)<p>The Ingress category tracks errors that occur in the ingress pipeline. This category includes errors that occur when receiving events (such as failures to connect to an Event Source) and processing events (such as errors when parsing an event payload).|No|Yes|[Queries](../../queries/tsiingress.md)|No |
+|`Management` |Management ||No|Yes||No |

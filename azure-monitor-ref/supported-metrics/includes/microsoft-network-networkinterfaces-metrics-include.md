@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Network/networkInterfaces, arm
@@ -10,11 +10,10 @@ ms.custom: Microsoft.Network/networkInterfaces, arm
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Bytes Received**<p><p>Number of bytes the Network Interface received |`BytesReceivedRate` |Bytes |Total |\<none\>|PT1M, PT1H |Yes|
-|**Bytes Sent**<p><p>Number of bytes the Network Interface sent |`BytesSentRate` |Bytes |Total |\<none\>|PT1M, PT1H |Yes|
-|**Packets Received**<p><p>Number of packets the Network Interface received |`PacketsReceivedRate` |Count |Total |\<none\>|PT1M, PT1H |Yes|
-|**Packets Sent**<p><p>Number of packets the Network Interface sent |`PacketsSentRate` |Count |Total |\<none\>|PT1M, PT1H |Yes|
+|**Bytes Received**<br><br>Number of bytes the Network Interface received |`BytesReceivedRate` |Bytes |Total |\<none\>|PT1M, PT1H |Yes|
+|**Bytes Sent**<br><br>Number of bytes the Network Interface sent |`BytesSentRate` |Bytes |Total |\<none\>|PT1M, PT1H |Yes|
+|**Packets Received**<br><br>Number of packets the Network Interface received |`PacketsReceivedRate` |Count |Total |\<none\>|PT1M, PT1H |Yes|
+|**Packets Sent**<br><br>Number of packets the Network Interface sent |`PacketsSentRate` |Count |Total |\<none\>|PT1M, PT1H |Yes|

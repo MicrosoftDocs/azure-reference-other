@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/07/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Communication/CommunicationServices, naam
@@ -11,26 +11,26 @@ ms.custom: Microsoft.Communication/CommunicationServices, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|AuthOperational |Operational Authentication Logs |Yes |
-|CallAutomationMediaSummary |Call Automation Events Summary Logs |Yes |
-|CallAutomationOperational |Operational Call Automation Logs |Yes |
-|CallClientMediaStatsTimeSeries |Call Client Media Stats Time Series Logs (Preview) |Yes |
-|CallClientOperations |Call Client Operations Logs |Yes |
-|CallClosedCaptionsSummary |Call Closed Captions Logs |Yes |
-|CallDiagnostics |Call Diagnostics Logs |Yes |
-|CallRecordingOperational |Operational Call Recording Logs |Yes |
-|CallRecordingSummary |Call Recording Summary Logs |Yes |
-|CallSummary |Call Summary Logs |Yes |
-|CallSurvey |Call Survey Logs |Yes |
-|ChatOperational |Operational Chat Logs |No |
-|EmailSendMailOperational |Email Service Send Mail Logs |Yes |
-|EmailStatusUpdateOperational |Email Service Delivery Status Update Logs |Yes |
-|EmailUserEngagementOperational |Email Service User Engagement Logs |Yes |
-|JobRouterOperational |Operational Job Router Logs |Yes |
-|NetworkTraversalDiagnostics |Network Traversal Relay Diagnostic Logs |Yes |
-|NetworkTraversalOperational |Operational Network Traversal Logs |Yes |
-|RoomsOperational |Operational Rooms Logs |Yes |
-|SMSOperational |Operational SMS Logs |No |
-|Usage |Usage Records |No |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`AuthOperational` |Operational Authentication Logs |[ACSAuthIncomingOperations](/azure/azure-monitor/reference/tables/acsauthincomingoperations)<p>Communication Services logs of incoming requests to auth operations.|No|Yes|[Queries](../../queries/acsauthincomingoperations.md)|Yes |
+|`CallAutomationMediaSummary` |Call Automation Events Summary Logs |[ACSCallAutomationMediaSummary](/azure/azure-monitor/reference/tables/acscallautomationmediasummary)<p>Communication Services summary logs of Call Automation Media operations. Every entry corresponds to the result of a call to the Call Automation Media APIs. (e.g. Play, Recognize).|Yes|No|[Queries](../../queries/acscallautomationmediasummary.md)|Yes |
+|`CallAutomationOperational` |Operational Call Automation Logs |[ACSCallAutomationIncomingOperations](/azure/azure-monitor/reference/tables/acscallautomationincomingoperations)<p>Communication Services logs of incoming requests to Call Automation operations. Every entry corresponds to the result of a call to the Call Automation APIs, e.g. CreateCall, AnswerCall, Play, Recognize, etc.|Yes|No|[Queries](../../queries/acscallautomationincomingoperations.md)|Yes |
+|`CallClientMediaStatsTimeSeries` |Call Client Media Stats Time Series Logs (Preview) |[ACSCallClientMediaStatsTimeSeries](/azure/azure-monitor/reference/tables/acscallclientmediastatstimeseries)<p>Call client media stats logs provide media statistics about a call made through ACS. These los are used to provide granular timeseries for quality metrics in Call Diagnostics Center. The logs contains information about media stream type, direction, codec as well as bitrate properties (e.g. max, min, average).|Yes|No|[Queries](../../queries/acscallclientmediastatstimeseries.md)|Yes |
+|`CallClientOperations` |Call Client Operations Logs |[ACSCallClientOperations](/azure/azure-monitor/reference/tables/acscallclientoperations)<p>Call client operation logs provide information regarding operations performed by clients using the Azure Communication Service Calling client SDK. It includes information regarding events raised by the SDK, such as state changes, e.g. createView, startAudio, DevicePermissionRequest. This log will be used by Call Diagnostics Center to visualize a call flow in a time series manner.|Yes|No|[Queries](../../queries/acscallclientoperations.md)|Yes |
+|`CallClosedCaptionsSummary` |Call Closed Captions Logs ||No|No||Yes |
+|`CallDiagnostics` |Call Diagnostics Logs |[ACSCallDiagnostics](/azure/azure-monitor/reference/tables/acscalldiagnostics)<p>Diagnostics logs provide information about the media transfers that occur in a call. Every log corresponds to an individual media stream and contains information about the emitting endpoint (e.g. the user sending the stream).|No|Yes|[Queries](../../queries/acscalldiagnostics.md)|Yes |
+|`CallRecordingOperational` |Operational Call Recording Logs |[ACSCallRecordingIncomingOperations](/azure/azure-monitor/reference/tables/acscallrecordingincomingoperations)<p>Communication Services logs of incoming requests to Call Recording operations. Every entry corresponds to the result of a call to the Call Recording APIs, e.g. StartRecording, StopRecording, PauseRecording, ResumeRecording, etc.|Yes|No|[Queries](../../queries/acscallrecordingincomingoperations.md)|Yes |
+|`CallRecordingSummary` |Call Recording Summary Logs |[ACSCallRecordingSummary](/azure/azure-monitor/reference/tables/acscallrecordingsummary)<p>Call recording summary logs provide an overview about a recording maed through ACS. There is one log for every recording done, and logs contain information about the duration of the recording, the content (e.g. Audio-Video, Unmixed, Transcription, etc.) and format (e.g. WAV, MP4, etc) types used for the recording, as well as the end reason of recording.|Yes|No|[Queries](../../queries/acscallrecordingsummary.md)|Yes |
+|`CallSummary` |Call Summary Logs |[ACSCallSummary](/azure/azure-monitor/reference/tables/acscallsummary)<p>Call summary logs provide an overview about a call made through ACS. There is one log for every participant in the call, and logs contain information about the duration of the call, the duration of the individual participant, the type of participant (e.g. VoIP, PSTN, etc.), as well as the endpoint information like the OS version being used, or the SDK version of the ACS platform.|Yes|Yes|[Queries](../../queries/acscallsummary.md)|Yes |
+|`CallSurvey` |Call Survey Logs |[ACSCallSurvey](/azure/azure-monitor/reference/tables/acscallsurvey)<p>Call survey provides information about the call surveys submitted by the participants.|No|No|[Queries](../../queries/acscallsurvey.md)|Yes |
+|`ChatOperational` |Operational Chat Logs |[ACSChatIncomingOperations](/azure/azure-monitor/reference/tables/acschatincomingoperations)<p>Communication Services logs of incoming requests to chat operations.|No|Yes|[Queries](../../queries/acschatincomingoperations.md)|No |
+|`EmailSendMailOperational` |Email Service Send Mail Logs |[ACSEmailSendMailOperational](/azure/azure-monitor/reference/tables/acsemailsendmailoperational)<p>Email Communication Services logs for send operations.|No|No|[Queries](../../queries/acsemailsendmailoperational.md)|Yes |
+|`EmailStatusUpdateOperational` |Email Service Delivery Status Update Logs |[ACSEmailStatusUpdateOperational](/azure/azure-monitor/reference/tables/acsemailstatusupdateoperational)<p>Email Communication Services logs for message and recipient depllivery status update operations.|No|No|[Queries](../../queries/acsemailstatusupdateoperational.md)|Yes |
+|`EmailUserEngagementOperational` |Email Service User Engagement Logs |[ACSEmailUserEngagementOperational](/azure/azure-monitor/reference/tables/acsemailuserengagementoperational)<p>Email Communication Services logs for message and recipient depllivery status update operations.|No|No||Yes |
+|`JobRouterOperational` |Operational Job Router Logs |[ACSJobRouterIncomingOperations](/azure/azure-monitor/reference/tables/acsjobrouterincomingoperations)<p>Communication Services logs of incoming requests to Job Router operations.|Yes|No|[Queries](../../queries/acsjobrouterincomingoperations.md)|Yes |
+|`NetworkTraversalDiagnostics` |Network Traversal Relay Diagnostic Logs |[ACSNetworkTraversalDiagnostics](/azure/azure-monitor/reference/tables/acsnetworktraversaldiagnostics)<p>Diagnostics logs provide information about the relay session connectivity and the data relayed.|No|No|[Queries](../../queries/acsnetworktraversaldiagnostics.md)|Yes |
+|`NetworkTraversalOperational` |Operational Network Traversal Logs |[ACSNetworkTraversalIncomingOperations](/azure/azure-monitor/reference/tables/acsnetworktraversalincomingoperations)<p>Communication Services logs of incoming requests to Network Traversal operations.|No|No|[Queries](../../queries/acsnetworktraversalincomingoperations.md)|Yes |
+|`RoomsOperational` |Operational Rooms Logs |[ACSRoomsIncomingOperations](/azure/azure-monitor/reference/tables/acsroomsincomingoperations)<p>Communication Services logs of incoming requests to rooms operations, with summaries of room object, lifespan, participants and roles count etc.|Yes|No|[Queries](../../queries/acsroomsincomingoperations.md)|Yes |
+|`SMSOperational` |Operational SMS Logs |[ACSSMSIncomingOperations](/azure/azure-monitor/reference/tables/acssmsincomingoperations)<p>Communication Services logs of incoming requests to SMS operations.|No|Yes|[Queries](../../queries/acssmsincomingoperations.md)|No |
+|`Usage` |Usage Records |[ACSBillingUsage](/azure/azure-monitor/reference/tables/acsbillingusage)<p>Usage records across all modes of Communication Services.|No|Yes|[Queries](../../queries/acsbillingusage.md)|No |

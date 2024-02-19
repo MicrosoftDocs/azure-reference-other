@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.RecoveryServices/Vaults, naam
@@ -11,20 +11,20 @@ ms.custom: Microsoft.RecoveryServices/Vaults, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|AddonAzureBackupAlerts |Addon Azure Backup Alert Data |No |
-|AddonAzureBackupJobs |Addon Azure Backup Job Data |No |
-|AddonAzureBackupPolicy |Addon Azure Backup Policy Data |No |
-|AddonAzureBackupProtectedInstance |Addon Azure Backup Protected Instance Data |No |
-|AddonAzureBackupStorage |Addon Azure Backup Storage Data |No |
-|ASRReplicatedItems |Azure Site Recovery Replicated Items Details |Yes |
-|AzureBackupReport |Azure Backup Reporting Data |No |
-|AzureSiteRecoveryEvents |Azure Site Recovery Events |No |
-|AzureSiteRecoveryJobs |Azure Site Recovery Jobs |No |
-|AzureSiteRecoveryProtectedDiskDataChurn |Azure Site Recovery Protected Disk Data Churn |No |
-|AzureSiteRecoveryRecoveryPoints |Azure Site Recovery Recovery Points |No |
-|AzureSiteRecoveryReplicatedItems |Azure Site Recovery Replicated Items |No |
-|AzureSiteRecoveryReplicationDataUploadRate |Azure Site Recovery Replication Data Upload Rate |No |
-|AzureSiteRecoveryReplicationStats |Azure Site Recovery Replication Stats |No |
-|CoreAzureBackup |Core Azure Backup Data |No |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`AddonAzureBackupAlerts` |Addon Azure Backup Alert Data |[AddonAzureBackupAlerts](/azure/azure-monitor/reference/tables/addonazurebackupalerts)|No|Yes||No |
+|`AddonAzureBackupJobs` |Addon Azure Backup Job Data |[AddonAzureBackupJobs](/azure/azure-monitor/reference/tables/addonazurebackupjobs)|No|Yes|[Queries](../../queries/addonazurebackupjobs.md)|No |
+|`AddonAzureBackupPolicy` |Addon Azure Backup Policy Data |[AddonAzureBackupPolicy](/azure/azure-monitor/reference/tables/addonazurebackuppolicy)|No|Yes||No |
+|`AddonAzureBackupProtectedInstance` |Addon Azure Backup Protected Instance Data |[AddonAzureBackupProtectedInstance](/azure/azure-monitor/reference/tables/addonazurebackupprotectedinstance)|No|Yes||No |
+|`AddonAzureBackupStorage` |Addon Azure Backup Storage Data |[AddonAzureBackupStorage](/azure/azure-monitor/reference/tables/addonazurebackupstorage)|No|Yes|[Queries](../../queries/addonazurebackupstorage.md)|No |
+|`ASRReplicatedItems` |Azure Site Recovery Replicated Items Details |[ASRReplicatedItems](/azure/azure-monitor/reference/tables/asrreplicateditems)<p>This table contains details of Azure Site Recovery (ASR) replicated items, such as associated vault, policy, replication health, failover readiness. etc. Data is pushed once a day to this table for all replicated items, to provide the latest information for each item.|No|No|[Queries](../../queries/asrreplicateditems.md)|Yes |
+|`AzureBackupReport` |Azure Backup Reporting Data |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftrecoveryservices)|No |
+|`AzureSiteRecoveryEvents` |Azure Site Recovery Events |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftrecoveryservices)|No |
+|`AzureSiteRecoveryJobs` |Azure Site Recovery Jobs |[ASRJobs](/azure/azure-monitor/reference/tables/asrjobs)<p>This table contains records of Azure Site Recovery (ASR) jobs such as failover, test failover, reprotection etc., with key details for monitoring and diagnostics, such as the replicated item information, duration, status, description and so on. Whenever an ASR job is completed (i.e., succeeded or failed), a corresponding record for the job is sent to this table. You can view history of ASR jobs by querying this table over a larger time range, provided your workspace has the required retention configured.|No|No|[Queries](../../queries/asrjobs.md)|No |
+|`AzureSiteRecoveryProtectedDiskDataChurn` |Azure Site Recovery Protected Disk Data Churn |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftrecoveryservices)|No |
+|`AzureSiteRecoveryRecoveryPoints` |Azure Site Recovery Recovery Points |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftrecoveryservices)|No |
+|`AzureSiteRecoveryReplicatedItems` |Azure Site Recovery Replicated Items |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftrecoveryservices)|No |
+|`AzureSiteRecoveryReplicationDataUploadRate` |Azure Site Recovery Replication Data Upload Rate |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftrecoveryservices)|No |
+|`AzureSiteRecoveryReplicationStats` |Azure Site Recovery Replication Stats |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftrecoveryservices)|No |
+|`CoreAzureBackup` |Core Azure Backup Data |[CoreAzureBackup](/azure/azure-monitor/reference/tables/coreazurebackup)|No|Yes|[Queries](../../queries/coreazurebackup.md)|No |

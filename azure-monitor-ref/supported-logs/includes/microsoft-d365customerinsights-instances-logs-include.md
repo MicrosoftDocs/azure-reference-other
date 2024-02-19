@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.D365CustomerInsights/instances, arm
@@ -11,7 +11,7 @@ ms.custom: Microsoft.D365CustomerInsights/instances, arm
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|Audit |Audit events |No |
-|Operational |Operational events |No |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`Audit` |Audit events |[AUIEventsAudit](/azure/azure-monitor/reference/tables/auieventsaudit)<p>All API requests in the context of the Customer Insights (AUI) instance, for example all user actions while configuring and using the instance. POST\|PUT\|DELETE\|PATCH operations go into this category.|No|No||No |
+|`Operational` |Operational events |[AUIEventsOperational](/azure/azure-monitor/reference/tables/auieventsoperational)<p>Events generated using the service, for example GET requests or the execution events of a workflow.|No|No||No |

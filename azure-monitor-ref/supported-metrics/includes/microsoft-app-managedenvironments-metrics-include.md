@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.App/managedEnvironments, naam
@@ -10,9 +10,8 @@ ms.custom: Microsoft.App/managedEnvironments, naam
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Cores Quota Limit**<p><p>The cores quota limit of managed environment |`EnvCoresQuotaLimit` |Count |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
-|**Percentage Cores Used Out Of Limit**<p><p>The cores quota utilization of managed environment |`EnvCoresQuotaUtilization` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
+|**Cores Quota Limit**<br><br>The cores quota limit of managed environment |`EnvCoresQuotaLimit` |Count |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
+|**Percentage Cores Used Out Of Limit**<br><br>The cores quota utilization of managed environment |`EnvCoresQuotaUtilization` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|

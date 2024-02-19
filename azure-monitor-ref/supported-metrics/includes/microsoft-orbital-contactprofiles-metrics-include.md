@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Orbital/contactProfiles, naam
@@ -10,9 +10,8 @@ ms.custom: Microsoft.Orbital/contactProfiles, naam
  
 ---
 
-  
-  
+
 |Category|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|---|
-|Error|**Contact Failure Count**<p><p>Denotes the number of failed Contacts for a specific Contact Profile |`ContactFailure` |Count |Total |\<none\>|PT1M |Yes|
-|Error|**Contact Success Count**<p><p>Denotes the number of successful Contacts for a specific Contact Profile |`ContactSuccess` |Count |Total |\<none\>|PT1M |Yes|
+|Error|**Contact Failure Count**<br><br>Denotes the number of failed Contacts for a specific Contact Profile |`ContactFailure` |Count |Total |\<none\>|PT1M |Yes|
+|Error|**Contact Success Count**<br><br>Denotes the number of successful Contacts for a specific Contact Profile |`ContactSuccess` |Count |Total |\<none\>|PT1M |Yes|

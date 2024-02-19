@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DataLakeStore/accounts, arm
@@ -10,12 +10,11 @@ ms.custom: Microsoft.DataLakeStore/accounts, arm
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Data Read**<p><p>Total amount of data read from the account. |`DataRead` |Bytes |Total |\<none\>|PT1M, PT1H |Yes|
-|**Data Written**<p><p>Total amount of data written to the account. |`DataWritten` |Bytes |Total |\<none\>|PT1M, PT1H |Yes|
-|**Read Requests**<p><p>Count of data read requests to the account. |`ReadRequests` |Count |Total |\<none\>|PT1M, PT1H |Yes|
-|**Total Storage**<p><p>Total amount of data stored in the account. |`TotalStorage` |Bytes |Maximum |\<none\>|PT1M, PT1H |Yes|
-|**Write Requests**<p><p>Count of data write requests to the account. |`WriteRequests` |Count |Total |\<none\>|PT1M, PT1H |Yes|
+|**Data Read**<br><br>Total amount of data read from the account. |`DataRead` |Bytes |Total |\<none\>|PT1M, PT1H |Yes|
+|**Data Written**<br><br>Total amount of data written to the account. |`DataWritten` |Bytes |Total |\<none\>|PT1M, PT1H |Yes|
+|**Read Requests**<br><br>Count of data read requests to the account. |`ReadRequests` |Count |Total |\<none\>|PT1M, PT1H |Yes|
+|**Total Storage**<br><br>Total amount of data stored in the account. |`TotalStorage` |Bytes |Maximum |\<none\>|PT1M, PT1H |Yes|
+|**Write Requests**<br><br>Count of data write requests to the account. |`WriteRequests` |Count |Total |\<none\>|PT1M, PT1H |Yes|

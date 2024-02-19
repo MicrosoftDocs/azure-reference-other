@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: microsoft.videoindexer/accounts, naam
@@ -11,7 +11,7 @@ ms.custom: microsoft.videoindexer/accounts, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|Audit |Audit |Yes |
-|IndexingLogs |Indexing Logs |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`Audit` |Audit |[VIAudit](/azure/azure-monitor/reference/tables/viaudit)<p>Audit logs from Video Indexer.|No|No|[Queries](../../queries/viaudit.md)|Yes |
+|`IndexingLogs` |Indexing Logs |[VIIndexing](/azure/azure-monitor/reference/tables/viindexing)<p>Indexing logs from Video Indexer.|No|No|[Queries](../../queries/viindexing.md)|Yes |
