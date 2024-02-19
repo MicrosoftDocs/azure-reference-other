@@ -5,7 +5,7 @@ items:
       href: ../supported-metrics/metrics-index.md
     - name: Azure Monitor supported log categories
       href: ../supported-logs/logs-index.md
-    - name: Log tables
+    - name: Log table schemas
       expanded: true
       items:
       - name: Index
@@ -933,6 +933,8 @@ items:
         href: mcvpoperationlogs.md
       - name: MDCFileIntegrityMonitoringEvents
         href: mdcfileintegritymonitoringevents.md
+      - name: MDECustomCollectionDeviceFileEvents
+        href: mdecustomcollectiondevicefileevents.md
       - name: MNFDeviceUpdates
         href: mnfdeviceupdates.md
       - name: MNFSystemStateMessageUpdates
