@@ -15,5 +15,5 @@ ms.custom: Microsoft.DataShare/accounts, naam
 |---|---|---|---|---|---|---|
 |`ReceivedShareSnapshots` |Received Share Snapshots |[MicrosoftDataShareReceivedSnapshotLog](/azure/azure-monitor/reference/tables/microsoftdatasharereceivedsnapshotlog)<p>Data Share consumer side synchronization logs.|No|Yes|[Queries](../../queries/microsoftdatasharereceivedsnapshotlog.md)|No |
 |`SentShareSnapshots` |Sent Share Snapshots |[MicrosoftDataShareSentSnapshotLog](/azure/azure-monitor/reference/tables/microsoftdatasharesentsnapshotlog)<p>Data Share provider side synchronization logs.|No|Yes|[Queries](../../queries/microsoftdatasharesentsnapshotlog.md)|No |
-|`Shares` |Shares ||No|Yes||No |
+|`Shares` |Shares |[MicrosoftDataShareShareLog](/azure/azure-monitor/reference/tables/microsoftdatasharesharelog)<p>Microsoft Data Share Share Log|No|Yes||No |
 |`ShareSubscriptions` |Share Subscriptions ||No|Yes||No |

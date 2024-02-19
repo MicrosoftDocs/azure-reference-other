@@ -15,4 +15,4 @@ ms.custom: Microsoft.StorageCache/caches, naam
 |---|---|---|---|---|---|---|
 |`AscCacheOperationEvent` |HPC Cache operation event |[StorageCacheOperationEvents](/azure/azure-monitor/reference/tables/storagecacheoperationevents)<p>Logs for Azure HPC Cache API requests.|No|No|[Queries](../../queries/storagecacheoperationevents.md)|Yes |
 |`AscUpgradeEvent` |HPC Cache upgrade event ||No|No||Yes |
-|`AscWarningEvent` |HPC Cache warning ||No|No||Yes |
+|`AscWarningEvent` |HPC Cache warning |[StorageCacheWarningEvents](/azure/azure-monitor/reference/tables/storagecachewarningevents)<p>Logs for Azure HPC Cache warning events.|No|No|[Queries](../../queries/storagecachewarningevents.md)|Yes |
