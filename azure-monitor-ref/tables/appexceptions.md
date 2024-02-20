@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AppExceptions
 
 Application Insights exceptions.
 
+
 ## Categories
 
 - Applications
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Application Insights
 
-            
+## Queries
+
+ Sample queries for the [AppExceptions](../queries/appexceptions.md) table.
 
 
 ## Columns
   
-[!INCLUDE [appexceptions](../includes/appexceptions-include.md)]
+[!INCLUDE [appexceptions](.././tables/includes/appexceptions-include.md)]

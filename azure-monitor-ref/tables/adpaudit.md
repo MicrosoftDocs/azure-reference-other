@@ -6,27 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ADPAudit
 
 Audit entries for ADP operations.
 
+
 ## Categories
 
 - Azure Resources
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Autonomous Development Platform workspace
 
-            
-
-
 ## Columns
   
-[!INCLUDE [adpaudit](../includes/adpaudit-include.md)]
+[!INCLUDE [adpaudit](.././tables/includes/adpaudit-include.md)]

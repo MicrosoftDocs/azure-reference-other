@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Network/privateEndpoints, arm
@@ -10,9 +10,8 @@ ms.custom: Microsoft.Network/privateEndpoints, arm
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Bytes In**<p><p>Total number of Bytes Out |`PEBytesIn` |Count |Total |\<none\>|PT1M, PT1H |No|
-|**Bytes Out**<p><p>Total number of Bytes Out |`PEBytesOut` |Count |Total |\<none\>|PT1M, PT1H |No|
+|**Bytes In**<br><br>Total number of Bytes Out |`PEBytesIn` |Count |Total |\<none\>|PT1M, PT1H |No|
+|**Bytes Out**<br><br>Total number of Bytes Out |`PEBytesOut` |Count |Total |\<none\>|PT1M, PT1H |No|

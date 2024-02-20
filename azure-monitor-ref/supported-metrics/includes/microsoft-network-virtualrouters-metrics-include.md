@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Network/virtualRouters, arm
@@ -10,8 +10,7 @@ ms.custom: Microsoft.Network/virtualRouters, arm
  
 ---
 
-  
-  
+
 |Category|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|---|
-|Availability|**Bgp Availability**<p><p>BGP Availability between VirtualRouter and remote peers |`PeeringAvailability` |Percent |Average |`Peer`| |Yes|
+|Availability|**Bgp Availability**<br><br>BGP Availability between VirtualRouter and remote peers |`PeeringAvailability` |Percent |Average |`Peer`| |Yes|

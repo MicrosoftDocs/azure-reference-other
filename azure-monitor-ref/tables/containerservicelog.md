@@ -6,30 +6,35 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # ContainerServiceLog
 
 
 
+
 ## Categories
 
 - Containers
+
 ## Solutions
 
 - AzureResources
 - ContainerInsights
 - Containers
+
 ## Resource types
 
 - Azure Arc Enabled Kubernetes
 - Kubernetes Services
 - Azure Arc Provisioned Clusters
 
-            
+## Queries
+
+ Sample queries for the [ContainerServiceLog](../queries/containerservicelog.md) table.
 
 
 ## Columns
   
-[!INCLUDE [containerservicelog](../includes/containerservicelog-include.md)]
+[!INCLUDE [containerservicelog](.././tables/includes/containerservicelog-include.md)]

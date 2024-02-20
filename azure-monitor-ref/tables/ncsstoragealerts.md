@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # NCSStorageAlerts
 
 Alert events logged from Nexus storage appliance providing storage system level alerts.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Nexus Storage Appliances
 
-            
-
-
 ## Columns
   
-[!INCLUDE [ncsstoragealerts](../includes/ncsstoragealerts-include.md)]
+[!INCLUDE [ncsstoragealerts](.././tables/includes/ncsstoragealerts-include.md)]

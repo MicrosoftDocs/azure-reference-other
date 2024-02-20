@@ -6,27 +6,32 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AmlEnvironmentEvent
 
 Events when ML environments are accessed (read, created, or deleted).
 
+
 ## Categories
 
 - Azure Resources
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Machine Learning
 
-            
+## Queries
+
+ Sample queries for the [AmlEnvironmentEvent](../queries/amlenvironmentevent.md) table.
 
 
 ## Columns
   
-[!INCLUDE [amlenvironmentevent](../includes/amlenvironmentevent-include.md)]
+[!INCLUDE [amlenvironmentevent](.././tables/includes/amlenvironmentevent-include.md)]

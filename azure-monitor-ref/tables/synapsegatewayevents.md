@@ -6,20 +6,18 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # SynapseGatewayEvents
 
 Logs for all user requests that go through gateway on synapse.
 
+
 ## Solutions
 
 - LogManagement
 
-            
-
-
 ## Columns
   
-[!INCLUDE [synapsegatewayevents](../includes/synapsegatewayevents-include.md)]
+[!INCLUDE [synapsegatewayevents](.././tables/includes/synapsegatewayevents-include.md)]

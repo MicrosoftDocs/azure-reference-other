@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ACSAuthIncomingOperations
 
 Communication Services logs of incoming requests to auth operations.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Communication Services
 
-            
+## Queries
+
+ Sample queries for the [ACSAuthIncomingOperations](../queries/acsauthincomingoperations.md) table.
 
 
 ## Columns
   
-[!INCLUDE [acsauthincomingoperations](../includes/acsauthincomingoperations-include.md)]
+[!INCLUDE [acsauthincomingoperations](.././tables/includes/acsauthincomingoperations-include.md)]

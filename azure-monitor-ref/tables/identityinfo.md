@@ -6,20 +6,18 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # IdentityInfo
 
 This table is populated by Azure Sentinel UEBA with all your users identities information. It can be used to correlate user information and insights with analytics or hunting queries.
 
+
 ## Solutions
 
 - BehaviorAnalyticsInsights
 
-            
-
-
 ## Columns
   
-[!INCLUDE [identityinfo](../includes/identityinfo-include.md)]
+[!INCLUDE [identityinfo](.././tables/includes/identityinfo-include.md)]

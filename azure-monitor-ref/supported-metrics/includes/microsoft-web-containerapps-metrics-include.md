@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Web/containerapps, naam
@@ -10,14 +10,13 @@ ms.custom: Microsoft.Web/containerapps, naam
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Replica Count**<p><p>Number of replicas count of container app |`Replicas` |Count |Average, Total, Maximum, Minimum |`revisionName`, `deploymentName`|PT1M |Yes|
-|**Requests**<p><p>Requests processed |`Requests` |Count |Average, Total, Maximum, Minimum |`revisionName`, `podName`, `statusCodeCategory`, `statusCode`|PT1M |Yes|
-|**Replica Restart Count**<p><p>Restart count of container app replicas |`RestartCount` |Count |Average, Total, Maximum, Minimum |`revisionName`, `podName`|PT1M |Yes|
-|**Network In Bytes**<p><p>Network received bytes |`RxBytes` |Bytes |Average, Total, Maximum, Minimum |`revisionName`, `podName`|PT1M |Yes|
-|**Network Out Bytes**<p><p>Network transmitted bytes |`TxBytes` |Bytes |Average, Total, Maximum, Minimum |`revisionName`, `podName`|PT1M |Yes|
-|**CPU Usage Nanocores**<p><p>CPU consumed by the container app, in nano cores. 1,000,000,000 nano cores = 1 core |`UsageNanoCores` |NanoCores |Total, Average, Maximum, Minimum |`revisionName`, `podName`|PT1M |Yes|
-|**Memory Working Set Bytes**<p><p>Container App working set memory used in bytes. |`WorkingSetBytes` |Bytes |Total, Average, Maximum, Minimum |`revisionName`, `podName`|PT1M |Yes|
+|**Replica Count**<br><br>Number of replicas count of container app |`Replicas` |Count |Average, Total, Maximum, Minimum |`revisionName`, `deploymentName`|PT1M |Yes|
+|**Requests**<br><br>Requests processed |`Requests` |Count |Average, Total, Maximum, Minimum |`revisionName`, `podName`, `statusCodeCategory`, `statusCode`|PT1M |Yes|
+|**Replica Restart Count**<br><br>Restart count of container app replicas |`RestartCount` |Count |Average, Total, Maximum, Minimum |`revisionName`, `podName`|PT1M |Yes|
+|**Network In Bytes**<br><br>Network received bytes |`RxBytes` |Bytes |Average, Total, Maximum, Minimum |`revisionName`, `podName`|PT1M |Yes|
+|**Network Out Bytes**<br><br>Network transmitted bytes |`TxBytes` |Bytes |Average, Total, Maximum, Minimum |`revisionName`, `podName`|PT1M |Yes|
+|**CPU Usage Nanocores**<br><br>CPU consumed by the container app, in nano cores. 1,000,000,000 nano cores = 1 core |`UsageNanoCores` |NanoCores |Total, Average, Maximum, Minimum |`revisionName`, `podName`|PT1M |Yes|
+|**Memory Working Set Bytes**<br><br>Container App working set memory used in bytes. |`WorkingSetBytes` |Bytes |Total, Average, Maximum, Minimum |`revisionName`, `podName`|PT1M |Yes|

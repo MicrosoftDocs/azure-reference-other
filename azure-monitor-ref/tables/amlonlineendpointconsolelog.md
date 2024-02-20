@@ -6,27 +6,32 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AmlOnlineEndpointConsoleLog
 
 Azure ML online endpoints console logs. It provides console logs output from user containers.
 
+
 ## Categories
 
 - Audit
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Machine Learning
 
-            
+## Queries
+
+ Sample queries for the [AmlOnlineEndpointConsoleLog](../queries/amlonlineendpointconsolelog.md) table.
 
 
 ## Columns
   
-[!INCLUDE [amlonlineendpointconsolelog](../includes/amlonlineendpointconsolelog-include.md)]
+[!INCLUDE [amlonlineendpointconsolelog](.././tables/includes/amlonlineendpointconsolelog-include.md)]

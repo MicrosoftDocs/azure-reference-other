@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # PurviewScanStatusLogs
 
 Status of the scan on the data sources.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Microsoft.Purview/accounts
 
-            
-
-
 ## Columns
   
-[!INCLUDE [purviewscanstatuslogs](../includes/purviewscanstatuslogs-include.md)]
+[!INCLUDE [purviewscanstatuslogs](.././tables/includes/purviewscanstatuslogs-include.md)]

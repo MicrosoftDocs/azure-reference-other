@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # EGNFailedMqttConnections
 
 Log for failed MQTT connections to an Event Grid namespace.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Event Grid Namespaces
 
-            
+## Queries
+
+ Sample queries for the [EGNFailedMqttConnections](../queries/egnfailedmqttconnections.md) table.
 
 
 ## Columns
   
-[!INCLUDE [egnfailedmqttconnections](../includes/egnfailedmqttconnections-include.md)]
+[!INCLUDE [egnfailedmqttconnections](.././tables/includes/egnfailedmqttconnections-include.md)]

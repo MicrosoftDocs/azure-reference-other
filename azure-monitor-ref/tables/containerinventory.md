@@ -6,30 +6,35 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # ContainerInventory
 
 Inventory of containers and their attributes that are monitored by the agent
 
+
 ## Categories
 
 - Containers
+
 ## Solutions
 
 - AzureResources
 - ContainerInsights
 - Containers
+
 ## Resource types
 
 - Azure Arc Enabled Kubernetes
 - Kubernetes Services
 - Azure Arc Provisioned Clusters
 
-            
+## Queries
+
+ Sample queries for the [ContainerInventory](../queries/containerinventory.md) table.
 
 
 ## Columns
   
-[!INCLUDE [containerinventory](../includes/containerinventory-include.md)]
+[!INCLUDE [containerinventory](.././tables/includes/containerinventory-include.md)]

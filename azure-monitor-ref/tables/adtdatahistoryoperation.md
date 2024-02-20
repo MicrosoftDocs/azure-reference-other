@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ADTDataHistoryOperation
 
 This table tracks all data history events being published to time series database connections.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Digital Twins
 
-            
+## Queries
+
+ Sample queries for the [ADTDataHistoryOperation](../queries/adtdatahistoryoperation.md) table.
 
 
 ## Columns
   
-[!INCLUDE [adtdatahistoryoperation](../includes/adtdatahistoryoperation-include.md)]
+[!INCLUDE [adtdatahistoryoperation](.././tables/includes/adtdatahistoryoperation-include.md)]

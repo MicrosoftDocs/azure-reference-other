@@ -6,10 +6,11 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # SigninLogs
+
 
 
 
@@ -17,16 +18,20 @@ ms.date: 08/28/2023
 
 - Azure Resources
 - Security
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Microsoft Graph Logs
 
-            
+## Queries
+
+ Sample queries for the [SigninLogs](../queries/signinlogs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [signinlogs](../includes/signinlogs-include.md)]
+[!INCLUDE [signinlogs](.././tables/includes/signinlogs-include.md)]

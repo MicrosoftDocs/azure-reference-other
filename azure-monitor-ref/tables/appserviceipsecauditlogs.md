@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AppServiceIPSecAuditLogs
 
 Logs generated through your application and pushed to Azure Monitoring.
 
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - App Services
 
-            
-
-
 ## Columns
   
-[!INCLUDE [appserviceipsecauditlogs](../includes/appserviceipsecauditlogs-include.md)]
+[!INCLUDE [appserviceipsecauditlogs](.././tables/includes/appserviceipsecauditlogs-include.md)]

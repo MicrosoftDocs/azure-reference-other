@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DatabricksIAMRole
 
 Audit logs for events of changing IAM role ACLs.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Databricks Services
 
-            
-
-
 ## Columns
   
-[!INCLUDE [databricksiamrole](../includes/databricksiamrole-include.md)]
+[!INCLUDE [databricksiamrole](.././tables/includes/databricksiamrole-include.md)]

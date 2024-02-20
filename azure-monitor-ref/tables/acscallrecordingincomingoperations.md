@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ACSCallRecordingIncomingOperations
 
 Communication Services logs of incoming requests to Call Recording operations. Every entry corresponds to the result of a call to the Call Recording APIs, e.g. StartRecording, StopRecording, PauseRecording, ResumeRecording, etc.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Communication Services
 
-            
+## Queries
+
+ Sample queries for the [ACSCallRecordingIncomingOperations](../queries/acscallrecordingincomingoperations.md) table.
 
 
 ## Columns
   
-[!INCLUDE [acscallrecordingincomingoperations](../includes/acscallrecordingincomingoperations-include.md)]
+[!INCLUDE [acscallrecordingincomingoperations](.././tables/includes/acscallrecordingincomingoperations-include.md)]

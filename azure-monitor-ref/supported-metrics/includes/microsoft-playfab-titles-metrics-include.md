@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.PlayFab/titles, naam
@@ -10,8 +10,7 @@ ms.custom: Microsoft.PlayFab/titles, naam
  
 ---
 
-  
-  
+
 |Category|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|---|
-|Traffic|**PlayerLoggedInCount**<p><p>Number of logins by any player in a given title |`PlayerLoggedInCount` |Count |Average, Maximum, Minimum, Total, Count |`TitleId`|PT1M |Yes|
+|Traffic|**PlayerLoggedInCount**<br><br>Number of logins by any player in a given title |`PlayerLoggedInCount` |Count |Average, Maximum, Minimum, Total, Count |`TitleId`|PT1M |Yes|

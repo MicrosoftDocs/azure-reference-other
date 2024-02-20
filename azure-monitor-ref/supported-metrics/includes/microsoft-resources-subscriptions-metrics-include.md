@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: microsoft.resources/subscriptions, naam
@@ -10,9 +10,8 @@ ms.custom: microsoft.resources/subscriptions, naam
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Latency**<p><p>Latency data for all requests to Azure Resource Manager |`Latency` |Seconds |Average |`IsCustomerOriginated`, `Method`, `Namespace`, `RequestRegion`, `ResourceType`, `StatusCode`, `StatusCodeClass`, `Microsoft.SubscriptionId`|PT1M |No|
-|**Traffic**<p><p>Traffic data for all requests to Azure Resource Manager |`Traffic` |Count |Count |`IsCustomerOriginated`, `Method`, `Namespace`, `RequestRegion`, `ResourceType`, `StatusCode`, `StatusCodeClass`, `Microsoft.SubscriptionId`|PT1M |No|
+|**Latency**<br><br>Latency data for all requests to Azure Resource Manager |`Latency` |Seconds |Average |`IsCustomerOriginated`, `Method`, `Namespace`, `RequestRegion`, `ResourceType`, `StatusCode`, `StatusCodeClass`, `Microsoft.SubscriptionId`|PT1M |No|
+|**Traffic**<br><br>Traffic data for all requests to Azure Resource Manager |`Traffic` |Count |Count |`IsCustomerOriginated`, `Method`, `Namespace`, `RequestRegion`, `ResourceType`, `StatusCode`, `StatusCodeClass`, `Microsoft.SubscriptionId`|PT1M |No|

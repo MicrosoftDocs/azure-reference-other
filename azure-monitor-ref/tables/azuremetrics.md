@@ -6,19 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 01/22/2024
+ms.date: 02/18/2024
 ---
 
 # AzureMetrics
 
 Metric data emitted by Azure services that measure their health and performance.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure AD Domain Services
@@ -45,6 +48,7 @@ Metric data emitted by Azure services that measure their health and performance.
 - Service Bus
 - Azure Traffic Collector
 - Azure Virtual Network Manager
+- Cognitive Services
 - Microsoft Connected Cache
 - Microsoft Connected Vehicle Platform
 - Azure Databricks Services
@@ -68,7 +72,6 @@ Metric data emitted by Azure services that measure their health and performance.
 - Analysis Services
 - Batch Accounts
 - Azure Spring Apps
-- Cognitive Services
 - Storage Accounts
 - SignalR
 - Container Registries
@@ -116,9 +119,11 @@ Metric data emitted by Azure services that measure their health and performance.
 - Bastions
 - Azure API for FHIR
 
-            
+## Queries
+
+ Sample queries for the [AzureMetrics](../queries/azuremetrics.md) table.
 
 
 ## Columns
   
-[!INCLUDE [azuremetrics](../includes/azuremetrics-include.md)]
+[!INCLUDE [azuremetrics](.././tables/includes/azuremetrics-include.md)]

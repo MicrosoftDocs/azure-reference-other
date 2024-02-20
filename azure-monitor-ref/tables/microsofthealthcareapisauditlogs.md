@@ -6,27 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # MicrosoftHealthcareApisAuditLogs
 
 Azure API for FHIR audit logs
 
+
 ## Categories
 
 - Azure Resources
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure API for FHIR
 
-            
-
-
 ## Columns
   
-[!INCLUDE [microsofthealthcareapisauditlogs](../includes/microsofthealthcareapisauditlogs-include.md)]
+[!INCLUDE [microsofthealthcareapisauditlogs](.././tables/includes/microsofthealthcareapisauditlogs-include.md)]

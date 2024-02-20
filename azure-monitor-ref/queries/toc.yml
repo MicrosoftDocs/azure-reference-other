@@ -1,0 +1,540 @@
+items:
+    - name:  Azure Monitor Reference
+      href: ../index.md
+    - name: Azure Monitor supported metrics
+      href: ../supported-metrics/metrics-index.md
+    - name: Azure Monitor supported log categories
+      href: ../supported-logs/logs-index.md
+    - name: Tables by resource type
+      href: ../tables/tables-resourcetype.md
+    - name: Table queries
+      expanded: true
+      items:
+       - name: AACAudit
+         href: ./AACAudit.md
+       - name: AACHttpRequest
+         href: ./AACHttpRequest.md
+       - name: AADCustomSecurityAttributeAuditLogs
+         href: ./AADCustomSecurityAttributeAuditLogs.md
+       - name: AADDomainServicesAccountLogon
+         href: ./AADDomainServicesAccountLogon.md
+       - name: AADDomainServicesAccountManagement
+         href: ./AADDomainServicesAccountManagement.md
+       - name: AADDomainServicesDirectoryServiceAccess
+         href: ./AADDomainServicesDirectoryServiceAccess.md
+       - name: AADDomainServicesLogonLogoff
+         href: ./AADDomainServicesLogonLogoff.md
+       - name: AADDomainServicesPolicyChange
+         href: ./AADDomainServicesPolicyChange.md
+       - name: AADDomainServicesPrivilegeUse
+         href: ./AADDomainServicesPrivilegeUse.md
+       - name: AADManagedIdentitySignInLogs
+         href: ./AADManagedIdentitySignInLogs.md
+       - name: AADNonInteractiveUserSignInLogs
+         href: ./AADNonInteractiveUserSignInLogs.md
+       - name: AADProvisioningLogs
+         href: ./AADProvisioningLogs.md
+       - name: AADRiskyUsers
+         href: ./AADRiskyUsers.md
+       - name: AADServicePrincipalRiskEvents
+         href: ./AADServicePrincipalRiskEvents.md
+       - name: AADServicePrincipalSignInLogs
+         href: ./AADServicePrincipalSignInLogs.md
+       - name: AADUserRiskEvents
+         href: ./AADUserRiskEvents.md
+       - name: ABSBotRequests
+         href: ./ABSBotRequests.md
+       - name: ACICollaborationAudit
+         href: ./ACICollaborationAudit.md
+       - name: ACRConnectedClientList
+         href: ./ACRConnectedClientList.md
+       - name: ACSAuthIncomingOperations
+         href: ./ACSAuthIncomingOperations.md
+       - name: ACSBillingUsage
+         href: ./ACSBillingUsage.md
+       - name: ACSCallAutomationIncomingOperations
+         href: ./ACSCallAutomationIncomingOperations.md
+       - name: ACSCallAutomationMediaSummary
+         href: ./ACSCallAutomationMediaSummary.md
+       - name: ACSCallClientMediaStatsTimeSeries
+         href: ./ACSCallClientMediaStatsTimeSeries.md
+       - name: ACSCallClientOperations
+         href: ./ACSCallClientOperations.md
+       - name: ACSCallDiagnostics
+         href: ./ACSCallDiagnostics.md
+       - name: ACSCallRecordingIncomingOperations
+         href: ./ACSCallRecordingIncomingOperations.md
+       - name: ACSCallRecordingSummary
+         href: ./ACSCallRecordingSummary.md
+       - name: ACSCallSummary
+         href: ./ACSCallSummary.md
+       - name: ACSCallSurvey
+         href: ./ACSCallSurvey.md
+       - name: ACSChatIncomingOperations
+         href: ./ACSChatIncomingOperations.md
+       - name: ACSEmailSendMailOperational
+         href: ./ACSEmailSendMailOperational.md
+       - name: ACSEmailStatusUpdateOperational
+         href: ./ACSEmailStatusUpdateOperational.md
+       - name: ACSJobRouterIncomingOperations
+         href: ./ACSJobRouterIncomingOperations.md
+       - name: ACSNetworkTraversalDiagnostics
+         href: ./ACSNetworkTraversalDiagnostics.md
+       - name: ACSNetworkTraversalIncomingOperations
+         href: ./ACSNetworkTraversalIncomingOperations.md
+       - name: ACSRoomsIncomingOperations
+         href: ./ACSRoomsIncomingOperations.md
+       - name: ACSSMSIncomingOperations
+         href: ./ACSSMSIncomingOperations.md
+       - name: ADAssessmentRecommendation
+         href: ./ADAssessmentRecommendation.md
+       - name: ADFActivityRun
+         href: ./ADFActivityRun.md
+       - name: ADFPipelineRun
+         href: ./ADFPipelineRun.md
+       - name: ADFSSignInLogs
+         href: ./ADFSSignInLogs.md
+       - name: ADFTriggerRun
+         href: ./ADFTriggerRun.md
+       - name: ADTDataHistoryOperation
+         href: ./ADTDataHistoryOperation.md
+       - name: ADTDigitalTwinsOperation
+         href: ./ADTDigitalTwinsOperation.md
+       - name: ADTEventRoutesOperation
+         href: ./ADTEventRoutesOperation.md
+       - name: ADTModelsOperation
+         href: ./ADTModelsOperation.md
+       - name: ADTQueryOperation
+         href: ./ADTQueryOperation.md
+       - name: ADXIngestionBatching
+         href: ./ADXIngestionBatching.md
+       - name: ADXTableUsageStatistics
+         href: ./ADXTableUsageStatistics.md
+       - name: AEWComputePipelinesLogs
+         href: ./AEWComputePipelinesLogs.md
+       - name: AFSAuditLogs
+         href: ./AFSAuditLogs.md
+       - name: AGCAccessLogs
+         href: ./AGCAccessLogs.md
+       - name: AGSGrafanaLoginEvents
+         href: ./AGSGrafanaLoginEvents.md
+       - name: AHDSDicomAuditLogs
+         href: ./AHDSDicomAuditLogs.md
+       - name: AHDSDicomDiagnosticLogs
+         href: ./AHDSDicomDiagnosticLogs.md
+       - name: AHDSMedTechDiagnosticLogs
+         href: ./AHDSMedTechDiagnosticLogs.md
+       - name: AKSAudit
+         href: ./AKSAudit.md
+       - name: AKSAuditAdmin
+         href: ./AKSAuditAdmin.md
+       - name: AKSControlPlane
+         href: ./AKSControlPlane.md
+       - name: AMSKeyDeliveryRequests
+         href: ./AMSKeyDeliveryRequests.md
+       - name: AMSLiveEventOperations
+         href: ./AMSLiveEventOperations.md
+       - name: AMSMediaAccountHealth
+         href: ./AMSMediaAccountHealth.md
+       - name: AMSStreamingEndpointRequests
+         href: ./AMSStreamingEndpointRequests.md
+       - name: ANFFileAccess
+         href: ./ANFFileAccess.md
+       - name: AOIDatabaseQuery
+         href: ./AOIDatabaseQuery.md
+       - name: AOIDigestion
+         href: ./AOIDigestion.md
+       - name: AOIStorage
+         href: ./AOIStorage.md
+       - name: ASCDeviceEvents
+         href: ./ASCDeviceEvents.md
+       - name: ASRJobs
+         href: ./ASRJobs.md
+       - name: ASRReplicatedItems
+         href: ./ASRReplicatedItems.md
+       - name: ASimDnsActivityLogs
+         href: ./ASimDnsActivityLogs.md
+       - name: AVNMConnectivityConfigurationChange
+         href: ./AVNMConnectivityConfigurationChange.md
+       - name: AVNMIPAMPoolAllocationChange
+         href: ./AVNMIPAMPoolAllocationChange.md
+       - name: AVNMNetworkGroupMembershipChange
+         href: ./AVNMNetworkGroupMembershipChange.md
+       - name: AVNMRuleCollectionChange
+         href: ./AVNMRuleCollectionChange.md
+       - name: AVSSyslog
+         href: ./AVSSyslog.md
+       - name: AWSCloudTrail
+         href: ./AWSCloudTrail.md
+       - name: AWSGuardDuty
+         href: ./AWSGuardDuty.md
+       - name: AWSVPCFlow
+         href: ./AWSVPCFlow.md
+       - name: AZFWApplicationRule
+         href: ./AZFWApplicationRule.md
+       - name: AZFWDnsQuery
+         href: ./AZFWDnsQuery.md
+       - name: AZFWFatFlow
+         href: ./AZFWFatFlow.md
+       - name: AZFWFlowTrace
+         href: ./AZFWFlowTrace.md
+       - name: AZFWIdpsSignature
+         href: ./AZFWIdpsSignature.md
+       - name: AZFWInternalFqdnResolutionFailure
+         href: ./AZFWInternalFqdnResolutionFailure.md
+       - name: AZFWNatRule
+         href: ./AZFWNatRule.md
+       - name: AZFWNetworkRule
+         href: ./AZFWNetworkRule.md
+       - name: AZFWThreatIntel
+         href: ./AZFWThreatIntel.md
+       - name: AZKVAuditLogs
+         href: ./AZKVAuditLogs.md
+       - name: AZMSHybridConnectionsEvents
+         href: ./AZMSHybridConnectionsEvents.md
+       - name: AZMSOperationalLogs
+         href: ./AZMSOperationalLogs.md
+       - name: AZMSRunTimeAuditLogs
+         href: ./AZMSRunTimeAuditLogs.md
+       - name: AZMSVnetConnectionEvents
+         href: ./AZMSVnetConnectionEvents.md
+       - name: AddonAzureBackupJobs
+         href: ./AddonAzureBackupJobs.md
+       - name: AddonAzureBackupStorage
+         href: ./AddonAzureBackupStorage.md
+       - name: AegDataPlaneRequests
+         href: ./AegDataPlaneRequests.md
+       - name: AegDeliveryFailureLogs
+         href: ./AegDeliveryFailureLogs.md
+       - name: AegPublishFailureLogs
+         href: ./AegPublishFailureLogs.md
+       - name: AgriFoodApplicationAuditLogs
+         href: ./AgriFoodApplicationAuditLogs.md
+       - name: AgriFoodFarmManagementLogs
+         href: ./AgriFoodFarmManagementLogs.md
+       - name: AgriFoodJobProcessedLogs
+         href: ./AgriFoodJobProcessedLogs.md
+       - name: AlertEvidence
+         href: ./AlertEvidence.md
+       - name: AlertInfo
+         href: ./AlertInfo.md
+       - name: AmlComputeClusterEvent
+         href: ./AmlComputeClusterEvent.md
+       - name: AmlComputeCpuGpuUtilization
+         href: ./AmlComputeCpuGpuUtilization.md
+       - name: AmlComputeJobEvent
+         href: ./AmlComputeJobEvent.md
+       - name: AmlDataSetEvent
+         href: ./AmlDataSetEvent.md
+       - name: AmlEnvironmentEvent
+         href: ./AmlEnvironmentEvent.md
+       - name: AmlModelsEvent
+         href: ./AmlModelsEvent.md
+       - name: AmlOnlineEndpointConsoleLog
+         href: ./AmlOnlineEndpointConsoleLog.md
+       - name: AmlOnlineEndpointEventLog
+         href: ./AmlOnlineEndpointEventLog.md
+       - name: AmlOnlineEndpointTrafficLog
+         href: ./AmlOnlineEndpointTrafficLog.md
+       - name: AmlRegistryWriteEventsLog
+         href: ./AmlRegistryWriteEventsLog.md
+       - name: Anomalies
+         href: ./Anomalies.md
+       - name: ApiManagementGatewayLogs
+         href: ./ApiManagementGatewayLogs.md
+       - name: AppDependencies
+         href: ./AppDependencies.md
+       - name: AppEnvSpringAppConsoleLogs
+         href: ./AppEnvSpringAppConsoleLogs.md
+       - name: AppExceptions
+         href: ./AppExceptions.md
+       - name: AppPageViews
+         href: ./AppPageViews.md
+       - name: AppPlatformLogsforSpring
+         href: ./AppPlatformLogsforSpring.md
+       - name: AppPlatformSystemLogs
+         href: ./AppPlatformSystemLogs.md
+       - name: AppRequests
+         href: ./AppRequests.md
+       - name: AppServiceAppLogs
+         href: ./AppServiceAppLogs.md
+       - name: AppServiceAuditLogs
+         href: ./AppServiceAuditLogs.md
+       - name: AppServiceAuthenticationLogs
+         href: ./AppServiceAuthenticationLogs.md
+       - name: AppServiceConsoleLogs
+         href: ./AppServiceConsoleLogs.md
+       - name: AppServiceFileAuditLogs
+         href: ./AppServiceFileAuditLogs.md
+       - name: AppServiceHTTPLogs
+         href: ./AppServiceHTTPLogs.md
+       - name: AutoscaleEvaluationsLog
+         href: ./AutoscaleEvaluationsLog.md
+       - name: AutoscaleScaleActionsLog
+         href: ./AutoscaleScaleActionsLog.md
+       - name: AzureActivity
+         href: ./AzureActivity.md
+       - name: AzureAttestationDiagnostics
+         href: ./AzureAttestationDiagnostics.md
+       - name: AzureBackupOperations
+         href: ./AzureBackupOperations.md
+       - name: AzureDiagnostics
+         href: ./AzureDiagnostics.md
+       - name: AzureLoadTestingOperation
+         href: ./AzureLoadTestingOperation.md
+       - name: AzureMetrics
+         href: ./AzureMetrics.md
+       - name: CCFApplicationLogs
+         href: ./CCFApplicationLogs.md
+       - name: CHSMManagementAuditLogs
+         href: ./CHSMManagementAuditLogs.md
+       - name: CIEventsAudit
+         href: ./CIEventsAudit.md
+       - name: CIEventsOperational
+         href: ./CIEventsOperational.md
+       - name: CassandraLogs
+         href: ./CassandraLogs.md
+       - name: ChaosStudioExperimentEventLogs
+         href: ./ChaosStudioExperimentEventLogs.md
+       - name: CloudAppEvents
+         href: ./CloudAppEvents.md
+       - name: CommonSecurityLog
+         href: ./CommonSecurityLog.md
+       - name: ConfidentialWatchlist
+         href: ./ConfidentialWatchlist.md
+       - name: ConfigurationChange
+         href: ./ConfigurationChange.md
+       - name: ConfigurationData
+         href: ./ConfigurationData.md
+       - name: ContainerAppConsoleLogs
+         href: ./ContainerAppConsoleLogs.md
+       - name: ContainerImageInventory
+         href: ./ContainerImageInventory.md
+       - name: ContainerInventory
+         href: ./ContainerInventory.md
+       - name: ContainerLog
+         href: ./ContainerLog.md
+       - name: ContainerLogV2
+         href: ./ContainerLogV2.md
+       - name: ContainerNodeInventory
+         href: ./ContainerNodeInventory.md
+       - name: ContainerRegistryLoginEvents
+         href: ./ContainerRegistryLoginEvents.md
+       - name: ContainerRegistryRepositoryEvents
+         href: ./ContainerRegistryRepositoryEvents.md
+       - name: ContainerServiceLog
+         href: ./ContainerServiceLog.md
+       - name: CoreAzureBackup
+         href: ./CoreAzureBackup.md
+       - name: DCRLogErrors
+         href: ./DCRLogErrors.md
+       - name: DCRLogTroubleshooting
+         href: ./DCRLogTroubleshooting.md
+       - name: DNSQueryLogs
+         href: ./DNSQueryLogs.md
+       - name: DataTransferOperations
+         href: ./DataTransferOperations.md
+       - name: DatabricksWorkspaceLogs
+         href: ./DatabricksWorkspaceLogs.md
+       - name: DataverseActivity
+         href: ./DataverseActivity.md
+       - name: DevCenterDiagnosticLogs
+         href: ./DevCenterDiagnosticLogs.md
+       - name: DevCenterResourceOperationLogs
+         href: ./DevCenterResourceOperationLogs.md
+       - name: DeviceCalendar
+         href: ./DeviceCalendar.md
+       - name: DeviceCleanup
+         href: ./DeviceCleanup.md
+       - name: DeviceHardwareHealth
+         href: ./DeviceHardwareHealth.md
+       - name: DeviceHealth
+         href: ./DeviceHealth.md
+       - name: DeviceSkypeHeartbeat
+         href: ./DeviceSkypeHeartbeat.md
+       - name: DeviceTvmSecureConfigurationAssessment
+         href: ./DeviceTvmSecureConfigurationAssessment.md
+       - name: DeviceTvmSoftwareInventory
+         href: ./DeviceTvmSoftwareInventory.md
+       - name: DeviceTvmSoftwareVulnerabilities
+         href: ./DeviceTvmSoftwareVulnerabilities.md
+       - name: DnsEvents
+         href: ./DnsEvents.md
+       - name: DynamicSummary
+         href: ./DynamicSummary.md
+       - name: EGNFailedMqttConnections
+         href: ./EGNFailedMqttConnections.md
+       - name: EGNMqttDisconnections
+         href: ./EGNMqttDisconnections.md
+       - name: EGNSuccessfulMqttConnections
+         href: ./EGNSuccessfulMqttConnections.md
+       - name: EmailAttachmentInfo
+         href: ./EmailAttachmentInfo.md
+       - name: EmailEvents
+         href: ./EmailEvents.md
+       - name: EmailPostDeliveryEvents
+         href: ./EmailPostDeliveryEvents.md
+       - name: EmailUrlInfo
+         href: ./EmailUrlInfo.md
+       - name: Event
+         href: ./Event.md
+       - name: FailedIngestion
+         href: ./FailedIngestion.md
+       - name: FunctionAppLogs
+         href: ./FunctionAppLogs.md
+       - name: GCPAuditLogs
+         href: ./GCPAuditLogs.md
+       - name: Heartbeat
+         href: ./Heartbeat.md
+       - name: IdentityDirectoryEvents
+         href: ./IdentityDirectoryEvents.md
+       - name: IdentityLogonEvents
+         href: ./IdentityLogonEvents.md
+       - name: IdentityQueryEvents
+         href: ./IdentityQueryEvents.md
+       - name: InsightsMetrics
+         href: ./InsightsMetrics.md
+       - name: KubeEvents
+         href: ./KubeEvents.md
+       - name: KubeMonAgentEvents
+         href: ./KubeMonAgentEvents.md
+       - name: KubeNodeInventory
+         href: ./KubeNodeInventory.md
+       - name: KubePodInventory
+         href: ./KubePodInventory.md
+       - name: KubeServices
+         href: ./KubeServices.md
+       - name: LAQueryLogs
+         href: ./LAQueryLogs.md
+       - name: LASummaryLogs
+         href: ./LASummaryLogs.md
+       - name: LogicAppWorkflowRuntime
+         href: ./LogicAppWorkflowRuntime.md
+       - name: MNFDeviceUpdates
+         href: ./MNFDeviceUpdates.md
+       - name: MNFSystemStateMessageUpdates
+         href: ./MNFSystemStateMessageUpdates.md
+       - name: MicrosoftDataShareReceivedSnapshotLog
+         href: ./MicrosoftDataShareReceivedSnapshotLog.md
+       - name: MicrosoftDataShareSentSnapshotLog
+         href: ./MicrosoftDataShareSentSnapshotLog.md
+       - name: MicrosoftGraphActivityLogs
+         href: ./MicrosoftGraphActivityLogs.md
+       - name: MicrosoftPurviewInformationProtection
+         href: ./MicrosoftPurviewInformationProtection.md
+       - name: NGXOperationLogs
+         href: ./NGXOperationLogs.md
+       - name: NWConnectionMonitorPathResult
+         href: ./NWConnectionMonitorPathResult.md
+       - name: NWConnectionMonitorTestResult
+         href: ./NWConnectionMonitorTestResult.md
+       - name: NetworkSessions
+         href: ./NetworkSessions.md
+       - name: OEPAirFlowTask
+         href: ./OEPAirFlowTask.md
+       - name: OLPSupplyChainEntityOperations
+         href: ./OLPSupplyChainEntityOperations.md
+       - name: OfficeActivity
+         href: ./OfficeActivity.md
+       - name: Perf
+         href: ./Perf.md
+       - name: PowerAppsActivity
+         href: ./PowerAppsActivity.md
+       - name: PowerAutomateActivity
+         href: ./PowerAutomateActivity.md
+       - name: PowerBIActivity
+         href: ./PowerBIActivity.md
+       - name: PowerPlatformAdminActivity
+         href: ./PowerPlatformAdminActivity.md
+       - name: PowerPlatformConnectorActivity
+         href: ./PowerPlatformConnectorActivity.md
+       - name: PowerPlatformDlpActivity
+         href: ./PowerPlatformDlpActivity.md
+       - name: ProjectActivity
+         href: ./ProjectActivity.md
+       - name: ProtectionStatus
+         href: ./ProtectionStatus.md
+       - name: PurviewSecurityLogs
+         href: ./PurviewSecurityLogs.md
+       - name: REDConnectionEvents
+         href: ./REDConnectionEvents.md
+       - name: ResourceManagementPublicAccessLogs
+         href: ./ResourceManagementPublicAccessLogs.md
+       - name: SQLAssessmentRecommendation
+         href: ./SQLAssessmentRecommendation.md
+       - name: SecurityAttackPathData
+         href: ./SecurityAttackPathData.md
+       - name: SecurityEvent
+         href: ./SecurityEvent.md
+       - name: SentinelAudit
+         href: ./SentinelAudit.md
+       - name: SignalRServiceDiagnosticLogs
+         href: ./SignalRServiceDiagnosticLogs.md
+       - name: SigninLogs
+         href: ./SigninLogs.md
+       - name: StorageBlobLogs
+         href: ./StorageBlobLogs.md
+       - name: StorageCacheOperationEvents
+         href: ./StorageCacheOperationEvents.md
+       - name: StorageCacheUpgradeEvents
+         href: ./StorageCacheUpgradeEvents.md
+       - name: StorageCacheWarningEvents
+         href: ./StorageCacheWarningEvents.md
+       - name: StorageMalwareScanningResults
+         href: ./StorageMalwareScanningResults.md
+       - name: SucceededIngestion
+         href: ./SucceededIngestion.md
+       - name: SynapseLinkEvent
+         href: ./SynapseLinkEvent.md
+       - name: Syslog
+         href: ./Syslog.md
+       - name: TSIIngress
+         href: ./TSIIngress.md
+       - name: UCDOAggregatedStatus
+         href: ./UCDOAggregatedStatus.md
+       - name: UCDOStatus
+         href: ./UCDOStatus.md
+       - name: Update
+         href: ./Update.md
+       - name: UpdateRunProgress
+         href: ./UpdateRunProgress.md
+       - name: UpdateSummary
+         href: ./UpdateSummary.md
+       - name: UrlClickEvents
+         href: ./UrlClickEvents.md
+       - name: Usage
+         href: ./Usage.md
+       - name: VCoreMongoRequests
+         href: ./VCoreMongoRequests.md
+       - name: VIAudit
+         href: ./VIAudit.md
+       - name: VIIndexing
+         href: ./VIIndexing.md
+       - name: W3CIISLog
+         href: ./W3CIISLog.md
+       - name: WVDAgentHealthStatus
+         href: ./WVDAgentHealthStatus.md
+       - name: WVDCheckpoints
+         href: ./WVDCheckpoints.md
+       - name: WVDConnectionNetworkData
+         href: ./WVDConnectionNetworkData.md
+       - name: WVDConnections
+         href: ./WVDConnections.md
+       - name: WVDErrors
+         href: ./WVDErrors.md
+       - name: WaaSDeploymentStatus
+         href: ./WaaSDeploymentStatus.md
+       - name: WaaSUpdateStatus
+         href: ./WaaSUpdateStatus.md
+       - name: Watchlist
+         href: ./Watchlist.md
+       - name: WindowsEvent
+         href: ./WindowsEvent.md
+       - name: WireData
+         href: ./WireData.md
+       - name: WorkloadDiagnosticLogs
+         href: ./WorkloadDiagnosticLogs.md
+       - name: dependencies
+         href: ./dependencies.md
+       - name: requests
+         href: ./requests.md

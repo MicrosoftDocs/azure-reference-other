@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AppPlatformSystemLogs
 
 Azure Spring Cloud System Logs.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Spring Apps
 
-            
+## Queries
+
+ Sample queries for the [AppPlatformSystemLogs](../queries/appplatformsystemlogs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [appplatformsystemlogs](../includes/appplatformsystemlogs-include.md)]
+[!INCLUDE [appplatformsystemlogs](.././tables/includes/appplatformsystemlogs-include.md)]

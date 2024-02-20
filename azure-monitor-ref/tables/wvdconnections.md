@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # WVDConnections
 
 Windows Virtual Desktop Connection Activity.
 
+
 ## Categories
 
 - Azure Virtual Desktop
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Desktop Virtualization Host Pools
 
-            
+## Queries
+
+ Sample queries for the [WVDConnections](../queries/wvdconnections.md) table.
 
 
 ## Columns
   
-[!INCLUDE [wvdconnections](../includes/wvdconnections-include.md)]
+[!INCLUDE [wvdconnections](.././tables/includes/wvdconnections-include.md)]

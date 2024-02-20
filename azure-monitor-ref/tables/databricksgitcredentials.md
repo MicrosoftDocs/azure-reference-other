@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DatabricksGitCredentials
 
 Databricks Git credentials audit logs.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Databricks Services
 
-            
-
-
 ## Columns
   
-[!INCLUDE [databricksgitcredentials](../includes/databricksgitcredentials-include.md)]
+[!INCLUDE [databricksgitcredentials](.././tables/includes/databricksgitcredentials-include.md)]

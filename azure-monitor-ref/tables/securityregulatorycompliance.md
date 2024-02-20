@@ -6,12 +6,13 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # SecurityRegulatoryCompliance
 
 Azure Security Center regulatory compliance assessments state.
+
 
 ## Solutions
 
@@ -19,9 +20,6 @@ Azure Security Center regulatory compliance assessments state.
 - SecurityCenter
 - SecurityCenterFree
 
-            
-
-
 ## Columns
   
-[!INCLUDE [securityregulatorycompliance](../includes/securityregulatorycompliance-include.md)]
+[!INCLUDE [securityregulatorycompliance](.././tables/includes/securityregulatorycompliance-include.md)]

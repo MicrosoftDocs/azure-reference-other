@@ -6,20 +6,18 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DatabricksCapsule8Dataplane
 
 Audit logs for Databricks service capsule8-alerts-dataplane.
 
+
 ## Solutions
 
 - LogManagement
 
-            
-
-
 ## Columns
   
-[!INCLUDE [databrickscapsule8dataplane](../includes/databrickscapsule8dataplane-include.md)]
+[!INCLUDE [databrickscapsule8dataplane](.././tables/includes/databrickscapsule8dataplane-include.md)]

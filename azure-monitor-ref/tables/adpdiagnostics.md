@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ADPDiagnostics
 
 Diagnostic logs of the ADP service.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Autonomous Development Platform workspace
 
-            
-
-
 ## Columns
   
-[!INCLUDE [adpdiagnostics](../includes/adpdiagnostics-include.md)]
+[!INCLUDE [adpdiagnostics](.././tables/includes/adpdiagnostics-include.md)]

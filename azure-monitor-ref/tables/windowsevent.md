@@ -6,16 +6,18 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # WindowsEvent
 
 Windows events which are collected and sent by the agent.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - CustomizedWindowsEventsFiltering
@@ -27,9 +29,11 @@ Windows events which are collected and sent by the agent.
 - WinLog
 - WindowsEventForwarding
 
-            
+## Queries
+
+ Sample queries for the [WindowsEvent](../queries/windowsevent.md) table.
 
 
 ## Columns
   
-[!INCLUDE [windowsevent](../includes/windowsevent-include.md)]
+[!INCLUDE [windowsevent](.././tables/includes/windowsevent-include.md)]

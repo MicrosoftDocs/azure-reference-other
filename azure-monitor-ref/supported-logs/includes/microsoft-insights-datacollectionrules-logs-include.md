@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Insights/datacollectionrules, naam
@@ -11,7 +11,7 @@ ms.custom: Microsoft.Insights/datacollectionrules, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|LogErrors |Log Errors |Yes |
-|LogTroubleshooting |Log Troubleshooting |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`LogErrors` |Log Errors |[DCRLogErrors](/azure/azure-monitor/reference/tables/dcrlogerrors)<p>Errors registered during DCR-based data collection and transformation.|No|No|[Queries](../../queries/dcrlogerrors.md)|Yes |
+|`LogTroubleshooting` |Log Troubleshooting |[DCRLogTroubleshooting](/azure/azure-monitor/reference/tables/dcrlogtroubleshooting)<p>Logs from DCR-based data collection and transformation to help with troubleshooting of DCR configuration and flow.|Yes|No|[Queries](../../queries/dcrlogtroubleshooting.md)|Yes |

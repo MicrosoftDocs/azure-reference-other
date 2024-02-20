@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Peering/peeringServices, arm
@@ -10,8 +10,7 @@ ms.custom: Microsoft.Peering/peeringServices, arm
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Round Trip Time**<p><p>Average round trip time |`RoundTripTime` |Milliseconds |Average |`ConnectionMonitorTestName`|PT1M |Yes|
+|**Round Trip Time**<br><br>Average round trip time |`RoundTripTime` |Milliseconds |Average |`ConnectionMonitorTestName`|PT1M |Yes|

@@ -6,17 +6,19 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/04/2023
+ms.date: 02/18/2024
 ---
 
 # HealthStateChangeEvent
 
 Workload Monitor Health. This data represents state transitions of a health monitor.
 
+
 ## Solutions
 
 - AzureResources
 - VMInsights
+
 ## Resource types
 
 - Virtual machines
@@ -24,9 +26,6 @@ Workload Monitor Health. This data represents state transitions of a health moni
 - Azure Stack HCI
 - System Center Virtual Machine Manager
 
-            
-
-
 ## Columns
   
-[!INCLUDE [healthstatechangeevent](../includes/healthstatechangeevent-include.md)]
+[!INCLUDE [healthstatechangeevent](.././tables/includes/healthstatechangeevent-include.md)]

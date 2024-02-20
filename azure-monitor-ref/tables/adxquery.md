@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ADXQuery
 
 Azure Data Explorer query execution summary.
 
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Data Explorer Clusters
 
-            
-
-
 ## Columns
   
-[!INCLUDE [adxquery](../includes/adxquery-include.md)]
+[!INCLUDE [adxquery](.././tables/includes/adxquery-include.md)]

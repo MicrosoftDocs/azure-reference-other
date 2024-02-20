@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DeviceSkypeSignIn
 
 
 
+
 ## Categories
 
 - Workloads
+
 ## Solutions
 
 - SurfaceHub
 
-            
-
-
 ## Columns
   
-[!INCLUDE [deviceskypesignin](../includes/deviceskypesignin-include.md)]
+[!INCLUDE [deviceskypesignin](.././tables/includes/deviceskypesignin-include.md)]

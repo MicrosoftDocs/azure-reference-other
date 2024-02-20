@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DBforPostgreSQL/flexibleServers, naam
@@ -11,11 +11,11 @@ ms.custom: Microsoft.DBforPostgreSQL/flexibleServers, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|PostgreSQLFlexDatabaseXacts |PostgreSQL remaining transactions |Yes |
-|PostgreSQLFlexQueryStoreRuntime |PostgreSQL Query Store Runtime |Yes |
-|PostgreSQLFlexQueryStoreWaitStats |PostgreSQL Query Store Wait Statistics |Yes |
-|PostgreSQLFlexSessions |PostgreSQL Sessions data |Yes |
-|PostgreSQLFlexTableStats |PostgreSQL Autovacuum and schema statistics |Yes |
-|PostgreSQLLogs |PostgreSQL Server Logs |No |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`PostgreSQLFlexDatabaseXacts` |PostgreSQL remaining transactions |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftdbforpostgresql)|Yes |
+|`PostgreSQLFlexQueryStoreRuntime` |PostgreSQL Query Store Runtime |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftdbforpostgresql)|Yes |
+|`PostgreSQLFlexQueryStoreWaitStats` |PostgreSQL Query Store Wait Statistics |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftdbforpostgresql)|Yes |
+|`PostgreSQLFlexSessions` |PostgreSQL Sessions data |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftdbforpostgresql)|Yes |
+|`PostgreSQLFlexTableStats` |PostgreSQL Autovacuum and schema statistics |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftdbforpostgresql)|Yes |
+|`PostgreSQLLogs` |PostgreSQL Server Logs |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftdbforpostgresql)|No |

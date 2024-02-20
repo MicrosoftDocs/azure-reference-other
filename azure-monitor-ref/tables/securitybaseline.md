@@ -6,21 +6,24 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # SecurityBaseline
 
 
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - Security
 - SecurityCenter
 - SecurityCenterFree
+
 ## Resource types
 
 - Virtual machines
@@ -29,9 +32,6 @@ ms.date: 08/28/2023
 - System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
 
-            
-
-
 ## Columns
   
-[!INCLUDE [securitybaseline](../includes/securitybaseline-include.md)]
+[!INCLUDE [securitybaseline](.././tables/includes/securitybaseline-include.md)]

@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # IntuneDeviceComplianceOrg
 
 Intune device compliance specialist report.
 
+
 ## Categories
 
 - IT & Management Tools
+
 ## Solutions
 
 - LogManagement
 
-            
-
-
 ## Columns
   
-[!INCLUDE [intunedevicecomplianceorg](../includes/intunedevicecomplianceorg-include.md)]
+[!INCLUDE [intunedevicecomplianceorg](.././tables/includes/intunedevicecomplianceorg-include.md)]

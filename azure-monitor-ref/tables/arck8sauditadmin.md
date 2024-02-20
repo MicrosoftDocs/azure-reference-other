@@ -6,28 +6,28 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # ArcK8sAuditAdmin
 
 Contains Kubernetes API Server audit logs excluding events with the get and list verbs. These events are useful for monitoring resource modification requests made to the Kubernetes API. To see all modifying and non-modifying operations see the ArcK8sAudit table. Requires Diagnostic Settings to use the Resource Specific destination table.
 
+
 ## Categories
 
 - Audit
 - Azure Resources
 - Containers
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Arc Enabled Kubernetes
 
-            
-
-
 ## Columns
   
-[!INCLUDE [arck8sauditadmin](../includes/arck8sauditadmin-include.md)]
+[!INCLUDE [arck8sauditadmin](.././tables/includes/arck8sauditadmin-include.md)]

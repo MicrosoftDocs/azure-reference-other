@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Attestation/attestationProviders, naam
@@ -11,8 +11,8 @@ ms.custom: Microsoft.Attestation/attestationProviders, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|AuditEvent |AuditEvent message log category. |No |
-|NotProcessed |Requests which could not be processed. |Yes |
-|Operational |Operational message log category. |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`AuditEvent` |AuditEvent message log category. ||No|Yes||No |
+|`NotProcessed` |Requests which could not be processed. ||No|Yes||Yes |
+|`Operational` |Operational message log category. |[AzureAttestationDiagnostics](/azure/azure-monitor/reference/tables/azureattestationdiagnostics)<p>Logs from attestation requests.|No|No|[Queries](../../queries/azureattestationdiagnostics.md)|Yes |

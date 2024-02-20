@@ -6,10 +6,11 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AddonAzureBackupJobs
+
 
 
 
@@ -17,16 +18,20 @@ ms.date: 08/28/2023
 
 - IT & Management Tools
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Recovery Services Vaults
 
-            
+## Queries
+
+ Sample queries for the [AddonAzureBackupJobs](../queries/addonazurebackupjobs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [addonazurebackupjobs](../includes/addonazurebackupjobs-include.md)]
+[!INCLUDE [addonazurebackupjobs](.././tables/includes/addonazurebackupjobs-include.md)]

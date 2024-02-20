@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.ContainerService/fleets, naam
@@ -11,12 +11,12 @@ ms.custom: Microsoft.ContainerService/fleets, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|cloud-controller-manager |Kubernetes Cloud Controller Manager |Yes |
-|guard |guard |Yes |
-|kube-apiserver |Kubernetes API Server |Yes |
-|kube-audit |Kubernetes Audit |Yes |
-|kube-audit-admin |Kubernetes Audit Admin Logs |Yes |
-|kube-controller-manager |Kubernetes Controller Manager |Yes |
-|kube-scheduler |Kubernetes Scheduler |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`cloud-controller-manager` |Kubernetes Cloud Controller Manager ||No|Yes||Yes |
+|`guard` |guard ||No|Yes||Yes |
+|`kube-apiserver` |Kubernetes API Server ||No|Yes||Yes |
+|`kube-audit` |Kubernetes Audit ||No|Yes||Yes |
+|`kube-audit-admin` |Kubernetes Audit Admin Logs ||No|Yes||Yes |
+|`kube-controller-manager` |Kubernetes Controller Manager ||No|Yes||Yes |
+|`kube-scheduler` |Kubernetes Scheduler ||No|Yes||Yes |

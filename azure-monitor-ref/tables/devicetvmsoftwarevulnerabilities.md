@@ -6,23 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DeviceTvmSoftwareVulnerabilities
 
 Captures various identity-related events, like password changes, password expiration, and user principal name (UPN) changes.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - SecurityInsights
 
-            
+## Queries
+
+ Sample queries for the [DeviceTvmSoftwareVulnerabilities](../queries/devicetvmsoftwarevulnerabilities.md) table.
 
 
 ## Columns
   
-[!INCLUDE [devicetvmsoftwarevulnerabilities](../includes/devicetvmsoftwarevulnerabilities-include.md)]
+[!INCLUDE [devicetvmsoftwarevulnerabilities](.././tables/includes/devicetvmsoftwarevulnerabilities-include.md)]

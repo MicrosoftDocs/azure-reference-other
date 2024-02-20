@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AHDSMedTechDiagnosticLogs
 
 Actionable logs generated from your MedTech application.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Health Data Services
 
-            
+## Queries
+
+ Sample queries for the [AHDSMedTechDiagnosticLogs](../queries/ahdsmedtechdiagnosticlogs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [ahdsmedtechdiagnosticlogs](../includes/ahdsmedtechdiagnosticlogs-include.md)]
+[!INCLUDE [ahdsmedtechdiagnosticlogs](.././tables/includes/ahdsmedtechdiagnosticlogs-include.md)]

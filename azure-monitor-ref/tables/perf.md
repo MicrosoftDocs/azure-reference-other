@@ -6,20 +6,23 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # Perf
 
 Performance counters from Windows and Linux agents that provide insight into the performance of hardware components operating systems and applications.
 
+
 ## Categories
 
 - Virtual Machines
 - Containers
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Arc Enabled Kubernetes
@@ -32,9 +35,11 @@ Performance counters from Windows and Linux agents that provide insight into the
 - Azure Stack HCI
 - Azure Arc Provisioned Clusters
 
-            
+## Queries
+
+ Sample queries for the [Perf](../queries/perf.md) table.
 
 
 ## Columns
   
-[!INCLUDE [perf](../includes/perf-include.md)]
+[!INCLUDE [perf](.././tables/includes/perf-include.md)]

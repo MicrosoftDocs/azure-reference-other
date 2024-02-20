@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # MicrosoftDynamicsTelemetryPerformanceLogs
 
 Microsoft Dynamics Telemetry Performance Logs
 
+
 ## Categories
 
 - Workloads
+
 ## Solutions
 
 - LogManagement
 
-            
-
-
 ## Columns
   
-[!INCLUDE [microsoftdynamicstelemetryperformancelogs](../includes/microsoftdynamicstelemetryperformancelogs-include.md)]
+[!INCLUDE [microsoftdynamicstelemetryperformancelogs](.././tables/includes/microsoftdynamicstelemetryperformancelogs-include.md)]

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Devices/provisioningServices, arm
@@ -10,10 +10,9 @@ ms.custom: Microsoft.Devices/provisioningServices, arm
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Attestation attempts**<p><p>Number of device attestations attempted |`AttestationAttempts` |Count |Total |`ProvisioningServiceName`, `Status`, `Protocol`|PT1M |Yes|
-|**Devices assigned**<p><p>Number of devices assigned to an IoT hub |`DeviceAssignments` |Count |Total |`ProvisioningServiceName`, `IotHubName`|PT1M |Yes|
-|**Registration attempts**<p><p>Number of device registrations attempted |`RegistrationAttempts` |Count |Total |`ProvisioningServiceName`, `IotHubName`, `Status`|PT1M |Yes|
+|**Attestation attempts**<br><br>Number of device attestations attempted |`AttestationAttempts` |Count |Total |`ProvisioningServiceName`, `Status`, `Protocol`|PT1M |Yes|
+|**Devices assigned**<br><br>Number of devices assigned to an IoT hub |`DeviceAssignments` |Count |Total |`ProvisioningServiceName`, `IotHubName`|PT1M |Yes|
+|**Registration attempts**<br><br>Number of device registrations attempted |`RegistrationAttempts` |Count |Total |`ProvisioningServiceName`, `IotHubName`, `Status`|PT1M |Yes|

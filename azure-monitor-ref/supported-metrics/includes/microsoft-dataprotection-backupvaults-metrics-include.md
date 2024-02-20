@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DataProtection/BackupVaults, naam
@@ -10,9 +10,8 @@ ms.custom: Microsoft.DataProtection/BackupVaults, naam
  
 ---
 
-  
-  
+
 |Category|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|---|
-|Health|**Backup Health Events (preview)**<p><p>The count of health events pertaining to backup job health |`BackupHealthEvent` |Count |Count |`dataSourceURL`, `backupInstanceUrl`, `dataSourceType`, `healthStatus`, `backupInstanceName`|PT1M, PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
-|Health|**Restore Health Events (preview)**<p><p>The count of health events pertaining to restore job health |`RestoreHealthEvent` |Count |Count |`dataSourceURL`, `backupInstanceUrl`, `dataSourceType`, `healthStatus`, `backupInstanceName`|PT1M, PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
+|Health|**Backup Health Events (preview)**<br><br>The count of health events pertaining to backup job health |`BackupHealthEvent` |Count |Count |`dataSourceURL`, `backupInstanceUrl`, `dataSourceType`, `healthStatus`, `backupInstanceName`|PT1M, PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
+|Health|**Restore Health Events (preview)**<br><br>The count of health events pertaining to restore job health |`RestoreHealthEvent` |Count |Count |`dataSourceURL`, `backupInstanceUrl`, `dataSourceType`, `healthStatus`, `backupInstanceName`|PT1M, PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|

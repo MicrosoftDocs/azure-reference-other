@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ACSEmailSendMailOperational
 
 Email Communication Services logs for send operations.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Communication Services
 
-            
+## Queries
+
+ Sample queries for the [ACSEmailSendMailOperational](../queries/acsemailsendmailoperational.md) table.
 
 
 ## Columns
   
-[!INCLUDE [acsemailsendmailoperational](../includes/acsemailsendmailoperational-include.md)]
+[!INCLUDE [acsemailsendmailoperational](.././tables/includes/acsemailsendmailoperational-include.md)]

@@ -6,27 +6,32 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AppServiceConsoleLogs
 
 Console logs generated from application or container.
 
+
 ## Categories
 
 - Azure Resources
 - Applications
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - App Services
 
-            
+## Queries
+
+ Sample queries for the [AppServiceConsoleLogs](../queries/appserviceconsolelogs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [appserviceconsolelogs](../includes/appserviceconsolelogs-include.md)]
+[!INCLUDE [appserviceconsolelogs](.././tables/includes/appserviceconsolelogs-include.md)]

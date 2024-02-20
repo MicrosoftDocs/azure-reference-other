@@ -6,19 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # Event
 
 Events from Windows Event Log on Windows computers using the Log Analytics agent.
 
+
 ## Categories
 
 - Virtual Machines
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Virtual machines
@@ -28,9 +31,11 @@ Events from Windows Event Log on Windows computers using the Log Analytics agent
 - Virtual Machine Scale Sets
 - Azure Stack HCI
 
-            
+## Queries
+
+ Sample queries for the [Event](../queries/event.md) table.
 
 
 ## Columns
   
-[!INCLUDE [event](../includes/event-include.md)]
+[!INCLUDE [event](.././tables/includes/event-include.md)]

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Cache/redis, naam
@@ -11,7 +11,7 @@ ms.custom: Microsoft.Cache/redis, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|ConnectedClientList |Connected client list |Yes |
-|MSEntraAuthenticationAuditLog |MSEntra authentication audit log |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`ConnectedClientList` |Connected client list |[ACRConnectedClientList](/azure/azure-monitor/reference/tables/acrconnectedclientlist)<p>Logs count of Redis clients connected to a cache instance and their IP addresses, logged at a 10-second interval.|Yes|Yes|[Queries](../../queries/acrconnectedclientlist.md)|Yes |
+|`MSEntraAuthenticationAuditLog` |MSEntra authentication audit log ||No|Yes||Yes |

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: MICROSOFT.OPENENERGYPLATFORM/ENERGYSERVICES, naam
@@ -11,27 +11,27 @@ ms.custom: MICROSOFT.OPENENERGYPLATFORM/ENERGYSERVICES, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|AirFlowTaskLogs |Air Flow Task Logs |Yes |
-|AuditEvent |Audit Event |Yes |
-|CRSCatalogLogs |CRS Catalog Service Logs |Yes |
-|CRSConversionLogs |CRS Conversion Service Logs |Yes |
-|DatasetLogs |Dataset Service Logs |Yes |
-|ElasticOperatorLogs |Elastic Operator Logs |Yes |
-|ElasticsearchLogs |Elasticsearch Logs |Yes |
-|EntitlementsLogs |Entitlements Service Logs |Yes |
-|FileLogs |File Service Logs |Yes |
-|IndexerLogs |Indexer Service Logs |Yes |
-|LegalLogs |Legal Service Logs |Yes |
-|NotificationLogs |Notification Service Logs |Yes |
-|PartitionLogs |Partition Service Logs |Yes |
-|PDSBackendLogs |PDSBackend Service Logs |Yes |
-|PDSFrontendLogs |PDSFrontend Service Logs |Yes |
-|RegisterLogs |Register Service Logs |Yes |
-|SchemaLogs |Schema Service Logs |Yes |
-|SearchLogs |Search Service Logs |Yes |
-|StorageLogs |Storage Service Logs |Yes |
-|UnitLogs |Unit Service Logs |Yes |
-|WellDeliveryLogs |WellDelivery Service Logs |Yes |
-|WorkflowLogs |Workflow Service Logs |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`AirFlowTaskLogs` |Air Flow Task Logs |[OEPAirFlowTask](/azure/azure-monitor/reference/tables/oepairflowtask)<p>Diagnostic logs for AirFlow task execution having task name, task details.|No|No|[Queries](../../queries/oepairflowtask.md)|Yes |
+|`AuditEvent` |Audit Event |[OEPAuditLogs](/azure/azure-monitor/reference/tables/oepauditlogs)<p>Audit Logs for Microsoft Energy Data Services.|No|No||Yes |
+|`CRSCatalogLogs` |CRS Catalog Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |
+|`CRSConversionLogs` |CRS Conversion Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |
+|`DatasetLogs` |Dataset Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |
+|`ElasticOperatorLogs` |Elastic Operator Logs |[OEPElasticOperator](/azure/azure-monitor/reference/tables/oepelasticoperator)<p>Diagnostic logs for elastic operator. Elastic operator manages all the elasticsearch clusters in the oak instance. These logs can be helpful in identifing what operations are performed by the operator on the cluster. It could be upgrades, reconciliation, resource update etc.|No|No||Yes |
+|`ElasticsearchLogs` |Elasticsearch Logs |[OEPElasticsearch](/azure/azure-monitor/reference/tables/oepelasticsearch)<p>Diagnostic logs for Elasticsearch cluster. It could be slow logs, server logs or deprecation logs.|No|No||Yes |
+|`EntitlementsLogs` |Entitlements Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |
+|`FileLogs` |File Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |
+|`IndexerLogs` |Indexer Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |
+|`LegalLogs` |Legal Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |
+|`NotificationLogs` |Notification Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |
+|`PartitionLogs` |Partition Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |
+|`PDSBackendLogs` |PDSBackend Service Logs ||No|No||Yes |
+|`PDSFrontendLogs` |PDSFrontend Service Logs ||No|No||Yes |
+|`RegisterLogs` |Register Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |
+|`SchemaLogs` |Schema Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |
+|`SearchLogs` |Search Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |
+|`StorageLogs` |Storage Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |
+|`UnitLogs` |Unit Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |
+|`WellDeliveryLogs` |WellDelivery Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |
+|`WorkflowLogs` |Workflow Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |

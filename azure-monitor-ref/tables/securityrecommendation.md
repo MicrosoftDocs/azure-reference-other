@@ -6,25 +6,24 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # SecurityRecommendation
 
 
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - AzureSecurityOfThings
 - Security
 - SecurityCenterFree
 
-            
-
-
 ## Columns
   
-[!INCLUDE [securityrecommendation](../includes/securityrecommendation-include.md)]
+[!INCLUDE [securityrecommendation](.././tables/includes/securityrecommendation-include.md)]
