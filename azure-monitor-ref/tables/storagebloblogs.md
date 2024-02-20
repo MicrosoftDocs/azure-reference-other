@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # StorageBlobLogs
 
 Storage Blob Service Logs Schema
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Storage Accounts
 
-            
+## Queries
+
+ Sample queries for the [StorageBlobLogs](../queries/storagebloblogs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [storagebloblogs](../includes/storagebloblogs-include.md)]
+[!INCLUDE [storagebloblogs](.././tables/includes/storagebloblogs-include.md)]

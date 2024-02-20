@@ -6,23 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DeviceSkypeHeartbeat
 
 
 
+
 ## Categories
 
 - Workloads
+
 ## Solutions
 
 - SurfaceHub
 
-            
+## Queries
+
+ Sample queries for the [DeviceSkypeHeartbeat](../queries/deviceskypeheartbeat.md) table.
 
 
 ## Columns
   
-[!INCLUDE [deviceskypeheartbeat](../includes/deviceskypeheartbeat-include.md)]
+[!INCLUDE [deviceskypeheartbeat](.././tables/includes/deviceskypeheartbeat-include.md)]

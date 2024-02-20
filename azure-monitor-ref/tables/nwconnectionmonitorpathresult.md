@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # NWConnectionMonitorPathResult
 
 Connection Monitor path result records.
 
+
 ## Categories
 
 - Network
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Network Watcher - Connection Monitor
 
-            
+## Queries
+
+ Sample queries for the [NWConnectionMonitorPathResult](../queries/nwconnectionmonitorpathresult.md) table.
 
 
 ## Columns
   
-[!INCLUDE [nwconnectionmonitorpathresult](../includes/nwconnectionmonitorpathresult-include.md)]
+[!INCLUDE [nwconnectionmonitorpathresult](.././tables/includes/nwconnectionmonitorpathresult-include.md)]

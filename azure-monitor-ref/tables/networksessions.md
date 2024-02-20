@@ -6,23 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # NetworkSessions
 
 Network connections or sessions such as those logged by firewalls, Wire Data, NSG, Netflow, proxy systems and web security gateways.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - SecurityInsights
 
-            
+## Queries
+
+ Sample queries for the [NetworkSessions](../queries/networksessions.md) table.
 
 
 ## Columns
   
-[!INCLUDE [networksessions](../includes/networksessions-include.md)]
+[!INCLUDE [networksessions](.././tables/includes/networksessions-include.md)]

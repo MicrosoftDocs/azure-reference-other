@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkFunction/azureTrafficCollectors, naam
@@ -11,7 +11,7 @@ ms.custom: Microsoft.NetworkFunction/azureTrafficCollectors, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|ExpressRouteCircuitIpfix |Express Route Circuit IPFIX Flow Records |Yes |
-|PublicIpFlowLog |Public IP Flow Records |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`ExpressRouteCircuitIpfix` |Express Route Circuit IPFIX Flow Records |[ATCExpressRouteCircuitIpfix](/azure/azure-monitor/reference/tables/atcexpressroutecircuitipfix)<p>This table has Express Route Circuit IPFIX flow records. Flow records are captured and emitted by Azure Traffic Collector (ATC).|No|Yes||Yes |
+|`PublicIpFlowLog` |Public IP Flow Records ||No|Yes||Yes |

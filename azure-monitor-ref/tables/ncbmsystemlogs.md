@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # NCBMSystemLogs
 
 Syslog events on Nexus Baremetal Machines providing critical insights into system activities, errors and anomalies for effecient troubleshooting and monitoring.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Nexus BareMetal Machines
 
-            
-
-
 ## Columns
   
-[!INCLUDE [ncbmsystemlogs](../includes/ncbmsystemlogs-include.md)]
+[!INCLUDE [ncbmsystemlogs](.././tables/includes/ncbmsystemlogs-include.md)]

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Wandisco.Fusion/migrators/metadataMigrations, naam
@@ -10,12 +10,11 @@ ms.custom: Wandisco.Fusion/migrators/metadataMigrations, naam
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Hive Items Added After Scan**<p><p>Provides a running total of how many items have been added after the initial scan. |`LiveHiveAddedAfterScan` |Count |Total |\<none\>|PT1M |Yes|
-|**Discovered Hive Items**<p><p>Provides a running total of how many items have been discovered. |`LiveHiveDiscoveredItems` |Count |Total |\<none\>|PT1M |Yes|
-|**Initially Discovered Hive Items**<p><p>This provides the view of the total items discovered as a result of the initial scan of the On-Premises file system. Any items that are discovered after the initial scan, are NOT included in this metric. |`LiveHiveInitiallyDiscoveredItems` |Count |Total |\<none\>|PT1M |Yes|
-|**Initially Migrated Hive Items**<p><p>This provides the view of the total items migrated as a result of the initial scan of the On-Premises file system. Any items that are added after the initial scan, are NOT included in this metric. |`LiveHiveInitiallyMigratedItems` |Count |Total |\<none\>|PT1M |Yes|
-|**Migrated Hive Items**<p><p>Provides a running total of how many items have been migrated. |`LiveHiveMigratedItems` |Count |Total |\<none\>|PT1M |Yes|
+|**Hive Items Added After Scan**<br><br>Provides a running total of how many items have been added after the initial scan. |`LiveHiveAddedAfterScan` |Count |Total |\<none\>|PT1M |Yes|
+|**Discovered Hive Items**<br><br>Provides a running total of how many items have been discovered. |`LiveHiveDiscoveredItems` |Count |Total |\<none\>|PT1M |Yes|
+|**Initially Discovered Hive Items**<br><br>This provides the view of the total items discovered as a result of the initial scan of the On-Premises file system. Any items that are discovered after the initial scan, are NOT included in this metric. |`LiveHiveInitiallyDiscoveredItems` |Count |Total |\<none\>|PT1M |Yes|
+|**Initially Migrated Hive Items**<br><br>This provides the view of the total items migrated as a result of the initial scan of the On-Premises file system. Any items that are added after the initial scan, are NOT included in this metric. |`LiveHiveInitiallyMigratedItems` |Count |Total |\<none\>|PT1M |Yes|
+|**Migrated Hive Items**<br><br>Provides a running total of how many items have been migrated. |`LiveHiveMigratedItems` |Count |Total |\<none\>|PT1M |Yes|

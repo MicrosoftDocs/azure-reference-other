@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ApiManagementGatewayLogs
 
 Azure ApiManagement gateway logs.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - API Management services
 
-            
+## Queries
+
+ Sample queries for the [ApiManagementGatewayLogs](../queries/apimanagementgatewaylogs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [apimanagementgatewaylogs](../includes/apimanagementgatewaylogs-include.md)]
+[!INCLUDE [apimanagementgatewaylogs](.././tables/includes/apimanagementgatewaylogs-include.md)]

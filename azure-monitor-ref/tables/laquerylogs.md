@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # LAQueryLogs
 
 Audit logs for queries executed in Log Analytics Workspaces.
 
+
 ## Categories
 
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Log Analytics workspaces
 
-            
+## Queries
+
+ Sample queries for the [LAQueryLogs](../queries/laquerylogs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [laquerylogs](../includes/laquerylogs-include.md)]
+[!INCLUDE [laquerylogs](.././tables/includes/laquerylogs-include.md)]

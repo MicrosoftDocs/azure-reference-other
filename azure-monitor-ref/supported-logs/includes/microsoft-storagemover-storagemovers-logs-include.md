@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.StorageMover/storageMovers, naam
@@ -11,7 +11,7 @@ ms.custom: Microsoft.StorageMover/storageMovers, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|CopyLogsFailed |Copy logs - Failed |Yes |
-|JobRunLogs |Job run logs |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`CopyLogsFailed` |Copy logs - Failed |[StorageMoverCopyLogsFailed](/azure/azure-monitor/reference/tables/storagemovercopylogsfailed)<p>The result logs generated during the execution of Storage Mover job runs where the transfer result is 'Failed'. The logs include the details of the scanned items and their transfer result.|Yes|No||Yes |
+|`JobRunLogs` |Job run logs |[StorageMoverJobRunLogs](/azure/azure-monitor/reference/tables/storagemoverjobrunlogs)<p>Logs associated with Storage Mover job runs.|Yes|No||Yes |

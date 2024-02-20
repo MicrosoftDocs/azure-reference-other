@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Network/networkSecurityPerimeters/profiles, naam
@@ -11,9 +11,9 @@ ms.custom: Microsoft.Network/networkSecurityPerimeters/profiles, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|NSPInboundAccessAllowed |NSP Inbound Access Allowed. |Yes |
-|NSPInboundAccessDenied |NSP Inbound Access Denied. |Yes |
-|NSPOutboundAccessAllowed |NSP Outbound Access Allowed. |Yes |
-|NSPOutboundAccessDenied |NSP Outbound Access Denied. |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`NSPInboundAccessAllowed` |NSP Inbound Access Allowed. ||No|No||Yes |
+|`NSPInboundAccessDenied` |NSP Inbound Access Denied. ||No|No||Yes |
+|`NSPOutboundAccessAllowed` |NSP Outbound Access Allowed. ||No|No||Yes |
+|`NSPOutboundAccessDenied` |NSP Outbound Access Denied. ||No|No||Yes |

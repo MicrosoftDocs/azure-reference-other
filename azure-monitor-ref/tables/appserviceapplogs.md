@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AppServiceAppLogs
 
 Logs generated through your application.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - App Services
 
-            
+## Queries
+
+ Sample queries for the [AppServiceAppLogs](../queries/appserviceapplogs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [appserviceapplogs](../includes/appserviceapplogs-include.md)]
+[!INCLUDE [appserviceapplogs](.././tables/includes/appserviceapplogs-include.md)]

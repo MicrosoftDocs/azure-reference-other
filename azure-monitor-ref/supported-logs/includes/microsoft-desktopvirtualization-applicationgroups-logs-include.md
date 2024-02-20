@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DesktopVirtualization/applicationgroups, arm
@@ -11,8 +11,8 @@ ms.custom: Microsoft.DesktopVirtualization/applicationgroups, arm
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|Checkpoint |Checkpoint |No |
-|Error |Error |No |
-|Management |Management |No |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`Checkpoint` |Checkpoint ||No|No||No |
+|`Error` |Error |[WVDErrors](/azure/azure-monitor/reference/tables/wvderrors)<p>Windows Virtual Desktop Error Activity|No|Yes|[Queries](../../queries/wvderrors.md)|No |
+|`Management` |Management |[WVDManagement](/azure/azure-monitor/reference/tables/wvdmanagement)<p>Windows Virtual Desktop Management Activity|No|Yes||No |

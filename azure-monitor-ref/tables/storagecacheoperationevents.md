@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # StorageCacheOperationEvents
 
 Logs for Azure HPC Cache API requests.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure HPC Cache
 
-            
+## Queries
+
+ Sample queries for the [StorageCacheOperationEvents](../queries/storagecacheoperationevents.md) table.
 
 
 ## Columns
   
-[!INCLUDE [storagecacheoperationevents](../includes/storagecacheoperationevents-include.md)]
+[!INCLUDE [storagecacheoperationevents](.././tables/includes/storagecacheoperationevents-include.md)]

@@ -6,19 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # UpdateRunProgress
 
 Breaks down each run of your update schedule by the patches available at the time with details on the installation status of each patch.
 
+
 ## Categories
 
 - IT & Management Tools
+
 ## Solutions
 
 - Updates
+
 ## Resource types
 
 - Virtual machines
@@ -28,9 +31,11 @@ Breaks down each run of your update schedule by the patches available at the tim
 - Virtual Machine Scale Sets
 - Automation account
 
-            
+## Queries
+
+ Sample queries for the [UpdateRunProgress](../queries/updaterunprogress.md) table.
 
 
 ## Columns
   
-[!INCLUDE [updaterunprogress](../includes/updaterunprogress-include.md)]
+[!INCLUDE [updaterunprogress](.././tables/includes/updaterunprogress-include.md)]

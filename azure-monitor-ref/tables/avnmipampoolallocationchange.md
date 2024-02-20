@@ -6,28 +6,33 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/04/2023
+ms.date: 02/18/2024
 ---
 
 # AVNMIPAMPoolAllocationChange
 
 Includes changes to allocations of an IPAM Pool such as Virtual Networks, static CIDRs, or child pools.
 
+
 ## Categories
 
 - Azure Resources
 - Network
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Virtual Network Manager
 
-            
+## Queries
+
+ Sample queries for the [AVNMIPAMPoolAllocationChange](../queries/avnmipampoolallocationchange.md) table.
 
 
 ## Columns
   
-[!INCLUDE [avnmipampoolallocationchange](../includes/avnmipampoolallocationchange-include.md)]
+[!INCLUDE [avnmipampoolallocationchange](.././tables/includes/avnmipampoolallocationchange-include.md)]

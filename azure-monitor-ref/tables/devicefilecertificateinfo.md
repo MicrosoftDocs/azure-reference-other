@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DeviceFileCertificateInfo
 
 Certificate information of signed files obtained from certificate verification events on endpoints.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - SecurityInsights
 
-            
-
-
 ## Columns
   
-[!INCLUDE [devicefilecertificateinfo](../includes/devicefilecertificateinfo-include.md)]
+[!INCLUDE [devicefilecertificateinfo](.././tables/includes/devicefilecertificateinfo-include.md)]

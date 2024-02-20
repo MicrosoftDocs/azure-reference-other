@@ -6,28 +6,33 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AZMSOperationalLogs
 
 Captures all management operations that are performed on the Azure Event Hubs/Azure Service Bus namespace and its entities.
 
+
 ## Categories
 
 - Azure Resources
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Service Bus
 - Event Hubs
 
-            
+## Queries
+
+ Sample queries for the [AZMSOperationalLogs](../queries/azmsoperationallogs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [azmsoperationallogs](../includes/azmsoperationallogs-include.md)]
+[!INCLUDE [azmsoperationallogs](.././tables/includes/azmsoperationallogs-include.md)]

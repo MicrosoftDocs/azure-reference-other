@@ -6,21 +6,24 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # Heartbeat
 
 Records logged by Log Analytics agents once per minute to report on agent health.
 
+
 ## Categories
 
 - Virtual Machines
 - Containers
 - IT & Management Tools
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Virtual machines
@@ -33,9 +36,11 @@ Records logged by Log Analytics agents once per minute to report on agent health
 - Azure Arc Provisioned Clusters
 - Automation account
 
-            
+## Queries
+
+ Sample queries for the [Heartbeat](../queries/heartbeat.md) table.
 
 
 ## Columns
   
-[!INCLUDE [heartbeat](../includes/heartbeat-include.md)]
+[!INCLUDE [heartbeat](.././tables/includes/heartbeat-include.md)]

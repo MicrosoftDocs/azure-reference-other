@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # SynapseSqlPoolSqlRequests
 
 Information about query distributions of the steps of SQL requests/queries in an Azure Synapse dedicated SQL pool.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Synapse Workspaces
 
-            
-
-
 ## Columns
   
-[!INCLUDE [synapsesqlpoolsqlrequests](../includes/synapsesqlpoolsqlrequests-include.md)]
+[!INCLUDE [synapsesqlpoolsqlrequests](.././tables/includes/synapsesqlpoolsqlrequests-include.md)]

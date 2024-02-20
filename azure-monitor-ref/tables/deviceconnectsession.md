@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DeviceConnectSession
 
 
 
+
 ## Categories
 
 - Workloads
+
 ## Solutions
 
 - SurfaceHub
 
-            
-
-
 ## Columns
   
-[!INCLUDE [deviceconnectsession](../includes/deviceconnectsession-include.md)]
+[!INCLUDE [deviceconnectsession](.././tables/includes/deviceconnectsession-include.md)]

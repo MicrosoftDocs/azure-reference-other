@@ -6,23 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # UrlClickEvents
 
 Events involving URLs clicked, selected, or requested on Microsoft Defender for Office 365.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - SecurityInsights
 
-            
+## Queries
+
+ Sample queries for the [UrlClickEvents](../queries/urlclickevents.md) table.
 
 
 ## Columns
   
-[!INCLUDE [urlclickevents](../includes/urlclickevents-include.md)]
+[!INCLUDE [urlclickevents](.././tables/includes/urlclickevents-include.md)]

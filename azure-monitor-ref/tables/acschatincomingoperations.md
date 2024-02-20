@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ACSChatIncomingOperations
 
 Communication Services logs of incoming requests to chat operations.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Communication Services
 
-            
+## Queries
+
+ Sample queries for the [ACSChatIncomingOperations](../queries/acschatincomingoperations.md) table.
 
 
 ## Columns
   
-[!INCLUDE [acschatincomingoperations](../includes/acschatincomingoperations-include.md)]
+[!INCLUDE [acschatincomingoperations](.././tables/includes/acschatincomingoperations-include.md)]

@@ -6,22 +6,25 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # VMConnection
 
 Traffic for inbound and outbound connections to and from monitored computers.
 
+
 ## Categories
 
 - Virtual Machines
+
 ## Solutions
 
 - AzureResources
 - InfrastructureInsights
 - ServiceMap
 - VMInsights
+
 ## Resource types
 
 - Virtual machines
@@ -30,9 +33,6 @@ Traffic for inbound and outbound connections to and from monitored computers.
 - System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
 
-            
-
-
 ## Columns
   
-[!INCLUDE [vmconnection](../includes/vmconnection-include.md)]
+[!INCLUDE [vmconnection](.././tables/includes/vmconnection-include.md)]

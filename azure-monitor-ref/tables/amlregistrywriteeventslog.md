@@ -6,27 +6,32 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AmlRegistryWriteEventsLog
 
 Azure ML Registry Write events log. It keeps records of Write operations with registries data access (data plane), including user identity, asset name and version for each access event.
 
+
 ## Categories
 
 - Audit
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Machine Learning
 
-            
+## Queries
+
+ Sample queries for the [AmlRegistryWriteEventsLog](../queries/amlregistrywriteeventslog.md) table.
 
 
 ## Columns
   
-[!INCLUDE [amlregistrywriteeventslog](../includes/amlregistrywriteeventslog-include.md)]
+[!INCLUDE [amlregistrywriteeventslog](.././tables/includes/amlregistrywriteeventslog-include.md)]

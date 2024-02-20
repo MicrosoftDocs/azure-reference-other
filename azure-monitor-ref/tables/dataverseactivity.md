@@ -6,24 +6,28 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 11/06/2023
+ms.date: 02/18/2024
 ---
 
 # DataverseActivity
 
 Contains Microsoft Dataverse audit logs. It's typically used to track Dataverse and Dynamics 365 activities.
 
+
 ## Categories
 
 - Security
 - Audit
+
 ## Solutions
 
 - SecurityInsights
 
-            
+## Queries
+
+ Sample queries for the [DataverseActivity](../queries/dataverseactivity.md) table.
 
 
 ## Columns
   
-[!INCLUDE [dataverseactivity](../includes/dataverseactivity-include.md)]
+[!INCLUDE [dataverseactivity](.././tables/includes/dataverseactivity-include.md)]

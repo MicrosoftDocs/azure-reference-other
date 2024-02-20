@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Web/staticsites, naam
@@ -10,19 +10,18 @@ ms.custom: Microsoft.Web/staticsites, naam
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Data Out**<p><p>BytesSent |`BytesSent` |Bytes |Total |\<none\>|PT5M, PT1H, P1D |Yes|
-|**CdnPercentageOf4XX**<p><p>CdnPercentageOf4XX |`CdnPercentageOf4XX` |Percent |Total |\<none\>|PT5M, PT1H, P1D |Yes|
-|**CdnPercentageOf5XX**<p><p>CdnPercentageOf5XX |`CdnPercentageOf5XX` |Percent |Total |\<none\>|PT5M, PT1H, P1D |Yes|
-|**CdnRequestCount**<p><p>CdnRequestCount |`CdnRequestCount` |Count |Total |\<none\>|PT5M, PT1H, P1D |Yes|
-|**CdnResponseSize**<p><p>CdnResponseSize |`CdnResponseSize` |Bytes |Total |\<none\>|PT5M, PT1H, P1D |Yes|
-|**CdnTotalLatency**<p><p>CdnTotalLatency |`CdnTotalLatency` |MilliSeconds |Total |\<none\>|PT5M, PT1H, P1D |Yes|
-|**DataApiErrors**<p><p>DataApiErrors |`DataApiErrors` |Count |Total |\<none\>|PT5M, PT1H, P1D |Yes|
-|**DataApiHits**<p><p>DataApiHits |`DataApiHits` |Count |Total |\<none\>|PT5M, PT1H, P1D |Yes|
-|**FunctionErrors**<p><p>FunctionErrors |`FunctionErrors` |Count |Total |\<none\>|PT5M, PT1H, P1D |Yes|
-|**FunctionHits**<p><p>FunctionHits |`FunctionHits` |Count |Total |\<none\>|PT5M, PT1H, P1D |Yes|
-|**SiteErrors**<p><p>SiteErrors |`SiteErrors` |Count |Total |\<none\>|PT5M, PT1H, P1D |Yes|
-|**SiteHits**<p><p>SiteHits |`SiteHits` |Count |Total |\<none\>|PT5M, PT1H, P1D |Yes|
+|**Data Out**<br><br>BytesSent |`BytesSent` |Bytes |Total |\<none\>|PT5M, PT1H, P1D |Yes|
+|**CdnPercentageOf4XX**<br><br>CdnPercentageOf4XX |`CdnPercentageOf4XX` |Percent |Total |\<none\>|PT5M, PT1H, P1D |Yes|
+|**CdnPercentageOf5XX**<br><br>CdnPercentageOf5XX |`CdnPercentageOf5XX` |Percent |Total |\<none\>|PT5M, PT1H, P1D |Yes|
+|**CdnRequestCount**<br><br>CdnRequestCount |`CdnRequestCount` |Count |Total |\<none\>|PT5M, PT1H, P1D |Yes|
+|**CdnResponseSize**<br><br>CdnResponseSize |`CdnResponseSize` |Bytes |Total |\<none\>|PT5M, PT1H, P1D |Yes|
+|**CdnTotalLatency**<br><br>CdnTotalLatency |`CdnTotalLatency` |MilliSeconds |Total |\<none\>|PT5M, PT1H, P1D |Yes|
+|**DataApiErrors**<br><br>DataApiErrors |`DataApiErrors` |Count |Total |\<none\>|PT5M, PT1H, P1D |Yes|
+|**DataApiHits**<br><br>DataApiHits |`DataApiHits` |Count |Total |\<none\>|PT5M, PT1H, P1D |Yes|
+|**FunctionErrors**<br><br>FunctionErrors |`FunctionErrors` |Count |Total |\<none\>|PT5M, PT1H, P1D |Yes|
+|**FunctionHits**<br><br>FunctionHits |`FunctionHits` |Count |Total |\<none\>|PT5M, PT1H, P1D |Yes|
+|**SiteErrors**<br><br>SiteErrors |`SiteErrors` |Count |Total |\<none\>|PT5M, PT1H, P1D |Yes|
+|**SiteHits**<br><br>SiteHits |`SiteHits` |Count |Total |\<none\>|PT5M, PT1H, P1D |Yes|

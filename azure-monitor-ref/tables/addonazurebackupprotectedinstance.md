@@ -6,10 +6,11 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AddonAzureBackupProtectedInstance
+
 
 
 
@@ -17,16 +18,15 @@ ms.date: 08/28/2023
 
 - IT & Management Tools
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Recovery Services Vaults
 
-            
-
-
 ## Columns
   
-[!INCLUDE [addonazurebackupprotectedinstance](../includes/addonazurebackupprotectedinstance-include.md)]
+[!INCLUDE [addonazurebackupprotectedinstance](.././tables/includes/addonazurebackupprotectedinstance-include.md)]

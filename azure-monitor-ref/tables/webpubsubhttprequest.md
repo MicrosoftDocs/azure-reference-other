@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # WebPubSubHttpRequest
 
 Http request logs provide detailed information for the http requests received by Azure Web PubSub. For example, status code and url of the request and is helpful to troubleshoot request-related issues.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - SignalR Service WebPubSub
 
-            
-
-
 ## Columns
   
-[!INCLUDE [webpubsubhttprequest](../includes/webpubsubhttprequest-include.md)]
+[!INCLUDE [webpubsubhttprequest](.././tables/includes/webpubsubhttprequest-include.md)]

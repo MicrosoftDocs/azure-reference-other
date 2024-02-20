@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ADFActivityRun
 
 
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Data factories
 
-            
+## Queries
+
+ Sample queries for the [ADFActivityRun](../queries/adfactivityrun.md) table.
 
 
 ## Columns
   
-[!INCLUDE [adfactivityrun](../includes/adfactivityrun-include.md)]
+[!INCLUDE [adfactivityrun](.././tables/includes/adfactivityrun-include.md)]

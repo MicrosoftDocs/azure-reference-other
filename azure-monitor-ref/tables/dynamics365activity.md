@@ -6,20 +6,18 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # Dynamics365Activity
 
 Audit logs for Dynamics 365 tenants collected by Azure Sentinel.
 
+
 ## Solutions
 
 - SecurityInsights
 
-            
-
-
 ## Columns
   
-[!INCLUDE [dynamics365activity](../includes/dynamics365activity-include.md)]
+[!INCLUDE [dynamics365activity](.././tables/includes/dynamics365activity-include.md)]

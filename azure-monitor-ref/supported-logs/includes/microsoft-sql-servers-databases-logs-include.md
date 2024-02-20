@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Sql/servers/databases, naam
@@ -11,21 +11,21 @@ ms.custom: Microsoft.Sql/servers/databases, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|AutomaticTuning |Automatic tuning |No |
-|Blocks |Blocks |No |
-|DatabaseWaitStatistics |Database Wait Statistics |No |
-|Deadlocks |Deadlocks |No |
-|DevOpsOperationsAudit |Devops operations Audit Logs |No |
-|DmsWorkers |Dms Workers |No |
-|Errors |Errors |No |
-|ExecRequests |Exec Requests |No |
-|QueryStoreRuntimeStatistics |Query Store Runtime Statistics |No |
-|QueryStoreWaitStatistics |Query Store Wait Statistics |No |
-|RequestSteps |Request Steps |No |
-|SQLInsights |SQL Insights |No |
-|SqlRequests |Sql Requests |No |
-|SQLSecurityAuditEvents |SQL Security Audit Event |No |
-|Timeouts |Timeouts |No |
-|Waits |Waits |No |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`AutomaticTuning` |Automatic tuning |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftsql)|No |
+|`Blocks` |Blocks |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftsql)|No |
+|`DatabaseWaitStatistics` |Database Wait Statistics |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftsql)|No |
+|`Deadlocks` |Deadlocks |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftsql)|No |
+|`DevOpsOperationsAudit` |Devops operations Audit Logs |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftsql)|No |
+|`DmsWorkers` |Dms Workers |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftsql)|No |
+|`Errors` |Errors |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftsql)|No |
+|`ExecRequests` |Exec Requests |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftsql)|No |
+|`QueryStoreRuntimeStatistics` |Query Store Runtime Statistics |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftsql)|No |
+|`QueryStoreWaitStatistics` |Query Store Wait Statistics |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftsql)|No |
+|`RequestSteps` |Request Steps |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftsql)|No |
+|`SQLInsights` |SQL Insights |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftsql)|No |
+|`SqlRequests` |Sql Requests |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftsql)|No |
+|`SQLSecurityAuditEvents` |SQL Security Audit Event |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftsql)|No |
+|`Timeouts` |Timeouts |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftsql)|No |
+|`Waits` |Waits |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftsql)|No |

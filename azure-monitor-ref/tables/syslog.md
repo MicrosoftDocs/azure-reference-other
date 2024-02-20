@@ -6,20 +6,23 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # Syslog
 
 Syslog events on Linux computers using the Log Analytics agent.
 
+
 ## Categories
 
 - Virtual Machines
 - Security
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Arc Enabled Kubernetes
@@ -31,9 +34,11 @@ Syslog events on Linux computers using the Log Analytics agent.
 - Virtual Machine Scale Sets
 - Azure Arc Provisioned Clusters
 
-            
+## Queries
+
+ Sample queries for the [Syslog](../queries/syslog.md) table.
 
 
 ## Columns
   
-[!INCLUDE [syslog](../includes/syslog-include.md)]
+[!INCLUDE [syslog](.././tables/includes/syslog-include.md)]

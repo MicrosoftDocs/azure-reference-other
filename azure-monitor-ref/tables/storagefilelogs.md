@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # StorageFileLogs
 
 Storage File Service Logs Schema
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Storage Accounts
 
-            
-
-
 ## Columns
   
-[!INCLUDE [storagefilelogs](../includes/storagefilelogs-include.md)]
+[!INCLUDE [storagefilelogs](.././tables/includes/storagefilelogs-include.md)]

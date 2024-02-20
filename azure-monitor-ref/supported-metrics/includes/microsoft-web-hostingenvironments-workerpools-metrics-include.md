@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Web/hostingenvironments/workerpools, naam
@@ -10,12 +10,11 @@ ms.custom: Microsoft.Web/hostingenvironments/workerpools, naam
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**CPU Percentage**<p><p>The average CPU used across all instances of the worker pool. |`CpuPercentage` |Percent |Average |`Instance`|PT1M |Yes|
-|**Memory Percentage**<p><p>The average memory used across all instances of the worker pool. |`MemoryPercentage` |Percent |Average |`Instance`|PT1M |Yes|
-|**Available Workers**<p><p>Available Workers |`WorkersAvailable` |Count |Average |\<none\>|PT1M |Yes|
-|**Total Workers**<p><p>Total Workers |`WorkersTotal` |Count |Average |\<none\>|PT1M |Yes|
-|**Used Workers**<p><p>Used Workers |`WorkersUsed` |Count |Average |\<none\>|PT1M |Yes|
+|**CPU Percentage**<br><br>The average CPU used across all instances of the worker pool. |`CpuPercentage` |Percent |Average |`Instance`|PT1M |Yes|
+|**Memory Percentage**<br><br>The average memory used across all instances of the worker pool. |`MemoryPercentage` |Percent |Average |`Instance`|PT1M |Yes|
+|**Available Workers**<br><br>Available Workers |`WorkersAvailable` |Count |Average |\<none\>|PT1M |Yes|
+|**Total Workers**<br><br>Total Workers |`WorkersTotal` |Count |Average |\<none\>|PT1M |Yes|
+|**Used Workers**<br><br>Used Workers |`WorkersUsed` |Count |Average |\<none\>|PT1M |Yes|

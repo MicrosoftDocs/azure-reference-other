@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AmlComputeClusterNodeEvent
 
 AmlCompute Cluster Node events
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Machine Learning
 
-            
-
-
 ## Columns
   
-[!INCLUDE [amlcomputeclusternodeevent](../includes/amlcomputeclusternodeevent-include.md)]
+[!INCLUDE [amlcomputeclusternodeevent](.././tables/includes/amlcomputeclusternodeevent-include.md)]

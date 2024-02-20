@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Network/connections, naam
@@ -10,9 +10,8 @@ ms.custom: Microsoft.Network/connections, naam
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**BitsInPerSecond**<p><p>Bits ingressing Azure per second |`BitsInPerSecond` |BitsPerSecond |Average |\<none\>|PT1M |Yes|
-|**BitsOutPerSecond**<p><p>Bits egressing Azure per second |`BitsOutPerSecond` |BitsPerSecond |Average |\<none\>|PT1M |Yes|
+|**BitsInPerSecond**<br><br>Bits ingressing Azure per second |`BitsInPerSecond` |BitsPerSecond |Average |\<none\>|PT1M |Yes|
+|**BitsOutPerSecond**<br><br>Bits egressing Azure per second |`BitsOutPerSecond` |BitsPerSecond |Average |\<none\>|PT1M |Yes|

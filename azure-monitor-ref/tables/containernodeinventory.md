@@ -6,29 +6,34 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # ContainerNodeInventory
 
 Table that stores Container host/node information
 
+
 ## Categories
 
 - Containers
+
 ## Solutions
 
 - AzureResources
 - ContainerInsights
+
 ## Resource types
 
 - Azure Arc Enabled Kubernetes
 - Kubernetes Services
 - Azure Arc Provisioned Clusters
 
-            
+## Queries
+
+ Sample queries for the [ContainerNodeInventory](../queries/containernodeinventory.md) table.
 
 
 ## Columns
   
-[!INCLUDE [containernodeinventory](../includes/containernodeinventory-include.md)]
+[!INCLUDE [containernodeinventory](.././tables/includes/containernodeinventory-include.md)]

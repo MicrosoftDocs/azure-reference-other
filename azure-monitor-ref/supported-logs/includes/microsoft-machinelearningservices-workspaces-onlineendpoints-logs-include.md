@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.MachineLearningServices/workspaces/onlineEndpoints, naam
@@ -11,8 +11,8 @@ ms.custom: Microsoft.MachineLearningServices/workspaces/onlineEndpoints, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|AmlOnlineEndpointConsoleLog |AmlOnlineEndpointConsoleLog |Yes |
-|AmlOnlineEndpointEventLog |AmlOnlineEndpointEventLog |Yes |
-|AmlOnlineEndpointTrafficLog |AmlOnlineEndpointTrafficLog |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`AmlOnlineEndpointConsoleLog` |AmlOnlineEndpointConsoleLog |[AmlOnlineEndpointConsoleLog](/azure/azure-monitor/reference/tables/amlonlineendpointconsolelog)<p>Azure ML online endpoints console logs. It provides console logs output from user containers.|No|Yes|[Queries](../../queries/amlonlineendpointconsolelog.md)|Yes |
+|`AmlOnlineEndpointEventLog` |AmlOnlineEndpointEventLog |[AmlOnlineEndpointEventLog](/azure/azure-monitor/reference/tables/amlonlineendpointeventlog)<p>Azure ML online endpoints event logs. It provides event logs regarding the inference-server container's life cycle.|No|No|[Queries](../../queries/amlonlineendpointeventlog.md)|Yes |
+|`AmlOnlineEndpointTrafficLog` |AmlOnlineEndpointTrafficLog |[AmlOnlineEndpointTrafficLog](/azure/azure-monitor/reference/tables/amlonlineendpointtrafficlog)<p>Traffic logs for AzureML (machine learning) online endpoints. The table could be used to check the detailed information of the request to an online endpoint. For example, you could use it to check the request duration, the request failure reason, etc.|No|No|[Queries](../../queries/amlonlineendpointtrafficlog.md)|Yes |

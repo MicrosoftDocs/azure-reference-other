@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DatabricksGlobalInitScripts
 
 Audit logs for events related to creation, modification etc. of Databricks cluster global init scripts.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Databricks Services
 
-            
-
-
 ## Columns
   
-[!INCLUDE [databricksglobalinitscripts](../includes/databricksglobalinitscripts-include.md)]
+[!INCLUDE [databricksglobalinitscripts](.././tables/includes/databricksglobalinitscripts-include.md)]

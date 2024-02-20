@@ -6,22 +6,25 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # ContainerLog
 
 Log lines collected from stdout and stderr streams for containers.
 
+
 ## Categories
 
 - Containers
 - Applications
+
 ## Solutions
 
 - AzureResources
 - ContainerInsights
 - Containers
+
 ## Resource types
 
 - Azure Arc Enabled Kubernetes
@@ -33,9 +36,11 @@ Log lines collected from stdout and stderr streams for containers.
 - Virtual Machine Scale Sets
 - Azure Arc Provisioned Clusters
 
-            
+## Queries
+
+ Sample queries for the [ContainerLog](../queries/containerlog.md) table.
 
 
 ## Columns
   
-[!INCLUDE [containerlog](../includes/containerlog-include.md)]
+[!INCLUDE [containerlog](.././tables/includes/containerlog-include.md)]

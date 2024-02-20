@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AzureAttestationDiagnostics
 
 Logs from attestation requests.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Attestation
 
-            
+## Queries
+
+ Sample queries for the [AzureAttestationDiagnostics](../queries/azureattestationdiagnostics.md) table.
 
 
 ## Columns
   
-[!INCLUDE [azureattestationdiagnostics](../includes/azureattestationdiagnostics-include.md)]
+[!INCLUDE [azureattestationdiagnostics](.././tables/includes/azureattestationdiagnostics-include.md)]

@@ -6,10 +6,11 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AutoscaleEvaluationsLog
+
 
 
 
@@ -18,16 +19,20 @@ ms.date: 08/28/2023
 - Azure Monitor
 - Virtual Machines
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Monitor autoscale settings
 
-            
+## Queries
+
+ Sample queries for the [AutoscaleEvaluationsLog](../queries/autoscaleevaluationslog.md) table.
 
 
 ## Columns
   
-[!INCLUDE [autoscaleevaluationslog](../includes/autoscaleevaluationslog-include.md)]
+[!INCLUDE [autoscaleevaluationslog](.././tables/includes/autoscaleevaluationslog-include.md)]

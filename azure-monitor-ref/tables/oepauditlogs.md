@@ -6,27 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # OEPAuditLogs
 
 Audit Logs for Microsoft Energy Data Services.
 
+
 ## Categories
 
 - Audit
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Data Manager for Energy
 
-            
-
-
 ## Columns
   
-[!INCLUDE [oepauditlogs](../includes/oepauditlogs-include.md)]
+[!INCLUDE [oepauditlogs](.././tables/includes/oepauditlogs-include.md)]

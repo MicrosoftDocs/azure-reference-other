@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # MNFDeviceUpdates
 
 Components state updates representing the status changes of ethernet ports, power supply units, fan modules, chassis and device software.
 
+
 ## Categories
 
 - Network
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Network Devices (Operator Nexus)
 
-            
+## Queries
+
+ Sample queries for the [MNFDeviceUpdates](../queries/mnfdeviceupdates.md) table.
 
 
 ## Columns
   
-[!INCLUDE [mnfdeviceupdates](../includes/mnfdeviceupdates-include.md)]
+[!INCLUDE [mnfdeviceupdates](.././tables/includes/mnfdeviceupdates-include.md)]

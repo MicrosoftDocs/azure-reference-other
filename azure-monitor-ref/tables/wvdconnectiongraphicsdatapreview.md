@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # WVDConnectionGraphicsDataPreview
 
 Windows Virtual Desktop connection graphics data.
 
+
 ## Categories
 
 - Azure Virtual Desktop
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Desktop Virtualization Host Pools
 
-            
-
-
 ## Columns
   
-[!INCLUDE [wvdconnectiongraphicsdatapreview](../includes/wvdconnectiongraphicsdatapreview-include.md)]
+[!INCLUDE [wvdconnectiongraphicsdatapreview](.././tables/includes/wvdconnectiongraphicsdatapreview-include.md)]

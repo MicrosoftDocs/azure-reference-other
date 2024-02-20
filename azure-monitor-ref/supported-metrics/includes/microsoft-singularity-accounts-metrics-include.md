@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: microsoft.singularity/accounts, naam
@@ -10,8 +10,7 @@ ms.custom: microsoft.singularity/accounts, naam
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**GpuUtilizationPercentage**<p><p>GPU utilization percentage |`GpuUtilizationPercentage` |Percent |Average |`accountname`, `ClusterName`, `Environment`, `instance`, `jobContainerId`, `jobInstanceId`, `jobname`, `Region`|PT1M |Yes|
+|**GpuUtilizationPercentage**<br><br>GPU utilization percentage |`GpuUtilizationPercentage` |Percent |Average |`accountname`, `ClusterName`, `Environment`, `instance`, `jobContainerId`, `jobInstanceId`, `jobname`, `Region`|PT1M |Yes|

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Automation/automationAccounts, naam
@@ -10,11 +10,10 @@ ms.custom: Microsoft.Automation/automationAccounts, naam
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Hybrid Worker Ping**<p><p>The number of pings from the hybrid worker |`HybridWorkerPing` |Count |Total, Average, Maximum, Minimum, Count |`HybridWorkerGroup`, `HybridWorker`, `HybridWorkerVersion`|PT1M |Yes|
-|**Total Jobs**<p><p>The total number of jobs |`TotalJob` |Count |Total, Average, Maximum, Minimum, Count |`Runbook`, `Status`|PT1M |Yes|
-|**Total Update Deployment Machine Runs**<p><p>Total software update deployment machine runs in a software update deployment run |`TotalUpdateDeploymentMachineRuns` |Count |Total, Average, Maximum, Minimum, Count |`Status`, `TargetComputer`, `SoftwareUpdateConfigurationName`, `SoftwareUpdateConfigurationRunId`|PT1M |Yes|
-|**Total Update Deployment Runs**<p><p>Total software update deployment runs |`TotalUpdateDeploymentRuns` |Count |Total, Average, Maximum, Minimum, Count |`Status`, `SoftwareUpdateConfigurationName`|PT1M |Yes|
+|**Hybrid Worker Ping**<br><br>The number of pings from the hybrid worker |`HybridWorkerPing` |Count |Total, Average, Maximum, Minimum, Count |`HybridWorkerGroup`, `HybridWorker`, `HybridWorkerVersion`|PT1M |Yes|
+|**Total Jobs**<br><br>The total number of jobs |`TotalJob` |Count |Total, Average, Maximum, Minimum, Count |`Runbook`, `Status`|PT1M |Yes|
+|**Total Update Deployment Machine Runs**<br><br>Total software update deployment machine runs in a software update deployment run |`TotalUpdateDeploymentMachineRuns` |Count |Total, Average, Maximum, Minimum, Count |`Status`, `TargetComputer`, `SoftwareUpdateConfigurationName`, `SoftwareUpdateConfigurationRunId`|PT1M |Yes|
+|**Total Update Deployment Runs**<br><br>Total software update deployment runs |`TotalUpdateDeploymentRuns` |Count |Total, Average, Maximum, Minimum, Count |`Status`, `SoftwareUpdateConfigurationName`|PT1M |Yes|

@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # MAWindowsDeploymentStatus
 
 
 
+
 ## Categories
 
 - Desktop Analytics
+
 ## Solutions
 
 - Microsoft365Analytics
 
-            
-
-
 ## Columns
   
-[!INCLUDE [mawindowsdeploymentstatus](../includes/mawindowsdeploymentstatus-include.md)]
+[!INCLUDE [mawindowsdeploymentstatus](.././tables/includes/mawindowsdeploymentstatus-include.md)]

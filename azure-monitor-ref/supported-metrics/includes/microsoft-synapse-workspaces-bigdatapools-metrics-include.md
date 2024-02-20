@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Synapse/workspaces/bigDataPools, naam
@@ -10,11 +10,10 @@ ms.custom: Microsoft.Synapse/workspaces/bigDataPools, naam
  
 ---
 
-  
-  
+
 |Category|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|---|
-|Apache Spark pool|**vCores allocated**<p><p>Allocated vCores for an Apache Spark Pool |`BigDataPoolAllocatedCores` |Count |Maximum, Minimum, Average, Total |`SubmitterId`|PT1M |No|
-|Apache Spark pool|**Memory allocated (GB)**<p><p>Allocated Memory for Apach Spark Pool (GB) |`BigDataPoolAllocatedMemory` |Count |Maximum, Minimum, Average, Total |`SubmitterId`|PT1M |No|
-|Apache Spark pool|**Active Apache Spark applications**<p><p>Total Active Apache Spark Pool Applications |`BigDataPoolApplicationsActive` |Count |Maximum, Minimum, Average |`JobState`|PT1M |No|
-|Apache Spark pool|**Ended Apache Spark applications**<p><p>Count of Apache Spark pool applications ended |`BigDataPoolApplicationsEnded` |Count |Total |`JobType`, `JobResult`|PT1M |No|
+|Apache Spark pool|**vCores allocated**<br><br>Allocated vCores for an Apache Spark Pool |`BigDataPoolAllocatedCores` |Count |Maximum, Minimum, Average, Total |`SubmitterId`|PT1M |No|
+|Apache Spark pool|**Memory allocated (GB)**<br><br>Allocated Memory for Apach Spark Pool (GB) |`BigDataPoolAllocatedMemory` |Count |Maximum, Minimum, Average, Total |`SubmitterId`|PT1M |No|
+|Apache Spark pool|**Active Apache Spark applications**<br><br>Total Active Apache Spark Pool Applications |`BigDataPoolApplicationsActive` |Count |Maximum, Minimum, Average |`JobState`|PT1M |No|
+|Apache Spark pool|**Ended Apache Spark applications**<br><br>Count of Apache Spark pool applications ended |`BigDataPoolApplicationsEnded` |Count |Total |`JobType`, `JobResult`|PT1M |No|

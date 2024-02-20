@@ -6,19 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ConfigurationChange
 
 View changes to in-guest configuration data such as Files Software Registry Keys Windows Services and Linux Daemons
 
+
 ## Categories
 
 - IT & Management Tools
+
 ## Solutions
 
 - ChangeTracking
+
 ## Resource types
 
 - Virtual machines
@@ -27,9 +30,11 @@ View changes to in-guest configuration data such as Files Software Registry Keys
 - System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
 
-            
+## Queries
+
+ Sample queries for the [ConfigurationChange](../queries/configurationchange.md) table.
 
 
 ## Columns
   
-[!INCLUDE [configurationchange](../includes/configurationchange-include.md)]
+[!INCLUDE [configurationchange](.././tables/includes/configurationchange-include.md)]

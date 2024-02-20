@@ -6,28 +6,33 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AVNMNetworkGroupMembershipChange
 
 Includes changes to network group membership of network resources like a virtual network.
 
+
 ## Categories
 
 - Azure Resources
 - Network
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Virtual Network Manager
 
-            
+## Queries
+
+ Sample queries for the [AVNMNetworkGroupMembershipChange](../queries/avnmnetworkgroupmembershipchange.md) table.
 
 
 ## Columns
   
-[!INCLUDE [avnmnetworkgroupmembershipchange](../includes/avnmnetworkgroupmembershipchange-include.md)]
+[!INCLUDE [avnmnetworkgroupmembershipchange](.././tables/includes/avnmnetworkgroupmembershipchange-include.md)]

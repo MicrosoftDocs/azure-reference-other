@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.ManagedNetworkFabric/internetGateways, naam
@@ -10,13 +10,12 @@ ms.custom: Microsoft.ManagedNetworkFabric/internetGateways, naam
  
 ---
 
-  
-  
+
 |Category|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|---|
-|Proxy Connection Metrics|**Inbound active connections**<p><p>Count of inbound active connections |`InboundConnectionsActive` |Count |Average, Maximum, Minimum |`nfcId`, `gatewayType`|PT1M |Yes|
-|Proxy Connection Metrics|**Total inbound connections**<p><p>Count of inbound connections |`InboundConnectionsTotal` |Count |Average, Maximum, Minimum |`nfcId`, `gatewayType`|PT1M |Yes|
-|Proxy Connection Metrics|**Total outbound active connections**<p><p>Count of outbound active connections |`OutboundConnectionsActive` |Count |Average, Maximum, Minimum |`nfcId`, `gatewayType`|PT1M |Yes|
-|Proxy Connection Metrics|**Total outbound failed connections**<p><p>Count of outbound total failed connections |`OutboundConnectionsFail` |Count |Average, Maximum, Minimum |`nfcId`, `gatewayType`|PT1M |Yes|
-|Proxy Connection Metrics|**Total outbound connection timeouts**<p><p>Count of outbound connection timeouts |`OutboundConnectionsTimeout` |Count |Average, Maximum, Minimum |`nfcId`, `gatewayType`|PT1M |Yes|
-|Proxy Connection Metrics|**Total outbound connections**<p><p>Count of outbound total connections |`OutboundConnectionsTotal` |Count |Average, Maximum, Minimum |`nfcId`, `gatewayType`|PT1M |Yes|
+|Proxy Connection Metrics|**Inbound active connections**<br><br>Count of inbound active connections |`InboundConnectionsActive` |Count |Average, Maximum, Minimum |`nfcId`, `gatewayType`|PT1M |Yes|
+|Proxy Connection Metrics|**Total inbound connections**<br><br>Count of inbound connections |`InboundConnectionsTotal` |Count |Average, Maximum, Minimum |`nfcId`, `gatewayType`|PT1M |Yes|
+|Proxy Connection Metrics|**Total outbound active connections**<br><br>Count of outbound active connections |`OutboundConnectionsActive` |Count |Average, Maximum, Minimum |`nfcId`, `gatewayType`|PT1M |Yes|
+|Proxy Connection Metrics|**Total outbound failed connections**<br><br>Count of outbound total failed connections |`OutboundConnectionsFail` |Count |Average, Maximum, Minimum |`nfcId`, `gatewayType`|PT1M |Yes|
+|Proxy Connection Metrics|**Total outbound connection timeouts**<br><br>Count of outbound connection timeouts |`OutboundConnectionsTimeout` |Count |Average, Maximum, Minimum |`nfcId`, `gatewayType`|PT1M |Yes|
+|Proxy Connection Metrics|**Total outbound connections**<br><br>Count of outbound total connections |`OutboundConnectionsTotal` |Count |Average, Maximum, Minimum |`nfcId`, `gatewayType`|PT1M |Yes|

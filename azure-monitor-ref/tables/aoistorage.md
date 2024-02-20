@@ -6,27 +6,32 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/25/2023
+ms.date: 02/18/2024
 ---
 
 # AOIStorage
 
 These are Audit logs related to ingestion of files on the input storage account.
 
+
 ## Categories
 
 - Audit
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Operator Insights - Data Product
 
-            
+## Queries
+
+ Sample queries for the [AOIStorage](../queries/aoistorage.md) table.
 
 
 ## Columns
   
-[!INCLUDE [aoistorage](../includes/aoistorage-include.md)]
+[!INCLUDE [aoistorage](.././tables/includes/aoistorage-include.md)]

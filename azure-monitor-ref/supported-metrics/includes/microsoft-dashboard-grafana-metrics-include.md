@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Dashboard/grafana, naam
@@ -10,8 +10,7 @@ ms.custom: Microsoft.Dashboard/grafana, naam
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**HttpRequestCount**<p><p>Number of HTTP requests to Azure Managed Grafana server |`HttpRequestCount` |Count |Count |\<none\>|PT1M |No|
+|**HttpRequestCount**<br><br>Number of HTTP requests to Azure Managed Grafana server |`HttpRequestCount` |Count |Count |\<none\>|PT1M |No|

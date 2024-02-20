@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AppTraces
 
 Application Insights traces.
 
+
 ## Categories
 
 - Applications
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Application Insights
 
-            
-
-
 ## Columns
   
-[!INCLUDE [apptraces](../includes/apptraces-include.md)]
+[!INCLUDE [apptraces](.././tables/includes/apptraces-include.md)]

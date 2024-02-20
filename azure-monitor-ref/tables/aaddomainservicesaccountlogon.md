@@ -6,10 +6,11 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AADDomainServicesAccountLogon
+
 
 
 
@@ -17,16 +18,20 @@ ms.date: 08/28/2023
 
 - Azure Resources
 - Security
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure AD Domain Services
 
-            
+## Queries
+
+ Sample queries for the [AADDomainServicesAccountLogon](../queries/aaddomainservicesaccountlogon.md) table.
 
 
 ## Columns
   
-[!INCLUDE [aaddomainservicesaccountlogon](../includes/aaddomainservicesaccountlogon-include.md)]
+[!INCLUDE [aaddomainservicesaccountlogon](.././tables/includes/aaddomainservicesaccountlogon-include.md)]

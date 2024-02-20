@@ -6,23 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # WaaSDeploymentStatus
 
 
 
+
 ## Categories
 
 - Desktop Analytics
+
 ## Solutions
 
 - WaaSUpdateInsights
 
-            
+## Queries
+
+ Sample queries for the [WaaSDeploymentStatus](../queries/waasdeploymentstatus.md) table.
 
 
 ## Columns
   
-[!INCLUDE [waasdeploymentstatus](../includes/waasdeploymentstatus-include.md)]
+[!INCLUDE [waasdeploymentstatus](.././tables/includes/waasdeploymentstatus-include.md)]

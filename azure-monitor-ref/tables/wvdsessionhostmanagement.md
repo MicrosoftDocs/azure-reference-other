@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # WVDSessionHostManagement
 
 Windows Virtual Desktop session host management data.
 
+
 ## Categories
 
 - Azure Virtual Desktop
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Desktop Virtualization Host Pools
 
-            
-
-
 ## Columns
   
-[!INCLUDE [wvdsessionhostmanagement](../includes/wvdsessionhostmanagement-include.md)]
+[!INCLUDE [wvdsessionhostmanagement](.././tables/includes/wvdsessionhostmanagement-include.md)]

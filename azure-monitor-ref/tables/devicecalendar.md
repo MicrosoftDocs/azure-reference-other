@@ -6,23 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DeviceCalendar
 
 
 
+
 ## Categories
 
 - Workloads
+
 ## Solutions
 
 - SurfaceHub
 
-            
+## Queries
+
+ Sample queries for the [DeviceCalendar](../queries/devicecalendar.md) table.
 
 
 ## Columns
   
-[!INCLUDE [devicecalendar](../includes/devicecalendar-include.md)]
+[!INCLUDE [devicecalendar](.././tables/includes/devicecalendar-include.md)]

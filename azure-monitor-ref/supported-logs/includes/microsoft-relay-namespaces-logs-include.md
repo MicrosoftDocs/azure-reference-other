@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Relay/namespaces, naam
@@ -11,7 +11,7 @@ ms.custom: Microsoft.Relay/namespaces, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|HybridConnectionsEvent |HybridConnections Events |No |
-|VNetAndIPFilteringLogs |VNet/IP Filtering Connection Logs |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`HybridConnectionsEvent` |HybridConnections Events |[AZMSHybridConnectionsEvents](/azure/azure-monitor/reference/tables/azmshybridconnectionsevents)<p>Captures all hybrid connection events that are performed on the Azure Relay namespace.|Yes|No|[Queries](../../queries/azmshybridconnectionsevents.md)|No |
+|`VNetAndIPFilteringLogs` |VNet/IP Filtering Connection Logs |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No||Yes |

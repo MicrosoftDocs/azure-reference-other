@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DeviceEvents
 
 This table is part of Microsoft Defender for Endpoints with Azure Sentinel. This table contains Multiple event types, including events triggered by security controls such as Windows Defender Antivirus and exploit protection.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - SecurityInsights
 
-            
-
-
 ## Columns
   
-[!INCLUDE [deviceevents](../includes/deviceevents-include.md)]
+[!INCLUDE [deviceevents](.././tables/includes/deviceevents-include.md)]

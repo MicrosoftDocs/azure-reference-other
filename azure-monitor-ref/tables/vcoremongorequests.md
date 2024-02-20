@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 10/23/2023
+ms.date: 02/18/2024
 ---
 
 # VCoreMongoRequests
 
 This table details data plane requests for MongoDB (vCore).
 
+
 ## Categories
 
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Cosmos DB for MongoDB (vCore)
 
-            
+## Queries
+
+ Sample queries for the [VCoreMongoRequests](../queries/vcoremongorequests.md) table.
 
 
 ## Columns
   
-[!INCLUDE [vcoremongorequests](../includes/vcoremongorequests-include.md)]
+[!INCLUDE [vcoremongorequests](.././tables/includes/vcoremongorequests-include.md)]
