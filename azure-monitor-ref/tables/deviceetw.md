@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DeviceEtw
 
 
 
+
 ## Categories
 
 - Workloads
+
 ## Solutions
 
 - SurfaceHub
 
-            
-
-
 ## Columns
   
-[!INCLUDE [deviceetw](../includes/deviceetw-include.md)]
+[!INCLUDE [deviceetw](.././tables/includes/deviceetw-include.md)]

@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ThreatIntelligenceIndicator
 
 Threat Intelligence Indicator
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - SecurityInsights
 
-            
-
-
 ## Columns
   
-[!INCLUDE [threatintelligenceindicator](../includes/threatintelligenceindicator-include.md)]
+[!INCLUDE [threatintelligenceindicator](.././tables/includes/threatintelligenceindicator-include.md)]

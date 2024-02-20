@@ -6,27 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AEWAuditLogs
 
 Audit, activity and status for the Experiment Workspace.
 
+
 ## Categories
 
 - Azure Resources
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Experiment Workspace
 
-            
-
-
 ## Columns
   
-[!INCLUDE [aewauditlogs](../includes/aewauditlogs-include.md)]
+[!INCLUDE [aewauditlogs](.././tables/includes/aewauditlogs-include.md)]

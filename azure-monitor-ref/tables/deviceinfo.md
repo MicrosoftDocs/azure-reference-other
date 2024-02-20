@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DeviceInfo
 
 This table is part of Microsoft Defender for Endpoints with Azure Sentinel. This table contains Machine information, including OS information.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - SecurityInsights
 
-            
-
-
 ## Columns
   
-[!INCLUDE [deviceinfo](../includes/deviceinfo-include.md)]
+[!INCLUDE [deviceinfo](.././tables/includes/deviceinfo-include.md)]

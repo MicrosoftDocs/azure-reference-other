@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DataLakeAnalytics/accounts, naam
@@ -10,14 +10,13 @@ ms.custom: Microsoft.DataLakeAnalytics/accounts, naam
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Cancelled AU Time**<p><p>Total AU time for cancelled jobs. |`JobAUEndedCancelled` |Seconds |Total |\<none\>|PT1M |Yes|
-|**Failed AU Time**<p><p>Total AU time for failed jobs. |`JobAUEndedFailure` |Seconds |Total |\<none\>|PT1M |Yes|
-|**Successful AU Time**<p><p>Total AU time for successful jobs. |`JobAUEndedSuccess` |Seconds |Total |\<none\>|PT1M |Yes|
-|**Cancelled Jobs**<p><p>Count of cancelled jobs. |`JobEndedCancelled` |Count |Total |\<none\>|PT1M |Yes|
-|**Failed Jobs**<p><p>Count of failed jobs. |`JobEndedFailure` |Count |Total |\<none\>|PT1M |Yes|
-|**Successful Jobs**<p><p>Count of successful jobs. |`JobEndedSuccess` |Count |Total |\<none\>|PT1M |Yes|
-|**Jobs in Stage**<p><p>Number of jobs in each stage. |`JobStage` |Count |Total |\<none\>|PT1M |Yes|
+|**Cancelled AU Time**<br><br>Total AU time for cancelled jobs. |`JobAUEndedCancelled` |Seconds |Total |\<none\>|PT1M |Yes|
+|**Failed AU Time**<br><br>Total AU time for failed jobs. |`JobAUEndedFailure` |Seconds |Total |\<none\>|PT1M |Yes|
+|**Successful AU Time**<br><br>Total AU time for successful jobs. |`JobAUEndedSuccess` |Seconds |Total |\<none\>|PT1M |Yes|
+|**Cancelled Jobs**<br><br>Count of cancelled jobs. |`JobEndedCancelled` |Count |Total |\<none\>|PT1M |Yes|
+|**Failed Jobs**<br><br>Count of failed jobs. |`JobEndedFailure` |Count |Total |\<none\>|PT1M |Yes|
+|**Successful Jobs**<br><br>Count of successful jobs. |`JobEndedSuccess` |Count |Total |\<none\>|PT1M |Yes|
+|**Jobs in Stage**<br><br>Number of jobs in each stage. |`JobStage` |Count |Total |\<none\>|PT1M |Yes|

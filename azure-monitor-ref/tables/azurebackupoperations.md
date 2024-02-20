@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # AzureBackupOperations
 
 This table contains details of Azure Backup operations.
 
+
 ## Categories
 
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Recovery Services Vaults
 
-            
+## Queries
+
+ Sample queries for the [AzureBackupOperations](../queries/azurebackupoperations.md) table.
 
 
 ## Columns
   
-[!INCLUDE [azurebackupoperations](../includes/azurebackupoperations-include.md)]
+[!INCLUDE [azurebackupoperations](.././tables/includes/azurebackupoperations-include.md)]

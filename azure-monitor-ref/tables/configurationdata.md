@@ -6,19 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ConfigurationData
 
 View the last reported state for in-guest configuration data such as Files Software Registry Keys Windows Services and Linux Daemons
 
+
 ## Categories
 
 - IT & Management Tools
+
 ## Solutions
 
 - ChangeTracking
+
 ## Resource types
 
 - Virtual machines
@@ -27,9 +30,11 @@ View the last reported state for in-guest configuration data such as Files Softw
 - System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
 
-            
+## Queries
+
+ Sample queries for the [ConfigurationData](../queries/configurationdata.md) table.
 
 
 ## Columns
   
-[!INCLUDE [configurationdata](../includes/configurationdata-include.md)]
+[!INCLUDE [configurationdata](.././tables/includes/configurationdata-include.md)]

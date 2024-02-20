@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Relay/namespaces, naam
@@ -10,20 +10,19 @@ ms.custom: Microsoft.Relay/namespaces, naam
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**ActiveConnections**<p><p>Total ActiveConnections for Microsoft.Relay. |`ActiveConnections` |Count |Total |`EntityName`|PT1M |No|
-|**ActiveListeners**<p><p>Total ActiveListeners for Microsoft.Relay. |`ActiveListeners` |Count |Total |`EntityName`|PT1M |No|
-|**BytesTransferred**<p><p>Total BytesTransferred for Microsoft.Relay. |`BytesTransferred` |Bytes |Total |`EntityName`|PT1M |Yes|
-|**ListenerConnections-ClientError**<p><p>ClientError on ListenerConnections for Microsoft.Relay. |`ListenerConnections-ClientError` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
-|**ListenerConnections-ServerError**<p><p>ServerError on ListenerConnections for Microsoft.Relay. |`ListenerConnections-ServerError` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
-|**ListenerConnections-Success**<p><p>Successful ListenerConnections for Microsoft.Relay. |`ListenerConnections-Success` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
-|**ListenerConnections-TotalRequests**<p><p>Total ListenerConnections for Microsoft.Relay. |`ListenerConnections-TotalRequests` |Count |Total |`EntityName`|PT1M |No|
-|**ListenerDisconnects**<p><p>Total ListenerDisconnects for Microsoft.Relay. |`ListenerDisconnects` |Count |Total |`EntityName`|PT1M |No|
-|**SenderConnections-ClientError**<p><p>ClientError on SenderConnections for Microsoft.Relay. |`SenderConnections-ClientError` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
-|**SenderConnections-ServerError**<p><p>ServerError on SenderConnections for Microsoft.Relay. |`SenderConnections-ServerError` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
-|**SenderConnections-Success**<p><p>Successful SenderConnections for Microsoft.Relay. |`SenderConnections-Success` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
-|**SenderConnections-TotalRequests**<p><p>Total SenderConnections requests for Microsoft.Relay. |`SenderConnections-TotalRequests` |Count |Total |`EntityName`|PT1M |No|
-|**SenderDisconnects**<p><p>Total SenderDisconnects for Microsoft.Relay. |`SenderDisconnects` |Count |Total |`EntityName`|PT1M |No|
+|**ActiveConnections**<br><br>Total ActiveConnections for Microsoft.Relay. |`ActiveConnections` |Count |Total |`EntityName`|PT1M |No|
+|**ActiveListeners**<br><br>Total ActiveListeners for Microsoft.Relay. |`ActiveListeners` |Count |Total |`EntityName`|PT1M |No|
+|**BytesTransferred**<br><br>Total BytesTransferred for Microsoft.Relay. |`BytesTransferred` |Bytes |Total |`EntityName`|PT1M |Yes|
+|**ListenerConnections-ClientError**<br><br>ClientError on ListenerConnections for Microsoft.Relay. |`ListenerConnections-ClientError` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
+|**ListenerConnections-ServerError**<br><br>ServerError on ListenerConnections for Microsoft.Relay. |`ListenerConnections-ServerError` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
+|**ListenerConnections-Success**<br><br>Successful ListenerConnections for Microsoft.Relay. |`ListenerConnections-Success` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
+|**ListenerConnections-TotalRequests**<br><br>Total ListenerConnections for Microsoft.Relay. |`ListenerConnections-TotalRequests` |Count |Total |`EntityName`|PT1M |No|
+|**ListenerDisconnects**<br><br>Total ListenerDisconnects for Microsoft.Relay. |`ListenerDisconnects` |Count |Total |`EntityName`|PT1M |No|
+|**SenderConnections-ClientError**<br><br>ClientError on SenderConnections for Microsoft.Relay. |`SenderConnections-ClientError` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
+|**SenderConnections-ServerError**<br><br>ServerError on SenderConnections for Microsoft.Relay. |`SenderConnections-ServerError` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
+|**SenderConnections-Success**<br><br>Successful SenderConnections for Microsoft.Relay. |`SenderConnections-Success` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
+|**SenderConnections-TotalRequests**<br><br>Total SenderConnections requests for Microsoft.Relay. |`SenderConnections-TotalRequests` |Count |Total |`EntityName`|PT1M |No|
+|**SenderDisconnects**<br><br>Total SenderDisconnects for Microsoft.Relay. |`SenderDisconnects` |Count |Total |`EntityName`|PT1M |No|

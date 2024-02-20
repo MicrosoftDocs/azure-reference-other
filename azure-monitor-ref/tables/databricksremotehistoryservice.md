@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DatabricksRemoteHistoryService
 
 Audit logs for events adding and deleting credentials for Databricks remote history service.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Databricks Services
 
-            
-
-
 ## Columns
   
-[!INCLUDE [databricksremotehistoryservice](../includes/databricksremotehistoryservice-include.md)]
+[!INCLUDE [databricksremotehistoryservice](.././tables/includes/databricksremotehistoryservice-include.md)]

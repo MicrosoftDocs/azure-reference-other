@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DeviceRegistryEvents
 
 Microsoft Defender for Endpoints (MDE) device registry events table. This table contains contains creation and modification of registry entries on the endpoint, and information about the processes initiating such events.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - SecurityInsights
 
-            
-
-
 ## Columns
   
-[!INCLUDE [deviceregistryevents](../includes/deviceregistryevents-include.md)]
+[!INCLUDE [deviceregistryevents](.././tables/includes/deviceregistryevents-include.md)]

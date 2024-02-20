@@ -6,10 +6,11 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AADDomainServicesPrivilegeUse
+
 
 
 
@@ -17,16 +18,20 @@ ms.date: 08/28/2023
 
 - Azure Resources
 - Security
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure AD Domain Services
 
-            
+## Queries
+
+ Sample queries for the [AADDomainServicesPrivilegeUse](../queries/aaddomainservicesprivilegeuse.md) table.
 
 
 ## Columns
   
-[!INCLUDE [aaddomainservicesprivilegeuse](../includes/aaddomainservicesprivilegeuse-include.md)]
+[!INCLUDE [aaddomainservicesprivilegeuse](.././tables/includes/aaddomainservicesprivilegeuse-include.md)]

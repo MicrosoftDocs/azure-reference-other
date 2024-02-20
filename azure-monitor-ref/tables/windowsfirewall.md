@@ -6,20 +6,23 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # WindowsFirewall
 
 
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - Security
 - WindowsFirewall
+
 ## Resource types
 
 - Virtual machines
@@ -28,9 +31,6 @@ ms.date: 08/28/2023
 - System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
 
-            
-
-
 ## Columns
   
-[!INCLUDE [windowsfirewall](../includes/windowsfirewall-include.md)]
+[!INCLUDE [windowsfirewall](.././tables/includes/windowsfirewall-include.md)]

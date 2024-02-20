@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # SynapseBuiltinSqlPoolRequestsEnded
 
 Ended Azure Synapse built-in serverless SQL requests.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Synapse Workspaces
 
-            
-
-
 ## Columns
   
-[!INCLUDE [synapsebuiltinsqlpoolrequestsended](../includes/synapsebuiltinsqlpoolrequestsended-include.md)]
+[!INCLUDE [synapsebuiltinsqlpoolrequestsended](.././tables/includes/synapsebuiltinsqlpoolrequestsended-include.md)]

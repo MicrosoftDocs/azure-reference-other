@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DCRLogErrors
 
 Errors registered during DCR-based data collection and transformation.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Data Collection Rules
 
-            
+## Queries
+
+ Sample queries for the [DCRLogErrors](../queries/dcrlogerrors.md) table.
 
 
 ## Columns
   
-[!INCLUDE [dcrlogerrors](../includes/dcrlogerrors-include.md)]
+[!INCLUDE [dcrlogerrors](.././tables/includes/dcrlogerrors-include.md)]

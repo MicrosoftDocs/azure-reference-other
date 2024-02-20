@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # HDInsightHiveTezAppStats
 
 Tez Application Metrics emitted from the YARN Resource Manager.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - HDInsight Clusters
 
-            
-
-
 ## Columns
   
-[!INCLUDE [hdinsighthivetezappstats](../includes/hdinsighthivetezappstats-include.md)]
+[!INCLUDE [hdinsighthivetezappstats](.././tables/includes/hdinsighthivetezappstats-include.md)]

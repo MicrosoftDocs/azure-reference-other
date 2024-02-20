@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AZFWNetworkRuleAggregation
 
 Contains aggregated Network rule log data for Policy Analytics.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Firewalls
 
-            
-
-
 ## Columns
   
-[!INCLUDE [azfwnetworkruleaggregation](../includes/azfwnetworkruleaggregation-include.md)]
+[!INCLUDE [azfwnetworkruleaggregation](.././tables/includes/azfwnetworkruleaggregation-include.md)]

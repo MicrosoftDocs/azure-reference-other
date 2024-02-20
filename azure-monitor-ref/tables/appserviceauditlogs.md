@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AppServiceAuditLogs
 
 Logs generated when publishing users successfully log on via one of the App Service publishing protocols.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - App Services
 
-            
+## Queries
+
+ Sample queries for the [AppServiceAuditLogs](../queries/appserviceauditlogs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [appserviceauditlogs](../includes/appserviceauditlogs-include.md)]
+[!INCLUDE [appserviceauditlogs](.././tables/includes/appserviceauditlogs-include.md)]

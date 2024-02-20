@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Network/dnsResolverPolicies, naam
@@ -11,6 +11,6 @@ ms.custom: Microsoft.Network/dnsResolverPolicies, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|DnsResponse |DNS Response |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`DnsResponse` |DNS Response |[DNSQueryLogs](/azure/azure-monitor/reference/tables/dnsquerylogs)<p>DNS query logs enable customers to monitor the DNS traffic in their virtual networks and help securing their DNS infrastructure.|Yes|No|[Queries](../../queries/dnsquerylogs.md)|Yes |

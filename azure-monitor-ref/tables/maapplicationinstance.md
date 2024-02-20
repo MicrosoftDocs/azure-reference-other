@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # MAApplicationInstance
 
 
 
+
 ## Categories
 
 - Desktop Analytics
+
 ## Solutions
 
 - Microsoft365Analytics
 
-            
-
-
 ## Columns
   
-[!INCLUDE [maapplicationinstance](../includes/maapplicationinstance-include.md)]
+[!INCLUDE [maapplicationinstance](.././tables/includes/maapplicationinstance-include.md)]

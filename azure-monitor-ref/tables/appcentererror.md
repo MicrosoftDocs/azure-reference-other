@@ -6,10 +6,11 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AppCenterError
+
 
 
 
@@ -17,9 +18,6 @@ ms.date: 08/28/2023
 
 - LogManagement
 
-            
-
-
 ## Columns
   
-[!INCLUDE [appcentererror](../includes/appcentererror-include.md)]
+[!INCLUDE [appcentererror](.././tables/includes/appcentererror-include.md)]

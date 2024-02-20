@@ -6,26 +6,26 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AmlRunStatusChangedEvent
 
 Azure Machine Learning services run status event logs.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Machine Learning
 
-            
-
-
 ## Columns
   
-[!INCLUDE [amlrunstatuschangedevent](../includes/amlrunstatuschangedevent-include.md)]
+[!INCLUDE [amlrunstatuschangedevent](.././tables/includes/amlrunstatuschangedevent-include.md)]

@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # Alert
 
 Alerts created by log alerts rules and SCOM alerts collected through Alert Management solution.
 
+
 ## Categories
 
 - Azure Monitor
+
 ## Solutions
 
 - LogManagement
 
-            
-
-
 ## Columns
   
-[!INCLUDE [alert](../includes/alert-include.md)]
+[!INCLUDE [alert](.././tables/includes/alert-include.md)]

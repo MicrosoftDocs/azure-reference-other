@@ -6,27 +6,32 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AEWComputePipelinesLogs
 
 AEWComputePipelines Events for the Experiment Workspace.
 
+
 ## Categories
 
 - Azure Resources
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Experiment Workspace
 
-            
+## Queries
+
+ Sample queries for the [AEWComputePipelinesLogs](../queries/aewcomputepipelineslogs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [aewcomputepipelineslogs](../includes/aewcomputepipelineslogs-include.md)]
+[!INCLUDE [aewcomputepipelineslogs](.././tables/includes/aewcomputepipelineslogs-include.md)]

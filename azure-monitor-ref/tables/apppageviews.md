@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AppPageViews
 
 Application Insights page views.
 
+
 ## Categories
 
 - Applications
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Application Insights
 
-            
+## Queries
+
+ Sample queries for the [AppPageViews](../queries/apppageviews.md) table.
 
 
 ## Columns
   
-[!INCLUDE [apppageviews](../includes/apppageviews-include.md)]
+[!INCLUDE [apppageviews](.././tables/includes/apppageviews-include.md)]

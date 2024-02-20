@@ -6,27 +6,32 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AmlModelsEvent
 
 Events when ML model is accessed (read, created, or deleted). Incudes events when packaging of models and assets happen into a ready-to-build packages.
 
+
 ## Categories
 
 - Azure Resources
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Machine Learning
 
-            
+## Queries
+
+ Sample queries for the [AmlModelsEvent](../queries/amlmodelsevent.md) table.
 
 
 ## Columns
   
-[!INCLUDE [amlmodelsevent](../includes/amlmodelsevent-include.md)]
+[!INCLUDE [amlmodelsevent](.././tables/includes/amlmodelsevent-include.md)]

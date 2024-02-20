@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/04/2023
+ms.date: 02/18/2024
 ---
 
 # ACSCallClientOperations
 
 Call client operation logs provide information regarding operations performed by clients using the Azure Communication Service Calling client SDK. It includes information regarding events raised by the SDK, such as state changes, e.g. createView, startAudio,DevicePermissionRequest. This log will be used by Call Diagnostics Center to visualize a call flow in a time series manner.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Communication Services
 
-            
+## Queries
+
+ Sample queries for the [ACSCallClientOperations](../queries/acscallclientoperations.md) table.
 
 
 ## Columns
   
-[!INCLUDE [acscallclientoperations](../includes/acscallclientoperations-include.md)]
+[!INCLUDE [acscallclientoperations](.././tables/includes/acscallclientoperations-include.md)]

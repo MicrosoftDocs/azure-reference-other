@@ -6,23 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DeviceCleanup
 
 
 
+
 ## Categories
 
 - Workloads
+
 ## Solutions
 
 - SurfaceHub
 
-            
+## Queries
+
+ Sample queries for the [DeviceCleanup](../queries/devicecleanup.md) table.
 
 
 ## Columns
   
-[!INCLUDE [devicecleanup](../includes/devicecleanup-include.md)]
+[!INCLUDE [devicecleanup](.././tables/includes/devicecleanup-include.md)]

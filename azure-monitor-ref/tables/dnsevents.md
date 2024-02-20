@@ -6,20 +6,23 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # DnsEvents
 
 
 
+
 ## Categories
 
 - Network
+
 ## Solutions
 
 - DnsAnalytics
 - SecurityInsights
+
 ## Resource types
 
 - Virtual machines
@@ -27,9 +30,11 @@ ms.date: 12/18/2023
 - Azure Stack HCI
 - System Center Virtual Machine Manager
 
-            
+## Queries
+
+ Sample queries for the [DnsEvents](../queries/dnsevents.md) table.
 
 
 ## Columns
   
-[!INCLUDE [dnsevents](../includes/dnsevents-include.md)]
+[!INCLUDE [dnsevents](.././tables/includes/dnsevents-include.md)]

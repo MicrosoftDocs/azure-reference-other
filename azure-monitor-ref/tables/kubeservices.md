@@ -6,29 +6,34 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # KubeServices
 
 Table that stores Kubernetes services information.
 
+
 ## Categories
 
 - Containers
+
 ## Solutions
 
 - AzureResources
 - ContainerInsights
+
 ## Resource types
 
 - Azure Arc Enabled Kubernetes
 - Kubernetes Services
 - Azure Arc Provisioned Clusters
 
-            
+## Queries
+
+ Sample queries for the [KubeServices](../queries/kubeservices.md) table.
 
 
 ## Columns
   
-[!INCLUDE [kubeservices](../includes/kubeservices-include.md)]
+[!INCLUDE [kubeservices](.././tables/includes/kubeservices-include.md)]

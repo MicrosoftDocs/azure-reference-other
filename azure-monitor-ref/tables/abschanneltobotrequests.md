@@ -6,20 +6,18 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ABSChannelToBotRequests
 
 All logs of requests from Azure Bot Service channels services to bots.
 
+
 ## Solutions
 
 - LogManagement
 
-            
-
-
 ## Columns
   
-[!INCLUDE [abschanneltobotrequests](../includes/abschanneltobotrequests-include.md)]
+[!INCLUDE [abschanneltobotrequests](.././tables/includes/abschanneltobotrequests-include.md)]

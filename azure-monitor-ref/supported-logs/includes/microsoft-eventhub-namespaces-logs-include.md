@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.EventHub/Namespaces, naam
@@ -11,14 +11,14 @@ ms.custom: Microsoft.EventHub/Namespaces, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|ApplicationMetricsLogs |Application Metrics Logs |Yes |
-|ArchiveLogs |Archive Logs |No |
-|AutoScaleLogs |Auto Scale Logs |No |
-|CustomerManagedKeyUserLogs |Customer Managed Key Logs |No |
-|EventHubVNetConnectionEvent |VNet/IP Filtering Connection Logs |No |
-|KafkaCoordinatorLogs |Kafka Coordinator Logs |No |
-|KafkaUserErrorLogs |Kafka User Error Logs |No |
-|OperationalLogs |Operational Logs |No |
-|RuntimeAuditLogs |Runtime Audit Logs |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`ApplicationMetricsLogs` |Application Metrics Logs |[AZMSApplicationMetricLogs](/azure/azure-monitor/reference/tables/azmsapplicationmetriclogs)<p>Captures application metrics(incoming/outgoing, successful/failed, etc. message delivery) for Azure Event Hubs and Azure Service Bus.|Yes|No||Yes |
+|`ArchiveLogs` |Archive Logs |[AZMSArchiveLogs](/azure/azure-monitor/reference/tables/azmsarchivelogs)<p>Captures information about Event Hubs capture operations, specifically, logs related to capture errors.|Yes|No||No |
+|`AutoScaleLogs` |Auto Scale Logs |[AZMSAutoscaleLogs](/azure/azure-monitor/reference/tables/azmsautoscalelogs)<p>Captures auto-inflate operations done on an Event Hubs namespace.|Yes|No||No |
+|`CustomerManagedKeyUserLogs` |Customer Managed Key Logs ||No|No||No |
+|`EventHubVNetConnectionEvent` |VNet/IP Filtering Connection Logs |[AZMSVnetConnectionEvents](/azure/azure-monitor/reference/tables/azmsvnetconnectionevents)<p>Captures all virtual network and IP filtering logs for Azure Event Hubs and Azure Service Bus. These would only be emitted if namespace allows access from selected networks or from specific IP address (IP Filter rules).|Yes|No|[Queries](../../queries/azmsvnetconnectionevents.md)|No |
+|`KafkaCoordinatorLogs` |Kafka Coordinator Logs |[AZMSKafkaCoordinatorLogs](/azure/azure-monitor/reference/tables/azmskafkacoordinatorlogs)<p>Captures kafka coordinator operations related to Event Hubs.|Yes|No||No |
+|`KafkaUserErrorLogs` |Kafka User Error Logs |[AZMSKafkaUserErrorLogs](/azure/azure-monitor/reference/tables/azmskafkausererrorlogs)<p>Captures information about kafka APIs called on Event Hubs.|Yes|No||No |
+|`OperationalLogs` |Operational Logs |[AZMSOperationalLogs](/azure/azure-monitor/reference/tables/azmsoperationallogs)<p>Captures all management operations that are performed on the Azure Event Hubs/Azure Service Bus namespace and its entities.|Yes|No|[Queries](../../queries/azmsoperationallogs.md)|No |
+|`RuntimeAuditLogs` |Runtime Audit Logs |[AZMSRunTimeAuditLogs](/azure/azure-monitor/reference/tables/azmsruntimeauditlogs)<p>Captures aggregated diagnostic information for various data plane access operations (such as send or receive messages) in Azure Event Hubs and Azure Service Bus. Runtime audit logs are currently available only in premium tier.|Yes|No|[Queries](../../queries/azmsruntimeauditlogs.md)|Yes |

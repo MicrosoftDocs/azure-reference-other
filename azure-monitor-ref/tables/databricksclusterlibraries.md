@@ -6,20 +6,18 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DatabricksClusterLibraries
 
 Audit logs for actions taken on cluster libraries in Databricks.
 
+
 ## Solutions
 
 - LogManagement
 
-            
-
-
 ## Columns
   
-[!INCLUDE [databricksclusterlibraries](../includes/databricksclusterlibraries-include.md)]
+[!INCLUDE [databricksclusterlibraries](.././tables/includes/databricksclusterlibraries-include.md)]

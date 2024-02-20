@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.EventGrid/domains, naam
@@ -11,8 +11,8 @@ ms.custom: Microsoft.EventGrid/domains, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|DataPlaneRequests |Data plane operations logs |Yes |
-|DeliveryFailures |Delivery Failure Logs |No |
-|PublishFailures |Publish Failure Logs |No |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`DataPlaneRequests` |Data plane operations logs |[AegDataPlaneRequests](/azure/azure-monitor/reference/tables/aegdataplanerequests)<p>Logs for Event Grid data plane requests (publish and options) against a topic/domain/partnernamespace. It can be used for auditing purposes. Logs are aggregated over a minute and displays the total number of requests with specific request properties.|No|No|[Queries](../../queries/aegdataplanerequests.md)|Yes |
+|`DeliveryFailures` |Delivery Failure Logs |[AegDeliveryFailureLogs](/azure/azure-monitor/reference/tables/aegdeliveryfailurelogs)<p>Azure Event Grid - event delivery failure logs.|No|Yes|[Queries](../../queries/aegdeliveryfailurelogs.md)|No |
+|`PublishFailures` |Publish Failure Logs |[AegPublishFailureLogs](/azure/azure-monitor/reference/tables/aegpublishfailurelogs)<p>Azure Event Grid - event publish failure logs.|No|Yes|[Queries](../../queries/aegpublishfailurelogs.md)|No |

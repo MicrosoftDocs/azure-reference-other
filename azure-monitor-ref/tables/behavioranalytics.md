@@ -6,23 +6,22 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # BehaviorAnalytics
 
 This table stores the enriched events for Sentinel UEBA, providing behavior analytics over raw data.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - BehaviorAnalyticsInsights
 
-            
-
-
 ## Columns
   
-[!INCLUDE [behavioranalytics](../includes/behavioranalytics-include.md)]
+[!INCLUDE [behavioranalytics](.././tables/includes/behavioranalytics-include.md)]

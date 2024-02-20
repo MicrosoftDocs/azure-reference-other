@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.HealthcareApis/workspaces/dicomservices, arm
@@ -10,8 +10,7 @@ ms.custom: Microsoft.HealthcareApis/workspaces/dicomservices, arm
  
 ---
 
-  
-  
+
 |Category|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|---|
-|Traffic|**Number of DICOM files processed by import**<p><p>The total number of DICOM files processed by an import. |`ImportsProcessed` |Count |Sum |`Status`, `ResourceName`|PT1M |Yes|
+|Traffic|**Number of DICOM files processed by import**<br><br>The total number of DICOM files processed by an import. |`ImportsProcessed` |Count |Sum |`Status`, `ResourceName`|PT1M |Yes|

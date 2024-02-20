@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Network/networksecuritygroups, arm
@@ -11,8 +11,8 @@ ms.custom: Microsoft.Network/networksecuritygroups, arm
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|NetworkSecurityGroupEvent |Network Security Group Event |No |
-|NetworkSecurityGroupFlowEvent |Network Security Group Rule Flow Event |No |
-|NetworkSecurityGroupRuleCounter |Network Security Group Rule Counter |No |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`NetworkSecurityGroupEvent` |Network Security Group Event |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftnetwork)|No |
+|`NetworkSecurityGroupFlowEvent` |Network Security Group Rule Flow Event ||No|No||No |
+|`NetworkSecurityGroupRuleCounter` |Network Security Group Rule Counter |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftnetwork)|No |

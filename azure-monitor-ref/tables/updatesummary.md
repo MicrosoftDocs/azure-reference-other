@@ -6,22 +6,25 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # UpdateSummary
 
 Summary for each update schedule run. Includes information such as how many updates were not installed.
 
+
 ## Categories
 
 - Virtual Machines
+
 ## Solutions
 
 - Security
 - SecurityCenter
 - SecurityCenterFree
 - Updates
+
 ## Resource types
 
 - Virtual machines
@@ -31,9 +34,11 @@ Summary for each update schedule run. Includes information such as how many upda
 - Virtual Machine Scale Sets
 - Automation account
 
-            
+## Queries
+
+ Sample queries for the [UpdateSummary](../queries/updatesummary.md) table.
 
 
 ## Columns
   
-[!INCLUDE [updatesummary](../includes/updatesummary-include.md)]
+[!INCLUDE [updatesummary](.././tables/includes/updatesummary-include.md)]

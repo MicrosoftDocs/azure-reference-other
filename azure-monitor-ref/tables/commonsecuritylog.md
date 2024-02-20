@@ -6,20 +6,23 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # CommonSecurityLog
 
 This table is for collecting events in the Common Event Format, that are most often sent from different security appliances such as Check Point, Palo Alto and more.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - Security
 - SecurityInsights
+
 ## Resource types
 
 - Azure Sentinel CEF Table
@@ -29,9 +32,11 @@ This table is for collecting events in the Common Event Format, that are most of
 - System Center Virtual Machine Manager
 - Virtual Machine Scale Sets
 
-            
+## Queries
+
+ Sample queries for the [CommonSecurityLog](../queries/commonsecuritylog.md) table.
 
 
 ## Columns
   
-[!INCLUDE [commonsecuritylog](../includes/commonsecuritylog-include.md)]
+[!INCLUDE [commonsecuritylog](.././tables/includes/commonsecuritylog-include.md)]

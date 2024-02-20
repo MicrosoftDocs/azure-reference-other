@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ADTQueryOperation
 
 Schema for Azure Digital Twins' Query operations. The Query Operation category tracks all customer requests to query their digital twins instance.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Digital Twins
 
-            
+## Queries
+
+ Sample queries for the [ADTQueryOperation](../queries/adtqueryoperation.md) table.
 
 
 ## Columns
   
-[!INCLUDE [adtqueryoperation](../includes/adtqueryoperation-include.md)]
+[!INCLUDE [adtqueryoperation](.././tables/includes/adtqueryoperation-include.md)]

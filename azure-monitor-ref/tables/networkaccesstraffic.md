@@ -6,25 +6,24 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # NetworkAccessTraffic
 
 This table is part of Identity and Network Access, which contains Network Traffic Access logs. These logs can be leveraged for policy, risk, and traffic management, as well as to monitor users experience.
 
+
 ## Categories
 
 - Security
 - Network
 - IT & Management Tools
+
 ## Solutions
 
 - LogManagement
 
-            
-
-
 ## Columns
   
-[!INCLUDE [networkaccesstraffic](../includes/networkaccesstraffic-include.md)]
+[!INCLUDE [networkaccesstraffic](.././tables/includes/networkaccesstraffic-include.md)]

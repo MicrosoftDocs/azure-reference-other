@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.ContainerInstance/containerGroups, naam
@@ -11,7 +11,7 @@ ms.custom: Microsoft.ContainerInstance/containerGroups, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|ContainerEvent |Container events |Yes |
-|ContainerInstanceLog |Standard output logs |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`ContainerEvent` |Container events |[ContainerEvent](/azure/azure-monitor/reference/tables/containerevent)<p>Container Event Customer Logs.|No|No||Yes |
+|`ContainerInstanceLog` |Standard output logs |[ContainerInstanceLog](/azure/azure-monitor/reference/tables/containerinstancelog)<p>Container Instance Customer Logs.|No|No||Yes |

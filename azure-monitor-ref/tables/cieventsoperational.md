@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # CIEventsOperational
 
 Events generated using the service, for example GET requests or the execution events of a workflow.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Dynamics 365 Customer Insights
 
-            
+## Queries
+
+ Sample queries for the [CIEventsOperational](../queries/cieventsoperational.md) table.
 
 
 ## Columns
   
-[!INCLUDE [cieventsoperational](../includes/cieventsoperational-include.md)]
+[!INCLUDE [cieventsoperational](.././tables/includes/cieventsoperational-include.md)]

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Network/natGateways, arm
@@ -10,13 +10,12 @@ ms.custom: Microsoft.Network/natGateways, arm
  
 ---
 
-  
-  
+
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Bytes**<p><p>Total number of Bytes transmitted within time period |`ByteCount` |Bytes |Total |`Protocol`, `Direction`|PT1M, PT1H |No|
-|**Datapath Availability (Preview)**<p><p>NAT Gateway Datapath Availability |`DatapathAvailability` |Count |Average |\<none\>|PT1M, PT1H |No|
-|**Packets**<p><p>Total number of Packets transmitted within time period |`PacketCount` |Count |Total |`Protocol`, `Direction`|PT1M, PT1H |No|
-|**Dropped Packets**<p><p>Count of dropped packets |`PacketDropCount` |Count |Total |\<none\>|PT1M, PT1H |No|
-|**SNAT Connection Count**<p><p>Total concurrent active connections |`SNATConnectionCount` |Count |Total |`Protocol`, `ConnectionState`|PT1M, PT1H |No|
-|**Total SNAT Connection Count**<p><p>Total number of active SNAT connections |`TotalConnectionCount` |Count |Total |`Protocol`|PT1M, PT1H |No|
+|**Bytes**<br><br>Total number of Bytes transmitted within time period |`ByteCount` |Bytes |Total |`Protocol`, `Direction`|PT1M, PT1H |No|
+|**Datapath Availability (Preview)**<br><br>NAT Gateway Datapath Availability |`DatapathAvailability` |Count |Average |\<none\>|PT1M, PT1H |No|
+|**Packets**<br><br>Total number of Packets transmitted within time period |`PacketCount` |Count |Total |`Protocol`, `Direction`|PT1M, PT1H |No|
+|**Dropped Packets**<br><br>Count of dropped packets |`PacketDropCount` |Count |Total |\<none\>|PT1M, PT1H |No|
+|**SNAT Connection Count**<br><br>Total concurrent active connections |`SNATConnectionCount` |Count |Total |`Protocol`, `ConnectionState`|PT1M, PT1H |No|
+|**Total SNAT Connection Count**<br><br>Total number of active SNAT connections |`TotalConnectionCount` |Count |Total |`Protocol`|PT1M, PT1H |No|

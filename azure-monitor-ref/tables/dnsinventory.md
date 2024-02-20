@@ -6,20 +6,23 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 12/18/2023
+ms.date: 02/18/2024
 ---
 
 # DnsInventory
 
 
 
+
 ## Categories
 
 - Network
+
 ## Solutions
 
 - DnsAnalytics
 - SecurityInsights
+
 ## Resource types
 
 - Virtual machines
@@ -27,9 +30,6 @@ ms.date: 12/18/2023
 - Azure Stack HCI
 - System Center Virtual Machine Manager
 
-            
-
-
 ## Columns
   
-[!INCLUDE [dnsinventory](../includes/dnsinventory-include.md)]
+[!INCLUDE [dnsinventory](.././tables/includes/dnsinventory-include.md)]

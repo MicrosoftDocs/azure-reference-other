@@ -6,27 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # CDBGremlinRequests
 
 This table details data plane operations, specifically for Graph API accounts.
 
+
 ## Categories
 
 - Azure Resources
 - Audit
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Azure Cosmos DB
 
-            
-
-
 ## Columns
   
-[!INCLUDE [cdbgremlinrequests](../includes/cdbgremlinrequests-include.md)]
+[!INCLUDE [cdbgremlinrequests](.././tables/includes/cdbgremlinrequests-include.md)]

@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # ADFPipelineRun
 
 
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - Data factories
 
-            
+## Queries
+
+ Sample queries for the [ADFPipelineRun](../queries/adfpipelinerun.md) table.
 
 
 ## Columns
   
-[!INCLUDE [adfpipelinerun](../includes/adfpipelinerun-include.md)]
+[!INCLUDE [adfpipelinerun](.././tables/includes/adfpipelinerun-include.md)]

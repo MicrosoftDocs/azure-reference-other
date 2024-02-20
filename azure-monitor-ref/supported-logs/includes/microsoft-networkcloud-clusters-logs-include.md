@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkCloud/clusters, naam
@@ -11,7 +11,7 @@ ms.custom: Microsoft.NetworkCloud/clusters, naam
 ---
   
   
-|Category|Category Display Name|Costs To Export|
-|---|---|---|
-|CustomerContainerLogs |Kubernetes Logs |Yes |
-|VMOrchestrationLogs |VM Orchestration Logs |Yes |
+|Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
+|---|---|---|---|---|---|---|
+|`CustomerContainerLogs` |Kubernetes Logs |[NCCKubernetesLogs](/azure/azure-monitor/reference/tables/ncckuberneteslogs)<p>Containerized application logs from Nexus clusters to gain insight onto the container orchestration platform.|Yes|No||Yes |
+|`VMOrchestrationLogs` |VM Orchestration Logs |[NCCVMOrchestrationLogs](/azure/azure-monitor/reference/tables/nccvmorchestrationlogs)<p>Logs from Virtual Machine Orchestrator of Nexus cluster to track seamless coordination and management of virtual machines.|Yes|No||Yes |

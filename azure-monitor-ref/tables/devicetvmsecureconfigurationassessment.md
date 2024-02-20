@@ -6,23 +6,27 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # DeviceTvmSecureConfigurationAssessment
 
 Threat & vulnerability management assessment events, indicating the status of various security configurations on devices.
 
+
 ## Categories
 
 - Security
+
 ## Solutions
 
 - SecurityInsights
 
-            
+## Queries
+
+ Sample queries for the [DeviceTvmSecureConfigurationAssessment](../queries/devicetvmsecureconfigurationassessment.md) table.
 
 
 ## Columns
   
-[!INCLUDE [devicetvmsecureconfigurationassessment](../includes/devicetvmsecureconfigurationassessment-include.md)]
+[!INCLUDE [devicetvmsecureconfigurationassessment](.././tables/includes/devicetvmsecureconfigurationassessment-include.md)]

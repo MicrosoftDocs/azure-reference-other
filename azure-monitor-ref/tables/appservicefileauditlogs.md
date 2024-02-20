@@ -6,26 +6,31 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/28/2023
+ms.date: 02/18/2024
 ---
 
 # AppServiceFileAuditLogs
 
 Logs generated when app service content is modified.
 
+
 ## Categories
 
 - Azure Resources
+
 ## Solutions
 
 - LogManagement
+
 ## Resource types
 
 - App Services
 
-            
+## Queries
+
+ Sample queries for the [AppServiceFileAuditLogs](../queries/appservicefileauditlogs.md) table.
 
 
 ## Columns
   
-[!INCLUDE [appservicefileauditlogs](../includes/appservicefileauditlogs-include.md)]
+[!INCLUDE [appservicefileauditlogs](.././tables/includes/appservicefileauditlogs-include.md)]

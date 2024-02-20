@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 01/10/2024
+ms.date: 02/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.CodeSigning/codesigningaccounts, naam
@@ -10,8 +10,7 @@ ms.custom: Microsoft.CodeSigning/codesigningaccounts, naam
  
 ---
 
-  
-  
+
 |Category|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|---|
-|audit|**SignCompleted**<p><p>Completed Sign Request |`SignCompleted` |Count |Count, Sum |`CertType`, `Region`, `TenantId`|PT1M |Yes|
+|audit|**SignCompleted**<br><br>Completed Sign Request |`SignCompleted` |Count |Count, Sum |`CertType`, `Region`, `TenantId`|PT1M |Yes|
