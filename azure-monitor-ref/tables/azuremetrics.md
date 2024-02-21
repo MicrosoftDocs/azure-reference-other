@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # AzureMetrics
@@ -61,6 +61,7 @@ Metric data emitted by Azure services that measure their health and performance.
 - Media Services
 - Microsoft Playwright Testing
 - Azure Operator Insights - Data Product
+- Storage Accounts
 - Azure Managed Lustre
 - Azure Storage Mover
 - Synapse Workspaces
@@ -72,7 +73,6 @@ Metric data emitted by Azure services that measure their health and performance.
 - Analysis Services
 - Batch Accounts
 - Azure Spring Apps
-- Storage Accounts
 - SignalR
 - Container Registries
 - Azure Data Explorer Clusters
@@ -121,7 +121,7 @@ Metric data emitted by Azure services that measure their health and performance.
 
 ## Queries
 
- Sample queries for the [AzureMetrics](../queries/azuremetrics.md) table.
+ Sample queries for the [AzureMetrics](/azure/azure-monitor/reference/queries/azuremetrics) table.
 
 
 ## Columns

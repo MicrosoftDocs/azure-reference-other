@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # ACSCallAutomationMediaSummary
@@ -28,7 +28,7 @@ Communication Services summary logs of Call Automation Media operations. Every e
 
 ## Queries
 
- Sample queries for the [ACSCallAutomationMediaSummary](../queries/acscallautomationmediasummary.md) table.
+ Sample queries for the [ACSCallAutomationMediaSummary](/azure/azure-monitor/reference/queries/acscallautomationmediasummary) table.
 
 
 ## Columns

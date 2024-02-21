@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # OfficeActivity
@@ -25,7 +25,7 @@ Audit logs for Office 365 tenants collected by Azure Sentinel. Including Exchang
 
 ## Queries
 
- Sample queries for the [OfficeActivity](../queries/officeactivity.md) table.
+ Sample queries for the [OfficeActivity](/azure/azure-monitor/reference/queries/officeactivity) table.
 
 
 ## Columns

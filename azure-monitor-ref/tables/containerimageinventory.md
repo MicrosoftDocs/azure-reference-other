@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # ContainerImageInventory
@@ -32,7 +32,7 @@ Inventory of container images and their attributes that were discovered by the a
 
 ## Queries
 
- Sample queries for the [ContainerImageInventory](../queries/containerimageinventory.md) table.
+ Sample queries for the [ContainerImageInventory](/azure/azure-monitor/reference/queries/containerimageinventory) table.
 
 
 ## Columns

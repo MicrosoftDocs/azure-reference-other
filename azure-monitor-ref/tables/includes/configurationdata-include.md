@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ConfigurationData
@@ -39,7 +39,7 @@ ms.custom: ConfigurationData
 | SvcAccount | string | User account that is associated with the service executable explicitly to provide a security context for the service |
 | SvcController | string | Service property that was changed |
 | SvcDescription | string | Parent process for the daemon |
-| SvcDisplayName | string | Human-friendly name for the service |
+| SvcDisplayName | string | Human-frinedly name for the service |
 | SvcName | string | Name of the service |
 | SvcPath | string | The file path to the executable for the service |
 | SvcRunlevels | string | Modes used by the daemon for system operation |

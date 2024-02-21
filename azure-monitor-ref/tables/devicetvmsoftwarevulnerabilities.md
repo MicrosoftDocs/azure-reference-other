@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # DeviceTvmSoftwareVulnerabilities
@@ -24,7 +24,7 @@ Captures various identity-related events, like password changes, password expira
 
 ## Queries
 
- Sample queries for the [DeviceTvmSoftwareVulnerabilities](../queries/devicetvmsoftwarevulnerabilities.md) table.
+ Sample queries for the [DeviceTvmSoftwareVulnerabilities](/azure/azure-monitor/reference/queries/devicetvmsoftwarevulnerabilities) table.
 
 
 ## Columns

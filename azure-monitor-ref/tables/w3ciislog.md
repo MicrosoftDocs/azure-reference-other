@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # W3CIISLog
@@ -33,7 +33,7 @@ Internet Information Server (IIS) log on Windows computers using the Log Analyti
 
 ## Queries
 
- Sample queries for the [W3CIISLog](../queries/w3ciislog.md) table.
+ Sample queries for the [W3CIISLog](/azure/azure-monitor/reference/queries/w3ciislog) table.
 
 
 ## Columns

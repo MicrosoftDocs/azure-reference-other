@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # UpdateSummary
@@ -36,7 +36,7 @@ Summary for each update schedule run. Includes information such as how many upda
 
 ## Queries
 
- Sample queries for the [UpdateSummary](../queries/updatesummary.md) table.
+ Sample queries for the [UpdateSummary](/azure/azure-monitor/reference/queries/updatesummary) table.
 
 
 ## Columns

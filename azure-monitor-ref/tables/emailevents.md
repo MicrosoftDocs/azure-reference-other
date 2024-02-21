@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # EmailEvents
@@ -24,7 +24,7 @@ Office 365 email events, including email delivery and blocking events.
 
 ## Queries
 
- Sample queries for the [EmailEvents](../queries/emailevents.md) table.
+ Sample queries for the [EmailEvents](/azure/azure-monitor/reference/queries/emailevents) table.
 
 
 ## Columns

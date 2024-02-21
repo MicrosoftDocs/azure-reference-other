@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 02/21/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Logic/Workflows, naam
@@ -13,4 +13,4 @@ ms.custom: Microsoft.Logic/Workflows, naam
   
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
-|`WorkflowRuntime` |Workflow runtime diagnostic events |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](../../queries/azurediagnostics.md#queries-for-microsoftlogic)|No |
+|`WorkflowRuntime` |Workflow runtime diagnostic events |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftlogic)|No |
