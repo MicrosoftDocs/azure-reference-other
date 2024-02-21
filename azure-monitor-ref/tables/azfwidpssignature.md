@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # AZFWIdpsSignature
@@ -28,7 +28,7 @@ Contains all data plane packets that were matched with one or more IDPS signatur
 
 ## Queries
 
- Sample queries for the [AZFWIdpsSignature](../queries/azfwidpssignature.md) table.
+ Sample queries for the [AZFWIdpsSignature](/azure/azure-monitor/reference/queries/azfwidpssignature) table.
 
 
 ## Columns

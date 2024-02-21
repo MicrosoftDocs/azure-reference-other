@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # AZFWFatFlow
@@ -28,7 +28,7 @@ This query returns the top flows across Azure Firewall instances. Log contains f
 
 ## Queries
 
- Sample queries for the [AZFWFatFlow](../queries/azfwfatflow.md) table.
+ Sample queries for the [AZFWFatFlow](/azure/azure-monitor/reference/queries/azfwfatflow) table.
 
 
 ## Columns

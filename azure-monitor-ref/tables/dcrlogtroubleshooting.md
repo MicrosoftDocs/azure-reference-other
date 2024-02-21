@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # DCRLogTroubleshooting
@@ -28,7 +28,7 @@ Logs from DCR-based data collection and transformation to help with troubleshoot
 
 ## Queries
 
- Sample queries for the [DCRLogTroubleshooting](../queries/dcrlogtroubleshooting.md) table.
+ Sample queries for the [DCRLogTroubleshooting](/azure/azure-monitor/reference/queries/dcrlogtroubleshooting) table.
 
 
 ## Columns

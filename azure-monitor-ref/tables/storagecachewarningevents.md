@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # StorageCacheWarningEvents
@@ -28,7 +28,7 @@ Logs for Azure HPC Cache warning events.
 
 ## Queries
 
- Sample queries for the [StorageCacheWarningEvents](../queries/storagecachewarningevents.md) table.
+ Sample queries for the [StorageCacheWarningEvents](/azure/azure-monitor/reference/queries/storagecachewarningevents) table.
 
 
 ## Columns

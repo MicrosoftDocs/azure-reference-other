@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # AADDomainServicesAccountLogon
@@ -29,7 +29,7 @@ ms.date: 02/18/2024
 
 ## Queries
 
- Sample queries for the [AADDomainServicesAccountLogon](../queries/aaddomainservicesaccountlogon.md) table.
+ Sample queries for the [AADDomainServicesAccountLogon](/azure/azure-monitor/reference/queries/aaddomainservicesaccountlogon) table.
 
 
 ## Columns

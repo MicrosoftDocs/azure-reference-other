@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # Perf
@@ -37,7 +37,7 @@ Performance counters from Windows and Linux agents that provide insight into the
 
 ## Queries
 
- Sample queries for the [Perf](../queries/perf.md) table.
+ Sample queries for the [Perf](/azure/azure-monitor/reference/queries/perf) table.
 
 
 ## Columns

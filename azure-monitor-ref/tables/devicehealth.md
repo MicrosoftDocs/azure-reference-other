@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # DeviceHealth
@@ -24,7 +24,7 @@ ms.date: 02/18/2024
 
 ## Queries
 
- Sample queries for the [DeviceHealth](../queries/devicehealth.md) table.
+ Sample queries for the [DeviceHealth](/azure/azure-monitor/reference/queries/devicehealth) table.
 
 
 ## Columns

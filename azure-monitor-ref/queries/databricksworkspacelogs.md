@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
 
@@ -53,18 +53,5 @@ DatabricksWebTerminal,
 DatabricksWorkspace,
 DatabricksWorkspaceLogs
 | distinct Category, Type
-```
-
-
-
-### List sample logs within one category  
-
-
-This query lists sample logs within one category.  
-
-```query
-DatabricksWorkspaceLogs
-| where category == "brickstoreHttpGateway"
-| limit 100
 ```
 

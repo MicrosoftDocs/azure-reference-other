@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # AppServiceConsoleLogs
@@ -29,7 +29,7 @@ Console logs generated from application or container.
 
 ## Queries
 
- Sample queries for the [AppServiceConsoleLogs](../queries/appserviceconsolelogs.md) table.
+ Sample queries for the [AppServiceConsoleLogs](/azure/azure-monitor/reference/queries/appserviceconsolelogs) table.
 
 
 ## Columns
