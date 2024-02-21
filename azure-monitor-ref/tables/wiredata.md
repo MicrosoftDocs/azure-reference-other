@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # WireData
@@ -34,7 +34,7 @@ Network data collected by the WireData solution using by the Dependency agent an
 
 ## Queries
 
- Sample queries for the [WireData](../queries/wiredata.md) table.
+ Sample queries for the [WireData](/azure/azure-monitor/reference/queries/wiredata) table.
 
 
 ## Columns

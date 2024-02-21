@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 02/21/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Databricks/workspaces, naam
@@ -24,7 +24,7 @@ ms.custom: Microsoft.Databricks/workspaces, naam
 |`featureStore` |Databricks Feature Store |[DatabricksFeatureStore](/azure/azure-monitor/reference/tables/databricksfeaturestore)<p>Audit logs for events related to Databricks ML Feature Store operations.|No|Yes||Yes |
 |`genie` |Databricks Genie |[DatabricksGenie](/azure/azure-monitor/reference/tables/databricksgenie)<p>Audit logs for Databricks workspaces customer support access events.|No|Yes||Yes |
 |`gitCredentials` |Databricks Git Credentials |[DatabricksGitCredentials](/azure/azure-monitor/reference/tables/databricksgitcredentials)<p>Databricks Git credentials audit logs.|No|No||Yes |
-|`globalInitScripts` |Databricks Global Init Scripts ||No|No||Yes |
+|`globalInitScripts` |Databricks Global Init Scripts |[DatabricksGlobalInitScripts](/azure/azure-monitor/reference/tables/databricksglobalinitscripts)<p>Audit logs for events related to creation, modification etc. of Databricks cluster global init scripts.|No|Yes||Yes |
 |`iamRole` |Databricks IAM Role |[DatabricksIAMRole](/azure/azure-monitor/reference/tables/databricksiamrole)<p>Audit logs for events of changing IAM role ACLs.|No|No||Yes |
 |`instancePools` |Instance Pools |[DatabricksInstancePools](/azure/azure-monitor/reference/tables/databricksinstancepools)<p>Databricks Instance Pools audit logs.|No|Yes||No |
 |`jobs` |Databricks Jobs |[DatabricksJobs](/azure/azure-monitor/reference/tables/databricksjobs)<p>Databricks Jobs audit logs.|No|Yes||No |

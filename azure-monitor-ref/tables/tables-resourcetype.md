@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -313,7 +313,6 @@ Microsoft.DBforPostgreSQL/serversv2
 Microsoft.Databricks/workspaces
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
-- [DatabricksWorkspaceLogs](databricksworkspacelogs.md)
 - [DatabricksAccounts](databricksaccounts.md)
 - [DatabricksClusters](databricksclusters.md)
 - [DatabricksDBFS](databricksdbfs.md)

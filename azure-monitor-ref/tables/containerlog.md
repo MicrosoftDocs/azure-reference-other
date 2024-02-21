@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # ContainerLog
@@ -38,7 +38,7 @@ Log lines collected from stdout and stderr streams for containers.
 
 ## Queries
 
- Sample queries for the [ContainerLog](../queries/containerlog.md) table.
+ Sample queries for the [ContainerLog](/azure/azure-monitor/reference/queries/containerlog) table.
 
 
 ## Columns

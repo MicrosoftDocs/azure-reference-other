@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 02/21/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DataFactory/factories, arm
@@ -18,8 +18,8 @@ ms.custom: Microsoft.DataFactory/factories, arm
 |**Succeeded activity runs metrics**<br><br>Succeeded activity runs metrics |`ActivitySucceededRuns` |Count |Total |`ActivityType`, `PipelineName`, `FailureType`, `Name`|PT1M |Yes|
 |**Airflow Integration Runtime Celery Task Timeout Error**<br><br>Airflow Integration Runtime Celery Task Timeout Error |`AirflowIntegrationRuntimeCeleryTaskTimeoutError` |Count |Total |`IntegrationRuntimeName`|PT1M |No|
 |**Airflow Integration Runtime Collect DB Dags**<br><br>Airflow Integration Runtime Collect DB Dags |`AirflowIntegrationRuntimeCollectDBDags` |Milliseconds |Average |`IntegrationRuntimeName`|PT1M |No|
-|**Airflow Integration Runtime Cpu Percentage**<br><br>Airflow Integration Runtime Cpu Percentage |`AirflowIntegrationRuntimeCpuPercentage` |Percent |Average |`IntegrationRuntimeName`, `ContainerName`|PT1M |No|
-|**Airflow Integration Runtime Memory Usage**<br><br>Airflow Integration Runtime Memory Usage |`AirflowIntegrationRuntimeCpuUsage` |Millicores |Average |`IntegrationRuntimeName`, `ContainerName`|PT1M |Yes|
+|**Airflow Integration Runtime Cpu Percentage**<br><br>Airflow Integration Runtime Cpu Percentage |`AirflowIntegrationRuntimeCpuPercentage` |Percent |Average |`IntegrationRuntimeName`, `ContainerName`|PT1M |Yes|
+|**Airflow Integration Runtime Cpu Usage**<br><br>Airflow Integration Runtime Cpu Usage |`AirflowIntegrationRuntimeCpuUsage` |Millicores |Average |`IntegrationRuntimeName`, `ContainerName`|PT1M |Yes|
 |**Airflow Integration Runtime Dag Bag Size**<br><br>Airflow Integration Runtime Dag Bag Size |`AirflowIntegrationRuntimeDagBagSize` |Count |Total |`IntegrationRuntimeName`|PT1M |No|
 |**Airflow Integration Runtime Dag Callback Exceptions**<br><br>Airflow Integration Runtime Dag Callback Exceptions |`AirflowIntegrationRuntimeDagCallbackExceptions` |Count |Total |`IntegrationRuntimeName`|PT1M |No|
 |**Airflow Integration Runtime DAG File Refresh Error**<br><br>Airflow Integration Runtime DAG File Refresh Error |`AirflowIntegrationRuntimeDAGFileRefreshError` |Count |Total |`IntegrationRuntimeName`|PT1M |No|
@@ -42,6 +42,7 @@ ms.custom: Microsoft.DataFactory/factories, arm
 |**Airflow Integration Runtime Heartbeat Failure**<br><br>Airflow Integration Runtime Heartbeat Failure |`AirflowIntegrationRuntimeJobHeartbeatFailure` |Count |Total |`IntegrationRuntimeName`, `Job`|PT1M |No|
 |**Airflow Integration Runtime Job Start**<br><br>Airflow Integration Runtime Job Start |`AirflowIntegrationRuntimeJobStart` |Count |Total |`IntegrationRuntimeName`, `Job`|PT1M |No|
 |**Airflow Integration Runtime Memory Percentage**<br><br>Airflow Integration Runtime Memory Percentage |`AirflowIntegrationRuntimeMemoryPercentage` |Percent |Average |`IntegrationRuntimeName`, `ContainerName`|PT1M |Yes|
+|**Airflow Integration Runtime Memory Usage**<br><br>Airflow Integration Runtime Memory Usage |`AirflowIntegrationRuntimeMemoryUsage` |Bytes |Average |`IntegrationRuntimeName`, `ContainerName`|PT1M |Yes|
 |**Airflow Integration Runtime Node Count**<br><br>Airflow Integration Runtime Node Count |`AirflowIntegrationRuntimeNodeCount` |Count |Average |`IntegrationRuntimeName`, `ComputeNodeSize`|PT1M |Yes|
 |**Airflow Integration Runtime Operator Failures**<br><br>Airflow Integration Runtime Operator Failures |`AirflowIntegrationRuntimeOperatorFailures` |Count |Total |`IntegrationRuntimeName`, `Operator`|PT1M |No|
 |**Airflow Integration Runtime Operator Successes**<br><br>Airflow Integration Runtime Operator Successes |`AirflowIntegrationRuntimeOperatorSuccesses` |Count |Total |`IntegrationRuntimeName`, `Operator`|PT1M |No|

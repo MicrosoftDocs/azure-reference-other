@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 02/21/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: MICROSOFT.OPENENERGYPLATFORM/ENERGYSERVICES, naam
@@ -13,7 +13,7 @@ ms.custom: MICROSOFT.OPENENERGYPLATFORM/ENERGYSERVICES, naam
   
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
-|`AirFlowTaskLogs` |Air Flow Task Logs |[OEPAirFlowTask](/azure/azure-monitor/reference/tables/oepairflowtask)<p>Diagnostic logs for AirFlow task execution having task name, task details.|No|No|[Queries](../../queries/oepairflowtask.md)|Yes |
+|`AirFlowTaskLogs` |Air Flow Task Logs |[OEPAirFlowTask](/azure/azure-monitor/reference/tables/oepairflowtask)<p>Diagnostic logs for AirFlow task execution having task name, task details.|No|No|[Queries](/azure/azure-monitor/reference/queries/oepairflowtask)|Yes |
 |`AuditEvent` |Audit Event |[OEPAuditLogs](/azure/azure-monitor/reference/tables/oepauditlogs)<p>Audit Logs for Microsoft Energy Data Services.|No|No||Yes |
 |`CRSCatalogLogs` |CRS Catalog Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |
 |`CRSConversionLogs` |CRS Conversion Service Logs |[OEPDataplaneLogs](/azure/azure-monitor/reference/tables/oepdataplanelogs)<p>Contains logs for HTTP requests & responses for the Indexer Service API, in OSDU Data Platform, and Microsoft Energy Data Services. The Indexer service, indexes the metadata store to support search. The indexer service will automatically take items that are newly added to storage and index the attributes from the schema associated with the kind attribute.|Yes|No||Yes |

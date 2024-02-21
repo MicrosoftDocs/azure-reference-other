@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # AppExceptions
@@ -28,7 +28,7 @@ Application Insights exceptions.
 
 ## Queries
 
- Sample queries for the [AppExceptions](../queries/appexceptions.md) table.
+ Sample queries for the [AppExceptions](/azure/azure-monitor/reference/queries/appexceptions) table.
 
 
 ## Columns
