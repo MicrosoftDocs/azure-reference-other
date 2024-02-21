@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 02/21/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.ApiManagement/service, naam
@@ -13,5 +13,5 @@ ms.custom: Microsoft.ApiManagement/service, naam
   
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
-|`GatewayLogs` |Logs related to ApiManagement Gateway |[ApiManagementGatewayLogs](/azure/azure-monitor/reference/tables/apimanagementgatewaylogs)<p>Azure ApiManagement gateway logs.|Yes|Yes|[Queries](../../queries/apimanagementgatewaylogs.md)|No |
+|`GatewayLogs` |Logs related to ApiManagement Gateway |[ApiManagementGatewayLogs](/azure/azure-monitor/reference/tables/apimanagementgatewaylogs)<p>Azure ApiManagement gateway logs.|Yes|Yes|[Queries](/azure/azure-monitor/reference/queries/apimanagementgatewaylogs)|No |
 |`WebSocketConnectionLogs` |Logs related to Websocket Connections |[ApiManagementWebSocketConnectionLogs](/azure/azure-monitor/reference/tables/apimanagementwebsocketconnectionlogs)<p>Websocket connection logs provides logs on websocket connection events for API Management Gateway. Logging starts when the request arrives to API Management Gateway for handshake and till the request gets terminated. Every request log can be uniquely identified with CorrelationId.|Yes|No||Yes |

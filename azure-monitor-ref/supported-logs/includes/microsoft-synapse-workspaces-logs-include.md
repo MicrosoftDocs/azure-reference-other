@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 02/21/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Synapse/workspaces, naam
@@ -19,5 +19,5 @@ ms.custom: Microsoft.Synapse/workspaces, naam
 |`IntegrationPipelineRuns` |Integration Pipeline Runs |[SynapseIntegrationPipelineRuns](/azure/azure-monitor/reference/tables/synapseintegrationpipelineruns)<p>Logs for Synapse integration pipeline runs.|No|Yes||Yes |
 |`IntegrationTriggerRuns` |Integration Trigger Runs |[SynapseIntegrationTriggerRuns](/azure/azure-monitor/reference/tables/synapseintegrationtriggerruns)<p>Logs for Synapse integration trigger runs.|No|Yes||Yes |
 |`SQLSecurityAuditEvents` |SQL Security Audit Event |[SQLSecurityAuditEvents](/azure/azure-monitor/reference/tables/sqlsecurityauditevents)<p>Azure Synapse SQL Audit Log.|No|Yes||No |
-|`SynapseLinkEvent` |Synapse Link Event |[SynapseLinkEvent](/azure/azure-monitor/reference/tables/synapselinkevent)<p>Information about Synapse Link, including Link status and Link table status.|No|No|[Queries](../../queries/synapselinkevent.md)|Yes |
+|`SynapseLinkEvent` |Synapse Link Event |[SynapseLinkEvent](/azure/azure-monitor/reference/tables/synapselinkevent)<p>Information about Synapse Link, including Link status and Link table status.|No|No|[Queries](/azure/azure-monitor/reference/queries/synapselinkevent)|Yes |
 |`SynapseRbacOperations` |Synapse RBAC Operations |[SynapseRbacOperations](/azure/azure-monitor/reference/tables/synapserbacoperations)<p>Azure Synapse role-based access control (SRBAC) operations.|No|Yes||No |

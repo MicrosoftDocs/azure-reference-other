@@ -1,4 +1,8 @@
 items:
+- name:  Azure Monitor Reference
+  href: ../index.md  
+- name: Tables by resource type
+  href: ../tables/tables-resourcetype.md
 - name: Azure Monitor supported metrics
   href: ../supported-metrics/metrics-index.md
 - name: Azure Monitor supported log categories
