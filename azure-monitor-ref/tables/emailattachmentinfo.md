@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # EmailAttachmentInfo
@@ -24,7 +24,7 @@ Office 365 attached emails information.
 
 ## Queries
 
- Sample queries for the [EmailAttachmentInfo](../queries/emailattachmentinfo.md) table.
+ Sample queries for the [EmailAttachmentInfo](/azure/azure-monitor/reference/queries/emailattachmentinfo) table.
 
 
 ## Columns

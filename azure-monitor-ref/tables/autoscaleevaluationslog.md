@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # AutoscaleEvaluationsLog
@@ -30,7 +30,7 @@ ms.date: 02/18/2024
 
 ## Queries
 
- Sample queries for the [AutoscaleEvaluationsLog](../queries/autoscaleevaluationslog.md) table.
+ Sample queries for the [AutoscaleEvaluationsLog](/azure/azure-monitor/reference/queries/autoscaleevaluationslog) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # AgriFoodApplicationAuditLogs
@@ -29,7 +29,7 @@ Logs for privileged actions such as data-plane resource create, update, delete a
 
 ## Queries
 
- Sample queries for the [AgriFoodApplicationAuditLogs](../queries/agrifoodapplicationauditlogs.md) table.
+ Sample queries for the [AgriFoodApplicationAuditLogs](/azure/azure-monitor/reference/queries/agrifoodapplicationauditlogs) table.
 
 
 ## Columns

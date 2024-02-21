@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # TSIIngress
@@ -28,7 +28,7 @@ The Ingress category tracks errors that occur in the ingress pipeline. This cate
 
 ## Queries
 
- Sample queries for the [TSIIngress](../queries/tsiingress.md) table.
+ Sample queries for the [TSIIngress](/azure/azure-monitor/reference/queries/tsiingress) table.
 
 
 ## Columns

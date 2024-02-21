@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # LASummaryLogs
@@ -28,7 +28,7 @@ Provides Summary logs rules execution details, including run status, duration an
 
 ## Queries
 
- Sample queries for the [LASummaryLogs](../queries/lasummarylogs.md) table.
+ Sample queries for the [LASummaryLogs](/azure/azure-monitor/reference/queries/lasummarylogs) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # ContainerInventory
@@ -32,7 +32,7 @@ Inventory of containers and their attributes that are monitored by the agent
 
 ## Queries
 
- Sample queries for the [ContainerInventory](../queries/containerinventory.md) table.
+ Sample queries for the [ContainerInventory](/azure/azure-monitor/reference/queries/containerinventory) table.
 
 
 ## Columns

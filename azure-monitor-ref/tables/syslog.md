@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # Syslog
@@ -36,7 +36,7 @@ Syslog events on Linux computers using the Log Analytics agent.
 
 ## Queries
 
- Sample queries for the [Syslog](../queries/syslog.md) table.
+ Sample queries for the [Syslog](/azure/azure-monitor/reference/queries/syslog) table.
 
 
 ## Columns

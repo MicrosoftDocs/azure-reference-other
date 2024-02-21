@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # AOIDatabaseQuery
@@ -29,7 +29,7 @@ Audit logs related to queries run on database, in dataproduct environment.
 
 ## Queries
 
- Sample queries for the [AOIDatabaseQuery](../queries/aoidatabasequery.md) table.
+ Sample queries for the [AOIDatabaseQuery](/azure/azure-monitor/reference/queries/aoidatabasequery) table.
 
 
 ## Columns

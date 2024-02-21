@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # AzureActivity
@@ -84,6 +84,7 @@ Entries from the Azure Activity log that provides insight into any subscription-
 - Microsoft Playwright Testing
 - Microsoft Graph Logs
 - Azure Operator Insights - Data Product
+- Storage Accounts
 - Azure Managed Lustre
 - Azure Storage Mover
 - Synapse Workspaces
@@ -100,7 +101,6 @@ Entries from the Azure Activity log that provides insight into any subscription-
 - Analysis Services
 - Batch Accounts
 - Azure Spring Apps
-- Storage Accounts
 - SignalR
 - Container Registries
 - Azure Data Explorer Clusters
@@ -150,7 +150,7 @@ Entries from the Azure Activity log that provides insight into any subscription-
 
 ## Queries
 
- Sample queries for the [AzureActivity](../queries/azureactivity.md) table.
+ Sample queries for the [AzureActivity](/azure/azure-monitor/reference/queries/azureactivity) table.
 
 
 ## Columns

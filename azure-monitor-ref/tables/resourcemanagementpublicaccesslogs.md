@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # ResourceManagementPublicAccessLogs
@@ -24,7 +24,7 @@ Contains Resource management private link analysis events such as the operations
 
 ## Queries
 
- Sample queries for the [ResourceManagementPublicAccessLogs](../queries/resourcemanagementpublicaccesslogs.md) table.
+ Sample queries for the [ResourceManagementPublicAccessLogs](/azure/azure-monitor/reference/queries/resourcemanagementpublicaccesslogs) table.
 
 
 ## Columns
