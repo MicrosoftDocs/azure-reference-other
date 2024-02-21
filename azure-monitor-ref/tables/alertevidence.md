@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # AlertEvidence
@@ -24,7 +24,7 @@ Includes files, IP addresses, URLs, users, or devices associated with alerts.
 
 ## Queries
 
- Sample queries for the [AlertEvidence](../queries/alertevidence.md) table.
+ Sample queries for the [AlertEvidence](/azure/azure-monitor/reference/queries/alertevidence) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # ADXTableUsageStatistics
@@ -24,7 +24,7 @@ Azure Data Explorer table usage statistics.
 
 ## Queries
 
- Sample queries for the [ADXTableUsageStatistics](../queries/adxtableusagestatistics.md) table.
+ Sample queries for the [ADXTableUsageStatistics](/azure/azure-monitor/reference/queries/adxtableusagestatistics) table.
 
 
 ## Columns

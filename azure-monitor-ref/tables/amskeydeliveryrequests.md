@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # AMSKeyDeliveryRequests
@@ -29,7 +29,7 @@ Key delivery requests logs from Azure Media Services. This table captures detail
 
 ## Queries
 
- Sample queries for the [AMSKeyDeliveryRequests](../queries/amskeydeliveryrequests.md) table.
+ Sample queries for the [AMSKeyDeliveryRequests](/azure/azure-monitor/reference/queries/amskeydeliveryrequests) table.
 
 
 ## Columns

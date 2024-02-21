@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 02/21/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.AppPlatform/Spring, arm
@@ -13,8 +13,8 @@ ms.custom: Microsoft.AppPlatform/Spring, arm
   
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
-|`ApplicationConsole` |Application Console |[AppPlatformLogsforSpring](/azure/azure-monitor/reference/tables/appplatformlogsforspring)<p>App Platform Logs for Spring.|No|Yes|[Queries](../../queries/appplatformlogsforspring.md)|No |
+|`ApplicationConsole` |Application Console |[AppPlatformLogsforSpring](/azure/azure-monitor/reference/tables/appplatformlogsforspring)<p>App Platform Logs for Spring.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/appplatformlogsforspring)|No |
 |`BuildLogs` |Build Logs |[AppPlatformBuildLogs](/azure/azure-monitor/reference/tables/appplatformbuildlogs)<p>Azure Spring Cloud build logs of user source codes.|No|No||Yes |
 |`ContainerEventLogs` |Container Event Logs |[AppPlatformContainerEventLogs](/azure/azure-monitor/reference/tables/appplatformcontainereventlogs)<p>Azure Spring Cloud container event logs of user applications.|No|No||Yes |
 |`IngressLogs` |Ingress Logs |[AppPlatformIngressLogs](/azure/azure-monitor/reference/tables/appplatformingresslogs)<p>Azure Spring Cloud ingress logs, currently it is nginx access logs.|No|Yes||Yes |
-|`SystemLogs` |System Logs |[AppPlatformSystemLogs](/azure/azure-monitor/reference/tables/appplatformsystemlogs)<p>Azure Spring Cloud System Logs.|No|Yes|[Queries](../../queries/appplatformsystemlogs.md)|No |
+|`SystemLogs` |System Logs |[AppPlatformSystemLogs](/azure/azure-monitor/reference/tables/appplatformsystemlogs)<p>Azure Spring Cloud System Logs.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/appplatformsystemlogs)|No |

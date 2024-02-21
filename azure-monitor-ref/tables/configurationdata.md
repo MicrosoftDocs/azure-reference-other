@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # ConfigurationData
@@ -32,7 +32,7 @@ View the last reported state for in-guest configuration data such as Files Softw
 
 ## Queries
 
- Sample queries for the [ConfigurationData](../queries/configurationdata.md) table.
+ Sample queries for the [ConfigurationData](/azure/azure-monitor/reference/queries/configurationdata) table.
 
 
 ## Columns

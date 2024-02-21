@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 02/21/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DataShare/accounts, naam
@@ -13,7 +13,7 @@ ms.custom: Microsoft.DataShare/accounts, naam
   
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
-|`ReceivedShareSnapshots` |Received Share Snapshots |[MicrosoftDataShareReceivedSnapshotLog](/azure/azure-monitor/reference/tables/microsoftdatasharereceivedsnapshotlog)<p>Data Share consumer side synchronization logs.|No|Yes|[Queries](../../queries/microsoftdatasharereceivedsnapshotlog.md)|No |
-|`SentShareSnapshots` |Sent Share Snapshots |[MicrosoftDataShareSentSnapshotLog](/azure/azure-monitor/reference/tables/microsoftdatasharesentsnapshotlog)<p>Data Share provider side synchronization logs.|No|Yes|[Queries](../../queries/microsoftdatasharesentsnapshotlog.md)|No |
-|`Shares` |Shares |[MicrosoftDataShareShareLog](/azure/azure-monitor/reference/tables/microsoftdatasharesharelog)<p>Microsoft Data Share Share Log|No|Yes||No |
+|`ReceivedShareSnapshots` |Received Share Snapshots |[MicrosoftDataShareReceivedSnapshotLog](/azure/azure-monitor/reference/tables/microsoftdatasharereceivedsnapshotlog)<p>Data Share consumer side synchronization logs.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/microsoftdatasharereceivedsnapshotlog)|No |
+|`SentShareSnapshots` |Sent Share Snapshots |[MicrosoftDataShareSentSnapshotLog](/azure/azure-monitor/reference/tables/microsoftdatasharesentsnapshotlog)<p>Data Share provider side synchronization logs.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/microsoftdatasharesentsnapshotlog)|No |
+|`Shares` |Shares ||No|Yes||No |
 |`ShareSubscriptions` |Share Subscriptions ||No|Yes||No |

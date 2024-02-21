@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # DeviceCalendar
@@ -24,7 +24,7 @@ ms.date: 02/18/2024
 
 ## Queries
 
- Sample queries for the [DeviceCalendar](../queries/devicecalendar.md) table.
+ Sample queries for the [DeviceCalendar](/azure/azure-monitor/reference/queries/devicecalendar) table.
 
 
 ## Columns

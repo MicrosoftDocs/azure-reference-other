@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # AADNonInteractiveUserSignInLogs
@@ -25,7 +25,7 @@ Non-interactive Azure Active Directory sign-in logs from user.
 
 ## Queries
 
- Sample queries for the [AADNonInteractiveUserSignInLogs](../queries/aadnoninteractiveusersigninlogs.md) table.
+ Sample queries for the [AADNonInteractiveUserSignInLogs](/azure/azure-monitor/reference/queries/aadnoninteractiveusersigninlogs) table.
 
 
 ## Columns

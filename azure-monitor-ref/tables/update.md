@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/21/2024
 ---
 
 # Update
@@ -37,7 +37,7 @@ Details for update schedule run. Includes information such as which updates wher
 
 ## Queries
 
- Sample queries for the [Update](../queries/update.md) table.
+ Sample queries for the [Update](/azure/azure-monitor/reference/queries/update) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/13/2024
+ms.date: 02/21/2024
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -121,7 +121,6 @@ ms.date: 02/13/2024
 - [ContainerAppSystemLogs](containerappsystemlogs.md)
 - [ContainerEvent](containerevent.md)
 - [ContainerInstanceLog](containerinstancelog.md)
-- [DatabricksWorkspaceLogs](databricksworkspacelogs.md)
 - [DataverseActivity](dataverseactivity.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
 - [EGNSuccessfulMqttConnections](egnsuccessfulmqttconnections.md)
@@ -355,7 +354,6 @@ ms.date: 02/13/2024
 - [DatabricksSecrets](databrickssecrets.md)
 - [DatabricksWebTerminal](databrickswebterminal.md)
 - [DatabricksWorkspace](databricksworkspace.md)
-- [DatabricksWorkspaceLogs](databricksworkspacelogs.md)
 - [DevCenterBillingEventLogs](devcenterbillingeventlogs.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
 - [DevCenterResourceOperationLogs](devcenterresourceoperationlogs.md)
@@ -714,6 +712,7 @@ ms.date: 02/13/2024
 - [IdentityLogonEvents](identitylogonevents.md)
 - [IdentityQueryEvents](identityqueryevents.md)
 - [LinuxAuditLog](linuxauditlog.md)
+- [MDCFileIntegrityMonitoringEvents](mdcfileintegritymonitoringevents.md)
 - [McasShadowItReporting](mcasshadowitreporting.md)
 - [MicrosoftGraphActivityLogs](microsoftgraphactivitylogs.md)
 - [MicrosoftPurviewInformationProtection](microsoftpurviewinformationprotection.md)
