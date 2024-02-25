@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/21/2024
+ms.date: 02/22/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.EventHub/Namespaces, naam
@@ -17,6 +17,7 @@ ms.custom: Microsoft.EventHub/Namespaces, naam
 |`ArchiveLogs` |Archive Logs |[AZMSArchiveLogs](/azure/azure-monitor/reference/tables/azmsarchivelogs)<p>Captures information about Event Hubs capture operations, specifically, logs related to capture errors.|Yes|No||No |
 |`AutoScaleLogs` |Auto Scale Logs |[AZMSAutoscaleLogs](/azure/azure-monitor/reference/tables/azmsautoscalelogs)<p>Captures auto-inflate operations done on an Event Hubs namespace.|Yes|No||No |
 |`CustomerManagedKeyUserLogs` |Customer Managed Key Logs ||No|No||No |
+|`DiagnosticErrorLogs` |Diagnostic Error Logs |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Diagnostic logs emitted by Azure services describe the operation of those services or resources. All diagnostic logs share a common top-level schema, which services extend to emit unique properties for their specifc events. Note: many services are now ingesting their diagnostic logs into resource-specific tables, see more here|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsofteventhub)|Yes |
 |`EventHubVNetConnectionEvent` |VNet/IP Filtering Connection Logs |[AZMSVnetConnectionEvents](/azure/azure-monitor/reference/tables/azmsvnetconnectionevents)<p>Captures all virtual network and IP filtering logs for Azure Event Hubs and Azure Service Bus. These would only be emitted if namespace allows access from selected networks or from specific IP address (IP Filter rules).|Yes|No|[Queries](/azure/azure-monitor/reference/queries/azmsvnetconnectionevents)|No |
 |`KafkaCoordinatorLogs` |Kafka Coordinator Logs |[AZMSKafkaCoordinatorLogs](/azure/azure-monitor/reference/tables/azmskafkacoordinatorlogs)<p>Captures kafka coordinator operations related to Event Hubs.|Yes|No||No |
 |`KafkaUserErrorLogs` |Kafka User Error Logs |[AZMSKafkaUserErrorLogs](/azure/azure-monitor/reference/tables/azmskafkausererrorlogs)<p>Captures information about kafka APIs called on Event Hubs.|Yes|No||No |

@@ -72,10 +72,6 @@ items:
     href: ../supported-metrics/microsoft-classicstorage-storageaccounts-queueservices-metrics.md
   - name: Microsoft.ClassicStorage/storageAccounts/tableServices
     href: ../supported-metrics/microsoft-classicstorage-storageaccounts-tableservices-metrics.md
-  - name: Microsoft.Cloudtest/hostedpools
-    href: ../supported-metrics/microsoft-cloudtest-hostedpools-metrics.md
-  - name: Microsoft.Cloudtest/pools
-    href: ../supported-metrics/microsoft-cloudtest-pools-metrics.md
   - name: Microsoft.ClusterStor/nodes
     href: ../supported-metrics/microsoft-clusterstor-nodes-metrics.md
   - name: Microsoft.CodeSigning/codesigningaccounts
