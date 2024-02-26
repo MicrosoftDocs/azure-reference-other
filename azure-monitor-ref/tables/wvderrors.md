@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # WVDErrors
@@ -30,7 +30,7 @@ Windows Virtual Desktop Error Activity
 
 ## Queries
 
- Sample queries for the [WVDErrors](/azure/azure-monitor/reference/queries/wvderrors) table.
+ Sample queries for the [WVDErrors](../queries/wvderrors.md) table.
 
 
 ## Columns

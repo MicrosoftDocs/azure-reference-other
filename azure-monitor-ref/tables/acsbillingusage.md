@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # ACSBillingUsage
@@ -28,7 +28,7 @@ Usage records across all modes of Communication Services.
 
 ## Queries
 
- Sample queries for the [ACSBillingUsage](/azure/azure-monitor/reference/queries/acsbillingusage) table.
+ Sample queries for the [ACSBillingUsage](../queries/acsbillingusage.md) table.
 
 
 ## Columns

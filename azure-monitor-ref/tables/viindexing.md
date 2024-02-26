@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # VIIndexing
@@ -28,7 +28,7 @@ Indexing logs from Video Indexer.
 
 ## Queries
 
- Sample queries for the [VIIndexing](/azure/azure-monitor/reference/queries/viindexing) table.
+ Sample queries for the [VIIndexing](../queries/viindexing.md) table.
 
 
 ## Columns

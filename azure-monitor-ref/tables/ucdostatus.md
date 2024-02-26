@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # UCDOStatus
@@ -25,7 +25,7 @@ Update Compliance - provides information, for a single device, on their bandwidt
 
 ## Queries
 
- Sample queries for the [UCDOStatus](/azure/azure-monitor/reference/queries/ucdostatus) table.
+ Sample queries for the [UCDOStatus](../queries/ucdostatus.md) table.
 
 
 ## Columns

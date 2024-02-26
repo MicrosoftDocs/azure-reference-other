@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # Azure Monitor Logs table reference organized by category
@@ -121,6 +121,15 @@ ms.date: 02/21/2024
 - [ContainerAppSystemLogs](containerappsystemlogs.md)
 - [ContainerEvent](containerevent.md)
 - [ContainerInstanceLog](containerinstancelog.md)
+- [DatabricksBrickStoreHttpGateway](databricksbrickstorehttpgateway.md)
+- [DatabricksCloudStorageMetadata](databrickscloudstoragemetadata.md)
+- [DatabricksDashboards](databricksdashboards.md)
+- [DatabricksDataMonitoring](databricksdatamonitoring.md)
+- [DatabricksFilesystem](databricksfilesystem.md)
+- [DatabricksIngestion](databricksingestion.md)
+- [DatabricksLineageTracking](databrickslineagetracking.md)
+- [DatabricksMarketplaceConsumer](databricksmarketplaceconsumer.md)
+- [DatabricksPredictiveOptimization](databrickspredictiveoptimization.md)
 - [DataverseActivity](dataverseactivity.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
 - [EGNSuccessfulMqttConnections](egnsuccessfulmqttconnections.md)
@@ -335,19 +344,28 @@ ms.date: 02/21/2024
 - [DSMDataLabelingLogs](dsmdatalabelinglogs.md)
 - [DataTransferOperations](datatransferoperations.md)
 - [DatabricksAccounts](databricksaccounts.md)
+- [DatabricksBrickStoreHttpGateway](databricksbrickstorehttpgateway.md)
+- [DatabricksCloudStorageMetadata](databrickscloudstoragemetadata.md)
 - [DatabricksClusters](databricksclusters.md)
 - [DatabricksDBFS](databricksdbfs.md)
+- [DatabricksDashboards](databricksdashboards.md)
+- [DatabricksDataMonitoring](databricksdatamonitoring.md)
 - [DatabricksDatabricksSQL](databricksdatabrickssql.md)
 - [DatabricksFeatureStore](databricksfeaturestore.md)
+- [DatabricksFilesystem](databricksfilesystem.md)
 - [DatabricksGenie](databricksgenie.md)
 - [DatabricksGitCredentials](databricksgitcredentials.md)
 - [DatabricksGlobalInitScripts](databricksglobalinitscripts.md)
 - [DatabricksIAMRole](databricksiamrole.md)
+- [DatabricksIngestion](databricksingestion.md)
 - [DatabricksInstancePools](databricksinstancepools.md)
 - [DatabricksJobs](databricksjobs.md)
+- [DatabricksLineageTracking](databrickslineagetracking.md)
 - [DatabricksMLflowAcledArtifact](databricksmlflowacledartifact.md)
 - [DatabricksMLflowExperiment](databricksmlflowexperiment.md)
+- [DatabricksMarketplaceConsumer](databricksmarketplaceconsumer.md)
 - [DatabricksNotebook](databricksnotebook.md)
+- [DatabricksPredictiveOptimization](databrickspredictiveoptimization.md)
 - [DatabricksRemoteHistoryService](databricksremotehistoryservice.md)
 - [DatabricksSQLPermissions](databrickssqlpermissions.md)
 - [DatabricksSSH](databricksssh.md)
@@ -713,6 +731,7 @@ ms.date: 02/21/2024
 - [IdentityQueryEvents](identityqueryevents.md)
 - [LinuxAuditLog](linuxauditlog.md)
 - [MDCFileIntegrityMonitoringEvents](mdcfileintegritymonitoringevents.md)
+- [MDECustomCollectionDeviceFileEvents](mdecustomcollectiondevicefileevents.md)
 - [McasShadowItReporting](mcasshadowitreporting.md)
 - [MicrosoftGraphActivityLogs](microsoftgraphactivitylogs.md)
 - [MicrosoftPurviewInformationProtection](microsoftpurviewinformationprotection.md)

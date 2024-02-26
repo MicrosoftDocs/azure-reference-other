@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # AegDeliveryFailureLogs
@@ -31,7 +31,7 @@ Azure Event Grid - event delivery failure logs.
 
 ## Queries
 
- Sample queries for the [AegDeliveryFailureLogs](/azure/azure-monitor/reference/queries/aegdeliveryfailurelogs) table.
+ Sample queries for the [AegDeliveryFailureLogs](../queries/aegdeliveryfailurelogs.md) table.
 
 
 ## Columns
