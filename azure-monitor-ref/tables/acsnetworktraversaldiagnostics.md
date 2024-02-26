@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # ACSNetworkTraversalDiagnostics
@@ -28,7 +28,7 @@ Diagnostics logs provide information about the relay session connectivity and th
 
 ## Queries
 
- Sample queries for the [ACSNetworkTraversalDiagnostics](/azure/azure-monitor/reference/queries/acsnetworktraversaldiagnostics) table.
+ Sample queries for the [ACSNetworkTraversalDiagnostics](../queries/acsnetworktraversaldiagnostics.md) table.
 
 
 ## Columns

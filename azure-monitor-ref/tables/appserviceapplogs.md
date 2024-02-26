@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # AppServiceAppLogs
@@ -28,7 +28,7 @@ Logs generated through your application.
 
 ## Queries
 
- Sample queries for the [AppServiceAppLogs](/azure/azure-monitor/reference/queries/appserviceapplogs) table.
+ Sample queries for the [AppServiceAppLogs](../queries/appserviceapplogs.md) table.
 
 
 ## Columns

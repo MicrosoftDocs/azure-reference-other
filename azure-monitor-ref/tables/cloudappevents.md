@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # CloudAppEvents
@@ -24,7 +24,7 @@ Information about activities in various cloud apps and services covered by Micro
 
 ## Queries
 
- Sample queries for the [CloudAppEvents](/azure/azure-monitor/reference/queries/cloudappevents) table.
+ Sample queries for the [CloudAppEvents](../queries/cloudappevents.md) table.
 
 
 ## Columns

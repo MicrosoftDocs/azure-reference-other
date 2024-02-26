@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # AMSLiveEventOperations
@@ -29,7 +29,7 @@ Contains logs related to a Live Event. Logs are sent when an encoder connects, d
 
 ## Queries
 
- Sample queries for the [AMSLiveEventOperations](/azure/azure-monitor/reference/queries/amsliveeventoperations) table.
+ Sample queries for the [AMSLiveEventOperations](../queries/amsliveeventoperations.md) table.
 
 
 ## Columns

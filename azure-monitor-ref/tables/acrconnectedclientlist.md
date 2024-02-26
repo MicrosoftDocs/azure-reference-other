@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # ACRConnectedClientList
@@ -29,7 +29,7 @@ Logs count of Redis clients connected to a cache instance and their IP addresses
 
 ## Queries
 
- Sample queries for the [ACRConnectedClientList](/azure/azure-monitor/reference/queries/acrconnectedclientlist) table.
+ Sample queries for the [ACRConnectedClientList](../queries/acrconnectedclientlist.md) table.
 
 
 ## Columns

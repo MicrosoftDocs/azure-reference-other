@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # AFSAuditLogs
@@ -29,7 +29,7 @@ This table contains audit logs retrieved from your Azure Managed Lustre filesyst
 
 ## Queries
 
- Sample queries for the [AFSAuditLogs](/azure/azure-monitor/reference/queries/afsauditlogs) table.
+ Sample queries for the [AFSAuditLogs](../queries/afsauditlogs.md) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # KubeEvents
@@ -31,7 +31,7 @@ Table that stores Kubernetes events
 
 ## Queries
 
- Sample queries for the [KubeEvents](/azure/azure-monitor/reference/queries/kubeevents) table.
+ Sample queries for the [KubeEvents](../queries/kubeevents.md) table.
 
 
 ## Columns

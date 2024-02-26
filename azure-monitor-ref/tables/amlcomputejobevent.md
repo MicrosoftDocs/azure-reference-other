@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # AmlComputeJobEvent
@@ -28,7 +28,7 @@ AmlCompute Job events
 
 ## Queries
 
- Sample queries for the [AmlComputeJobEvent](/azure/azure-monitor/reference/queries/amlcomputejobevent) table.
+ Sample queries for the [AmlComputeJobEvent](../queries/amlcomputejobevent.md) table.
 
 
 ## Columns

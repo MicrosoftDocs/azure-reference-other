@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # AGCAccessLogs
@@ -28,7 +28,7 @@ Contains details of client requests made to Application Gateway for Containers. 
 
 ## Queries
 
- Sample queries for the [AGCAccessLogs](/azure/azure-monitor/reference/queries/agcaccesslogs) table.
+ Sample queries for the [AGCAccessLogs](../queries/agcaccesslogs.md) table.
 
 
 ## Columns

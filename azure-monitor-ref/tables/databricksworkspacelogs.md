@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # DatabricksWorkspaceLogs
@@ -20,7 +20,7 @@ Schema for Databricks workspaces related categories, this is an umbrella schema 
 
 ## Queries
 
- Sample queries for the [DatabricksWorkspaceLogs](/azure/azure-monitor/reference/queries/databricksworkspacelogs) table.
+ Sample queries for the [DatabricksWorkspaceLogs](../queries/databricksworkspacelogs.md) table.
 
 
 ## Columns
