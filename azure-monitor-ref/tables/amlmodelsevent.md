@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # AmlModelsEvent
@@ -29,7 +29,7 @@ Events when ML model is accessed (read, created, or deleted). Incudes events whe
 
 ## Queries
 
- Sample queries for the [AmlModelsEvent](/azure/azure-monitor/reference/queries/amlmodelsevent) table.
+ Sample queries for the [AmlModelsEvent](../queries/amlmodelsevent.md) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # AppServiceAuditLogs
@@ -28,7 +28,7 @@ Logs generated when publishing users successfully log on via one of the App Serv
 
 ## Queries
 
- Sample queries for the [AppServiceAuditLogs](/azure/azure-monitor/reference/queries/appserviceauditlogs) table.
+ Sample queries for the [AppServiceAuditLogs](../queries/appserviceauditlogs.md) table.
 
 
 ## Columns

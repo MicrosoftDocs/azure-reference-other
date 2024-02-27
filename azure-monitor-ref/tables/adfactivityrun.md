@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # ADFActivityRun
@@ -28,7 +28,7 @@ ms.date: 02/21/2024
 
 ## Queries
 
- Sample queries for the [ADFActivityRun](/azure/azure-monitor/reference/queries/adfactivityrun) table.
+ Sample queries for the [ADFActivityRun](../queries/adfactivityrun.md) table.
 
 
 ## Columns

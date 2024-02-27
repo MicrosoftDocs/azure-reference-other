@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # AADManagedIdentitySignInLogs
@@ -25,7 +25,7 @@ Managed identity Azure Active Directory sign-in logs.
 
 ## Queries
 
- Sample queries for the [AADManagedIdentitySignInLogs](/azure/azure-monitor/reference/queries/aadmanagedidentitysigninlogs) table.
+ Sample queries for the [AADManagedIdentitySignInLogs](../queries/aadmanagedidentitysigninlogs.md) table.
 
 
 ## Columns

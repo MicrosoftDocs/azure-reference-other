@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # AzureLoadTestingOperation
@@ -29,7 +29,7 @@ Details about the operations which are performed on the Azure Load Testing resou
 
 ## Queries
 
- Sample queries for the [AzureLoadTestingOperation](/azure/azure-monitor/reference/queries/azureloadtestingoperation) table.
+ Sample queries for the [AzureLoadTestingOperation](../queries/azureloadtestingoperation.md) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # AMSMediaAccountHealth
@@ -29,7 +29,7 @@ Media Account Health Status. This table captures the Azure Media Services accoun
 
 ## Queries
 
- Sample queries for the [AMSMediaAccountHealth](/azure/azure-monitor/reference/queries/amsmediaaccounthealth) table.
+ Sample queries for the [AMSMediaAccountHealth](../queries/amsmediaaccounthealth.md) table.
 
 
 ## Columns

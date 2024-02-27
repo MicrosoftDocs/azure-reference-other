@@ -58,8 +58,6 @@ items:
     href: ../supported-logs/microsoft-chaos-experiments-logs.md
   - name: Microsoft.ClassicNetwork/networksecuritygroups
     href: ../supported-logs/microsoft-classicnetwork-networksecuritygroups-logs.md
-  - name: Microsoft.Cloudtest/hostedpools
-    href: ../supported-logs/microsoft-cloudtest-hostedpools-logs.md
   - name: Microsoft.CodeSigning/codesigningaccounts
     href: ../supported-logs/microsoft-codesigning-codesigningaccounts-logs.md
   - name: Microsoft.CognitiveServices/accounts
@@ -491,8 +489,6 @@ items:
     href: ../supported-logs/microsoft-chaos-experiments-logs.md
   - name: Network Security Group Rule Flow Event
     href: ../supported-logs/microsoft-classicnetwork-networksecuritygroups-logs.md
-  - name: Provisioning Script Logs
-    href: ../supported-logs/microsoft-cloudtest-hostedpools-logs.md
   - name: Sign Transactions
     href: ../supported-logs/microsoft-codesigning-codesigningaccounts-logs.md
   - name: Audit Logs
@@ -920,6 +916,8 @@ items:
   - name: Auto Scale Logs
     href: ../supported-logs/microsoft-eventhub-namespaces-logs.md
   - name: Customer Managed Key Logs
+    href: ../supported-logs/microsoft-eventhub-namespaces-logs.md
+  - name: Diagnostic Error Logs
     href: ../supported-logs/microsoft-eventhub-namespaces-logs.md
   - name: VNet/IP Filtering Connection Logs
     href: ../supported-logs/microsoft-eventhub-namespaces-logs.md
