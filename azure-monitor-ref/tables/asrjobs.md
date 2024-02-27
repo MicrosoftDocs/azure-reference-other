@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # ASRJobs
@@ -28,7 +28,7 @@ This table contains records of Azure Site Recovery (ASR) jobs such as failover, 
 
 ## Queries
 
- Sample queries for the [ASRJobs](/azure/azure-monitor/reference/queries/asrjobs) table.
+ Sample queries for the [ASRJobs](../queries/asrjobs.md) table.
 
 
 ## Columns

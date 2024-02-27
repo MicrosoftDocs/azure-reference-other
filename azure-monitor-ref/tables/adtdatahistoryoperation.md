@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # ADTDataHistoryOperation
@@ -28,7 +28,7 @@ This table tracks all data history events being published to time series databas
 
 ## Queries
 
- Sample queries for the [ADTDataHistoryOperation](/azure/azure-monitor/reference/queries/adtdatahistoryoperation) table.
+ Sample queries for the [ADTDataHistoryOperation](../queries/adtdatahistoryoperation.md) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # AmlOnlineEndpointEventLog
@@ -29,7 +29,7 @@ Azure ML online endpoints event logs. It provides event logs regarding the infer
 
 ## Queries
 
- Sample queries for the [AmlOnlineEndpointEventLog](/azure/azure-monitor/reference/queries/amlonlineendpointeventlog) table.
+ Sample queries for the [AmlOnlineEndpointEventLog](../queries/amlonlineendpointeventlog.md) table.
 
 
 ## Columns

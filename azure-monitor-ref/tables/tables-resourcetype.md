@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # Azure Monitor Logs table reference organized by resource type
@@ -313,6 +313,15 @@ Microsoft.DBforPostgreSQL/serversv2
 Microsoft.Databricks/workspaces
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [DatabricksBrickStoreHttpGateway](databricksbrickstorehttpgateway.md)
+- [DatabricksDashboards](databricksdashboards.md)
+- [DatabricksCloudStorageMetadata](databrickscloudstoragemetadata.md)
+- [DatabricksPredictiveOptimization](databrickspredictiveoptimization.md)
+- [DatabricksDataMonitoring](databricksdatamonitoring.md)
+- [DatabricksIngestion](databricksingestion.md)
+- [DatabricksMarketplaceConsumer](databricksmarketplaceconsumer.md)
+- [DatabricksLineageTracking](databrickslineagetracking.md)
+- [DatabricksFilesystem](databricksfilesystem.md)
 - [DatabricksAccounts](databricksaccounts.md)
 - [DatabricksClusters](databricksclusters.md)
 - [DatabricksDBFS](databricksdbfs.md)

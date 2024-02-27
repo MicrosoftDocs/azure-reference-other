@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # WaaSUpdateStatus
@@ -24,7 +24,7 @@ ms.date: 02/21/2024
 
 ## Queries
 
- Sample queries for the [WaaSUpdateStatus](/azure/azure-monitor/reference/queries/waasupdatestatus) table.
+ Sample queries for the [WaaSUpdateStatus](../queries/waasupdatestatus.md) table.
 
 
 ## Columns
