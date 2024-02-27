@@ -4,7 +4,7 @@ description: Understand the supported services and event schemas for Azure Monit
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 02/19/2024
+ms.date: 02/22/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -27,11 +27,9 @@ A combination of the resource type (available in the `resourceId` property) and 
 
 In addition, there might be costs to export some categories of resource logs to those locations. Logs with possible export costs are listed in the next section. Select the links below to see which log categories have export costs associated with them. For more information on export pricing, see the **Platform Logs** section on the [Azure Monitor pricing page](https://azure.microsoft.com/pricing/details/monitor/).
 
-## Supported log categories per resource type
+## Supported log categories and metrics per resource type
 
-Following table lists log categories and metrics available for each resource type. 
-
-
+Following table lists log categories and metrics available for each resource type.
       
   |Resource Provider|Log Categories|Metrics|  
   |---|---|---|  
@@ -55,7 +53,6 @@ Following table lists log categories and metrics available for each resource typ
 |Microsoft.Cdn <a name="microsoftcdn"></a>|[cdnwebapplicationfirewallpolicies](../supported-logs/Microsoft-Cdn-cdnwebapplicationfirewallpolicies-logs.md)<br>[profiles](../supported-logs/Microsoft-Cdn-profiles-logs.md)<br>[profiles/endpoints](../supported-logs/Microsoft-Cdn-profiles-endpoints-logs.md)<br>|[cdnwebapplicationfirewallpolicies](../supported-metrics/Microsoft-Cdn-cdnwebapplicationfirewallpolicies-metrics.md)<br>[profiles](../supported-metrics/Microsoft-Cdn-profiles-metrics.md)<br>|
 |Microsoft.Chaos <a name="microsoftchaos"></a>|[experiments](../supported-logs/Microsoft-Chaos-experiments-logs.md)<br>|N/A|
 |Microsoft.ClassicNetwork <a name="microsoftclassicnetwork"></a>|[networksecuritygroups](../supported-logs/Microsoft-ClassicNetwork-networksecuritygroups-logs.md)<br>|N/A|
-|Microsoft.Cloudtest <a name="microsoftcloudtest"></a>|[hostedpools](../supported-logs/Microsoft-Cloudtest-hostedpools-logs.md)<br>|[hostedpools](../supported-metrics/Microsoft-Cloudtest-hostedpools-metrics.md)<br>[pools](../supported-metrics/Microsoft-Cloudtest-pools-metrics.md)<br>|
 |Microsoft.CodeSigning <a name="microsoftcodesigning"></a>|[codesigningaccounts](../supported-logs/Microsoft-CodeSigning-codesigningaccounts-logs.md)<br>|[codesigningaccounts](../supported-metrics/Microsoft-CodeSigning-codesigningaccounts-metrics.md)<br>|
 |Microsoft.CognitiveServices <a name="microsoftcognitiveservices"></a>|[accounts](../supported-logs/Microsoft-CognitiveServices-accounts-logs.md)<br>|[accounts](../supported-metrics/Microsoft-CognitiveServices-accounts-metrics.md)<br>|
 |Microsoft.Communication <a name="microsoftcommunication"></a>|[CommunicationServices](../supported-logs/Microsoft-Communication-CommunicationServices-logs.md)<br>|[CommunicationServices](../supported-metrics/Microsoft-Communication-CommunicationServices-metrics.md)<br>|

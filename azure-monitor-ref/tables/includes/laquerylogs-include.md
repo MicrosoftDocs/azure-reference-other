@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 02/26/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: LAQueryLogs
@@ -34,7 +34,6 @@ ms.custom: LAQueryLogs
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | StatsCPUTimeMs | real | The CPU (in ms) used in the execution of this query. |
 | StatsDataProcessedEnd | datetime | The end time (UTC) of the time range across which the data processed. |
-| StatsDataProcessedKB | real | The total KB of data that was processed as part of the query. |
 | StatsDataProcessedStart | datetime | The starting time (UTC) of the time range across which the data processed. |
 | StatsRegionCount | int | The number of regions that the workspaces accessed are spread across. |
 | StatsWorkspaceCount | int | The number of workspaces that the query accessed, either explicitly or otherwise. |

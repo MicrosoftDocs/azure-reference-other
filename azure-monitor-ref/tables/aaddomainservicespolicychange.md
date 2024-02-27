@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # AADDomainServicesPolicyChange
@@ -29,7 +29,7 @@ ms.date: 02/21/2024
 
 ## Queries
 
- Sample queries for the [AADDomainServicesPolicyChange](/azure/azure-monitor/reference/queries/aaddomainservicespolicychange) table.
+ Sample queries for the [AADDomainServicesPolicyChange](../queries/aaddomainservicespolicychange.md) table.
 
 
 ## Columns

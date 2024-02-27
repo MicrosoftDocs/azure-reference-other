@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # PowerPlatformConnectorActivity
@@ -25,7 +25,7 @@ Contains Microsoft Power Platform Connector audit logs. It's typically used to t
 
 ## Queries
 
- Sample queries for the [PowerPlatformConnectorActivity](/azure/azure-monitor/reference/queries/powerplatformconnectoractivity) table.
+ Sample queries for the [PowerPlatformConnectorActivity](../queries/powerplatformconnectoractivity.md) table.
 
 
 ## Columns

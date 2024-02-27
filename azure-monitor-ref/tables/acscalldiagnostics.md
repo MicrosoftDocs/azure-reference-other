@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # ACSCallDiagnostics
@@ -28,7 +28,7 @@ Diagnostics logs provide information about the media transfers that occur in a c
 
 ## Queries
 
- Sample queries for the [ACSCallDiagnostics](/azure/azure-monitor/reference/queries/acscalldiagnostics) table.
+ Sample queries for the [ACSCallDiagnostics](../queries/acscalldiagnostics.md) table.
 
 
 ## Columns

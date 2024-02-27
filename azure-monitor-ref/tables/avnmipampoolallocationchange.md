@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # AVNMIPAMPoolAllocationChange
@@ -30,7 +30,7 @@ Includes changes to allocations of an IPAM Pool such as Virtual Networks, static
 
 ## Queries
 
- Sample queries for the [AVNMIPAMPoolAllocationChange](/azure/azure-monitor/reference/queries/avnmipampoolallocationchange) table.
+ Sample queries for the [AVNMIPAMPoolAllocationChange](../queries/avnmipampoolallocationchange.md) table.
 
 
 ## Columns

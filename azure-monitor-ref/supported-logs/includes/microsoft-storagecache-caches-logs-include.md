@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/21/2024
+ms.date: 02/22/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.StorageCache/caches, naam
@@ -15,4 +15,4 @@ ms.custom: Microsoft.StorageCache/caches, naam
 |---|---|---|---|---|---|---|
 |`AscCacheOperationEvent` |HPC Cache operation event ||No|Yes||Yes |
 |`AscUpgradeEvent` |HPC Cache upgrade event ||No|Yes||Yes |
-|`AscWarningEvent` |HPC Cache warning ||No|Yes||Yes |
+|`AscWarningEvent` |HPC Cache warning |[StorageCacheWarningEvents](/azure/azure-monitor/reference/tables/storagecachewarningevents)<p>Logs for Azure HPC Cache warning events.|No|No|[Queries](/azure/azure-monitor/reference/queries/storagecachewarningevents)|Yes |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # WindowsEvent
@@ -31,7 +31,7 @@ Windows events which are collected and sent by the agent.
 
 ## Queries
 
- Sample queries for the [WindowsEvent](/azure/azure-monitor/reference/queries/windowsevent) table.
+ Sample queries for the [WindowsEvent](../queries/windowsevent.md) table.
 
 
 ## Columns

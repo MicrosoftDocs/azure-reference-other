@@ -591,22 +591,32 @@ items:
         href: datatransferoperations.md
       - name: DatabricksAccounts
         href: databricksaccounts.md
+      - name: DatabricksBrickStoreHttpGateway
+        href: databricksbrickstorehttpgateway.md
       - name: DatabricksCapsule8Dataplane
         href: databrickscapsule8dataplane.md
       - name: DatabricksClamAVScan
         href: databricksclamavscan.md
+      - name: DatabricksCloudStorageMetadata
+        href: databrickscloudstoragemetadata.md
       - name: DatabricksClusterLibraries
         href: databricksclusterlibraries.md
       - name: DatabricksClusters
         href: databricksclusters.md
       - name: DatabricksDBFS
         href: databricksdbfs.md
+      - name: DatabricksDashboards
+        href: databricksdashboards.md
+      - name: DatabricksDataMonitoring
+        href: databricksdatamonitoring.md
       - name: DatabricksDatabricksSQL
         href: databricksdatabrickssql.md
       - name: DatabricksDeltaPipelines
         href: databricksdeltapipelines.md
       - name: DatabricksFeatureStore
         href: databricksfeaturestore.md
+      - name: DatabricksFilesystem
+        href: databricksfilesystem.md
       - name: DatabricksGenie
         href: databricksgenie.md
       - name: DatabricksGitCredentials
@@ -615,20 +625,28 @@ items:
         href: databricksglobalinitscripts.md
       - name: DatabricksIAMRole
         href: databricksiamrole.md
+      - name: DatabricksIngestion
+        href: databricksingestion.md
       - name: DatabricksInstancePools
         href: databricksinstancepools.md
       - name: DatabricksJobs
         href: databricksjobs.md
+      - name: DatabricksLineageTracking
+        href: databrickslineagetracking.md
       - name: DatabricksMLflowAcledArtifact
         href: databricksmlflowacledartifact.md
       - name: DatabricksMLflowExperiment
         href: databricksmlflowexperiment.md
+      - name: DatabricksMarketplaceConsumer
+        href: databricksmarketplaceconsumer.md
       - name: DatabricksModelRegistry
         href: databricksmodelregistry.md
       - name: DatabricksNotebook
         href: databricksnotebook.md
       - name: DatabricksPartnerHub
         href: databrickspartnerhub.md
+      - name: DatabricksPredictiveOptimization
+        href: databrickspredictiveoptimization.md
       - name: DatabricksRemoteHistoryService
         href: databricksremotehistoryservice.md
       - name: DatabricksRepos

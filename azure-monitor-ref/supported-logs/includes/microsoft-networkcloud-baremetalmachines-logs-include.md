@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/21/2024
+ms.date: 02/22/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
@@ -15,7 +15,7 @@ ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
 |---|---|---|---|---|---|---|
 |`DefenderSecurity` |Security - Defender |[NCBMSecurityDefenderLogs](/azure/azure-monitor/reference/tables/ncbmsecuritydefenderlogs)<p>Security log events on Nexus Baremetal Machines to monitor and detect user access to the system.|Yes|No||Yes |
 |`NexusBreakGlassAudit` |Security - Break Glass Audit |[NCBMBreakGlassAuditLogs](/azure/azure-monitor/reference/tables/ncbmbreakglassauditlogs)<p>Security log events on Nexus Baremetal Machines to monitor and detect user access to the system.|Yes|No||Yes |
-|`SecurityCritical` |Security - Critical ||No|No||Yes |
+|`SecurityCritical` |Security - Critical |[NCBMSecurityLogs](/azure/azure-monitor/reference/tables/ncbmsecuritylogs)<p>Security log events on Nexus Baremetal Machines to monitor and detect user access to the system.|Yes|No||Yes |
 |`SecurityDebug` |Security - Debug |[NCBMSecurityLogs](/azure/azure-monitor/reference/tables/ncbmsecuritylogs)<p>Security log events on Nexus Baremetal Machines to monitor and detect user access to the system.|Yes|No||Yes |
 |`SecurityError` |Security - Error |[NCBMSecurityLogs](/azure/azure-monitor/reference/tables/ncbmsecuritylogs)<p>Security log events on Nexus Baremetal Machines to monitor and detect user access to the system.|Yes|No||Yes |
 |`SecurityInfo` |Security - Info |[NCBMSecurityLogs](/azure/azure-monitor/reference/tables/ncbmsecuritylogs)<p>Security log events on Nexus Baremetal Machines to monitor and detect user access to the system.|Yes|No||Yes |

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # AZMSOperationalLogs
@@ -30,7 +30,7 @@ Captures all management operations that are performed on the Azure Event Hubs/Az
 
 ## Queries
 
- Sample queries for the [AZMSOperationalLogs](/azure/azure-monitor/reference/queries/azmsoperationallogs) table.
+ Sample queries for the [AZMSOperationalLogs](../queries/azmsoperationallogs.md) table.
 
 
 ## Columns

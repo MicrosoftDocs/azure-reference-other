@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 02/26/2024
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
 
@@ -14,7 +14,7 @@ ms.date: 02/18/2024
 # Queries for the DCRLogTroubleshooting table
 
 
-### Verbose Ingestion and transformation Errors from data collection rules  
+### Verbose ingestion and transformation errors from data collection rules  
 
 
 Retrieves verbose logs indicating ingestion and transformation failures during logs ingestion using data collection rules.  

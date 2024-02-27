@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 02/26/2024
 ---
 
 # IdentityQueryEvents
@@ -24,7 +24,7 @@ Information about queries performed against Active Directory objects, such as us
 
 ## Queries
 
- Sample queries for the [IdentityQueryEvents](/azure/azure-monitor/reference/queries/identityqueryevents) table.
+ Sample queries for the [IdentityQueryEvents](../queries/identityqueryevents.md) table.
 
 
 ## Columns
