@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # AgriFoodFarmManagementLogs
@@ -28,7 +28,7 @@ Logs for create, update, delete and get operations on FarmBeats resources such a
 
 ## Queries
 
- Sample queries for the [AgriFoodFarmManagementLogs](../queries/agrifoodfarmmanagementlogs.md) table.
+ Sample queries for the [AgriFoodFarmManagementLogs](/azure/azure-monitor/reference/queries/agrifoodfarmmanagementlogs) table.
 
 
 ## Columns

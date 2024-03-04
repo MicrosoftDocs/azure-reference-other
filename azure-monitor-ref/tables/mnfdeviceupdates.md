@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # MNFDeviceUpdates
@@ -28,7 +28,7 @@ Components state updates representing the status changes of ethernet ports, powe
 
 ## Queries
 
- Sample queries for the [MNFDeviceUpdates](../queries/mnfdeviceupdates.md) table.
+ Sample queries for the [MNFDeviceUpdates](/azure/azure-monitor/reference/queries/mnfdeviceupdates) table.
 
 
 ## Columns

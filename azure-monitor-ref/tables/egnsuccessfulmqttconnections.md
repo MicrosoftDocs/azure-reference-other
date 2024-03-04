@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # EGNSuccessfulMqttConnections
@@ -29,7 +29,7 @@ Log for successful MQTT connections to an Event Grid namesapce. This log can be 
 
 ## Queries
 
- Sample queries for the [EGNSuccessfulMqttConnections](../queries/egnsuccessfulmqttconnections.md) table.
+ Sample queries for the [EGNSuccessfulMqttConnections](/azure/azure-monitor/reference/queries/egnsuccessfulmqttconnections) table.
 
 
 ## Columns

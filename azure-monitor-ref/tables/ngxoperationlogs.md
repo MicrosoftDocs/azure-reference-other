@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # NGXOperationLogs
@@ -28,7 +28,7 @@ NGINX access and error logs captured by NGINXaaS.
 
 ## Queries
 
- Sample queries for the [NGXOperationLogs](../queries/ngxoperationlogs.md) table.
+ Sample queries for the [NGXOperationLogs](/azure/azure-monitor/reference/queries/ngxoperationlogs) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # WVDCheckpoints
@@ -30,7 +30,7 @@ Windows Virtual Desktop Checkpoint Activity
 
 ## Queries
 
- Sample queries for the [WVDCheckpoints](../queries/wvdcheckpoints.md) table.
+ Sample queries for the [WVDCheckpoints](/azure/azure-monitor/reference/queries/wvdcheckpoints) table.
 
 
 ## Columns

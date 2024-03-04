@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # DeviceTvmSoftwareInventory
@@ -24,7 +24,7 @@ Inventory of software installed on devices, including their version information 
 
 ## Queries
 
- Sample queries for the [DeviceTvmSoftwareInventory](../queries/devicetvmsoftwareinventory.md) table.
+ Sample queries for the [DeviceTvmSoftwareInventory](/azure/azure-monitor/reference/queries/devicetvmsoftwareinventory) table.
 
 
 ## Columns

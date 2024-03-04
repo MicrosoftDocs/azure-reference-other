@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # AHDSDicomAuditLogs
@@ -29,7 +29,7 @@ Data plane audit logs of privileged actions made against Azure Health Data DICOM
 
 ## Queries
 
- Sample queries for the [AHDSDicomAuditLogs](../queries/ahdsdicomauditlogs.md) table.
+ Sample queries for the [AHDSDicomAuditLogs](/azure/azure-monitor/reference/queries/ahdsdicomauditlogs) table.
 
 
 ## Columns

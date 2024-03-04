@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # AmlComputeCpuGpuUtilization
@@ -28,7 +28,7 @@ Azure Machine Learning services CPU and GPU utilizaion logs.
 
 ## Queries
 
- Sample queries for the [AmlComputeCpuGpuUtilization](../queries/amlcomputecpugpuutilization.md) table.
+ Sample queries for the [AmlComputeCpuGpuUtilization](/azure/azure-monitor/reference/queries/amlcomputecpugpuutilization) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # ProtectionStatus
@@ -35,7 +35,7 @@ Antimalware installation info and security health status of the machine:
 
 ## Queries
 
- Sample queries for the [ProtectionStatus](../queries/protectionstatus.md) table.
+ Sample queries for the [ProtectionStatus](/azure/azure-monitor/reference/queries/protectionstatus) table.
 
 
 ## Columns

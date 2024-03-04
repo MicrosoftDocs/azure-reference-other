@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # ConfidentialWatchlist
@@ -24,7 +24,7 @@ Azure Sentinel confidential Watchlist contains imported data from CSV files that
 
 ## Queries
 
- Sample queries for the [ConfidentialWatchlist](../queries/confidentialwatchlist.md) table.
+ Sample queries for the [ConfidentialWatchlist](/azure/azure-monitor/reference/queries/confidentialwatchlist) table.
 
 
 ## Columns

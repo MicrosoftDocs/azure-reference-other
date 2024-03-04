@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # ACSEmailStatusUpdateOperational
@@ -28,7 +28,7 @@ Email Communication Services logs for message and recipient depllivery status up
 
 ## Queries
 
- Sample queries for the [ACSEmailStatusUpdateOperational](../queries/acsemailstatusupdateoperational.md) table.
+ Sample queries for the [ACSEmailStatusUpdateOperational](/azure/azure-monitor/reference/queries/acsemailstatusupdateoperational) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # AADCustomSecurityAttributeAuditLogs
@@ -25,7 +25,7 @@ Non-interactive Azure Active Directory sign-in logs from user.
 
 ## Queries
 
- Sample queries for the [AADCustomSecurityAttributeAuditLogs](../queries/aadcustomsecurityattributeauditlogs.md) table.
+ Sample queries for the [AADCustomSecurityAttributeAuditLogs](/azure/azure-monitor/reference/queries/aadcustomsecurityattributeauditlogs) table.
 
 
 ## Columns

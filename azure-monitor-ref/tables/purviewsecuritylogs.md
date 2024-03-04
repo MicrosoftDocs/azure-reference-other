@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # PurviewSecurityLogs
@@ -28,7 +28,7 @@ Table containing audit events for the Purview account, such as role assignments 
 
 ## Queries
 
- Sample queries for the [PurviewSecurityLogs](../queries/purviewsecuritylogs.md) table.
+ Sample queries for the [PurviewSecurityLogs](/azure/azure-monitor/reference/queries/purviewsecuritylogs) table.
 
 
 ## Columns

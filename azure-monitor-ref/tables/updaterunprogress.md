@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # UpdateRunProgress
@@ -33,7 +33,7 @@ Breaks down each run of your update schedule by the patches available at the tim
 
 ## Queries
 
- Sample queries for the [UpdateRunProgress](../queries/updaterunprogress.md) table.
+ Sample queries for the [UpdateRunProgress](/azure/azure-monitor/reference/queries/updaterunprogress) table.
 
 
 ## Columns

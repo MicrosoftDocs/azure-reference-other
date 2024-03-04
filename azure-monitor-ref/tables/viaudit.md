@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # VIAudit
@@ -28,7 +28,7 @@ Audit logs from Video Indexer.
 
 ## Queries
 
- Sample queries for the [VIAudit](../queries/viaudit.md) table.
+ Sample queries for the [VIAudit](/azure/azure-monitor/reference/queries/viaudit) table.
 
 
 ## Columns

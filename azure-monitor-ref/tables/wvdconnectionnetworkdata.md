@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # WVDConnectionNetworkData
@@ -28,7 +28,7 @@ Windows Virtual Desktop connection network data.
 
 ## Queries
 
- Sample queries for the [WVDConnectionNetworkData](../queries/wvdconnectionnetworkdata.md) table.
+ Sample queries for the [WVDConnectionNetworkData](/azure/azure-monitor/reference/queries/wvdconnectionnetworkdata) table.
 
 
 ## Columns

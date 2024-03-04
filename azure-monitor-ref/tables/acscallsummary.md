@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # ACSCallSummary
@@ -28,7 +28,7 @@ Call summary logs provide an overview about a call made through ACS. There is on
 
 ## Queries
 
- Sample queries for the [ACSCallSummary](../queries/acscallsummary.md) table.
+ Sample queries for the [ACSCallSummary](/azure/azure-monitor/reference/queries/acscallsummary) table.
 
 
 ## Columns

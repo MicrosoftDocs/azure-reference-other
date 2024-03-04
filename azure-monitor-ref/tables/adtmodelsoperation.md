@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # ADTModelsOperation
@@ -28,7 +28,7 @@ Schema for Azure Digital Twins' Models operations. The Models Operation category
 
 ## Queries
 
- Sample queries for the [ADTModelsOperation](../queries/adtmodelsoperation.md) table.
+ Sample queries for the [ADTModelsOperation](/azure/azure-monitor/reference/queries/adtmodelsoperation) table.
 
 
 ## Columns

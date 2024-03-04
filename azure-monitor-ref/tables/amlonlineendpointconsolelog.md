@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # AmlOnlineEndpointConsoleLog
@@ -29,7 +29,7 @@ Azure ML online endpoints console logs. It provides console logs output from use
 
 ## Queries
 
- Sample queries for the [AmlOnlineEndpointConsoleLog](../queries/amlonlineendpointconsolelog.md) table.
+ Sample queries for the [AmlOnlineEndpointConsoleLog](/azure/azure-monitor/reference/queries/amlonlineendpointconsolelog) table.
 
 
 ## Columns

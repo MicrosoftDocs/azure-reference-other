@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # ACSNetworkTraversalIncomingOperations
@@ -28,7 +28,7 @@ Communication Services logs of incoming requests to Network Traversal operations
 
 ## Queries
 
- Sample queries for the [ACSNetworkTraversalIncomingOperations](../queries/acsnetworktraversalincomingoperations.md) table.
+ Sample queries for the [ACSNetworkTraversalIncomingOperations](/azure/azure-monitor/reference/queries/acsnetworktraversalincomingoperations) table.
 
 
 ## Columns

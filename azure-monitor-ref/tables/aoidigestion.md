@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # AOIDigestion
@@ -24,7 +24,7 @@ Logs related to digestion of files added to the input storage account. These can
 
 ## Queries
 
- Sample queries for the [AOIDigestion](../queries/aoidigestion.md) table.
+ Sample queries for the [AOIDigestion](/azure/azure-monitor/reference/queries/aoidigestion) table.
 
 
 ## Columns

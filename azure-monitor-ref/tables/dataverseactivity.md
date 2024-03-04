@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # DataverseActivity
@@ -25,7 +25,7 @@ Contains Microsoft Dataverse audit logs. It's typically used to track Dataverse 
 
 ## Queries
 
- Sample queries for the [DataverseActivity](../queries/dataverseactivity.md) table.
+ Sample queries for the [DataverseActivity](/azure/azure-monitor/reference/queries/dataverseactivity) table.
 
 
 ## Columns

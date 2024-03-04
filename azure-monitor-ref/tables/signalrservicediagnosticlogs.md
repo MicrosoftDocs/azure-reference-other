@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # SignalRServiceDiagnosticLogs
@@ -28,7 +28,7 @@ Azure SignalR service diagnostic logs.
 
 ## Queries
 
- Sample queries for the [SignalRServiceDiagnosticLogs](../queries/signalrservicediagnosticlogs.md) table.
+ Sample queries for the [SignalRServiceDiagnosticLogs](/azure/azure-monitor/reference/queries/signalrservicediagnosticlogs) table.
 
 
 ## Columns
