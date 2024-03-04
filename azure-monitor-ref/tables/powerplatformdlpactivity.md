@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # PowerPlatformDlpActivity
@@ -25,7 +25,7 @@ Contains Microsoft Power Platform Data Loss Prevention (DLP) audit logs. It's ty
 
 ## Queries
 
- Sample queries for the [PowerPlatformDlpActivity](../queries/powerplatformdlpactivity.md) table.
+ Sample queries for the [PowerPlatformDlpActivity](/azure/azure-monitor/reference/queries/powerplatformdlpactivity) table.
 
 
 ## Columns

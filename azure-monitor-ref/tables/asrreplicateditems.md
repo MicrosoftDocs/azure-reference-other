@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # ASRReplicatedItems
@@ -28,7 +28,7 @@ This table contains details of Azure Site Recovery (ASR) replicated items, such 
 
 ## Queries
 
- Sample queries for the [ASRReplicatedItems](../queries/asrreplicateditems.md) table.
+ Sample queries for the [ASRReplicatedItems](/azure/azure-monitor/reference/queries/asrreplicateditems) table.
 
 
 ## Columns

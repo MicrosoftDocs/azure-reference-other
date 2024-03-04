@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # CIEventsOperational
@@ -28,7 +28,7 @@ Events generated using the service, for example GET requests or the execution ev
 
 ## Queries
 
- Sample queries for the [CIEventsOperational](../queries/cieventsoperational.md) table.
+ Sample queries for the [CIEventsOperational](/azure/azure-monitor/reference/queries/cieventsoperational) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # AVNMNetworkGroupMembershipChange
@@ -30,7 +30,7 @@ Includes changes to network group membership of network resources like a virtual
 
 ## Queries
 
- Sample queries for the [AVNMNetworkGroupMembershipChange](../queries/avnmnetworkgroupmembershipchange.md) table.
+ Sample queries for the [AVNMNetworkGroupMembershipChange](/azure/azure-monitor/reference/queries/avnmnetworkgroupmembershipchange) table.
 
 
 ## Columns

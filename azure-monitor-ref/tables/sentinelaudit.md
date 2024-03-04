@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # SentinelAudit
@@ -25,7 +25,7 @@ Audit logs for operations performed on Azure Sentinel resources, such as Data Co
 
 ## Queries
 
- Sample queries for the [SentinelAudit](../queries/sentinelaudit.md) table.
+ Sample queries for the [SentinelAudit](/azure/azure-monitor/reference/queries/sentinelaudit) table.
 
 
 ## Columns

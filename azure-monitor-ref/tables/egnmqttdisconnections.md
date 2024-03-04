@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # EGNMqttDisconnections
@@ -28,7 +28,7 @@ Log for disconnected MQTT connections from an Event Grid namespace.
 
 ## Queries
 
- Sample queries for the [EGNMqttDisconnections](../queries/egnmqttdisconnections.md) table.
+ Sample queries for the [EGNMqttDisconnections](/azure/azure-monitor/reference/queries/egnmqttdisconnections) table.
 
 
 ## Columns

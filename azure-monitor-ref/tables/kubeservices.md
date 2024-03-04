@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # KubeServices
@@ -31,7 +31,7 @@ Table that stores Kubernetes services information.
 
 ## Queries
 
- Sample queries for the [KubeServices](../queries/kubeservices.md) table.
+ Sample queries for the [KubeServices](/azure/azure-monitor/reference/queries/kubeservices) table.
 
 
 ## Columns

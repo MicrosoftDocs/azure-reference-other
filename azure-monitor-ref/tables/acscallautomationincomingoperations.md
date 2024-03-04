@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # ACSCallAutomationIncomingOperations
@@ -28,7 +28,7 @@ Communication Services logs of incoming requests to Call Automation operations. 
 
 ## Queries
 
- Sample queries for the [ACSCallAutomationIncomingOperations](../queries/acscallautomationincomingoperations.md) table.
+ Sample queries for the [ACSCallAutomationIncomingOperations](/azure/azure-monitor/reference/queries/acscallautomationincomingoperations) table.
 
 
 ## Columns

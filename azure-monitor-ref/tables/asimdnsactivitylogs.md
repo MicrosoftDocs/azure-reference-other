@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # ASimDnsActivityLogs
@@ -28,7 +28,7 @@ The ASim DNS activity schema represents DNS protocol activity, which may be logg
 
 ## Queries
 
- Sample queries for the [ASimDnsActivityLogs](../queries/asimdnsactivitylogs.md) table.
+ Sample queries for the [ASimDnsActivityLogs](/azure/azure-monitor/reference/queries/asimdnsactivitylogs) table.
 
 
 ## Columns

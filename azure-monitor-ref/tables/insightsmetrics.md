@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # InsightsMetrics
@@ -44,7 +44,7 @@ Table that stores metrics. 'Perf' table also stores many metrics and over time t
 
 ## Queries
 
- Sample queries for the [InsightsMetrics](../queries/insightsmetrics.md) table.
+ Sample queries for the [InsightsMetrics](/azure/azure-monitor/reference/queries/insightsmetrics) table.
 
 
 ## Columns

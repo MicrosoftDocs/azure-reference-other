@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # ACSCallRecordingSummary
@@ -28,7 +28,7 @@ Call recording summary logs provide an overview about a recording maed through A
 
 ## Queries
 
- Sample queries for the [ACSCallRecordingSummary](../queries/acscallrecordingsummary.md) table.
+ Sample queries for the [ACSCallRecordingSummary](/azure/azure-monitor/reference/queries/acscallrecordingsummary) table.
 
 
 ## Columns

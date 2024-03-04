@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # SecurityEvent
@@ -34,7 +34,7 @@ Security events collected from windows machines by Azure Security Center or Azur
 
 ## Queries
 
- Sample queries for the [SecurityEvent](../queries/securityevent.md) table.
+ Sample queries for the [SecurityEvent](/azure/azure-monitor/reference/queries/securityevent) table.
 
 
 ## Columns

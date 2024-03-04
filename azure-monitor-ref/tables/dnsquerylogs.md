@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # DNSQueryLogs
@@ -28,7 +28,7 @@ DNS query logs enable customers to monitor the DNS traffic in their virtual netw
 
 ## Queries
 
- Sample queries for the [DNSQueryLogs](../queries/dnsquerylogs.md) table.
+ Sample queries for the [DNSQueryLogs](/azure/azure-monitor/reference/queries/dnsquerylogs) table.
 
 
 ## Columns

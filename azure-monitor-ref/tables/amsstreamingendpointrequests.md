@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # AMSStreamingEndpointRequests
@@ -29,7 +29,7 @@ Contains information about requests to streaming endpoints. A streaming endpoint
 
 ## Queries
 
- Sample queries for the [AMSStreamingEndpointRequests](../queries/amsstreamingendpointrequests.md) table.
+ Sample queries for the [AMSStreamingEndpointRequests](/azure/azure-monitor/reference/queries/amsstreamingendpointrequests) table.
 
 
 ## Columns

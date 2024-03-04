@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # Event
@@ -33,7 +33,7 @@ Events from Windows Event Log on Windows computers using the Log Analytics agent
 
 ## Queries
 
- Sample queries for the [Event](../queries/event.md) table.
+ Sample queries for the [Event](/azure/azure-monitor/reference/queries/event) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # AZFWNatRule
@@ -28,7 +28,7 @@ Contains all DNAT (Destination Network Address Translation) events log data. Eac
 
 ## Queries
 
- Sample queries for the [AZFWNatRule](../queries/azfwnatrule.md) table.
+ Sample queries for the [AZFWNatRule](/azure/azure-monitor/reference/queries/azfwnatrule) table.
 
 
 ## Columns

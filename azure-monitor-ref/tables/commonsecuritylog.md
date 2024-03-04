@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # CommonSecurityLog
@@ -34,7 +34,7 @@ This table is for collecting events in the Common Event Format, that are most of
 
 ## Queries
 
- Sample queries for the [CommonSecurityLog](../queries/commonsecuritylog.md) table.
+ Sample queries for the [CommonSecurityLog](/azure/azure-monitor/reference/queries/commonsecuritylog) table.
 
 
 ## Columns

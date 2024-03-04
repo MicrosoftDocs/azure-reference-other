@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # ProjectActivity
@@ -24,7 +24,7 @@ Contains your Microsoft Project audit logs in order to track your Project activi
 
 ## Queries
 
- Sample queries for the [ProjectActivity](../queries/projectactivity.md) table.
+ Sample queries for the [ProjectActivity](/azure/azure-monitor/reference/queries/projectactivity) table.
 
 
 ## Columns

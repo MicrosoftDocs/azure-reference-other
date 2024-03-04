@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # AzureAttestationDiagnostics
@@ -28,7 +28,7 @@ Logs from attestation requests.
 
 ## Queries
 
- Sample queries for the [AzureAttestationDiagnostics](../queries/azureattestationdiagnostics.md) table.
+ Sample queries for the [AzureAttestationDiagnostics](/azure/azure-monitor/reference/queries/azureattestationdiagnostics) table.
 
 
 ## Columns

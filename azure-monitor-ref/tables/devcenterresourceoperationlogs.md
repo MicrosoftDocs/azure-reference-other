@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # DevCenterResourceOperationLogs
@@ -28,7 +28,7 @@ Operation logs pertaining to DevCenter resources, including information around r
 
 ## Queries
 
- Sample queries for the [DevCenterResourceOperationLogs](../queries/devcenterresourceoperationlogs.md) table.
+ Sample queries for the [DevCenterResourceOperationLogs](/azure/azure-monitor/reference/queries/devcenterresourceoperationlogs) table.
 
 
 ## Columns

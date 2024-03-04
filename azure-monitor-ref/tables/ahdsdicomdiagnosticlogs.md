@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # AHDSDicomDiagnosticLogs
@@ -28,7 +28,7 @@ Actionable logs generated from your Azure Health Data DICOM service, including e
 
 ## Queries
 
- Sample queries for the [AHDSDicomDiagnosticLogs](../queries/ahdsdicomdiagnosticlogs.md) table.
+ Sample queries for the [AHDSDicomDiagnosticLogs](/azure/azure-monitor/reference/queries/ahdsdicomdiagnosticlogs) table.
 
 
 ## Columns

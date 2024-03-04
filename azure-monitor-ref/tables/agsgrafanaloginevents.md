@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # AGSGrafanaLoginEvents
@@ -29,7 +29,7 @@ Login events for an instance of Azure Managed Workspace for Grafana including us
 
 ## Queries
 
- Sample queries for the [AGSGrafanaLoginEvents](../queries/agsgrafanaloginevents.md) table.
+ Sample queries for the [AGSGrafanaLoginEvents](/azure/azure-monitor/reference/queries/agsgrafanaloginevents) table.
 
 
 ## Columns

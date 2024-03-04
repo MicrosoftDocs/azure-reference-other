@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # GCPAuditLogs
@@ -24,7 +24,7 @@ The Google Cloud Platform (GCP) audit logs, ingested from Sentinel's connector, 
 
 ## Queries
 
- Sample queries for the [GCPAuditLogs](../queries/gcpauditlogs.md) table.
+ Sample queries for the [GCPAuditLogs](/azure/azure-monitor/reference/queries/gcpauditlogs) table.
 
 
 ## Columns

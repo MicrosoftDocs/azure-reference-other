@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # ChaosStudioExperimentEventLogs
@@ -29,7 +29,7 @@ Chao Studio Experiment Orchestration events. Displays Start/Stop events of each 
 
 ## Queries
 
- Sample queries for the [ChaosStudioExperimentEventLogs](../queries/chaosstudioexperimenteventlogs.md) table.
+ Sample queries for the [ChaosStudioExperimentEventLogs](/azure/azure-monitor/reference/queries/chaosstudioexperimenteventlogs) table.
 
 
 ## Columns

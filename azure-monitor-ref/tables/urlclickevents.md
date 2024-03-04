@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # UrlClickEvents
@@ -24,7 +24,7 @@ Events involving URLs clicked, selected, or requested on Microsoft Defender for 
 
 ## Queries
 
- Sample queries for the [UrlClickEvents](../queries/urlclickevents.md) table.
+ Sample queries for the [UrlClickEvents](/azure/azure-monitor/reference/queries/urlclickevents) table.
 
 
 ## Columns

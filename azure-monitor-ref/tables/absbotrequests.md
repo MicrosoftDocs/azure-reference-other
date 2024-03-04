@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # ABSBotRequests
@@ -28,7 +28,7 @@ Logs of requests made by Azure Bot Service onbehalf of a bot such as requests fr
 
 ## Queries
 
- Sample queries for the [ABSBotRequests](../queries/absbotrequests.md) table.
+ Sample queries for the [ABSBotRequests](/azure/azure-monitor/reference/queries/absbotrequests) table.
 
 
 ## Columns

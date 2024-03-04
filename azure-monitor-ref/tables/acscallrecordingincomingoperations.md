@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/04/2024
 ---
 
 # ACSCallRecordingIncomingOperations
@@ -28,7 +28,7 @@ Communication Services logs of incoming requests to Call Recording operations. E
 
 ## Queries
 
- Sample queries for the [ACSCallRecordingIncomingOperations](../queries/acscallrecordingincomingoperations.md) table.
+ Sample queries for the [ACSCallRecordingIncomingOperations](/azure/azure-monitor/reference/queries/acscallrecordingincomingoperations) table.
 
 
 ## Columns
