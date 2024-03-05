@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # W3CIISLog
@@ -14,26 +14,17 @@ ms.date: 02/26/2024
 Internet Information Server (IIS) log on Windows computers using the Log Analytics agent.
 
 
-## Categories
+## Table attributes
 
-- IT & Management Tools
-- Virtual Machines
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.compute/virtualmachines,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines,<br>microsoft.compute/virtualmachinescalesets|
+|**Categories**|IT & Management Tools, Virtual Machines|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/w3ciislog)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Virtual machines
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
-- Virtual Machine Scale Sets
-
-## Queries
-
- Sample queries for the [W3CIISLog](../queries/w3ciislog.md) table.
 
 
 ## Columns

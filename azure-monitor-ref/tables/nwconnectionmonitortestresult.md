@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # NWConnectionMonitorTestResult
@@ -14,21 +14,17 @@ ms.date: 02/26/2024
 Connection Monitor test result records.
 
 
-## Categories
+## Table attributes
 
-- Network
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.network/networkwatchers/connectionmonitors|
+|**Categories**|Network|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/nwconnectionmonitortestresult)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Network Watcher - Connection Monitor
-
-## Queries
-
- Sample queries for the [NWConnectionMonitorTestResult](../queries/nwconnectionmonitortestresult.md) table.
 
 
 ## Columns

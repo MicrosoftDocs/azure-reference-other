@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # ABSBotRequests
@@ -14,21 +14,17 @@ ms.date: 02/26/2024
 Logs of requests made by Azure Bot Service onbehalf of a bot such as requests from channel to bot and to other dependencies.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.botservice/botservices|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/absbotrequests)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Bot Services
-
-## Queries
-
- Sample queries for the [ABSBotRequests](../queries/absbotrequests.md) table.
 
 
 ## Columns

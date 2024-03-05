@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # TSIIngress
@@ -14,21 +14,17 @@ ms.date: 02/26/2024
 The Ingress category tracks errors that occur in the ingress pipeline. This category includes errors that occur when receiving events (such as failures to connect to an Event Source) and processing events (such as errors when parsing an event payload).
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.timeseriesinsights/environments|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/tsiingress)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Time Series Insights Environments
-
-## Queries
-
- Sample queries for the [TSIIngress](../queries/tsiingress.md) table.
 
 
 ## Columns

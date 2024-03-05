@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # WireData
@@ -14,27 +14,17 @@ ms.date: 02/26/2024
 Network data collected by the WireData solution using by the Dependency agent and Log analytics agent.
 
 
-## Categories
+## Table attributes
 
-- Virtual Machines
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.compute/virtualmachines,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines,<br>microsoft.compute/virtualmachinescalesets|
+|**Categories**|Virtual Machines, Security|
+|**Solutions**| WireData, WireData2|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/wiredata)|
 
-## Solutions
-
-- WireData
-- WireData2
-
-## Resource types
-
-- Virtual machines
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
-- Virtual Machine Scale Sets
-
-## Queries
-
- Sample queries for the [WireData](../queries/wiredata.md) table.
 
 
 ## Columns

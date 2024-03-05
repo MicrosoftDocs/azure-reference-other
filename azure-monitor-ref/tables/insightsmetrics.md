@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # InsightsMetrics
@@ -14,37 +14,17 @@ ms.date: 02/26/2024
 Table that stores metrics. 'Perf' table also stores many metrics and over time they all will converge to InsightsMetrics for Azure Monitor Solutions 
 
 
-## Categories
+## Table attributes
 
-- Virtual Machines
-- Containers
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.kubernetes/connectedclusters,<br>microsoft.containerservice/managedclusters,<br>microsoft.insights/workloadmonitoring,<br>microsoft.compute/virtualmachines,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines,<br>microsoft.compute/virtualmachinescalesets,<br>microsoft.hybridcontainerservice/provisionedclusters,<br>microsoft.devices/iothubs|
+|**Categories**|Virtual Machines, Containers, Azure Resources|
+|**Solutions**| AzureResources, ContainerInsights, InfrastructureInsights, LogManagement, ServiceMap, VMInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/insightsmetrics)|
 
-## Solutions
-
-- AzureResources
-- ContainerInsights
-- InfrastructureInsights
-- LogManagement
-- ServiceMap
-- VMInsights
-
-## Resource types
-
-- Azure Arc Enabled Kubernetes
-- Kubernetes Services
-- Workload Monitoring of Azure Monitor Insights
-- Virtual machines
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
-- Virtual Machine Scale Sets
-- Azure Arc Provisioned Clusters
-- IoT Hub
-
-## Queries
-
- Sample queries for the [InsightsMetrics](../queries/insightsmetrics.md) table.
 
 
 ## Columns

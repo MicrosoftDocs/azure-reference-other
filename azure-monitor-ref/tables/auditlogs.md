@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # AuditLogs
@@ -14,18 +14,18 @@ ms.date: 02/18/2024
 Audit log for Azure Active Directory. Includes system activity information about user and group management managed applications and directory activities.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.graph/tenants|
+|**Categories**|Azure Resources, Security|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
-
-## Resource types
-
-- Microsoft Graph Logs
 
 ## Columns
   

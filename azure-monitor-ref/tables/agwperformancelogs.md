@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # AGWPerformanceLogs
@@ -14,19 +14,18 @@ ms.date: 02/18/2024
 Contains all the logs to view how Application Gateway instances are performing. This log captures performance information for each instance, including total requests served, throughput in bytes, total requests served, failed request count, and healthy and unhealthy backend instance count.The Performance log is available only for the v1 SKU.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Network
-- Audit
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.network/applicationgateways|
+|**Categories**|Azure Resources, Network, Audit|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
-
-## Resource types
-
-- Application Gateways
 
 ## Columns
   

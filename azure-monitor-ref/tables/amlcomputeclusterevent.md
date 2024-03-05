@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # AmlComputeClusterEvent
@@ -14,21 +14,17 @@ ms.date: 02/26/2024
 AmlCompute Cluster events
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.machinelearningservices/workspaces|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/amlcomputeclusterevent)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Machine Learning
-
-## Queries
-
- Sample queries for the [AmlComputeClusterEvent](../queries/amlcomputeclusterevent.md) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # PurviewDataSensitivityLogs
@@ -14,19 +14,18 @@ ms.date: 02/18/2024
 Data Sensitivity information for assets scanned using Purview.
 
 
-## Categories
+## Table attributes
 
-- Security
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.securityinsights/purview,<br>microsoft.purview/accounts|
+|**Categories**|Security, Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
-
-## Resource types
-
-- Microsoft Defender for cloud
-- Microsoft.Purview/accounts
 
 ## Columns
   

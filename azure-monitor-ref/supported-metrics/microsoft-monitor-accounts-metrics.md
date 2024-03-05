@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 01/10/2024
+ms.date: 03/05/2024
 ms.custom: Microsoft.Monitor/accounts, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -33,6 +33,10 @@ The following table lists the metrics available for the Microsoft.Monitor/accoun
 **DS Export**- Whether the metric is exportable to Azure Monitor Logs via Diagnostic Settings. For information on exporting metrics, see [Create diagnostic settings in Azure Monitor](/azure/azure-monitor/essentials/create-diagnostic-settings?tabs=portal).
 
 For information on metric retention, see [Azure Monitor Metrics overview](/azure/azure-monitor/essentials/data-platform-metrics#retention-of-metrics)
+  
+  
+  
+For a list of supported logs, see [Supported log categories - Microsoft.Monitor/accounts](../supported-logs/microsoft-monitor-accounts-logs.md)  
   
  
 

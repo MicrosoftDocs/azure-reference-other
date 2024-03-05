@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # SqlAtpStatus
@@ -14,9 +14,18 @@ ms.date: 02/18/2024
 SQL Advanced Threat Protection status log. The logs allows identifying machines connected to the workspace with SQL ATP and the protection status on each instance on those machines.
 
 
-## Solutions
+## Table attributes
 
-- SQLAdvancedThreatProtection
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|-|
+|**Solutions**| SQLAdvancedThreatProtection|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
+
+
 
 ## Columns
   

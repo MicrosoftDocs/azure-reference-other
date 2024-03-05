@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # AutoscaleScaleActionsLog
@@ -14,23 +14,17 @@ ms.date: 02/26/2024
 
 
 
-## Categories
+## Table attributes
 
-- Azure Monitor
-- Virtual Machines
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.insights/autoscalesettings|
+|**Categories**|Azure Monitor, Virtual Machines, Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/autoscalescaleactionslog)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Azure Monitor autoscale settings
-
-## Queries
-
- Sample queries for the [AutoscaleScaleActionsLog](../queries/autoscalescaleactionslog.md) table.
 
 
 ## Columns

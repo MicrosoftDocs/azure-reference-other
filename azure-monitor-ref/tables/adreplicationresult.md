@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # ADReplicationResult
@@ -14,21 +14,18 @@ ms.date: 02/18/2024
 The AD Replication Status solution regularly monitors your Active Directory environment for any replication failures.
 
 
-## Categories
+## Table attributes
 
-- Workloads
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.compute/virtualmachines,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines|
+|**Categories**|Workloads|
+|**Solutions**| ADReplication, AzureResources|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
 
-## Solutions
 
-- ADReplication
-- AzureResources
-
-## Resource types
-
-- Virtual machines
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
 
 ## Columns
   

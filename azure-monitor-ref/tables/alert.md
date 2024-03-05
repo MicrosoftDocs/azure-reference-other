@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # Alert
@@ -14,13 +14,18 @@ ms.date: 02/18/2024
 Alerts created by log alerts rules and SCOM alerts collected through Alert Management solution.
 
 
-## Categories
+## Table attributes
 
-- Azure Monitor
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Azure Monitor|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
 
 ## Columns
   

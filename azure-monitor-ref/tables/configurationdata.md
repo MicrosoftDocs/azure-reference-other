@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # ConfigurationData
@@ -14,25 +14,17 @@ ms.date: 02/26/2024
 View the last reported state for in-guest configuration data such as Files Software Registry Keys Windows Services and Linux Daemons
 
 
-## Categories
+## Table attributes
 
-- IT & Management Tools
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.compute/virtualmachines,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines,<br>microsoft.compute/virtualmachinescalesets|
+|**Categories**|IT & Management Tools|
+|**Solutions**| ChangeTracking|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/configurationdata)|
 
-## Solutions
-
-- ChangeTracking
-
-## Resource types
-
-- Virtual machines
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
-- Virtual Machine Scale Sets
-
-## Queries
-
- Sample queries for the [ConfigurationData](../queries/configurationdata.md) table.
 
 
 ## Columns

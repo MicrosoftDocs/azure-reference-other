@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # DatabricksWorkspaceLogs
@@ -14,13 +14,17 @@ ms.date: 02/26/2024
 Schema for Databricks workspaces related categories, this is an umbrella schema to hold all new Databricks Audit Logs categories that happened in the workspace beginning from 2024. Legacy categories before 2024 are held in their own schemas.
 
 
-## Solutions
+## Table attributes
 
-- LogManagement
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|-|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/databricksworkspacelogs)|
 
-## Queries
-
- Sample queries for the [DatabricksWorkspaceLogs](../queries/databricksworkspacelogs.md) table.
 
 
 ## Columns

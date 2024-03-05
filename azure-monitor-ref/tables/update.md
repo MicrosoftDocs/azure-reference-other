@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # Update
@@ -14,30 +14,17 @@ ms.date: 02/26/2024
 Details for update schedule run. Includes information such as which updates where available and which were installed.
 
 
-## Categories
+## Table attributes
 
-- IT & Management Tools
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.compute/virtualmachines,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines,<br>microsoft.compute/virtualmachinescalesets,<br>microsoft.automation/automationaccounts|
+|**Categories**|IT & Management Tools, Security|
+|**Solutions**| Security, SecurityCenter, SecurityCenterFree, Updates|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/update)|
 
-## Solutions
-
-- Security
-- SecurityCenter
-- SecurityCenterFree
-- Updates
-
-## Resource types
-
-- Virtual machines
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
-- Virtual Machine Scale Sets
-- Automation account
-
-## Queries
-
- Sample queries for the [Update](../queries/update.md) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # ApiManagementGatewayLogs
@@ -14,21 +14,17 @@ ms.date: 02/26/2024
 Azure ApiManagement gateway logs.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.apimanagement/service|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/apimanagementgatewaylogs)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- API Management services
-
-## Queries
-
- Sample queries for the [ApiManagementGatewayLogs](../queries/apimanagementgatewaylogs.md) table.
 
 
 ## Columns
