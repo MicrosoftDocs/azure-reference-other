@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # AZMSRunTimeAuditLogs
@@ -14,22 +14,17 @@ ms.date: 02/26/2024
 Captures aggregated diagnostic information for various data plane access operations (such as send or receive messages) in Azure Event Hubs and Azure Service Bus. Runtime audit logs are currently available only in premium tier.
 
 
-## Categories
+## Table attributes
 
-- Audit
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.servicebus/namespaces,<br>microsoft.eventhub/namespaces|
+|**Categories**|Audit|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/azmsruntimeauditlogs)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Service Bus
-- Event Hubs
-
-## Queries
-
- Sample queries for the [AZMSRunTimeAuditLogs](../queries/azmsruntimeauditlogs.md) table.
 
 
 ## Columns

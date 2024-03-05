@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # HDInsightSecurityLogs
@@ -14,18 +14,18 @@ ms.date: 02/18/2024
 Security related logs including Ambari Audit and Auth Log.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.hdinsight/clusters|
+|**Categories**|Azure Resources, Security|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
-
-## Resource types
-
-- HDInsight Clusters
 
 ## Columns
   

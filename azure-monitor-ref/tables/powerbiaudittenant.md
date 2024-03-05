@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # PowerBIAuditTenant
@@ -14,18 +14,18 @@ ms.date: 02/18/2024
 Contains Power BI audit events as per the Activity Log and Office365 Audit Log. Covers operations over full lifecycle of Power BI assets such as creation, modification and deletion.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Audit
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.powerbi/tenants|
+|**Categories**|Azure Resources, Audit|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
-
-## Resource types
-
-- Power BI Datasets
 
 ## Columns
   

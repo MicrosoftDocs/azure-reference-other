@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # WVDCheckpoints
@@ -14,23 +14,17 @@ ms.date: 02/26/2024
 Windows Virtual Desktop Checkpoint Activity
 
 
-## Categories
+## Table attributes
 
-- Azure Virtual Desktop
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.desktopvirtualization/hostpools,<br>microsoft.desktopvirtualization/applicationgroups,<br>microsoft.desktopvirtualization/workspaces|
+|**Categories**|Azure Virtual Desktop|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/wvdcheckpoints)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Desktop Virtualization Host Pools
-- Desktop Virtualization Application Groups
-- Desktop Virtualization workspaces
-
-## Queries
-
- Sample queries for the [WVDCheckpoints](../queries/wvdcheckpoints.md) table.
 
 
 ## Columns

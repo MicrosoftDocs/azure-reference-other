@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # AMSMediaAccountHealth
@@ -14,22 +14,17 @@ ms.date: 02/26/2024
 Media Account Health Status. This table captures the Azure Media Services account health status. It can be used to monitor account health status and diagnose issues for unhealthy accounts.
 
 
-## Categories
+## Table attributes
 
-- Audit
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.media/mediaservices|
+|**Categories**|Audit, Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/amsmediaaccounthealth)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Media Services
-
-## Queries
-
- Sample queries for the [AMSMediaAccountHealth](../queries/amsmediaaccounthealth.md) table.
 
 
 ## Columns

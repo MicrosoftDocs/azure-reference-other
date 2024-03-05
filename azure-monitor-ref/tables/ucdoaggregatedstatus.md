@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # UCDOAggregatedStatus
@@ -14,18 +14,17 @@ ms.date: 02/26/2024
 Update Compliance - aggregates all individual UCDOStatus records across the tenant and summarizes bandwidth savings across all devices enrolled to delivery.
 
 
-## Categories
+## Table attributes
 
-- Desktop Analytics
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Desktop Analytics|
+|**Solutions**| LogManagement, WaaSUpdateInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/ucdoaggregatedstatus)|
 
-## Solutions
-
-- LogManagement
-- WaaSUpdateInsights
-
-## Queries
-
- Sample queries for the [UCDOAggregatedStatus](../queries/ucdoaggregatedstatus.md) table.
 
 
 ## Columns

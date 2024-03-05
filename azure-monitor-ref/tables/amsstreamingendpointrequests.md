@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # AMSStreamingEndpointRequests
@@ -14,22 +14,17 @@ ms.date: 02/26/2024
 Contains information about requests to streaming endpoints. A streaming endpoint receives HTTP requests needed to stream video content. These requests usually come from video players or from the CDN.
 
 
-## Categories
+## Table attributes
 
-- Audit
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.media/mediaservices|
+|**Categories**|Audit, Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/amsstreamingendpointrequests)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Media Services
-
-## Queries
-
- Sample queries for the [AMSStreamingEndpointRequests](../queries/amsstreamingendpointrequests.md) table.
 
 
 ## Columns

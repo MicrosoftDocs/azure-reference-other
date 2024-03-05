@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/21/2024
+ms.date: 03/05/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.AgFoodPlatform/farmBeats, naam
@@ -19,7 +19,7 @@ ms.custom: Microsoft.AgFoodPlatform/farmBeats, naam
 |`InsightLogs` |Insight Logs |[AgriFoodInsightLogs](/azure/azure-monitor/reference/tables/agrifoodinsightlogs)<p>Logs for read operations on FarmBeats resources such as inisghts and inisight-attachments.|No|Yes||Yes |
 |`JobProcessedLogs` |Job Processed Logs |[AgriFoodJobProcessedLogs](/azure/azure-monitor/reference/tables/agrifoodjobprocessedlogs)<p>Logs indicating success or failure of job runs for farmOperationDataIngestionJob, farmOperationPeriodicJob, farmOperationEventHandlingJob, satelliteDataIngestionJob, weatherDataIngestionJob etc. These logs also contain reasons for failure of these jobs if any.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/agrifoodjobprocessedlogs)|Yes |
 |`ModelInferenceLogs` |Model Inference Logs ||No|Yes||Yes |
-|`ProviderAuthLogs` |Provider Auth Logs ||No|Yes||Yes |
+|`ProviderAuthLogs` |Provider Auth Logs |[AgriFoodProviderAuthLogs](/azure/azure-monitor/reference/tables/agrifoodproviderauthlogs)<p>Logs for create, update, delete, cascade delete get and get all for oauth providers. It also has logs for get, get all and cascade delete for oauth tokens.|No|Yes||Yes |
 |`SatelliteLogs` |Satellite Logs |[AgriFoodSatelliteLogs](/azure/azure-monitor/reference/tables/agrifoodsatellitelogs)<p>Logs for create and get operations for Satellite data.|No|Yes||Yes |
 |`SensorManagementLogs` |Sensor Management Logs |[AgriFoodSensorManagementLogs](/azure/azure-monitor/reference/tables/agrifoodsensormanagementlogs)<p>Logs for sensors, sensors mappings, sensors events, sensors data models, sensors partner integration, devices, device data models etc.|No|No||Yes |
 |`WeatherLogs` |Weather Logs |[AgriFoodWeatherLogs](/azure/azure-monitor/reference/tables/agrifoodweatherlogs)<p>Logs for create, update, delete and get operations while ingesting weather data in FarmBeats.|No|Yes||Yes |

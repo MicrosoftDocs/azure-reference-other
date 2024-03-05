@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # ACRConnectedClientList
@@ -14,22 +14,17 @@ ms.date: 02/26/2024
 Logs count of Redis clients connected to a cache instance and their IP addresses, logged at a 10-second interval.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Audit
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.cache/redis|
+|**Categories**|Azure Resources, Audit|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/acrconnectedclientlist)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Azure Cache for Redis
-
-## Queries
-
- Sample queries for the [ACRConnectedClientList](../queries/acrconnectedclientlist.md) table.
 
 
 ## Columns

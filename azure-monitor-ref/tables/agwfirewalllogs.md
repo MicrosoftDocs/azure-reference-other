@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # AGWFirewallLogs
@@ -14,19 +14,18 @@ ms.date: 02/18/2024
 Contains all the logs to view the requests that are logged through either detection or prevention mode of an application gateway that is configured with the web application firewall.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Network
-- Audit
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.network/applicationgateways|
+|**Categories**|Azure Resources, Network, Audit|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
-
-## Resource types
-
-- Application Gateways
 
 ## Columns
   

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # DCRLogTroubleshooting
@@ -14,21 +14,17 @@ ms.date: 02/26/2024
 Logs from DCR-based data collection and transformation to help with troubleshooting of DCR configuration and flow.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.insights/datacollectionrules|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/dcrlogtroubleshooting)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Data Collection Rules
-
-## Queries
-
- Sample queries for the [DCRLogTroubleshooting](../queries/dcrlogtroubleshooting.md) table.
 
 
 ## Columns

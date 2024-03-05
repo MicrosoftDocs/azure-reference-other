@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # MDECustomCollectionDeviceFileEvents
@@ -14,13 +14,18 @@ ms.date: 02/26/2024
 This table is part of Microsoft Defender for Endpoints for the Custom Collection scenario. This table contains file creation, modification, and other file system events for anything explicitly requested by the customer for collection.
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Security|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
 
 ## Columns
   

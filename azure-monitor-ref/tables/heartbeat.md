@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # Heartbeat
@@ -14,31 +14,17 @@ ms.date: 02/26/2024
 Records logged by Log Analytics agents once per minute to report on agent health.
 
 
-## Categories
+## Table attributes
 
-- Virtual Machines
-- Containers
-- IT & Management Tools
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.compute/virtualmachines,<br>microsoft.kubernetes/connectedclusters,<br>microsoft.containerservice/managedclusters,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines,<br>microsoft.compute/virtualmachinescalesets,<br>microsoft.hybridcontainerservice/provisionedclusters,<br>microsoft.automation/automationaccounts|
+|**Categories**|Virtual Machines, Containers, IT & Management Tools|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/heartbeat)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Virtual machines
-- Azure Arc Enabled Kubernetes
-- Kubernetes Services
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
-- Virtual Machine Scale Sets
-- Azure Arc Provisioned Clusters
-- Automation account
-
-## Queries
-
- Sample queries for the [Heartbeat](../queries/heartbeat.md) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # MAOfficeBuildInfo
@@ -14,13 +14,18 @@ ms.date: 02/18/2024
 
 
 
-## Categories
+## Table attributes
 
-- Desktop Analytics
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Desktop Analytics|
+|**Solutions**| Microsoft365Analytics|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- Microsoft365Analytics
 
 ## Columns
   

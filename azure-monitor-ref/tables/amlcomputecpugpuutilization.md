@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # AmlComputeCpuGpuUtilization
@@ -14,21 +14,17 @@ ms.date: 02/26/2024
 Azure Machine Learning services CPU and GPU utilizaion logs.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.machinelearningservices/workspaces|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/amlcomputecpugpuutilization)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Machine Learning
-
-## Queries
-
- Sample queries for the [AmlComputeCpuGpuUtilization](../queries/amlcomputecpugpuutilization.md) table.
 
 
 ## Columns

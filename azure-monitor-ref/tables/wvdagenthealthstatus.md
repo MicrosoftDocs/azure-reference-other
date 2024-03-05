@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # WVDAgentHealthStatus
@@ -14,21 +14,17 @@ ms.date: 02/26/2024
 Azure Virtual Desktop agent health status.
 
 
-## Categories
+## Table attributes
 
-- Virtual Machines
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.desktopvirtualization/hostpools|
+|**Categories**|Virtual Machines|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/wvdagenthealthstatus)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Desktop Virtualization Host Pools
-
-## Queries
-
- Sample queries for the [WVDAgentHealthStatus](../queries/wvdagenthealthstatus.md) table.
 
 
 ## Columns

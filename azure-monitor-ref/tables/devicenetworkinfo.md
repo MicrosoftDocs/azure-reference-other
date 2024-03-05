@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # DeviceNetworkInfo
@@ -14,13 +14,18 @@ ms.date: 02/18/2024
 Microsoft Defender for Endpoints (MDE) device network information table. This table contains Network properties of machines, including adapters, IP and MAC addresses, as well as connected networks and domains.
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Security|
+|**Solutions**| SecurityInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
 
-## Solutions
 
-- SecurityInsights
 
 ## Columns
   

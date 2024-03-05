@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # DevCenterResourceOperationLogs
@@ -14,21 +14,17 @@ ms.date: 02/26/2024
 Operation logs pertaining to DevCenter resources, including information around resource health status changes.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.devcenter/devcenters|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/devcenterresourceoperationlogs)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Dev Centers
-
-## Queries
-
- Sample queries for the [DevCenterResourceOperationLogs](../queries/devcenterresourceoperationlogs.md) table.
 
 
 ## Columns

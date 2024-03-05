@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # UCClientReadinessStatus
@@ -14,10 +14,18 @@ ms.date: 02/18/2024
 Update Compliance - Status message for an UC client device, which indicates update readiness of the given device for a specific target version.
 
 
-## Solutions
+## Table attributes
 
-- LogManagement
-- WaaSUpdateInsights
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|-|
+|**Solutions**| LogManagement, WaaSUpdateInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
+
+
 
 ## Columns
   
