@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # AZMSHybridConnectionsEvents
@@ -14,22 +14,17 @@ ms.date: 03/04/2024
 Captures all hybrid connection events that are performed on the Azure Relay namespace.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Audit
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.relay/namespaces|
+|**Categories**|Azure Resources, Audit|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/azmshybridconnectionsevents)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Relay
-
-## Queries
-
- Sample queries for the [AZMSHybridConnectionsEvents](/azure/azure-monitor/reference/queries/azmshybridconnectionsevents) table.
 
 
 ## Columns

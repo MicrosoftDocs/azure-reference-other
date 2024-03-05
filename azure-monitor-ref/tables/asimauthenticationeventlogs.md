@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # ASimAuthenticationEventLogs
@@ -14,17 +14,18 @@ ms.date: 02/18/2024
 Microsoft Sentinel normalized authentication events table. Stores events associated, for example, with the user authentication, sign-in, and sign-out.
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.securityinsights/authenticationevent|
+|**Categories**|Security|
+|**Solutions**| SecurityInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
 
-## Solutions
 
-- SecurityInsights
-
-## Resource types
-
-- Microsoft Sentinel Authentication Event ASIM schema
 
 ## Columns
   

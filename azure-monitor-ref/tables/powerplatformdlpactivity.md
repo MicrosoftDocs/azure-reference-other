@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # PowerPlatformDlpActivity
@@ -14,18 +14,17 @@ ms.date: 03/04/2024
 Contains Microsoft Power Platform Data Loss Prevention (DLP) audit logs. It's typically used to track Power Platform DLP admin activities.
 
 
-## Categories
+## Table attributes
 
-- Security
-- Audit
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Security, Audit|
+|**Solutions**| SecurityInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/powerplatformdlpactivity)|
 
-## Solutions
-
-- SecurityInsights
-
-## Queries
-
- Sample queries for the [PowerPlatformDlpActivity](/azure/azure-monitor/reference/queries/powerplatformdlpactivity) table.
 
 
 ## Columns

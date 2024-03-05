@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # SignalRServiceDiagnosticLogs
@@ -14,21 +14,17 @@ ms.date: 03/04/2024
 Azure SignalR service diagnostic logs.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.signalrservice/signalr|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/signalrservicediagnosticlogs)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- SignalR
-
-## Queries
-
- Sample queries for the [SignalRServiceDiagnosticLogs](/azure/azure-monitor/reference/queries/signalrservicediagnosticlogs) table.
 
 
 ## Columns

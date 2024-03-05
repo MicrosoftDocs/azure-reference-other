@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # PurviewSecurityLogs
@@ -14,21 +14,17 @@ ms.date: 03/04/2024
 Table containing audit events for the Purview account, such as role assignments to a collection or creation or deletion of a collection.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.purview/accounts|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/purviewsecuritylogs)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Microsoft.Purview/accounts
-
-## Queries
-
- Sample queries for the [PurviewSecurityLogs](/azure/azure-monitor/reference/queries/purviewsecuritylogs) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # SecurityRecommendation
@@ -14,15 +14,18 @@ ms.date: 02/18/2024
 
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Security|
+|**Solutions**| AzureSecurityOfThings, Security, SecurityCenterFree|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
 
-## Solutions
 
-- AzureSecurityOfThings
-- Security
-- SecurityCenterFree
 
 ## Columns
   

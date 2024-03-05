@@ -1,37 +1,44 @@
 ---
-title: Azure Monitor table reference index by resource type
-description: Index for tables in Azure Monitor Logs organized by resource type.
+title: Azure Monitor Resource log / log analytics tables
+description: Field definitions for Azure Monitor resource log / log analytics tables.
+author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.subservice: logs
+ms.date: 03/05/2024
 ms.author: edbaynash
-author: EdB-MSFT
-   
-ms.date: 02/26/2024
+ms.reviewer: lualderm
+
 ---
 
-# Azure Monitor Logs table reference organized by resource type
-  
+# Azure Monitor Resource log / log analytics tables
+
+[Azure Monitor resource logs](/azure/azure-monitor/essentials/platform-logs-overview) are logs emitted by Azure services that describe the operation of those services or resources. All resource logs available through Azure Monitor share a common top-level schema. Each service has the flexibility to emit unique properties for its own events. When exported to a [Log Analytics workspace](/azure/azure-monitor/logs/log-analytics-workspace-overview) the logs are stored in tables. This set of articles contains field definitions for the log analytics tables. The table definitions are also available in the Log Analytics workspace.  
+
+## Resource log / log analytics tables
 
 
-### Analysis Services
-microsoft.analysisservices/servers
+### Analysis Services  
+
+microsoft.analysisservices/servers  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### API Management services  
 
-### API Management services
-Microsoft.ApiManagement/service
+Microsoft.ApiManagement/service  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [ApiManagementGatewayLogs](apimanagementgatewaylogs.md)
 - [ApiManagementWebSocketConnectionLogs](apimanagementwebsocketconnectionlogs.md)
 
+### App Services  
 
-### App Services
-Microsoft.Web/sites
+Microsoft.Web/sites  
+
 - [AzureActivity](azureactivity.md)
 - [LogicAppWorkflowRuntime](logicappworkflowruntime.md)
 - [AppServiceAuthenticationLogs](appserviceauthenticationlogs.md)
@@ -46,16 +53,18 @@ Microsoft.Web/sites
 - [AppServicePlatformLogs](appserviceplatformlogs.md)
 - [AppServiceIPSecAuditLogs](appserviceipsecauditlogs.md)
 
+### Application Gateway for Containers  
 
-### Application Gateway for Containers
-Microsoft.ServiceNetworking/TrafficControllers
+Microsoft.ServiceNetworking/TrafficControllers  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AGCAccessLogs](agcaccesslogs.md)
 
+### Application Gateways  
 
-### Application Gateways
-Microsoft.Network/applicationGateways
+Microsoft.Network/applicationGateways  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AGWAccessLogs](agwaccesslogs.md)
@@ -63,9 +72,10 @@ Microsoft.Network/applicationGateways
 - [AGWFirewallLogs](agwfirewalllogs.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Application Insights  
 
-### Application Insights
-microsoft.insights/components
+microsoft.insights/components  
+
 - [AzureActivity](azureactivity.md)
 - [AppAvailabilityResults](appavailabilityresults.md)
 - [AppBrowserTimings](appbrowsertimings.md)
@@ -79,9 +89,10 @@ microsoft.insights/components
 - [AppTraces](apptraces.md)
 - [AppExceptions](appexceptions.md)
 
+### Automation account  
 
-### Automation account
-Microsoft.Automation/AutomationAccounts
+Microsoft.Automation/AutomationAccounts  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
@@ -90,19 +101,22 @@ Microsoft.Automation/AutomationAccounts
 - [UpdateSummary](updatesummary.md)
 - [UpdateRunProgress](updaterunprogress.md)
 
+### AVS Private Cloud  
 
-### AVS Private Cloud
-microsoft.avs/privateClouds
+microsoft.avs/privateClouds  
+
 - [AVSSyslog](avssyslog.md)
 
+### Azure Active Directory Logs  
 
-### Azure Active Directory Logs
-microsoft.aadiam/tenants
+microsoft.aadiam/tenants  
+
 - [AADB2CRequestLogs](aadb2crequestlogs.md)
 
+### Azure AD Domain Services  
 
-### Azure AD Domain Services
-Microsoft.AAD/domainServices
+Microsoft.AAD/domainServices  
+
 - [AzureActivity](azureactivity.md)
 - [AADDomainServicesDNSAuditsDynamicUpdates](aaddomainservicesdnsauditsdynamicupdates.md)
 - [AADDomainServicesDNSAuditsGeneral](aaddomainservicesdnsauditsgeneral.md)
@@ -114,16 +128,18 @@ Microsoft.AAD/domainServices
 - [AADDomainServicesPolicyChange](aaddomainservicespolicychange.md)
 - [AADDomainServicesPrivilegeUse](aaddomainservicesprivilegeuse.md)
 
+### Azure API for FHIR  
 
-### Azure API for FHIR
-Microsoft.HealthcareApis/services
+Microsoft.HealthcareApis/services  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [MicrosoftHealthcareApisAuditLogs](microsofthealthcareapisauditlogs.md)
 
+### Azure Arc Enabled Kubernetes  
 
-### Azure Arc Enabled Kubernetes
-Microsoft.Kubernetes/connectedClusters
+Microsoft.Kubernetes/connectedClusters  
+
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
@@ -147,9 +163,10 @@ Microsoft.Kubernetes/connectedClusters
 - [ArcK8sAuditAdmin](arck8sauditadmin.md)
 - [ArcK8sControlPlane](arck8scontrolplane.md)
 
+### Azure Arc Provisioned Clusters  
 
-### Azure Arc Provisioned Clusters
-Microsoft.HybridContainerservice/Provisionedclusters
+Microsoft.HybridContainerservice/Provisionedclusters  
+
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
@@ -170,50 +187,57 @@ Microsoft.HybridContainerservice/Provisionedclusters
 - [Syslog](syslog.md)
 - [Heartbeat](heartbeat.md)
 
+### Azure Attestation  
 
-### Azure Attestation
-Microsoft.Attestation/attestationProviders
+Microsoft.Attestation/attestationProviders  
+
 - [AzureActivity](azureactivity.md)
 - [AzureAttestationDiagnostics](azureattestationdiagnostics.md)
 
+### Azure Autonomous Development Platform workspace  
 
-### Azure Autonomous Development Platform workspace
-Microsoft.AutonomousDevelopmentPlatform/workspaces
+Microsoft.AutonomousDevelopmentPlatform/workspaces  
+
 - [AzureActivity](azureactivity.md)
 - [ADPRequests](adprequests.md)
 - [ADPAudit](adpaudit.md)
 - [ADPDiagnostics](adpdiagnostics.md)
 
+### Azure Blockchain Service  
 
-### Azure Blockchain Service
-Microsoft.Blockchain/blockchainMembers
+Microsoft.Blockchain/blockchainMembers  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [BlockchainApplicationLog](blockchainapplicationlog.md)
 - [BlockchainProxyLog](blockchainproxylog.md)
 
+### Azure Cache for Redis  
 
-### Azure Cache for Redis
-microsoft.cache/redis
+microsoft.cache/redis  
+
 - [ACRConnectedClientList](acrconnectedclientlist.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
+### Azure Cache for Redis Enterprise  
 
-### Azure Cache for Redis Enterprise
-Microsoft.Cache/redisEnterprise
+Microsoft.Cache/redisEnterprise  
+
 - [REDConnectionEvents](redconnectionevents.md)
 
+### Azure CloudHsm  
 
-### Azure CloudHsm
-Microsoft.HardwareSecurityModules/cloudHsmClusters
+Microsoft.HardwareSecurityModules/cloudHsmClusters  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [CHSMManagementAuditLogs](chsmmanagementauditlogs.md)
 
+### Azure Cosmos DB  
 
-### Azure Cosmos DB
-Microsoft.DocumentDb/databaseAccounts
+Microsoft.DocumentDb/databaseAccounts  
+
 - [AzureActivity](azureactivity.md)
 - [CDBDataPlaneRequests](cdbdataplanerequests.md)
 - [CDBPartitionKeyStatistics](cdbpartitionkeystatistics.md)
@@ -226,21 +250,24 @@ Microsoft.DocumentDb/databaseAccounts
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Azure Cosmos DB for MongoDB (vCore)  
 
-### Azure Cosmos DB for MongoDB (vCore)
-Microsoft.DocumentDB/mongoClusters
+Microsoft.DocumentDB/mongoClusters  
+
 - [VCoreMongoRequests](vcoremongorequests.md)
 
+### Azure Cosmos DB for PostgreSQL  
 
-### Azure Cosmos DB for PostgreSQL
-Microsoft.DBForPostgreSQL/servergroupsv2
+Microsoft.DBForPostgreSQL/servergroupsv2  
+
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
+### Azure Data Explorer Clusters  
 
-### Azure Data Explorer Clusters
-Microsoft.Kusto/Clusters
+Microsoft.Kusto/Clusters  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [FailedIngestion](failedingestion.md)
@@ -252,65 +279,74 @@ Microsoft.Kusto/Clusters
 - [ADXTableDetails](adxtabledetails.md)
 - [ADXJournal](adxjournal.md)
 
+### Azure Data Manager for Energy  
 
-### Azure Data Manager for Energy
-Microsoft.OpenEnergyPlatform/energyServices
+Microsoft.OpenEnergyPlatform/energyServices  
+
 - [OEPAirFlowTask](oepairflowtask.md)
 - [OEPElasticOperator](oepelasticoperator.md)
 - [OEPElasticsearch](oepelasticsearch.md)
 - [OEPAuditLogs](oepauditlogs.md)
 - [OEPDataplaneLogs](oepdataplanelogs.md)
 
+### Azure Data Transfer  
 
-### Azure Data Transfer
-Microsoft.AzureDataTransfer/connections
+Microsoft.AzureDataTransfer/connections  
+
 - [DataTransferOperations](datatransferoperations.md)
 
+### Azure Database for MariaDB Servers  
 
-### Azure Database for MariaDB Servers
-Microsoft.DBforMariaDB/servers
+Microsoft.DBforMariaDB/servers  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Azure Database for MySQL Flexible Servers  
 
-### Azure Database for MySQL Flexible Servers
-Microsoft.DBForMySQL/flexibleServers
+Microsoft.DBForMySQL/flexibleServers  
+
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
+### Azure Database for MySQL Servers  
 
-### Azure Database for MySQL Servers
-Microsoft.DBforMySQL/servers
+Microsoft.DBforMySQL/servers  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Azure Database for PostgreSQL Flexible Servers  
 
-### Azure Database for PostgreSQL Flexible Servers
-Microsoft.DBForPostgreSQL/flexibleServers
+Microsoft.DBForPostgreSQL/flexibleServers  
+
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
 
+### Azure Database for PostgreSQL Servers  
 
-### Azure Database for PostgreSQL Servers
-Microsoft.DBforPostgreSQL/servers
+Microsoft.DBforPostgreSQL/servers  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Azure Database for PostgreSQL Servers V2  
 
-### Azure Database for PostgreSQL Servers V2
-Microsoft.DBforPostgreSQL/serversv2
+Microsoft.DBforPostgreSQL/serversv2  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Azure Databricks Services  
 
-### Azure Databricks Services
-Microsoft.Databricks/workspaces
+Microsoft.Databricks/workspaces  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [DatabricksBrickStoreHttpGateway](databricksbrickstorehttpgateway.md)
@@ -344,9 +380,10 @@ Microsoft.Databricks/workspaces
 - [DatabricksWebTerminal](databrickswebterminal.md)
 - [DatabricksDatabricksSQL](databricksdatabrickssql.md)
 
+### Azure Digital Twins  
 
-### Azure Digital Twins
-Microsoft.DigitalTwins/digitalTwinsInstances
+Microsoft.DigitalTwins/digitalTwinsInstances  
+
 - [AzureActivity](azureactivity.md)
 - [ADTDataHistoryOperation](adtdatahistoryoperation.md)
 - [ADTDigitalTwinsOperation](adtdigitaltwinsoperation.md)
@@ -354,100 +391,117 @@ Microsoft.DigitalTwins/digitalTwinsInstances
 - [ADTModelsOperation](adtmodelsoperation.md)
 - [ADTQueryOperation](adtqueryoperation.md)
 
+### Azure HPC Cache  
 
-### Azure HPC Cache
-Microsoft.StorageCache/caches
+Microsoft.StorageCache/caches  
+
 - [StorageCacheOperationEvents](storagecacheoperationevents.md)
 - [StorageCacheUpgradeEvents](storagecacheupgradeevents.md)
 - [StorageCacheWarningEvents](storagecachewarningevents.md)
 
+### Azure Load Testing  
 
-### Azure Load Testing
-Microsoft.LoadTestService/loadtests
+Microsoft.LoadTestService/loadtests  
+
 - [AzureActivity](azureactivity.md)
 - [AzureLoadTestingOperation](azureloadtestingoperation.md)
 
+### Azure Managed CCF  
 
-### Azure Managed CCF
-Microsoft.ConfidentialLedger/ManagedCCFs
+Microsoft.ConfidentialLedger/ManagedCCFs  
+
 - [CCFApplicationLogs](ccfapplicationlogs.md)
 
+### Azure Managed Instance for Apache Cassandra  
 
-### Azure Managed Instance for Apache Cassandra
-Microsoft.DocumentDB/cassandraClusters
+Microsoft.DocumentDB/cassandraClusters  
+
 - [AzureActivity](azureactivity.md)
 - [CassandraAudit](cassandraaudit.md)
 - [CassandraLogs](cassandralogs.md)
 
+### Azure Managed Lustre  
 
-### Azure Managed Lustre
-Microsoft.StorageCache/amlFilesytems
+Microsoft.StorageCache/amlFilesytems  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AFSAuditLogs](afsauditlogs.md)
 
+### Azure Managed Workspace for Grafana  
 
-### Azure Managed Workspace for Grafana
-Microsoft.Dashboard/grafana
+Microsoft.Dashboard/grafana  
+
 - [AzureActivity](azureactivity.md)
 - [AGSGrafanaLoginEvents](agsgrafanaloginevents.md)
 
+### Azure Monitor autoscale settings  
 
-### Azure Monitor autoscale settings
-Microsoft.Insights/AutoscaleSettings
+Microsoft.Insights/AutoscaleSettings  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AutoscaleEvaluationsLog](autoscaleevaluationslog.md)
 - [AutoscaleScaleActionsLog](autoscalescaleactionslog.md)
 
+### Azure Monitor Workspace  
 
-### Azure NetApp Files
-Microsoft.NetApp/netAppAccounts/capacityPools
+Microsoft.Monitor/accounts  
 
+- [AMWMetricsUsageDetails](amwmetricsusagedetails.md)
 
-### Azure Operator Insights - Data Product
-Microsoft.NetworkAnalytics/DataProducts
+### Azure Operator Insights - Data Product  
+
+Microsoft.NetworkAnalytics/DataProducts  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AOIDigestion](aoidigestion.md)
 - [AOIDatabaseQuery](aoidatabasequery.md)
 - [AOIStorage](aoistorage.md)
 
+### Azure PlayFab  
 
-### Azure PlayFab
-Microsoft.PlayFab/titles
+Microsoft.PlayFab/titles  
+
 - [PFTitleAuditLogs](pftitleauditlogs.md)
 
+### Azure Resource Group  
 
-### Azure Resource Group
-resourceGroup
+resourceGroup  
+
 - [AzureActivity](azureactivity.md)
 
+### Azure Sentinel  
 
-### Azure Sentinel
-Microsoft.SecurityInsights/securityInsights
+Microsoft.SecurityInsights/securityInsights  
+
 - [SecurityAlert](securityalert.md)
 - [SecurityEvent](securityevent.md)
 
+### Azure Sentinel CEF Table  
 
-### Azure Sentinel CEF Table
-Microsoft.SecurityInsights/CEF
+Microsoft.SecurityInsights/CEF  
+
 - [CommonSecurityLog](commonsecuritylog.md)
 
+### Azure Sentinel Web Session Logs  
 
-### Azure Sentinel Web Session Logs
-Microsoft.SecurityInsights/WebSessionLogs
+Microsoft.SecurityInsights/WebSessionLogs  
+
 - [ASimWebSessionLogs](asimwebsessionlogs.md)
 
+### Azure Sphere  
 
-### Azure Sphere
-Microsoft.AzureSphere/catalogs
+Microsoft.AzureSphere/catalogs  
+
 - [ASCAuditLogs](ascauditlogs.md)
 - [ASCDeviceEvents](ascdeviceevents.md)
 
+### Azure Spring Apps  
 
-### Azure Spring Apps
-Microsoft.AppPlatform/Spring
+Microsoft.AppPlatform/Spring  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AppPlatformLogsforSpring](appplatformlogsforspring.md)
@@ -456,9 +510,10 @@ Microsoft.AppPlatform/Spring
 - [AppPlatformBuildLogs](appplatformbuildlogs.md)
 - [AppPlatformContainerEventLogs](appplatformcontainereventlogs.md)
 
+### Azure Stack HCI  
 
-### Azure Stack HCI
-Microsoft.AzureStackHCI/VirtualMachines
+Microsoft.AzureStackHCI/VirtualMachines  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [ADAssessmentRecommendation](adassessmentrecommendation.md)
@@ -492,36 +547,41 @@ Microsoft.AzureStackHCI/VirtualMachines
 - [HealthStateChangeEvent](healthstatechangeevent.md)
 - [CommonSecurityLog](commonsecuritylog.md)
 
+### Azure Stack HCI  
 
-### Azure Stack HCI
-Microsoft.AzureStackHCI/clusters
+Microsoft.AzureStackHCI/clusters  
+
 - [Perf](perf.md)
 - [Event](event.md)
 
+### Azure Storage Mover  
 
-### Azure Storage Mover
-Microsoft.StorageMover/storageMovers
+Microsoft.StorageMover/storageMovers  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [StorageMoverCopyLogsFailed](storagemovercopylogsfailed.md)
 - [StorageMoverCopyLogsTransferred](storagemovercopylogstransferred.md)
 - [StorageMoverJobRunLogs](storagemoverjobrunlogs.md)
 
+### Azure Subscription  
 
-### Azure Subscription
-subscription
+subscription  
+
 - [AzureActivity](azureactivity.md)
 
+### Azure Traffic Collector  
 
-### Azure Traffic Collector
-Microsoft.NetworkFunction/AzureTrafficCollectors
+Microsoft.NetworkFunction/AzureTrafficCollectors  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [ATCExpressRouteCircuitIpfix](atcexpressroutecircuitipfix.md)
 
+### Azure Virtual Network Manager  
 
-### Azure Virtual Network Manager
-Microsoft.Network/networkManagers
+Microsoft.Network/networkManagers  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)
@@ -529,48 +589,55 @@ Microsoft.Network/networkManagers
 - [AVNMConnectivityConfigurationChange](avnmconnectivityconfigurationchange.md)
 - [AVNMIPAMPoolAllocationChange](avnmipampoolallocationchange.md)
 
+### Bastions  
 
-### Bastions
-Microsoft.Network/bastionHosts
+Microsoft.Network/bastionHosts  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [MicrosoftAzureBastionAuditLogs](microsoftazurebastionauditlogs.md)
 
+### Batch Accounts  
 
-### Batch Accounts
-microsoft.batch/batchaccounts
+microsoft.batch/batchaccounts  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Bot Services  
 
-### Bot Services
-Microsoft.BotService/botServices
+Microsoft.BotService/botServices  
+
 - [AzureActivity](azureactivity.md)
 - [ABSBotRequests](absbotrequests.md)
 
+### CDN Profiles  
 
-### CDN Profiles
-Microsoft.Cdn/profiles
+Microsoft.Cdn/profiles  
+
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Chaos Experiment  
 
-### Chaos Experiment
-Microsoft.Chaos/experiments
+Microsoft.Chaos/experiments  
+
 - [AzureActivity](azureactivity.md)
 - [ChaosStudioExperimentEventLogs](chaosstudioexperimenteventlogs.md)
 
+### Cognitive Services  
 
-### Cognitive Services
-microsoft.cognitiveservices/accounts
+microsoft.cognitiveservices/accounts  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Communication Services  
 
-### Communication Services
-Microsoft.Communication/CommunicationServices
+Microsoft.Communication/CommunicationServices  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [ACSChatIncomingOperations](acschatincomingoperations.md)
@@ -595,31 +662,35 @@ Microsoft.Communication/CommunicationServices
 - [ACSCallAutomationIncomingOperations](acscallautomationincomingoperations.md)
 - [ACSCallAutomationMediaSummary](acscallautomationmediasummary.md)
 
+### Container Apps  
 
-### Container Apps
-Microsoft.App/managedEnvironments
+Microsoft.App/managedEnvironments  
+
 - [AzureActivity](azureactivity.md)
 - [ContainerAppConsoleLogs](containerappconsolelogs.md)
 - [ContainerAppSystemLogs](containerappsystemlogs.md)
 - [AppEnvSpringAppConsoleLogs](appenvspringappconsolelogs.md)
 
+### Container Registries  
 
-### Container Registries
-Microsoft.ContainerRegistry/registries
+Microsoft.ContainerRegistry/registries  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [ContainerRegistryLoginEvents](containerregistryloginevents.md)
 - [ContainerRegistryRepositoryEvents](containerregistryrepositoryevents.md)
 
+### Data Collection Rules  
 
-### Data Collection Rules
-Microsoft.Insights/datacollectionrules
+Microsoft.Insights/datacollectionrules  
+
 - [DCRLogErrors](dcrlogerrors.md)
 - [DCRLogTroubleshooting](dcrlogtroubleshooting.md)
 
+### Data factories  
 
-### Data factories
-Microsoft.DataFactory/factories
+Microsoft.DataFactory/factories  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
@@ -635,50 +706,57 @@ Microsoft.DataFactory/factories
 - [ADFSSISPackageExecutionComponentPhases](adfssispackageexecutioncomponentphases.md)
 - [ADFSSISPackageExecutionDataStatistics](adfssispackageexecutiondatastatistics.md)
 
+### Data Lake Analytics  
 
-### Data Lake Analytics
-Microsoft.DataLakeAnalytics/accounts
+Microsoft.DataLakeAnalytics/accounts  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Data Lake Storage Gen1  
 
-### Data Lake Storage Gen1
-Microsoft.DataLakeStore/accounts
+Microsoft.DataLakeStore/accounts  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Data Share  
 
-### Data Share
-Microsoft.DataShare/accounts
+Microsoft.DataShare/accounts  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [MicrosoftDataShareSentSnapshotLog](microsoftdatasharesentsnapshotlog.md)
 - [MicrosoftDataShareReceivedSnapshotLog](microsoftdatasharereceivedsnapshotlog.md)
 
+### Default schema for a resource  
 
-### Default schema for a resource
-default
+default  
+
 - [AzureActivity](azureactivity.md)
 
+### Defender for Storage Settings  
 
-### Defender for Storage Settings
-Microsoft.Security/DefenderForStorageSettings
+Microsoft.Security/DefenderForStorageSettings  
+
 - [StorageMalwareScanningResults](storagemalwarescanningresults.md)
 
+### Desktop Virtualization Application Groups  
 
-### Desktop Virtualization Application Groups
-Microsoft.DesktopVirtualization/applicationGroups
+Microsoft.DesktopVirtualization/applicationGroups  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [WVDErrors](wvderrors.md)
 - [WVDCheckpoints](wvdcheckpoints.md)
 - [WVDManagement](wvdmanagement.md)
 
+### Desktop Virtualization Host Pools  
 
-### Desktop Virtualization Host Pools
-Microsoft.DesktopVirtualization/hostPools
+Microsoft.DesktopVirtualization/hostPools  
+
 - [WVDAgentHealthStatus](wvdagenthealthstatus.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
@@ -692,9 +770,10 @@ Microsoft.DesktopVirtualization/hostPools
 - [WVDAutoscaleEvaluationPooled](wvdautoscaleevaluationpooled.md)
 - [WVDConnectionGraphicsDataPreview](wvdconnectiongraphicsdatapreview.md)
 
+### Desktop Virtualization workspaces  
 
-### Desktop Virtualization workspaces
-Microsoft.DesktopVirtualization/workspaces
+Microsoft.DesktopVirtualization/workspaces  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [WVDFeeds](wvdfeeds.md)
@@ -702,47 +781,53 @@ Microsoft.DesktopVirtualization/workspaces
 - [WVDCheckpoints](wvdcheckpoints.md)
 - [WVDManagement](wvdmanagement.md)
 
+### Dev Centers  
 
-### Dev Centers
-Microsoft.DevCenter/devcenters
+Microsoft.DevCenter/devcenters  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
 - [DevCenterResourceOperationLogs](devcenterresourceoperationlogs.md)
 - [DevCenterBillingEventLogs](devcenterbillingeventlogs.md)
 
+### Device Provisioning Services  
 
-### Device Provisioning Services
-Microsoft.Devices/ProvisioningServices
+Microsoft.Devices/ProvisioningServices  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### DNS Resolver Policies  
 
-### DNS Resolver Policies
-Microsoft.Network/dnsResolverPolicies
+Microsoft.Network/dnsResolverPolicies  
+
 - [AzureActivity](azureactivity.md)
 - [DNSQueryLogs](dnsquerylogs.md)
 
+### Dynamics 365 Customer Insights  
 
-### Dynamics 365 Customer Insights
-Microsoft.D365CustomerInsights/instances
+Microsoft.D365CustomerInsights/instances  
+
 - [AzureActivity](azureactivity.md)
 - [CIEventsAudit](cieventsaudit.md)
 - [CIEventsOperational](cieventsoperational.md)
 
+### Event Grid Domains  
 
-### Event Grid Domains
-Microsoft.EventGrid/domains
+Microsoft.EventGrid/domains  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
 - [AegPublishFailureLogs](aegpublishfailurelogs.md)
 - [AegDataPlaneRequests](aegdataplanerequests.md)
 
+### Event Grid Namespaces  
 
-### Event Grid Namespaces
-Microsoft.EventGrid/namespaces
+Microsoft.EventGrid/namespaces  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [EGNSuccessfulMqttConnections](egnsuccessfulmqttconnections.md)
@@ -752,34 +837,38 @@ Microsoft.EventGrid/namespaces
 - [EGNFailedMqttSubscriptions](egnfailedmqttsubscriptions.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Event Grid Partner Namespaces  
 
-### Event Grid Partner Namespaces
-Microsoft.EventGrid/partnerNamespaces
+Microsoft.EventGrid/partnerNamespaces  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AegPublishFailureLogs](aegpublishfailurelogs.md)
 - [AegDataPlaneRequests](aegdataplanerequests.md)
 
+### Event Grid Partner Topics  
 
-### Event Grid Partner Topics
-Microsoft.EventGrid/partnerTopics
+Microsoft.EventGrid/partnerTopics  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
 
+### Event Grid System Topics  
 
-### Event Grid System Topics
-Microsoft.EventGrid/systemTopics
+Microsoft.EventGrid/systemTopics  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
 
+### Event Grid Topics  
 
-### Event Grid Topics
-Microsoft.EventGrid/topics
+Microsoft.EventGrid/topics  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AegDataPlaneRequests](aegdataplanerequests.md)
@@ -787,9 +876,10 @@ Microsoft.EventGrid/topics
 - [AegDeliveryFailureLogs](aegdeliveryfailurelogs.md)
 - [AegPublishFailureLogs](aegpublishfailurelogs.md)
 
+### Event Hubs  
 
-### Event Hubs
-Microsoft.EventHub/namespaces
+Microsoft.EventHub/namespaces  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
@@ -803,24 +893,27 @@ Microsoft.EventHub/namespaces
 - [AZMSKafkaUserErrorLogs](azmskafkausererrorlogs.md)
 - [AZMSCustomerManagedKeyUserLogs](azmscustomermanagedkeyuserlogs.md)
 
+### Experiment Workspace  
 
-### Experiment Workspace
-Microsoft.Experimentation/experimentWorkspaces
+Microsoft.Experimentation/experimentWorkspaces  
+
 - [AzureActivity](azureactivity.md)
 - [AEWAuditLogs](aewauditlogs.md)
 - [AEWComputePipelinesLogs](aewcomputepipelineslogs.md)
 - [AEWAssignmentBlobLogs](aewassignmentbloblogs.md)
 
+### ExpressRoute Circuits  
 
-### ExpressRoute Circuits
-Microsoft.Network/expressRouteCircuits
+Microsoft.Network/expressRouteCircuits  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Firewalls  
 
-### Firewalls
-Microsoft.Network/azureFirewalls
+Microsoft.Network/azureFirewalls  
+
 - [AZFWNetworkRule](azfwnetworkrule.md)
 - [AZFWFatFlow](azfwfatflow.md)
 - [AZFWFlowTrace](azfwflowtrace.md)
@@ -837,16 +930,18 @@ Microsoft.Network/azureFirewalls
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Front Doors  
 
-### Front Doors
-Microsoft.Network/frontdoors
+Microsoft.Network/frontdoors  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### HDInsight Clusters  
 
-### HDInsight Clusters
-Microsoft.HDInsight/Clusters
+Microsoft.HDInsight/Clusters  
+
 - [AzureActivity](azureactivity.md)
 - [HDInsightKafkaLogs](hdinsightkafkalogs.md)
 - [HDInsightKafkaMetrics](hdinsightkafkametrics.md)
@@ -880,44 +975,50 @@ Microsoft.HDInsight/Clusters
 - [HDInsightHiveQueryAppStats](hdinsighthivequeryappstats.md)
 - [HDInsightHiveTezAppStats](hdinsighthivetezappstats.md)
 
+### Health Data Services  
 
-### Health Data Services
-Microsoft.HealthcareApis/workspaces
+Microsoft.HealthcareApis/workspaces  
+
 - [AHDSMedTechDiagnosticLogs](ahdsmedtechdiagnosticlogs.md)
 - [AHDSDicomDiagnosticLogs](ahdsdicomdiagnosticlogs.md)
 - [AHDSDicomAuditLogs](ahdsdicomauditlogs.md)
 
+### Integration Account.  
 
-### Integration Account.
-Microsoft.Logic/integrationAccounts
+Microsoft.Logic/integrationAccounts  
+
 - [AzureActivity](azureactivity.md)
 
+### Intune Specialist Reports.  
 
-### Intune Specialist Reports.
-microsoft.intune/operations
+microsoft.intune/operations  
+
 - [Windows365AuditLogs](windows365auditlogs.md)
 
+### IoT Hub  
 
-### IoT Hub
-Microsoft.Devices/IotHubs
+Microsoft.Devices/IotHubs  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [IoTHubDistributedTracing](iothubdistributedtracing.md)
 - [InsightsMetrics](insightsmetrics.md)
 
+### Key Vaults  
 
-### Key Vaults
-Microsoft.KeyVault/vaults
+Microsoft.KeyVault/vaults  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AZKVAuditLogs](azkvauditlogs.md)
 - [AZKVPolicyEvaluationDetailsLogs](azkvpolicyevaluationdetailslogs.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Kubernetes Services  
 
-### Kubernetes Services
-Microsoft.ContainerService/managedClusters
+Microsoft.ContainerService/managedClusters  
+
 - [AzureActivity](azureactivity.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureMetrics](azuremetrics.md)
@@ -938,29 +1039,33 @@ Microsoft.ContainerService/managedClusters
 - [Perf](perf.md)
 - [Syslog](syslog.md)
 
+### Load Balancers  
 
-### Load Balancers
-Microsoft.Network/LoadBalancers
+Microsoft.Network/LoadBalancers  
+
 - [AzureActivity](azureactivity.md)
 
+### Log Analytics workspaces  
 
-### Log Analytics workspaces
-Microsoft.OperationalInsights/Workspaces
+Microsoft.OperationalInsights/Workspaces  
+
 - [LAQueryLogs](laquerylogs.md)
 - [LASummaryLogs](lasummarylogs.md)
 - [AzureMetricsV2](azuremetricsv2.md)
 
+### Logic Apps  
 
-### Logic Apps
-Microsoft.Logic/workflows
+Microsoft.Logic/workflows  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 - [LogicAppWorkflowRuntime](logicappworkflowruntime.md)
 
+### Machine Learning  
 
-### Machine Learning
-Microsoft.MachineLearningServices/workspaces
+Microsoft.MachineLearningServices/workspaces  
+
 - [AzureActivity](azureactivity.md)
 - [AmlOnlineEndpointConsoleLog](amlonlineendpointconsolelog.md)
 - [AmlOnlineEndpointTrafficLog](amlonlineendpointtrafficlog.md)
@@ -982,16 +1087,18 @@ Microsoft.MachineLearningServices/workspaces
 - [AmlPipelineEvent](amlpipelineevent.md)
 - [AmlRunEvent](amlrunevent.md)
 
+### Machine Learning  
 
-### Machine Learning
-Microsoft.MachineLearningServices/registries
+Microsoft.MachineLearningServices/registries  
+
 - [AzureActivity](azureactivity.md)
 - [AmlRegistryReadEventsLog](amlregistryreadeventslog.md)
 - [AmlRegistryWriteEventsLog](amlregistrywriteeventslog.md)
 
+### Media Services  
 
-### Media Services
-Microsoft.Media/mediaservices
+Microsoft.Media/mediaservices  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AMSKeyDeliveryRequests](amskeydeliveryrequests.md)
@@ -1000,93 +1107,108 @@ Microsoft.Media/mediaservices
 - [AMSStreamingEndpointRequests](amsstreamingendpointrequests.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Microsoft App Configuration  
 
-### Microsoft App Configuration
-Microsoft.AppConfiguration/configurationStores
+Microsoft.AppConfiguration/configurationStores  
+
 - [AzureActivity](azureactivity.md)
 - [AACHttpRequest](aachttprequest.md)
 - [AACAudit](aacaudit.md)
 
+### Microsoft Connected Cache  
 
-### Microsoft Connected Cache
-Microsoft.ConnectedCache/CacheNodes
+Microsoft.ConnectedCache/CacheNodes  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [MCCEventLogs](mcceventlogs.md)
 
+### Microsoft Connected Vehicle Platform  
 
-### Microsoft Connected Vehicle Platform
-Microsoft.ConnectedVehicle/platformAccounts
+Microsoft.ConnectedVehicle/platformAccounts  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [MCVPOperationLogs](mcvpoperationlogs.md)
 - [MCVPAuditLogs](mcvpauditlogs.md)
 
+### Microsoft Container Instances Services  
 
-### Microsoft Container Instances Services
-Microsoft.ContainerInstance/containerGroups
+Microsoft.ContainerInstance/containerGroups  
+
 - [ContainerInstanceLog](containerinstancelog.md)
 - [ContainerEvent](containerevent.md)
 
+### Microsoft Defender for cloud  
 
-### Microsoft Defender for cloud
-Microsoft.SecurityInsights/Purview
+Microsoft.SecurityInsights/Purview  
+
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 
+### Microsoft Defender for Cloud  
 
-### Microsoft Defender for Cloud
-Microsoft.Security/Security
+Microsoft.Security/Security  
+
 - [SecurityAttackPathData](securityattackpathdata.md)
 
+### Microsoft Graph Logs  
 
-### Microsoft Graph Logs
-Microsoft.Graph/tenants
+Microsoft.Graph/tenants  
+
 - [AzureActivity](azureactivity.md)
 - [SigninLogs](signinlogs.md)
 - [AuditLogs](auditlogs.md)
 
+### Microsoft Playwright Testing  
 
-### Microsoft Playwright Testing
-Microsoft.AzurePlaywrightService/accounts
+Microsoft.AzurePlaywrightService/accounts  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
+### Microsoft Sentinel ASim  
 
-### Microsoft Sentinel ASim
-Microsoft.SecurityInsights/ASimTables
+Microsoft.SecurityInsights/ASimTables  
+
 - [ASimDhcpEventLogs](asimdhcpeventlogs.md)
 - [ASimFileEventLogs](asimfileeventlogs.md)
 - [ASimUserManagementActivityLogs](asimusermanagementactivitylogs.md)
 - [ASimRegistryEventLogs](asimregistryeventlogs.md)
 
+### Microsoft Sentinel Audit Event ASim schema  
 
-### Microsoft Sentinel Audit Event ASim schema
-Microsoft.SecurityInsights/AuditEventNormalized
+Microsoft.SecurityInsights/AuditEventNormalized  
+
 - [ASimAuditEventLogs](asimauditeventlogs.md)
 
+### Microsoft Sentinel Authentication Event ASIM schema  
 
-### Microsoft Sentinel Authentication Event ASIM schema
-Microsoft.SecurityInsights/AuthenticationEvent
+Microsoft.SecurityInsights/AuthenticationEvent  
+
 - [ASimAuthenticationEventLogs](asimauthenticationeventlogs.md)
 
+### Microsoft Sentinel DNS activity ASim schema  
 
-### Microsoft Sentinel DNS activity ASim schema
-Microsoft.SecurityInsights/DnsNormalized
+Microsoft.SecurityInsights/DnsNormalized  
+
 - [ASimDnsActivityLogs](asimdnsactivitylogs.md)
 
+### Microsoft Sentinel Network Session ASim schema  
 
-### Microsoft Sentinel Network Session ASim schema
-Microsoft.SecurityInsights/NetworkSessionNormalized
+Microsoft.SecurityInsights/NetworkSessionNormalized  
+
 - [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
 
+### Microsoft Sentinel Process Event ASim schema  
 
-### Microsoft Sentinel Process Event ASim schema
-Microsoft.SecurityInsights/ProcessEventNormalized
+Microsoft.SecurityInsights/ProcessEventNormalized  
+
 - [ASimProcessEventLogs](asimprocesseventlogs.md)
 
+### Microsoft.AgFoodPlatform/farmBeats  
 
-### Microsoft.AgFoodPlatform/farmBeats
-Microsoft.AgFoodPlatform/farmBeats
+Microsoft.AgFoodPlatform/farmBeats  
+
 - [AgriFoodFarmManagementLogs](agrifoodfarmmanagementlogs.md)
 - [AgriFoodWeatherLogs](agrifoodweatherlogs.md)
 - [AgriFoodSatelliteLogs](agrifoodsatellitelogs.md)
@@ -1098,58 +1220,66 @@ Microsoft.AgFoodPlatform/farmBeats
 - [AgriFoodJobProcessedLogs](agrifoodjobprocessedlogs.md)
 - [AgriFoodSensorManagementLogs](agrifoodsensormanagementlogs.md)
 
+### Microsoft.OpenLogisticsPlatform/Workspaces  
 
-### Microsoft.OpenLogisticsPlatform/Workspaces
-Microsoft.OpenLogisticsPlatform/Workspaces
+Microsoft.OpenLogisticsPlatform/Workspaces  
+
 - [OLPSupplyChainEvents](olpsupplychainevents.md)
 - [OLPSupplyChainEntityOperations](olpsupplychainentityoperations.md)
 
+### Microsoft.Purview/accounts  
 
-### Microsoft.Purview/accounts
-Microsoft.Purview/accounts
+Microsoft.Purview/accounts  
+
 - [AzureActivity](azureactivity.md)
 - [PurviewScanStatusLogs](purviewscanstatuslogs.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 - [PurviewSecurityLogs](purviewsecuritylogs.md)
 
+### Network Devices (Operator Nexus)  
 
-### Network Devices (Operator Nexus)
-Microsoft.ManagedNetworkFabric/networkDevices
+Microsoft.ManagedNetworkFabric/networkDevices  
+
 - [Azuremetrics](azuremetrics.md)
 - [AzureActivity](azureactivity.md)
 - [MNFDeviceUpdates](mnfdeviceupdates.md)
 - [MNFSystemStateMessageUpdates](mnfsystemstatemessageupdates.md)
 
+### Network Interfaces  
 
-### Network Interfaces
-Microsoft.Network/networkinterfaces
+Microsoft.Network/networkinterfaces  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Network Security Groups  
 
-### Network Security Groups
-Microsoft.Network/NetworkSecurityGroups
+Microsoft.Network/NetworkSecurityGroups  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Network Security Perimeters  
 
-### Network Security Perimeters
-Microsoft.Network/NetworkSecurityPerimeters
+Microsoft.Network/NetworkSecurityPerimeters  
+
 - [NSPAccessLogs](nspaccesslogs.md)
 
+### Network Watcher - Connection Monitor  
 
-### Network Watcher - Connection Monitor
-Microsoft.Network/NetworkWatchers/Connectionmonitors
+Microsoft.Network/NetworkWatchers/Connectionmonitors  
+
 - [AzureActivity](azureactivity.md)
 - [NWConnectionMonitorTestResult](nwconnectionmonitortestresult.md)
 - [NWConnectionMonitorPathResult](nwconnectionmonitorpathresult.md)
 - [NWConnectionMonitorDNSResult](nwconnectionmonitordnsresult.md)
 
+### Nexus BareMetal Machines  
 
-### Nexus BareMetal Machines
-Microsoft.NetworkCloud/bareMetalMachines
+Microsoft.NetworkCloud/bareMetalMachines  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [NCBMSystemLogs](ncbmsystemlogs.md)
@@ -1157,64 +1287,73 @@ Microsoft.NetworkCloud/bareMetalMachines
 - [NCBMSecurityDefenderLogs](ncbmsecuritydefenderlogs.md)
 - [NCBMBreakGlassAuditLogs](ncbmbreakglassauditlogs.md)
 
+### Nexus Clusters  
 
-### Nexus Clusters
-Microsoft.NetworkCloud/clusters
+Microsoft.NetworkCloud/clusters  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [NCCKubernetesLogs](ncckuberneteslogs.md)
 - [NCCVMOrchestrationLogs](nccvmorchestrationlogs.md)
 
+### Nexus Storage Appliances  
 
-### Nexus Storage Appliances
-Microsoft.NetworkCloud/storageAppliances
+Microsoft.NetworkCloud/storageAppliances  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [NCSStorageLogs](ncsstoragelogs.md)
 - [NCSStorageAlerts](ncsstoragealerts.md)
 
+### NGINXaaS  
 
-### NGINXaaS
-NGINX.NGINXPLUS/nginxDeployments
+NGINX.NGINXPLUS/nginxDeployments  
+
 - [NGXOperationLogs](ngxoperationlogs.md)
 
+### Power BI Datasets  
 
-### Power BI Datasets
-Microsoft.PowerBI/tenants
+Microsoft.PowerBI/tenants  
+
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIReportUsageTenant](powerbireportusagetenant.md)
 
+### Power BI Datasets  
 
-### Power BI Datasets
-Microsoft.PowerBI/tenants/workspaces
+Microsoft.PowerBI/tenants/workspaces  
+
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
 - [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 
+### Power BI Embedded  
 
-### Power BI Embedded
-microsoft.powerbidedicated/capacities
+microsoft.powerbidedicated/capacities  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Project CI Workspace  
 
-### Project CI Workspace
-Microsoft.DataCollaboration/workspaces
+Microsoft.DataCollaboration/workspaces  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [ACICollaborationAudit](acicollaborationaudit.md)
 
+### Public IP Addresses  
 
-### Public IP Addresses
-Microsoft.Network/PublicIpAddresses
+Microsoft.Network/PublicIpAddresses  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Recovery Services Vaults  
 
-### Recovery Services Vaults
-Microsoft.RecoveryServices/Vaults
+Microsoft.RecoveryServices/Vaults  
+
 - [AzureActivity](azureactivity.md)
 - [ASRJobs](asrjobs.md)
 - [ASRReplicatedItems](asrreplicateditems.md)
@@ -1227,24 +1366,27 @@ Microsoft.RecoveryServices/Vaults
 - [AddonAzureBackupStorage](addonazurebackupstorage.md)
 - [AddonAzureBackupProtectedInstance](addonazurebackupprotectedinstance.md)
 
+### Relay  
 
-### Relay
-Microsoft.Relay/namespaces
+Microsoft.Relay/namespaces  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AZMSVnetConnectionEvents](azmsvnetconnectionevents.md)
 - [AZMSHybridConnectionsEvents](azmshybridconnectionsevents.md)
 
+### Search Services  
 
-### Search Services
-Microsoft.Search/searchServices
+Microsoft.Search/searchServices  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Service Bus  
 
-### Service Bus
-Microsoft.ServiceBus/namespaces
+Microsoft.ServiceBus/namespaces  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
@@ -1253,51 +1395,58 @@ Microsoft.ServiceBus/namespaces
 - [AZMSRunTimeAuditLogs](azmsruntimeauditlogs.md)
 - [AZMSApplicationMetricLogs](azmsapplicationmetriclogs.md)
 
+### Service Fabric Clusters  
 
-### Service Fabric Clusters
-Microsoft.ServiceFabric/clusters
+Microsoft.ServiceFabric/clusters  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
+### SignalR  
 
-### SignalR
-Microsoft.SignalRService/SignalR
+Microsoft.SignalRService/SignalR  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [SignalRServiceDiagnosticLogs](signalrservicediagnosticlogs.md)
 
+### SignalR Service WebPubSub  
 
-### SignalR Service WebPubSub
-Microsoft.SignalRService/WebPubSub
+Microsoft.SignalRService/WebPubSub  
+
 - [AzureActivity](azureactivity.md)
 - [WebPubSubHttpRequest](webpubsubhttprequest.md)
 - [WebPubSubMessaging](webpubsubmessaging.md)
 - [WebPubSubConnectivity](webpubsubconnectivity.md)
 
+### SQL Databases  
 
-### SQL Databases
-Microsoft.Sql/servers/databases
+Microsoft.Sql/servers/databases  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### SQL Managed Instances  
 
-### SQL Managed Instances
-Microsoft.Sql/managedInstances
+Microsoft.Sql/managedInstances  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### SQL Servers  
 
-### SQL Servers
-microsoft.sql/servers
+microsoft.sql/servers  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Storage Accounts  
 
-### Storage Accounts
-Microsoft.Storage/storageAccounts
+Microsoft.Storage/storageAccounts  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [StorageTableLogs](storagetablelogs.md)
@@ -1305,16 +1454,18 @@ Microsoft.Storage/storageAccounts
 - [StorageFileLogs](storagefilelogs.md)
 - [StorageBlobLogs](storagebloblogs.md)
 
+### Stream Analytics jobs  
 
-### Stream Analytics jobs
-microsoft.streamanalytics/streamingjobs
+microsoft.streamanalytics/streamingjobs  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Synapse Workspaces  
 
-### Synapse Workspaces
-Microsoft.Synapse/workspaces
+Microsoft.Synapse/workspaces  
+
 - [AzureActivity](azureactivity.md)
 - [SynapseRbacOperations](synapserbacoperations.md)
 - [SynapseGatewayApiRequests](synapsegatewayapirequests.md)
@@ -1341,9 +1492,10 @@ Microsoft.Synapse/workspaces
 - [SynapseDXTableUsageStatistics](synapsedxtableusagestatistics.md)
 - [SynapseDXTableDetails](synapsedxtabledetails.md)
 
+### System Center Virtual Machine Manager  
 
-### System Center Virtual Machine Manager
-Microsoft.SCVMM/VirtualMachines
+Microsoft.SCVMM/VirtualMachines  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [ADAssessmentRecommendation](adassessmentrecommendation.md)
@@ -1377,29 +1529,33 @@ Microsoft.SCVMM/VirtualMachines
 - [HealthStateChangeEvent](healthstatechangeevent.md)
 - [CommonSecurityLog](commonsecuritylog.md)
 
+### Time Series Insights Environments  
 
-### Time Series Insights Environments
-Microsoft.TimeSeriesInsights/environments
+Microsoft.TimeSeriesInsights/environments  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [TSIIngress](tsiingress.md)
 
+### Traffic Manager Profiles  
 
-### Traffic Manager Profiles
-Microsoft.Network/trafficmanagerprofiles
+Microsoft.Network/trafficmanagerprofiles  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Video Indexer  
 
-### Video Indexer
-Microsoft.VideoIndexer/accounts
+Microsoft.VideoIndexer/accounts  
+
 - [VIAudit](viaudit.md)
 - [VIIndexing](viindexing.md)
 
+### Virtual Machine Scale Sets  
 
-### Virtual Machine Scale Sets
-Microsoft.Compute/virtualMachineScaleSets
+Microsoft.Compute/virtualMachineScaleSets  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [ConfigurationChange](configurationchange.md)
@@ -1425,9 +1581,10 @@ Microsoft.Compute/virtualMachineScaleSets
 - [InsightsMetrics](insightsmetrics.md)
 - [CommonSecurityLog](commonsecuritylog.md)
 
+### Virtual machines  
 
-### Virtual machines
-Microsoft.Compute/VirtualMachines
+Microsoft.Compute/VirtualMachines  
+
 - [Heartbeat](heartbeat.md)
 - [W3CIISLog](w3ciislog.md)
 - [AzureActivity](azureactivity.md)
@@ -1461,30 +1618,34 @@ Microsoft.Compute/VirtualMachines
 - [HealthStateChangeEvent](healthstatechangeevent.md)
 - [CommonSecurityLog](commonsecuritylog.md)
 
+### Virtual Network Gateways  
 
-### Virtual Network Gateways
-Microsoft.Network/virtualNetworkGateways
+Microsoft.Network/virtualNetworkGateways  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Virtual Networks  
 
-### Virtual Networks
-Microsoft.Network/virtualNetworks
+Microsoft.Network/virtualNetworks  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### Virtual Private Network Gateways  
 
-### Virtual Private Network Gateways
-Microsoft.Network/vpnGateways
+Microsoft.Network/vpnGateways  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
+### VMware  
 
-### VMware
-Microsoft.ConenctedVMwarevSphere/VirtualMachines
+Microsoft.ConenctedVMwarevSphere/VirtualMachines  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [ADAssessmentRecommendation](adassessmentrecommendation.md)
@@ -1518,13 +1679,21 @@ Microsoft.ConenctedVMwarevSphere/VirtualMachines
 - [HealthStateChangeEvent](healthstatechangeevent.md)
 - [CommonSecurityLog](commonsecuritylog.md)
 
+### Workload Monitor  
 
-### Workload Monitor
-Microsoft.WorkloadMonitor/monitors
+Microsoft.WorkloadMonitor/monitors  
+
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
+### Workload Monitoring of Azure Monitor Insights  
 
-### Workload Monitoring of Azure Monitor Insights
-Microsoft.Insights/WorkloadMonitoring
+Microsoft.Insights/WorkloadMonitoring  
+
 - [InsightsMetrics](insightsmetrics.md)
+
+## Next steps
+
+- [Analyze logs from Azure storage with Log Analytics](/azure/azure-monitor/essentials/resource-logs#send-to-log-analytics-workspace)
+- [Learn more about resource logs](/azure/azure-monitor/essentials/platform-logs-overview)
+- [Change resource log diagnostic settings using the Azure Monitor REST API](/rest/api/monitor/diagnosticsettings)

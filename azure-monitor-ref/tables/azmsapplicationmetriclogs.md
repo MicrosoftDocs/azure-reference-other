@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # AZMSApplicationMetricLogs
@@ -14,19 +14,18 @@ ms.date: 02/18/2024
 Captures application metrics(incoming/outgoing, successful/failed, etc. message delivery) for Azure Event Hubs and Azure Service Bus.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Audit
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.servicebus/namespaces,<br>microsoft.eventhub/namespaces|
+|**Categories**|Azure Resources, Audit|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
-
-## Resource types
-
-- Service Bus
-- Event Hubs
 
 ## Columns
   

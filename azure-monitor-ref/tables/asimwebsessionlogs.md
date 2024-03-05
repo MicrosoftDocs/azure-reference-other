@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # ASimWebSessionLogs
@@ -14,17 +14,18 @@ ms.date: 02/18/2024
 The Advanced Security Information Model (ASIM) Web Session normalization schema - describe an IP network activity. For example, IP network activities are reported by web servers, web proxies, and web security gateways.
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.securityinsights/websessionlogs|
+|**Categories**|Security|
+|**Solutions**| SecurityInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
 
-## Solutions
 
-- SecurityInsights
-
-## Resource types
-
-- Azure Sentinel Web Session Logs
 
 ## Columns
   

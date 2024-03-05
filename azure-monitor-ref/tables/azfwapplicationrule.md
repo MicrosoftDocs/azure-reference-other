@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # AZFWApplicationRule
@@ -14,21 +14,17 @@ ms.date: 03/04/2024
 Contains all Application rule log data. Each match between data plane and Application rule creates a log entry with the data plane packet and the matched rule's attributes.
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.network/azurefirewalls|
+|**Categories**|Security|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/azfwapplicationrule)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Firewalls
-
-## Queries
-
- Sample queries for the [AZFWApplicationRule](/azure/azure-monitor/reference/queries/azfwapplicationrule) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # UserAccessAnalytics
@@ -14,13 +14,18 @@ ms.date: 02/18/2024
 This analytics table, for a given user, provides the direct or transitive access to Azure resources. For example, if the user under investigation is Jane Smith, Access Analytics calculates all the Azure subscriptions that she either can access directly, via groups or serviceprincipals.
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Security|
+|**Solutions**| BehaviorAnalyticsInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- BehaviorAnalyticsInsights
 
 ## Columns
   

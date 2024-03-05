@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # SecureScoreControls
@@ -14,11 +14,18 @@ ms.date: 02/18/2024
 Azure Security Center Secure Score per control. A control is a logical group of related security recommendations, its secure score reflects the security posture per the control.
 
 
-## Solutions
+## Table attributes
 
-- Security
-- SecurityCenter
-- SecurityCenterFree
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|-|
+|**Solutions**| Security, SecurityCenter, SecurityCenterFree|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
+
+
 
 ## Columns
   

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # WVDConnections
@@ -14,21 +14,17 @@ ms.date: 03/04/2024
 Windows Virtual Desktop Connection Activity.
 
 
-## Categories
+## Table attributes
 
-- Azure Virtual Desktop
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.desktopvirtualization/hostpools|
+|**Categories**|Azure Virtual Desktop|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/wvdconnections)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Desktop Virtualization Host Pools
-
-## Queries
-
- Sample queries for the [WVDConnections](/azure/azure-monitor/reference/queries/wvdconnections) table.
 
 
 ## Columns

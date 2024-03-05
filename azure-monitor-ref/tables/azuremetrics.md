@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # AzureMetrics
@@ -14,114 +14,17 @@ ms.date: 03/04/2024
 Metric data emitted by Azure services that measure their health and performance.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.aad/domainservices,<br>microsoft.network/applicationgateways,<br>microsoft.servicenetworking/trafficcontrollers,<br>microsoft.web/sites,<br>microsoft.kubernetes/connectedclusters,<br>microsoft.cache/redis,<br>microsoft.hardwaresecuritymodules/cloudhsmclusters,<br>microsoft.communication/communicationservices,<br>microsoft.documentdb/databaseaccounts,<br>microsoft.datacollaboration/workspaces,<br>microsoft.eventgrid/namespaces,<br>microsoft.eventgrid/topics,<br>microsoft.eventhub/namespaces,<br>microsoft.network/azurefirewalls,<br>microsoft.keyvault/vaults,<br>microsoft.containerservice/managedclusters,<br>microsoft.managednetworkfabric/networkdevices,<br>microsoft.networkcloud/baremetalmachines,<br>microsoft.networkcloud/clusters,<br>microsoft.networkcloud/storageappliances,<br>microsoft.relay/namespaces,<br>microsoft.servicebus/namespaces,<br>microsoft.networkfunction/azuretrafficcollectors,<br>microsoft.network/networkmanagers,<br>microsoft.cognitiveservices/accounts,<br>microsoft.connectedcache/cachenodes,<br>microsoft.connectedvehicle/platformaccounts,<br>microsoft.databricks/workspaces,<br>microsoft.dbformysql/flexibleservers,<br>microsoft.dbforpostgresql/flexibleservers,<br>microsoft.dbforpostgresql/servergroupsv2,<br>microsoft.devcenter/devcenters,<br>microsoft.compute/virtualmachines,<br>microsoft.machinelearningservices/workspaces,<br>microsoft.media/mediaservices,<br>microsoft.azureplaywrightservice/accounts,<br>microsoft.networkanalytics/dataproducts,<br>microsoft.storage/storageaccounts,<br>microsoft.storagecache/amlfilesytems,<br>microsoft.storagemover/storagemovers,<br>microsoft.synapse/workspaces,<br>microsoft.desktopvirtualization/hostpools,<br>microsoft.desktopvirtualization/applicationgroups,<br>microsoft.desktopvirtualization/workspaces,<br>microsoft.timeseriesinsights/environments,<br>microsoft.workloadmonitor/monitors,<br>microsoft.analysisservices/servers,<br>microsoft.batch/batchaccounts,<br>microsoft.appplatform/spring,<br>microsoft.signalrservice/signalr,<br>microsoft.containerregistry/registries,<br>microsoft.kusto/clusters,<br>microsoft.blockchain/blockchainmembers,<br>microsoft.eventgrid/domains,<br>microsoft.eventgrid/partnernamespaces,<br>microsoft.eventgrid/partnertopics,<br>microsoft.eventgrid/systemtopics,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines,<br>microsoft.compute/virtualmachinescalesets,<br>microsoft.hybridcontainerservice/provisionedclusters,<br>microsoft.insights/autoscalesettings,<br>microsoft.devices/iothubs,<br>microsoft.servicefabric/clusters,<br>microsoft.logic/workflows,<br>microsoft.apimanagement/service,<br>microsoft.automation/automationaccounts,<br>microsoft.datafactory/factories,<br>microsoft.datalakestore/accounts,<br>microsoft.datalakeanalytics/accounts,<br>microsoft.powerbidedicated/capacities,<br>microsoft.datashare/accounts,<br>microsoft.sql/managedinstances,<br>microsoft.sql/servers,<br>microsoft.sql/servers/databases,<br>microsoft.dbformysql/servers,<br>microsoft.dbforpostgresql/servers,<br>microsoft.dbforpostgresql/serversv2,<br>microsoft.dbformariadb/servers,<br>microsoft.devices/provisioningservices,<br>microsoft.network/expressroutecircuits,<br>microsoft.network/frontdoors,<br>microsoft.network/networkinterfaces,<br>microsoft.network/networksecuritygroups,<br>microsoft.network/publicipaddresses,<br>microsoft.network/trafficmanagerprofiles,<br>microsoft.network/virtualnetworkgateways,<br>microsoft.network/vpngateways,<br>microsoft.network/virtualnetworks,<br>microsoft.search/searchservices,<br>microsoft.streamanalytics/streamingjobs,<br>microsoft.network/bastionhosts,<br>microsoft.healthcareapis/services|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/azuremetrics)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Azure AD Domain Services
-- Application Gateways
-- Application Gateway for Containers
-- App Services
-- Azure Arc Enabled Kubernetes
-- Azure Cache for Redis
-- Azure CloudHsm
-- Communication Services
-- Azure Cosmos DB
-- Project CI Workspace
-- Event Grid Namespaces
-- Event Grid Topics
-- Event Hubs
-- Firewalls
-- Key Vaults
-- Kubernetes Services
-- Network Devices (Operator Nexus)
-- Nexus BareMetal Machines
-- Nexus Clusters
-- Nexus Storage Appliances
-- Relay
-- Service Bus
-- Azure Traffic Collector
-- Azure Virtual Network Manager
-- Cognitive Services
-- Microsoft Connected Cache
-- Microsoft Connected Vehicle Platform
-- Azure Databricks Services
-- Azure Database for MySQL Flexible Servers
-- Azure Database for PostgreSQL Flexible Servers
-- Azure Cosmos DB for PostgreSQL
-- Dev Centers
-- Virtual machines
-- Machine Learning
-- Media Services
-- Microsoft Playwright Testing
-- Azure Operator Insights - Data Product
-- Storage Accounts
-- Azure Managed Lustre
-- Azure Storage Mover
-- Synapse Workspaces
-- Desktop Virtualization Host Pools
-- Desktop Virtualization Application Groups
-- Desktop Virtualization workspaces
-- Time Series Insights Environments
-- Workload Monitor
-- Analysis Services
-- Batch Accounts
-- Azure Spring Apps
-- SignalR
-- Container Registries
-- Azure Data Explorer Clusters
-- Azure Blockchain Service
-- Event Grid Domains
-- Event Grid Partner Namespaces
-- Event Grid Partner Topics
-- Event Grid System Topics
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
-- Virtual Machine Scale Sets
-- Azure Arc Provisioned Clusters
-- Azure Monitor autoscale settings
-- IoT Hub
-- Service Fabric Clusters
-- Logic Apps
-- API Management services
-- Automation account
-- Data factories
-- Data Lake Storage Gen1
-- Data Lake Analytics
-- Power BI Embedded
-- Data Share
-- SQL Managed Instances
-- SQL Servers
-- SQL Databases
-- Azure Database for MySQL Servers
-- Azure Database for PostgreSQL Servers
-- Azure Database for PostgreSQL Servers V2
-- Azure Database for MariaDB Servers
-- Device Provisioning Services
-- ExpressRoute Circuits
-- Front Doors
-- Network Interfaces
-- Network Security Groups
-- Public IP Addresses
-- Traffic Manager Profiles
-- Virtual Network Gateways
-- Virtual Private Network Gateways
-- Virtual Networks
-- Search Services
-- Stream Analytics jobs
-- Bastions
-- Azure API for FHIR
-
-## Queries
-
- Sample queries for the [AzureMetrics](/azure/azure-monitor/reference/queries/azuremetrics) table.
 
 
 ## Columns

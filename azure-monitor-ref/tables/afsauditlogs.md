@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # AFSAuditLogs
@@ -14,22 +14,17 @@ ms.date: 03/04/2024
 This table contains audit logs retrieved from your Azure Managed Lustre filesystem resource. These logs capture all priviledged operations performed on each Azure Managed Lustre resource. They can be used to monitor events and configure alerts on your resource.
 
 
-## Categories
+## Table attributes
 
-- Audit
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.storagecache/amlfilesytems|
+|**Categories**|Audit, Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/afsauditlogs)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Azure Managed Lustre
-
-## Queries
-
- Sample queries for the [AFSAuditLogs](/azure/azure-monitor/reference/queries/afsauditlogs) table.
 
 
 ## Columns

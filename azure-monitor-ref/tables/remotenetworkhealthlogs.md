@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # RemoteNetworkHealthLogs
@@ -14,15 +14,18 @@ ms.date: 02/18/2024
 This table is part of Identity and Network Access, which contains Remote Network Health logs. These logs can be leveraged for knowing the state of your remote networks health state.
 
 
-## Categories
+## Table attributes
 
-- Security
-- Network
-- IT & Management Tools
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Security, Network, IT & Management Tools|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
 
 ## Columns
   

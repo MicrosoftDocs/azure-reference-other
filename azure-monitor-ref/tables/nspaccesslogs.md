@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # NSPAccessLogs
@@ -14,20 +14,18 @@ ms.date: 02/18/2024
 Logs of Network Security Perimeter (NSP) inbound access allowed based on NSP access rules.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Network
-- Audit
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.network/networksecurityperimeters|
+|**Categories**|Azure Resources, Network, Audit, Security|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
-
-## Resource types
-
-- Network Security Perimeters
 
 ## Columns
   

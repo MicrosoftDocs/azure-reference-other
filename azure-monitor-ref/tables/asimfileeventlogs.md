@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # ASimFileEventLogs
@@ -14,17 +14,18 @@ ms.date: 02/18/2024
 The Advanced Security Information Model (ASIM) File Event normalization schema describes file activity such as creating, modifying, or deleting files or documents.
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.securityinsights/asimtables|
+|**Categories**|Security|
+|**Solutions**| SecurityInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
 
-## Solutions
 
-- SecurityInsights
-
-## Resource types
-
-- Microsoft Sentinel ASim
 
 ## Columns
   

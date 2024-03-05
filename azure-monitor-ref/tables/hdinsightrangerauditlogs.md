@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # HDInsightRangerAuditLogs
@@ -14,18 +14,18 @@ ms.date: 02/18/2024
 Audit logs from the Ranger component (only for ESP clusters).
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Audit
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.hdinsight/clusters|
+|**Categories**|Azure Resources, Audit|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
-
-## Resource types
-
-- HDInsight Clusters
 
 ## Columns
   

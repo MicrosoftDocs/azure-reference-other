@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # ADXTableUsageStatistics
@@ -14,17 +14,17 @@ ms.date: 03/04/2024
 Azure Data Explorer table usage statistics.
 
 
-## Solutions
+## Table attributes
 
-- LogManagement
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.kusto/clusters|
+|**Categories**|-|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/adxtableusagestatistics)|
 
-## Resource types
-
-- Azure Data Explorer Clusters
-
-## Queries
-
- Sample queries for the [ADXTableUsageStatistics](/azure/azure-monitor/reference/queries/adxtableusagestatistics) table.
 
 
 ## Columns

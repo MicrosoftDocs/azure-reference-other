@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # SecurityBaselineSummary
@@ -14,22 +14,18 @@ ms.date: 02/18/2024
 
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.compute/virtualmachines,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines|
+|**Categories**|Security|
+|**Solutions**| Security, SecurityCenter, SecurityCenterFree|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
 
-## Solutions
 
-- Security
-- SecurityCenter
-- SecurityCenterFree
-
-## Resource types
-
-- Virtual machines
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
 
 ## Columns
   

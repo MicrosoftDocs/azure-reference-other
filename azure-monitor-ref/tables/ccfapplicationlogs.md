@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # CCFApplicationLogs
@@ -14,22 +14,17 @@ ms.date: 03/04/2024
 Contains the logs generated in the CCF application.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Audit
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.confidentialledger/managedccfs|
+|**Categories**|Azure Resources, Audit|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/ccfapplicationlogs)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Azure Managed CCF
-
-## Queries
-
- Sample queries for the [CCFApplicationLogs](/azure/azure-monitor/reference/queries/ccfapplicationlogs) table.
 
 
 ## Columns

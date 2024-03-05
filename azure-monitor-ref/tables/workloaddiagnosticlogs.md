@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # WorkloadDiagnosticLogs
@@ -14,18 +14,17 @@ ms.date: 03/04/2024
 Diagnostic logs from the Workload Monitoring data collection services running on the Monitoring VM. Includes logs from wli and ms-telegraf services. Used to troubleshoot configuration or data collection issues.
 
 
-## Categories
+## Table attributes
 
-- Workloads
-- Azure Monitor
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Workloads, Azure Monitor|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/workloaddiagnosticlogs)|
 
-## Solutions
-
-- LogManagement
-
-## Queries
-
- Sample queries for the [WorkloadDiagnosticLogs](/azure/azure-monitor/reference/queries/workloaddiagnosticlogs) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # DynamicSummary
@@ -14,17 +14,17 @@ ms.date: 03/04/2024
 Azure Sentinel Dynamic Summary provides a security data storage to persist concentrated findings and summaries for hunting, investigation, search, detection.  Summary description and detailed observables can be stored in Log Analytics for further analysis and report generation.
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Security|
+|**Solutions**| SecurityInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/dynamicsummary)|
 
-## Solutions
-
-- SecurityInsights
-
-## Queries
-
- Sample queries for the [DynamicSummary](/azure/azure-monitor/reference/queries/dynamicsummary) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # AGCAccessLogs
@@ -14,21 +14,17 @@ ms.date: 03/04/2024
 Contains details of client requests made to Application Gateway for Containers. Each client request creats a log entry that can be used to identify slow requests, determine error rates, and correlate logs with backend services.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.servicenetworking/trafficcontrollers|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/agcaccesslogs)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Application Gateway for Containers
-
-## Queries
-
- Sample queries for the [AGCAccessLogs](/azure/azure-monitor/reference/queries/agcaccesslogs) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # ASimDnsActivityLogs
@@ -14,21 +14,17 @@ ms.date: 03/04/2024
 The ASim DNS activity schema represents DNS protocol activity, which may be logged either by a DNS server or by a device sending DNS requests to a DNS server. The DNS protocol activity includes DNS queries, DNS server updates, and DNS bulk data transfers. Since the schema represents protocol activity, it is governed by RFCs and officially assigned parameter lists. The DNS activity schema does not represent DNS server audit events.
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.securityinsights/dnsnormalized|
+|**Categories**|Security|
+|**Solutions**| SecurityInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/asimdnsactivitylogs)|
 
-## Solutions
-
-- SecurityInsights
-
-## Resource types
-
-- Microsoft Sentinel DNS activity ASim schema
-
-## Queries
-
- Sample queries for the [ASimDnsActivityLogs](/azure/azure-monitor/reference/queries/asimdnsactivitylogs) table.
 
 
 ## Columns

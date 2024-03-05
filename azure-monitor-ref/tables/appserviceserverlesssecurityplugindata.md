@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # AppServiceServerlessSecurityPluginData
@@ -14,17 +14,18 @@ ms.date: 02/18/2024
 Logs from the data collection services of the defender for serverless apps. Used to detect security issues and provide alerts and recommendations on how to mitigate/fix them.
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.web/sites|
+|**Categories**|Security|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
-
-## Resource types
-
-- App Services
 
 ## Columns
   
