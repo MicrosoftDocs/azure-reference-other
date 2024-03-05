@@ -449,10 +449,10 @@ items:
             href: supported-metrics/wandisco-fusion-migrators-livedatamigrations-metrics.md
           - name: Wandisco.Fusion/migrators/metadataMigrations
             href: supported-metrics/wandisco-fusion-migrators-metadatamigrations-metrics.md
-  - name: Azure Monitor supported log categories
+  - name: Azure Monitor Resource log / Log analytics log categories
     href: ./supported-logs/logs-index.md
     items:
-      - name: Logs categories by resource type
+      - name: Resource Log categories by resource type
         expanded: false
         items:
           - name: Microsoft.AAD/DomainServices
@@ -645,6 +645,8 @@ items:
             href: supported-logs/microsoft-media-mediaservices-streamingendpoints-logs.md
           - name: Microsoft.Media/videoanalyzers
             href: supported-logs/microsoft-media-videoanalyzers-logs.md
+          - name: Microsoft.Monitor/accounts
+            href: supported-logs/microsoft-monitor-accounts-logs.md
           - name: Microsoft.NetApp/netAppAccounts/capacityPools
             href: supported-logs/microsoft-netapp-netappaccounts-capacitypools-logs.md
           - name: Microsoft.NetApp/netAppAccounts/capacityPools/volumes
@@ -795,7 +797,7 @@ items:
             href: supported-logs/microsoft-workloads-sapvirtualinstances-logs.md
           - name: NGINX.NGINXPLUS/nginxDeployments
             href: supported-logs/nginx-nginxplus-nginxdeployments-logs.md
-      - name: Logs categories by log category description
+      - name: Resource Log categories by log category description
         expanded: false
         items:
           - name: AccountLogon
@@ -1414,8 +1416,6 @@ items:
             href: supported-logs/microsoft-insights-components-logs.md
           - name: Log Errors
             href: supported-logs/microsoft-insights-datacollectionrules-logs.md
-          - name: Log Troubleshooting
-            href: supported-logs/microsoft-insights-datacollectionrules-logs.md
           - name: Audit Event
             href: supported-logs/microsoft-keyvault-managedhsms-logs.md
           - name: Audit Logs
@@ -1556,6 +1556,8 @@ items:
             href: supported-logs/microsoft-media-videoanalyzers-logs.md
           - name: Operational Logs
             href: supported-logs/microsoft-media-videoanalyzers-logs.md
+          - name: Metrics Usage Details
+            href: supported-logs/microsoft-monitor-accounts-logs.md
           - name: Capacity Pool Autoscaled
             href: supported-logs/microsoft-netapp-netappaccounts-capacitypools-logs.md
           - name: ANF File Access
