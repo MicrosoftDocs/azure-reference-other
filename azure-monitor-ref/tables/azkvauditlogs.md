@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # AZKVAuditLogs
@@ -14,22 +14,17 @@ ms.date: 03/04/2024
 Audit logs can be used to monitor how and when your key vaults are accessed, and by whom. Customers will be able to log all authentication api requests. Operations on the key vault itself, including creation, deletion, setting key vault access policies, and updating key vault attributes such as tags.Operation on keys and secrets in keyvault including creating, deleting, signing.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Audit
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.keyvault/vaults|
+|**Categories**|Azure Resources, Audit|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/azkvauditlogs)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Key Vaults
-
-## Queries
-
- Sample queries for the [AZKVAuditLogs](/azure/azure-monitor/reference/queries/azkvauditlogs) table.
 
 
 ## Columns

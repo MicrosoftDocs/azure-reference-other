@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # AzureMetricsV2
@@ -14,18 +14,18 @@ ms.date: 02/18/2024
 Azure native platform metrics that can help to measure health and performance. AzureMetricsV2 includes metric categories and dimensions, improving upon legacy AzureMetrics table.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Azure Monitor
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.operationalinsights/workspaces|
+|**Categories**|Azure Resources, Azure Monitor|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
-
-## Resource types
-
-- Log Analytics workspaces
 
 ## Columns
   

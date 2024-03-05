@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # ACICollaborationAudit
@@ -14,22 +14,17 @@ ms.date: 03/04/2024
 Audits of collaborative resources approval and access during pipeline execution.
 
 
-## Categories
+## Table attributes
 
-- Audit
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.datacollaboration/workspaces|
+|**Categories**|Audit, Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/acicollaborationaudit)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Project CI Workspace
-
-## Queries
-
- Sample queries for the [ACICollaborationAudit](/azure/azure-monitor/reference/queries/acicollaborationaudit) table.
 
 
 ## Columns

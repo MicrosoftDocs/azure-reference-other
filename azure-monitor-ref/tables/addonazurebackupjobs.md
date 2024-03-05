@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # AddonAzureBackupJobs
@@ -14,22 +14,17 @@ ms.date: 03/04/2024
 
 
 
-## Categories
+## Table attributes
 
-- IT & Management Tools
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.recoveryservices/vaults|
+|**Categories**|IT & Management Tools, Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/addonazurebackupjobs)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Recovery Services Vaults
-
-## Queries
-
- Sample queries for the [AddonAzureBackupJobs](/azure/azure-monitor/reference/queries/addonazurebackupjobs) table.
 
 
 ## Columns

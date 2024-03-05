@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 03/05/2024
 ---
 
 # MDCFileIntegrityMonitoringEvents
@@ -14,13 +14,18 @@ ms.date: 02/21/2024
 View changes of Windows and Linux Files, as well as of software registry keys. Events from this table are collected by Microsoft Defender for Endpoint (MDE).
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Security|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
 
 ## Columns
   

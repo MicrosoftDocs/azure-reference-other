@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # SecurityIoTRawEvent
@@ -14,13 +14,18 @@ ms.date: 02/18/2024
 Table is part of Microsoft Defender for IoT. It contains IoT raw security event properties. These logs can be used to monitor your operational, diagnostic and security raw events.
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Security|
+|**Solutions**| AzureSecurityOfThings|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
 
-## Solutions
 
-- AzureSecurityOfThings
 
 ## Columns
   

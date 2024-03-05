@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # DeviceEtw
@@ -14,13 +14,18 @@ ms.date: 02/18/2024
 
 
 
-## Categories
+## Table attributes
 
-- Workloads
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Workloads|
+|**Solutions**| SurfaceHub|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- SurfaceHub
 
 ## Columns
   

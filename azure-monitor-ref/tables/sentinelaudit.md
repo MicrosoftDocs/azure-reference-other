@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # SentinelAudit
@@ -14,18 +14,17 @@ ms.date: 03/04/2024
 Audit logs for operations performed on Azure Sentinel resources, such as Data Connectors, Analytic Rules and more. These logs can be used to audit operations on your Sentinel resources.
 
 
-## Categories
+## Table attributes
 
-- Security
-- Audit
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Security, Audit|
+|**Solutions**| SecurityInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/sentinelaudit)|
 
-## Solutions
-
-- SecurityInsights
-
-## Queries
-
- Sample queries for the [SentinelAudit](/azure/azure-monitor/reference/queries/sentinelaudit) table.
 
 
 ## Columns

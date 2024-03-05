@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # ACSRoomsIncomingOperations
@@ -14,21 +14,17 @@ ms.date: 03/04/2024
 Communication Services logs of incoming requests to rooms operations, with summaries of room object, lifespan, participants and roles count etc.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.communication/communicationservices|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/acsroomsincomingoperations)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Communication Services
-
-## Queries
-
- Sample queries for the [ACSRoomsIncomingOperations](/azure/azure-monitor/reference/queries/acsroomsincomingoperations) table.
 
 
 ## Columns

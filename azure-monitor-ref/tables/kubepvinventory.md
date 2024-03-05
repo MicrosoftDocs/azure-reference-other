@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # KubePVInventory
@@ -14,20 +14,18 @@ ms.date: 02/18/2024
 Kubernetes persistent volumes and their properties.
 
 
-## Categories
+## Table attributes
 
-- Containers
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.kubernetes/connectedclusters,<br>microsoft.containerservice/managedclusters,<br>microsoft.hybridcontainerservice/provisionedclusters|
+|**Categories**|Containers|
+|**Solutions**| AzureResources, ContainerInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
 
-## Solutions
 
-- AzureResources
-- ContainerInsights
-
-## Resource types
-
-- Azure Arc Enabled Kubernetes
-- Kubernetes Services
-- Azure Arc Provisioned Clusters
 
 ## Columns
   

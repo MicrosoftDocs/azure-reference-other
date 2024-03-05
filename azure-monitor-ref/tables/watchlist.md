@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # Watchlist
@@ -14,17 +14,17 @@ ms.date: 03/04/2024
 Azure Sentinel Watchlist contains imported data from CSV files that can be used to join or filter as an alert/incident condition.
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Security|
+|**Solutions**| SecurityInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/watchlist)|
 
-## Solutions
-
-- SecurityInsights
-
-## Queries
-
- Sample queries for the [Watchlist](/azure/azure-monitor/reference/queries/watchlist) table.
 
 
 ## Columns

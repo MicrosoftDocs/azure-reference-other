@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # OEPAirFlowTask
@@ -14,21 +14,17 @@ ms.date: 03/04/2024
 Diagnostic logs for AirFlow task execution having task name, task details.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.openenergyplatform/energyservices|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/oepairflowtask)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Azure Data Manager for Energy
-
-## Queries
-
- Sample queries for the [OEPAirFlowTask](/azure/azure-monitor/reference/queries/oepairflowtask) table.
 
 
 ## Columns

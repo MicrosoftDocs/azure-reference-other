@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # SecurityRegulatoryCompliance
@@ -14,11 +14,18 @@ ms.date: 02/18/2024
 Azure Security Center regulatory compliance assessments state.
 
 
-## Solutions
+## Table attributes
 
-- Security
-- SecurityCenter
-- SecurityCenterFree
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|-|
+|**Solutions**| Security, SecurityCenter, SecurityCenterFree|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
+
+
 
 ## Columns
   

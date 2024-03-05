@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # AgriFoodJobProcessedLogs
@@ -14,21 +14,17 @@ ms.date: 03/04/2024
 Logs indicating success or failure of job runs for farmOperationDataIngestionJob, farmOperationPeriodicJob, farmOperationEventHandlingJob,satelliteDataIngestionJob, weatherDataIngestionJob etc. These logs also contain reasons for failure of these jobs if any.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.agfoodplatform/farmbeats|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/agrifoodjobprocessedlogs)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Microsoft.AgFoodPlatform/farmBeats
-
-## Queries
-
- Sample queries for the [AgriFoodJobProcessedLogs](/azure/azure-monitor/reference/queries/agrifoodjobprocessedlogs) table.
 
 
 ## Columns

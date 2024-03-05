@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # ACSCallDiagnostics
@@ -14,21 +14,17 @@ ms.date: 03/04/2024
 Diagnostics logs provide information about the media transfers that occur in a call. Every log corresponds to an individual media stream and contains information about the emitting endpoint (e.g. the user sending the stream).
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.communication/communicationservices|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/acscalldiagnostics)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Communication Services
-
-## Queries
-
- Sample queries for the [ACSCallDiagnostics](/azure/azure-monitor/reference/queries/acscalldiagnostics) table.
 
 
 ## Columns

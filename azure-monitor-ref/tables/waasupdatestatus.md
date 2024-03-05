@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # WaaSUpdateStatus
@@ -14,17 +14,17 @@ ms.date: 03/04/2024
 
 
 
-## Categories
+## Table attributes
 
-- Desktop Analytics
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Desktop Analytics|
+|**Solutions**| WaaSUpdateInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/waasupdatestatus)|
 
-## Solutions
-
-- WaaSUpdateInsights
-
-## Queries
-
- Sample queries for the [WaaSUpdateStatus](/azure/azure-monitor/reference/queries/waasupdatestatus) table.
 
 
 ## Columns

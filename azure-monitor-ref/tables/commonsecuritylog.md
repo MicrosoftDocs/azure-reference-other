@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # CommonSecurityLog
@@ -14,27 +14,17 @@ ms.date: 03/04/2024
 This table is for collecting events in the Common Event Format, that are most often sent from different security appliances such as Check Point, Palo Alto and more.
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.securityinsights/cef,<br>microsoft.compute/virtualmachines,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines,<br>microsoft.compute/virtualmachinescalesets|
+|**Categories**|Security|
+|**Solutions**| Security, SecurityInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/commonsecuritylog)|
 
-## Solutions
-
-- Security
-- SecurityInsights
-
-## Resource types
-
-- Azure Sentinel CEF Table
-- Virtual machines
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
-- Virtual Machine Scale Sets
-
-## Queries
-
- Sample queries for the [CommonSecurityLog](/azure/azure-monitor/reference/queries/commonsecuritylog) table.
 
 
 ## Columns

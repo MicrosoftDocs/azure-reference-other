@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # SecurityEvent
@@ -14,27 +14,17 @@ ms.date: 03/04/2024
 Security events collected from windows machines by Azure Security Center or Azure Sentinel.
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.securityinsights/securityinsights,<br>microsoft.compute/virtualmachines,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines,<br>microsoft.compute/virtualmachinescalesets|
+|**Categories**|Security|
+|**Solutions**| Security, SecurityInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/securityevent)|
 
-## Solutions
-
-- Security
-- SecurityInsights
-
-## Resource types
-
-- Azure Sentinel
-- Virtual machines
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
-- Virtual Machine Scale Sets
-
-## Queries
-
- Sample queries for the [SecurityEvent](/azure/azure-monitor/reference/queries/securityevent) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # AZFWFlowTrace
@@ -14,21 +14,17 @@ ms.date: 03/04/2024
 Flow logs across Azure Firewall instances. Log contains flow information, flags and the time period when the flows were recorded. Please follow the documentation to enable flow trace logging and details on how it is recorded.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.network/azurefirewalls|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/azfwflowtrace)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Firewalls
-
-## Queries
-
- Sample queries for the [AZFWFlowTrace](/azure/azure-monitor/reference/queries/azfwflowtrace) table.
 
 
 ## Columns

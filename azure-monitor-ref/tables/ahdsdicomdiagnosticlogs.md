@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # AHDSDicomDiagnosticLogs
@@ -14,21 +14,17 @@ ms.date: 03/04/2024
 Actionable logs generated from your Azure Health Data DICOM service, including events information like, warning logs per tag per DICOM instance denoting validation issues.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.healthcareapis/workspaces|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/ahdsdicomdiagnosticlogs)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Health Data Services
-
-## Queries
-
- Sample queries for the [AHDSDicomDiagnosticLogs](/azure/azure-monitor/reference/queries/ahdsdicomdiagnosticlogs) table.
 
 
 ## Columns

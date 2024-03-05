@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # AegDataPlaneRequests
@@ -14,24 +14,17 @@ ms.date: 03/04/2024
 Logs for Event Grid data plane requests (publish and options) against a topic/domain/partnernamespace. It can be used for auditing purposes. Logs are aggregated over a minute and displays the total number of requests with specific request properties.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Audit
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.eventgrid/topics,<br>microsoft.eventgrid/domains,<br>microsoft.eventgrid/partnernamespaces|
+|**Categories**|Azure Resources, Audit|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/aegdataplanerequests)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Event Grid Topics
-- Event Grid Domains
-- Event Grid Partner Namespaces
-
-## Queries
-
- Sample queries for the [AegDataPlaneRequests](/azure/azure-monitor/reference/queries/aegdataplanerequests) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # ContainerRegistryLoginEvents
@@ -14,21 +14,17 @@ ms.date: 03/04/2024
 Azure Container Registry Login Auditing Logs
 
 
-## Categories
+## Table attributes
 
-- Containers
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.containerregistry/registries|
+|**Categories**|Containers|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/containerregistryloginevents)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Container Registries
-
-## Queries
-
- Sample queries for the [ContainerRegistryLoginEvents](/azure/azure-monitor/reference/queries/containerregistryloginevents) table.
 
 
 ## Columns

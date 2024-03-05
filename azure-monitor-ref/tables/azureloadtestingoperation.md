@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # AzureLoadTestingOperation
@@ -14,22 +14,17 @@ ms.date: 03/04/2024
 Details about the operations which are performed on the Azure Load Testing resource. For example, operations like creation of a Test, Test run etc.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Audit
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.loadtestservice/loadtests|
+|**Categories**|Azure Resources, Audit|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/azureloadtestingoperation)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Azure Load Testing
-
-## Queries
-
- Sample queries for the [AzureLoadTestingOperation](/azure/azure-monitor/reference/queries/azureloadtestingoperation) table.
 
 
 ## Columns

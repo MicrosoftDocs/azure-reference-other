@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/04/2024
+ms.date: 03/05/2024
 ---
 
 # AZFWInternalFqdnResolutionFailure
@@ -14,21 +14,17 @@ ms.date: 03/04/2024
 Contains all internal Firewall FQDN resolution requests that resulted in failure.
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.network/azurefirewalls|
+|**Categories**|Security|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/azfwinternalfqdnresolutionfailure)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Firewalls
-
-## Queries
-
- Sample queries for the [AZFWInternalFqdnResolutionFailure](/azure/azure-monitor/reference/queries/azfwinternalfqdnresolutionfailure) table.
 
 
 ## Columns
