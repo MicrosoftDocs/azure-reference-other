@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # AADDomainServicesDNSAuditsDynamicUpdates
@@ -14,13 +14,18 @@ ms.date: 02/18/2024
 DNS server audit events enable change tracking on the DNS server. This table contains operational audit events for dynamic updates.
 
 
-## Solutions
+## Table attributes
 
-- LogManagement
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.aad/domainservices|
+|**Categories**|-|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Resource types
 
-- Azure AD Domain Services
 
 ## Columns
   

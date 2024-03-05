@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # KubeMonAgentEvents
@@ -14,24 +14,17 @@ ms.date: 02/26/2024
 Table that stores events from the Kubernetes cluster monitoring agent [Azure Monitor Agent]
 
 
-## Categories
+## Table attributes
 
-- Containers
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.kubernetes/connectedclusters,<br>microsoft.containerservice/managedclusters,<br>microsoft.hybridcontainerservice/provisionedclusters|
+|**Categories**|Containers|
+|**Solutions**| AzureResources, ContainerInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/kubemonagentevents)|
 
-## Solutions
-
-- AzureResources
-- ContainerInsights
-
-## Resource types
-
-- Azure Arc Enabled Kubernetes
-- Kubernetes Services
-- Azure Arc Provisioned Clusters
-
-## Queries
-
- Sample queries for the [KubeMonAgentEvents](../queries/kubemonagentevents.md) table.
 
 
 ## Columns

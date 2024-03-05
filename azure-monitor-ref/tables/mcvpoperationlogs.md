@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # MCVPOperationLogs
@@ -14,17 +14,18 @@ ms.date: 02/18/2024
 The MCVP Azure monitor logs. This table will include logs for vehicle provision, connection and activities sending command and receiving telemetry messages.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.connectedvehicle/platformaccounts|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
-
-## Resource types
-
-- Microsoft Connected Vehicle Platform
 
 ## Columns
   

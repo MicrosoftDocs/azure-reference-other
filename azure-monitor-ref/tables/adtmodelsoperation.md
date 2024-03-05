@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # ADTModelsOperation
@@ -14,21 +14,17 @@ ms.date: 02/26/2024
 Schema for Azure Digital Twins' Models operations. The Models Operation category tracks all customer requests to manage models in a digital twins instance.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.digitaltwins/digitaltwinsinstances|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/adtmodelsoperation)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Azure Digital Twins
-
-## Queries
-
- Sample queries for the [ADTModelsOperation](../queries/adtmodelsoperation.md) table.
 
 
 ## Columns

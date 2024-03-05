@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # UCDOStatus
@@ -14,18 +14,17 @@ ms.date: 02/26/2024
 Update Compliance - provides information, for a single device, on their bandwidth utilization across content types in the event they use delivery optimization.
 
 
-## Categories
+## Table attributes
 
-- Desktop Analytics
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Desktop Analytics|
+|**Solutions**| LogManagement, WaaSUpdateInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/ucdostatus)|
 
-## Solutions
-
-- LogManagement
-- WaaSUpdateInsights
-
-## Queries
-
- Sample queries for the [UCDOStatus](../queries/ucdostatus.md) table.
 
 
 ## Columns

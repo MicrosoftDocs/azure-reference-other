@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # DnsEvents
@@ -14,25 +14,17 @@ ms.date: 02/26/2024
 
 
 
-## Categories
+## Table attributes
 
-- Network
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.compute/virtualmachines,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines|
+|**Categories**|Network|
+|**Solutions**| DnsAnalytics, SecurityInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/dnsevents)|
 
-## Solutions
-
-- DnsAnalytics
-- SecurityInsights
-
-## Resource types
-
-- Virtual machines
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
-
-## Queries
-
- Sample queries for the [DnsEvents](../queries/dnsevents.md) table.
 
 
 ## Columns

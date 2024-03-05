@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # UCClientUpdateStatus
@@ -14,10 +14,18 @@ ms.date: 02/18/2024
 Update Compliance - Update Event that combines the latest client-based data with the latest service-based data to create a complete picture for one device (client) and one update.
 
 
-## Solutions
+## Table attributes
 
-- LogManagement
-- WaaSUpdateInsights
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|-|
+|**Solutions**| LogManagement, WaaSUpdateInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
+
+
 
 ## Columns
   

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # WindowsFirewall
@@ -14,22 +14,18 @@ ms.date: 02/18/2024
 
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.compute/virtualmachines,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines,<br>microsoft.compute/virtualmachinescalesets|
+|**Categories**|Security|
+|**Solutions**| Security, WindowsFirewall|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
 
-## Solutions
 
-- Security
-- WindowsFirewall
-
-## Resource types
-
-- Virtual machines
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
-- Virtual Machine Scale Sets
 
 ## Columns
   

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # EGNSuccessfulMqttConnections
@@ -14,22 +14,17 @@ ms.date: 02/26/2024
 Log for successful MQTT connections to an Event Grid namesapce. This log can be used for auditing purposes.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Audit
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.eventgrid/namespaces|
+|**Categories**|Azure Resources, Audit|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/egnsuccessfulmqttconnections)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Event Grid Namespaces
-
-## Queries
-
- Sample queries for the [EGNSuccessfulMqttConnections](../queries/egnsuccessfulmqttconnections.md) table.
 
 
 ## Columns

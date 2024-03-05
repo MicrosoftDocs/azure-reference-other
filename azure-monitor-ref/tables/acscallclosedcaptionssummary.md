@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # ACSCallClosedCaptionsSummary
@@ -14,17 +14,18 @@ ms.date: 02/18/2024
 Call closed captions summary logs provide an overview about a closed captions made through ACS. There is one log for every closed captions done, and logs contain information about the duration of the closed captions, start time, spoken language and end reason, as well as the cancel reason of closed captions.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.communication/communicationservices|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
-
-## Resource types
-
-- Communication Services
 
 ## Columns
   

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 03/05/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkCloud/clusters, naam
@@ -93,10 +93,12 @@ ms.custom: Microsoft.NetworkCloud/clusters, naam
 |Pod|**Pod Init Container Terminated Reason**<br><br>The number of pod init containers with terminated reason |`KubePodInitContainerStatusTerminatedReason` |Count |Average |`Namespace`, `Container`, `Pod`, `Reason`|PT1M |No|
 |Pod|**Pod Init Container Waiting**<br><br>The number of pod init containers waiting |`KubePodInitContainerStatusWaiting` |Count |Average |`Namespace`, `Container`, `Pod`|PT1M |No|
 |Pod|**Pod Init Container Waiting Reason**<br><br>The reason the pod init container is waiting |`KubePodInitContainerStatusWaitingReason` |Count |Average |`Namespace`, `Container`, `Pod`, `Reason`|PT1M |No|
-|Pod|**Pod Status Phase**<br><br>The pod status phase |`KubePodStatusPhase` |Count |Average |`Namespace`, `Pod`, `Phase`|PT1M |No|
+|Pod|**Pod Status Phase - (Deprecated)**<br><br>Deprecated - The pod status phase |`KubePodStatusPhase` |Count |Average |`Namespace`, `Pod`, `Phase`|PT1M |No|
+|Pod|**Pod Status Phase**<br><br>The pod status phase |`KubePodStatusPhases` |Count |Average |`Namespace`, `Pod`, `Phase`|PT1M |No|
 |Pod|**Pod Ready State**<br><br>Signifies if the pod is in ready state |`KubePodStatusReady` |Count |Average |`Namespace`, `Pod`, `Condition`|PT1M |No|
 |Pod|**Pod Status Reason**<br><br>NodeAffinity |`KubePodStatusReason` |Count |Average |`Namespace`, `Pod`, `Reason`|PT1M |No|
 |Statefulset|**Statefulset Desired Replicas Number**<br><br>The desired number of statefulset replicas |`KubeStatefulsetReplicas` |Count |Average |`Namespace`, `Statefulset`|PT1M |No|
+|Statefulset|**Statefulset Replicas Difference**<br><br>The difference between desired and current number of replicas per statefulset |`KubeStatefulsetStatusReplicaDifference` |Count |Average |`Namespace`, `Statefulset`|PT1M |No|
 |Statefulset|**Statefulset Replicas Number**<br><br>The number of replicas per statefulset |`KubeStatefulsetStatusReplicas` |Count |Average |`Namespace`, `Statefulset`|PT1M |No|
 |VMOrchestrator|**Kubevirt Info**<br><br>Kubevirt version information |`KubevirtInfo` |Unspecified |Average |`Kube Version`|PT1M |No|
 |VMOrchestrator|**Kubevirt Virt Controller Leading**<br><br>Indication for an operating virt-controller |`KubevirtVirtControllerLeading` |Unspecified |Average |`Pod Name`|PT1M |No|
@@ -112,7 +114,8 @@ ms.custom: Microsoft.NetworkCloud/clusters, naam
 |VMOrchestrator|**Kubevirt VMI Net Rx Packets**<br><br>Total network traffic received packets |`KubevirtVmiNetworkReceivePacketsTotal` |Bytes |Average |`Interface`, `Name`, `Node`|PT1M |No|
 |VMOrchestrator|**Kubevirt VMI Net Tx Packets Drop**<br><br>The total number of transmit packets dropped on virtual NIC (vNIC) interfaces |`KubevirtVmiNetworkTransmitPacketsDroppedTotal` |Bytes |Average |`Interface`, `Name`, `Node`|PT1M |No|
 |VMOrchestrator|**Kubevirt VMI Net Tx Packets Total**<br><br>Total network traffic transmitted packets |`KubevirtVmiNetworkTransmitPacketsTotal` |Bytes |Average |`Interface`, `Name`, `Node`|PT1M |No|
-|VMOrchestrator|**Kubevirt VMI Outdated Count**<br><br>Indication for the total number of VirtualMachineInstance (VMI) workloads that are not running within the most up-to-date version of the virt-launcher environment |`KubevirtVmiOutdatedCount` |Count |Average |`Name`|PT1M |No|
+|VMOrchestrator|**Kubevirt VMI Outdated Count(Deprecated)**<br><br>Deprecated - Indication for the total number of VirtualMachineInstance (VMI) workloads that are not running within the most up-to-date version of the virt-launcher environment |`KubevirtVmiOutdatedCount` |Count |Average |`Name`|PT1M |No|
+|VMOrchestrator|**Kubevirt VMI Outdated Count**<br><br>Indication for the total number of VirtualMachineInstance (VMI) workloads that are not running within the most up-to-date version of the virt-launcher environment |`KubevirtVmiOutdatedInstances` |Count |Average |\<none\>|PT1M |No|
 |VMOrchestrator|**Kubevirt VMI Phase Count**<br><br>Sum of VirtualMachineInstances (VMIs) per phase and node |`KubevirtVmiPhaseCount` |Count |Average |`Node`, `Phase`, `Workload`|PT1M |No|
 |VMOrchestrator|**Kubevirt VMI Storage IOPS Read Total**<br><br>Total number of Input/Output (I/O) read operations |`KubevirtVmiStorageIopsReadTotal` |Count |Average |`Drive`, `Name`, `Node`|PT1M |No|
 |VMOrchestrator|**Kubevirt VMI Storage IOPS Write Total**<br><br>Total number of Input/Output (I/O) write operations |`KubevirtVmiStorageIopsWriteTotal` |Count |Average |`Drive`, `Name`, `Node`|PT1M |No|

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # VMBoundPort
@@ -14,24 +14,18 @@ ms.date: 02/18/2024
 Traffic for open server ports on the monitored machine.
 
 
-## Categories
+## Table attributes
 
-- Virtual Machines
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.compute/virtualmachines,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines,<br>microsoft.compute/virtualmachinescalesets|
+|**Categories**|Virtual Machines|
+|**Solutions**| AzureResources, InfrastructureInsights, ServiceMap, VMInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- AzureResources
-- InfrastructureInsights
-- ServiceMap
-- VMInsights
-
-## Resource types
-
-- Virtual machines
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
-- Virtual Machine Scale Sets
 
 ## Columns
   

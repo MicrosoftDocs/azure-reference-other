@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # AADDomainServicesDNSAuditsGeneral
@@ -14,13 +14,18 @@ ms.date: 02/18/2024
 DNS server audit events enable change tracking on the DNS server. An audit event is logged each time server, zone, or resource record settings are changed. This includes operational events such as zone transfers, and DNSSEC zone signing and unsigning.  This table captures audit events that are not from dynamic updates.
 
 
-## Solutions
+## Table attributes
 
-- LogManagement
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.aad/domainservices|
+|**Categories**|-|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Resource types
 
-- Azure AD Domain Services
 
 ## Columns
   

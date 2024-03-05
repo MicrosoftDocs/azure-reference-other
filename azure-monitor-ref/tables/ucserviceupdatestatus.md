@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # UCServiceUpdateStatus
@@ -14,10 +14,18 @@ ms.date: 02/18/2024
 Update Compliance - Update Event that comes directly from the service-side, and only tells the "service-side" of the story, for one device (client), and one update, in one deployment. As such, this event is stripped of certain fields in favor of being able to show data in near real-time.
 
 
-## Solutions
+## Table attributes
 
-- LogManagement
-- WaaSUpdateInsights
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|-|
+|**Solutions**| LogManagement, WaaSUpdateInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
+
+
 
 ## Columns
   

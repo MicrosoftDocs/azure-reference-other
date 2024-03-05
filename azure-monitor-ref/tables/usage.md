@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # Usage
@@ -14,17 +14,17 @@ ms.date: 02/26/2024
 Hourly usage data for each table in the workspace.
 
 
-## Categories
+## Table attributes
 
-- Azure Monitor
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Azure Monitor|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/usage)|
 
-## Solutions
-
-- LogManagement
-
-## Queries
-
- Sample queries for the [Usage](../queries/usage.md) table.
 
 
 ## Columns

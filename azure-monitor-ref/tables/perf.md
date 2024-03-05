@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # Perf
@@ -14,30 +14,17 @@ ms.date: 02/26/2024
 Performance counters from Windows and Linux agents that provide insight into the performance of hardware components operating systems and applications.
 
 
-## Categories
+## Table attributes
 
-- Virtual Machines
-- Containers
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.kubernetes/connectedclusters,<br>microsoft.containerservice/managedclusters,<br>microsoft.compute/virtualmachines,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines,<br>microsoft.compute/virtualmachinescalesets,<br>microsoft.azurestackhci/clusters,<br>microsoft.hybridcontainerservice/provisionedclusters|
+|**Categories**|Virtual Machines, Containers|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/perf)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Azure Arc Enabled Kubernetes
-- Kubernetes Services
-- Virtual machines
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
-- Virtual Machine Scale Sets
-- Azure Stack HCI
-- Azure Arc Provisioned Clusters
-
-## Queries
-
- Sample queries for the [Perf](../queries/perf.md) table.
 
 
 ## Columns

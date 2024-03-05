@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # DatabricksSQL
@@ -14,13 +14,18 @@ ms.date: 02/18/2024
 Audit logs for events related to creation, modification etc. of Databricks SQL endpoints.
 
 
-## Solutions
+## Table attributes
 
-- LogManagement
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.databricks/workspaces|
+|**Categories**|-|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Resource types
 
-- Azure Databricks Services
 
 ## Columns
   

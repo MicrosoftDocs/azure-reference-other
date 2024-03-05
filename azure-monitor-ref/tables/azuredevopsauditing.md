@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # AzureDevOpsAuditing
@@ -14,9 +14,18 @@ ms.date: 02/18/2024
 Schema for Azure DevOps audit logs, which can be used to track the many changes that occur within your Azure DevOps organization(s). Some examples include changes to security policies, pipelines, billing, and projects. For a full list of events, see aka.ms/azdev-audit-events.
 
 
-## Solutions
+## Table attributes
 
-- LogManagement
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|-|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
+
+
 
 ## Columns
   

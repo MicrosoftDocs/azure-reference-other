@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # ASimAuditEventLogs
@@ -14,17 +14,18 @@ ms.date: 02/18/2024
 Microsoft Sentinel normalized audit events table. Stores events associated with the audit trail of information systems and audit trail logs system configuration activities and policy changes. Such changes are often performed by system administrators, but can also be performed by users when configuring the settings of their own applications.
 
 
-## Categories
+## Table attributes
 
-- Security
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.securityinsights/auditeventnormalized|
+|**Categories**|Security|
+|**Solutions**| SecurityInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
 
-## Solutions
 
-- SecurityInsights
-
-## Resource types
-
-- Microsoft Sentinel Audit Event ASim schema
 
 ## Columns
   

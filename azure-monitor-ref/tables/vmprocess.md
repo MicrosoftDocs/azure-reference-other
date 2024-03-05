@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # VMProcess
@@ -14,23 +14,18 @@ ms.date: 02/18/2024
 Process data for servers collected by the Service Map and VM Insights solutions using the Dependency agent and Log analytics agent.
 
 
-## Categories
+## Table attributes
 
-- Virtual Machines
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.compute/virtualmachines,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines,<br>microsoft.compute/virtualmachinescalesets|
+|**Categories**|Virtual Machines|
+|**Solutions**| AzureResources, ServiceMap, VMInsights|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- AzureResources
-- ServiceMap
-- VMInsights
-
-## Resource types
-
-- Virtual machines
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
-- Virtual Machine Scale Sets
 
 ## Columns
   

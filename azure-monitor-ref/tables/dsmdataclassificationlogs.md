@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # DSMDataClassificationLogs
@@ -14,14 +14,18 @@ ms.date: 02/18/2024
 Contains data classification information provided by Azure Purview and is used to correlate storage resource logs with data sensitivity information.
 
 
-## Categories
+## Table attributes
 
-- Security
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|-|
+|**Categories**|Security, Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
 
 ## Columns
   

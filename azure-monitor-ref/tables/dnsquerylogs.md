@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # DNSQueryLogs
@@ -14,21 +14,17 @@ ms.date: 02/26/2024
 DNS query logs enable customers to monitor the DNS traffic in their virtual networks and help securing their DNS infrastructure.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.network/dnsresolverpolicies|
+|**Categories**|Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/dnsquerylogs)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- DNS Resolver Policies
-
-## Queries
-
- Sample queries for the [DNSQueryLogs](../queries/dnsquerylogs.md) table.
 
 
 ## Columns

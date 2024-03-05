@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/26/2024
+ms.date: 03/05/2024
 ---
 
 # AmlOnlineEndpointTrafficLog
@@ -14,22 +14,17 @@ ms.date: 02/26/2024
 Traffic logs for AzureML (machine learning) online endpoints. The table could be used to check the detailed information of the request to an online endpoint. For example, you could use it to check the request duration, the request failure reason, etc.
 
 
-## Categories
+## Table attributes
 
-- Audit
-- Azure Resources
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.machinelearningservices/workspaces|
+|**Categories**|Audit, Azure Resources|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/amlonlineendpointtrafficlog)|
 
-## Solutions
-
-- LogManagement
-
-## Resource types
-
-- Machine Learning
-
-## Queries
-
- Sample queries for the [AmlOnlineEndpointTrafficLog](../queries/amlonlineendpointtrafficlog.md) table.
 
 
 ## Columns

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # WVDAutoscaleEvaluationPooled
@@ -14,17 +14,18 @@ ms.date: 02/18/2024
 The results of an Azure Virtual Desktop Autoscale scaling plan evaluation on a hostpool. This includes information on the actions Autoscale took on the sessions hosts, such as starting or deallocating them, and why it took those actions. The column names that start with 'Config' contain the scaling plan configuration values for the current Autoscale schedule phase. If the ResultType column value is 'Failed' then join to the WVDErrors table using the CorrelationId column to get more details. For Autoscale documentation see https://go.microsoft.com/fwlink/?linkid=2169532 .
 
 
-## Categories
+## Table attributes
 
-- Azure Virtual Desktop
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.desktopvirtualization/hostpools|
+|**Categories**|Azure Virtual Desktop|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
-
-## Resource types
-
-- Desktop Virtualization Host Pools
 
 ## Columns
   

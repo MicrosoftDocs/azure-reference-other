@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # ComputerGroup
@@ -14,22 +14,18 @@ ms.date: 02/18/2024
 Computer groups that can be used to scope log queries to a set of computers. Includes the computers in each group.
 
 
-## Categories
+## Table attributes
 
-- Azure Monitor
-- Virtual Machines
-- IT & Management Tools
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.compute/virtualmachines,<br>microsoft.conenctedvmwarevsphere/virtualmachines,<br>microsoft.azurestackhci/virtualmachines,<br>microsoft.scvmm/virtualmachines|
+|**Categories**|Azure Monitor, Virtual Machines, IT & Management Tools|
+|**Solutions**| LogManagement|
+|**Basic log**|No|
+|**Ingestion-time transformation**|Yes|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
-
-## Resource types
-
-- Virtual machines
-- VMware
-- Azure Stack HCI
-- System Center Virtual Machine Manager
 
 ## Columns
   

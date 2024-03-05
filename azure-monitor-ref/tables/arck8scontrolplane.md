@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 03/05/2024
 ---
 
 # ArcK8sControlPlane
@@ -14,18 +14,18 @@ ms.date: 02/18/2024
 Contains diagnostic logs for the Kubernetes API Server, Controller Manager, Scheduler, Cluster Autoscaler, Cloud Controller Manager, Guard, and the Azure CSI storage drivers. These diagnostic logs have distinct Category entries corresponding their diagnostic log setting (e.g. kube-apiserver, kube-audit-admin). Requires Diagnostic Settings to use the Resource Specific destination table.
 
 
-## Categories
+## Table attributes
 
-- Azure Resources
-- Containers
+|Attribute|Value|
+|---|---|
+|**Resource types**|microsoft.kubernetes/connectedclusters|
+|**Categories**|Azure Resources, Containers|
+|**Solutions**| LogManagement|
+|**Basic log**|Yes|
+|**Ingestion-time transformation**|No|
+|**Sample Queries**|-|
 
-## Solutions
 
-- LogManagement
-
-## Resource types
-
-- Azure Arc Enabled Kubernetes
 
 ## Columns
   
