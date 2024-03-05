@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 03/05/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.HealthcareApis/workspaces/fhirservices, arm
@@ -13,4 +13,4 @@ ms.custom: Microsoft.HealthcareApis/workspaces/fhirservices, arm
   
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
-|`AuditLogs` |FHIR Audit logs |[MicrosoftHealthcareApisAuditLogs](/azure/azure-monitor/reference/tables/microsofthealthcareapisauditlogs)<p>Azure API for FHIR audit logs|No|Yes||Yes |
+|`AuditLogs` |FHIR Audit logs ||No|No||Yes |

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 03/05/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
@@ -83,8 +83,8 @@ ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
 |Requests|**Region Removed**<br><br>Region Removed |`RemoveRegion` |Count |Count |`Region`|PT5M |Yes|
 |Requests|**P99 Replication Latency**<br><br>P99 Replication Latency across source and target regions for geo-enabled account |`ReplicationLatency` |MilliSeconds |Minimum, Maximum, Average |`SourceRegion`, `TargetRegion`|PT1M |Yes|
 |Requests|**Server Side Latency**<br><br>Server Side Latency |`ServerSideLatency` |MilliSeconds |Average, Minimum, Maximum, Total |`DatabaseName`, `CollectionName`, `Region`, `ConnectionMode`, `OperationType`, `PublicAPIType`|PT1M, PT5M, PT1H, P1D |No|
-|Requests|**Server Side Latency Direct**<br><br>Server Side Latency in Direct Connection Mode |`ServerSideLatencyDirect` |MilliSeconds |Average, Minimum, Maximum, Total, Percentile |`DatabaseName`, `CollectionName`, `Region`, `ConnectionMode`, `OperationType`, `PublicAPIType`, `APIType`|PT1M, PT5M, PT1H, P1D |No|
-|Requests|**Server Side Latency Gateway**<br><br>Server Side Latency in Gateway Connection Mode |`ServerSideLatencyGateway` |MilliSeconds |Average, Minimum, Maximum, Total, Percentile |`DatabaseName`, `CollectionName`, `Region`, `ConnectionMode`, `OperationType`, `PublicAPIType`, `APIType`|PT1M, PT5M, PT1H, P1D |No|
+|Requests|**Server Side Latency Direct**<br><br>Server Side Latency in Direct Connection Mode |`ServerSideLatencyDirect` |MilliSeconds |Average, Minimum, Maximum, Total |`DatabaseName`, `CollectionName`, `Region`, `ConnectionMode`, `OperationType`, `PublicAPIType`, `APIType`|PT1M, PT5M, PT1H, P1D |No|
+|Requests|**Server Side Latency Gateway**<br><br>Server Side Latency in Gateway Connection Mode |`ServerSideLatencyGateway` |MilliSeconds |Average, Minimum, Maximum, Total |`DatabaseName`, `CollectionName`, `Region`, `ConnectionMode`, `OperationType`, `PublicAPIType`, `APIType`|PT1M, PT5M, PT1H, P1D |No|
 |Requests|**Service Availability**<br><br>Account requests availability at one hour, day or month granularity |`ServiceAvailability` |Percent |Minimum, Average, Maximum |\<none\>|PT1H |No|
 |Requests|**Sql Container Created**<br><br>Sql Container Created |`SqlContainerCreate` |Count |Count |`ResourceName`, `ChildResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`, `OperationType`|PT5M |No|
 |Requests|**Sql Container Deleted**<br><br>Sql Container Deleted |`SqlContainerDelete` |Count |Count |`ResourceName`, `ChildResourceName`, `ApiKind`, `ApiKindResourceType`, `OperationType`|PT5M |No|
