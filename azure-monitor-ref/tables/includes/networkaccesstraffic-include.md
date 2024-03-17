@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 03/17/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: NetworkAccessTraffic
@@ -10,10 +10,16 @@ ms.custom: NetworkAccessTraffic
 
 | Column | Type | Description |
 |---|---|---|
+| AccessType | string | Type of accessed application. Access type options: QuickAccess, PrivateAccess. |
 | Action | string | The action taken on the network session. Allowed, Denied. |
 | AgentVersion | string | The version of the agent connecting. |
+| AppId | string | Destination Application ID accessed in Azure AD during the transaction. |
 | _BilledSize | real | The record size in bytes |
 | ConnectionId | string | Unique identifier representing the connection this traffic log was initiated from. |
+| ConnectionStatus | string | Status of a connection. Status options: Open, Active, Closed. |
+| ConnectorId | string | Private access connector ID. |
+| ConnectorIp | string | Private access connector IP. |
+| ConnectorName | string | Private access connector name. |
 | Description | string | Additional details describing the traffic. |
 | DestinationFqdn | string | The destination device hostname, including domain information when available. |
 | DestinationIp | string | The IP address of the connection or session destination. |
@@ -33,6 +39,7 @@ ms.custom: NetworkAccessTraffic
 | PolicyId | string | The ID of the policy for which the request was denied by its rule. |
 | PolicyName | string | The name of the filtering policy associated with the action performed on traffic. |
 | PolicyRuleId | string | The ID of the rule for which the request was denied by. |
+| ProcessingRegion | string | Region where the request was processed by the backend service. |
 | ReceivedBytes | long | The number of bytes received. |
 | ReferrerHeader | string | The Referer header value. |
 | ResourceTenantId | string | Tenant ID that owns the resource. |

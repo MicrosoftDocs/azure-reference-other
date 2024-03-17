@@ -8749,6 +8749,11 @@
    "source_path": "azure-monitor-ref/tables/includes/requests-include.md",
    "redirect_url": "/azure/azure-monitor/reference",
    "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/queries/dcrlogtroubleshooting.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
   }
  ]
 }
