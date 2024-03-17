@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/21/2024
+ms.date: 03/17/2024
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
 
@@ -51,7 +51,15 @@ DatabricksSSH,
 DatabricksUnityCatalog,
 DatabricksWebTerminal,
 DatabricksWorkspace,
-DatabricksWorkspaceLogs
+DatabricksBrickStoreHttpGateway,
+DatabricksDashboards,
+DatabricksCloudStorageMetadata,
+DatabricksPredictiveOptimization,
+DatabricksDataMonitoring,
+DatabricksIngestion,
+DatabricksMarketplaceConsumer,
+DatabricksLineageTracking,
+DatabricksFilesystem
 | distinct Category, Type
 ```
 

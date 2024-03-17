@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/05/2024
+ms.date: 03/17/2024
 ---
 
 # DatabricksPredictiveOptimization
@@ -21,7 +21,7 @@ Contains Databricks Predictive Optimization logs.
 |**Resource types**|microsoft.databricks/workspaces|
 |**Categories**|Azure Resources, Audit|
 |**Solutions**| LogManagement|
-|**Basic log**|No|
+|**Basic log**|Yes|
 |**Ingestion-time transformation**|No|
 |**Sample Queries**|-|
 

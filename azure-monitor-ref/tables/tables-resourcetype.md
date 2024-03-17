@@ -4,7 +4,7 @@ description: Field definitions for Azure Monitor resource log / log analytics ta
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 03/05/2024
+ms.date: 03/17/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -685,7 +685,6 @@ Microsoft.ContainerRegistry/registries
 Microsoft.Insights/datacollectionrules  
 
 - [DCRLogErrors](dcrlogerrors.md)
-- [DCRLogTroubleshooting](dcrlogtroubleshooting.md)
 
 ### Data factories  
 
