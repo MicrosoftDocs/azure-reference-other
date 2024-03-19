@@ -4,7 +4,7 @@ description: Azure Monitor log analytics queries by tables
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 03/05/2024
+ms.date: 03/17/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -1119,10 +1119,6 @@ ms.reviewer: lualderm
 ## [DCRLogErrors](DCRLogErrors.md)
 
 - [Ingestion and Transformation errors from data collection rules](DCRLogErrors.md#ingestion-and-transformation-errors-from-data-collection-rules)
-
-## [DCRLogTroubleshooting](DCRLogTroubleshooting.md)
-
-- [Verbose ingestion and transformation errors from data collection rules](DCRLogTroubleshooting.md#verbose-ingestion-and-transformation-errors-from-data-collection-rules)
 
 ## [DNSQueryLogs](DNSQueryLogs.md)
 
