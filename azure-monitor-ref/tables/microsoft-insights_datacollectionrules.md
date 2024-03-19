@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 03/05/2024
+ms.date: 03/17/2024
 
 
 ---
@@ -18,5 +18,4 @@ ms.date: 03/05/2024
 | Table | Categories | Solutions|[Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)| Queries|
 |---|---|---|---|---|
 | [DCRLogErrors](/azure/azure-monitor/reference/tables/DCRLogErrors)<p>Errors registered during DCR-based data collection and transformation. | resources | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/dcrlogerrors)|
-| [DCRLogTroubleshooting](/azure/azure-monitor/reference/tables/DCRLogTroubleshooting)<p>Logs from DCR-based data collection and transformation to help with troubleshooting of DCR configuration and flow. | resources | LogManagement | Yes| [Yes](/azure/azure-monitor/reference/queries/dcrlogtroubleshooting)|
 

@@ -7,7 +7,7 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 03/05/2024
+ms.date: 03/17/2024
 
 
 ---
@@ -17,5 +17,5 @@ ms.date: 03/05/2024
 
 | Table | Categories | Solutions|[Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)| Queries|
 |---|---|---|---|---|
-| [AMWMetricsUsageDetails](/azure/azure-monitor/reference/tables/AMWMetricsUsageDetails)<p>Table that breaks down data quantities and query usage of metrics sent to an Azure Monitor Workspace. | resources, monitor | LogManagement | No| -|
+| [AMWMetricsUsageDetails](/azure/azure-monitor/reference/tables/AMWMetricsUsageDetails)<p>Table that breaks down data quantities and query usage of metrics sent to an Azure Monitor Workspace. | resources, monitor | LogManagement | Yes| -|
 
