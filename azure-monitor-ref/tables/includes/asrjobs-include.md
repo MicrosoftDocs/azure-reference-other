@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 03/17/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ASRJobs
@@ -28,6 +28,7 @@ ms.custom: ASRJobs
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultDescription | string | Result of the ASR job. |
 | SourceFriendlyName | string | Friendly name of the resource on which the ASR job was executed. |
+| SourceResourceGroup | string | Resource Group of the source. |
 | SourceResourceId | string | ARM ID of the resource on which the ASR job was executed. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SourceType | string | Type of resource on which the ASR job was executed. |
