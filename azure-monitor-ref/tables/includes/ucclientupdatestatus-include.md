@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 03/26/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: UCClientUpdateStatus
@@ -25,6 +25,7 @@ ms.custom: UCClientUpdateStatus
 | FurthestClientSubstateRank | int | Ranking of furthest clientSubstate. |
 | GlobalDeviceId | string | Microsoft internal Global Device Identifier |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
+| IsHotpatchUpdate | bool | Status of whether a device is taking a windows security update without requiring a restart or not |
 | IsUpdateHealthy | bool | True: No issues preventing this device from updating to this update have been found. False: There is something that may prevent this device from updating. |
 | OfferReceivedTime | datetime | DateTime when device last reported entering OfferReceived, else empty. |
 | RestartRequiredTime | datetime | DateTime when device first reported entering RebootRequired (or RebootPending), else empty. |
