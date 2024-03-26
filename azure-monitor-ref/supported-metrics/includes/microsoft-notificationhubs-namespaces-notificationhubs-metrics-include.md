@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 03/26/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NotificationHubs/namespaces/notificationHubs, naam
@@ -35,6 +35,14 @@ ms.custom: Microsoft.NotificationHubs/namespaces/notificationHubs, naam
 |**APNS Invalid Notification Size Error**<br><br>The count of pushes that failed because the payload was too large (APNS status code: 7). |`outgoing.apns.invalidnotificationsize` |Count |Total |\<none\>|PT1M |Yes|
 |**APNS Errors**<br><br>The count of pushes that failed because of errors communicating with APNS. |`outgoing.apns.pnserror` |Count |Total |\<none\>|PT1M |Yes|
 |**APNS Successful Notifications**<br><br>The count of all successful notifications. |`outgoing.apns.success` |Count |Total |\<none\>|PT1M |Yes|
+|**FCMv1 Bad Channel Errors**<br><br>The count of pushes that failed because the registrationId in the registration was not recognized (FCMv1 result: Invalid registration, Missing Registration, Not registered, Not found, or Gone). |`outgoing.fcmv1.badchannel` |Count |Total |\<none\>|PT1M |Yes|
+|**FCMv1 Authorization Errors (Invalid Credentials)**<br><br>The count of pushes that failed because the PNS did not accept the provided credentials (FCMv1 result: Sender Id Mismatch, Unauthorized, or Forbidden). |`outgoing.fcmv1.invalidcredentials` |Count |Total |\<none\>|PT1M |Yes|
+|**FCMv1 Invalid Notification Format**<br><br>The count of pushes that failed because the payload was not formatted correctly (FCMv1 result: Invalid TTL, Invalid parameters, or Invalid data key). |`outgoing.fcmv1.invalidnotificationformat` |Count |Total |\<none\>|PT1M |Yes|
+|**FCMv1 Invalid Notification Size Errors**<br><br>The count of pushes that failed because the payload was too large (FCMv1 result: Message too big). |`outgoing.fcmv1.invalidnotificationsize` |Count |Total |\<none\>|PT1M |Yes|
+|**FCMv1 Errors**<br><br>The count of pushes that failed because of errors communicating with FCMv1. |`outgoing.fcmv1.pnserror` |Count |Total |\<none\>|PT1M |Yes|
+|**FCMv1 Successful Notifications**<br><br>The count of all successful notifications. |`outgoing.fcmv1.success` |Count |Total |\<none\>|PT1M |Yes|
+|**FCMv1 Throttled Notifications**<br><br>The count of pushes that failed because FCMv1 throttled this app (FCMv1 Result: Quota Exceeded or 429). |`outgoing.fcmv1.throttled` |Count |Total |\<none\>|PT1M |Yes|
+|**FCMv1 Wrong Channel Errors**<br><br>The count of pushes that failed because the registrationId in the registration is not associated to the current app (FCMv1 result: Invalid package name). |`outgoing.fcmv1.wrongchannel` |Count |Total |\<none\>|PT1M |Yes|
 |**GCM Authentication Errors**<br><br>The count of pushes that failed because the PNS did not accept the provided credentials the credentials are blocked or the SenderId is not correctly configured in the app (GCM result: MismatchedSenderId). |`outgoing.gcm.authenticationerror` |Count |Total |\<none\>|PT1M |Yes|
 |**GCM Bad Channel Error**<br><br>The count of pushes that failed because the registrationId in the registration was not recognized (GCM result: Invalid Registration). |`outgoing.gcm.badchannel` |Count |Total |\<none\>|PT1M |Yes|
 |**GCM Expired Channel Error**<br><br>The count of pushes that failed because the registrationId in the registration was expired (GCM result: NotRegistered). |`outgoing.gcm.expiredchannel` |Count |Total |\<none\>|PT1M |Yes|
