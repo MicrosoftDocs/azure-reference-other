@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 03/05/2024
+ms.date: 03/26/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
@@ -77,7 +77,7 @@ ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
 |Requests|**Region Onlined**<br><br>Region Onlined |`OnlineRegion` |Count |Count |`Region`, `StatusCode`, `Role`, `OperationName`|PT1M |No|
 |Requests|**Physical Partition Count**<br><br>Physical Partition Count |`PhysicalPartitionCount` |Count |Maximum |`CollectionName`, `DatabaseName`, `IsSharedThroughputOffer`, `OfferOwnerRid`, `Region`|PT5M |Yes|
 |Requests|**Physical Partition Size**<br><br>Physical Partition Size in bytes |`PhysicalPartitionSizeInfo` |Bytes |Maximum, Average |`CollectionName`, `DatabaseName`, `PhysicalPartitionId`, `OfferOwnerRid`, `Region`|PT1M, PT5M, PT1H, P1D |No|
-|Requests|**Physical Partition Throughput**<br><br>Physical Partition Throughput |`PhysicalPartitionThroughputInfo` |Count |Maximum |`CollectionName`, `DatabaseName`, `PhysicalPartitionId`, `OfferOwnerRid`, `Region`|PT1M, PT5M, PT1H, P1D |No|
+|Requests|**Physical Partition Throughput**<br><br>Physical Partition Throughput |`PhysicalPartitionThroughputInfo` |Count |Maximum |`CollectionName`, `DatabaseName`, `PhysicalPartitionId`, `OfferOwnerRid`, `Region`|PT5M, PT1H, P1D |No|
 |Requests|**Provisioned Throughput**<br><br>Provisioned Throughput |`ProvisionedThroughput` |Count |Maximum |`DatabaseName`, `CollectionName`, `Region`|PT5M, PT1H, P1D |No|
 |Requests|**Region Failed Over**<br><br>Region Failed Over |`RegionFailover` |Count |Count |\<none\>|PT5M |Yes|
 |Requests|**Region Removed**<br><br>Region Removed |`RemoveRegion` |Count |Count |`Region`|PT5M |Yes|

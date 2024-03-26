@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/05/2024
+ms.date: 03/26/2024
 ---
 
 # DynamicSummary
@@ -19,11 +19,11 @@ Azure Sentinel Dynamic Summary provides a security data storage to persist conce
 |Attribute|Value|
 |---|---|
 |**Resource types**|-|
-|**Categories**|Security|
+|**Categories**|-|
 |**Solutions**| SecurityInsights|
 |**Basic log**|No|
 |**Ingestion-time transformation**|No|
-|**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/dynamicsummary)|
+|**Sample Queries**|-|
 
 
 

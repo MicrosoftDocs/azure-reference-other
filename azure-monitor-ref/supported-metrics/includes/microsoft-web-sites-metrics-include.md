@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 03/26/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Web/sites, naam
@@ -38,6 +38,7 @@ ms.custom: Microsoft.Web/sites, naam
 |**Http 4xx**<br><br>The count of requests resulting in an HTTP status code >= 400 but < 500. For WebApps and FunctionApps. |`Http4xx` |Count |Total |`Instance`|PT1M |Yes|
 |**Http Server Errors**<br><br>The count of requests resulting in an HTTP status code >= 500 but < 600. For WebApps and FunctionApps. |`Http5xx` |Count |Total |`Instance`|PT1M |Yes|
 |**Response Time**<br><br>The time taken for the app to serve requests, in seconds. For WebApps and FunctionApps. |`HttpResponseTime` |Seconds |Average |`Instance`|PT1M |Yes|
+|**Automatic Scaling Instance Count**<br><br>The number of instances on which this app is running. |`InstanceCount` |Count |Average |\<none\>|PT1M |Yes|
 |**IO Other Bytes Per Second**<br><br>The rate at which the app process is issuing bytes to I/O operations that don't involve data, such as control operations. For WebApps and FunctionApps. |`IoOtherBytesPerSecond` |BytesPerSecond |Total |`Instance`|PT1M |Yes|
 |**IO Other Operations Per Second**<br><br>The rate at which the app process is issuing I/O operations that aren't read or write operations. For WebApps and FunctionApps. |`IoOtherOperationsPerSecond` |BytesPerSecond |Total |`Instance`|PT1M |Yes|
 |**IO Read Bytes Per Second**<br><br>The rate at which the app process is reading bytes from I/O operations. For WebApps and FunctionApps. |`IoReadBytesPerSecond` |BytesPerSecond |Total |`Instance`|PT1M |Yes|

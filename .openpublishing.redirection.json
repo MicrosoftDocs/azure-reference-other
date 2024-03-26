@@ -8401,21 +8401,6 @@
    "redirect_document_id": false
   },
   {
-   "source_path": "azure-monitor-ref/queries/aksaudit.md",
-   "redirect_url": "/azure/azure-monitor/reference",
-   "redirect_document_id": false
-  },
-  {
-   "source_path": "azure-monitor-ref/queries/aksauditadmin.md",
-   "redirect_url": "/azure/azure-monitor/reference",
-   "redirect_document_id": false
-  },
-  {
-   "source_path": "azure-monitor-ref/queries/akscontrolplane.md",
-   "redirect_url": "/azure/azure-monitor/reference",
-   "redirect_document_id": false
-  },
-  {
    "source_path": "azure-monitor-ref/queries/anffileaccess.md",
    "redirect_url": "/azure/azure-monitor/reference",
    "redirect_document_id": false
@@ -8432,21 +8417,6 @@
   },
   {
    "source_path": "azure-monitor-ref/tables/aaddomainservicessystemsecurity.md",
-   "redirect_url": "/azure/azure-monitor/reference",
-   "redirect_document_id": false
-  },
-  {
-   "source_path": "azure-monitor-ref/tables/aksaudit.md",
-   "redirect_url": "/azure/azure-monitor/reference",
-   "redirect_document_id": false
-  },
-  {
-   "source_path": "azure-monitor-ref/tables/aksauditadmin.md",
-   "redirect_url": "/azure/azure-monitor/reference",
-   "redirect_document_id": false
-  },
-  {
-   "source_path": "azure-monitor-ref/tables/akscontrolplane.md",
    "redirect_url": "/azure/azure-monitor/reference",
    "redirect_document_id": false
   },
@@ -8747,6 +8717,11 @@
   },
   {
    "source_path": "azure-monitor-ref/queries/dcrlogtroubleshooting.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/queries/dynamicsummary.md",
    "redirect_url": "/azure/azure-monitor/reference",
    "redirect_document_id": false
   }

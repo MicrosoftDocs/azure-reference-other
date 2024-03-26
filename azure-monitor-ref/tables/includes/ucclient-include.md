@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 03/26/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: UCClient
@@ -22,8 +22,12 @@ ms.custom: UCClient
 | DeviceName | string | The Device given name. |
 | GlobalDeviceId | string | Microsoft internal Global Device Identifier. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
+| IsDeviceHotpatchEligible | bool | Specifies whether a device meets the necessary criteria to receive windows security updates without requiring a restart. |
+| IsDeviceHotpatchEnrolled | bool | Indicates whether the device has been enrolled to receive windows security updates without requiring a restart. |
+| IsDeviceVBSEnabled | bool | Whether Virtual Based Security (VBS) is enabled on the device. Enabling VBS is a prerequisite for devices to recieve windows security updates without a restart. |
 | IsVirtual | bool | Whether device is a Virtual Device. |
 | LastCensusScanTime | datetime | The last time this device performed a successful Census Scan, if any. |
+| LastHotpatchEnrolledTime | datetime | The last time when device was enrolled to receive security updates without restart. |
 | LastWUScanTime | datetime | The last time this device performed a successful WU Scan, if any. |
 | OSArchitecture | string | The architecture of the Operating System e.g. x86. |
 | OSBuild | string | The currently-installed Windows 10 Build in the format 'Major'.'Revision'. 'Major' corresponds to which Feature Update the device is on, whereas 'Revision' corresponds to which quality update the device is on. Mappings between Feature release and Major, as well as Revision and KBs, are available aka.ms/win10releaseinfo. |
