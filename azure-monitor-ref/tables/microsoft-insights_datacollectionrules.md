@@ -7,15 +7,12 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 03/17/2024
+ms.date: 03/26/2024
 
 
 ---
 
-# Resource log tables for microsoft.insights/datacollectionrules  
+# Log Analytics tables for microsoft.insights/datacollectionrules  
 
-
-| Table | Categories | Solutions|[Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)| Queries|
-|---|---|---|---|---|
-| [DCRLogErrors](/azure/azure-monitor/reference/tables/DCRLogErrors)<p>Errors registered during DCR-based data collection and transformation. | resources | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/dcrlogerrors)|
+[!INCLUDE [table](./includes/microsoft-insights_datacollectionrules-include.md)]
 

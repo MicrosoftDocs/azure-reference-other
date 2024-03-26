@@ -7,15 +7,12 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 03/05/2024
+ms.date: 03/26/2024
 
 
 ---
 
-# Resource log tables for microsoft.securityinsights/authenticationevent  
+# Log Analytics tables for microsoft.securityinsights/authenticationevent  
 
-
-| Table | Categories | Solutions|[Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)| Queries|
-|---|---|---|---|---|
-| [ASimAuthenticationEventLogs](/azure/azure-monitor/reference/tables/ASimAuthenticationEventLogs)<p>Microsoft Sentinel normalized authentication events table. Stores events associated, for example, with the user authentication, sign-in, and sign-out. | security | SecurityInsights | No| -|
+[!INCLUDE [table](./includes/microsoft-securityinsights_authenticationevent-include.md)]
 

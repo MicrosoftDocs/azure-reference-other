@@ -1,0 +1,32 @@
+---
+ms.service: azure-monitor
+ms.topic: include
+ms.date: 03/26/2024
+ms.author: edbaynash
+author: EdB-MSFT
+ms.custom: Tables for microsoft.containerservice/managedclusters
+---
+
+
+| Table | Categories | Solutions|[Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)| Queries|
+|---|---|---|---|---|
+| [AzureActivity](/azure/azure-monitor/reference/tables/AzureActivity)<p>Entries from the Azure Activity log that provides insight into any subscription-level or management group level events that have occurred in Azure. | resources, audit, security | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/azureactivity)|
+| [AzureMetrics](/azure/azure-monitor/reference/tables/AzureMetrics)<p>Metric data emitted by Azure services that measure their health and performance. | resources | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/azuremetrics)|
+| [ContainerImageInventory](/azure/azure-monitor/reference/tables/ContainerImageInventory)<p>Inventory of container images and their attributes that were discovered by the agent. | container | AzureResources, ContainerInsights, Containers | No| [Yes](/azure/azure-monitor/reference/queries/containerimageinventory)|
+| [ContainerInventory](/azure/azure-monitor/reference/tables/ContainerInventory)<p>Inventory of containers and their attributes that are monitored by the agent | container | AzureResources, ContainerInsights, Containers | No| [Yes](/azure/azure-monitor/reference/queries/containerinventory)|
+| [ContainerLog](/azure/azure-monitor/reference/tables/ContainerLog)<p>Log lines collected from stdout and stderr streams for containers. | container, applications | AzureResources, ContainerInsights, Containers | No| [Yes](/azure/azure-monitor/reference/queries/containerlog)|
+| [ContainerLogV2](/azure/azure-monitor/reference/tables/ContainerLogV2)<p>Kubernetes Container logs in V2 schema. This is the successor of ContainerLog. This has a friendlier schema, specifically for Kubernetes orchestrated containers in pods. With this feature enabled, previously split container logs are stitched together and sent as single entries to the ContainerLogV2 table. The schema now supports container log lines of up to to 64 KB. The schema also supports .NET and Go stack traces, which appear as single entries. | container | AzureResources, ContainerInsights | Yes| [Yes](/azure/azure-monitor/reference/queries/containerlogv2)|
+| [ContainerNodeInventory](/azure/azure-monitor/reference/tables/ContainerNodeInventory)<p>Table that stores Container host/node information | container | AzureResources, ContainerInsights | No| [Yes](/azure/azure-monitor/reference/queries/containernodeinventory)|
+| [ContainerServiceLog](/azure/azure-monitor/reference/tables/ContainerServiceLog)<p> | container | AzureResources, ContainerInsights, Containers | No| [Yes](/azure/azure-monitor/reference/queries/containerservicelog)|
+| [Heartbeat](/azure/azure-monitor/reference/tables/Heartbeat)<p>Records logged by Log Analytics agents once per minute to report on agent health. | virtualmachines, container, management | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/heartbeat)|
+| [InsightsMetrics](/azure/azure-monitor/reference/tables/InsightsMetrics)<p>Table that stores metrics. 'Perf' table also stores many metrics and over time they all will converge to InsightsMetrics for Azure Monitor Solutions  | virtualmachines, container, resources | AzureResources, ContainerInsights, InfrastructureInsights, LogManagement, ServiceMap, VMInsights | No| [Yes](/azure/azure-monitor/reference/queries/insightsmetrics)|
+| [KubeEvents](/azure/azure-monitor/reference/tables/KubeEvents)<p>Table that stores Kubernetes events  | container | AzureResources, ContainerInsights | No| [Yes](/azure/azure-monitor/reference/queries/kubeevents)|
+| [KubeMonAgentEvents](/azure/azure-monitor/reference/tables/KubeMonAgentEvents)<p>Table that stores events from the Kubernetes cluster monitoring agent [Azure Monitor Agent] | container | AzureResources, ContainerInsights | No| [Yes](/azure/azure-monitor/reference/queries/kubemonagentevents)|
+| [KubeNodeInventory](/azure/azure-monitor/reference/tables/KubeNodeInventory)<p>Table that stores Kubernetes cluster's node information. | container | AzureResources, ContainerInsights | No| [Yes](/azure/azure-monitor/reference/queries/kubenodeinventory)|
+| [KubePVInventory](/azure/azure-monitor/reference/tables/KubePVInventory)<p>Kubernetes persistent volumes and their properties. | container | AzureResources, ContainerInsights | No| -|
+| [KubePodInventory](/azure/azure-monitor/reference/tables/KubePodInventory)<p>Table that stores kubernetes cluster's Pod & container information | container | AzureResources, ContainerInsights | No| [Yes](/azure/azure-monitor/reference/queries/kubepodinventory)|
+| [KubeServices](/azure/azure-monitor/reference/tables/KubeServices)<p>Table that stores Kubernetes services information. | container | AzureResources, ContainerInsights | No| [Yes](/azure/azure-monitor/reference/queries/kubeservices)|
+| [Perf](/azure/azure-monitor/reference/tables/Perf)<p>Performance counters from Windows and Linux agents that provide insight into the performance of hardware components operating systems and applications. | virtualmachines, container | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/perf)|
+| [Syslog](/azure/azure-monitor/reference/tables/Syslog)<p>Syslog events on Linux computers using the Log Analytics agent. | virtualmachines, security | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/syslog)|
+
+  

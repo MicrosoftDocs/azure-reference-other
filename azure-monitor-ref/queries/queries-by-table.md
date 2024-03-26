@@ -4,7 +4,7 @@ description: Azure Monitor log analytics queries by tables
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 03/17/2024
+ms.date: 03/26/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -1181,10 +1181,6 @@ ms.reviewer: lualderm
 ## [DnsEvents](DnsEvents.md)
 
 - [Clients Resolving Malicious Domains](DnsEvents.md#clients-resolving-malicious-domains)
-
-## [DynamicSummary](DynamicSummary.md)
-
-- [Summary for hunting session](DynamicSummary.md#summary-for-hunting-session)
 
 ## [EGNFailedMqttConnections](EGNFailedMqttConnections.md)
 
