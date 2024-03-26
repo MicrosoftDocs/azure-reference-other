@@ -4,7 +4,7 @@ description: Azure Monitor log analytics queries by tables
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 03/17/2024
+ms.date: 03/26/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -391,6 +391,20 @@ ms.reviewer: lualderm
 - [MedTech healthcheck exceptions](AHDSMedTechDiagnosticLogs.md#medtech-healthcheck-exceptions)
 - [MedTech normalization stage logs](AHDSMedTechDiagnosticLogs.md#medtech-normalization-stage-logs)
 - [MedTech FHIR conversion stage logs](AHDSMedTechDiagnosticLogs.md#medtech-fhir-conversion-stage-logs)
+
+## [AKSAudit](AKSAudit.md)
+
+- [Volume of Kubernetes audit events per SourceIp](AKSAudit.md#volume-of-kubernetes-audit-events-per-sourceip)
+
+## [AKSAuditAdmin](AKSAuditAdmin.md)
+
+- [Volume of admin Kubernetes audit events per username](AKSAuditAdmin.md#volume-of-admin-kubernetes-audit-events-per-username)
+- [Admin Kubernetes audit events for deployment](AKSAuditAdmin.md#admin-kubernetes-audit-events-for-deployment)
+
+## [AKSControlPlane](AKSControlPlane.md)
+
+- [Cluster Autoscaler logs](AKSControlPlane.md#cluster-autoscaler-logs)
+- [Kubernetes API server logs](AKSControlPlane.md#kubernetes-api-server-logs)
 
 ## [AMSKeyDeliveryRequests](AMSKeyDeliveryRequests.md)
 
@@ -1182,10 +1196,6 @@ ms.reviewer: lualderm
 
 - [Clients Resolving Malicious Domains](DnsEvents.md#clients-resolving-malicious-domains)
 
-## [DynamicSummary](DynamicSummary.md)
-
-- [Summary for hunting session](DynamicSummary.md#summary-for-hunting-session)
-
 ## [EGNFailedMqttConnections](EGNFailedMqttConnections.md)
 
 - [Authentication error query](EGNFailedMqttConnections.md#authentication-error-query)
@@ -1355,6 +1365,10 @@ ms.reviewer: lualderm
 - [Find all events of the type VxlanVlanToVniVlan](MNFDeviceUpdates.md#find-all-events-of-the-type-vxlanvlantovnivlan)
 - [Find all entries where afisafiname is not of the type L2VPN_EVPN](MNFDeviceUpdates.md#find-all-entries-where-afisafiname-is-not-of-the-type-l2vpn_evpn)
 - [Find all entries where network instance name is of the type workload-mgmt](MNFDeviceUpdates.md#find-all-entries-where-network-instance-name-is-of-the-type-workload-mgmt)
+
+## [MNFSystemSessionHistoryUpdates](MNFSystemSessionHistoryUpdates.md)
+
+- [Find all entries where session update user is admin](MNFSystemSessionHistoryUpdates.md#find-all-entries-where-session-update-user-is-admin)
 
 ## [MNFSystemStateMessageUpdates](MNFSystemStateMessageUpdates.md)
 

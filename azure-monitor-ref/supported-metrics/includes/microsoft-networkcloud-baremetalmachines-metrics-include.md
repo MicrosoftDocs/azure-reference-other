@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 03/26/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
@@ -28,7 +28,8 @@ ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
 |Disk|**Host Disk Read Seconds (Preview)**<br><br>Disk read time by node |`HostDiskReadSeconds` |Seconds |Average |`Device`, `Host`|PT1M |No|
 |Disk|**Total Number of Writes Completed**<br><br>Disk writes completed by node |`HostDiskWriteCompleted` |Count |Average |`Device`, `Host`|PT1M |No|
 |Disk|**Host Disk Write Seconds (Preview)**<br><br>Disk write time by node |`HostDiskWriteSeconds` |Seconds |Average |`Device`, `Host`|PT1M |No|
-|System|**Host DMI Info (Preview)**<br><br>Host Desktop Management Interface (DMI) environment information |`HostDmiInfo` |Unspecified |Count |`BiosDate`, `BiosRelease`, `BiosVendor`, `BiosVersion`, `BoardAssetTag`, `BoardName`, `BoardVendor`, `BoardVersion`, `ChassisAssetTag`, `ChassisVendor`, `ChassisVersion`, `Host`, `ProductFamily`, `ProductName`, `ProductSku`, `ProductUuid`, `ProductVersion`, `SystemVendor`|PT1M |No|
+|System|**Host DMI Info (Deprecated)**<br><br>Deprecated - Host Desktop Management Interface (DMI) environment information |`HostDmiInfo` |Unspecified |Count |`BiosDate`, `BiosRelease`, `BiosVendor`, `BiosVersion`, `BoardAssetTag`, `BoardName`, `BoardVendor`, `BoardVersion`, `ChassisAssetTag`, `ChassisVendor`, `ChassisVersion`, `Host`, `ProductFamily`, `ProductName`, `ProductSku`, `ProductUuid`, `ProductVersion`, `SystemVendor`|PT1M |No|
+|System|**Host DMI Info**<br><br>Host Desktop Management Interface (DMI) environment information |`HostDmiInformation` |Unspecified |Count |`BiosDate`, `BiosRelease`, `BiosVendor`, `BiosVersion`, `BoardName`, `BoardVendor`, `BoardVersion`, `ChassisAssetTag`, `ChassisVendor`, `Host`, `ProductFamily`, `ProductName`, `ProductSku`, `SystemVendor`|PT1M |No|
 |Filesystem|**Host Entropy Available Bits (Preview)**<br><br>Available bits in node entropy |`HostEntropyAvailableBits` |Count |Average |`Host`|PT1M |No|
 |Filesystem|**Host Filesystem Available Bytes**<br><br>Available filesystem size by node |`HostFilesystemAvailBytes` |Count |Average |`Device`, `FSType`, `Host`, `Mountpoint`|PT1M |No|
 |Filesystem|**Host Filesystem Device Errors**<br><br>Indicates if there was a problem getting information for the filesystem |`HostFilesystemDeviceError` |Count |Average |`Device`, `FSType`, `Host`, `Mountpoint`|PT1M |No|
@@ -43,7 +44,10 @@ ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
 |Memory|**Average Load In 15 Minutes (Preview)**<br><br>15 minute load average |`HostLoad15` |Count |Average |`Host`|PT1M |No|
 |Memory|**Average load in 5 minutes (Preview)**<br><br>5 minute load average |`HostLoad5` |Count |Average |`Host`|PT1M |No|
 |Memory|**Host Memory Available Bytes**<br><br>Available memory in bytes by node |`HostMemAvailBytes` |Count |Average |`Host`|PT1M |No|
+|Memory|**Memory Free Huge Pages**<br><br>Hugepages memory free on host |`HostMemHugePagesFree` |Bytes |Average |`Host`|PT1M |No|
+|Memory|**Memory Total Huge Pages**<br><br>Huge pages total on host |`HostMemHugePagesTotal` |Bytes |Average |`Host`|PT1M |No|
 |Memory|**Total Memory In Corrupted Pages**<br><br>Corrupted bytes in hardware by node |`HostMemHWCorruptedBytes` |Count |Average |`Host`|PT1M |No|
+|Memory|**Host Memory Swap Available Percentage**<br><br>Percentage of available swap memory by node |`HostMemSwapAvailableSpace` |Percent |Average |`Host`|PT1M |No|
 |Memory|**Host Memory Swap Free Bytes**<br><br>Total bytes of free swap memory by node |`HostMemSwapFreeBytes` |Bytes |Average |`Host`|PT1M |No|
 |Memory|**Host Memory Swap Total Bytes**<br><br>Total bytes of swap memory by node |`HostMemSwapTotalBytes` |Bytes |Average |`Host`|PT1M |No|
 |Memory|**Host Memory Total Bytes**<br><br>Total bytes of memory by node |`HostMemTotalBytes` |Bytes |Average |`Host`|PT1M |No|
@@ -69,11 +73,13 @@ ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
 |Network|**Node Network Received Multicast Total**<br><br>Network device statistic receive_multicast |`NodeNetworkReceiveMulticastTotal` |Bytes |Average |`Device`, `Host`|PT1M |No|
 |Network|**Node Network Received Packets**<br><br>Network device statistic receive_packets |`NodeNetworkReceivePackets` |Count |Average |`Device`, `Host`|PT1M |No|
 |Network|**Node Network Speed Bytes**<br><br>speed_bytes value of /sys/class/net/\<iface\> |`NodeNetworkSpeedBytes` |Bytes |Average |`Device`, `Host`|PT1M |No|
+|Network|**Node Network Up**<br><br>Value is 1 if operstate is 'up', 0 otherwise. |`NodeNetworkStatus` |Count |Count |`Device`, `Host`|PT1M |No|
 |Network|**Node Network Transmited Packets**<br><br>Network device statistic transmit_packets |`NodeNetworkTransmitPackets` |Count |Average |`Device`, `Host`|PT1M |No|
-|Network|**Node Network Up**<br><br>Value is 1 if operstate is 'up', 0 otherwise. |`NodeNetworkUp` |Count |Count |`Device`, `Host`|PT1M |No|
+|Network|**Node Network Up - (Deprecated)**<br><br>Deprecated - Value is 1 if operstate is 'up', 0 otherwise. |`NodeNetworkUp` |Count |Count |`Device`, `Host`|PT1M |No|
 |Disk|**Node NVMe Info (Preview)**<br><br>Non-numeric data from /sys/class/nvme/\<device\>, value is always 1. Provides firmware, model, state and serial for a device |`NodeNvmeInfo` |Count |Count |`Device`, `State`|PT1M |No|
 |System|**Node OS Info**<br><br>Node OS information |`NodeOsInfo` |Count |Count |`Host`, `Name`, `Version`|PT1M |No|
-|System|**Node Processes State**<br><br>Maximum time error between the local system and reference clock |`NodeProcessesState` |Count |Average |`Host`, `State`|PT1M |No|
+|System|**Node Processes State - (Deprecated)**<br><br>Deprecated - Maximum time error between the local system and reference clock |`NodeProcessesState` |Count |Average |`Host`, `State`|PT1M |No|
+|System|**Node Processes State**<br><br>Maximum time error between the local system and reference clock |`NodeProcessState` |Count |Average |`Host`, `State`|PT1M |No|
 |System|**Node Timex Max Error Seconds**<br><br>Maximum time error between the local system and reference clock |`NodeTimexMaxErrorSeconds` |Seconds |Average |`Host`|PT1M |No|
 |System|**Node Timex Offset Seconds**<br><br>Time offset in between the local system and reference clock |`NodeTimexOffsetSeconds` |Seconds |Average |`Host`|PT1M |No|
 |System|**Node Timex Sync Status**<br><br>Is clock synchronized to a reliable server (1 = yes, 0 = no) |`NodeTimexSyncStatus` |Count |Average |`Host`|PT1M |No|

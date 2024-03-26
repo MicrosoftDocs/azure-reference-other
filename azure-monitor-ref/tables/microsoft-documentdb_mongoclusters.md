@@ -7,15 +7,12 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 03/05/2024
+ms.date: 03/26/2024
 
 
 ---
 
-# Resource log tables for microsoft.documentdb/mongoclusters  
+# Log Analytics tables for microsoft.documentdb/mongoclusters  
 
-
-| Table | Categories | Solutions|[Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)| Queries|
-|---|---|---|---|---|
-| [VCoreMongoRequests](/azure/azure-monitor/reference/tables/VCoreMongoRequests)<p>This table details data plane requests for MongoDB (vCore). | audit | LogManagement | Yes| [Yes](/azure/azure-monitor/reference/queries/vcoremongorequests)|
+[!INCLUDE [table](./includes/microsoft-documentdb_mongoclusters-include.md)]
 

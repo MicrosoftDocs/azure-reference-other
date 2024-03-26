@@ -4,7 +4,7 @@ description: Field definitions for Azure Monitor resource log / log analytics ta
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 03/17/2024
+ms.date: 03/26/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -1037,6 +1037,9 @@ Microsoft.ContainerService/managedClusters
 - [KubeServices](kubeservices.md)
 - [Perf](perf.md)
 - [Syslog](syslog.md)
+- [AKSAudit](aksaudit.md)
+- [AKSAuditAdmin](aksauditadmin.md)
+- [AKSControlPlane](akscontrolplane.md)
 
 ### Load Balancers  
 
@@ -1243,6 +1246,7 @@ Microsoft.ManagedNetworkFabric/networkDevices
 - [AzureActivity](azureactivity.md)
 - [MNFDeviceUpdates](mnfdeviceupdates.md)
 - [MNFSystemStateMessageUpdates](mnfsystemstatemessageupdates.md)
+- [MNFSystemSessionHistoryUpdates](mnfsystemsessionhistoryupdates.md)
 
 ### Network Interfaces  
 
