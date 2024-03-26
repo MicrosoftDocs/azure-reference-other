@@ -392,6 +392,20 @@ ms.reviewer: lualderm
 - [MedTech normalization stage logs](AHDSMedTechDiagnosticLogs.md#medtech-normalization-stage-logs)
 - [MedTech FHIR conversion stage logs](AHDSMedTechDiagnosticLogs.md#medtech-fhir-conversion-stage-logs)
 
+## [AKSAudit](AKSAudit.md)
+
+- [Volume of Kubernetes audit events per SourceIp](AKSAudit.md#volume-of-kubernetes-audit-events-per-sourceip)
+
+## [AKSAuditAdmin](AKSAuditAdmin.md)
+
+- [Volume of admin Kubernetes audit events per username](AKSAuditAdmin.md#volume-of-admin-kubernetes-audit-events-per-username)
+- [Admin Kubernetes audit events for deployment](AKSAuditAdmin.md#admin-kubernetes-audit-events-for-deployment)
+
+## [AKSControlPlane](AKSControlPlane.md)
+
+- [Cluster Autoscaler logs](AKSControlPlane.md#cluster-autoscaler-logs)
+- [Kubernetes API server logs](AKSControlPlane.md#kubernetes-api-server-logs)
+
 ## [AMSKeyDeliveryRequests](AMSKeyDeliveryRequests.md)
 
 - [Key delivery successful request count by key type](AMSKeyDeliveryRequests.md#key-delivery-successful-request-count-by-key-type)
@@ -1351,6 +1365,10 @@ ms.reviewer: lualderm
 - [Find all events of the type VxlanVlanToVniVlan](MNFDeviceUpdates.md#find-all-events-of-the-type-vxlanvlantovnivlan)
 - [Find all entries where afisafiname is not of the type L2VPN_EVPN](MNFDeviceUpdates.md#find-all-entries-where-afisafiname-is-not-of-the-type-l2vpn_evpn)
 - [Find all entries where network instance name is of the type workload-mgmt](MNFDeviceUpdates.md#find-all-entries-where-network-instance-name-is-of-the-type-workload-mgmt)
+
+## [MNFSystemSessionHistoryUpdates](MNFSystemSessionHistoryUpdates.md)
+
+- [Find all entries where session update user is admin](MNFSystemSessionHistoryUpdates.md#find-all-entries-where-session-update-user-is-admin)
 
 ## [MNFSystemStateMessageUpdates](MNFSystemStateMessageUpdates.md)
 

@@ -1625,6 +1625,12 @@ items:
             href: tables/ahdsdicomdiagnosticlogs.md
           - name: AHDSMedTechDiagnosticLogs
             href: tables/ahdsmedtechdiagnosticlogs.md
+          - name: AKSAudit
+            href: tables/aksaudit.md
+          - name: AKSAuditAdmin
+            href: tables/aksauditadmin.md
+          - name: AKSControlPlane
+            href: tables/akscontrolplane.md
           - name: AMSKeyDeliveryRequests
             href: tables/amskeydeliveryrequests.md
           - name: AMSLiveEventOperations
@@ -2385,6 +2391,8 @@ items:
             href: tables/mdecustomcollectiondevicefileevents.md
           - name: MNFDeviceUpdates
             href: tables/mnfdeviceupdates.md
+          - name: MNFSystemSessionHistoryUpdates
+            href: tables/mnfsystemsessionhistoryupdates.md
           - name: MNFSystemStateMessageUpdates
             href: tables/mnfsystemstatemessageupdates.md
           - name: McasShadowItReporting
@@ -2895,6 +2903,12 @@ items:
             href: queries/AHDSDicomDiagnosticLogs.md
           - name: AHDSMedTechDiagnosticLogs
             href: queries/AHDSMedTechDiagnosticLogs.md
+          - name: AKSAudit
+            href: queries/AKSAudit.md
+          - name: AKSAuditAdmin
+            href: queries/AKSAuditAdmin.md
+          - name: AKSControlPlane
+            href: queries/AKSControlPlane.md
           - name: AMSKeyDeliveryRequests
             href: queries/AMSKeyDeliveryRequests.md
           - name: AMSLiveEventOperations
@@ -3171,6 +3185,8 @@ items:
             href: queries/LogicAppWorkflowRuntime.md
           - name: MNFDeviceUpdates
             href: queries/MNFDeviceUpdates.md
+          - name: MNFSystemSessionHistoryUpdates
+            href: queries/MNFSystemSessionHistoryUpdates.md
           - name: MNFSystemStateMessageUpdates
             href: queries/MNFSystemStateMessageUpdates.md
           - name: MicrosoftDataShareReceivedSnapshotLog
