@@ -7,18 +7,12 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 03/05/2024
+ms.date: 03/26/2024
 
 
 ---
 
-# Resource log tables for microsoft.containerregistry/registries  
+# Log Analytics tables for microsoft.containerregistry/registries  
 
-
-| Table | Categories | Solutions|[Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)| Queries|
-|---|---|---|---|---|
-| [AzureActivity](/azure/azure-monitor/reference/tables/AzureActivity)<p>Entries from the Azure Activity log that provides insight into any subscription-level or management group level events that have occurred in Azure. | resources, audit, security | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/azureactivity)|
-| [AzureMetrics](/azure/azure-monitor/reference/tables/AzureMetrics)<p>Metric data emitted by Azure services that measure their health and performance. | resources | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/azuremetrics)|
-| [ContainerRegistryLoginEvents](/azure/azure-monitor/reference/tables/ContainerRegistryLoginEvents)<p>Azure Container Registry Login Auditing Logs | container | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/containerregistryloginevents)|
-| [ContainerRegistryRepositoryEvents](/azure/azure-monitor/reference/tables/ContainerRegistryRepositoryEvents)<p>Azure Container Registry Repository Auditing Logs | container | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/containerregistryrepositoryevents)|
+[!INCLUDE [table](./includes/microsoft-containerregistry_registries-include.md)]
 

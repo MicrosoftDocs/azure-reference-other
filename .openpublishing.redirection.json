@@ -8751,7 +8751,7 @@
    "redirect_document_id": false
   },
   {
-   "source_path": "azure-monitor-ref/tables/tables-category.md",
+   "source_path": "azure-monitor-ref/queries/dynamicsummary.md",
    "redirect_url": "/azure/azure-monitor/reference",
    "redirect_document_id": false
   }

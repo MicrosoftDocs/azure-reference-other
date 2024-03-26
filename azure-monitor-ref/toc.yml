@@ -2122,10 +2122,12 @@ items:
             href: supported-logs/microsoft-workloads-sapvirtualinstances-logs.md
           - name: NGINX Logs
             href: supported-logs/nginx-nginxplus-nginxdeployments-logs.md
-  - name: Azure Monitor Resource log / log analytics tables
+  - name: Azure Monitor Log Analytics tables
     href: ./tables/tables-resourcetype.md
     items:
-      - name: Log analytics tables by resource type
+      - name: Log Analytics tables by category
+        href: ./tables/tables-category.md
+      - name: Log Analytics tables by resource type
         expanded: false
         items:
           - name: microsoft.aad/domainservices
@@ -2438,7 +2440,7 @@ items:
             href: tables/microsoft-workloadmonitor_monitors.md
           - name: nginx.nginxplus/nginxdeployments
             href: tables/nginx-nginxplus_nginxdeployments.md
-      - name: Log analytics tables by table name
+      - name: Log Analytics tables by table name
         expanded: false
         items:
           - name: AACAudit
@@ -3773,7 +3775,7 @@ items:
             href: tables/workloaddiagnosticlogs.md
           - name: WorkloadMonitoringPerf
             href: tables/workloadmonitoringperf.md
-  - name: Log analytics sample queries
+  - name: Log Analytics sample queries
     href: ./queries/queries-by-table.md
     items:
       - name: Sample queries by table
@@ -4119,8 +4121,6 @@ items:
             href: queries/DeviceTvmSoftwareVulnerabilities.md
           - name: DnsEvents
             href: queries/DnsEvents.md
-          - name: DynamicSummary
-            href: queries/DynamicSummary.md
           - name: EGNFailedMqttConnections
             href: queries/EGNFailedMqttConnections.md
           - name: EGNMqttDisconnections
