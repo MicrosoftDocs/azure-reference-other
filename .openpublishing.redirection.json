@@ -8436,21 +8436,6 @@
    "redirect_document_id": false
   },
   {
-   "source_path": "azure-monitor-ref/tables/aksaudit.md",
-   "redirect_url": "/azure/azure-monitor/reference",
-   "redirect_document_id": false
-  },
-  {
-   "source_path": "azure-monitor-ref/tables/aksauditadmin.md",
-   "redirect_url": "/azure/azure-monitor/reference",
-   "redirect_document_id": false
-  },
-  {
-   "source_path": "azure-monitor-ref/tables/akscontrolplane.md",
-   "redirect_url": "/azure/azure-monitor/reference",
-   "redirect_document_id": false
-  },
-  {
    "source_path": "azure-monitor-ref/tables/appserviceantivirusscanlogs.md",
    "redirect_url": "/azure/azure-monitor/reference",
    "redirect_document_id": false
