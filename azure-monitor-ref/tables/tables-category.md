@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/17/2024
+ms.date: 03/26/2024
 ---
 
 # Azure Monitor Log Analytics log tables organized by category
@@ -55,6 +55,8 @@ ms.date: 03/17/2024
 - [AGWFirewallLogs](agwfirewalllogs.md)
 - [AGWPerformanceLogs](agwperformancelogs.md)
 - [AHDSDicomAuditLogs](ahdsdicomauditlogs.md)
+- [AKSAudit](aksaudit.md)
+- [AKSAuditAdmin](aksauditadmin.md)
 - [AMSKeyDeliveryRequests](amskeydeliveryrequests.md)
 - [AMSLiveEventOperations](amsliveeventoperations.md)
 - [AMSMediaAccountHealth](amsmediaaccounthealth.md)
@@ -228,6 +230,9 @@ ms.date: 03/17/2024
 - [AHDSDicomAuditLogs](ahdsdicomauditlogs.md)
 - [AHDSDicomDiagnosticLogs](ahdsdicomdiagnosticlogs.md)
 - [AHDSMedTechDiagnosticLogs](ahdsmedtechdiagnosticlogs.md)
+- [AKSAudit](aksaudit.md)
+- [AKSAuditAdmin](aksauditadmin.md)
+- [AKSControlPlane](akscontrolplane.md)
 - [AMSKeyDeliveryRequests](amskeydeliveryrequests.md)
 - [AMSLiveEventOperations](amsliveeventoperations.md)
 - [AMSMediaAccountHealth](amsmediaaccounthealth.md)
@@ -514,6 +519,9 @@ ms.date: 03/17/2024
 
 
 ### Containers
+- [AKSAudit](aksaudit.md)
+- [AKSAuditAdmin](aksauditadmin.md)
+- [AKSControlPlane](akscontrolplane.md)
 - [ArcK8sAudit](arck8saudit.md)
 - [ArcK8sAuditAdmin](arck8sauditadmin.md)
 - [ArcK8sControlPlane](arck8scontrolplane.md)
@@ -630,6 +638,7 @@ ms.date: 03/17/2024
 - [DnsInventory](dnsinventory.md)
 - [EnrichedMicrosoft365AuditLogs](enrichedmicrosoft365auditlogs.md)
 - [MNFDeviceUpdates](mnfdeviceupdates.md)
+- [MNFSystemSessionHistoryUpdates](mnfsystemsessionhistoryupdates.md)
 - [MNFSystemStateMessageUpdates](mnfsystemstatemessageupdates.md)
 - [NSPAccessLogs](nspaccesslogs.md)
 - [NTAIpDetails](ntaipdetails.md)
@@ -717,7 +726,6 @@ ms.date: 03/17/2024
 - [DeviceTvmSoftwareVulnerabilities](devicetvmsoftwarevulnerabilities.md)
 - [DeviceTvmSoftwareVulnerabilitiesKB](devicetvmsoftwarevulnerabilitieskb.md)
 - [DynamicEventCollection](dynamiceventcollection.md)
-- [DynamicSummary](dynamicsummary.md)
 - [EmailAttachmentInfo](emailattachmentinfo.md)
 - [EmailEvents](emailevents.md)
 - [EmailPostDeliveryEvents](emailpostdeliveryevents.md)

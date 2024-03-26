@@ -7,15 +7,12 @@ ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
    
-ms.date: 03/05/2024
+ms.date: 03/26/2024
 
 
 ---
 
-# Resource log tables for microsoft.securityinsights/purview  
+# Log Analytics tables for microsoft.securityinsights/purview  
 
-
-| Table | Categories | Solutions|[Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)| Queries|
-|---|---|---|---|---|
-| [PurviewDataSensitivityLogs](/azure/azure-monitor/reference/tables/PurviewDataSensitivityLogs)<p>Data Sensitivity information for assets scanned using Purview. | security, resources | LogManagement | No| -|
+[!INCLUDE [table](./includes/microsoft-securityinsights_purview-include.md)]
 
