@@ -15,7 +15,7 @@ ms.custom: AppServiceConsoleLogs
 | ContainerId | string | Application container id |
 | Host | string | Host where the application is running |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
-| Level | string | Verbosity level of log |
+| Level | string | Verbosity level of log. If the record comes from `STDERR`, the level will be `Error`; if it comes from `STDOUT`, it will be `Informational`. |
 | OperationName | string | The name of the operation represented by this event. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | ResultDescription | string | Log message description |
