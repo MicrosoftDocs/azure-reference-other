@@ -4,7 +4,7 @@ description: Understand the supported services and event schemas for Azure Monit
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 03/26/2024
+ms.date: 04/01/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -76,7 +76,7 @@ Following table lists metrics and log categories available for each resource typ
 |Microsoft.DBforMySQL <a name="microsoftdbformysql"></a>|[flexibleServers](../supported-metrics/Microsoft-DBforMySQL-flexibleServers-metrics.md)<br>[servers](../supported-metrics/Microsoft-DBforMySQL-servers-metrics.md)<br>|[flexibleServers](../supported-logs/Microsoft-DBforMySQL-flexibleServers-logs.md)<br>[servers](../supported-logs/Microsoft-DBforMySQL-servers-logs.md)<br>|
 |Microsoft.DBforPostgreSQL <a name="microsoftdbforpostgresql"></a>|[flexibleServers](../supported-metrics/Microsoft-DBforPostgreSQL-flexibleServers-metrics.md)<br>[servers](../supported-metrics/Microsoft-DBforPostgreSQL-servers-metrics.md)<br>[serversv2](../supported-metrics/Microsoft-DBforPostgreSQL-serversv2-metrics.md)<br>|[flexibleServers](../supported-logs/Microsoft-DBforPostgreSQL-flexibleServers-logs.md)<br>[servers](../supported-logs/Microsoft-DBforPostgreSQL-servers-logs.md)<br>[serversv2](../supported-logs/Microsoft-DBforPostgreSQL-serversv2-logs.md)<br>|
 |Microsoft.DBForPostgreSQL <a name="microsoftdbforpostgresql"></a>|[serverGroupsv2](../supported-metrics/Microsoft-DBForPostgreSQL-serverGroupsv2-metrics.md)<br>|[serverGroupsv2](../supported-logs/Microsoft-DBForPostgreSQL-serverGroupsv2-logs.md)<br>|
-|Microsoft. <br>DesktopVirtualization <a name="microsoftdesktopvirtualization"></a>|N/A|[applicationgroups](../supported-logs/Microsoft-DesktopVirtualization-applicationgroups-logs.md)<br>[hostpools](../supported-logs/Microsoft-DesktopVirtualization-hostpools-logs.md)<br>[scalingplans](../supported-logs/Microsoft-DesktopVirtualization-scalingplans-logs.md)<br>[workspaces](../supported-logs/Microsoft-DesktopVirtualization-workspaces-logs.md)<br>|
+|Microsoft. <br>DesktopVirtualization <a name="microsoftdesktopvirtualization"></a>|N/A|[appAttachPackages](../supported-logs/Microsoft-DesktopVirtualization-appAttachPackages-logs.md)<br>[applicationgroups](../supported-logs/Microsoft-DesktopVirtualization-applicationgroups-logs.md)<br>[hostpools](../supported-logs/Microsoft-DesktopVirtualization-hostpools-logs.md)<br>[scalingplans](../supported-logs/Microsoft-DesktopVirtualization-scalingplans-logs.md)<br>[workspaces](../supported-logs/Microsoft-DesktopVirtualization-workspaces-logs.md)<br>|
 |Microsoft.DevCenter <a name="microsoftdevcenter"></a>|[devcenters](../supported-metrics/Microsoft-DevCenter-devcenters-metrics.md)<br>|[devcenters](../supported-logs/Microsoft-DevCenter-devcenters-logs.md)<br>|
 |Microsoft.Devices <a name="microsoftdevices"></a>|[IotHubs](../supported-metrics/Microsoft-Devices-IotHubs-metrics.md)<br>[provisioningServices](../supported-metrics/Microsoft-Devices-provisioningServices-metrics.md)<br>|[IotHubs](../supported-logs/Microsoft-Devices-IotHubs-logs.md)<br>[provisioningServices](../supported-logs/Microsoft-Devices-provisioningServices-logs.md)<br>|
 |Microsoft.DigitalTwins <a name="microsoftdigitaltwins"></a>|[digitalTwinsInstances](../supported-metrics/Microsoft-DigitalTwins-digitalTwinsInstances-metrics.md)<br>|[digitalTwinsInstances](../supported-logs/Microsoft-DigitalTwins-digitalTwinsInstances-logs.md)<br>|
