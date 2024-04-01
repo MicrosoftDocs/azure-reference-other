@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 03/26/2024
+ms.date: 04/01/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: microsoft.kubernetes/connectedClusters, naam
@@ -19,8 +19,8 @@ ms.custom: microsoft.kubernetes/connectedClusters, naam
 |`csi-aksarcnfs-controller` |csi-aksarcnfs-controller ||No|No||Yes |
 |`csi-aksarcsmb-controller` |csi-aksarcsmb-controller ||No|No||Yes |
 |`guard` |guard ||No|No||Yes |
-|`kube-apiserver` |Kubernetes API Server ||No|No||Yes |
-|`kube-audit` |Kubernetes Audit ||No|No||Yes |
-|`kube-audit-admin` |Kubernetes Audit Admin Logs ||No|No||Yes |
+|`kube-apiserver` |Kubernetes API Server |[ArcK8sControlPlane](/azure/azure-monitor/reference/tables/arck8scontrolplane)<p>Contains diagnostic logs for the Kubernetes API Server, Controller Manager, Scheduler, Cluster Autoscaler, Cloud Controller Manager, Guard, and the Azure CSI storage drivers. These diagnostic logs have distinct Category entries corresponding their diagnostic log setting (e.g. kube-apiserver, kube-audit-admin). Requires Diagnostic Settings to use the Resource Specific destination table.|Yes|No||Yes |
+|`kube-audit` |Kubernetes Audit |[ArcK8sAudit](/azure/azure-monitor/reference/tables/arck8saudit)<p>Contains all Kubernetes API Server audit logs including events with the get and list verbs. These events are useful for monitoring all of the interactions with the Kubernetes API. To limit the scope to modifying operations see the ArcK8sAuditAdmin table. Requires Diagnostic Settings to use the Resource Specific destination table.|Yes|No||Yes |
+|`kube-audit-admin` |Kubernetes Audit Admin Logs |[ArcK8sAuditAdmin](/azure/azure-monitor/reference/tables/arck8sauditadmin)<p>Contains Kubernetes API Server audit logs excluding events with the get and list verbs. These events are useful for monitoring resource modification requests made to the Kubernetes API. To see all modifying and non-modifying operations see the ArcK8sAudit table. Requires Diagnostic Settings to use the Resource Specific destination table.|Yes|No||Yes |
 |`kube-controller-manager` |Kubernetes Controller Manager ||No|No||Yes |
 |`kube-scheduler` |Kubernetes Scheduler ||No|No||Yes |
