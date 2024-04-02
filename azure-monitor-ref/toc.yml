@@ -675,6 +675,9 @@ items:
           - name: Microsoft.DBforPostgreSQL/serversv2
             href: supported-logs/microsoft-dbforpostgresql-serversv2-logs.md
             displayName: PostgreSQL Server Logs
+          - name: Microsoft.DesktopVirtualization/appAttachPackages
+            href: supported-logs/microsoft-desktopvirtualization-appattachpackages-logs.md
+            displayName: Management
           - name: Microsoft.DesktopVirtualization/applicationgroups
             href: supported-logs/microsoft-desktopvirtualization-applicationgroups-logs.md
             displayName: Checkpoint,Error,Management
@@ -914,8 +917,8 @@ items:
               Logs,Tunnel Diagnostic Logs
           - name: Microsoft.NetworkAnalytics/DataProducts
             href: supported-logs/microsoft-networkanalytics-dataproducts-logs.md
-            displayName: Database Query,Digestion,Ingestion,Delete ingested file,Output
-              storage read
+            displayName: Database Query,Digestion,Ingestion,Delete ingested file,Read
+              ingested file,Output storage read
           - name: Microsoft.NetworkCloud/bareMetalMachines
             href: supported-logs/microsoft-networkcloud-baremetalmachines-logs.md
             displayName: Security - Defender,Security - Break Glass Audit,Security -
@@ -928,7 +931,8 @@ items:
             displayName: Kubernetes Logs,VM Orchestration Logs
           - name: Microsoft.NetworkCloud/storageAppliances
             href: supported-logs/microsoft-networkcloud-storageappliances-logs.md
-            displayName: Storage Appliance alerts,Storage Appliance logs
+            displayName: Storage Appliance alerts,Storage Appliance audits,Storage Appliance
+              logs
           - name: Microsoft.NetworkFunction/azureTrafficCollectors
             href: supported-logs/microsoft-networkfunction-azuretrafficcollectors-logs.md
             displayName: Express Route Circuit IPFIX Flow Records,Public IP Flow Records
