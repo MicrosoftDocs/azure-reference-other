@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/26/2024
+ms.date: 04/08/2024
 ---
 
 # MNFSystemSessionHistoryUpdates
@@ -21,7 +21,7 @@ System session history update events in the Nexus network fabric devices.
 |**Resource types**|microsoft.managednetworkfabric/networkdevices|
 |**Categories**|Network|
 |**Solutions**| LogManagement|
-|**Basic log**|No|
+|**Basic log**|Yes|
 |**Ingestion-time transformation**|No|
 |**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/mnfsystemsessionhistoryupdates)|
 

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 04/08/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: NTAIpDetails
@@ -19,6 +19,7 @@ ms.custom: NTAIpDetails
 | Ip | string | Public IP whose information is provided in the record. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Location | string | For Azure Public IP: Azure region of virtual network/network interface/virtual machine to which the IP belongs OR Global for IP 168.63.129.16. For External Public IP and Malicious IP: 2-letter country code where IP is located (ISO 3166-1 alpha-2). |
+| Port | int | For Malicious IPs only: Port associated with this IP. |
 | PublicIpDetails | string | For AzurePublic IP: Azure Service owning the IP OR "Microsoft Virtual Public IP" for IP 168.63.129.16 . ExternalPublic/Malicious IP: WhoIS information of the IP. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SubType | string | Subtype for the flow logs. Use only FlowLog, other values of SubType_s are for internal workings of the product. |
@@ -27,3 +28,4 @@ ms.custom: NTAIpDetails
 | ThreatType | string | For Malicious IPs only: One of the threats from the list of currently allowed values. |
 | TimeGenerated | datetime | The time when the data gets ingested into the Log Analytics Workspace. |
 | Type | string | The name of the table |
+| Url | string | For Malicious IPs only: Url associated with this IP. |

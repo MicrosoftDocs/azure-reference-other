@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 04/01/2024
+ms.date: 04/08/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: AzureActivity
@@ -27,7 +27,7 @@ ms.custom: AzureActivity
 | EventDataId | string | Unique identifier of an event. |
 | EventSubmissionTimestamp | datetime | Timestamp when the event became available for querying. |
 | Hierarchy | string | Management group hierarchy of the management group or subscription that event belongs to. |
-| HTTPRequest | string | Blob describing the Http Request. Usually includes the “clientRequestId”, “clientIpAddress�� and “method” (HTTP method. For example, PUT). |
+| HTTPRequest | string | Blob describing the Http Request. Usually includes the “clientRequestId”, “clientIpAddress” and “method” (HTTP method. For example, PUT). |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Level | string | Level of the event. One of the following values: Critical, Error, Warning, Informational and Verbose. |
 | OperationId | string | GUID of the operation |
