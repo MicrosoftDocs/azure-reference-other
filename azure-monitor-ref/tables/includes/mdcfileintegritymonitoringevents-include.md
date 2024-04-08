@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 04/08/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: MDCFileIntegrityMonitoringEvents
@@ -10,7 +10,8 @@ ms.custom: MDCFileIntegrityMonitoringEvents
 
 | Column | Type | Description |
 |---|---|---|
-| AADTenantID | string | The AAD tenant Id of the subscription in which the monitored entity was created, renamed, modified or deleted. |
+| AADTenantID | string | The AAD tenant ID of the subscription in which the monitored entity was created, renamed, modified or deleted. |
+| AzureResourceId | string | The Azure resource ID of the resource whose monitored entity was created, renamed, modified or deleted. |
 | _BilledSize | real | The record size in bytes |
 | ChangeType | string | The type of change that occurred on the entity. For 'File' entity must be either 'Created', 'Modified', 'Renamed' or 'Deleted'. For 'Registry' entity must be either 'RegistryKeyCreated', 'RegistryKeyDeleted', 'RegistryValueSet',  'RegistryValueDeleted', 'RegistryKeyRenamed'. |
 | CloudIdentifier | string | The cloud identifier of the resource. |
