@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 03/26/2024
+ms.date: 04/15/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Tables for microsoft.eventhub/namespaces
@@ -14,6 +14,7 @@ ms.custom: Tables for microsoft.eventhub/namespaces
 | [AZMSArchiveLogs](/azure/azure-monitor/reference/tables/AZMSArchiveLogs)<p>Captures information about Event Hubs capture operations, specifically, logs related to capture errors. | resources, audit | LogManagement | Yes| -|
 | [AZMSAutoscaleLogs](/azure/azure-monitor/reference/tables/AZMSAutoscaleLogs)<p>Captures auto-inflate operations done on an Event Hubs namespace. | resources, audit | LogManagement | Yes| -|
 | [AZMSCustomerManagedKeyUserLogs](/azure/azure-monitor/reference/tables/AZMSCustomerManagedKeyUserLogs)<p>Captures operations related to customer-managed key. | resources, audit | LogManagement | Yes| -|
+| [AZMSDiagnosticErrorLogs](/azure/azure-monitor/reference/tables/AZMSDiagnosticErrorLogs)<p>Captures aggregated diagnostic information such as client errors , server busy errors and quota exceeded errors for various data plane access operations (such as send or receive messages) in Azure Event Hubs and Azure Service Bus. | audit | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/azmsdiagnosticerrorlogs)|
 | [AZMSKafkaCoordinatorLogs](/azure/azure-monitor/reference/tables/AZMSKafkaCoordinatorLogs)<p>Captures kafka coordinator operations related to Event Hubs. | resources, audit | LogManagement | Yes| -|
 | [AZMSKafkaUserErrorLogs](/azure/azure-monitor/reference/tables/AZMSKafkaUserErrorLogs)<p>Captures information about kafka APIs called on Event Hubs. | resources, audit | LogManagement | Yes| -|
 | [AZMSOperationalLogs](/azure/azure-monitor/reference/tables/AZMSOperationalLogs)<p>Captures all management operations that are performed on the Azure Event Hubs/Azure Service Bus namespace and its entities. | resources, audit | LogManagement | Yes| [Yes](/azure/azure-monitor/reference/queries/azmsoperationallogs)|

@@ -4,7 +4,7 @@ description: Field definitions for Azure Monitor resource log / log analytics ta
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 03/26/2024
+ms.date: 04/15/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -885,6 +885,7 @@ Microsoft.EventHub/namespaces
 - [AZMSApplicationMetricLogs](azmsapplicationmetriclogs.md)
 - [AZMSOperationalLogs](azmsoperationallogs.md)
 - [AZMSRunTimeAuditLogs](azmsruntimeauditlogs.md)
+- [AZMSDiagnosticErrorLogs](azmsdiagnosticerrorlogs.md)
 - [AZMSVnetConnectionEvents](azmsvnetconnectionevents.md)
 - [AZMSArchiveLogs](azmsarchivelogs.md)
 - [AZMSAutoscaleLogs](azmsautoscalelogs.md)
@@ -1045,6 +1046,7 @@ Microsoft.ContainerService/managedClusters
 
 Microsoft.Network/LoadBalancers  
 
+- [ALBHealthEvent](albhealthevent.md)
 - [AzureActivity](azureactivity.md)
 
 ### Log Analytics workspaces  
@@ -1305,8 +1307,8 @@ Microsoft.NetworkCloud/storageAppliances
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
-- [NCSStorageLogs](ncsstoragelogs.md)
 - [NCSStorageAlerts](ncsstoragealerts.md)
+- [NCSStorageLogs](ncsstoragelogs.md)
 
 ### NGINXaaS  
 
@@ -1376,6 +1378,7 @@ Microsoft.Relay/namespaces
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AZMSVnetConnectionEvents](azmsvnetconnectionevents.md)
+- [AZMSDiagnosticErrorLogs](azmsdiagnosticerrorlogs.md)
 - [AZMSHybridConnectionsEvents](azmshybridconnectionsevents.md)
 
 ### Search Services  
@@ -1397,6 +1400,7 @@ Microsoft.ServiceBus/namespaces
 - [AZMSVnetConnectionEvents](azmsvnetconnectionevents.md)
 - [AZMSRunTimeAuditLogs](azmsruntimeauditlogs.md)
 - [AZMSApplicationMetricLogs](azmsapplicationmetriclogs.md)
+- [AZMSDiagnosticErrorLogs](azmsdiagnosticerrorlogs.md)
 
 ### Service Fabric Clusters  
 
