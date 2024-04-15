@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/26/2024
+ms.date: 04/15/2024
 ---
 
 # Azure Monitor Log Analytics log tables organized by category
@@ -77,6 +77,7 @@ ms.date: 03/26/2024
 - [AZMSArchiveLogs](azmsarchivelogs.md)
 - [AZMSAutoscaleLogs](azmsautoscalelogs.md)
 - [AZMSCustomerManagedKeyUserLogs](azmscustomermanagedkeyuserlogs.md)
+- [AZMSDiagnosticErrorLogs](azmsdiagnosticerrorlogs.md)
 - [AZMSHybridConnectionsEvents](azmshybridconnectionsevents.md)
 - [AZMSKafkaCoordinatorLogs](azmskafkacoordinatorlogs.md)
 - [AZMSKafkaUserErrorLogs](azmskafkausererrorlogs.md)
@@ -159,6 +160,7 @@ ms.date: 03/26/2024
 
 
 ### Azure Monitor
+- [ALBHealthEvent](albhealthevent.md)
 - [AMWMetricsUsageDetails](amwmetricsusagedetails.md)
 - [Alert](alert.md)
 - [AlertHistory](alerthistory.md)
@@ -233,6 +235,7 @@ ms.date: 03/26/2024
 - [AKSAudit](aksaudit.md)
 - [AKSAuditAdmin](aksauditadmin.md)
 - [AKSControlPlane](akscontrolplane.md)
+- [ALBHealthEvent](albhealthevent.md)
 - [AMSKeyDeliveryRequests](amskeydeliveryrequests.md)
 - [AMSLiveEventOperations](amsliveeventoperations.md)
 - [AMSMediaAccountHealth](amsmediaaccounthealth.md)
@@ -641,6 +644,7 @@ ms.date: 03/26/2024
 - [MNFSystemSessionHistoryUpdates](mnfsystemsessionhistoryupdates.md)
 - [MNFSystemStateMessageUpdates](mnfsystemstatemessageupdates.md)
 - [NSPAccessLogs](nspaccesslogs.md)
+- [NTAInsights](ntainsights.md)
 - [NTAIpDetails](ntaipdetails.md)
 - [NTANetAnalytics](ntanetanalytics.md)
 - [NTATopologyDetails](ntatopologydetails.md)
