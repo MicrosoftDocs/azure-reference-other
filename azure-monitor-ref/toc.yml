@@ -1635,6 +1635,8 @@ items:
             href: tables/aksauditadmin.md
           - name: AKSControlPlane
             href: tables/akscontrolplane.md
+          - name: ALBHealthEvent
+            href: tables/albhealthevent.md
           - name: AMSKeyDeliveryRequests
             href: tables/amskeydeliveryrequests.md
           - name: AMSLiveEventOperations
@@ -1739,6 +1741,8 @@ items:
             href: tables/azmsautoscalelogs.md
           - name: AZMSCustomerManagedKeyUserLogs
             href: tables/azmscustomermanagedkeyuserlogs.md
+          - name: AZMSDiagnosticErrorLogs
+            href: tables/azmsdiagnosticerrorlogs.md
           - name: AZMSHybridConnectionsEvents
             href: tables/azmshybridconnectionsevents.md
           - name: AZMSKafkaCoordinatorLogs
@@ -2915,6 +2919,8 @@ items:
             href: queries/AKSAuditAdmin.md
           - name: AKSControlPlane
             href: queries/AKSControlPlane.md
+          - name: ALBHealthEvent
+            href: queries/ALBHealthEvent.md
           - name: AMSKeyDeliveryRequests
             href: queries/AMSKeyDeliveryRequests.md
           - name: AMSLiveEventOperations
@@ -2973,6 +2979,8 @@ items:
             href: queries/AZFWThreatIntel.md
           - name: AZKVAuditLogs
             href: queries/AZKVAuditLogs.md
+          - name: AZMSDiagnosticErrorLogs
+            href: queries/AZMSDiagnosticErrorLogs.md
           - name: AZMSHybridConnectionsEvents
             href: queries/AZMSHybridConnectionsEvents.md
           - name: AZMSOperationalLogs

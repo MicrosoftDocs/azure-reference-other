@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 04/15/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ApiManagementGatewayLogs
@@ -68,3 +68,4 @@ ms.custom: ApiManagementGatewayLogs
 | Type | string | The name of the table |
 | Url | string |   |
 | UserId | string |   |
+| WorkspaceId | string | ID of a workspace for which the request API operation is a part of |
