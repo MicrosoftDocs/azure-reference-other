@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 04/08/2024
+ms.date: 04/15/2024
 ---
 
 # NTAInsights
@@ -19,7 +19,7 @@ Traffic Analytics insights are provided for flow data which shows anomalies in d
 |Attribute|Value|
 |---|---|
 |**Resource types**|-|
-|**Categories**|-|
+|**Categories**|Network|
 |**Solutions**| LogManagement|
 |**Basic log**|No|
 |**Ingestion-time transformation**|No|
