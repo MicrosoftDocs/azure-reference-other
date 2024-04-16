@@ -4,7 +4,7 @@ description: Azure Monitor log analytics queries by tables
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 03/26/2024
+ms.date: 04/15/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -406,6 +406,10 @@ ms.reviewer: lualderm
 - [Cluster Autoscaler logs](AKSControlPlane.md#cluster-autoscaler-logs)
 - [Kubernetes API server logs](AKSControlPlane.md#kubernetes-api-server-logs)
 
+## [ALBHealthEvent](ALBHealthEvent.md)
+
+- [LatestSnatPortExhaustionPerLBFrontend](ALBHealthEvent.md#latestsnatportexhaustionperlbfrontend)
+
 ## [AMSKeyDeliveryRequests](AMSKeyDeliveryRequests.md)
 
 - [Key delivery successful request count by key type](AMSKeyDeliveryRequests.md#key-delivery-successful-request-count-by-key-type)
@@ -568,6 +572,12 @@ ms.reviewer: lualderm
 - [How fast is this KeyVault serving requests?](AZKVAuditLogs.md#how-fast-is-this-keyvault-serving-requests)
 - [What changes occurred last month?](AZKVAuditLogs.md#what-changes-occurred-last-month)
 - [Who is calling this KeyVault?](AZKVAuditLogs.md#who-is-calling-this-keyvault)
+
+## [AZMSDiagnosticErrorLogs](AZMSDiagnosticErrorLogs.md)
+
+- [Publish detailed error logs](AZMSDiagnosticErrorLogs.md#publish-detailed-error-logs)
+- [Publish detailed error logs](AZMSDiagnosticErrorLogs.md#publish-detailed-error-logs)
+- [Publish detailed error logs](AZMSDiagnosticErrorLogs.md#publish-detailed-error-logs)
 
 ## [AZMSHybridConnectionsEvents](AZMSHybridConnectionsEvents.md)
 
