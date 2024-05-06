@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 03/26/2024
+ms.date: 05/06/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Web/sites, naam
@@ -13,6 +13,9 @@ ms.custom: Microsoft.Web/sites, naam
 
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
+|**Always Ready Function Execution Count**<br><br>Always Ready Function Execution Count. For Flex Consumption FunctionApps only. |`AlwaysReadyFunctionExecutionCount` |Count |Total |`Instance`|PT1M |Yes|
+|**Always Ready Function Execution Units**<br><br>Always Ready Function Execution Units. For Flex Consumption FunctionApps only. |`AlwaysReadyFunctionExecutionUnits` |Count |Total |`Instance`|PT1M |Yes|
+|**Always Ready Units**<br><br>Always Ready Units. For Flex Consumption FunctionApps only. |`AlwaysReadyUnits` |Count |Total |`Instance`|PT1M |Yes|
 |**Connections**<br><br>The number of bound sockets existing in the sandbox (w3wp.exe and its child processes). A bound socket is created by calling bind()/connect() APIs and remains until said socket is closed with CloseHandle()/closesocket(). For WebApps and FunctionApps. |`AppConnections` |Count |Average, Count, Maximum, Minimum |`Instance`|PT1M |Yes|
 |**Average memory working set**<br><br>The average amount of memory used by the app, in megabytes (MiB). For WebApps and FunctionApps. |`AverageMemoryWorkingSet` |Bytes |Average |`Instance`|PT1M |Yes|
 |**Average Response Time (deprecated)**<br><br>The average time taken for the app to serve requests, in seconds. For WebApps and FunctionApps. |`AverageResponseTime` |Seconds |Average |`Instance`|PT1M |Yes|
@@ -46,6 +49,8 @@ ms.custom: Microsoft.Web/sites, naam
 |**IO Write Bytes Per Second**<br><br>The rate at which the app process is writing bytes to I/O operations. For WebApps and FunctionApps. |`IoWriteBytesPerSecond` |BytesPerSecond |Total |`Instance`|PT1M |Yes|
 |**IO Write Operations Per Second**<br><br>The rate at which the app process is issuing write I/O operations. For WebApps and FunctionApps. |`IoWriteOperationsPerSecond` |BytesPerSecond |Total |`Instance`|PT1M |Yes|
 |**Memory working set**<br><br>The current amount of memory used by the app, in MiB. For WebApps and FunctionApps. |`MemoryWorkingSet` |Bytes |Average |`Instance`|PT1M |Yes|
+|**On Demand Function Execution Count**<br><br>On Demand Function Execution Count. For Flex Consumption FunctionApps only. |`OnDemandFunctionExecutionCount` |Count |Total |`Instance`|PT1M |Yes|
+|**On Demand Function Execution Units**<br><br>On Demand Function Execution Units. For Flex Consumption FunctionApps only. |`OnDemandFunctionExecutionUnits` |Count |Total |`Instance`|PT1M |Yes|
 |**Private Bytes**<br><br>Private Bytes is the current size, in bytes, of memory that the app process has allocated that can't be shared with other processes. For WebApps and FunctionApps. |`PrivateBytes` |Bytes |Average |`Instance`|PT1M |Yes|
 |**Requests**<br><br>The total number of requests regardless of their resulting HTTP status code. For WebApps and FunctionApps. |`Requests` |Count |Total |`Instance`|PT1M |Yes|
 |**Requests In Application Queue**<br><br>The number of requests in the application request queue. For WebApps and FunctionApps. |`RequestsInApplicationQueue` |Count |Average |`Instance`|PT1M |Yes|
