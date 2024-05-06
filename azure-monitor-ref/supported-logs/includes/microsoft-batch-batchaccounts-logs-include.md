@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 03/05/2024
+ms.date: 05/06/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Batch/batchaccounts, naam
@@ -15,4 +15,4 @@ ms.custom: Microsoft.Batch/batchaccounts, naam
 |---|---|---|---|---|---|---|
 |`AuditLog` |Audit Logs |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftbatch)|Yes |
 |`ServiceLog` |Service Logs |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftbatch)|No |
-|`ServiceLogs` |Service Logs ||No|No||Yes |
+|`ServiceLogs` |Service Logs (deprecated) ||No|No||Yes |

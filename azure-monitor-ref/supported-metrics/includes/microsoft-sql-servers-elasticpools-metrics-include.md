@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 05/06/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Sql/servers/elasticpools, naam
@@ -13,7 +13,7 @@ ms.custom: Microsoft.Sql/servers/elasticpools, naam
 
 |Category|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|---|
-|Basic|**Data space allocated**<br><br>Data space allocated. Not applicable to hyperscale |`allocated_data_storage` |Bytes |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
+|Basic|**Data space allocated**<br><br>Data space allocated |`allocated_data_storage` |Bytes |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Basic|**Data space allocated percent**<br><br>Data space allocated percent. Not applicable to hyperscale |`allocated_data_storage_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Basic|**App CPU billed**<br><br>App CPU billed. Applies to serverless elastic pools. |`app_cpu_billed` |Count |Total |\<none\>|PT1M |Yes|
 |Basic|**App CPU percentage**<br><br>App CPU percentage. Applies to serverless elastic pools. |`app_cpu_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
@@ -34,7 +34,7 @@ ms.custom: Microsoft.Sql/servers/elasticpools, naam
 |InstanceAndAppAdvanced|**SQL Server process memory percent**<br><br>Memory usage as a percentage of the SQL DB process. Applies to elastic pools. (This metric is equivalent to sql_instance_memory_percent, and will be removed in the future.) |`sqlserver_process_memory_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Basic|**Data max size**<br><br>Data max size. Not applicable to hyperscale |`storage_limit` |Bytes |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Basic|**Data space used percent**<br><br>Data space used percent. Not applicable to hyperscale |`storage_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
-|Basic|**Data space used**<br><br>Data space used. Not applicable to hyperscale |`storage_used` |Bytes |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
+|Basic|**Data space used**<br><br>Data space used |`storage_used` |Bytes |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |InstanceAndAppAdvanced|**Tempdb Data File Size Kilobytes**<br><br>Space used in tempdb data files in kilobytes. |`tempdb_data_size` |Count |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |InstanceAndAppAdvanced|**Tempdb Log File Size Kilobytes**<br><br>Space used in tempdb transaction log file in kilobytes. |`tempdb_log_size` |Count |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |InstanceAndAppAdvanced|**Tempdb Percent Log Used**<br><br>Space used percentage in tempdb transaction log file |`tempdb_log_used_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|

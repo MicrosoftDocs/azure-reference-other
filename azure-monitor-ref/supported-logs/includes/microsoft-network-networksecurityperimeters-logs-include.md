@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 04/01/2024
+ms.date: 05/06/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Network/networkSecurityPerimeters, naam
@@ -17,7 +17,7 @@ ms.custom: Microsoft.Network/networkSecurityPerimeters, naam
 |`NspCrossPerimeterOutboundAllowed` |Cross perimeter outbound access allowed by perimeter link. ||No|No||Yes |
 |`NspIntraPerimeterInboundAllowed` |Inbound access allowed within same perimeter. |[NSPAccessLogs](/azure/azure-monitor/reference/tables/nspaccesslogs)<p>Logs of Network Security Perimeter (NSP) inbound access allowed based on NSP access rules.|No|No||Yes |
 |`NspOutboundAttempt` |Outbound attempted to same or different perimeter. ||No|No||Yes |
-|`NspPrivateInboundAllowed` |Private endpoint traffic allowed. |[NSPAccessLogs](/azure/azure-monitor/reference/tables/nspaccesslogs)<p>Logs of Network Security Perimeter (NSP) inbound access allowed based on NSP access rules.|No|No||Yes |
+|`NspPrivateInboundAllowed` |Private endpoint traffic allowed. ||No|No||Yes |
 |`NspPublicInboundPerimeterRulesAllowed` |Public inbound access allowed by NSP access rules. |[NSPAccessLogs](/azure/azure-monitor/reference/tables/nspaccesslogs)<p>Logs of Network Security Perimeter (NSP) inbound access allowed based on NSP access rules.|No|No||Yes |
 |`NspPublicInboundPerimeterRulesDenied` |Public inbound access denied by NSP access rules. |[NSPAccessLogs](/azure/azure-monitor/reference/tables/nspaccesslogs)<p>Logs of Network Security Perimeter (NSP) inbound access allowed based on NSP access rules.|No|No||Yes |
 |`NspPublicInboundResourceRulesAllowed` |Public inbound access allowed by PaaS resource rules. |[NSPAccessLogs](/azure/azure-monitor/reference/tables/nspaccesslogs)<p>Logs of Network Security Perimeter (NSP) inbound access allowed based on NSP access rules.|No|No||Yes |

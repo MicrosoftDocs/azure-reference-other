@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 05/06/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DBforMySQL/flexibleServers, naam
@@ -15,7 +15,8 @@ ms.custom: Microsoft.DBforMySQL/flexibleServers, naam
 |---|---|---|---|---|---|---|---|
 |Errors|**Aborted Connections**<br><br>Aborted Connections |`aborted_connections` |Count |Total |\<none\>|PT1M |Yes|
 |Traffic|**Active Connections**<br><br>Active Connections |`active_connections` |Count |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
-|Saturation|**Available Memory Bytes**<br><br>Amount of physical memory, in bytes. |`available_memory_bytes` |Bytes |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
+|Traffic|**Active Transactions**<br><br>Number of active transactions. |`active_transactions` |Count |Total, Average, Maximum, Minimum |\<none\>|PT1M |Yes|
+|Saturation|**Available Memory Bytes (deprecated)**<br><br>Amount of physical memory, in bytes. Deprecated, Please check memory_percent for the memory usage. |`available_memory_bytes` |Bytes |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**Backup Storage Used**<br><br>Backup Storage Used |`backup_storage_used` |Bytes |Average, Maximum, Minimum |\<none\>|PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
 |Saturation|**Binlog Storage Used**<br><br>Storage used by Binlog files. |`binlog_storage_used` |Bytes |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Traffic|**Com Alter Table**<br><br>The number of times ALTER TABLE statement has been executed. |`Com_alter_table` |Count |Total |\<none\>|PT1M |Yes|
@@ -45,7 +46,10 @@ ms.custom: Microsoft.DBforMySQL/flexibleServers, naam
 |Latency|**Innodb Row Lock Time**<br><br>The total time spent in acquiring row locks for InnoDB tables, in milliseconds. |`Innodb_row_lock_time` |Milliseconds |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Latency|**Innodb Row Lock Waits**<br><br>The number of times operations on InnoDB tables had to wait for a row lock. |`Innodb_row_lock_waits` |Count |Total, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**Storage IO Percent**<br><br>Storage I/O consumption percent |`io_consumption_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
-|Saturation|**Host Memory Percent**<br><br>Host Memory Percent |`memory_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
+|Traffic|**MySQL Lock Deadlocks**<br><br>Number of deadlocks. |`lock_deadlocks` |Count |Total, Average, Maximum, Minimum |\<none\>|PT1M |Yes|
+|Traffic|**MySQL Lock Row Lock Waits**<br><br>Number of times a row lock had to be waited for (innodb_row_lock_waits). |`lock_row_lock_waits` |Count |Total, Average, Maximum, Minimum |\<none\>|PT1M |Yes|
+|Traffic|**MySQL Lock Timeouts**<br><br>Number of lock timeouts. |`lock_timeouts` |Count |Total, Average, Maximum, Minimum |\<none\>|PT1M |Yes|
+|Saturation|**Memory Percent**<br><br>Memory Percent |`memory_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Traffic|**Host Network Out**<br><br>Host Network egress in bytes |`network_bytes_egress` |Bytes |Total |\<none\>|PT1M |Yes|
 |Traffic|**Host Network In**<br><br>Host Network ingress in bytes |`network_bytes_ingress` |Bytes |Total |\<none\>|PT1M |Yes|
 |Saturation|**Others Storage Used**<br><br>Storage used by other files. |`others_storage_used` |Bytes |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
@@ -64,3 +68,5 @@ ms.custom: Microsoft.DBforMySQL/flexibleServers, naam
 |Saturation|**Storage Used**<br><br>Storage Used |`storage_used` |Bytes |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**Threads Running**<br><br>The number of threads that are not sleeping. |`Threads_running` |Count |Total, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Traffic|**Total Connections**<br><br>Total Connections |`total_connections` |Count |Total |\<none\>|PT1M |Yes|
+|Traffic|**MySQL History List Length**<br><br>Length of the TRX_RSEG_HISTORY list. |`trx_rseg_history_len` |Count |Total, Average, Maximum, Minimum |\<none\>|PT1M |Yes|
+|Latency|**MySQL Uptime**<br><br>The number of seconds that the server has been up. |`Uptime` |Seconds |Total, Maximum |\<none\>|PT1M |Yes|
