@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 05/06/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ContainerAppSystemLogs
@@ -11,6 +11,8 @@ ms.custom: ContainerAppSystemLogs
 | Column | Type | Description |
 |---|---|---|
 | _BilledSize | real | The record size in bytes |
+| ComponentName | string | The name of component name. |
+| ComponentType | string | The type of component such as SpringCloudConfig, SpringCloudEureka, etc. |
 | ContainerAppName | string | The name of Container App generating this log. |
 | ContainerName | string | The name of the container generating this log. |
 | Count | int | How many times this log has been seen. |
