@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 04/01/2024
+ms.date: 05/06/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DataShare/accounts, naam
@@ -15,5 +15,5 @@ ms.custom: Microsoft.DataShare/accounts, naam
 |---|---|---|---|---|---|---|
 |`ReceivedShareSnapshots` |Received Share Snapshots |[MicrosoftDataShareReceivedSnapshotLog](/azure/azure-monitor/reference/tables/microsoftdatasharereceivedsnapshotlog)<p>Data Share consumer side synchronization logs.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/microsoftdatasharereceivedsnapshotlog)|No |
 |`SentShareSnapshots` |Sent Share Snapshots |[MicrosoftDataShareSentSnapshotLog](/azure/azure-monitor/reference/tables/microsoftdatasharesentsnapshotlog)<p>Data Share provider side synchronization logs.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/microsoftdatasharesentsnapshotlog)|No |
-|`Shares` |Shares ||No|Yes||No |
-|`ShareSubscriptions` |Share Subscriptions ||No|Yes||No |
+|`Shares` |Shares |[MicrosoftDataShareShareLog](/azure/azure-monitor/reference/tables/microsoftdatasharesharelog)<p>Microsoft Data Share Share Log|No|No||No |
+|`ShareSubscriptions` |Share Subscriptions ||No|No||No |

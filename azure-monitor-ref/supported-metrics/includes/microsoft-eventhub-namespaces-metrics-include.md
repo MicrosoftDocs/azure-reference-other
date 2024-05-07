@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 05/06/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.EventHub/Namespaces, naam
@@ -42,6 +42,8 @@ ms.custom: Microsoft.EventHub/Namespaces, naam
 |**Outgoing Messages**<br><br>Outgoing Messages for Microsoft.EventHub. |`OutgoingMessages` |Count |Total |`EntityName`|PT1M |Yes|
 |**Outgoing Messages (obsolete) (Deprecated)**<br><br>Total outgoing messages for a namespace. This metric is deprecated. Please use Outgoing Messages metric instead (Deprecated) |`OUTMSGS` |Count |Total |\<none\>|PT1M |Yes|
 |**Quota Exceeded Errors.**<br><br>Quota Exceeded Errors for Microsoft.EventHub. |`QuotaExceededErrors` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
+|**ReplicationLagCount**<br><br>Replication lag by message count |`ReplicationLagCount` |Count |Maximum, Minimum, Average |`EntityName`|PT1M |No|
+|**ReplicationLagDuration**<br><br>Replication lag by time duration |`ReplicationLagDuration` |Seconds |Maximum, Minimum, Average |`EntityName`|PT1M |Yes|
 |**Server Errors.**<br><br>Server Errors for Microsoft.EventHub. |`ServerErrors` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
 |**Size**<br><br>Size of an EventHub in Bytes. |`Size` |Bytes |Average, Minimum, Maximum |`EntityName`|PT1M |No|
 |**Successful Requests**<br><br>Successful Requests for Microsoft.EventHub. |`SuccessfulRequests` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
