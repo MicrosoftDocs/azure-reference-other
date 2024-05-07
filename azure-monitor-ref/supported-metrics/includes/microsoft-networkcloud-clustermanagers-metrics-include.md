@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 03/26/2024
+ms.date: 05/06/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkCloud/clusterManagers, naam
@@ -13,4 +13,8 @@ ms.custom: Microsoft.NetworkCloud/clusterManagers, naam
 
 |Category|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|---|
+|Nexus Cluster|**Cluster Connection Status**<br><br>Tracks changes in the connection status of the Cluster(s) managed by the Cluster Manager. The metric gets a value of 0 when the Cluster is connected and 1 when disconnected. The reason filter describes the connection status itself. |`NexusClusterConnectionStatus` |Count |Average |`clusterName`, `reason`|PT1M |No|
 |Nexus Cluster|**Cluster Deploy Requests**<br><br>Number of cluster deploy requests |`NexusClusterDeployClusterRequests` |Count |Average |`clusterVersion`|PT1M |No|
+|Nexus Cluster|**Cluster Machine Upgrade**<br><br>Nexus machine upgrade request, successful will have a value of 0 while unsuccessful while have a value of 1. |`NexusClusterMachineUpgrade` |Count |Average |`clusterName`, `clusterVersion`, `result`, `upgradedFromVersion`, `upgradedToVersion`, `upgradeStrategy`|PT1M |No|
+|Nexus Cluster|**Cluster Management Bundle Upgrade**<br><br>Nexus Cluster management bundle upgrade, successful will have a value of 0 while unsuccessful while have a value of 1. |`NexusClusterManagementBundleUpgrade` |Count |Average |`clusterName`, `clusterVersion`, `result`, `upgradedFromVersion`, `upgradedToVersion`|PT1M |No|
+|Nexus Cluster|**Cluster Runtime Bundle Upgrade**<br><br>Nexus Cluster runtime bundle upgrade, successful will have a value of 0 while unsuccessful while have a value of 1. |`NexusClusterRuntimeBundleUpgrade` |Count |Average |`clusterName`, `clusterVersion`, `result`, `upgradedFromVersion`, `upgradedToVersion`|PT1M |No|
