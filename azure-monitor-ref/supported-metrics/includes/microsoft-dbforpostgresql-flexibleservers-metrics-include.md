@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 05/06/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DBforPostgreSQL/flexibleServers, naam
@@ -28,6 +28,7 @@ ms.custom: Microsoft.DBforPostgreSQL/flexibleServers, naam
 |Saturation|**CPU Credits Consumed**<br><br>Total number of credits consumed by the database server |`cpu_credits_consumed` |Count |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**CPU Credits Remaining**<br><br>Total number of credits available to burst |`cpu_credits_remaining` |Count |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**CPU percent**<br><br>CPU percent |`cpu_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
+|Database|**Database Size (Preview)**<br><br>Total database size |`database_size_bytes` |Bytes |Average, Maximum, Minimum |`DatabaseName`|PT30M, PT1H, PT6H, PT12H, P1D |Yes|
 |Database|**Deadlocks**<br><br>Number of deadlocks detected in this database |`deadlocks` |Count |Total |`DatabaseName`|PT1M |Yes|
 |Saturation|**Disk Bandwidth Consumed Percentage**<br><br>Percentage of disk bandwidth consumed per minute |`disk_bandwidth_consumed_percentage` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**Disk IOPS Consumed Percentage**<br><br>Percentage of disk I/Os consumed per minute |`disk_iops_consumed_percentage` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
@@ -52,6 +53,7 @@ ms.custom: Microsoft.DBforPostgreSQL/flexibleServers, naam
 |Activity|**Oldest xmin Age**<br><br>Age in units of the oldest xmin. It indicated how many transactions passed since oldest xmin |`oldest_backend_xmin_age` |Count |Maximum |\<none\>|PT1M |Yes|
 |Replication|**Max Physical Replication Lag**<br><br>Maximum lag across all asynchronous physical replication slots |`physical_replication_delay_in_bytes` |Bytes |Maximum, Minimum, Average |\<none\>|PT1M |Yes|
 |Replication|**Read Replica Lag**<br><br>Read Replica lag in seconds |`physical_replication_delay_in_seconds` |Seconds |Maximum, Minimum, Average |\<none\>|PT1M |Yes|
+|Saturation|**CPU percent from platform (Preview)**<br><br>CPU percent from platform |`platform_cpu_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**Read IOPS**<br><br>Number of data disk I/O read operations per second |`read_iops` |Count |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**Read Throughput Bytes/Sec**<br><br>Bytes read per second from the data disk during monitoring period |`read_throughput` |Count |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |PgBouncer metrics|**Active server connections**<br><br>Connections to PostgreSQL that are in use by a client connection |`server_connections_active` |Count |Maximum, Minimum, Average |`DatabaseName`|PT1M |Yes|

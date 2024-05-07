@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 05/06/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.ManagedNetworkFabric/networkDevices, naam
@@ -71,3 +71,4 @@ ms.custom: Microsoft.ManagedNetworkFabric/networkDevices, naam
 |Resource Utilization|**Power Supply Output Voltage**<br><br>Output voltage supplied by the power supply (volts). |`PowerSupplyOutputVoltage` |Unspecified |Average, Minimum, Maximum, Total, Count |`FabricId`, `ComponentName`|PT1M |Yes|
 |Resource Utilization|**Temperature Instantaneous**<br><br>The instantaneous value of temperature in degrees Celsius of the component. |`TemperatureInstant` |Unspecified |Average, Minimum, Maximum, Total, Count |`FabricId`, `ComponentName`|PT1M |Yes|
 |Resource Utilization|**Temperature Max**<br><br>Max temperature in degrees Celsius of the component. The maximum value of the statistic over the sampling period. |`TemperatureMax` |Unspecified |Average, Minimum, Maximum, Total, Count |`FabricId`, `ComponentName`|PT1M |Yes|
+|Transceiver Status|**Transceiver Supply Voltage**<br><br>The instantaneous value of supply voltage to the transceiver in volts. |`TransceiverSupplyVoltage` |Unspecified |Average, Minimum, Maximum, Total, Count |`FabricId`, `ComponentName`|PT1M |Yes|

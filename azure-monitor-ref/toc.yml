@@ -239,14 +239,20 @@ items:
             href: supported-metrics/microsoft-media-mediaservices-streamingendpoints-metrics.md
           - name: Microsoft.Media/videoanalyzers
             href: supported-metrics/microsoft-media-videoanalyzers-metrics.md
+          - name: Microsoft.MessagingConnectors/connectors
+            href: supported-metrics/microsoft-messagingconnectors-connectors-metrics.md
           - name: Microsoft.MixedReality/remoteRenderingAccounts
             href: supported-metrics/microsoft-mixedreality-remoterenderingaccounts-metrics.md
           - name: Microsoft.MixedReality/spatialAnchorsAccounts
             href: supported-metrics/microsoft-mixedreality-spatialanchorsaccounts-metrics.md
+          - name: Microsoft.MobileNetwork/mobilenetworks/sites
+            href: supported-metrics/microsoft-mobilenetwork-mobilenetworks-sites-metrics.md
           - name: Microsoft.MobileNetwork/packetcorecontrolplanes
             href: supported-metrics/microsoft-mobilenetwork-packetcorecontrolplanes-metrics.md
           - name: Microsoft.MobileNetwork/packetcorecontrolplanes/packetcoredataplanes
             href: supported-metrics/microsoft-mobilenetwork-packetcorecontrolplanes-packetcoredataplanes-metrics.md
+          - name: Microsoft.MobileNetwork/radioAccessNetworks
+            href: supported-metrics/microsoft-mobilenetwork-radioaccessnetworks-metrics.md
           - name: Microsoft.Monitor/accounts
             href: supported-metrics/microsoft-monitor-accounts-metrics.md
           - name: Microsoft.NetApp/netAppAccounts/capacityPools
@@ -279,7 +285,7 @@ items:
             href: supported-metrics/microsoft-network-frontdoors-metrics.md
           - name: Microsoft.Network/loadBalancers
             href: supported-metrics/microsoft-network-loadbalancers-metrics.md
-          - name: Microsoft.Network/natGateways
+          - name: Microsoft.Network/natgateways
             href: supported-metrics/microsoft-network-natgateways-metrics.md
           - name: Microsoft.Network/networkInterfaces
             href: supported-metrics/microsoft-network-networkinterfaces-metrics.md
@@ -512,7 +518,7 @@ items:
             displayName: Audit Logs,Device Events
           - name: Microsoft.Batch/batchaccounts
             href: supported-logs/microsoft-batch-batchaccounts-logs.md
-            displayName: Audit Logs,Service Logs,Service Logs
+            displayName: Audit Logs,Service Logs,Service Logs (deprecated)
           - name: microsoft.botservice/botservices
             href: supported-logs/microsoft-botservice-botservices-logs.md
             displayName: Requests from the channels to the bot
@@ -706,6 +712,9 @@ items:
           - name: Microsoft.Devices/provisioningServices
             href: supported-logs/microsoft-devices-provisioningservices-logs.md
             displayName: Device Operations,Service Operations
+          - name: Microsoft.DevOpsInfrastructure/pools
+            href: supported-logs/microsoft-devopsinfrastructure-pools-logs.md
+            displayName: Resource Provisioning Logs
           - name: Microsoft.DigitalTwins/digitalTwinsInstances
             href: supported-logs/microsoft-digitaltwins-digitaltwinsinstances-logs.md
             displayName: DataHistoryOperation,DigitalTwinsOperation,EventRoutesOperation,ModelsOperation,QueryOperation,ResourceProviderOperation
@@ -743,8 +752,8 @@ items:
           - name: Microsoft.EventHub/Namespaces
             href: supported-logs/microsoft-eventhub-namespaces-logs.md
             displayName: Application Metrics Logs,Archive Logs,Auto Scale Logs,Customer
-              Managed Key Logs,Diagnostic Error Logs,VNet/IP Filtering
-              Connection Logs,Kafka Coordinator Logs,Kafka User Error
+              Managed Key Logs,DataDR Logs,Diagnostic Error Logs,VNet/IP
+              Filtering Connection Logs,Kafka Coordinator Logs,Kafka User Error
               Logs,Operational Logs,Runtime Audit Logs
           - name: Microsoft.HealthcareApis/services
             href: supported-logs/microsoft-healthcareapis-services-logs.md
@@ -807,8 +816,8 @@ items:
             href: supported-logs/microsoft-managednetworkfabric-networkdevices-logs.md
             displayName: Bi-Directional Forwarding Detection Updates,Component State
               Updates,Interface State Updates,Interface Vxlan Updates,BGP
-              Neighbor Updates,Network Instance Updates,System State Message
-              Updates
+              Neighbor Updates,Network Instance Updates,System Session History
+              Updates,System State Message Updates
           - name: Microsoft.Media/mediaservices
             href: supported-logs/microsoft-media-mediaservices-logs.md
             displayName: Key Delivery Requests,Media Account Health Status
@@ -861,7 +870,7 @@ items:
             displayName: Frontdoor Access Log,Frontdoor Web Application Firewall Log
           - name: Microsoft.Network/loadBalancers
             href: supported-logs/microsoft-network-loadbalancers-logs.md
-            displayName: Load Balancer Alert Events,Load Balancer Probe Health Status
+            displayName: Load Balancer Health Event
           - name: Microsoft.Network/networkManagers
             href: supported-logs/microsoft-network-networkmanagers-logs.md
             displayName: Connectivity Configuration Change,Network Group Membership
@@ -926,6 +935,9 @@ items:
               Info,Security - Notice,Security - Warning,System - Critical,System
               - Debug,System - Error,System - Info,System - Notice,System -
               Warning
+          - name: Microsoft.NetworkCloud/clusterManagers
+            href: supported-logs/microsoft-networkcloud-clustermanagers-logs.md
+            displayName: Cluster Manager Deploy or Upgrade Logs
           - name: Microsoft.NetworkCloud/clusters
             href: supported-logs/microsoft-networkcloud-clusters-logs.md
             displayName: Kubernetes Logs,VM Orchestration Logs
@@ -935,7 +947,8 @@ items:
               logs
           - name: Microsoft.NetworkFunction/azureTrafficCollectors
             href: supported-logs/microsoft-networkfunction-azuretrafficcollectors-logs.md
-            displayName: Express Route Circuit IPFIX Flow Records,Public IP Flow Records
+            displayName: Microsoft Peering Metadata,Private Peering Metadata,Express Route
+              Circuit IPFIX Flow Records
           - name: Microsoft.NotificationHubs/namespaces
             href: supported-logs/microsoft-notificationhubs-namespaces-logs.md
             displayName: Operational Logs
@@ -981,13 +994,13 @@ items:
             href: supported-logs/microsoft-recoveryservices-vaults-logs.md
             displayName: Addon Azure Backup Alert Data,Addon Azure Backup Job Data,Addon
               Azure Backup Policy Data,Addon Azure Backup Protected Instance
-              Data,Addon Azure Backup Storage Data,ASR Jobs,ASR Replicated
-              Items,Azure Backup Operations,Azure Backup Reporting Data,Azure
-              Site Recovery Events,Azure Site Recovery Jobs,Azure Site Recovery
-              Protected Disk Data Churn,Azure Site Recovery Recovery
-              Points,Azure Site Recovery Replicated Items,Azure Site Recovery
-              Replication Data Upload Rate,Azure Site Recovery Replication
-              Stats,Core Azure Backup Data
+              Data,Addon Azure Backup Storage Data,Azure Site Recovery
+              Replicated Items Details,Azure Backup Operations,Azure Backup
+              Reporting Data,Azure Site Recovery Events,Azure Site Recovery
+              Jobs,Azure Site Recovery Protected Disk Data Churn,Azure Site
+              Recovery Recovery Points,Azure Site Recovery Replicated
+              Items,Azure Site Recovery Replication Data Upload Rate,Azure Site
+              Recovery Replication Stats,Core Azure Backup Data
           - name: Microsoft.Relay/namespaces
             href: supported-logs/microsoft-relay-namespaces-logs.md
             displayName: HybridConnections Events,VNet/IP Filtering Connection Logs
