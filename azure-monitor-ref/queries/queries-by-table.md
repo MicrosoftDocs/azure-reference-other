@@ -4,7 +4,7 @@ description: Azure Monitor log analytics queries by tables
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 04/15/2024
+ms.date: 05/13/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -444,6 +444,7 @@ ms.reviewer: lualderm
 - [Ingestion operation on storage](AOIStorage.md#ingestion-operation-on-storage)
 - [Delete operation on storage](AOIStorage.md#delete-operation-on-storage)
 - [Read operation on storage](AOIStorage.md#read-operation-on-storage)
+- [Read operation on input storage](AOIStorage.md#read-operation-on-input-storage)
 
 ## [ASCDeviceEvents](ASCDeviceEvents.md)
 
@@ -575,7 +576,6 @@ ms.reviewer: lualderm
 
 ## [AZMSDiagnosticErrorLogs](AZMSDiagnosticErrorLogs.md)
 
-- [Publish detailed error logs](AZMSDiagnosticErrorLogs.md#publish-detailed-error-logs)
 - [Publish detailed error logs](AZMSDiagnosticErrorLogs.md#publish-detailed-error-logs)
 - [Publish detailed error logs](AZMSDiagnosticErrorLogs.md#publish-detailed-error-logs)
 

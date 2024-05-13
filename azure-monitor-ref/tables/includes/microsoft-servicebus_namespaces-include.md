@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 04/15/2024
+ms.date: 05/13/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Tables for microsoft.servicebus/namespaces
@@ -11,7 +11,7 @@ ms.custom: Tables for microsoft.servicebus/namespaces
 | Table | Categories | Solutions|[Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)| Queries|
 |---|---|---|---|---|
 | [AZMSApplicationMetricLogs](/azure/azure-monitor/reference/tables/AZMSApplicationMetricLogs)<p>Captures application metrics(incoming/outgoing, successful/failed, etc. message delivery) for Azure Event Hubs and Azure Service Bus. | resources, audit | LogManagement | Yes| -|
-| [AZMSDiagnosticErrorLogs](/azure/azure-monitor/reference/tables/AZMSDiagnosticErrorLogs)<p>Captures aggregated diagnostic information such as client errors , server busy errors and quota exceeded errors for various data plane access operations (such as send or receive messages) in Azure Event Hubs and Azure Service Bus. | audit | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/azmsdiagnosticerrorlogs)|
+| [AZMSDiagnosticErrorLogs](/azure/azure-monitor/reference/tables/AZMSDiagnosticErrorLogs)<p>Captures aggregated diagnostic information such as client errors , server busy errors and quota exceeded errors for various data plane access operations (such as send or receive messages) in Azure Event Hubs and Azure Service Bus. | audit | LogManagement | Yes| [Yes](/azure/azure-monitor/reference/queries/azmsdiagnosticerrorlogs)|
 | [AZMSOperationalLogs](/azure/azure-monitor/reference/tables/AZMSOperationalLogs)<p>Captures all management operations that are performed on the Azure Event Hubs/Azure Service Bus namespace and its entities. | resources, audit | LogManagement | Yes| [Yes](/azure/azure-monitor/reference/queries/azmsoperationallogs)|
 | [AZMSRunTimeAuditLogs](/azure/azure-monitor/reference/tables/AZMSRunTimeAuditLogs)<p>Captures aggregated diagnostic information for various data plane access operations (such as send or receive messages) in Azure Event Hubs and Azure Service Bus. Runtime audit logs are currently available only in premium tier. | audit | LogManagement | Yes| [Yes](/azure/azure-monitor/reference/queries/azmsruntimeauditlogs)|
 | [AZMSVnetConnectionEvents](/azure/azure-monitor/reference/tables/AZMSVnetConnectionEvents)<p>Captures all virtual network and IP filtering logs for Azure Event Hubs and Azure Service Bus. These would only be emitted if namespace allows access from selected networks or from specific IP address (IP Filter rules). | resources, audit | LogManagement | Yes| [Yes](/azure/azure-monitor/reference/queries/azmsvnetconnectionevents)|
