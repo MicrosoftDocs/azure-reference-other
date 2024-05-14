@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/05/2024
+ms.date: 05/13/2024
 ---
 
 # MDCFileIntegrityMonitoringEvents
@@ -21,7 +21,7 @@ View changes of Windows and Linux Files, as well as of software registry keys. E
 |**Resource types**|-|
 |**Categories**|Security|
 |**Solutions**| LogManagement|
-|**Basic log**|No|
+|**Basic log**|Yes|
 |**Ingestion-time transformation**|No|
 |**Sample Queries**|-|
 

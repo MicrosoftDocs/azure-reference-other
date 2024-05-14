@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 05/13/2024
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
 
@@ -45,17 +45,17 @@ ACSRoomsIncomingOperations
 ### Rooms operation summary  
 
 
-The average statistics of room properties such as participants count for operation version 2023-03-31-preview.  
+The average statistics of room properties such as participants count for operation version 2024-04-15.  
 
 ```query
 ACSRoomsIncomingOperations
 // where OperationName == "<operation>" // This can be uncommented and specified to calculate only a single operation's duration percentiles
-| where OperationVersion == "2023-10-30-preview"
+| where OperationVersion == "2024-04-15" 
 | summarize TotalRoomCount = dcount(RoomId),
             AvgAddedParticipantsCount = avg(AddedRoomParticipantsCount),
             AvgRemovedParticipantsCount = avg(RemovedRoomParticipantsCount),
             AvgUpsertedParticipantsCount = avg(UpsertedRoomParticipantsCount),
             AvgRoomLifespan = avg(RoomLifespan),
-            AvgPstnDialOutEnabled = avg(PstnDialOutEnabled)
+            SumPstnDialoutEnabled=countif(PstnDialOutEnabled==1)
 ```
 

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 04/15/2024
+ms.date: 05/13/2024
 ---
 
 # AZMSDiagnosticErrorLogs
@@ -18,10 +18,10 @@ Captures aggregated diagnostic information such as client errors , server busy e
 
 |Attribute|Value|
 |---|---|
-|**Resource types**|microsoft.servicebus/namespaces,<br>microsoft.eventhub/namespaces,<br>microsoft.relay/namespaces|
+|**Resource types**|microsoft.servicebus/namespaces,<br>microsoft.eventhub/namespaces|
 |**Categories**|Audit|
 |**Solutions**| LogManagement|
-|**Basic log**|No|
+|**Basic log**|Yes|
 |**Ingestion-time transformation**|No|
 |**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/azmsdiagnosticerrorlogs)|
 

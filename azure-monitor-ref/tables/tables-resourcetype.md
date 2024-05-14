@@ -4,7 +4,7 @@ description: Field definitions for Azure Monitor resource log / log analytics ta
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 04/15/2024
+ms.date: 05/13/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -1378,7 +1378,6 @@ Microsoft.Relay/namespaces
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AZMSVnetConnectionEvents](azmsvnetconnectionevents.md)
-- [AZMSDiagnosticErrorLogs](azmsdiagnosticerrorlogs.md)
 - [AZMSHybridConnectionsEvents](azmshybridconnectionsevents.md)
 
 ### Search Services  

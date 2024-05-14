@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 04/15/2024
+ms.date: 05/13/2024
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
 
@@ -22,21 +22,7 @@ Publish detailed error logs for diagnostics.
 ```query
 AZMSDiagnosticErrorLogs
 | where Provider =~ "EventHub"
-| project  ActivityName, _ResourceId, OperationResult,errorMessage
-| summarize by ActivityName
-```
-
-
-
-### Publish detailed error logs  
-
-
-Publish detailed error logs for diagnostics.  
-
-```query
-AZMSDiagnosticErrorLogs
-| where Provider =~ "Relay"
-| project  ActivityName, _ResourceId, OperationResult,errorMessage
+| project  ActivityName, _ResourceId, OperationResult,ErrorMessage
 | summarize by ActivityName
 ```
 
@@ -50,7 +36,7 @@ Publish detailed error logs for diagnostics.
 ```query
 AZMSDiagnosticErrorLogs
 | where Provider =~ "ServiceBus"
-| project  ActivityName, _ResourceId, OperationResult,errorMessage
+| project  ActivityName, _ResourceId, OperationResult,ErrorMessage
 | summarize by ActivityName
 ```
 
