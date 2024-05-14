@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 04/15/2024
+ms.date: 05/13/2024
 ---
 
 # ALBHealthEvent
@@ -21,7 +21,7 @@ Table of events related to the availability and health of a load balancer resour
 |**Resource types**|microsoft.network/loadbalancers|
 |**Categories**|Azure Resources, Azure Monitor|
 |**Solutions**| LogManagement|
-|**Basic log**|No|
+|**Basic log**|Yes|
 |**Ingestion-time transformation**|No|
 |**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/albhealthevent)|
 
