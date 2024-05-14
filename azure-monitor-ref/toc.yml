@@ -2562,6 +2562,8 @@ items:
             href: tables/securitybaselinesummary.md
           - name: SecurityDetection
             href: tables/securitydetection.md
+          - name: SecurityEvent
+            href: tables/securityevent.md
           - name: SecurityIncident
             href: tables/securityincident.md
           - name: SecurityIoTRawEvent

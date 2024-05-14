@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 05/13/2024
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
 
@@ -48,6 +48,19 @@ Lists all Read operation performed on storage of a dataproduct.
 ```query
 AOIStorage
 | where Category has_cs "ReadStorage"
+| take 100
+```
+
+
+
+### Read operation on input storage  
+
+
+Lists all Read operation performed on the input storage of a dataproduct.  
+
+```query
+AOIStorage
+| where Category has_cs "IngestionRead"
 | take 100
 ```
 
