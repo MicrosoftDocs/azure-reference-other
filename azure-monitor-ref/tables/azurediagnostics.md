@@ -19,6 +19,10 @@ The resource log for each Azure service has a unique set of columns. The AzureDi
 
 Azure services that use resource-specific mode store data in a table specific to that service and do not use the AzureDiagnostics table. See [Resource Types](#resource-types) below for the services that use each method. See [Azure resource logs](/azure/azure-monitor/platform/resource-logs#send-to-log-analytics-workspace) for details on the differences.
 
+> [!NOTE]
+> The AzureDiagnostics table is a custom log table created exclusively by the Azure Monitor pipeline the first time an Azure resource begins sending logs in Azure Diagnostics mode. Unlike other tables, the AzureDiagnostics table cannot be created via an ARM template or tables API. Consequently, modifying the table's default retention values before its creation is not possible.
+
+
 ## AdditionalFields column
 
 Unlike other tables, **AzureDiagnostics** is much more susceptible to exceeding the 500 column limit imposed for any table in a Log Analytics workspace due to the wide assortment of Azure Resources capable of sending data to this table. To ensure that no data is lost due to the number of active columns exceeding this 500 column limit, AzureDiagnostics column creation is handled in a different manner to other tables.
