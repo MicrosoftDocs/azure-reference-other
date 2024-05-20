@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 05/06/2024
+ms.date: 05/20/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.App/containerapps, naam
@@ -14,6 +14,7 @@ ms.custom: Microsoft.App/containerapps, naam
 |Category|Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|---|
 |Basic|**Reserved Cores**<br><br>Number of reserved cores for container app revisions |`CoresQuotaUsed` |Count |Maximum, Minimum |`revisionName`|PT1M |Yes|
+|Basic|**Job Executions**<br><br>Executions run by the Container Apps Job |`Executions` |Count |Total, Average, Maximum, Minimum |`state`, `jobName`, `executionName`|PT1M |Yes|
 |Java|**jvm.buffer.count**<br><br>Number of buffers in the memory pool |`JvmBufferCount` |Count |Average, Maximum, Minimum |`revisionName`, `podName`, `container`, `poolName`|PT1M |Yes|
 |Java|**jvm.buffer.memory.limit**<br><br>Amount of total memory capacity of buffers (in bytes) |`JvmBufferMemoryLimit` |Bytes |Average, Maximum, Minimum |`revisionName`, `podName`, `container`, `poolName`|PT1M |Yes|
 |Java|**jvm.buffer.memory.usage**<br><br>Amount of memory used by buffers, such as direct memory (in bytes) |`JvmBufferMemoryUsage` |Bytes |Average, Maximum, Minimum |`revisionName`, `podName`, `container`, `poolName`|PT1M |Yes|
@@ -38,5 +39,7 @@ ms.custom: Microsoft.App/containerapps, naam
 |Basic|**Network In Bytes**<br><br>Network received bytes |`RxBytes` |Bytes |Average, Total, Maximum, Minimum |`revisionName`, `podName`|PT1M |Yes|
 |Basic|**Total Reserved Cores**<br><br>Number of total reserved cores for the container app |`TotalCoresQuotaUsed` |Count |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Basic|**Network Out Bytes**<br><br>Network transmitted bytes |`TxBytes` |Bytes |Average, Total, Maximum, Minimum |`revisionName`, `podName`|PT1M |Yes|
+|Basic|**Usage Bytes**<br><br>Container App Job memory used in bytes. |`Usage Bytes` |Bytes |Total, Average, Maximum, Minimum |`state`, `jobName`, `executionName`|PT1M |Yes|
 |Basic|**CPU Usage**<br><br>CPU consumed by the container app, in nano cores. 1,000,000,000 nano cores = 1 core |`UsageNanoCores` |NanoCores |Total, Average, Maximum, Minimum |`revisionName`, `podName`|PT1M |Yes|
+|Basic|**CPU Usage**<br><br>CPU consumed by the container app job, in nano cores. 1,000,000,000 nano cores = 1 core |`UsageNanoCores` |NanoCores |Total, Average, Maximum, Minimum |`state`, `jobName`, `executionName`|PT1M |Yes|
 |Basic|**Memory Working Set Bytes**<br><br>Container App working set memory used in bytes. |`WorkingSetBytes` |Bytes |Total, Average, Maximum, Minimum |`revisionName`, `podName`|PT1M |Yes|

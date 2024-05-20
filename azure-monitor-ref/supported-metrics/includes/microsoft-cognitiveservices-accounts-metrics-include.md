@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 03/26/2024
+ms.date: 05/20/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.CognitiveServices/accounts, naam
@@ -82,6 +82,7 @@ ms.custom: Microsoft.CognitiveServices/accounts, naam
 |ContentSafety - Risks&Safety|**Potentially Abusive User Count**<br><br>Number of potentially abusive user that detected over a period of time. You can add a filter or apply splitting by the following dimension: ModelDeploymentName. |`RAIAbusiveUsersCount` |Count |Total |`Region`, `ModelDeploymentName`|PT1M |Yes|
 |ContentSafety - Risks&Safety|**Harmful Volume Detected**<br><br>Number of calls made to Azure OpenAI API and detected as harmful(both block model and annotate mode) by content filter applied over a period of time. You can add a filter or apply splitting by the following dimensions: ModelDeploymentName, ModelName and TextType. |`RAIHarmfulRequests` |Count |Total |`Region`, `ModelDeploymentName`, `ModelName`, `ModelVersion`, `ApiName`, `TextType`, `Category`, `Severity`|PT1M |Yes|
 |ContentSafety - Risks&Safety|**Blocked Volume**<br><br>Number of calls made to Azure OpenAI API and rejected by content filter applied over a period of time. You can add a filter or apply splitting by the following dimensions: ModelDeploymentName, ModelName and TextType. |`RAIRejectedRequests` |Count |Total |`Region`, `ModelDeploymentName`, `ModelName`, `ModelVersion`, `ApiName`, `TextType`, `Category`|PT1M |Yes|
+|ContentSafety - Risks&Safety|**Safety System Event**<br><br>System event for risks & safety monitoring. You can add a filter or apply splitting by the following dimension: EventType. |`RAISystemEvent` |Count |Average |`Region`, `EventType`|PT1M |Yes|
 |ContentSafety - Risks&Safety|**Total Volume Sent For Safety Check**<br><br>Number of calls made to Azure OpenAI API and detected by content filter applied over a period of time. You can add a filter or apply splitting by the following dimensions: ModelDeploymentName, ModelName. |`RAITotalRequests` |Count |Total |`Region`, `ModelDeploymentName`, `ModelName`, `ModelVersion`, `ApiName`|PT1M |Yes|
 |Cognitive Services - HTTP Requests|**Ratelimit**<br><br>The current ratelimit of the ratelimit key. Do not use for Azure OpenAI service. |`Ratelimit` |Count |Total |`Region`, `RatelimitKey`|PT1M |Yes|
 |Rewards|**Average Reward Per Event**<br><br>Average reward per event. |`Reward` |Count |Average |`BaselineAction`, `ChosenActionId`, `MatchesBaseline`, `NonDefaultReward`, `Mode`, `RunId`|PT1M |Yes|

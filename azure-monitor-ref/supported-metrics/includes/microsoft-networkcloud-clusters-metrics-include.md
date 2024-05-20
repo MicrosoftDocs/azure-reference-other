@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 03/05/2024
+ms.date: 05/20/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkCloud/clusters, naam
@@ -33,6 +33,7 @@ ms.custom: Microsoft.NetworkCloud/clusters, naam
 |CoreDNS|**CoreDNS Health Request Failures Total**<br><br>The number of times the self health check failed |`CorednsHealthRequestFailuresTotal` |Count |Average |`Pod Name`|PT1M |No|
 |CoreDNS|**CoreDNS Panics Total**<br><br>Total number of panics |`CorednsPanicsTotal` |Count |Average |`Pod Name`|PT1M |No|
 |CoreDNS|**CoreDNS Reload Failed Total**<br><br>Total number of failed reload attempts |`CorednsReloadFailedTotal` |Count |Average |`Pod Name`, `Namespace`|PT1M |No|
+|Etcd|**Etcd Database Utilization Percentage**<br><br>The percentage of the Etcd Database utilized |`EtcdDBUtilizationPercent` |Percent |Average |`Pod Name`|PT1M |No|
 |Etcd|**Etcd Disk Backend Commit Duration Sec**<br><br>The latency distribution of commits called by the backend |`EtcdDiskBackendCommitDurationSecondsSum` |Seconds |Total |`Component`, `Pod Name`, `Tier`|PT1M |No|
 |Etcd|**Etcd Disk WAL Fsync Duration Sec**<br><br>The sum of latency distributions of 'fsync' called by the write-ahead log (WAL) |`EtcdDiskWalFsyncDurationSecondsSum` |Seconds |Total |`Component`, `Pod Name`, `Tier`|PT1M |No|
 |Etcd|**Etcd Server Health Failures**<br><br>Total server health failures |`EtcdServerHealthFailures` |Count |Average |`Pod Name`|PT1M |No|
@@ -62,7 +63,8 @@ ms.custom: Microsoft.NetworkCloud/clusters, naam
 |Deployment|**Deployment Replicas Ready**<br><br>Number of deployment replicas ready |`KubeDeploymentStatusReplicasReady` |Count |Average |`Deployment`, `Namespace`|PT1M |No|
 |Deployment|**Deployment Replicas Unavailable**<br><br>Number of deployment replicas unavailable |`KubeDeploymentStatusReplicasUnavailable` |Count |Average |`Deployment`, `Namespace`|PT1M |No|
 |Job|**Jobs Active**<br><br>Number of jobs active |`KubeJobStatusActive` |Count |Average |`Job`, `Namespace`|PT1M |No|
-|Job|**Jobs Failed**<br><br>Number and reason of jobs failed |`KubeJobStatusFailed` |Count |Average |`Job`, `Namespace`, `Reason`|PT1M |No|
+|Job|**Jobs Failed (Deprecated)**<br><br>Number and reason of jobs failed |`KubeJobStatusFailed` |Count |Average |`Job`, `Namespace`, `Reason`|PT1M |No|
+|Job|**Jobs Failed**<br><br>Number and reason of jobs failed |`KubeJobStatusFailedReasons` |Count |Average |`Job`, `Namespace`, `Reason`|PT1M |No|
 |Job|**Jobs Succeeded**<br><br>Number of jobs succeeded |`KubeJobStatusSucceeded` |Count |Average |`Job`, `Namespace`|PT1M |No|
 |Kubelet|**Kubelet Running Containers**<br><br>Number of containers currently running |`KubeletRunningContainers` |Count |Average |`Container State`, `Host`|PT1M |No|
 |Kubelet|**Kubelet Running Pods**<br><br>Number of pods running on the node |`KubeletRunningPods` |Count |Average |`Host`|PT1M |No|
@@ -82,7 +84,8 @@ ms.custom: Microsoft.NetworkCloud/clusters, naam
 |Pod|**Container Restarts**<br><br>The number of container restarts |`KubePodContainerStatusRestartsTotal` |Count |Average |`Container`, `Namespace`, `Pod`|PT1M |No|
 |Pod|**Container Status Running**<br><br>The number of containers with a status of 'running' |`KubePodContainerStatusRunning` |Count |Average |`Container`, `Namespace`, `Pod`|PT1M |No|
 |Pod|**Container Status Terminated**<br><br>The number of containers with a status of 'terminated' |`KubePodContainerStatusTerminated` |Count |Average |`Container`, `Namespace`, `Pod`|PT1M |No|
-|Pod|**Container Status Terminated Reason**<br><br>The number and reason of containers with a status of 'terminated' |`KubePodContainerStatusTerminatedReason` |Count |Average |`Container`, `Namespace`, `Pod`, `Reason`|PT1M |No|
+|Pod|**Container Status Terminated Reason (Deprecated)**<br><br>The number and reason of containers with a status of 'terminated' |`KubePodContainerStatusTerminatedReason` |Count |Average |`Container`, `Namespace`, `Pod`, `Reason`|PT1M |No|
+|Pod|**Container Status Terminated Reason**<br><br>The number and reason of containers with a status of 'terminated' |`KubePodContainerStatusTerminatedReasons` |Count |Average |`Container`, `Namespace`, `Pod`, `Reason`|PT1M |No|
 |Pod|**Container Status Waiting**<br><br>The number of containers with a status of 'waiting' |`KubePodContainerStatusWaiting` |Count |Average |`Container`, `Namespace`, `Pod`|PT1M |No|
 |Pod|**Container Status Waiting Reason**<br><br>The number and reason of containers with a status of 'waiting' |`KubePodContainerStatusWaitingReason` |Count |Average |`Container`, `Namespace`, `Pod`, `Reason`|PT1M |No|
 |Pod|**Pod Deletion Timestamp (Preview)**<br><br>The timestamp of the pod's deletion |`KubePodDeletionTimestamp` |Count |Average |`Namespace`, `Pod`|PT1M |No|
@@ -122,6 +125,8 @@ ms.custom: Microsoft.NetworkCloud/clusters, naam
 |VMOrchestrator|**Kubevirt VMI Storage Read Times Total (Preview)**<br><br>Total time in milliseconds (ms) spent on read operations |`KubevirtVmiStorageReadTimesMsTotal` |Milliseconds |Average |`Drive`, `Name`, `Node`|PT1M |No|
 |VMOrchestrator|**Kubevirt VMI Storage Write Times Total (Preview)**<br><br>Total time in milliseconds (ms) spent on write operations |`KubevirtVmiStorageWriteTimesMsTotal` |Milliseconds |Average |`Drive`, `Name`, `Node`|PT1M |No|
 |Network Cloud|**CPU Pinning Map (Preview)**<br><br>Pinning map of virtual CPUs (vCPUs) to CPUs |`NcVmiCpuAffinity` |Count |Average |`CPU`, `NUMA Node`, `VMI Namespace`, `VMI Node`, `VMI Name`|PT1M |No|
+|Nexus Cluster|**Cluster Heartbeat Connection Status**<br><br>Indicates whether the Cluster is having issues communicating with the Cluster Manager. The value of the metric is 0 when the connection is healthy and 1 when it is unhealthy. |`NexusClusterHeartbeatConnectionStatus` |Count |Average |`Reason`|PT1M |No|
+|Nexus Cluster|**Cluster Machine Group Upgrade**<br><br>Tracks Cluster Machine Group Upgrades performed. The value of the metric is 0 when the result is successful and 1 for all other results. |`NexusClusterMachineGroupUpgrade` |Count |Average |`Machine Group`, `Result`, `Upgraded From Version`, `Upgraded To Version`|PT1M |No|
 |Calico|**Typha Client Latency Secs**<br><br>Per-client latency. I.e. how far behind the current state each client is. |`TyphaClientLatencySecsCount` |Count |Average |`Pod Name`|PT1M |No|
 |Calico|**Typha Connections Accepted**<br><br>Total number of connections accepted over time |`TyphaConnectionsAccepted` |Count |Average |`Pod Name`|PT1M |No|
 |Calico|**Typha Connections Dropped**<br><br>Total number of connections dropped due to rebalancing |`TyphaConnectionsDropped` |Count |Average |`Pod Name`|PT1M |No|

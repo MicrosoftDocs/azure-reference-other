@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 05/20/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Sql/servers/databases, naam
@@ -19,6 +19,7 @@ ms.custom: Microsoft.Sql/servers/databases, naam
 |Basic|**App CPU billed HA replicas**<br><br>Sum of app CPU billed across all HA replicas associated with the primary replica or a named replica. |`app_cpu_billed_ha_replicas` |Count |Total |\<none\>|PT1M |Yes|
 |Basic|**App CPU percentage**<br><br>App CPU percentage. Applies to serverless databases. |`app_cpu_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Basic|**App memory percentage**<br><br>App memory percentage. Applies to serverless databases. |`app_memory_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
+|Basic|**Availability (Preview)**<br><br>The percentage of SLA compliant availability for the database. Availability is calculated based on connections and for each one-minute data point the value will be either 100% if connection(s) succeed or 0% if all connections fail due to system errors. |`availability` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Basic|**Data storage size**<br><br>Data storage size. Applies to Hyperscale databases. |`base_blob_size_bytes` |Bytes |Average, Maximum, Minimum |\<none\>|P1D |Yes|
 |Basic|**Blocked by Firewall**<br><br>Blocked by Firewall |`blocked_by_firewall` |Count |Total, Count |\<none\>|PT1M |Yes|
 |Basic|**Cache hit percentage**<br><br>Cache hit percentage. Applies only to data warehouses. |`cache_hit_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
