@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 05/20/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Cdn/profiles, naam
@@ -23,4 +23,5 @@ ms.custom: Microsoft.Cdn/profiles, naam
 |Traffic|**Request Size**<br><br>The number of bytes sent as requests from clients to AFDX. |`RequestSize` |Bytes |Total |`HttpStatus`, `HttpStatusGroup`, `ClientRegion`, `ClientCountry`, `Endpoint`|PT1M, PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
 |Traffic|**Response Size**<br><br>The number of bytes sent as responses from HTTP/S proxy to clients |`ResponseSize` |Bytes |Total |`HttpStatus`, `HttpStatusGroup`, `ClientRegion`, `ClientCountry`, `Endpoint`|PT1M, PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
 |Latency|**Total Latency**<br><br>The time calculated from when the client request was received by the HTTP/S proxy until the client acknowledged the last response byte from the HTTP/S proxy |`TotalLatency` |MilliSeconds |Average |`HttpStatus`, `HttpStatusGroup`, `ClientRegion`, `ClientCountry`, `Endpoint`|PT1M, PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
+|Traffic|**Web Application Firewall JS Challenge Request Count**<br><br>The number of JS challenge requests evaluated by the Web Application Firewall |`WebApplicationFirewallJsRequestCount` |Count |Total |`PolicyName`, `RuleName`, `Action`|PT1M, PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
 |Traffic|**Web Application Firewall Request Count**<br><br>The number of client requests processed by the Web Application Firewall |`WebApplicationFirewallRequestCount` |Count |Total |`PolicyName`, `RuleName`, `Action`|PT1M, PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|

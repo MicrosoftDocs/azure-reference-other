@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 05/20/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetApp/netAppAccounts/capacityPools/volumes, naam
@@ -13,4 +13,4 @@ ms.custom: Microsoft.NetApp/netAppAccounts/capacityPools/volumes, naam
   
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
-|`ANFFileAccess` |ANF File Access ||No|No||Yes |
+|`ANFFileAccess` |ANF File Access |[ANFFileAccess](/azure/azure-monitor/reference/tables/anffileaccess)<p>This table maps to audit logs generated in an ANF Volume. Here audit log caters to any file system operations done by users.|No|No|[Queries](/azure/azure-monitor/reference/queries/anffileaccess)|Yes |
