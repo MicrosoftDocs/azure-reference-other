@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 03/26/2024
+ms.date: 05/20/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
@@ -22,6 +22,7 @@ ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
 |CPU|**CPU Usage Soft IRQ**<br><br>CPU usage soft IRQ refers to the CPU time used by software interrupt requests |`CpuUsageSoftirq` |Count |Average |`Host`, `CPU`|PT1M |No|
 |CPU|**CPU Usage Steal**<br><br>CPU usage steal, also known as steal time, is the percentage of time a virtual CPU waits for a real CPU while the hypervisor is servicing another virtual processor. |`CpuUsageSteal` |Count |Average |`Host`, `CPU`|PT1M |No|
 |CPU|**CPU Usage System**<br><br>System CPU usage is the percentage of a processor core total working time that is used to process data |`CpuUsageSystem` |Count |Average |`Host`, `CPU`|PT1M |No|
+|CPU|**CPU Usage Total**<br><br>Total CPU usage is the percentage of a processor core total working time that is used to process data |`CpuUsageTotal` |Percent |Average |`Host`, `CPU`|PT1M |Yes|
 |CPU|**CPU Usage User**<br><br>CPU usage user refers to the percentage of CPU time used by user space processes |`CpuUsageUser` |Count |Average |`Host`, `CPU`|PT1M |No|
 |System|**Host Boot Seconds (Preview)**<br><br>Unix time of last boot |`HostBootTimeSeconds` |Seconds |Average |`Host`|PT1M |No|
 |Disk|**Host Disk Reads Completed**<br><br>Disk reads completed by node |`HostDiskReadCompleted` |Count |Average |`Device`, `Host`|PT1M |No|
@@ -63,6 +64,7 @@ ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
 |CPU|**CPUs per NUMA Allocated for Nexus K8s**<br><br>Total number of CPUs per NUMA allocated for Nexus Kubernetes and Tenant Workloads |`NcTotalWorkloadCpusAllocatedPerNuma` |Count |Average |`Hostname`, `NUMA Node`|PT1M |No|
 |CPU|**CPUs per NUMA Available for Nexus K8s**<br><br>Total number of CPUs per NUMA available to Nexus Kubernetes and Tenant Workloads |`NcTotalWorkloadCpusAvailablePerNuma` |Count |Average |`Hostname`, `NUMA Node`|PT1M |No|
 |Network|**Node Bonding Active (Preview)**<br><br>Number of active interfaces per bonding interface |`NodeBondingActive` |Count |Average |`Master`|PT1M |No|
+|Network|**Node Bond Aggregate ID Mismatch**<br><br>Indicates a mismatch in link-aggregator ids |`NodeBondingAggregateIdMismatch` |Count |Average |`Host`, `Interface`|PT1M |No|
 |Memory|**Node Memory Huge Pages Free (Preview)**<br><br>NUMA hugepages free by node |`NodeMemHugePagesFree` |Bytes |Average |`Host`, `Node`|PT1M |No|
 |Memory|**Node Memory Huge Pages Total**<br><br>NUMA huge pages total by node |`NodeMemHugePagesTotal` |Bytes |Average |`Host`, `Node`|PT1M |No|
 |Memory|**Node Memory NUMA (Free Memory)**<br><br>NUMA memory free |`NodeMemNumaFree` |Bytes |Average |`Host`, `Node`|PT1M |No|
@@ -76,6 +78,10 @@ ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
 |Network|**Node Network Up**<br><br>Value is 1 if operstate is 'up', 0 otherwise. |`NodeNetworkStatus` |Count |Count |`Device`, `Host`|PT1M |No|
 |Network|**Node Network Transmited Packets**<br><br>Network device statistic transmit_packets |`NodeNetworkTransmitPackets` |Count |Average |`Device`, `Host`|PT1M |No|
 |Network|**Node Network Up - (Deprecated)**<br><br>Deprecated - Value is 1 if operstate is 'up', 0 otherwise. |`NodeNetworkUp` |Count |Count |`Device`, `Host`|PT1M |No|
+|System|**Node NTP Leap**<br><br>Monitoring time sync with raw leap flag |`NodeNtpLeap` |Count |Average |`Host`|PT1M |No|
+|System|**Node NTP RTT**<br><br>Round-trip time (seconds) from node exporter collector to local NTP daemon |`NodeNtpRtt` |Seconds |Average |`Host`|PT1M |No|
+|System|**Node NTP Sanity**<br><br>NTP daemon health |`NodeNtpSanity` |Count |Average |`Host`|PT1M |No|
+|System|**Node NTP Stratum**<br><br>Denotes clock synchronization of the local NTP daemon |`NodeNtpStratum` |Count |Average |`Host`|PT1M |No|
 |Disk|**Node NVMe Info (Preview)**<br><br>Non-numeric data from /sys/class/nvme/\<device\>, value is always 1. Provides firmware, model, state and serial for a device |`NodeNvmeInfo` |Count |Count |`Device`, `State`|PT1M |No|
 |System|**Node OS Info**<br><br>Node OS information |`NodeOsInfo` |Count |Count |`Host`, `Name`, `Version`|PT1M |No|
 |System|**Node Processes State - (Deprecated)**<br><br>Deprecated - Maximum time error between the local system and reference clock |`NodeProcessesState` |Count |Average |`Host`, `State`|PT1M |No|

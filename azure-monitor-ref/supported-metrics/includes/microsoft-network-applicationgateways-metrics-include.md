@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 05/20/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Network/applicationgateways, naam
@@ -17,6 +17,7 @@ ms.custom: Microsoft.Network/applicationgateways, naam
 |**Requests per minute per Healthy Host**<br><br>Average request count per minute per healthy backend host in a pool |`AvgRequestCountPerHealthyHost` |Count |Average |`BackendSettingsPool`|PT1M |No|
 |**WAF Bot Protection Matches**<br><br>Matched Bot Rules |`AzwafBotProtection` |Count |Total |`Action`, `Category`, `Mode`, `CountryCode`, `PolicyName`, `PolicyScope`|PT1M |Yes|
 |**WAF Custom Rule Matches**<br><br>Matched Custom Rules |`AzwafCustomRule` |Count |Total |`Action`, `CustomRuleID`, `Mode`, `CountryCode`, `PolicyName`, `PolicyScope`|PT1M |Yes|
+|**WAF JS Challenge Request Count**<br><br>Total number of JS challenge requests evaluated by WAF |`AzWAFJSChallengeRequestCount` |Count |Total |`Action`, `PolicyName`, `Rule`, `PolicyScope`|PT1M |Yes|
 |**WAF Managed Rule Matches**<br><br>Matched Managed Rules |`AzwafSecRule` |Count |Total |`Action`, `Mode`, `RuleGroupID`, `RuleID`, `CountryCode`, `PolicyName`, `PolicyScope`, `RuleSetName`|PT1M |Yes|
 |**WAF Total Requests**<br><br>Total number of requests evaluated by WAF |`AzwafTotalRequests` |Count |Total |`Action`, `CountryCode`, `Method`, `Mode`, `PolicyName`, `PolicyScope`|PT1M |Yes|
 |**Backend Connect Time**<br><br>Time spent establishing a connection with a backend server |`BackendConnectTime` |MilliSeconds |Average, Maximum |`Listener`, `BackendServer`, `BackendPool`, `BackendHttpSetting`|PT1M |No|
