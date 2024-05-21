@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 05/06/2024
+ms.date: 05/20/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DBforMySQL/flexibleServers, naam
@@ -47,7 +47,7 @@ ms.custom: Microsoft.DBforMySQL/flexibleServers, naam
 |Latency|**Innodb Row Lock Waits**<br><br>The number of times operations on InnoDB tables had to wait for a row lock. |`Innodb_row_lock_waits` |Count |Total, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**Storage IO Percent**<br><br>Storage I/O consumption percent |`io_consumption_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Traffic|**MySQL Lock Deadlocks**<br><br>Number of deadlocks. |`lock_deadlocks` |Count |Total, Average, Maximum, Minimum |\<none\>|PT1M |Yes|
-|Traffic|**MySQL Lock Row Lock Waits**<br><br>Number of times a row lock had to be waited for (innodb_row_lock_waits). |`lock_row_lock_waits` |Count |Total, Average, Maximum, Minimum |\<none\>|PT1M |Yes|
+|Traffic|**MySQL Lock Row Lock Waits (deprecated)**<br><br>Number of times a row lock had to be waited for (innodb_row_lock_waits). |`lock_row_lock_waits` |Count |Total, Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Traffic|**MySQL Lock Timeouts**<br><br>Number of lock timeouts. |`lock_timeouts` |Count |Total, Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**Memory Percent**<br><br>Memory Percent |`memory_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Traffic|**Host Network Out**<br><br>Host Network egress in bytes |`network_bytes_egress` |Bytes |Total |\<none\>|PT1M |Yes|

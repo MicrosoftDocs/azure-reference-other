@@ -559,9 +559,8 @@ items:
               Logs,Call Recording Summary Logs,Call Summary Logs,Call Survey
               Logs,Operational Chat Logs,Email Service Send Mail Logs,Email
               Service Delivery Status Update Logs,Email Service User Engagement
-              Logs,Operational Job Router Logs,Network Traversal Relay
-              Diagnostic Logs,Operational Network Traversal Logs,Operational
-              Rooms Logs,Operational SMS Logs,Usage Records
+              Logs,Operational Job Router Logs,Operational Rooms
+              Logs,Operational SMS Logs,Usage Records
           - name: microsoft.community/communityTrainings
             href: supported-logs/microsoft-community-communitytrainings-logs.md
             displayName: Application Data Plane Exceptions and Errors,Application Data Plane
