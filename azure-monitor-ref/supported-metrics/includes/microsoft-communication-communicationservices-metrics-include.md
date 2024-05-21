@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 05/20/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Communication/CommunicationServices, naam
@@ -17,7 +17,6 @@ ms.custom: Microsoft.Communication/CommunicationServices, naam
 |Traffic|**Call Automation API Requests**<br><br>Count of all requests against the Communication Call Automation endpoint. |`APIRequestCallAutomation` |Count |Count |`Operation`, `StatusCode`, `StatusCodeClass`, `ApiVersion`|PT1M |Yes|
 |Traffic|**Call Recording API Requests**<br><br>Count of all requests against the Communication Services Call Recording endpoint. |`APIRequestCallRecording` |Count |Count |`Operation`, `StatusCode`, `StatusCodeClass`|PT1M |Yes|
 |Traffic|**Chat API Requests**<br><br>Count of all requests against the Communication Services Chat endpoint. |`APIRequestChat` |Count |Count |`Operation`, `StatusCode`, `StatusCodeClass`|PT1M |Yes|
-|Traffic|**Network Traversal API Requests**<br><br>Count of all requests against the Communication Services Network Traversal endpoint. |`APIRequestNetworkTraversal` |Count |Count |`Operation`, `StatusCode`, `StatusCodeClass`|PT1M |No|
 |Traffic|**Rooms API Requests**<br><br>Count of all requests against the Communication Services Rooms endpoint. |`ApiRequestRooms` |Count |Count |`Operation`, `StatusCode`, `StatusCodeClass`|PT1M |Yes|
 |Traffic|**Job Router API Requests**<br><br>Count of all requests against the Communication Services Job Router endpoint. |`ApiRequestRouter` |Count |Count |`OperationName`, `StatusCode`, `StatusCodeSubClass`, `ApiVersion`|PT1M |Yes|
 |Traffic|**Email Service API Requests**<br><br>Email Communication Services API request metric for the data-plane API surface. |`ApiRequests` |Count |Count |`Operation`, `StatusCode`, `StatusCodeClass`, `StatusCodeReason`|PT1M |Yes|

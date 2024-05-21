@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 03/26/2024
+ms.date: 05/20/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkCloud/storageAppliances, naam
@@ -27,7 +27,8 @@ ms.custom: Microsoft.NetworkCloud/storageAppliances, naam
 |Storage Array|**Nexus Storage HW Chassis Health**<br><br>Storage array hardware chassis health status |`PurefaHardwareChassisHealth` |Count |Average |\<none\>|PT1M |No|
 |Storage Array|**Nexus Storage HW Component Health (Deprecated)**<br><br>Deprecated - Storage array hardware component health status |`PurefaHardwareComponentHealth` |Count |Average |`Component`, `Controller`, `Index`, `Chassis`|PT1M |No|
 |Storage Array|**Nexus Storage HW Controller Health**<br><br>Storage array hardware controller health status |`PurefaHardwareControllerHealth` |Count |Average |`Controller`|PT1M |No|
-|Storage Array|**Nexus Storage Hardware Power Volts**<br><br>Storage array hardware power supply voltage |`PurefaHardwarePowerVolts` |Unspecified |Average |`Power Supply`|PT1M |No|
+|Storage Array|**Nexus Storage Hardware Power Volts**<br><br>Storage array hardware power supply voltage |`PurefaHardwarePowerVolt` |Unspecified |Average |`Power Supply`|PT1M |No|
+|Storage Array|**Nexus Storage Hardware Power Volts (Deprecated)**<br><br>Deprecated - Storage array hardware power supply voltage |`PurefaHardwarePowerVolts` |Unspecified |Average |`Power Supply`|PT1M |No|
 |Storage Array|**Nexus Storage Hardware Temp Celsius (Deprecated)**<br><br>Deprecated - Storage array hardware temperature sensors |`PurefaHardwareTemperatureCelsius` |Unspecified |Average |`Controller`, `Sensor`, `Chassis`|PT1M |No|
 |Storage Array|**Nexus Storage Hardware Temp Celsius By Chassis**<br><br>Storage array hardware temperature sensors by Chassis |`PurefaHardwareTemperatureCelsiusByChassis` |Unspecified |Average |`Sensor`, `Chassis`|PT1M |No|
 |Storage Array|**Nexus Storage Hardware Temp Celsius By Controller**<br><br>Storage array hardware temperature sensors by Controller |`PurefaHardwareTemperatureCelsiusByController` |Unspecified |Average |`Controller`, `Sensor`|PT1M |No|
