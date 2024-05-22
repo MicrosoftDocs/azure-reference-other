@@ -4,7 +4,7 @@ description: Field definitions for Azure Monitor resource log / log analytics ta
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 05/13/2024
+ms.date: 05/22/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -1055,7 +1055,6 @@ Microsoft.OperationalInsights/Workspaces
 
 - [LAQueryLogs](laquerylogs.md)
 - [LASummaryLogs](lasummarylogs.md)
-- [AzureMetricsV2](azuremetricsv2.md)
 
 ### Logic Apps  
 
