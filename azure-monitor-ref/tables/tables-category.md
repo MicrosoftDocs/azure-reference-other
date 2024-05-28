@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 04/15/2024
+ms.date: 05/22/2024
 ---
 
 # Azure Monitor Log Analytics log tables organized by category
@@ -166,7 +166,6 @@ ms.date: 04/15/2024
 - [AlertHistory](alerthistory.md)
 - [AutoscaleEvaluationsLog](autoscaleevaluationslog.md)
 - [AutoscaleScaleActionsLog](autoscalescaleactionslog.md)
-- [AzureMetricsV2](azuremetricsv2.md)
 - [ComputerGroup](computergroup.md)
 - [Operation](operation.md)
 - [Usage](usage.md)
@@ -325,7 +324,6 @@ ms.date: 04/15/2024
 - [AzureDiagnostics](azurediagnostics.md)
 - [AzureLoadTestingOperation](azureloadtestingoperation.md)
 - [AzureMetrics](azuremetrics.md)
-- [AzureMetricsV2](azuremetricsv2.md)
 - [BlockchainApplicationLog](blockchainapplicationlog.md)
 - [BlockchainProxyLog](blockchainproxylog.md)
 - [CCFApplicationLogs](ccfapplicationlogs.md)

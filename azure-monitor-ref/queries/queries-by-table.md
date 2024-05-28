@@ -4,7 +4,7 @@ description: Azure Monitor log analytics queries by tables
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 05/13/2024
+ms.date: 05/22/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -408,7 +408,7 @@ ms.reviewer: lualderm
 
 ## [ALBHealthEvent](ALBHealthEvent.md)
 
-- [LatestSnatPortExhaustionPerLBFrontend](ALBHealthEvent.md#latestsnatportexhaustionperlbfrontend)
+- [Latest Snat Port Exhaustion Per LB Frontend](ALBHealthEvent.md#latest-snat-port-exhaustion-per-lb-frontend)
 
 ## [AMSKeyDeliveryRequests](AMSKeyDeliveryRequests.md)
 

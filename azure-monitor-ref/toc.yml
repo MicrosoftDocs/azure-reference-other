@@ -1943,8 +1943,6 @@ items:
             href: tables/azureloadtestingoperation.md
           - name: AzureMetrics
             href: tables/azuremetrics.md
-          - name: AzureMetricsV2
-            href: tables/azuremetricsv2.md
           - name: BehaviorAnalytics
             href: tables/behavioranalytics.md
           - name: BlockchainApplicationLog
