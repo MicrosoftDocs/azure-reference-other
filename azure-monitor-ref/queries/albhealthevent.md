@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 04/15/2024
+ms.date: 05/22/2024
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
 
@@ -14,7 +14,7 @@ ms.date: 04/15/2024
 # Queries for the ALBHealthEvent table
 
 
-### LatestSnatPortExhaustionPerLBFrontend  
+### Latest Snat Port Exhaustion Per LB Frontend  
 
 
 List the latest SNAT port exhaustion event per load balancer Frontend IP  
