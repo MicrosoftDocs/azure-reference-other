@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 06/03/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: MicrosoftGraphActivityLogs
@@ -14,6 +14,8 @@ ms.custom: MicrosoftGraphActivityLogs
 | ApiVersion | string | The API version of the event. |
 | AppId | string | The identifier for the application. |
 | ATContent | string | Reserved for future use. |
+| ATContentH | string | Reserved for future use. |
+| ATContentP | string | Reserved for future use. |
 | _BilledSize | real | The record size in bytes |
 | ClientAuthMethod | int | Indicates how the client was authenticated. For a public client, the value is 0. If client ID and client secret are used, the value is 1. If a client certificate was used for authentication, the value is 2. |
 | ClientRequestId | string | Optional. The client request identifier when sent. If no client request identifier is sent, the value will be equal to the operation identifier. |
