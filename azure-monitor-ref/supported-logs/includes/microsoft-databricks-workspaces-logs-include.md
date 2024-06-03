@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 03/26/2024
+ms.date: 06/03/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Databricks/workspaces, naam
@@ -47,7 +47,7 @@ ms.custom: Microsoft.Databricks/workspaces, naam
 |`serverlessRealTimeInference` |Databricks Serverless Real-Time Inference |[DatabricksServerlessRealTimeInference](/azure/azure-monitor/reference/tables/databricksserverlessrealtimeinference)<p>Audit logs from Databricks model serving v2 API service.|No|No||Yes |
 |`sqlanalytics` |Databricks SQL Analytics ||No|No||Yes |
 |`sqlPermissions` |Databricks SQLPermissions |[DatabricksSQLPermissions](/azure/azure-monitor/reference/tables/databrickssqlpermissions)<p>Databricks SQL Permissions audit logs.|No|Yes||No |
-|`ssh` |Databricks SSH |[DatabricksSSH](/azure/azure-monitor/reference/tables/databricksssh)<p>Databricks SSH audit logs.|No|Yes||No |
+|`ssh` |Databricks SSH ||No|Yes||No |
 |`unityCatalog` |Databricks Unity Catalog |[DatabricksUnityCatalog](/azure/azure-monitor/reference/tables/databricksunitycatalog)<p>Databricks unity catalog audit logs.|No|No||Yes |
 |`webTerminal` |Databricks Web Terminal |[DatabricksWebTerminal](/azure/azure-monitor/reference/tables/databrickswebterminal)<p>Databricks web terminal audit logs.|No|No||Yes |
 |`workspace` |Databricks Workspace |[DatabricksWorkspace](/azure/azure-monitor/reference/tables/databricksworkspace)<p>Databricks Workspace audit logs.|No|Yes||No |
