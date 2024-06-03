@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/21/2024
+ms.date: 06/03/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.MachineLearningServices/workspaces, naam
@@ -30,7 +30,7 @@ ms.custom: Microsoft.MachineLearningServices/workspaces, naam
 |`DeploymentReadEvent` |DeploymentReadEvent |[AmlDeploymentEvent](/azure/azure-monitor/reference/tables/amldeploymentevent)<p>Events when a model deployment happens on ACI or AKS.|No|Yes||Yes |
 |`EnvironmentChangeEvent` |EnvironmentChangeEvent |[AmlEnvironmentEvent](/azure/azure-monitor/reference/tables/amlenvironmentevent)<p>Events when ML environments are accessed (read, created, or deleted).|No|Yes|[Queries](/azure/azure-monitor/reference/queries/amlenvironmentevent)|Yes |
 |`EnvironmentReadEvent` |EnvironmentReadEvent |[AmlEnvironmentEvent](/azure/azure-monitor/reference/tables/amlenvironmentevent)<p>Events when ML environments are accessed (read, created, or deleted).|No|Yes|[Queries](/azure/azure-monitor/reference/queries/amlenvironmentevent)|Yes |
-|`InferencingOperationACI` |InferencingOperationACI |[AmlInferencingEvent](/azure/azure-monitor/reference/tables/amlinferencingevent)<p>Events for inference or related operation on AKS or ACI compute type.|No|Yes||Yes |
+|`InferencingOperationACI` |InferencingOperationACI ||No|Yes||Yes |
 |`InferencingOperationAKS` |InferencingOperationAKS |[AmlInferencingEvent](/azure/azure-monitor/reference/tables/amlinferencingevent)<p>Events for inference or related operation on AKS or ACI compute type.|No|Yes||Yes |
 |`ModelsActionEvent` |ModelsActionEvent |[AmlModelsEvent](/azure/azure-monitor/reference/tables/amlmodelsevent)<p>Events when ML model is accessed (read, created, or deleted). Incudes events when packaging of models and assets happen into a ready-to-build packages.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/amlmodelsevent)|Yes |
 |`ModelsChangeEvent` |ModelsChangeEvent |[AmlModelsEvent](/azure/azure-monitor/reference/tables/amlmodelsevent)<p>Events when ML model is accessed (read, created, or deleted). Incudes events when packaging of models and assets happen into a ready-to-build packages.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/amlmodelsevent)|Yes |
