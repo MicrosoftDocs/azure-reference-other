@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 06/03/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: NTANetAnalytics
@@ -68,6 +68,7 @@ ms.custom: NTANetAnalytics
 | SrcLoadBalancer | string | Load balancer associated with the source IP in the flow. |
 | SrcLocalNetworkGateway | string | Local network gateway associated with the source IP in the flow. |
 | SrcNic | string | NIC associated with the source IP in the flow. |
+| SrcPort | int | Source port. |
 | SrcPublicIps | string | Source public IP addresses flow information. |
 | SrcRegion | string | Azure region of virtual network/ network interface/ virtual machine to which the source IP in the flow belongs to. |
 | SrcSubnet | string | Subnet associated with the source IP in the flow. |

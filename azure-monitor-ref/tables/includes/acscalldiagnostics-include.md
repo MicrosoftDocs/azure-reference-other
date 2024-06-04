@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 06/04/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ACSCallDiagnostics
@@ -12,6 +12,7 @@ ms.custom: ACSCallDiagnostics
 |---|---|---|
 | _BilledSize | real | The record size in bytes |
 | Category | string | The log category of the event. Logs with the same log category and resource type will have the same properties fields. |
+| CodecName | string | Codec used for the media stream. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | EndpointId | string | ID of the endpoint. |
 | EndpointType | string | Type of the endpoint. |
@@ -28,6 +29,7 @@ ms.custom: ACSCallDiagnostics
 | OperationVersion | string | The API-version associated with the operation or version of the operation (if there is no API version). |
 | PacketLossRateAvg | real | Average lost packages. |
 | PacketLossRateMax | real | Max lost packages. |
+| PacketUtilization | int | Utilized packets for the media stream. |
 | ParticipantId | string | ID of the participant. |
 | RecvFreezeDurationPerMinuteInMs | real | Average receive freeze duration per minute in microseconds. |
 | RecvResolutionHeight | int | Receive average resolution height. |
@@ -35,10 +37,13 @@ ms.custom: ACSCallDiagnostics
 | RoundTripTimeAvg | int | Average time of a round trip in milliseconds. |
 | RoundTripTimeMax | int | Max time of a trip in milliseconds. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
+| StreamDirection | string | The direction of the stream, can be inbound or outbound. |
 | StreamId | long | ID of the stream. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the log was generated. |
 | TransportType | string | Type of the internet transport layer, it can be UDP, TCP or unknown. |
 | Type | string | The name of the table |
+| VideoBitRateAvg | int | Average bitrate. |
+| VideoBitRateMax | int | Maximum bitrate. |
 | VideoFrameRateAvg | real | Average frames per second. |
