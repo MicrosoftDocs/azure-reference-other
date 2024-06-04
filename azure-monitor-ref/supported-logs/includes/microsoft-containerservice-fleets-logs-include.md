@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 05/20/2024
+ms.date: 06/03/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.ContainerService/fleets, naam
@@ -13,10 +13,10 @@ ms.custom: Microsoft.ContainerService/fleets, naam
   
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
-|`cloud-controller-manager` |Kubernetes Cloud Controller Manager ||No|Yes||Yes |
-|`guard` |guard ||No|Yes||Yes |
-|`kube-apiserver` |Kubernetes API Server ||No|Yes||Yes |
-|`kube-audit` |Kubernetes Audit ||No|Yes||Yes |
-|`kube-audit-admin` |Kubernetes Audit Admin Logs ||No|Yes||Yes |
-|`kube-controller-manager` |Kubernetes Controller Manager ||No|Yes||Yes |
-|`kube-scheduler` |Kubernetes Scheduler ||No|Yes||Yes |
+|`cloud-controller-manager` |Kubernetes Cloud Controller Manager |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftcontainerservice)|Yes |
+|`guard` |guard |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftcontainerservice)|Yes |
+|`kube-apiserver` |Kubernetes API Server |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftcontainerservice)|Yes |
+|`kube-audit` |Kubernetes Audit |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftcontainerservice)|Yes |
+|`kube-audit-admin` |Kubernetes Audit Admin Logs |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftcontainerservice)|Yes |
+|`kube-controller-manager` |Kubernetes Controller Manager |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftcontainerservice)|Yes |
+|`kube-scheduler` |Kubernetes Scheduler |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftcontainerservice)|Yes |
