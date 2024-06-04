@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 06/04/2024
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
 
@@ -37,6 +37,20 @@ List message ids and failed status.
 ACSEmailStatusUpdateOperational
 | where isempty(RecipientId) 
 | where DeliveryStatus != "OutForDelivery"
+| limit 100
+```
+
+
+
+### Email Bounced and Suppressed Recipients  
+
+
+List recipients that have been dropped due to a hard bounce or suppressed due to customer managed opt-outs.  
+
+```query
+ACSEmailStatusUpdateOperational
+| where DeliveryStatus == "Bounced" or DeliveryStatus == "Suppressed"
+| where CorrelationId == "<email-send-request-message-id>"
 | limit 100
 ```
 

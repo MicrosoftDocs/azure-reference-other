@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 06/04/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: ACSCallSummary
@@ -25,12 +25,14 @@ ms.custom: ACSCallSummary
 | OsVersion | string | Operating System version. |
 | ParticipantDuration | long | Duration of the participant call in seconds. |
 | ParticipantEndReason | string | Participant's call end reason. |
+| ParticipantEndSubCode | string | Participant's call end reason sub code. |
 | ParticipantId | string | ID of the participant. |
 | ParticipantStartTime | datetime | Start time of the participant. |
-| ParticipantTenantId | string | The ID of the Microsoft tenant associated with the participant. |
-| ParticipantType | string | Description of the participant as a combination of its client (ACS or Teams) and its identity (ACS or Microsoft 365). Possible values include ACS, Teams, ACS as Teams external user, and ACS as Microsoft 365 user. |
+| ParticipantTenantId | string | The ID of the Microsoft tenant associated with the identity of the participant. The tenant can either be the Azure tenant that owns the ACS resource or the Microsoft tenant of an M365 identity. This field is used to guide cross-tenant redaction. |
+| ParticipantType | string | Description of the participant as a combination of its client (Azure Communication Services (ACS) or Teams), and its identity, (ACS or Microsoft 365). Possible values include: ACS (ACS identity and ACS SDK), Teams (Teams identity and Teams client), ACS as Teams external user (ACS identity and ACS SDK in Teams call or meeting), and ACS as Microsoft 365 user (M365 identity and ACS client). |
 | PstnParticipantCallType | string | The type and direction of PSTN participants, including emergency calling, direct routing, transfer, forwarding, etc. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
+| ResultCategory | string | The category of participant call end reason. |
 | SdkVersion | string | SDK version. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
