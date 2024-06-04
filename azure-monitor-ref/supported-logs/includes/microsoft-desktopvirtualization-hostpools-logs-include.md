@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/21/2024
+ms.date: 06/03/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DesktopVirtualization/hostpools, naam
@@ -22,4 +22,4 @@ ms.custom: Microsoft.DesktopVirtualization/hostpools, naam
 |`HostRegistration` |HostRegistration |[WVDHostRegistrations](/azure/azure-monitor/reference/tables/wvdhostregistrations)<p>Windows Virtual Desktop Host Registration Activity|No|Yes||No |
 |`Management` |Management |[WVDManagement](/azure/azure-monitor/reference/tables/wvdmanagement)<p>Windows Virtual Desktop Management Activity|No|Yes||No |
 |`NetworkData` |Network Data Logs |[WVDConnectionNetworkData](/azure/azure-monitor/reference/tables/wvdconnectionnetworkdata)<p>Windows Virtual Desktop connection network data.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/wvdconnectionnetworkdata)|Yes |
-|`SessionHostManagement` |Session Host Management Activity Logs ||No|Yes||Yes |
+|`SessionHostManagement` |Session Host Management Activity Logs |[WVDSessionHostManagement](/azure/azure-monitor/reference/tables/wvdsessionhostmanagement)<p>Windows Virtual Desktop session host management data.|No|No||Yes |

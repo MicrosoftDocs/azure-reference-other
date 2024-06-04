@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/05/2024
+ms.date: 06/04/2024
 ---
 
 # AZKVAuditLogs
@@ -18,7 +18,7 @@ Audit logs can be used to monitor how and when your key vaults are accessed, and
 
 |Attribute|Value|
 |---|---|
-|**Resource types**|microsoft.keyvault/vaults|
+|**Resource types**|microsoft.keyvault/vaults,<br>microsoft.keyvault/managedhsms|
 |**Categories**|Azure Resources, Audit|
 |**Solutions**| LogManagement|
 |**Basic log**|Yes|

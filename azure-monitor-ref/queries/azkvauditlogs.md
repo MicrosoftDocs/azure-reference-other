@@ -5,7 +5,7 @@ ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 02/18/2024
+ms.date: 06/04/2024
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
 
@@ -86,6 +86,75 @@ AZKVAuditLogs
 
 
 ### Who is calling this KeyVault?  
+
+
+List of callers identified by their IP address with their request count.  
+
+```query
+AZKVAuditLogs
+| summarize count() by CallerIpAddress
+
+```
+
+
+
+### Are there any failures?  
+
+
+Count of failed ManagedHsm requests by status code.  
+
+```query
+AZKVAuditLogs
+| where HttpStatusCode >= 300 and not(OperationName == "Authentication" and HttpStatusCode == 401)
+| summarize count() by RequestUri, ResultSignature, _ResourceId
+```
+
+
+
+### Are there any slow requests?  
+
+
+List of ManagedHsm requests taking longer than 1 second.  
+
+```query
+let threshold=1000;
+AZKVAuditLogs
+| where DurationMs > threshold
+| summarize count() by OperationName, _ResourceId
+
+```
+
+
+
+### How active has this ManagedHsm been?  
+
+
+Line chart showing trend of ManagedHsm requests volume, per operation over time.  
+
+```query
+AZKVAuditLogs
+| summarize count() by bin(TimeGenerated, 1h), OperationName // Aggregate by hour
+| render timechart
+
+```
+
+
+
+### How fast is this ManagedHsm serving requests?  
+
+
+Line chart showing trend of request duration over time using different aggregations.  
+
+```query
+AZKVAuditLogs
+| summarize avg(DurationMs) by RequestUri, bin(TimeGenerated, 1h) // requestUri_s contains the URI of the request
+| render timechart
+
+```
+
+
+
+### Who is calling this ManagedHsm?  
 
 
 List of callers identified by their IP address with their request count.  

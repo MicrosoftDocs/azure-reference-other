@@ -1304,6 +1304,8 @@ items:
             href: tables/microsoft-insights_workloadmonitoring.md
           - name: microsoft.intune/operations
             href: tables/microsoft-intune_operations.md
+          - name: microsoft.keyvault/managedhsms
+            href: tables/microsoft-keyvault_managedhsms.md
           - name: microsoft.keyvault/vaults
             href: tables/microsoft-keyvault_vaults.md
           - name: microsoft.kubernetes/connectedclusters

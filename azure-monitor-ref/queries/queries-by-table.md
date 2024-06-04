@@ -4,7 +4,7 @@ description: Azure Monitor log analytics queries by tables
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 05/22/2024
+ms.date: 06/04/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -250,6 +250,7 @@ ms.reviewer: lualderm
 
 - [Email failed deliveries by recipient ID](ACSEmailStatusUpdateOperational.md#email-failed-deliveries-by-recipient-id)
 - [Email Failed Deliveries by Message Id](ACSEmailStatusUpdateOperational.md#email-failed-deliveries-by-message-id)
+- [Email Bounced and Suppressed Recipients](ACSEmailStatusUpdateOperational.md#email-bounced-and-suppressed-recipients)
 
 ## [ACSJobRouterIncomingOperations](ACSJobRouterIncomingOperations.md)
 
@@ -573,6 +574,11 @@ ms.reviewer: lualderm
 - [How fast is this KeyVault serving requests?](AZKVAuditLogs.md#how-fast-is-this-keyvault-serving-requests)
 - [What changes occurred last month?](AZKVAuditLogs.md#what-changes-occurred-last-month)
 - [Who is calling this KeyVault?](AZKVAuditLogs.md#who-is-calling-this-keyvault)
+- [Are there any failures?](AZKVAuditLogs.md#are-there-any-failures)
+- [Are there any slow requests?](AZKVAuditLogs.md#are-there-any-slow-requests)
+- [How active has this ManagedHsm been?](AZKVAuditLogs.md#how-active-has-this-managedhsm-been)
+- [How fast is this ManagedHsm serving requests?](AZKVAuditLogs.md#how-fast-is-this-managedhsm-serving-requests)
+- [Who is calling this ManagedHsm?](AZKVAuditLogs.md#who-is-calling-this-managedhsm)
 
 ## [AZMSDiagnosticErrorLogs](AZMSDiagnosticErrorLogs.md)
 

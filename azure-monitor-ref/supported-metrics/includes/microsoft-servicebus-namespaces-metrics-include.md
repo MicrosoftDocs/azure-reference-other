@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 06/03/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.ServiceBus/Namespaces, naam
@@ -28,6 +28,8 @@ ms.custom: Microsoft.ServiceBus/Namespaces, naam
 |**Memory Usage**<br><br>Service bus premium namespace memory usage metric. |`NamespaceMemoryUsage` |Percent |Maximum |`Replica`|PT1M |No|
 |**Outgoing Messages**<br><br>Outgoing Messages for Microsoft.ServiceBus. |`OutgoingMessages` |Count |Total |`EntityName`|PT1M |Yes|
 |**Pending Checkpoint Operations Count.**<br><br>Pending Checkpoint Operations Count. |`PendingCheckpointOperationCount` |Count |Total |\<none\>|PT1M |No|
+|**ReplicationLagCount**<br><br>Replication lag by message count |`ReplicationLagCount` |Count |Maximum, Minimum, Average |`EntityName`|PT1M |No|
+|**ReplicationLagDuration**<br><br>Replication lag by time duration |`ReplicationLagDuration` |Seconds |Maximum, Minimum, Average |`EntityName`|PT1M |Yes|
 |**Count of scheduled messages in a Queue/Topic.**<br><br>Count of scheduled messages in a Queue/Topic. |`ScheduledMessages` |Count |Average, Minimum, Maximum |`EntityName`|PT1M |No|
 |**Server Errors.**<br><br>Server Errors for Microsoft.ServiceBus. |`ServerErrors` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
 |**Server Send Latency.**<br><br>Latency of Send Message operations for Service Bus resources. |`ServerSendLatency` |MilliSeconds |Average |`EntityName`|PT1M |Yes|
