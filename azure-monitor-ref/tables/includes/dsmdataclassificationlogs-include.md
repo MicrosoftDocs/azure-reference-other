@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 06/11/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: DSMDataClassificationLogs
@@ -14,7 +14,7 @@ ms.custom: DSMDataClassificationLogs
 | AssetType | string | Type of asset that was scanned by Azure Purview (e.g., File, Table). |
 | _BilledSize | real | The record size in bytes |
 | ClassificationDetails | dynamic | For every classification found in the resource - corresponding Instance Count (i.e. how many occurrences of a specific type of classification was present) and Confidence (i.e. Match Accuracy) is listed. |
-| Classifications | dynamic | JSON containing the list of classifications that were discovered. |
+| Classifications | dynamic | JSON��containing the list of classifications that were discovered. |
 | CorrelationId | string | The ID that is used to correlate resource logs with data sensitivity logs. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |

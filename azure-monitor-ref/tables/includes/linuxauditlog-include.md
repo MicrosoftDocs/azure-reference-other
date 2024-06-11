@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 06/11/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: LinuxAuditLog
