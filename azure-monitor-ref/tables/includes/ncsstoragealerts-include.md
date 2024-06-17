@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 06/17/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: NCSStorageAlerts
@@ -16,6 +16,7 @@ ms.custom: NCSStorageAlerts
 | _BilledSize | real | The record size in bytes |
 | ClusterManagerName | string | Name of the ClusterManager managing the Nexus cluster. |
 | ClusterName | string | Name of the on-prem Nexus cluster. |
+| ContainerName | string | Name of the container generating the log for the Nexus cluster. |
 | Domain | string | Array domain of the storage appliance. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Location | string | Location of the Nexus cluster. |
