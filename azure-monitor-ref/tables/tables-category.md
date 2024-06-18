@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 05/22/2024
+ms.date: 06/17/2024
 ---
 
 # Azure Monitor Log Analytics log tables organized by category
@@ -183,6 +183,7 @@ ms.date: 05/22/2024
 - [ABSBotRequests](absbotrequests.md)
 - [ACICollaborationAudit](acicollaborationaudit.md)
 - [ACRConnectedClientList](acrconnectedclientlist.md)
+- [ACSAdvancedMessagingOperations](acsadvancedmessagingoperations.md)
 - [ACSAuthIncomingOperations](acsauthincomingoperations.md)
 - [ACSBillingUsage](acsbillingusage.md)
 - [ACSCallAutomationIncomingOperations](acscallautomationincomingoperations.md)
@@ -245,6 +246,7 @@ ms.date: 05/22/2024
 - [ASCAuditLogs](ascauditlogs.md)
 - [ASCDeviceEvents](ascdeviceevents.md)
 - [ATCExpressRouteCircuitIpfix](atcexpressroutecircuitipfix.md)
+- [ATCPrivatePeeringMetadata](atcprivatepeeringmetadata.md)
 - [AVNMConnectivityConfigurationChange](avnmconnectivityconfigurationchange.md)
 - [AVNMIPAMPoolAllocationChange](avnmipampoolallocationchange.md)
 - [AVNMNetworkGroupMembershipChange](avnmnetworkgroupmembershipchange.md)

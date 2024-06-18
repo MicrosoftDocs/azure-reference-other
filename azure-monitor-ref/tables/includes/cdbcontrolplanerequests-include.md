@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 06/17/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: CDBControlPlaneRequests
@@ -35,6 +35,7 @@ ms.custom: CDBControlPlaneRequests
 | HttpStatusCode | int | The HTTP status code of the control plane operation. |
 | IpRangeFilter | string | The IP range filter specified as part of the VNet rules for the Cosmos DB account. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
+| IsServiceManagedFailover | bool | Boolean flag to indicate if the failover event was initiated by the service or by the customer. |
 | MaxStalenessIntervalInSeconds | real | The maximum staleness value (in seconds) for the Cosmos DB account when using the Bounded Staleness consistency setting. |
 | MaxStalenessPrefix | string | The max staleness prefix for the Cosmos DB account when using the Bounded Staleness consistency setting. |
 | MultipleWriteLocations | bool | Boolean flag indicating if the Cosmos DB account is a multi-master account. |
