@@ -1511,6 +1511,8 @@ items:
             href: tables/acicollaborationaudit.md
           - name: ACRConnectedClientList
             href: tables/acrconnectedclientlist.md
+          - name: ACSAdvancedMessagingOperations
+            href: tables/acsadvancedmessagingoperations.md
           - name: ACSAuthIncomingOperations
             href: tables/acsauthincomingoperations.md
           - name: ACSBillingUsage
@@ -1697,6 +1699,8 @@ items:
             href: tables/asimwebsessionlogs.md
           - name: ATCExpressRouteCircuitIpfix
             href: tables/atcexpressroutecircuitipfix.md
+          - name: ATCPrivatePeeringMetadata
+            href: tables/atcprivatepeeringmetadata.md
           - name: AUIEventsAudit
             href: tables/auieventsaudit.md
           - name: AUIEventsOperational
@@ -2851,6 +2855,8 @@ items:
             href: queries/ACICollaborationAudit.md
           - name: ACRConnectedClientList
             href: queries/ACRConnectedClientList.md
+          - name: ACSAdvancedMessagingOperations
+            href: queries/ACSAdvancedMessagingOperations.md
           - name: ACSAuthIncomingOperations
             href: queries/ACSAuthIncomingOperations.md
           - name: ACSBillingUsage

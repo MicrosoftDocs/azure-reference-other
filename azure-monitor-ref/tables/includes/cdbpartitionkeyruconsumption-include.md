@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 06/17/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: CDBPartitionKeyRUConsumption
@@ -11,6 +11,7 @@ ms.custom: CDBPartitionKeyRUConsumption
 | Column | Type | Description |
 |---|---|---|
 | AccountName | string | The name of the Cosmos DB account containing the physical partition. |
+| ActivityId | string | The unique identifier (GUID) which can be correlated with the CDBDataPlaneRequests table for additional debugging. |
 | _BilledSize | real | The record size in bytes |
 | CollectionName | string | The name of the Cosmos DB collection, which contains the partition. |
 | DatabaseName | string | The name of the Cosmos DB database, which contains the partition. |
