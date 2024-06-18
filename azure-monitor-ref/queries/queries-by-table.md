@@ -4,7 +4,7 @@ description: Azure Monitor log analytics queries by tables
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 06/04/2024
+ms.date: 06/17/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -116,6 +116,16 @@ ms.reviewer: lualderm
 
 - [Unique Redis client IP addresses](ACRConnectedClientList.md#unique-redis-client-ip-addresses)
 - [Redis client connections per hour](ACRConnectedClientList.md#redis-client-connections-per-hour)
+
+## [ACSAdvancedMessagingOperations](ACSAdvancedMessagingOperations.md)
+
+- [Advanced Messaging operations](ACSAdvancedMessagingOperations.md#advanced-messaging-operations)
+- [Advanced Messaging operation duration percentiles](ACSAdvancedMessagingOperations.md#advanced-messaging-operation-duration-percentiles)
+- [Advanced Messaging top 5 IP addresses per operation](ACSAdvancedMessagingOperations.md#advanced-messaging-top-5-ip-addresses-per-operation)
+- [Advanced Messaging operational errors](ACSAdvancedMessagingOperations.md#advanced-messaging-operational-errors)
+- [Advanced Messaging operation result counts](ACSAdvancedMessagingOperations.md#advanced-messaging-operation-result-counts)
+- [Advanced Messaging channel activity](ACSAdvancedMessagingOperations.md#advanced-messaging-channel-activity)
+- [Advanced Messaging message status count](ACSAdvancedMessagingOperations.md#advanced-messaging-message-status-count)
 
 ## [ACSAuthIncomingOperations](ACSAuthIncomingOperations.md)
 

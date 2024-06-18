@@ -6,12 +6,12 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/05/2024
+ms.date: 06/17/2024
 ---
 
 # NCSStorageLogs
 
-Log events from Nexus storage appliance providing insight into data access and system performance.
+All Logs from Nexus storage appliance other than audit & alert logs.
 
 
 ## Table attributes
