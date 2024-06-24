@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 06/24/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: CDBPartitionKeyStatistics
@@ -12,7 +12,7 @@ ms.custom: CDBPartitionKeyStatistics
 |---|---|---|
 | AccountName | string | The name of the Cosmos DB account containing the dataset for which partition key stats were generated. |
 | _BilledSize | real | The record size in bytes |
-| CollectionName | string | The name of the Cosmos DB collection, which contains the partition. |
+| CollectionName | string | The name of the Cosmos DB collection, which contains��the partition. |
 | DatabaseName | string | The name of the Cosmos DB database, which contains the partition. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | PartitionKey | string | The logical partition key for which storage statistics were retrieved. |
