@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 06/17/2024
+ms.date: 06/24/2024
 ---
 
 # ACSAdvancedMessagingOperations
@@ -21,7 +21,7 @@ Communication Services logs of incoming requests to Advanced Messaging operation
 |**Resource types**|microsoft.communication/communicationservices|
 |**Categories**|Azure Resources|
 |**Solutions**| LogManagement|
-|**Basic log**|No|
+|**Basic log**|Yes|
 |**Ingestion-time transformation**|No|
 |**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/acsadvancedmessagingoperations)|
 
