@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 06/17/2024
+ms.date: 06/24/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Tables for microsoft.communication/communicationservices
@@ -10,7 +10,7 @@ ms.custom: Tables for microsoft.communication/communicationservices
 
 | Table | Categories | Solutions|[Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)| Queries|
 |---|---|---|---|---|
-| [ACSAdvancedMessagingOperations](/azure/azure-monitor/reference/tables/ACSAdvancedMessagingOperations)<p>Communication Services logs of incoming requests to Advanced Messaging operations. | resources | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/acsadvancedmessagingoperations)|
+| [ACSAdvancedMessagingOperations](/azure/azure-monitor/reference/tables/ACSAdvancedMessagingOperations)<p>Communication Services logs of incoming requests to Advanced Messaging operations. | resources | LogManagement | Yes| [Yes](/azure/azure-monitor/reference/queries/acsadvancedmessagingoperations)|
 | [ACSAuthIncomingOperations](/azure/azure-monitor/reference/tables/ACSAuthIncomingOperations)<p>Communication Services logs of incoming requests to auth operations. | resources | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/acsauthincomingoperations)|
 | [ACSBillingUsage](/azure/azure-monitor/reference/tables/ACSBillingUsage)<p>Usage records across all modes of Communication Services. | resources | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/acsbillingusage)|
 | [ACSCallAutomationIncomingOperations](/azure/azure-monitor/reference/tables/ACSCallAutomationIncomingOperations)<p>Communication Services logs of incoming requests to Call Automation operations. Every entry corresponds to the result of a call to the Call Automation APIs, e.g. CreateCall, AnswerCall, Play, Recognize, etc. | resources | LogManagement | Yes| [Yes](/azure/azure-monitor/reference/queries/acscallautomationincomingoperations)|
