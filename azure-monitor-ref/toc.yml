@@ -2457,6 +2457,8 @@ items:
             href: tables/ncsstoragelogs.md
           - name: NGXOperationLogs
             href: tables/ngxoperationlogs.md
+          - name: NGXSecurityLogs
+            href: tables/ngxsecuritylogs.md
           - name: NSPAccessLogs
             href: tables/nspaccesslogs.md
           - name: NTAInsights
@@ -3233,6 +3235,8 @@ items:
             href: queries/MicrosoftPurviewInformationProtection.md
           - name: NGXOperationLogs
             href: queries/NGXOperationLogs.md
+          - name: NGXSecurityLogs
+            href: queries/NGXSecurityLogs.md
           - name: NWConnectionMonitorPathResult
             href: queries/NWConnectionMonitorPathResult.md
           - name: NWConnectionMonitorTestResult

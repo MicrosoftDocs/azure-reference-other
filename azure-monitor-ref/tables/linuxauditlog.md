@@ -4,10 +4,9 @@ description: Reference for LinuxAuditLog table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.custom: linux-related-content
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 06/11/2024
+ms.date: 07/01/2024
 ---
 
 # LinuxAuditLog
