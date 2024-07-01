@@ -15,11 +15,13 @@ items:
             href: supported-metrics/microsoft-apimanagement-service-metrics.md
           - name: Microsoft.App/containerapps
             href: supported-metrics/microsoft-app-containerapps-metrics.md
+          - name: Microsoft.App/jobs
+            href: supported-metrics/microsoft-app-jobs-metrics.md
           - name: Microsoft.App/managedEnvironments
             href: supported-metrics/microsoft-app-managedenvironments-metrics.md
           - name: Microsoft.AppConfiguration/configurationStores
             href: supported-metrics/microsoft-appconfiguration-configurationstores-metrics.md
-          - name: Microsoft.AppPlatform/Spring
+          - name: Microsoft.AppPlatform/spring
             href: supported-metrics/microsoft-appplatform-spring-metrics.md
           - name: Microsoft.Automation/automationAccounts
             href: supported-metrics/microsoft-automation-automationaccounts-metrics.md
@@ -287,7 +289,7 @@ items:
             href: supported-metrics/microsoft-network-loadbalancers-metrics.md
           - name: Microsoft.Network/natgateways
             href: supported-metrics/microsoft-network-natgateways-metrics.md
-          - name: Microsoft.Network/networkInterfaces
+          - name: Microsoft.Network/networkinterfaces
             href: supported-metrics/microsoft-network-networkinterfaces-metrics.md
           - name: Microsoft.Network/networkManagers/ipamPools
             href: supported-metrics/microsoft-network-networkmanagers-ipampools-metrics.md
@@ -478,8 +480,8 @@ items:
             displayName: Engine,Service
           - name: Microsoft.ApiManagement/service
             href: supported-logs/microsoft-apimanagement-service-logs.md
-            displayName: Logs related to ApiManagement Gateway,Logs related to Websocket
-              Connections
+            displayName: Logs related to Developer Portal usage,Logs related to
+              ApiManagement Gateway,Logs related to Websocket Connections
           - name: Microsoft.App/managedEnvironments
             href: supported-logs/microsoft-app-managedenvironments-logs.md
             displayName: Spring App console logs,Container App console logs,Container App
@@ -487,7 +489,7 @@ items:
           - name: Microsoft.AppConfiguration/configurationStores
             href: supported-logs/microsoft-appconfiguration-configurationstores-logs.md
             displayName: Audit,HTTP Requests
-          - name: Microsoft.AppPlatform/Spring
+          - name: Microsoft.AppPlatform/spring
             href: supported-logs/microsoft-appplatform-spring-logs.md
             displayName: Application Console,Build Logs,Container Event Logs,Ingress
               Logs,System Logs
@@ -552,15 +554,16 @@ items:
             displayName: Audit Logs,Request and Response Logs,Trace Logs
           - name: Microsoft.Communication/CommunicationServices
             href: supported-logs/microsoft-communication-communicationservices-logs.md
-            displayName: Operational Authentication Logs,Call Automation Events Summary
-              Logs,Operational Call Automation Logs,Call Client Media Stats Time
-              Series Logs (Preview),Call Client Operations Logs,Call Closed
-              Captions Logs,Call Diagnostics Logs,Operational Call Recording
-              Logs,Call Recording Summary Logs,Call Summary Logs,Call Survey
-              Logs,Operational Chat Logs,Email Service Send Mail Logs,Email
-              Service Delivery Status Update Logs,Email Service User Engagement
-              Logs,Operational Job Router Logs,Operational Rooms
-              Logs,Operational SMS Logs,Usage Records
+            displayName: Advanced Messaging Logs,Operational Authentication Logs,Call
+              Automation Events Summary Logs,Operational Call Automation
+              Logs,Call Client Media Stats Time Series Logs,Call Client
+              Operations Logs,Call Closed Captions Logs,Call Diagnostics
+              Logs,Operational Call Recording Logs,Call Recording Summary
+              Logs,Call Summary Logs,Call Survey Logs,Operational Chat
+              Logs,Email Service Send Mail Logs,Email Service Delivery Status
+              Update Logs,Email Service User Engagement Logs,Operational Job
+              Router Logs,Operational Rooms Logs,Operational SMS Logs,Usage
+              Records
           - name: microsoft.community/communityTrainings
             href: supported-logs/microsoft-community-communitytrainings-logs.md
             displayName: Application Data Plane Exceptions and Errors,Application Data Plane
@@ -754,6 +757,9 @@ items:
               Managed Key Logs,DataDR Logs,Diagnostic Error Logs,VNet/IP
               Filtering Connection Logs,Kafka Coordinator Logs,Kafka User Error
               Logs,Operational Logs,Runtime Audit Logs
+          - name: Microsoft.HardwareSecurityModules/cloudHsmClusters
+            href: supported-logs/microsoft-hardwaresecuritymodules-cloudhsmclusters-logs.md
+            displayName: Hsm Management Operations,Hsm Service Operations
           - name: Microsoft.HealthcareApis/services
             href: supported-logs/microsoft-healthcareapis-services-logs.md
             displayName: Audit logs,Diagnostic logs
@@ -1137,7 +1143,7 @@ items:
             displayName: Change Detection
           - name: NGINX.NGINXPLUS/nginxDeployments
             href: supported-logs/nginx-nginxplus-nginxdeployments-logs.md
-            displayName: NGINX Logs
+            displayName: NGINX Logs,NGINX Security Logs
   - name: Azure Monitor Log Analytics tables
     href: ./tables/tables-resourcetype.md
     items:
