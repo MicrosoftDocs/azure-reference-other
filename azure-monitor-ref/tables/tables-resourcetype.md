@@ -4,7 +4,7 @@ description: Field definitions for Azure Monitor resource log / log analytics ta
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 06/17/2024
+ms.date: 07/01/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -1324,6 +1324,7 @@ Microsoft.NetworkCloud/storageAppliances
 NGINX.NGINXPLUS/nginxDeployments  
 
 - [NGXOperationLogs](ngxoperationlogs.md)
+- [NGXSecurityLogs](ngxsecuritylogs.md)
 
 ### Power BI Datasets  
 
