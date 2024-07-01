@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 03/05/2024
+ms.date: 07/01/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.OperationalInsights/workspaces, naam
@@ -78,8 +78,8 @@ ms.custom: Microsoft.OperationalInsights/workspaces, naam
 |Legacy Log-based metrics|**Event**<br><br>Event. Supported for: Windows. Part of [metric alerts for logs feature](https://aka.ms/am-log-to-metric). |`Event` |Count |Average |`Source`, `EventLog`, `Computer`, `EventCategory`, `EventLevel`, `EventLevelName`, `EventID`|PT1M |Yes|
 |DataExport|**Exports Failed (preview)**<br><br>Total number of data exports failed per the specified data export rule to the specified destination from this workspace. |`ExportFailed` |Count |Total |`LogAnalyticsDataExportDestinationType`, `LogAnalyticsDataExportRuleName`, `LogAnalyticsDataExportErrorType`|PT1M |Yes|
 |Legacy Log-based metrics|**Heartbeat**<br><br>Heartbeat. Supported for: Linux, Windows. Part of [metric alerts for logs feature](https://aka.ms/am-log-to-metric). |`Heartbeat` |Count |Total |`Computer`, `OSType`, `Version`, `SourceComputerId`|PT1M |Yes|
-|SLI|**Ingestion Time**<br><br>Latency of data ingested, from the time that the data is created on the monitored system and the time that it is available for analysis in this workspace. |`Ingestion Time` |Seconds |Average, Maximum, Minimum |`Table Name`, `TableClassification`|PT1M |No|
-|SLI|**Ingestion Volume**<br><br>Total number of ingested records for this workspace. |`Ingestion Volume` |Count |Count |`Table Name`, `TableClassification`|PT1M |No|
+|SLI|**Ingestion Time**<br><br>Time in seconds it took since record recieved in Azure Monitor Logs cloud service until it was available for queries. |`Ingestion Time` |Seconds |Average, Maximum, Minimum |`Table Name`, `TableClassification`|PT1M |No|
+|SLI|**Ingestion Volume**<br><br>Number of records ingested into a workspace or a table. |`Ingestion Volume` |Count |Count |`Table Name`, `TableClassification`|PT1M |No|
 |User Queries|**Query Count**<br><br>Total number of user queries for this workspace. |`Query Count` |Count |Count |`IsUserQuery`|PT1M |No|
 |User Queries|**Query Failure Count**<br><br>Total number of failed user queries for this workspace. |`Query Failure Count` |Count |Count |`IsUserQuery`|PT1M |No|
 |DataExport|**Records Exported (preview)**<br><br>Total number of records exported per the specified data export rule to the specified destination from this workspace. |`RecordsExported` |Count |Total |`LogAnalyticsDataExportDestinationType`, `LogAnalyticsDataExportRuleName`|PT1M |Yes|
