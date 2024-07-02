@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 03/05/2024
+ms.date: 07/01/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Monitor/accounts, naam
@@ -13,4 +13,4 @@ ms.custom: Microsoft.Monitor/accounts, naam
   
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
-|`MetricsUsageDetails` |Metrics Usage Details ||No|No||Yes |
+|`MetricsUsageDetails` |Metrics Usage Details |[AMWMetricsUsageDetails](/azure/azure-monitor/reference/tables/amwmetricsusagedetails)<p>Table that breaks down data quantities and query usage of metrics sent to an Azure Monitor Workspace.|Yes|No||Yes |

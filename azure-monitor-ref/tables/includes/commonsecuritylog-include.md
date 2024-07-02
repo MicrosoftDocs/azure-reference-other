@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 07/01/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: CommonSecurityLog
@@ -89,7 +89,7 @@ ms.custom: CommonSecurityLog
 | DeviceVersion | string | String that together with device product and version definitions, uniquely identifies the type of sending device. |
 | EndTime | datetime | The time at which the activity related to the event ended. |
 | EventCount | int | A count associated with the event, showing how many times the same event was observed. |
-| EventOutcome | string | Displays the outcome, usually as ‘success’ or ‘failure’. |
+| EventOutcome | string | Displays the outcome, usually as ‘success��� or ‘failure’. |
 | EventType | int | Event type. Value values include: 0: base event, 1: aggregated, 2: correlation event, 3: action event. Note: This event can be omitted for base events. |
 | ExternalID | int | Soon to be a deprecated field. Will be replaced by ExtID. |
 | ExtID | string | An ID used by the originating device (will replace legacy ExternalID). Typically, these values have increasing values that are each associated with an event. |
