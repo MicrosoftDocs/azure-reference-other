@@ -1,12 +1,12 @@
 ---
-title: Supported log categories - Microsoft.AppPlatform/Spring
-description: Reference for Microsoft.AppPlatform/Spring in Azure Monitor Logs.
+title: Supported log categories - Microsoft.AppPlatform/spring
+description: Reference for Microsoft.AppPlatform/spring in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 01/10/2024
-ms.custom: Microsoft.AppPlatform/Spring, arm
+ms.date: 07/01/2024
+ms.custom: Microsoft.AppPlatform/spring, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
 
@@ -15,16 +15,16 @@ ms.custom: Microsoft.AppPlatform/Spring, arm
 
 
 
-# Supported logs for Microsoft.AppPlatform/Spring  
-The following table lists the types of logs available for the Microsoft.AppPlatform/Spring resource type.
+# Supported logs for Microsoft.AppPlatform/spring  
+The following table lists the types of logs available for the Microsoft.AppPlatform/spring resource type.
   
   
   
-For a list of supported metrics, see [Supported metrics - Microsoft.AppPlatform/Spring](../supported-metrics/microsoft-appplatform-spring-metrics.md)  
+For a list of supported metrics, see [Supported metrics - Microsoft.AppPlatform/spring](../supported-metrics/microsoft-appplatform-spring-metrics.md)  
   
 
   
-[!INCLUDE [Microsoft.AppPlatform/Spring](./includes/microsoft-appplatform-spring-logs-include.md)]  
+[!INCLUDE [Microsoft.AppPlatform/spring](./includes/microsoft-appplatform-spring-logs-include.md)]  
   
   
 

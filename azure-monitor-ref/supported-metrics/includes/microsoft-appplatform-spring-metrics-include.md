@@ -1,10 +1,10 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
+ms.date: 07/01/2024
 ms.author: edbaynash
 author: EdB-MSFT
-ms.custom: Microsoft.AppPlatform/Spring, arm
+ms.custom: Microsoft.AppPlatform/spring, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
  
@@ -21,8 +21,7 @@ ms.custom: Microsoft.AppPlatform/Spring, arm
 |Request (.NET)|**current-requests**<br><br>Total number of requests in processing in the lifetime of the process |`current-requests` |Count |Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
 |Performance (.NET)|**exception-count**<br><br>Number of Exceptions |`exception-count` |Count |Total, Maximum, Minimum, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
 |Request (.NET)|**failed-requests**<br><br>Total number of failed requests in the lifetime of the process |`failed-requests` |Count |Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
-|Gateway|**Max time of requests**<br><br>The max time of requests |`GatewayHttpServerRequestsMilliSecondsMax` |Milliseconds |Maximum, Average |`Pod`, `httpStatusCode`, `outcome`, `httpMethod`|PT1M |Yes|
-|Gateway|**Total time of requests**<br><br>The total time of requests |`GatewayHttpServerRequestsMilliSecondsSum` |Milliseconds |Maximum, Minimum, Average |`Pod`, `httpStatusCode`, `outcome`, `httpMethod`|PT1M |Yes|
+|Gateway|**Max time of requests**<br><br>The max time of requests |`GatewayHttpServerRequestsMilliSecondsMax` |MilliSeconds |Maximum, Average |`Pod`, `httpStatusCode`, `outcome`, `httpMethod`|PT1M |Yes|
 |Gateway|**Request count**<br><br>The number of requests |`GatewayHttpServerRequestsSecondsCount` |Count |Total, Average |`Pod`, `httpStatusCode`, `outcome`, `httpMethod`|PT1M |Yes|
 |Gateway|**jvm.gc.live.data.size**<br><br>Size of old generation memory pool after a full GC |`GatewayJvmGcLiveDataSizeBytes` |Bytes |Maximum, Average |`Pod`|PT1M |Yes|
 |Gateway|**jvm.gc.max.data.size**<br><br>Max size of old generation memory pool |`GatewayJvmGcMaxDataSizeBytes` |Bytes |Maximum, Average |`Pod`|PT1M |Yes|
@@ -56,7 +55,7 @@ ms.custom: Microsoft.AppPlatform/Spring, arm
 |Performance (Java)|**jvm.gc.memory.allocated**<br><br>Incremented for an increase in the size of the young generation memory pool after one GC to before the next |`jvm.gc.memory.allocated` |Bytes |Maximum, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
 |Performance (Java)|**jvm.gc.memory.promoted**<br><br>Count of positive increases in the size of the old generation memory pool before GC to after GC |`jvm.gc.memory.promoted` |Bytes |Maximum, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
 |Performance (Java)|**jvm.gc.pause.total.count**<br><br>GC Pause Count |`jvm.gc.pause.total.count` |Count |Total, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
-|Performance (Java)|**jvm.gc.pause.total.time**<br><br>GC Pause Total Time |`jvm.gc.pause.total.time` |Milliseconds |Total, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
+|Performance (Java)|**jvm.gc.pause.total.time**<br><br>GC Pause Total Time |`jvm.gc.pause.total.time` |MilliSeconds |Total, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
 |Performance (Java)|**jvm.memory.committed**<br><br>Memory assigned to JVM in bytes |`jvm.memory.committed` |Bytes |Maximum, Minimum, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
 |Performance (Java)|**jvm.memory.max**<br><br>The maximum amount of memory in bytes that can be used for memory management |`jvm.memory.max` |Bytes |Maximum |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
 |Performance (Java)|**jvm.memory.used**<br><br>App Memory Used in bytes |`jvm.memory.used` |Bytes |Maximum, Minimum, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
@@ -78,14 +77,14 @@ ms.custom: Microsoft.AppPlatform/Spring, arm
 |Performance (.NET)|**time-in-gc**<br><br>% time in GC since the last GC |`time-in-gc` |Percent |Maximum, Minimum, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
 |Error (Java)|**tomcat.global.error**<br><br>Tomcat Global Error |`tomcat.global.error` |Count |Total, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
 |Request (Java)|**tomcat.global.received**<br><br>Tomcat Total Received Bytes |`tomcat.global.received` |Bytes |Total, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
-|Request (Java)|**tomcat.global.request.avg.time**<br><br>Tomcat Request Average Time |`tomcat.global.request.avg.time` |Milliseconds |Maximum, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
-|Request (Java)|**tomcat.global.request.max**<br><br>Tomcat Request Max Time |`tomcat.global.request.max` |Milliseconds |Maximum |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
+|Request (Java)|**tomcat.global.request.avg.time**<br><br>Tomcat Request Average Time |`tomcat.global.request.avg.time` |MilliSeconds |Maximum, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
+|Request (Java)|**tomcat.global.request.max**<br><br>Tomcat Request Max Time |`tomcat.global.request.max` |MilliSeconds |Maximum |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
 |Request (Java)|**tomcat.global.request.total.count**<br><br>Tomcat Request Total Count |`tomcat.global.request.total.count` |Count |Total, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
-|Request (Java)|**tomcat.global.request.total.time**<br><br>Tomcat Request Total Time |`tomcat.global.request.total.time` |Milliseconds |Total, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
+|Request (Java)|**tomcat.global.request.total.time**<br><br>Tomcat Request Total Time |`tomcat.global.request.total.time` |MilliSeconds |Total, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
 |Request (Java)|**tomcat.global.sent**<br><br>Tomcat Total Sent Bytes |`tomcat.global.sent` |Bytes |Total, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
 |Session (Java)|**tomcat.sessions.active.current**<br><br>Tomcat Session Active Count |`tomcat.sessions.active.current` |Count |Total, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
 |Session (Java)|**tomcat.sessions.active.max**<br><br>Tomcat Session Max Active Count |`tomcat.sessions.active.max` |Count |Total, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
-|Session (Java)|**tomcat.sessions.alive.max**<br><br>Tomcat Session Max Alive Time |`tomcat.sessions.alive.max` |Milliseconds |Maximum |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
+|Session (Java)|**tomcat.sessions.alive.max**<br><br>Tomcat Session Max Alive Time |`tomcat.sessions.alive.max` |MilliSeconds |Maximum |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
 |Session (Java)|**tomcat.sessions.created**<br><br>Tomcat Session Created Count |`tomcat.sessions.created` |Count |Total, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
 |Session (Java)|**tomcat.sessions.expired**<br><br>Tomcat Session Expired Count |`tomcat.sessions.expired` |Count |Total, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
 |Session (Java)|**tomcat.sessions.rejected**<br><br>Tomcat Session Rejected Count |`tomcat.sessions.rejected` |Count |Total, Average |`Deployment`, `AppName`, `Pod`|PT1M |Yes|
