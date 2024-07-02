@@ -4,7 +4,7 @@ description: Azure Monitor log analytics queries by tables
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 06/17/2024
+ms.date: 07/01/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -1427,6 +1427,10 @@ ms.reviewer: lualderm
 
 - [Show NGINXaaS access logs](NGXOperationLogs.md#show-nginxaas-access-logs)
 - [Show NGINXaaS error logs](NGXOperationLogs.md#show-nginxaas-error-logs)
+
+## [NGXSecurityLogs](NGXSecurityLogs.md)
+
+- [Show NGINXaaS security logs](NGXSecurityLogs.md#show-nginxaas-security-logs)
 
 ## [NWConnectionMonitorPathResult](NWConnectionMonitorPathResult.md)
 

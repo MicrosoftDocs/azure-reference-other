@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 06/17/2024
+ms.date: 07/01/2024
 ---
 
 # Azure Monitor Log Analytics log tables organized by category
@@ -442,6 +442,7 @@ ms.date: 06/17/2024
 - [NCSStorageAlerts](ncsstoragealerts.md)
 - [NCSStorageLogs](ncsstoragelogs.md)
 - [NGXOperationLogs](ngxoperationlogs.md)
+- [NGXSecurityLogs](ngxsecuritylogs.md)
 - [NSPAccessLogs](nspaccesslogs.md)
 - [OEPAirFlowTask](oepairflowtask.md)
 - [OEPAuditLogs](oepauditlogs.md)
