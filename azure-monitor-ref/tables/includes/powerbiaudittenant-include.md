@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/01/2024
+ms.date: 07/08/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: PowerBIAuditTenant
@@ -17,7 +17,7 @@ ms.custom: PowerBIAuditTenant
 | ExecutingUser | string | The user executing the operation. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Level | string | Contains the severity level of the operation being logged. Success, Informational, Warning, or Error. |
-| LogAnalyticsCategory | string | Unique category of the events��like like Audit/Security/Request. |
+| LogAnalyticsCategory | string | Unique category of the events like like Audit/Security/Request. |
 | OperationName | string | The operation associated with the log record. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |

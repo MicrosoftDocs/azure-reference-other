@@ -4,7 +4,7 @@ description: Field definitions for Azure Monitor resource log / log analytics ta
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 07/01/2024
+ms.date: 07/08/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -1300,6 +1300,13 @@ Microsoft.NetworkCloud/bareMetalMachines
 - [NCBMSecurityLogs](ncbmsecuritylogs.md)
 - [NCBMSecurityDefenderLogs](ncbmsecuritydefenderlogs.md)
 - [NCBMBreakGlassAuditLogs](ncbmbreakglassauditlogs.md)
+
+### Nexus Cluster Managers  
+
+Microsoft.NetworkCloud/clusterManagers  
+
+- [AzureActivity](azureactivity.md)
+- [AzureMetrics](azuremetrics.md)
 
 ### Nexus Clusters  
 
