@@ -1372,6 +1372,8 @@ items:
             href: tables/microsoft-networkanalytics_dataproducts.md
           - name: microsoft.networkcloud/baremetalmachines
             href: tables/microsoft-networkcloud_baremetalmachines.md
+          - name: microsoft.networkcloud/clustermanagers
+            href: tables/microsoft-networkcloud_clustermanagers.md
           - name: microsoft.networkcloud/clusters
             href: tables/microsoft-networkcloud_clusters.md
           - name: microsoft.networkcloud/storageappliances
