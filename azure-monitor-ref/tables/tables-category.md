@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/01/2024
+ms.date: 07/22/2024
 ---
 
 # Azure Monitor Log Analytics log tables organized by category
@@ -116,6 +116,7 @@ ms.date: 07/01/2024
 - [CDBPartitionKeyRUConsumption](cdbpartitionkeyruconsumption.md)
 - [CDBPartitionKeyStatistics](cdbpartitionkeystatistics.md)
 - [CDBQueryRuntimeStatistics](cdbqueryruntimestatistics.md)
+- [CDBTableApiRequests](cdbtableapirequests.md)
 - [CHSMManagementAuditLogs](chsmmanagementauditlogs.md)
 - [CIEventsAudit](cieventsaudit.md)
 - [CassandraAudit](cassandraaudit.md)
@@ -148,7 +149,6 @@ ms.date: 07/01/2024
 - [PowerAppsActivity](powerappsactivity.md)
 - [PowerAutomateActivity](powerautomateactivity.md)
 - [PowerBIActivity](powerbiactivity.md)
-- [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerPlatformAdminActivity](powerplatformadminactivity.md)
 - [PowerPlatformConnectorActivity](powerplatformconnectoractivity.md)
 - [PowerPlatformDlpActivity](powerplatformdlpactivity.md)
@@ -337,6 +337,7 @@ ms.date: 07/01/2024
 - [CDBPartitionKeyRUConsumption](cdbpartitionkeyruconsumption.md)
 - [CDBPartitionKeyStatistics](cdbpartitionkeystatistics.md)
 - [CDBQueryRuntimeStatistics](cdbqueryruntimestatistics.md)
+- [CDBTableApiRequests](cdbtableapirequests.md)
 - [CHSMManagementAuditLogs](chsmmanagementauditlogs.md)
 - [CIEventsAudit](cieventsaudit.md)
 - [CIEventsOperational](cieventsoperational.md)
@@ -439,7 +440,9 @@ ms.date: 07/01/2024
 - [NCBMSystemLogs](ncbmsystemlogs.md)
 - [NCCKubernetesLogs](ncckuberneteslogs.md)
 - [NCCVMOrchestrationLogs](nccvmorchestrationlogs.md)
+- [NCMClusterOperationsLogs](ncmclusteroperationslogs.md)
 - [NCSStorageAlerts](ncsstoragealerts.md)
+- [NCSStorageAudits](ncsstorageaudits.md)
 - [NCSStorageLogs](ncsstoragelogs.md)
 - [NGXOperationLogs](ngxoperationlogs.md)
 - [NGXSecurityLogs](ngxsecuritylogs.md)
@@ -452,11 +455,8 @@ ms.date: 07/01/2024
 - [OLPSupplyChainEntityOperations](olpsupplychainentityoperations.md)
 - [OLPSupplyChainEvents](olpsupplychainevents.md)
 - [PFTitleAuditLogs](pftitleauditlogs.md)
-- [PowerBIAuditTenant](powerbiaudittenant.md)
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
-- [PowerBIReportUsageTenant](powerbireportusagetenant.md)
-- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 - [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
 - [PurviewScanStatusLogs](purviewscanstatuslogs.md)
 - [PurviewSecurityLogs](purviewsecuritylogs.md)
@@ -730,6 +730,7 @@ ms.date: 07/01/2024
 - [DeviceTvmSoftwareInventory](devicetvmsoftwareinventory.md)
 - [DeviceTvmSoftwareVulnerabilities](devicetvmsoftwarevulnerabilities.md)
 - [DeviceTvmSoftwareVulnerabilitiesKB](devicetvmsoftwarevulnerabilitieskb.md)
+- [DnsAuditEvents](dnsauditevents.md)
 - [DynamicEventCollection](dynamiceventcollection.md)
 - [EmailAttachmentInfo](emailattachmentinfo.md)
 - [EmailEvents](emailevents.md)
@@ -779,6 +780,8 @@ ms.date: 07/01/2024
 - [SigninLogs](signinlogs.md)
 - [StorageMalwareScanningResults](storagemalwarescanningresults.md)
 - [Syslog](syslog.md)
+- [ThreatIntelIndicators](threatintelindicators.md)
+- [ThreatIntelObjects](threatintelobjects.md)
 - [ThreatIntelligenceIndicator](threatintelligenceindicator.md)
 - [Update](update.md)
 - [UrlClickEvents](urlclickevents.md)
