@@ -4,7 +4,7 @@ description: Field definitions for Azure Monitor resource log / log analytics ta
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 07/08/2024
+ms.date: 07/22/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -29,6 +29,7 @@ microsoft.analysisservices/servers
 
 Microsoft.ApiManagement/service  
 
+- [APIMDevPortalAuditDiagnosticLog](apimdevportalauditdiagnosticlog.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
@@ -246,6 +247,7 @@ Microsoft.DocumentDb/databaseAccounts
 - [CDBMongoRequests](cdbmongorequests.md)
 - [CDBCassandraRequests](cdbcassandrarequests.md)
 - [CDBGremlinRequests](cdbgremlinrequests.md)
+- [CDBTableApiRequests](cdbtableapirequests.md)
 - [CDBControlPlaneRequests](cdbcontrolplanerequests.md)
 - [AzureMetrics](azuremetrics.md)
 - [AzureDiagnostics](azurediagnostics.md)
@@ -486,6 +488,7 @@ Microsoft.SecurityInsights/securityInsights
 
 - [SecurityAlert](securityalert.md)
 - [SecurityEvent](securityevent.md)
+- [DnsAuditEvents](dnsauditevents.md)
 
 ### Azure Sentinel CEF Table  
 
@@ -1218,6 +1221,13 @@ Microsoft.SecurityInsights/ProcessEventNormalized
 
 - [ASimProcessEventLogs](asimprocesseventlogs.md)
 
+### Microsoft Sentinel Threat Intelligence.  
+
+Microsoft.SecurityInsights/ThreatIntelligence  
+
+- [ThreatIntelObjects](threatintelobjects.md)
+- [ThreatIntelIndicators](threatintelindicators.md)
+
 ### Microsoft.AgFoodPlatform/farmBeats  
 
 Microsoft.AgFoodPlatform/farmBeats  
@@ -1307,6 +1317,7 @@ Microsoft.NetworkCloud/clusterManagers
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [NCMClusterOperationsLogs](ncmclusteroperationslogs.md)
 
 ### Nexus Clusters  
 
@@ -1323,6 +1334,7 @@ Microsoft.NetworkCloud/storageAppliances
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
+- [NCSStorageAudits](ncsstorageaudits.md)
 - [NCSStorageAlerts](ncsstoragealerts.md)
 - [NCSStorageLogs](ncsstoragelogs.md)
 
@@ -1338,15 +1350,12 @@ NGINX.NGINXPLUS/nginxDeployments
 Microsoft.PowerBI/tenants  
 
 - [PowerBIDatasetsTenant](powerbidatasetstenant.md)
-- [PowerBIAuditTenant](powerbiaudittenant.md)
-- [PowerBIReportUsageTenant](powerbireportusagetenant.md)
 
 ### Power BI Datasets  
 
 Microsoft.PowerBI/tenants/workspaces  
 
 - [PowerBIDatasetsWorkspace](powerbidatasetsworkspace.md)
-- [PowerBIReportUsageWorkspace](powerbireportusageworkspace.md)
 
 ### Power BI Embedded  
 

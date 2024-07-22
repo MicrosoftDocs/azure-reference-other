@@ -1426,6 +1426,8 @@ items:
             href: tables/microsoft-securityinsights_purview.md
           - name: microsoft.securityinsights/securityinsights
             href: tables/microsoft-securityinsights_securityinsights.md
+          - name: microsoft.securityinsights/threatintelligence
+            href: tables/microsoft-securityinsights_threatintelligence.md
           - name: microsoft.securityinsights/websessionlogs
             href: tables/microsoft-securityinsights_websessionlogs.md
           - name: microsoft.servicebus/namespaces
@@ -1677,6 +1679,8 @@ items:
             href: tables/aoidigestion.md
           - name: AOIStorage
             href: tables/aoistorage.md
+          - name: APIMDevPortalAuditDiagnosticLog
+            href: tables/apimdevportalauditdiagnosticlog.md
           - name: ASCAuditLogs
             href: tables/ascauditlogs.md
           - name: ASCDeviceEvents
@@ -1981,6 +1985,8 @@ items:
             href: tables/cdbpartitionkeystatistics.md
           - name: CDBQueryRuntimeStatistics
             href: tables/cdbqueryruntimestatistics.md
+          - name: CDBTableApiRequests
+            href: tables/cdbtableapirequests.md
           - name: CHSMManagementAuditLogs
             href: tables/chsmmanagementauditlogs.md
           - name: CIEventsAudit
@@ -2199,6 +2205,8 @@ items:
             href: tables/devicetvmsoftwarevulnerabilities.md
           - name: DeviceTvmSoftwareVulnerabilitiesKB
             href: tables/devicetvmsoftwarevulnerabilitieskb.md
+          - name: DnsAuditEvents
+            href: tables/dnsauditevents.md
           - name: DnsEvents
             href: tables/dnsevents.md
           - name: DnsInventory
@@ -2459,8 +2467,12 @@ items:
             href: tables/ncckuberneteslogs.md
           - name: NCCVMOrchestrationLogs
             href: tables/nccvmorchestrationlogs.md
+          - name: NCMClusterOperationsLogs
+            href: tables/ncmclusteroperationslogs.md
           - name: NCSStorageAlerts
             href: tables/ncsstoragealerts.md
+          - name: NCSStorageAudits
+            href: tables/ncsstorageaudits.md
           - name: NCSStorageLogs
             href: tables/ncsstoragelogs.md
           - name: NGXOperationLogs
@@ -2691,6 +2703,10 @@ items:
             href: tables/syslog.md
           - name: TSIIngress
             href: tables/tsiingress.md
+          - name: ThreatIntelIndicators
+            href: tables/threatintelindicators.md
+          - name: ThreatIntelObjects
+            href: tables/threatintelobjects.md
           - name: ThreatIntelligenceIndicator
             href: tables/threatintelligenceindicator.md
           - name: UAApp
