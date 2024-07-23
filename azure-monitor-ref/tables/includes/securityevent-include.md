@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 05/13/2024
+ms.date: 07/22/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: SecurityEvent
@@ -49,6 +49,7 @@ ms.custom: SecurityEvent
 | CommandLine | string | The command line arguments that were passed to an application or process that was involved in the event. |
 | CompatibleIds | string | 'Compatible Ids' attribute of device. To see device properties, start Device Manager, open specific device properties, and click 'Details': |
 | Computer | string | The name of the computer on which the event occurred. |
+| Correlation | string | The activity identifiers that consumers can use to group related events together. |
 | DCDNSName | string | The DNS name of the domain controller that was involved in the event. |
 | DeviceDescription | string | the description of the device that was involved in the event. |
 | DeviceId | string | The unique identifier of the device that was involved in the event. |
@@ -63,6 +64,8 @@ ms.custom: SecurityEvent
 | ErrorCode | int | Contains error code for Failure events. For Success events this parameter has '0x0' value. |
 | EventData | string | Event specific data associated with the event. |
 | EventID | int | The identifier that the provider used to identify the event. |
+| EventLevelName | string | The rendered message string of the level specified in the event. |
+| EventRecordId | string | The record number assigned to the event when it was logged. |
 | EventSourceName | string | The name of the software that logs the event (applicationor a succomponent). |
 | ExtendedQuarantineState | string | The state of the network quarantine process, if applicable. Network quarantine is a process by which unauthorized devices are prevented from accessing a network until they meet certain security requirements or have been checked for malware. |
 | FailureReason | string | textual explanation of Status field value. For this event, it typically has 'Account locked out' value. |
@@ -84,6 +87,7 @@ ms.custom: SecurityEvent
 | IpPort | string | The network port number associated with the event. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | KeyLength | int | The length of NTLM Session Security key. Typically it has 128 bit or 56 bit length. |
+| Keywords | string | A bitmask of the keywords defined in the event. |
 | Level | string | Windows categorizes every event with a severity level. The levels in order of severity are information, verbose, warning, error and critical expressed in numbers. |
 | LmPackageName | string | The name of the package or software component that is currently using the Local Security Authority (LSA) on the machine where the event is being generated. |
 | LocationInformation | string | 'Location information' attribute of device. To see device properties, start Device Manager, open specific device properties, and click 'Details': |
@@ -135,6 +139,7 @@ ms.custom: SecurityEvent
 | OldUacValue | string | Specifies flags that control password, lockout, disable/enable, script, and other behavior for the user account. This parameter contains the previous value of userAccountControl attribute of user object. |
 | OldValue | string | Old value for changed registry key value. |
 | OldValueType | string | Old type of changed registry key value. |
+| Opcode | string | The opcode element is defined by the SystemPropertiesType complex type. |
 | OperationType | string | The type of operation which was performed on an object |
 | PackageName | string | The name of the LAN Manager sub-package (NTLM-family protocol name) that was used during logon. |
 | ParentProcessName | string | The name of the parent process associated with the event. |
@@ -195,6 +200,9 @@ ms.custom: SecurityEvent
 | SubjectUserSid | string | The security identifier (SID) for the user account that generated the event. |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | SubStatus | string | Additional information about logon failure. The most common substatus codes listed in the 'Table 12. Windows logon status codes'. |
+| SystemProcessId | int | Identifies the process that generated the event. |
+| SystemThreadId | int | Identifies the thread that generated the event. |
+| SystemUserId | string | The ID of the user who is responsible for the event. |
 | TableId | string | The specific data table identifier the event data is stored in. |
 | TargetAccount | string | The account targeted by the event (user name, computer name, etc). |
 | TargetDomainName | string | The name of the domain that the target account belongs to. |
@@ -226,6 +234,7 @@ ms.custom: SecurityEvent
 | UserPrincipalName | string | Internet-style login name for the account, based on the Internet standard RFC 822. By convention this should map to the account's email name. |
 | UserWorkstations | string | Contains the list of NetBIOS or DNS names of the computers from which the user can logon. Each computer name is separated by a comma. The name of a computer is the sAMAccountName property of a computer object. |
 | VendorIds | string | 'Hardware Ids' attribute of device. To see device properties, start Device Manager, open specific device properties, and click 'Details'. |
+| Version | int | Contains the version number of the event's definition. |
 | VirtualAccount | string | A 'Yes' or 'No' flag, which indicates if the account is a virtual account (e.g., 'Managed Service Account'), which was introduced in Windows 7 and Windows Server 2008 R2 to provide the ability to identify the account that a given Service uses, instead of just using 'NetworkService'. |
 | Workstation | string | The name of the machine that was used to perform the event. |
 | WorkstationName | string | Machine name from which a logon attempt was performed. |

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 07/22/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: DeviceFileCertificateInfo
@@ -32,5 +32,5 @@ ms.custom: DeviceFileCertificateInfo
 | SignerHash | string | Unique hash value identifying the signer. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
-| TimeGenerated | datetime | Date and time (UTC) when the record was generated. |
+| TimeGenerated | datetime | Date and time the event was recorded by the MDE agent on the endpoint. |
 | Type | string | The name of the table |

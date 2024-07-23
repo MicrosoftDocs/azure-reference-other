@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/05/2024
+ms.date: 07/22/2024
 ---
 
 # PowerBIReportUsageTenant
@@ -18,8 +18,8 @@ Contains usage metric logs for open report and change report page for the worksp
 
 |Attribute|Value|
 |---|---|
-|**Resource types**|microsoft.powerbi/tenants|
-|**Categories**|Azure Resources|
+|**Resource types**|-|
+|**Categories**|-|
 |**Solutions**| LogManagement|
 |**Basic log**|No|
 |**Ingestion-time transformation**|No|

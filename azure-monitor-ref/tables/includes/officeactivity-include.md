@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/18/2024
+ms.date: 07/22/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: OfficeActivity
@@ -24,6 +24,7 @@ ms.custom: OfficeActivity
 | AppId | string | Application ID |
 | Application | string | The application name |
 | ApplicationId | string | SharePoint application ID |
+| AppPoolName | string | The App pool name |
 | AzureActiveDirectory_EventType | string | The type of Azure AD event |
 | AzureADAppId | string | Teams Application Azure AD ID |
 | _BilledSize | real | The record size in bytes |
