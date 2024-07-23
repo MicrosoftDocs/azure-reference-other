@@ -735,9 +735,10 @@ items:
               Logs
           - name: Microsoft.EventGrid/namespaces
             href: supported-logs/microsoft-eventgrid-namespaces-logs.md
-            displayName: Failed MQTT Connections,Failed MQTT Published Messages,Failed MQTT
-              Subscription Operations,MQTT Disconnections,Successful MQTT
-              Connections
+            displayName: Failed HTTP data plane operations logs,Failed MQTT
+              Connections,Failed MQTT Published Messages,Failed MQTT
+              Subscription Operations,MQTT Disconnections,Successful HTTP data
+              plane operations logs,Successful MQTT Connections
           - name: Microsoft.EventGrid/partnerNamespaces
             href: supported-logs/microsoft-eventgrid-partnernamespaces-logs.md
             displayName: Data plane operations logs,Publish Failure Logs
