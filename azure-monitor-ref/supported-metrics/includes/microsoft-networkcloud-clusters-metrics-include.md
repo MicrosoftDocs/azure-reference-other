@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 05/20/2024
+ms.date: 07/23/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkCloud/clusters, naam
@@ -127,6 +127,8 @@ ms.custom: Microsoft.NetworkCloud/clusters, naam
 |Network Cloud|**CPU Pinning Map (Preview)**<br><br>Pinning map of virtual CPUs (vCPUs) to CPUs |`NcVmiCpuAffinity` |Count |Average |`CPU`, `NUMA Node`, `VMI Namespace`, `VMI Node`, `VMI Name`|PT1M |No|
 |Nexus Cluster|**Cluster Heartbeat Connection Status**<br><br>Indicates whether the Cluster is having issues communicating with the Cluster Manager. The value of the metric is 0 when the connection is healthy and 1 when it is unhealthy. |`NexusClusterHeartbeatConnectionStatus` |Count |Average |`Reason`|PT1M |No|
 |Nexus Cluster|**Cluster Machine Group Upgrade**<br><br>Tracks Cluster Machine Group Upgrades performed. The value of the metric is 0 when the result is successful and 1 for all other results. |`NexusClusterMachineGroupUpgrade` |Count |Average |`Machine Group`, `Result`, `Upgraded From Version`, `Upgraded To Version`|PT1M |No|
+|Deployment|**NFS Volume Size Bytes**<br><br>Total Size of the NFS volume |`NfsVolumeSizeBytes` |Bytes |Average |`CSN Name`|PT1M |No|
+|Deployment|**NFS Volume Used Bytes**<br><br>Size of NFS volume used |`NfsVolumeUsedBytes` |Bytes |Average |`CSN Name`|PT1M |No|
 |Calico|**Typha Client Latency Secs**<br><br>Per-client latency. I.e. how far behind the current state each client is. |`TyphaClientLatencySecsCount` |Count |Average |`Pod Name`|PT1M |No|
 |Calico|**Typha Connections Accepted**<br><br>Total number of connections accepted over time |`TyphaConnectionsAccepted` |Count |Average |`Pod Name`|PT1M |No|
 |Calico|**Typha Connections Dropped**<br><br>Total number of connections dropped due to rebalancing |`TyphaConnectionsDropped` |Count |Average |`Pod Name`|PT1M |No|

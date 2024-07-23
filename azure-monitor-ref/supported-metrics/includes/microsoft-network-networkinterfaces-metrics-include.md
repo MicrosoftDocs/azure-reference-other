@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/01/2024
+ms.date: 07/23/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Network/networkinterfaces, naam
@@ -15,9 +15,9 @@ ms.custom: Microsoft.Network/networkinterfaces, naam
 |---|---|---|---|---|---|---|
 |**Bytes Received**<br><br>Number of bytes the Network Interface received |`BytesReceivedRate` |Bytes |Total |\<none\>|PT1M |Yes|
 |**Bytes Sent**<br><br>Number of bytes the Network Interface sent |`BytesSentRate` |Bytes |Total |\<none\>|PT1M |Yes|
-|**Inbound Flows Maximum Creation Rate**<br><br>The maximum creation rate of inbound flows (traffic going into the NIC) |`CreationRateMaxTotalFlowsIn` |CountPerSecond |Average |\<none\>|PT1M |Yes|
-|**Outbound Flows Maximum Creation Rate**<br><br>The maximum creation rate of outbound flows (traffic going out of the NIC) |`CreationRateMaxTotalFlowsOut` |CountPerSecond |Average |\<none\>|PT1M |Yes|
-|**Inbound Flows**<br><br>Inbound Flows are number of current flows in the inbound direction (traffic going into the NIC) |`CurrentTotalFlowsIn` |Count |Average |\<none\>|PT1M |Yes|
-|**Outbound Flows**<br><br>Outbound Flows are number of current flows in the outbound direction (traffic going out of the NIC) |`CurrentTotalFlowsOut` |Count |Average |\<none\>|PT1M |Yes|
+|**Inbound Flows Maximum Creation Rate**<br><br>The maximum creation rate of inbound flows (traffic going into the NIC) |`CreationRateMaxTotalFlowsIn` |CountPerSecond |Average |\<none\>|PT1M |No|
+|**Outbound Flows Maximum Creation Rate**<br><br>The maximum creation rate of outbound flows (traffic going out of the NIC) |`CreationRateMaxTotalFlowsOut` |CountPerSecond |Average |\<none\>|PT1M |No|
+|**Inbound Flows**<br><br>Inbound Flows are number of current flows in the inbound direction (traffic going into the NIC) |`CurrentTotalFlowsIn` |Count |Average |\<none\>|PT1M |No|
+|**Outbound Flows**<br><br>Outbound Flows are number of current flows in the outbound direction (traffic going out of the NIC) |`CurrentTotalFlowsOut` |Count |Average |\<none\>|PT1M |No|
 |**Packets Received**<br><br>Number of packets the Network Interface received |`PacketsReceivedRate` |Count |Total |\<none\>|PT1M |Yes|
 |**Packets Sent**<br><br>Number of packets the Network Interface sent |`PacketsSentRate` |Count |Total |\<none\>|PT1M |Yes|
