@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 05/20/2024
+ms.date: 07/23/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
@@ -36,11 +36,13 @@ ms.custom: Microsoft.NetworkCloud/bareMetalMachines, naam
 |Filesystem|**Host Filesystem Device Errors**<br><br>Indicates if there was a problem getting information for the filesystem |`HostFilesystemDeviceError` |Count |Average |`Device`, `FSType`, `Host`, `Mountpoint`|PT1M |No|
 |Filesystem|**Host Filesystem Files**<br><br>Total number of permitted inodes |`HostFilesystemFiles` |Count |Average |`Device`, `FSType`, `Host`, `Mountpoint`|PT1M |No|
 |Filesystem|**Total Number of Free inodes**<br><br>Total number of free inodes |`HostFilesystemFilesFree` |Count |Average |`Device`, `FSType`, `Host`, `Mountpoint`|PT1M |No|
+|Filesystem|**Host Filesystem Files Percent Free**<br><br>Percentage of permitted inodes free to be used |`HostFilesystemFilesPercentFree` |Percent |Average |`Device`, `FSType`, `Host`, `Mountpoint`|PT1M |No|
 |Filesystem|**Host Filesystem Read Only**<br><br>Indicates if the filesystem is readonly |`HostFilesystemReadOnly` |Unspecified |Count |`Device`, `FSType`, `Host`, `Mountpoint`|PT1M |No|
 |Filesystem|**Host Filesystem Size In Bytes**<br><br>Filesystem size by node |`HostFilesystemSizeBytes` |Count |Average |`Device`, `FSType`, `Host`, `Mountpoint`|PT1M |No|
 |Filesystem|**Host Filesystem Usage In Percentage**<br><br>Percentage of used filesystem by node |`HostFilesystemUsage` |Percent |Average |`Device`, `FSType`, `Host`, `Mountpoint`|PT1M |No|
 |HardwareMonitor|**Host Hardware Monitor Temp**<br><br>Hardware monitor for temperature (celsius) |`HostHwmonTempCelsius` |Count |Average |`Chip`, `Host`, `Sensor`|PT1M |No|
 |HardwareMonitor|**Host Hardware Monitor Temp Max**<br><br>Hardware monitor for maximum temperature (celsius) |`HostHwmonTempMax` |Count |Average |`Chip`, `Host`, `Sensor`|PT1M |No|
+|HardwareMonitor|**Host Hardware Inlet Temp**<br><br>Inlet temperature for a hardware node (celsius) |`HostInletTemp` |Count |Average |`Host`|PT1M |No|
 |Memory|**Average Load In 1 Minute (Preview)**<br><br>1 minute load average |`HostLoad1` |Count |Average |`Host`|PT1M |No|
 |Memory|**Average Load In 15 Minutes (Preview)**<br><br>15 minute load average |`HostLoad15` |Count |Average |`Host`|PT1M |No|
 |Memory|**Average load in 5 minutes (Preview)**<br><br>5 minute load average |`HostLoad5` |Count |Average |`Host`|PT1M |No|

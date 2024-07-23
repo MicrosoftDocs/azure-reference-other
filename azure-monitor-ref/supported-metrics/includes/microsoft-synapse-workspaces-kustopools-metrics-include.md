@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/01/2024
+ms.date: 07/23/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.Synapse/workspaces/kustoPools, naam
@@ -30,7 +30,6 @@ ms.custom: Microsoft.Synapse/workspaces/kustoPools, naam
 |Ingestion health and performance|**Discovery Latency**<br><br>Reported by data connections (if exist). Time in seconds from when a message is enqueued or event is created until it is discovered by data connection. This time is not included in the Azure Data Explorer total ingestion duration. |`DiscoveryLatency` |Seconds |Average |`ComponentType`, `ComponentName`|PT1M |Yes|
 |Ingestion health and performance|**Events Dropped**<br><br>Number of events dropped permanently by data connection. An Ingestion result metric with a failure reason will be sent. |`EventsDropped` |Count |Total, Average, Minimum, Maximum |`ComponentType`, `ComponentName`|PT1M |Yes|
 |Ingestion health and performance|**Events Processed**<br><br>Number of events processed by the cluster |`EventsProcessed` |Count |Total, Average, Minimum, Maximum |`ComponentType`, `ComponentName`|PT1M |Yes|
-|Ingestion health and performance|**Events Processed (for Event/IoT Hubs) (deprecated)**<br><br>Total number of events read from Event Hub/ IoT Hub and processed by the cluster. The events can be split by the status: Received, Rejected, Processed. The metric is deprecated and presented for backward compatibility only. Use 'Events received', 'Events processed' and 'Events dropped' metrics instead. |`EventsProcessedForEventHubs` |Count |Maximum, Minimum, Total |`EventStatus`|PT1M |Yes|
 |Ingestion health and performance|**Events Received**<br><br>Number of events received by data connection. |`EventsReceived` |Count |Total, Average, Minimum, Maximum |`ComponentType`, `ComponentName`|PT1M |Yes|
 |Export health and performance|**Export Utilization**<br><br>Export utilization |`ExportUtilization` |Percent |Maximum |\<none\>|PT1M |Yes|
 |Cluster health|**FollowerLatency**<br><br>The follower databases synchronize changes in the leader databases. Because of the synchronization, there's a data lag of a few seconds to a few minutes in data availability.This metric measures the length of the time lag. The time lag depends on the overall size of the leader database metadata.This is a cluster level metrics: the followers catch metadata of all databases that are followed. This metric represents the latency of the process. |`FollowerLatency` |MilliSeconds |Average, Maximum, Minimum |`State`, `RoleInstance`|PT1M |Yes|

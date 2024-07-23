@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 03/05/2024
+ms.date: 07/23/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
@@ -21,4 +21,4 @@ ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
 |`PartitionKeyRUConsumption` |PartitionKeyRUConsumption |[CDBPartitionKeyRUConsumption](/azure/azure-monitor/reference/tables/cdbpartitionkeyruconsumption)<p>This table details the RU (Request Unit) consumption for logical partition keys in each region, within each of their physical partitions. This data can be used to identify hot partitions from a request volume perspective.|Yes|Yes||No |
 |`PartitionKeyStatistics` |PartitionKeyStatistics |[CDBPartitionKeyStatistics](/azure/azure-monitor/reference/tables/cdbpartitionkeystatistics)<p>This table provides outlier logical partition keys that have consumed more storage space than others. Statistics are based on a sub-sampling of partition keys within the collection and hence these are approximate. Partition keys that are below 1GB of storage may not show up in the reported statistics.|Yes|Yes||No |
 |`QueryRuntimeStatistics` |QueryRuntimeStatistics |[CDBQueryRuntimeStatistics](/azure/azure-monitor/reference/tables/cdbqueryruntimestatistics)<p>This table details query operations executed against a SQL API account. By default, the query text and its parameters are obfuscated to avoid logging PII data with full text query logging available by request.|Yes|Yes||No |
-|`TableApiRequests` |TableApiRequests |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftdocumentdb)|Yes |
+|`TableApiRequests` |TableApiRequests |[CDBTableApiRequests](/azure/azure-monitor/reference/tables/cdbtableapirequests)<p>This table details data plane operations, specifically for Table API accounts.|Yes|No||Yes |
