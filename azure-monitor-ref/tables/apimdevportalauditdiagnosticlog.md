@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/22/2024
+ms.date: 07/29/2024
 ---
 
 # APIMDevPortalAuditDiagnosticLog
@@ -21,7 +21,7 @@ Diagnostic Logs for API Management Developer Portal API.
 |**Resource types**|microsoft.apimanagement/service|
 |**Categories**|-|
 |**Solutions**| LogManagement|
-|**Basic log**|No|
+|**Basic log**|Yes|
 |**Ingestion-time transformation**|No|
 |**Sample Queries**|-|
 
