@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/22/2024
+ms.date: 07/29/2024
 ---
 
 # CDBTableApiRequests
@@ -21,7 +21,7 @@ This table details data plane operations, specifically for Table API accounts.
 |**Resource types**|microsoft.documentdb/databaseaccounts|
 |**Categories**|Azure Resources, Audit|
 |**Solutions**| LogManagement|
-|**Basic log**|No|
+|**Basic log**|Yes|
 |**Ingestion-time transformation**|No|
 |**Sample Queries**|-|
 
