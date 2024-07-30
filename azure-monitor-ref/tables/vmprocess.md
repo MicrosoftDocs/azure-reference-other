@@ -4,9 +4,9 @@ description: Reference for VMProcess table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # VMProcess
@@ -29,4 +29,4 @@ Process data for servers collected by the Service Map and VM Insights solutions 
 
 ## Columns
   
-[!INCLUDE [vmprocess](.././tables/includes/vmprocess-include.md)]
+[!INCLUDE [vmprocess](./includes/vmprocess-include.md)]

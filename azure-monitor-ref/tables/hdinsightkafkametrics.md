@@ -4,9 +4,9 @@ description: Reference for HDInsightKafkaMetrics table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # HDInsightKafkaMetrics
@@ -29,4 +29,4 @@ All metrics from Kafka clusters.
 
 ## Columns
   
-[!INCLUDE [hdinsightkafkametrics](.././tables/includes/hdinsightkafkametrics-include.md)]
+[!INCLUDE [hdinsightkafkametrics](./includes/hdinsightkafkametrics-include.md)]

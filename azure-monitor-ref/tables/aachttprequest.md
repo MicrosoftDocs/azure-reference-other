@@ -4,9 +4,9 @@ description: Reference for AACHttpRequest table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AACHttpRequest
@@ -29,4 +29,4 @@ Incoming requests to Azure App Configuration. The records in this table are aggr
 
 ## Columns
   
-[!INCLUDE [aachttprequest](.././tables/includes/aachttprequest-include.md)]
+[!INCLUDE [aachttprequest](./includes/aachttprequest-include.md)]

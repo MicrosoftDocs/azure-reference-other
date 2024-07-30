@@ -4,9 +4,9 @@ description: Reference for DatabricksBrickStoreHttpGateway table in Azure Monito
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/17/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DatabricksBrickStoreHttpGateway
@@ -29,4 +29,4 @@ Contains Databricks Brick Store Http Gateway logs.
 
 ## Columns
   
-[!INCLUDE [databricksbrickstorehttpgateway](.././tables/includes/databricksbrickstorehttpgateway-include.md)]
+[!INCLUDE [databricksbrickstorehttpgateway](./includes/databricksbrickstorehttpgateway-include.md)]

@@ -4,9 +4,9 @@ description: Reference for MicrosoftAzureBastionAuditLogs table in Azure Monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # MicrosoftAzureBastionAuditLogs
@@ -29,4 +29,4 @@ Microsoft Azure Bastion Audit Logs
 
 ## Columns
   
-[!INCLUDE [microsoftazurebastionauditlogs](.././tables/includes/microsoftazurebastionauditlogs-include.md)]
+[!INCLUDE [microsoftazurebastionauditlogs](./includes/microsoftazurebastionauditlogs-include.md)]

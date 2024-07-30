@@ -4,9 +4,9 @@ description: Reference for EmailUrlInfo table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # EmailUrlInfo
@@ -29,4 +29,4 @@ Office 365 emails URLs information.
 
 ## Columns
   
-[!INCLUDE [emailurlinfo](.././tables/includes/emailurlinfo-include.md)]
+[!INCLUDE [emailurlinfo](./includes/emailurlinfo-include.md)]

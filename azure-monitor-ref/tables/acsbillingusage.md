@@ -4,9 +4,9 @@ description: Reference for ACSBillingUsage table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ACSBillingUsage
@@ -29,4 +29,4 @@ Usage records across all modes of Communication Services.
 
 ## Columns
   
-[!INCLUDE [acsbillingusage](.././tables/includes/acsbillingusage-include.md)]
+[!INCLUDE [acsbillingusage](./includes/acsbillingusage-include.md)]

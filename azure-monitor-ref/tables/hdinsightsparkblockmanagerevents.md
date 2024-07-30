@@ -4,9 +4,9 @@ description: Reference for HDInsightSparkBlockManagerEvents table in Azure Monit
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # HDInsightSparkBlockManagerEvents
@@ -29,4 +29,4 @@ Spark Block Manager Events.
 
 ## Columns
   
-[!INCLUDE [hdinsightsparkblockmanagerevents](.././tables/includes/hdinsightsparkblockmanagerevents-include.md)]
+[!INCLUDE [hdinsightsparkblockmanagerevents](./includes/hdinsightsparkblockmanagerevents-include.md)]

@@ -4,9 +4,9 @@ description: Reference for AVNMIPAMPoolAllocationChange table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AVNMIPAMPoolAllocationChange
@@ -29,4 +29,4 @@ Includes changes to allocations of an IPAM Pool such as Virtual Networks, static
 
 ## Columns
   
-[!INCLUDE [avnmipampoolallocationchange](.././tables/includes/avnmipampoolallocationchange-include.md)]
+[!INCLUDE [avnmipampoolallocationchange](./includes/avnmipampoolallocationchange-include.md)]

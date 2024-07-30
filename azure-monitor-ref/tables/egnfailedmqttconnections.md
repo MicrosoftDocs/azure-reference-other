@@ -4,9 +4,9 @@ description: Reference for EGNFailedMqttConnections table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # EGNFailedMqttConnections
@@ -29,4 +29,4 @@ Log for failed MQTT connections to an Event Grid namespace.
 
 ## Columns
   
-[!INCLUDE [egnfailedmqttconnections](.././tables/includes/egnfailedmqttconnections-include.md)]
+[!INCLUDE [egnfailedmqttconnections](./includes/egnfailedmqttconnections-include.md)]

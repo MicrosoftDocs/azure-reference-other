@@ -3,9 +3,9 @@ title: Supported log categories - Microsoft.Compute/virtualMachines
 description: Reference for Microsoft.Compute/virtualMachines in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 01/10/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ms.custom: Microsoft.Compute/virtualMachines, arm
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -25,6 +25,5 @@ For a list of supported metrics, see [Supported metrics - Microsoft.Compute/virt
 
   
 [!INCLUDE [Microsoft.Compute/virtualMachines](./includes/microsoft-compute-virtualmachines-logs-include.md)]  
-  
   
 

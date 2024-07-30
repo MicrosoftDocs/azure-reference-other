@@ -4,9 +4,9 @@ description: Reference for ADFSSISPackageExecutableStatistics table in Azure Mon
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ADFSSISPackageExecutableStatistics
@@ -29,4 +29,4 @@ ADF SSIS package execution executable statistics
 
 ## Columns
   
-[!INCLUDE [adfssispackageexecutablestatistics](.././tables/includes/adfssispackageexecutablestatistics-include.md)]
+[!INCLUDE [adfssispackageexecutablestatistics](./includes/adfssispackageexecutablestatistics-include.md)]

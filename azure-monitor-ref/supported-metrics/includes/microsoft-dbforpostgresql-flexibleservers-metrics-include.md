@@ -1,9 +1,9 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 05/06/2024
-ms.author: edbaynash
 author: EdB-MSFT
+ms.author: edbaynash
+ms.date: 07/30/2024
 ms.custom: Microsoft.DBforPostgreSQL/flexibleServers, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -28,7 +28,7 @@ ms.custom: Microsoft.DBforPostgreSQL/flexibleServers, naam
 |Saturation|**CPU Credits Consumed**<br><br>Total number of credits consumed by the database server |`cpu_credits_consumed` |Count |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**CPU Credits Remaining**<br><br>Total number of credits available to burst |`cpu_credits_remaining` |Count |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**CPU percent**<br><br>CPU percent |`cpu_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
-|Database|**Database Size (Preview)**<br><br>Total database size |`database_size_bytes` |Bytes |Average, Maximum, Minimum |`DatabaseName`|PT30M, PT1H, PT6H, PT12H, P1D |Yes|
+|Database|**Database Size**<br><br>Total database size |`database_size_bytes` |Bytes |Average, Maximum, Minimum |`DatabaseName`|PT30M, PT1H, PT6H, PT12H, P1D |Yes|
 |Database|**Deadlocks**<br><br>Number of deadlocks detected in this database |`deadlocks` |Count |Total |`DatabaseName`|PT1M |Yes|
 |Saturation|**Disk Bandwidth Consumed Percentage**<br><br>Percentage of disk bandwidth consumed per minute |`disk_bandwidth_consumed_percentage` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**Disk IOPS Consumed Percentage**<br><br>Percentage of disk I/Os consumed per minute |`disk_iops_consumed_percentage` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|

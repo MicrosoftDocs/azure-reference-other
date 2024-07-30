@@ -4,9 +4,9 @@ description: Reference for Alert table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # Alert
@@ -29,4 +29,4 @@ Alerts created by log alerts rules and SCOM alerts collected through Alert Manag
 
 ## Columns
   
-[!INCLUDE [alert](.././tables/includes/alert-include.md)]
+[!INCLUDE [alert](./includes/alert-include.md)]

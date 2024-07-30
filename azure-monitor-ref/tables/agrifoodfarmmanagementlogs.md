@@ -4,9 +4,9 @@ description: Reference for AgriFoodFarmManagementLogs table in Azure Monitor Log
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AgriFoodFarmManagementLogs
@@ -29,4 +29,4 @@ Logs for create, update, delete and get operations on FarmBeats resources such a
 
 ## Columns
   
-[!INCLUDE [agrifoodfarmmanagementlogs](.././tables/includes/agrifoodfarmmanagementlogs-include.md)]
+[!INCLUDE [agrifoodfarmmanagementlogs](./includes/agrifoodfarmmanagementlogs-include.md)]

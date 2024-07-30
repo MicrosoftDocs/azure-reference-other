@@ -425,10 +425,6 @@ items:
             href: supported-metrics/microsoft-synapse-workspaces-scopepools-metrics.md
           - name: Microsoft.Synapse/workspaces/sqlPools
             href: supported-metrics/microsoft-synapse-workspaces-sqlpools-metrics.md
-          - name: Microsoft.TimeSeriesInsights/environments
-            href: supported-metrics/microsoft-timeseriesinsights-environments-metrics.md
-          - name: Microsoft.TimeSeriesInsights/environments/eventsources
-            href: supported-metrics/microsoft-timeseriesinsights-environments-eventsources-metrics.md
           - name: Microsoft.VoiceServices/CommunicationsGateways
             href: supported-metrics/microsoft-voiceservices-communicationsgateways-metrics.md
           - name: Microsoft.Web/containerapps
@@ -1019,9 +1015,6 @@ items:
           - name: Microsoft.Security/defenderForStorageSettings
             href: supported-logs/microsoft-security-defenderforstoragesettings-logs.md
             displayName: AntimalwareScanResults
-          - name: microsoft.securityinsights/settings
-            href: supported-logs/microsoft-securityinsights-settings-logs.md
-            displayName: Analytics,Automation,Data Collection - Connectors
           - name: Microsoft.ServiceBus/Namespaces
             href: supported-logs/microsoft-servicebus-namespaces-logs.md
             displayName: Application Metrics Logs(Unused),Diagnostic Error Logs,Operational
@@ -1111,12 +1104,6 @@ items:
             href: supported-logs/microsoft-synapse-workspaces-sqlpools-logs.md
             displayName: Dms Workers,Exec Requests,Request Steps,Sql Requests,Sql Security
               Audit Event,Waits
-          - name: Microsoft.TimeSeriesInsights/environments
-            href: supported-logs/microsoft-timeseriesinsights-environments-logs.md
-            displayName: Ingress,Management
-          - name: Microsoft.TimeSeriesInsights/environments/eventsources
-            href: supported-logs/microsoft-timeseriesinsights-environments-eventsources-logs.md
-            displayName: Ingress,Management
           - name: microsoft.videoindexer/accounts
             href: supported-logs/microsoft-videoindexer-accounts-logs.md
             displayName: Audit,Indexing Logs
@@ -1146,7 +1133,7 @@ items:
             href: supported-logs/nginx-nginxplus-nginxdeployments-logs.md
             displayName: NGINX Logs,NGINX Security Logs
   - name: Azure Monitor Log Analytics tables
-    href: ./tables/tables-resourcetype.md
+    href: ./tables/tables-index.md
     items:
       - name: Log Analytics tables by category
         href: ./tables/tables-category.md
@@ -1409,28 +1396,6 @@ items:
             href: tables/microsoft-security_defenderforstoragesettings.md
           - name: microsoft.security/security
             href: tables/microsoft-security_security.md
-          - name: microsoft.securityinsights/asimtables
-            href: tables/microsoft-securityinsights_asimtables.md
-          - name: microsoft.securityinsights/auditeventnormalized
-            href: tables/microsoft-securityinsights_auditeventnormalized.md
-          - name: microsoft.securityinsights/authenticationevent
-            href: tables/microsoft-securityinsights_authenticationevent.md
-          - name: microsoft.securityinsights/cef
-            href: tables/microsoft-securityinsights_cef.md
-          - name: microsoft.securityinsights/dnsnormalized
-            href: tables/microsoft-securityinsights_dnsnormalized.md
-          - name: microsoft.securityinsights/networksessionnormalized
-            href: tables/microsoft-securityinsights_networksessionnormalized.md
-          - name: microsoft.securityinsights/processeventnormalized
-            href: tables/microsoft-securityinsights_processeventnormalized.md
-          - name: microsoft.securityinsights/purview
-            href: tables/microsoft-securityinsights_purview.md
-          - name: microsoft.securityinsights/securityinsights
-            href: tables/microsoft-securityinsights_securityinsights.md
-          - name: microsoft.securityinsights/threatintelligence
-            href: tables/microsoft-securityinsights_threatintelligence.md
-          - name: microsoft.securityinsights/websessionlogs
-            href: tables/microsoft-securityinsights_websessionlogs.md
           - name: microsoft.servicebus/namespaces
             href: tables/microsoft-servicebus_namespaces.md
           - name: microsoft.servicefabric/clusters
@@ -1690,26 +1655,6 @@ items:
             href: tables/asrjobs.md
           - name: ASRReplicatedItems
             href: tables/asrreplicateditems.md
-          - name: ASimAuditEventLogs
-            href: tables/asimauditeventlogs.md
-          - name: ASimAuthenticationEventLogs
-            href: tables/asimauthenticationeventlogs.md
-          - name: ASimDhcpEventLogs
-            href: tables/asimdhcpeventlogs.md
-          - name: ASimDnsActivityLogs
-            href: tables/asimdnsactivitylogs.md
-          - name: ASimFileEventLogs
-            href: tables/asimfileeventlogs.md
-          - name: ASimNetworkSessionLogs
-            href: tables/asimnetworksessionlogs.md
-          - name: ASimProcessEventLogs
-            href: tables/asimprocesseventlogs.md
-          - name: ASimRegistryEventLogs
-            href: tables/asimregistryeventlogs.md
-          - name: ASimUserManagementActivityLogs
-            href: tables/asimusermanagementactivitylogs.md
-          - name: ASimWebSessionLogs
-            href: tables/asimwebsessionlogs.md
           - name: ATCExpressRouteCircuitIpfix
             href: tables/atcexpressroutecircuitipfix.md
           - name: ATCPrivatePeeringMetadata
@@ -2206,8 +2151,6 @@ items:
             href: tables/devicetvmsoftwarevulnerabilities.md
           - name: DeviceTvmSoftwareVulnerabilitiesKB
             href: tables/devicetvmsoftwarevulnerabilitieskb.md
-          - name: DnsAuditEvents
-            href: tables/dnsauditevents.md
           - name: DnsEvents
             href: tables/dnsevents.md
           - name: DnsInventory
@@ -2704,10 +2647,6 @@ items:
             href: tables/syslog.md
           - name: TSIIngress
             href: tables/tsiingress.md
-          - name: ThreatIntelIndicators
-            href: tables/threatintelindicators.md
-          - name: ThreatIntelObjects
-            href: tables/threatintelobjects.md
           - name: ThreatIntelligenceIndicator
             href: tables/threatintelligenceindicator.md
           - name: UAApp

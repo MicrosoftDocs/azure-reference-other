@@ -4,9 +4,9 @@ description: Reference for NetworkSessions table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # NetworkSessions
@@ -29,4 +29,4 @@ Network connections or sessions such as those logged by firewalls, Wire Data, NS
 
 ## Columns
   
-[!INCLUDE [networksessions](.././tables/includes/networksessions-include.md)]
+[!INCLUDE [networksessions](./includes/networksessions-include.md)]

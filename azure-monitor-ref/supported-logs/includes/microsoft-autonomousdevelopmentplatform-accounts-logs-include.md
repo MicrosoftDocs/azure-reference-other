@@ -1,9 +1,9 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
-ms.author: edbaynash
-author: EdB-MSFT
+ms.date: 07/30/2024
+ms.author: orens
+author: osalzberg
 ms.custom: Microsoft.AutonomousDevelopmentPlatform/accounts, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -15,4 +15,4 @@ ms.custom: Microsoft.AutonomousDevelopmentPlatform/accounts, naam
 |---|---|---|---|---|---|---|
 |`Audit` |Audit ||No|No||Yes |
 |`Operational` |Operational |[ADPDiagnostics](/azure/azure-monitor/reference/tables/adpdiagnostics)<p>Diagnostic logs of the ADP service.|No|Yes||Yes |
-|`Request` |Request ||No|Yes||Yes |
+|`Request` |Request ||No|No||Yes |

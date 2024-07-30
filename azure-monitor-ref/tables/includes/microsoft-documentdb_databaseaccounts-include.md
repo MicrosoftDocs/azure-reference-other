@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/22/2024
+ms.date: 07/29/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Tables for microsoft.documentdb/databaseaccounts
@@ -20,6 +20,6 @@ ms.custom: Tables for microsoft.documentdb/databaseaccounts
 | [CDBPartitionKeyRUConsumption](/azure/azure-monitor/reference/tables/CDBPartitionKeyRUConsumption)<p>This table details the RU (Request Unit) consumption for logical partition keys in each region, within each of their physical partitions. This data can be used to identify hot partitions from a request volume perspective. | resources, audit | LogManagement | Yes| -|
 | [CDBPartitionKeyStatistics](/azure/azure-monitor/reference/tables/CDBPartitionKeyStatistics)<p>This table provides outlier logical partition keys that have consumed more storage space than others. Statistics are based on a sub-sampling of partition keys within the collection and hence these are approximate. Partition keys that are below 1GB of storage may not show up in the reported statistics. | resources, audit | LogManagement | Yes| -|
 | [CDBQueryRuntimeStatistics](/azure/azure-monitor/reference/tables/CDBQueryRuntimeStatistics)<p>This table details query operations executed against a SQL API account. By default, the query text and its parameters are obfuscated to avoid logging PII data with full text query logging available by request. | resources, audit | LogManagement | Yes| -|
-| [CDBTableApiRequests](/azure/azure-monitor/reference/tables/CDBTableApiRequests)<p>This table details data plane operations, specifically for Table API accounts. | resources, audit | LogManagement | No| -|
+| [CDBTableApiRequests](/azure/azure-monitor/reference/tables/CDBTableApiRequests)<p>This table details data plane operations, specifically for Table API accounts. | resources, audit | LogManagement | Yes| -|
 
   

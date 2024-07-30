@@ -4,9 +4,9 @@ description: Reference for AegDataPlaneRequests table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AegDataPlaneRequests
@@ -29,4 +29,4 @@ Logs for Event Grid data plane requests (publish and options) against a topic/do
 
 ## Columns
   
-[!INCLUDE [aegdataplanerequests](.././tables/includes/aegdataplanerequests-include.md)]
+[!INCLUDE [aegdataplanerequests](./includes/aegdataplanerequests-include.md)]

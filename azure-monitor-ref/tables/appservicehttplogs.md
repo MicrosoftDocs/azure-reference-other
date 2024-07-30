@@ -4,9 +4,9 @@ description: Reference for AppServiceHTTPLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AppServiceHTTPLogs
@@ -29,4 +29,4 @@ Incoming HTTP requests on App Service. Use these logs to monitor application hea
 
 ## Columns
   
-[!INCLUDE [appservicehttplogs](.././tables/includes/appservicehttplogs-include.md)]
+[!INCLUDE [appservicehttplogs](./includes/appservicehttplogs-include.md)]
