@@ -1,9 +1,9 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/01/2024
-ms.author: edbaynash
-author: EdB-MSFT
+ms.date: 07/30/2024
+ms.author: orens
+author: osalzberg
 ms.custom: Microsoft.Databricks/workspaces, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -14,13 +14,13 @@ ms.custom: Microsoft.Databricks/workspaces, naam
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
 |`accounts` |Databricks Accounts |[DatabricksAccounts](/azure/azure-monitor/reference/tables/databricksaccounts)<p>Databricks Accounts audit logs.|No|Yes||No |
-|`BrickStoreHttpGateway` |Databricks Brick Store HttpGateway ||No|Yes||Yes |
+|`BrickStoreHttpGateway` |Databricks Brick Store HttpGateway ||No|No||Yes |
 |`capsule8Dataplane` |Databricks Capsule8 Container Security Scanning Reports |[DatabricksCapsule8Dataplane](/azure/azure-monitor/reference/tables/databrickscapsule8dataplane)<p>Audit logs for Databricks service capsule8-alerts-dataplane.|No|No||Yes |
 |`clamAVScan` |Databricks Clam AV Scan |[DatabricksClamAVScan](/azure/azure-monitor/reference/tables/databricksclamavscan)<p>Audit logs for Databricks clamav scan service|No|No||Yes |
 |`CloudStorageMetadata` |Databricks Cloud Storage Metadata ||No|No||Yes |
 |`clusterLibraries` |Databricks Cluster Libraries |[DatabricksClusterLibraries](/azure/azure-monitor/reference/tables/databricksclusterlibraries)<p>Audit logs for actions taken on cluster libraries in Databricks.|No|No||Yes |
 |`clusters` |Databricks Clusters |[DatabricksClusters](/azure/azure-monitor/reference/tables/databricksclusters)<p>Databricks Clusters audit logs.|No|Yes||No |
-|`Dashboards` |Databricks Dashboards ||No|Yes||Yes |
+|`Dashboards` |Databricks Dashboards ||No|No||Yes |
 |`databrickssql` |Databricks DatabricksSQL |[DatabricksSQL](/azure/azure-monitor/reference/tables/databrickssql)<p>Audit logs for events related to creation, modification etc. of Databricks SQL endpoints.|No|No||Yes |
 |`DataMonitoring` |Databricks Data Monitoring ||No|No||Yes |
 |`dbfs` |Databricks File System |[DatabricksDBFS](/azure/azure-monitor/reference/tables/databricksdbfs)<p>Databricks DBFS audit logs.|No|Yes||No |
@@ -33,8 +33,8 @@ ms.custom: Microsoft.Databricks/workspaces, naam
 |`Ingestion` |Databricks Ingestion ||No|No||Yes |
 |`instancePools` |Instance Pools |[DatabricksInstancePools](/azure/azure-monitor/reference/tables/databricksinstancepools)<p>Databricks Instance Pools audit logs.|No|Yes||No |
 |`jobs` |Databricks Jobs |[DatabricksJobs](/azure/azure-monitor/reference/tables/databricksjobs)<p>Databricks Jobs audit logs.|No|Yes||No |
-|`LineageTracking` |Databricks Lineage Tracking ||No|Yes||Yes |
-|`MarketplaceConsumer` |Databricks Marketplace Consumer ||No|Yes||Yes |
+|`LineageTracking` |Databricks Lineage Tracking ||No|No||Yes |
+|`MarketplaceConsumer` |Databricks Marketplace Consumer ||No|No||Yes |
 |`mlflowAcledArtifact` |Databricks MLFlow Acled Artifact |[DatabricksMLflowAcledArtifact](/azure/azure-monitor/reference/tables/databricksmlflowacledartifact)<p>Audit logs for events of reading and writing Databricks MLflow ACLed artifacts.|No|Yes||Yes |
 |`mlflowExperiment` |Databricks MLFlow Experiment |[DatabricksMLflowExperiment](/azure/azure-monitor/reference/tables/databricksmlflowexperiment)<p>Audit logs for events related to manipulation of Databricks MLflow experiments.|No|Yes||Yes |
 |`modelRegistry` |Databricks Model Registry |[DatabricksModelRegistry](/azure/azure-monitor/reference/tables/databricksmodelregistry)<p>Databricks model registry audit logs.|No|No||Yes |

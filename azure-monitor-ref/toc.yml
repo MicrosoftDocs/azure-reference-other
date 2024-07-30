@@ -425,10 +425,6 @@ items:
             href: supported-metrics/microsoft-synapse-workspaces-scopepools-metrics.md
           - name: Microsoft.Synapse/workspaces/sqlPools
             href: supported-metrics/microsoft-synapse-workspaces-sqlpools-metrics.md
-          - name: Microsoft.TimeSeriesInsights/environments
-            href: supported-metrics/microsoft-timeseriesinsights-environments-metrics.md
-          - name: Microsoft.TimeSeriesInsights/environments/eventsources
-            href: supported-metrics/microsoft-timeseriesinsights-environments-eventsources-metrics.md
           - name: Microsoft.VoiceServices/CommunicationsGateways
             href: supported-metrics/microsoft-voiceservices-communicationsgateways-metrics.md
           - name: Microsoft.Web/containerapps
@@ -1019,9 +1015,6 @@ items:
           - name: Microsoft.Security/defenderForStorageSettings
             href: supported-logs/microsoft-security-defenderforstoragesettings-logs.md
             displayName: AntimalwareScanResults
-          - name: microsoft.securityinsights/settings
-            href: supported-logs/microsoft-securityinsights-settings-logs.md
-            displayName: Analytics,Automation,Data Collection - Connectors
           - name: Microsoft.ServiceBus/Namespaces
             href: supported-logs/microsoft-servicebus-namespaces-logs.md
             displayName: Application Metrics Logs(Unused),Diagnostic Error Logs,Operational
@@ -1111,12 +1104,6 @@ items:
             href: supported-logs/microsoft-synapse-workspaces-sqlpools-logs.md
             displayName: Dms Workers,Exec Requests,Request Steps,Sql Requests,Sql Security
               Audit Event,Waits
-          - name: Microsoft.TimeSeriesInsights/environments
-            href: supported-logs/microsoft-timeseriesinsights-environments-logs.md
-            displayName: Ingress,Management
-          - name: Microsoft.TimeSeriesInsights/environments/eventsources
-            href: supported-logs/microsoft-timeseriesinsights-environments-eventsources-logs.md
-            displayName: Ingress,Management
           - name: microsoft.videoindexer/accounts
             href: supported-logs/microsoft-videoindexer-accounts-logs.md
             displayName: Audit,Indexing Logs
