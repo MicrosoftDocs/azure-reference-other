@@ -4,9 +4,9 @@ description: Reference for AKSAudit table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/26/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AKSAudit
@@ -29,4 +29,4 @@ Contains all Kubernetes API Server audit logs including events with the get and 
 
 ## Columns
   
-[!INCLUDE [aksaudit](.././tables/includes/aksaudit-include.md)]
+[!INCLUDE [aksaudit](./includes/aksaudit-include.md)]

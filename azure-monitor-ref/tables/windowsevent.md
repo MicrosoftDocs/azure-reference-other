@@ -4,9 +4,9 @@ description: Reference for WindowsEvent table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # WindowsEvent
@@ -29,4 +29,4 @@ Windows events which are collected and sent by the agent.
 
 ## Columns
   
-[!INCLUDE [windowsevent](.././tables/includes/windowsevent-include.md)]
+[!INCLUDE [windowsevent](./includes/windowsevent-include.md)]

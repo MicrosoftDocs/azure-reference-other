@@ -4,9 +4,9 @@ description: Reference for ACSCallClientMediaStatsTimeSeries table in Azure Moni
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ACSCallClientMediaStatsTimeSeries
@@ -29,4 +29,4 @@ Call client media stats logs provide media statistics about a call made through 
 
 ## Columns
   
-[!INCLUDE [acscallclientmediastatstimeseries](.././tables/includes/acscallclientmediastatstimeseries-include.md)]
+[!INCLUDE [acscallclientmediastatstimeseries](./includes/acscallclientmediastatstimeseries-include.md)]

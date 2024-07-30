@@ -4,9 +4,9 @@ description: Reference for UCDeviceAlert table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # UCDeviceAlert
@@ -29,4 +29,4 @@ Update Compliance - These alerts are activated as a result of an issue that is d
 
 ## Columns
   
-[!INCLUDE [ucdevicealert](.././tables/includes/ucdevicealert-include.md)]
+[!INCLUDE [ucdevicealert](./includes/ucdevicealert-include.md)]

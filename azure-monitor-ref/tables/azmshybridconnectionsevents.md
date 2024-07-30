@@ -4,9 +4,9 @@ description: Reference for AZMSHybridConnectionsEvents table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AZMSHybridConnectionsEvents
@@ -29,4 +29,4 @@ Captures all hybrid connection events that are performed on the Azure Relay name
 
 ## Columns
   
-[!INCLUDE [azmshybridconnectionsevents](.././tables/includes/azmshybridconnectionsevents-include.md)]
+[!INCLUDE [azmshybridconnectionsevents](./includes/azmshybridconnectionsevents-include.md)]

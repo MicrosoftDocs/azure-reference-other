@@ -4,9 +4,9 @@ description: Reference for ConfidentialWatchlist table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ConfidentialWatchlist
@@ -29,4 +29,4 @@ Azure Sentinel confidential Watchlist contains imported data from CSV files that
 
 ## Columns
   
-[!INCLUDE [confidentialwatchlist](.././tables/includes/confidentialwatchlist-include.md)]
+[!INCLUDE [confidentialwatchlist](./includes/confidentialwatchlist-include.md)]

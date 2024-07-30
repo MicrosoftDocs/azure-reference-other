@@ -4,9 +4,9 @@ description: Reference for NTAInsights table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 04/15/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # NTAInsights
@@ -29,4 +29,4 @@ Traffic Analytics insights are provided for flow data which shows anomalies in d
 
 ## Columns
   
-[!INCLUDE [ntainsights](.././tables/includes/ntainsights-include.md)]
+[!INCLUDE [ntainsights](./includes/ntainsights-include.md)]

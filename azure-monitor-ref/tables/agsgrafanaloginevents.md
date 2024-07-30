@@ -4,9 +4,9 @@ description: Reference for AGSGrafanaLoginEvents table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AGSGrafanaLoginEvents
@@ -29,4 +29,4 @@ Login events for an instance of Azure Managed Workspace for Grafana including us
 
 ## Columns
   
-[!INCLUDE [agsgrafanaloginevents](.././tables/includes/agsgrafanaloginevents-include.md)]
+[!INCLUDE [agsgrafanaloginevents](./includes/agsgrafanaloginevents-include.md)]

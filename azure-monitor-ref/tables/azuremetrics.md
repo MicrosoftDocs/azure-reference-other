@@ -4,9 +4,9 @@ description: Reference for AzureMetrics table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 07/08/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AzureMetrics
@@ -29,4 +29,4 @@ Metric data emitted by Azure services that measure their health and performance.
 
 ## Columns
   
-[!INCLUDE [azuremetrics](.././tables/includes/azuremetrics-include.md)]
+[!INCLUDE [azuremetrics](./includes/azuremetrics-include.md)]

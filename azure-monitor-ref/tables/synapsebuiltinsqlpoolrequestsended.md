@@ -4,9 +4,9 @@ description: Reference for SynapseBuiltinSqlPoolRequestsEnded table in Azure Mon
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # SynapseBuiltinSqlPoolRequestsEnded
@@ -29,4 +29,4 @@ Ended Azure Synapse built-in serverless SQL requests.
 
 ## Columns
   
-[!INCLUDE [synapsebuiltinsqlpoolrequestsended](.././tables/includes/synapsebuiltinsqlpoolrequestsended-include.md)]
+[!INCLUDE [synapsebuiltinsqlpoolrequestsended](./includes/synapsebuiltinsqlpoolrequestsended-include.md)]

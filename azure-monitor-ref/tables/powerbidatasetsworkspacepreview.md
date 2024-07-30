@@ -4,9 +4,9 @@ description: Reference for PowerBIDatasetsWorkspacePreview table in Azure Monito
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # PowerBIDatasetsWorkspacePreview
@@ -29,4 +29,4 @@ Contains Analysis Services engine process events such as the start of a batch or
 
 ## Columns
   
-[!INCLUDE [powerbidatasetsworkspacepreview](.././tables/includes/powerbidatasetsworkspacepreview-include.md)]
+[!INCLUDE [powerbidatasetsworkspacepreview](./includes/powerbidatasetsworkspacepreview-include.md)]

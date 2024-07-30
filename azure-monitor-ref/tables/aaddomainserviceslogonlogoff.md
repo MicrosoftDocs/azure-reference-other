@@ -4,9 +4,9 @@ description: Reference for AADDomainServicesLogonLogoff table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AADDomainServicesLogonLogoff
@@ -29,4 +29,4 @@ ms.date: 03/05/2024
 
 ## Columns
   
-[!INCLUDE [aaddomainserviceslogonlogoff](.././tables/includes/aaddomainserviceslogonlogoff-include.md)]
+[!INCLUDE [aaddomainserviceslogonlogoff](./includes/aaddomainserviceslogonlogoff-include.md)]

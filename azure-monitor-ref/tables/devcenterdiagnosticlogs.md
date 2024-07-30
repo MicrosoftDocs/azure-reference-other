@@ -4,9 +4,9 @@ description: Reference for DevCenterDiagnosticLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DevCenterDiagnosticLogs
@@ -29,4 +29,4 @@ Data plane audit logs related to your dev center resources. Will display informa
 
 ## Columns
   
-[!INCLUDE [devcenterdiagnosticlogs](.././tables/includes/devcenterdiagnosticlogs-include.md)]
+[!INCLUDE [devcenterdiagnosticlogs](./includes/devcenterdiagnosticlogs-include.md)]

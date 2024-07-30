@@ -4,9 +4,9 @@ description: Reference for IntuneDevices table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # IntuneDevices
@@ -29,4 +29,4 @@ Intune devices specialist report.
 
 ## Columns
   
-[!INCLUDE [intunedevices](.././tables/includes/intunedevices-include.md)]
+[!INCLUDE [intunedevices](./includes/intunedevices-include.md)]

@@ -4,9 +4,9 @@ description: Reference for ACSCallClosedCaptionsSummary table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ACSCallClosedCaptionsSummary
@@ -29,4 +29,4 @@ Call closed captions summary logs provide an overview about a closed captions ma
 
 ## Columns
   
-[!INCLUDE [acscallclosedcaptionssummary](.././tables/includes/acscallclosedcaptionssummary-include.md)]
+[!INCLUDE [acscallclosedcaptionssummary](./includes/acscallclosedcaptionssummary-include.md)]

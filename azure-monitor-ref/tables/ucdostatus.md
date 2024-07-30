@@ -4,9 +4,9 @@ description: Reference for UCDOStatus table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # UCDOStatus
@@ -29,4 +29,4 @@ Update Compliance - provides information, for a single device, on their bandwidt
 
 ## Columns
   
-[!INCLUDE [ucdostatus](.././tables/includes/ucdostatus-include.md)]
+[!INCLUDE [ucdostatus](./includes/ucdostatus-include.md)]

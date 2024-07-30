@@ -4,9 +4,9 @@ description: Reference for DatabricksFilesystem table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/17/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DatabricksFilesystem
@@ -29,4 +29,4 @@ Contains Databricks Filesystem logs.
 
 ## Columns
   
-[!INCLUDE [databricksfilesystem](.././tables/includes/databricksfilesystem-include.md)]
+[!INCLUDE [databricksfilesystem](./includes/databricksfilesystem-include.md)]

@@ -4,9 +4,9 @@ description: Reference for DeviceNetworkEvents table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DeviceNetworkEvents
@@ -29,4 +29,4 @@ Microsoft Defender for Endpoints (MDE) device network events table. This table c
 
 ## Columns
   
-[!INCLUDE [devicenetworkevents](.././tables/includes/devicenetworkevents-include.md)]
+[!INCLUDE [devicenetworkevents](./includes/devicenetworkevents-include.md)]

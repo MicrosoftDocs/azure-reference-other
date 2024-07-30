@@ -4,9 +4,9 @@ description: Reference for ArcK8sAudit table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ArcK8sAudit
@@ -29,4 +29,4 @@ Contains all Kubernetes API Server audit logs including events with the get and 
 
 ## Columns
   
-[!INCLUDE [arck8saudit](.././tables/includes/arck8saudit-include.md)]
+[!INCLUDE [arck8saudit](./includes/arck8saudit-include.md)]

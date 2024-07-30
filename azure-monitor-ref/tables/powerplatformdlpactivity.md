@@ -4,9 +4,9 @@ description: Reference for PowerPlatformDlpActivity table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # PowerPlatformDlpActivity
@@ -29,4 +29,4 @@ Contains Microsoft Power Platform Data Loss Prevention (DLP) audit logs. It's ty
 
 ## Columns
   
-[!INCLUDE [powerplatformdlpactivity](.././tables/includes/powerplatformdlpactivity-include.md)]
+[!INCLUDE [powerplatformdlpactivity](./includes/powerplatformdlpactivity-include.md)]

@@ -4,9 +4,9 @@ description: Reference for AgriFoodApplicationAuditLogs table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AgriFoodApplicationAuditLogs
@@ -29,4 +29,4 @@ Logs for privileged actions such as data-plane resource create, update, delete a
 
 ## Columns
   
-[!INCLUDE [agrifoodapplicationauditlogs](.././tables/includes/agrifoodapplicationauditlogs-include.md)]
+[!INCLUDE [agrifoodapplicationauditlogs](./includes/agrifoodapplicationauditlogs-include.md)]
