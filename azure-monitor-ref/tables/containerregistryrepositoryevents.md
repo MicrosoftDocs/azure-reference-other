@@ -4,9 +4,9 @@ description: Reference for ContainerRegistryRepositoryEvents table in Azure Moni
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ContainerRegistryRepositoryEvents
@@ -29,4 +29,4 @@ Azure Container Registry Repository Auditing Logs
 
 ## Columns
   
-[!INCLUDE [containerregistryrepositoryevents](.././tables/includes/containerregistryrepositoryevents-include.md)]
+[!INCLUDE [containerregistryrepositoryevents](./includes/containerregistryrepositoryevents-include.md)]

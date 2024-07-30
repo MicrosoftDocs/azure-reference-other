@@ -4,9 +4,9 @@ description: Reference for DeviceTvmSoftwareVulnerabilities table in Azure Monit
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DeviceTvmSoftwareVulnerabilities
@@ -29,4 +29,4 @@ Captures various identity-related events, like password changes, password expira
 
 ## Columns
   
-[!INCLUDE [devicetvmsoftwarevulnerabilities](.././tables/includes/devicetvmsoftwarevulnerabilities-include.md)]
+[!INCLUDE [devicetvmsoftwarevulnerabilities](./includes/devicetvmsoftwarevulnerabilities-include.md)]

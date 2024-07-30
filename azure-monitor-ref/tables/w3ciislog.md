@@ -4,9 +4,9 @@ description: Reference for W3CIISLog table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # W3CIISLog
@@ -29,4 +29,4 @@ Internet Information Server (IIS) log on Windows computers using the Log Analyti
 
 ## Columns
   
-[!INCLUDE [w3ciislog](.././tables/includes/w3ciislog-include.md)]
+[!INCLUDE [w3ciislog](./includes/w3ciislog-include.md)]

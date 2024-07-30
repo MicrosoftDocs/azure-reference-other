@@ -4,9 +4,9 @@ description: Reference for AmlOnlineEndpointTrafficLog table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AmlOnlineEndpointTrafficLog
@@ -29,4 +29,4 @@ Traffic logs for AzureML (machine learning) online endpoints. The table could be
 
 ## Columns
   
-[!INCLUDE [amlonlineendpointtrafficlog](.././tables/includes/amlonlineendpointtrafficlog-include.md)]
+[!INCLUDE [amlonlineendpointtrafficlog](./includes/amlonlineendpointtrafficlog-include.md)]

@@ -4,9 +4,9 @@ description: Reference for Usage table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # Usage
@@ -29,4 +29,4 @@ Hourly usage data for each table in the workspace.
 
 ## Columns
   
-[!INCLUDE [usage](.././tables/includes/usage-include.md)]
+[!INCLUDE [usage](./includes/usage-include.md)]

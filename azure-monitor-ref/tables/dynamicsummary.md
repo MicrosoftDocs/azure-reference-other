@@ -4,9 +4,9 @@ description: Reference for DynamicSummary table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/26/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DynamicSummary
@@ -29,4 +29,4 @@ Azure Sentinel Dynamic Summary provides a security data storage to persist conce
 
 ## Columns
   
-[!INCLUDE [dynamicsummary](.././tables/includes/dynamicsummary-include.md)]
+[!INCLUDE [dynamicsummary](./includes/dynamicsummary-include.md)]

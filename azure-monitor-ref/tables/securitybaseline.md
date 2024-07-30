@@ -4,9 +4,9 @@ description: Reference for SecurityBaseline table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # SecurityBaseline
@@ -29,4 +29,4 @@ ms.date: 03/05/2024
 
 ## Columns
   
-[!INCLUDE [securitybaseline](.././tables/includes/securitybaseline-include.md)]
+[!INCLUDE [securitybaseline](./includes/securitybaseline-include.md)]

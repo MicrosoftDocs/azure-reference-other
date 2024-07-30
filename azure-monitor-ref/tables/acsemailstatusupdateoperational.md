@@ -4,9 +4,9 @@ description: Reference for ACSEmailStatusUpdateOperational table in Azure Monito
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ACSEmailStatusUpdateOperational
@@ -29,4 +29,4 @@ Email Communication Services logs for message and recipient depllivery status up
 
 ## Columns
   
-[!INCLUDE [acsemailstatusupdateoperational](.././tables/includes/acsemailstatusupdateoperational-include.md)]
+[!INCLUDE [acsemailstatusupdateoperational](./includes/acsemailstatusupdateoperational-include.md)]

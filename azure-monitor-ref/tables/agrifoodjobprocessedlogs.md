@@ -4,9 +4,9 @@ description: Reference for AgriFoodJobProcessedLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AgriFoodJobProcessedLogs
@@ -29,4 +29,4 @@ Logs indicating success or failure of job runs for farmOperationDataIngestionJob
 
 ## Columns
   
-[!INCLUDE [agrifoodjobprocessedlogs](.././tables/includes/agrifoodjobprocessedlogs-include.md)]
+[!INCLUDE [agrifoodjobprocessedlogs](./includes/agrifoodjobprocessedlogs-include.md)]

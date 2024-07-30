@@ -4,9 +4,9 @@ description: Reference for ASRJobs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ASRJobs
@@ -29,4 +29,4 @@ This table contains records of Azure Site Recovery (ASR) jobs such as failover, 
 
 ## Columns
   
-[!INCLUDE [asrjobs](.././tables/includes/asrjobs-include.md)]
+[!INCLUDE [asrjobs](./includes/asrjobs-include.md)]

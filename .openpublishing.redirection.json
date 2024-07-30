@@ -8734,6 +8734,136 @@
    "source_path": "azure-monitor-ref/tables/includes/azuremetricsv2-include.md",
    "redirect_url": "/azure/azure-monitor/reference",
    "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/asimauditeventlogs.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/asimauthenticationeventlogs.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/asimdhcpeventlogs.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/asimdnsactivitylogs.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/asimfileeventlogs.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/asimnetworksessionlogs.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/asimprocesseventlogs.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/asimregistryeventlogs.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/asimusermanagementactivitylogs.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/asimwebsessionlogs.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/dnsauditevents.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/microsoft-securityinsights_asimtables.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/microsoft-securityinsights_auditeventnormalized.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/microsoft-securityinsights_authenticationevent.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/microsoft-securityinsights_cef.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/microsoft-securityinsights_dnsnormalized.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/microsoft-securityinsights_networksessionnormalized.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/microsoft-securityinsights_processeventnormalized.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/microsoft-securityinsights_purview.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/microsoft-securityinsights_securityinsights.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/microsoft-securityinsights_threatintelligence.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/microsoft-securityinsights_websessionlogs.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/securityalert.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/tables-resourcetype.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/threatintelindicators.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/threatintelobjects.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
   }
  ]
 }

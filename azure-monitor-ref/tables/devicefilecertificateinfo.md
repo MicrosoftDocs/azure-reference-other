@@ -4,9 +4,9 @@ description: Reference for DeviceFileCertificateInfo table in Azure Monitor Logs
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DeviceFileCertificateInfo
@@ -29,4 +29,4 @@ Certificate information of signed files obtained from certificate verification e
 
 ## Columns
   
-[!INCLUDE [devicefilecertificateinfo](.././tables/includes/devicefilecertificateinfo-include.md)]
+[!INCLUDE [devicefilecertificateinfo](./includes/devicefilecertificateinfo-include.md)]

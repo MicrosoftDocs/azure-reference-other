@@ -4,9 +4,9 @@ description: Reference for SynapseDXSucceededIngestion table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # SynapseDXSucceededIngestion
@@ -29,4 +29,4 @@ Succeeded ingestion operations logs provide information about successfully compl
 
 ## Columns
   
-[!INCLUDE [synapsedxsucceededingestion](.././tables/includes/synapsedxsucceededingestion-include.md)]
+[!INCLUDE [synapsedxsucceededingestion](./includes/synapsedxsucceededingestion-include.md)]

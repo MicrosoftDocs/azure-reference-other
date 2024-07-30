@@ -4,9 +4,9 @@ description: Reference for NCSStorageAudits table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 07/22/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # NCSStorageAudits
@@ -29,4 +29,4 @@ Audit log events from Nexus storage appliance providing insight into data and sy
 
 ## Columns
   
-[!INCLUDE [ncsstorageaudits](.././tables/includes/ncsstorageaudits-include.md)]
+[!INCLUDE [ncsstorageaudits](./includes/ncsstorageaudits-include.md)]

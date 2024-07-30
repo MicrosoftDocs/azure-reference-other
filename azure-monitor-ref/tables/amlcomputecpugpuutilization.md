@@ -4,9 +4,9 @@ description: Reference for AmlComputeCpuGpuUtilization table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AmlComputeCpuGpuUtilization
@@ -29,4 +29,4 @@ Azure Machine Learning services CPU and GPU utilizaion logs.
 
 ## Columns
   
-[!INCLUDE [amlcomputecpugpuutilization](.././tables/includes/amlcomputecpugpuutilization-include.md)]
+[!INCLUDE [amlcomputecpugpuutilization](./includes/amlcomputecpugpuutilization-include.md)]

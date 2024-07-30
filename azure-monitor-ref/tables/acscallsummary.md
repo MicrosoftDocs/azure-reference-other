@@ -4,9 +4,9 @@ description: Reference for ACSCallSummary table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ACSCallSummary
@@ -29,4 +29,4 @@ Call summary logs provide an overview about a call made through ACS. There is on
 
 ## Columns
   
-[!INCLUDE [acscallsummary](.././tables/includes/acscallsummary-include.md)]
+[!INCLUDE [acscallsummary](./includes/acscallsummary-include.md)]

@@ -4,9 +4,9 @@ description: Reference for ContainerRegistryLoginEvents table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ContainerRegistryLoginEvents
@@ -29,4 +29,4 @@ Azure Container Registry Login Auditing Logs
 
 ## Columns
   
-[!INCLUDE [containerregistryloginevents](.././tables/includes/containerregistryloginevents-include.md)]
+[!INCLUDE [containerregistryloginevents](./includes/containerregistryloginevents-include.md)]

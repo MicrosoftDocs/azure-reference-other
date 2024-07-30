@@ -4,9 +4,9 @@ description: Reference for ATCExpressRouteCircuitIpfix table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ATCExpressRouteCircuitIpfix
@@ -29,4 +29,4 @@ This table has Express Route Circuit IPFIX flow records. Flow records are captur
 
 ## Columns
   
-[!INCLUDE [atcexpressroutecircuitipfix](.././tables/includes/atcexpressroutecircuitipfix-include.md)]
+[!INCLUDE [atcexpressroutecircuitipfix](./includes/atcexpressroutecircuitipfix-include.md)]

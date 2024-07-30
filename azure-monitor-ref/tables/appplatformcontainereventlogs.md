@@ -4,9 +4,9 @@ description: Reference for AppPlatformContainerEventLogs table in Azure Monitor 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AppPlatformContainerEventLogs
@@ -29,4 +29,4 @@ Azure Spring Cloud container event logs of user applications.
 
 ## Columns
   
-[!INCLUDE [appplatformcontainereventlogs](.././tables/includes/appplatformcontainereventlogs-include.md)]
+[!INCLUDE [appplatformcontainereventlogs](./includes/appplatformcontainereventlogs-include.md)]

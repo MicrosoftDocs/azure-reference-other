@@ -4,9 +4,9 @@ description: Reference for AppServiceAuditLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AppServiceAuditLogs
@@ -29,4 +29,4 @@ Logs generated when publishing users successfully log on via one of the App Serv
 
 ## Columns
   
-[!INCLUDE [appserviceauditlogs](.././tables/includes/appserviceauditlogs-include.md)]
+[!INCLUDE [appserviceauditlogs](./includes/appserviceauditlogs-include.md)]

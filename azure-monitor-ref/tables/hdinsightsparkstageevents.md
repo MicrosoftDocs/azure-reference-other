@@ -4,9 +4,9 @@ description: Reference for HDInsightSparkStageEvents table in Azure Monitor Logs
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # HDInsightSparkStageEvents
@@ -29,4 +29,4 @@ Spark Stage Events.
 
 ## Columns
   
-[!INCLUDE [hdinsightsparkstageevents](.././tables/includes/hdinsightsparkstageevents-include.md)]
+[!INCLUDE [hdinsightsparkstageevents](./includes/hdinsightsparkstageevents-include.md)]

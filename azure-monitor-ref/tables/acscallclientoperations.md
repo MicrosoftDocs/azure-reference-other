@@ -4,9 +4,9 @@ description: Reference for ACSCallClientOperations table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ACSCallClientOperations
@@ -29,4 +29,4 @@ Call client operation logs provide information regarding operations performed by
 
 ## Columns
   
-[!INCLUDE [acscallclientoperations](.././tables/includes/acscallclientoperations-include.md)]
+[!INCLUDE [acscallclientoperations](./includes/acscallclientoperations-include.md)]

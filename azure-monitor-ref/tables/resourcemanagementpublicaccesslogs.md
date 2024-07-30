@@ -4,9 +4,9 @@ description: Reference for ResourceManagementPublicAccessLogs table in Azure Mon
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ResourceManagementPublicAccessLogs
@@ -29,4 +29,4 @@ Contains Resource management private link analysis events such as the operations
 
 ## Columns
   
-[!INCLUDE [resourcemanagementpublicaccesslogs](.././tables/includes/resourcemanagementpublicaccesslogs-include.md)]
+[!INCLUDE [resourcemanagementpublicaccesslogs](./includes/resourcemanagementpublicaccesslogs-include.md)]

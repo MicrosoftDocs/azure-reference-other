@@ -4,9 +4,9 @@ description: Reference for AutoscaleEvaluationsLog table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AutoscaleEvaluationsLog
@@ -29,4 +29,4 @@ ms.date: 03/05/2024
 
 ## Columns
   
-[!INCLUDE [autoscaleevaluationslog](.././tables/includes/autoscaleevaluationslog-include.md)]
+[!INCLUDE [autoscaleevaluationslog](./includes/autoscaleevaluationslog-include.md)]

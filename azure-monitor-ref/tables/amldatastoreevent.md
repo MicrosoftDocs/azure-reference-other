@@ -4,9 +4,9 @@ description: Reference for AmlDataStoreEvent table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AmlDataStoreEvent
@@ -29,4 +29,4 @@ Events when ML datastore is accessed (read, created, or deleted).
 
 ## Columns
   
-[!INCLUDE [amldatastoreevent](.././tables/includes/amldatastoreevent-include.md)]
+[!INCLUDE [amldatastoreevent](./includes/amldatastoreevent-include.md)]

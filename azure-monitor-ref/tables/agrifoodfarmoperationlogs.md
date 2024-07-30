@@ -4,9 +4,9 @@ description: Reference for AgriFoodFarmOperationLogs table in Azure Monitor Logs
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AgriFoodFarmOperationLogs
@@ -29,4 +29,4 @@ Logs for create, update, delete and get operations for FarmOperations such as da
 
 ## Columns
   
-[!INCLUDE [agrifoodfarmoperationlogs](.././tables/includes/agrifoodfarmoperationlogs-include.md)]
+[!INCLUDE [agrifoodfarmoperationlogs](./includes/agrifoodfarmoperationlogs-include.md)]
