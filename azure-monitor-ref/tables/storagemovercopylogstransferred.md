@@ -4,9 +4,9 @@ description: Reference for StorageMoverCopyLogsTransferred table in Azure Monito
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # StorageMoverCopyLogsTransferred
@@ -29,4 +29,4 @@ The result logs generated during the execution of Storage Mover job runs where t
 
 ## Columns
   
-[!INCLUDE [storagemovercopylogstransferred](.././tables/includes/storagemovercopylogstransferred-include.md)]
+[!INCLUDE [storagemovercopylogstransferred](./includes/storagemovercopylogstransferred-include.md)]

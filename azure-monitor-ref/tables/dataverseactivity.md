@@ -4,9 +4,9 @@ description: Reference for DataverseActivity table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DataverseActivity
@@ -29,4 +29,4 @@ Contains Microsoft Dataverse audit logs. It's typically used to track Dataverse 
 
 ## Columns
   
-[!INCLUDE [dataverseactivity](.././tables/includes/dataverseactivity-include.md)]
+[!INCLUDE [dataverseactivity](./includes/dataverseactivity-include.md)]

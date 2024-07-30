@@ -4,9 +4,9 @@ description: Reference for AZMSApplicationMetricLogs table in Azure Monitor Logs
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AZMSApplicationMetricLogs
@@ -29,4 +29,4 @@ Captures application metrics(incoming/outgoing, successful/failed, etc. message 
 
 ## Columns
   
-[!INCLUDE [azmsapplicationmetriclogs](.././tables/includes/azmsapplicationmetriclogs-include.md)]
+[!INCLUDE [azmsapplicationmetriclogs](./includes/azmsapplicationmetriclogs-include.md)]

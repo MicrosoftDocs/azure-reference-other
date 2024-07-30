@@ -4,9 +4,9 @@ description: Reference for AmlRegistryWriteEventsLog table in Azure Monitor Logs
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AmlRegistryWriteEventsLog
@@ -29,4 +29,4 @@ Azure ML Registry Write events log. It keeps records of Write operations with re
 
 ## Columns
   
-[!INCLUDE [amlregistrywriteeventslog](.././tables/includes/amlregistrywriteeventslog-include.md)]
+[!INCLUDE [amlregistrywriteeventslog](./includes/amlregistrywriteeventslog-include.md)]

@@ -4,9 +4,9 @@ description: Reference for SynapseIntegrationActivityRuns table in Azure Monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # SynapseIntegrationActivityRuns
@@ -29,4 +29,4 @@ Logs for Synapse integration activity runs.
 
 ## Columns
   
-[!INCLUDE [synapseintegrationactivityruns](.././tables/includes/synapseintegrationactivityruns-include.md)]
+[!INCLUDE [synapseintegrationactivityruns](./includes/synapseintegrationactivityruns-include.md)]

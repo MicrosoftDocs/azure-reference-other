@@ -4,9 +4,9 @@ description: Reference for AgriFoodSensorManagementLogs table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AgriFoodSensorManagementLogs
@@ -29,4 +29,4 @@ Logs for sensors, sensors mappings, sensors events, sensors data models, sensors
 
 ## Columns
   
-[!INCLUDE [agrifoodsensormanagementlogs](.././tables/includes/agrifoodsensormanagementlogs-include.md)]
+[!INCLUDE [agrifoodsensormanagementlogs](./includes/agrifoodsensormanagementlogs-include.md)]

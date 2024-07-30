@@ -4,9 +4,9 @@ description: Reference for CDBGremlinRequests table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # CDBGremlinRequests
@@ -29,4 +29,4 @@ This table details data plane operations, specifically for Graph API accounts.
 
 ## Columns
   
-[!INCLUDE [cdbgremlinrequests](.././tables/includes/cdbgremlinrequests-include.md)]
+[!INCLUDE [cdbgremlinrequests](./includes/cdbgremlinrequests-include.md)]

@@ -4,9 +4,9 @@ description: Reference for MicrosoftGraphActivityLogs table in Azure Monitor Log
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # MicrosoftGraphActivityLogs
@@ -29,4 +29,4 @@ Microsoft Graph Activity Logs provide details of API requests made to Microsoft 
 
 ## Columns
   
-[!INCLUDE [microsoftgraphactivitylogs](.././tables/includes/microsoftgraphactivitylogs-include.md)]
+[!INCLUDE [microsoftgraphactivitylogs](./includes/microsoftgraphactivitylogs-include.md)]

@@ -4,9 +4,9 @@ description: Reference for APIMDevPortalAuditDiagnosticLog table in Azure Monito
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 07/22/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # APIMDevPortalAuditDiagnosticLog
@@ -21,7 +21,7 @@ Diagnostic Logs for API Management Developer Portal API.
 |**Resource types**|microsoft.apimanagement/service|
 |**Categories**|-|
 |**Solutions**| LogManagement|
-|**Basic log**|No|
+|**Basic log**|Yes|
 |**Ingestion-time transformation**|No|
 |**Sample Queries**|-|
 
@@ -29,4 +29,4 @@ Diagnostic Logs for API Management Developer Portal API.
 
 ## Columns
   
-[!INCLUDE [apimdevportalauditdiagnosticlog](.././tables/includes/apimdevportalauditdiagnosticlog-include.md)]
+[!INCLUDE [apimdevportalauditdiagnosticlog](./includes/apimdevportalauditdiagnosticlog-include.md)]

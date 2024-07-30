@@ -2,12 +2,12 @@
 title: Azure Monitor supported metrics by resource type
 description: List of metrics available for each resource type with Azure Monitor.
 author: EdB-MSFT
+ms.author: edbaynash
 services: azure-monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.custom: ignite-2022
-ms.date: 07/23/2024
-ms.author: edbaynash
+ms.date: 07/30/2024
 ms.reviewer: priyamishra
 ---
 
@@ -16,7 +16,7 @@ ms.reviewer: priyamishra
 > [!NOTE]
 > This list is largely auto-generated. Any modification made to this list via GitHub might be written over without warning. Contact the author of this article for details on how to make permanent updates.
 
-Last updated: 07/23/2024.
+Last updated: 07/30/2024.
 
 Azure Monitor provides several ways to interact with metrics, including charting them in the Azure portal, accessing them through the REST API, or querying them by using PowerShell or the Azure CLI (Command Line Interface).  
 
@@ -146,7 +146,6 @@ Following table lists metrics and log categories available for each resource typ
 |Microsoft.Relay <a name="microsoftrelay"></a>|[namespaces](../supported-metrics/Microsoft-Relay-namespaces-metrics.md)<br>|[namespaces](../supported-logs/Microsoft-Relay-namespaces-logs.md)<br>|
 |Microsoft.Search <a name="microsoftsearch"></a>|[searchServices](../supported-metrics/Microsoft-Search-searchServices-metrics.md)<br>|[searchServices](../supported-logs/Microsoft-Search-searchServices-logs.md)<br>|
 |Microsoft.Security <a name="microsoftsecurity"></a>|N/A|[antiMalwareSettings](../supported-logs/Microsoft-Security-antiMalwareSettings-logs.md)<br>[defenderForStorageSettings](../supported-logs/Microsoft-Security-defenderForStorageSettings-logs.md)<br>|
-|microsoft.securityinsights <a name="microsoftsecurityinsights"></a>|N/A|[settings](../supported-logs/microsoft-securityinsights-settings-logs.md)<br>|
 |Microsoft.ServiceBus <a name="microsoftservicebus"></a>|[Namespaces](../supported-metrics/Microsoft-ServiceBus-Namespaces-metrics.md)<br>|[Namespaces](../supported-logs/Microsoft-ServiceBus-Namespaces-logs.md)<br>|
 |Microsoft.ServiceNetworking <a name="microsoftservicenetworking"></a>|[trafficControllers](../supported-metrics/Microsoft-ServiceNetworking-trafficControllers-metrics.md)<br>|[trafficControllers](../supported-logs/Microsoft-ServiceNetworking-trafficControllers-logs.md)<br>|
 |Microsoft.SignalRService <a name="microsoftsignalrservice"></a>|[SignalR](../supported-metrics/Microsoft-SignalRService-SignalR-metrics.md)<br>[SignalR/replicas](../supported-metrics/Microsoft-SignalRService-SignalR-replicas-metrics.md)<br>[WebPubSub](../supported-metrics/Microsoft-SignalRService-WebPubSub-metrics.md)<br>[WebPubSub/replicas](../supported-metrics/Microsoft-SignalRService-WebPubSub-replicas-metrics.md)<br>|[SignalR](../supported-logs/Microsoft-SignalRService-SignalR-logs.md)<br>[SignalR/replicas](../supported-logs/Microsoft-SignalRService-SignalR-replicas-logs.md)<br>[WebPubSub](../supported-logs/Microsoft-SignalRService-WebPubSub-logs.md)<br>[WebPubSub/replicas](../supported-logs/Microsoft-SignalRService-WebPubSub-replicas-logs.md)<br>|
@@ -157,7 +156,6 @@ Following table lists metrics and log categories available for each resource typ
 |Microsoft.StorageMover <a name="microsoftstoragemover"></a>|[storageMovers](../supported-metrics/Microsoft-StorageMover-storageMovers-metrics.md)<br>|[storageMovers](../supported-logs/Microsoft-StorageMover-storageMovers-logs.md)<br>|
 |Microsoft.StreamAnalytics <a name="microsoftstreamanalytics"></a>|[streamingjobs](../supported-metrics/Microsoft-StreamAnalytics-streamingjobs-metrics.md)<br>|[streamingjobs](../supported-logs/Microsoft-StreamAnalytics-streamingjobs-logs.md)<br>|
 |Microsoft.Synapse <a name="microsoftsynapse"></a>|[workspaces](../supported-metrics/Microsoft-Synapse-workspaces-metrics.md)<br>[workspaces/bigDataPools](../supported-metrics/Microsoft-Synapse-workspaces-bigDataPools-metrics.md)<br>[workspaces/kustoPools](../supported-metrics/Microsoft-Synapse-workspaces-kustoPools-metrics.md)<br>[workspaces/scopePools](../supported-metrics/Microsoft-Synapse-workspaces-scopePools-metrics.md)<br>[workspaces/sqlPools](../supported-metrics/Microsoft-Synapse-workspaces-sqlPools-metrics.md)<br>|[workspaces](../supported-logs/Microsoft-Synapse-workspaces-logs.md)<br>[workspaces/bigDataPools](../supported-logs/Microsoft-Synapse-workspaces-bigDataPools-logs.md)<br>[workspaces/kustoPools](../supported-logs/Microsoft-Synapse-workspaces-kustoPools-logs.md)<br>[workspaces/scopePools](../supported-logs/Microsoft-Synapse-workspaces-scopePools-logs.md)<br>[workspaces/sqlPools](../supported-logs/Microsoft-Synapse-workspaces-sqlPools-logs.md)<br>|
-|Microsoft.TimeSeriesInsights <a name="microsofttimeseriesinsights"></a>|[environments](../supported-metrics/Microsoft-TimeSeriesInsights-environments-metrics.md)<br>[environments/eventsources](../supported-metrics/Microsoft-TimeSeriesInsights-environments-eventsources-metrics.md)<br>|[environments](../supported-logs/Microsoft-TimeSeriesInsights-environments-logs.md)<br>[environments/eventsources](../supported-logs/Microsoft-TimeSeriesInsights-environments-eventsources-logs.md)<br>|
 |microsoft.videoindexer <a name="microsoftvideoindexer"></a>|N/A|[accounts](../supported-logs/microsoft-videoindexer-accounts-logs.md)<br>|
 |Microsoft.Web <a name="microsoftweb"></a>|[containerapps](../supported-metrics/Microsoft-Web-containerapps-metrics.md)<br>[hostingEnvironments](../supported-metrics/Microsoft-Web-hostingEnvironments-metrics.md)<br>[hostingenvironments/multirolepools](../supported-metrics/Microsoft-Web-hostingenvironments-multirolepools-metrics.md)<br>[hostingenvironments/workerpools](../supported-metrics/Microsoft-Web-hostingenvironments-workerpools-metrics.md)<br>[serverfarms](../supported-metrics/Microsoft-Web-serverfarms-metrics.md)<br>[sites](../supported-metrics/Microsoft-Web-sites-metrics.md)<br>[sites/slots](../supported-metrics/Microsoft-Web-sites-slots-metrics.md)<br>[staticsites](../supported-metrics/Microsoft-Web-staticsites-metrics.md)<br>|[hostingEnvironments](../supported-logs/Microsoft-Web-hostingEnvironments-logs.md)<br>[sites](../supported-logs/Microsoft-Web-sites-logs.md)<br>[sites/slots](../supported-logs/Microsoft-Web-sites-slots-logs.md)<br>[staticsites](../supported-logs/Microsoft-Web-staticsites-logs.md)<br>|
 |microsoft.workloads <a name="microsoftworkloads"></a>|N/A|[sapvirtualinstances](../supported-logs/microsoft-workloads-sapvirtualinstances-logs.md)<br>|

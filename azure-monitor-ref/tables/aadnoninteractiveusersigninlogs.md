@@ -4,9 +4,9 @@ description: Reference for AADNonInteractiveUserSignInLogs table in Azure Monito
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AADNonInteractiveUserSignInLogs
@@ -21,7 +21,7 @@ Non-interactive Azure Active Directory sign-in logs from user.
 |**Resource types**|-|
 |**Categories**|Audit, Security|
 |**Solutions**| LogManagement|
-|**Basic log**|No|
+|**Basic log**|Yes|
 |**Ingestion-time transformation**|Yes|
 |**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/aadnoninteractiveusersigninlogs)|
 
@@ -29,4 +29,4 @@ Non-interactive Azure Active Directory sign-in logs from user.
 
 ## Columns
   
-[!INCLUDE [aadnoninteractiveusersigninlogs](.././tables/includes/aadnoninteractiveusersigninlogs-include.md)]
+[!INCLUDE [aadnoninteractiveusersigninlogs](./includes/aadnoninteractiveusersigninlogs-include.md)]

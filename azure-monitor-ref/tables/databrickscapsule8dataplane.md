@@ -4,9 +4,9 @@ description: Reference for DatabricksCapsule8Dataplane table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DatabricksCapsule8Dataplane
@@ -29,4 +29,4 @@ Audit logs for Databricks service capsule8-alerts-dataplane.
 
 ## Columns
   
-[!INCLUDE [databrickscapsule8dataplane](.././tables/includes/databrickscapsule8dataplane-include.md)]
+[!INCLUDE [databrickscapsule8dataplane](./includes/databrickscapsule8dataplane-include.md)]

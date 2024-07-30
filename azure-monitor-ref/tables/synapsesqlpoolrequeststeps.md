@@ -4,9 +4,9 @@ description: Reference for SynapseSqlPoolRequestSteps table in Azure Monitor Log
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # SynapseSqlPoolRequestSteps
@@ -29,4 +29,4 @@ Information about request steps that compose a given SQL request or query in an 
 
 ## Columns
   
-[!INCLUDE [synapsesqlpoolrequeststeps](.././tables/includes/synapsesqlpoolrequeststeps-include.md)]
+[!INCLUDE [synapsesqlpoolrequeststeps](./includes/synapsesqlpoolrequeststeps-include.md)]

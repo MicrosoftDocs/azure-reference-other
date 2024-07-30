@@ -1,9 +1,9 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 02/19/2024
-ms.author: edbaynash
-author: EdB-MSFT
+ms.date: 07/30/2024
+ms.author: orens
+author: osalzberg
 ms.custom: microsoft.community/communityTrainings, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -13,5 +13,5 @@ ms.custom: microsoft.community/communityTrainings, naam
   
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
-|`DataPlaneException` |Application Data Plane Exceptions and Errors ||No|Yes||Yes |
-|`DataPlaneLog` |Application Data Plane Logs ||No|Yes||Yes |
+|`DataPlaneException` |Application Data Plane Exceptions and Errors ||No|No||Yes |
+|`DataPlaneLog` |Application Data Plane Logs ||No|No||Yes |

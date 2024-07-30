@@ -4,9 +4,9 @@ description: Reference for AADDomainServicesDNSAuditsDynamicUpdates table in Azu
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AADDomainServicesDNSAuditsDynamicUpdates
@@ -29,4 +29,4 @@ DNS server audit events enable change tracking on the DNS server. This table con
 
 ## Columns
   
-[!INCLUDE [aaddomainservicesdnsauditsdynamicupdates](.././tables/includes/aaddomainservicesdnsauditsdynamicupdates-include.md)]
+[!INCLUDE [aaddomainservicesdnsauditsdynamicupdates](./includes/aaddomainservicesdnsauditsdynamicupdates-include.md)]

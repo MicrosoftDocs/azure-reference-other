@@ -4,9 +4,9 @@ description: Reference for DatabricksFeatureStore table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DatabricksFeatureStore
@@ -29,4 +29,4 @@ Audit logs for events related to Databricks ML Feature Store operations.
 
 ## Columns
   
-[!INCLUDE [databricksfeaturestore](.././tables/includes/databricksfeaturestore-include.md)]
+[!INCLUDE [databricksfeaturestore](./includes/databricksfeaturestore-include.md)]

@@ -4,9 +4,9 @@ description: Reference for LAQueryLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # LAQueryLogs
@@ -29,4 +29,4 @@ Audit logs for queries executed in Log Analytics Workspaces.
 
 ## Columns
   
-[!INCLUDE [laquerylogs](.././tables/includes/laquerylogs-include.md)]
+[!INCLUDE [laquerylogs](./includes/laquerylogs-include.md)]

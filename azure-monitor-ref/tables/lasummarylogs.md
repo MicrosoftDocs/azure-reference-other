@@ -4,9 +4,9 @@ description: Reference for LASummaryLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # LASummaryLogs
@@ -29,4 +29,4 @@ Provides Summary logs rules execution details, including run status, duration an
 
 ## Columns
   
-[!INCLUDE [lasummarylogs](.././tables/includes/lasummarylogs-include.md)]
+[!INCLUDE [lasummarylogs](./includes/lasummarylogs-include.md)]

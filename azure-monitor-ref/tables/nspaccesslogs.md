@@ -4,9 +4,9 @@ description: Reference for NSPAccessLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # NSPAccessLogs
@@ -29,4 +29,4 @@ Logs of Network Security Perimeter (NSP) inbound access allowed based on NSP acc
 
 ## Columns
   
-[!INCLUDE [nspaccesslogs](.././tables/includes/nspaccesslogs-include.md)]
+[!INCLUDE [nspaccesslogs](./includes/nspaccesslogs-include.md)]

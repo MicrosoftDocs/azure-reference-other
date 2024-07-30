@@ -4,9 +4,9 @@ description: Reference for SynapseDXTableUsageStatistics table in Azure Monitor 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # SynapseDXTableUsageStatistics
@@ -29,4 +29,4 @@ Azure date explorer synapse table usage statistics. Logs include DatabaseName, T
 
 ## Columns
   
-[!INCLUDE [synapsedxtableusagestatistics](.././tables/includes/synapsedxtableusagestatistics-include.md)]
+[!INCLUDE [synapsedxtableusagestatistics](./includes/synapsedxtableusagestatistics-include.md)]
