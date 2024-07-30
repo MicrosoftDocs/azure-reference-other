@@ -4,9 +4,9 @@ description: Reference for DatabricksDatabricksSQL table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DatabricksDatabricksSQL
@@ -29,4 +29,4 @@ Databricks databrickssql audit logs.
 
 ## Columns
   
-[!INCLUDE [databricksdatabrickssql](.././tables/includes/databricksdatabrickssql-include.md)]
+[!INCLUDE [databricksdatabrickssql](./includes/databricksdatabrickssql-include.md)]

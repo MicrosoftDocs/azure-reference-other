@@ -4,9 +4,9 @@ description: Reference for GoogleCloudSCC table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # GoogleCloudSCC
@@ -29,4 +29,4 @@ Security Command Center is a comprehensive security and risk management platform
 
 ## Columns
   
-[!INCLUDE [googlecloudscc](.././tables/includes/googlecloudscc-include.md)]
+[!INCLUDE [googlecloudscc](./includes/googlecloudscc-include.md)]

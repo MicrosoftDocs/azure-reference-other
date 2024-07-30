@@ -4,9 +4,9 @@ description: Reference for ACSAdvancedMessagingOperations table in Azure Monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 06/24/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ACSAdvancedMessagingOperations
@@ -29,4 +29,4 @@ Communication Services logs of incoming requests to Advanced Messaging operation
 
 ## Columns
   
-[!INCLUDE [acsadvancedmessagingoperations](.././tables/includes/acsadvancedmessagingoperations-include.md)]
+[!INCLUDE [acsadvancedmessagingoperations](./includes/acsadvancedmessagingoperations-include.md)]

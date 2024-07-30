@@ -4,9 +4,9 @@ description: Reference for SentinelHealth table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # SentinelHealth
@@ -29,4 +29,4 @@ Audit logs for operations performed by Azure Sentinel resources such as Data Con
 
 ## Columns
   
-[!INCLUDE [sentinelhealth](.././tables/includes/sentinelhealth-include.md)]
+[!INCLUDE [sentinelhealth](./includes/sentinelhealth-include.md)]

@@ -4,9 +4,9 @@ description: Reference for ATCPrivatePeeringMetadata table in Azure Monitor Logs
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 06/17/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ATCPrivatePeeringMetadata
@@ -29,4 +29,4 @@ This table has Private Peering Vnet metadata.
 
 ## Columns
   
-[!INCLUDE [atcprivatepeeringmetadata](.././tables/includes/atcprivatepeeringmetadata-include.md)]
+[!INCLUDE [atcprivatepeeringmetadata](./includes/atcprivatepeeringmetadata-include.md)]

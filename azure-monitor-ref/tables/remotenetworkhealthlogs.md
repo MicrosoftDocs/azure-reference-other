@@ -4,9 +4,9 @@ description: Reference for RemoteNetworkHealthLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # RemoteNetworkHealthLogs
@@ -29,4 +29,4 @@ This table is part of Identity and Network Access, which contains Remote Network
 
 ## Columns
   
-[!INCLUDE [remotenetworkhealthlogs](.././tables/includes/remotenetworkhealthlogs-include.md)]
+[!INCLUDE [remotenetworkhealthlogs](./includes/remotenetworkhealthlogs-include.md)]

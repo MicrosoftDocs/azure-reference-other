@@ -4,9 +4,9 @@ description: Reference for OfficeActivity table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # OfficeActivity
@@ -29,4 +29,4 @@ Audit logs for Office 365 tenants collected by Azure Sentinel. Including Exchang
 
 ## Columns
   
-[!INCLUDE [officeactivity](.././tables/includes/officeactivity-include.md)]
+[!INCLUDE [officeactivity](./includes/officeactivity-include.md)]

@@ -4,9 +4,9 @@ description: Reference for EnrichedMicrosoft365AuditLogs table in Azure Monitor 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # EnrichedMicrosoft365AuditLogs
@@ -29,4 +29,4 @@ This table is part of Identity and Network Access, which contains Enriched Micro
 
 ## Columns
   
-[!INCLUDE [enrichedmicrosoft365auditlogs](.././tables/includes/enrichedmicrosoft365auditlogs-include.md)]
+[!INCLUDE [enrichedmicrosoft365auditlogs](./includes/enrichedmicrosoft365auditlogs-include.md)]

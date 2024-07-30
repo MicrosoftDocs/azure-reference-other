@@ -4,9 +4,9 @@ description: Reference for AWSCloudWatch table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AWSCloudWatch
@@ -29,4 +29,4 @@ The CloudWatch Logs provide performance and billing data from the AWS CloudWatch
 
 ## Columns
   
-[!INCLUDE [awscloudwatch](.././tables/includes/awscloudwatch-include.md)]
+[!INCLUDE [awscloudwatch](./includes/awscloudwatch-include.md)]

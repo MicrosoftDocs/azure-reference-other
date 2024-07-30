@@ -4,9 +4,9 @@ description: Reference for AADManagedIdentitySignInLogs table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 07/29/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AADManagedIdentitySignInLogs
@@ -29,4 +29,4 @@ Managed identity Azure Active Directory sign-in logs.
 
 ## Columns
   
-[!INCLUDE [aadmanagedidentitysigninlogs](.././tables/includes/aadmanagedidentitysigninlogs-include.md)]
+[!INCLUDE [aadmanagedidentitysigninlogs](./includes/aadmanagedidentitysigninlogs-include.md)]

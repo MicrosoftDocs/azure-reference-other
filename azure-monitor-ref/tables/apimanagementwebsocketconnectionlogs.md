@@ -4,9 +4,9 @@ description: Reference for ApiManagementWebSocketConnectionLogs table in Azure M
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ApiManagementWebSocketConnectionLogs
@@ -29,4 +29,4 @@ Websocket connection logs provides logs on websocket connection events for API M
 
 ## Columns
   
-[!INCLUDE [apimanagementwebsocketconnectionlogs](.././tables/includes/apimanagementwebsocketconnectionlogs-include.md)]
+[!INCLUDE [apimanagementwebsocketconnectionlogs](./includes/apimanagementwebsocketconnectionlogs-include.md)]

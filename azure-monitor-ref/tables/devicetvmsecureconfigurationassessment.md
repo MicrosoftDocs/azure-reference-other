@@ -4,9 +4,9 @@ description: Reference for DeviceTvmSecureConfigurationAssessment table in Azure
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DeviceTvmSecureConfigurationAssessment
@@ -29,4 +29,4 @@ Threat & vulnerability management assessment events, indicating the status of va
 
 ## Columns
   
-[!INCLUDE [devicetvmsecureconfigurationassessment](.././tables/includes/devicetvmsecureconfigurationassessment-include.md)]
+[!INCLUDE [devicetvmsecureconfigurationassessment](./includes/devicetvmsecureconfigurationassessment-include.md)]

@@ -4,9 +4,9 @@ description: Reference for NCMClusterOperationsLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 07/22/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # NCMClusterOperationsLogs
@@ -29,4 +29,4 @@ Cluster Manager logs to track the deployment or upgrade of Nexus cluster.
 
 ## Columns
   
-[!INCLUDE [ncmclusteroperationslogs](.././tables/includes/ncmclusteroperationslogs-include.md)]
+[!INCLUDE [ncmclusteroperationslogs](./includes/ncmclusteroperationslogs-include.md)]

@@ -4,9 +4,9 @@ description: Reference for AGWPerformanceLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AGWPerformanceLogs
@@ -29,4 +29,4 @@ Contains all the logs to view how Application Gateway instances are performing. 
 
 ## Columns
   
-[!INCLUDE [agwperformancelogs](.././tables/includes/agwperformancelogs-include.md)]
+[!INCLUDE [agwperformancelogs](./includes/agwperformancelogs-include.md)]

@@ -4,9 +4,9 @@ description: Reference for DeviceTvmSoftwareInventory table in Azure Monitor Log
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DeviceTvmSoftwareInventory
@@ -29,4 +29,4 @@ Inventory of software installed on devices, including their version information 
 
 ## Columns
   
-[!INCLUDE [devicetvmsoftwareinventory](.././tables/includes/devicetvmsoftwareinventory-include.md)]
+[!INCLUDE [devicetvmsoftwareinventory](./includes/devicetvmsoftwareinventory-include.md)]

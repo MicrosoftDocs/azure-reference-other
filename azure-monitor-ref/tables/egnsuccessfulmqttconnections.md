@@ -4,9 +4,9 @@ description: Reference for EGNSuccessfulMqttConnections table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # EGNSuccessfulMqttConnections
@@ -29,4 +29,4 @@ Log for successful MQTT connections to an Event Grid namesapce. This log can be 
 
 ## Columns
   
-[!INCLUDE [egnsuccessfulmqttconnections](.././tables/includes/egnsuccessfulmqttconnections-include.md)]
+[!INCLUDE [egnsuccessfulmqttconnections](./includes/egnsuccessfulmqttconnections-include.md)]

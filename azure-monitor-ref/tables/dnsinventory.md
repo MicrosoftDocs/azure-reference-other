@@ -4,9 +4,9 @@ description: Reference for DnsInventory table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DnsInventory
@@ -29,4 +29,4 @@ ms.date: 03/05/2024
 
 ## Columns
   
-[!INCLUDE [dnsinventory](.././tables/includes/dnsinventory-include.md)]
+[!INCLUDE [dnsinventory](./includes/dnsinventory-include.md)]

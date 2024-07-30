@@ -4,9 +4,9 @@ description: Reference for AmlOnlineEndpointConsoleLog table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AmlOnlineEndpointConsoleLog
@@ -29,4 +29,4 @@ Azure ML online endpoints console logs. It provides console logs output from use
 
 ## Columns
   
-[!INCLUDE [amlonlineendpointconsolelog](.././tables/includes/amlonlineendpointconsolelog-include.md)]
+[!INCLUDE [amlonlineendpointconsolelog](./includes/amlonlineendpointconsolelog-include.md)]

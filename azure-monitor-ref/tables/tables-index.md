@@ -4,7 +4,7 @@ description: Field definitions for Azure Monitor resource log / log analytics ta
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 07/22/2024
+ms.date: 07/30/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -476,32 +476,6 @@ Microsoft.PlayFab/titles
 
 - [PFTitleAuditLogs](pftitleauditlogs.md)
 
-### Azure Resource Group  
-
-resourceGroup  
-
-- [AzureActivity](azureactivity.md)
-
-### Azure Sentinel  
-
-Microsoft.SecurityInsights/securityInsights  
-
-- [SecurityAlert](securityalert.md)
-- [SecurityEvent](securityevent.md)
-- [DnsAuditEvents](dnsauditevents.md)
-
-### Azure Sentinel CEF Table  
-
-Microsoft.SecurityInsights/CEF  
-
-- [CommonSecurityLog](commonsecuritylog.md)
-
-### Azure Sentinel Web Session Logs  
-
-Microsoft.SecurityInsights/WebSessionLogs  
-
-- [ASimWebSessionLogs](asimwebsessionlogs.md)
-
 ### Azure Sphere  
 
 Microsoft.AzureSphere/catalogs  
@@ -574,12 +548,6 @@ Microsoft.StorageMover/storageMovers
 - [StorageMoverCopyLogsFailed](storagemovercopylogsfailed.md)
 - [StorageMoverCopyLogsTransferred](storagemovercopylogstransferred.md)
 - [StorageMoverJobRunLogs](storagemoverjobrunlogs.md)
-
-### Azure Subscription  
-
-subscription  
-
-- [AzureActivity](azureactivity.md)
 
 ### Azure Traffic Collector  
 
@@ -742,12 +710,6 @@ Microsoft.DataShare/accounts
 - [AzureMetrics](azuremetrics.md)
 - [MicrosoftDataShareSentSnapshotLog](microsoftdatasharesentsnapshotlog.md)
 - [MicrosoftDataShareReceivedSnapshotLog](microsoftdatasharereceivedsnapshotlog.md)
-
-### Default schema for a resource  
-
-default  
-
-- [AzureActivity](azureactivity.md)
 
 ### Defender for Storage Settings  
 
@@ -1155,12 +1117,6 @@ Microsoft.ContainerInstance/containerGroups
 - [ContainerInstanceLog](containerinstancelog.md)
 - [ContainerEvent](containerevent.md)
 
-### Microsoft Defender for cloud  
-
-Microsoft.SecurityInsights/Purview  
-
-- [PurviewDataSensitivityLogs](purviewdatasensitivitylogs.md)
-
 ### Microsoft Defender for Cloud  
 
 Microsoft.Security/Security  
@@ -1181,52 +1137,6 @@ Microsoft.AzurePlaywrightService/accounts
 
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
-
-### Microsoft Sentinel ASim  
-
-Microsoft.SecurityInsights/ASimTables  
-
-- [ASimDhcpEventLogs](asimdhcpeventlogs.md)
-- [ASimFileEventLogs](asimfileeventlogs.md)
-- [ASimUserManagementActivityLogs](asimusermanagementactivitylogs.md)
-- [ASimRegistryEventLogs](asimregistryeventlogs.md)
-
-### Microsoft Sentinel Audit Event ASim schema  
-
-Microsoft.SecurityInsights/AuditEventNormalized  
-
-- [ASimAuditEventLogs](asimauditeventlogs.md)
-
-### Microsoft Sentinel Authentication Event ASIM schema  
-
-Microsoft.SecurityInsights/AuthenticationEvent  
-
-- [ASimAuthenticationEventLogs](asimauthenticationeventlogs.md)
-
-### Microsoft Sentinel DNS activity ASim schema  
-
-Microsoft.SecurityInsights/DnsNormalized  
-
-- [ASimDnsActivityLogs](asimdnsactivitylogs.md)
-
-### Microsoft Sentinel Network Session ASim schema  
-
-Microsoft.SecurityInsights/NetworkSessionNormalized  
-
-- [ASimNetworkSessionLogs](asimnetworksessionlogs.md)
-
-### Microsoft Sentinel Process Event ASim schema  
-
-Microsoft.SecurityInsights/ProcessEventNormalized  
-
-- [ASimProcessEventLogs](asimprocesseventlogs.md)
-
-### Microsoft Sentinel Threat Intelligence.  
-
-Microsoft.SecurityInsights/ThreatIntelligence  
-
-- [ThreatIntelObjects](threatintelobjects.md)
-- [ThreatIntelIndicators](threatintelindicators.md)
 
 ### Microsoft.AgFoodPlatform/farmBeats  
 

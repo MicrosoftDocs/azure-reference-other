@@ -4,9 +4,9 @@ description: Reference for UCServiceUpdateStatus table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # UCServiceUpdateStatus
@@ -29,4 +29,4 @@ Update Compliance - Update Event that comes directly from the service-side, and 
 
 ## Columns
   
-[!INCLUDE [ucserviceupdatestatus](.././tables/includes/ucserviceupdatestatus-include.md)]
+[!INCLUDE [ucserviceupdatestatus](./includes/ucserviceupdatestatus-include.md)]

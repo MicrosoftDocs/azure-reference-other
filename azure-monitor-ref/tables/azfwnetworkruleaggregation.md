@@ -4,9 +4,9 @@ description: Reference for AZFWNetworkRuleAggregation table in Azure Monitor Log
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AZFWNetworkRuleAggregation
@@ -29,4 +29,4 @@ Contains aggregated Network rule log data for Policy Analytics.
 
 ## Columns
   
-[!INCLUDE [azfwnetworkruleaggregation](.././tables/includes/azfwnetworkruleaggregation-include.md)]
+[!INCLUDE [azfwnetworkruleaggregation](./includes/azfwnetworkruleaggregation-include.md)]

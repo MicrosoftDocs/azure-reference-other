@@ -4,9 +4,9 @@ description: Reference for DatabricksRemoteHistoryService table in Azure Monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DatabricksRemoteHistoryService
@@ -29,4 +29,4 @@ Audit logs for events adding and deleting credentials for Databricks remote hist
 
 ## Columns
   
-[!INCLUDE [databricksremotehistoryservice](.././tables/includes/databricksremotehistoryservice-include.md)]
+[!INCLUDE [databricksremotehistoryservice](./includes/databricksremotehistoryservice-include.md)]
