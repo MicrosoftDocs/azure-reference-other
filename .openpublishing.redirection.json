@@ -8734,6 +8734,31 @@
    "source_path": "azure-monitor-ref/tables/includes/azuremetricsv2-include.md",
    "redirect_url": "/azure/azure-monitor/reference",
    "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/supported-metrics/microsoft-timeseriesinsights-environments-eventsources-metrics.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/supported-metrics/microsoft-timeseriesinsights-environments-metrics.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/supported-logs/microsoft-securityinsights-settings-logs.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/supported-logs/microsoft-timeseriesinsights-environments-eventsources-logs.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/supported-logs/microsoft-timeseriesinsights-environments-logs.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
   }
  ]
 }

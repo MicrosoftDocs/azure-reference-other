@@ -1,9 +1,9 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 06/03/2024
-ms.author: edbaynash
-author: EdB-MSFT
+ms.date: 07/30/2024
+ms.author: orens
+author: osalzberg
 ms.custom: Microsoft.MachineLearningServices/workspaces, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -14,7 +14,7 @@ ms.custom: Microsoft.MachineLearningServices/workspaces, naam
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
 |`AmlComputeClusterEvent` |AmlComputeClusterEvent |[AmlComputeClusterEvent](/azure/azure-monitor/reference/tables/amlcomputeclusterevent)<p>AmlCompute Cluster events|No|Yes|[Queries](/azure/azure-monitor/reference/queries/amlcomputeclusterevent)|No |
-|`AmlComputeClusterNodeEvent` |AmlComputeClusterNodeEvent ||No|Yes||Yes |
+|`AmlComputeClusterNodeEvent` |AmlComputeClusterNodeEvent ||No|No||Yes |
 |`AmlComputeCpuGpuUtilization` |AmlComputeCpuGpuUtilization |[AmlComputeCpuGpuUtilization](/azure/azure-monitor/reference/tables/amlcomputecpugpuutilization)<p>Azure Machine Learning services CPU and GPU utilizaion logs.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/amlcomputecpugpuutilization)|No |
 |`AmlComputeJobEvent` |AmlComputeJobEvent |[AmlComputeJobEvent](/azure/azure-monitor/reference/tables/amlcomputejobevent)<p>AmlCompute Job events|No|Yes|[Queries](/azure/azure-monitor/reference/queries/amlcomputejobevent)|No |
 |`AmlRunStatusChangedEvent` |AmlRunStatusChangedEvent |[AmlRunStatusChangedEvent](/azure/azure-monitor/reference/tables/amlrunstatuschangedevent)<p>Azure Machine Learning services run status event logs.|No|Yes||No |
@@ -30,7 +30,7 @@ ms.custom: Microsoft.MachineLearningServices/workspaces, naam
 |`DeploymentReadEvent` |DeploymentReadEvent |[AmlDeploymentEvent](/azure/azure-monitor/reference/tables/amldeploymentevent)<p>Events when a model deployment happens on ACI or AKS.|No|Yes||Yes |
 |`EnvironmentChangeEvent` |EnvironmentChangeEvent |[AmlEnvironmentEvent](/azure/azure-monitor/reference/tables/amlenvironmentevent)<p>Events when ML environments are accessed (read, created, or deleted).|No|Yes|[Queries](/azure/azure-monitor/reference/queries/amlenvironmentevent)|Yes |
 |`EnvironmentReadEvent` |EnvironmentReadEvent |[AmlEnvironmentEvent](/azure/azure-monitor/reference/tables/amlenvironmentevent)<p>Events when ML environments are accessed (read, created, or deleted).|No|Yes|[Queries](/azure/azure-monitor/reference/queries/amlenvironmentevent)|Yes |
-|`InferencingOperationACI` |InferencingOperationACI ||No|Yes||Yes |
+|`InferencingOperationACI` |InferencingOperationACI ||No|No||Yes |
 |`InferencingOperationAKS` |InferencingOperationAKS |[AmlInferencingEvent](/azure/azure-monitor/reference/tables/amlinferencingevent)<p>Events for inference or related operation on AKS or ACI compute type.|No|Yes||Yes |
 |`ModelsActionEvent` |ModelsActionEvent |[AmlModelsEvent](/azure/azure-monitor/reference/tables/amlmodelsevent)<p>Events when ML model is accessed (read, created, or deleted). Incudes events when packaging of models and assets happen into a ready-to-build packages.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/amlmodelsevent)|Yes |
 |`ModelsChangeEvent` |ModelsChangeEvent |[AmlModelsEvent](/azure/azure-monitor/reference/tables/amlmodelsevent)<p>Events when ML model is accessed (read, created, or deleted). Incudes events when packaging of models and assets happen into a ready-to-build packages.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/amlmodelsevent)|Yes |

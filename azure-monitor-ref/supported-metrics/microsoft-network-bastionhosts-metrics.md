@@ -2,10 +2,10 @@
 title: Supported metrics - microsoft.network/bastionHosts
 description: Reference for microsoft.network/bastionHosts metrics in Azure Monitor.
 ms.topic: reference
-ms.service: azure-monitor
-ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/26/2024
+ms.author: edbaynash
+ms.service: azure-monitor
+ms.date: 07/30/2024
 ms.custom: microsoft.network/bastionHosts, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -18,7 +18,7 @@ ms.custom: microsoft.network/bastionHosts, naam
 The following table lists the metrics available for the microsoft.network/bastionHosts resource type.  
   
   
-[!INCLUDE[microsoft.network/bastionHosts](./includes/metrics-headings-include.md)]  
+[!INCLUDE [headings](./includes/metrics-headings.md)]  
   
   
   
@@ -26,4 +26,5 @@ For a list of supported logs, see [Supported log categories - microsoft.network/
   
  
 
-[!INCLUDE[microsoft.network/bastionHosts](./includes/microsoft-network-bastionhosts-metrics-include.md)]
+[!INCLUDE [microsoft.network/bastionHosts](./includes/microsoft-network-bastionhosts-metrics-include.md)]  
+
