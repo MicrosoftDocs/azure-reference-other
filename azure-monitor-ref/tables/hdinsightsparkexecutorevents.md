@@ -4,9 +4,9 @@ description: Reference for HDInsightSparkExecutorEvents table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # HDInsightSparkExecutorEvents
@@ -29,4 +29,4 @@ Spark Executor Events.
 
 ## Columns
   
-[!INCLUDE [hdinsightsparkexecutorevents](.././tables/includes/hdinsightsparkexecutorevents-include.md)]
+[!INCLUDE [hdinsightsparkexecutorevents](./includes/hdinsightsparkexecutorevents-include.md)]

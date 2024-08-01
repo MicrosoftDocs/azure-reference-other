@@ -4,9 +4,9 @@ description: Reference for AzureAttestationDiagnostics table in Azure Monitor Lo
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AzureAttestationDiagnostics
@@ -29,4 +29,4 @@ Logs from attestation requests.
 
 ## Columns
   
-[!INCLUDE [azureattestationdiagnostics](.././tables/includes/azureattestationdiagnostics-include.md)]
+[!INCLUDE [azureattestationdiagnostics](./includes/azureattestationdiagnostics-include.md)]

@@ -4,9 +4,9 @@ description: Reference for UserAccessAnalytics table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # UserAccessAnalytics
@@ -29,4 +29,4 @@ This analytics table, for a given user, provides the direct or transitive access
 
 ## Columns
   
-[!INCLUDE [useraccessanalytics](.././tables/includes/useraccessanalytics-include.md)]
+[!INCLUDE [useraccessanalytics](./includes/useraccessanalytics-include.md)]

@@ -4,9 +4,9 @@ description: Reference for PowerPlatformConnectorActivity table in Azure Monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # PowerPlatformConnectorActivity
@@ -29,4 +29,4 @@ Contains Microsoft Power Platform Connector audit logs. It's typically used to t
 
 ## Columns
   
-[!INCLUDE [powerplatformconnectoractivity](.././tables/includes/powerplatformconnectoractivity-include.md)]
+[!INCLUDE [powerplatformconnectoractivity](./includes/powerplatformconnectoractivity-include.md)]

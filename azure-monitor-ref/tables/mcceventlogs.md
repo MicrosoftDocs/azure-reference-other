@@ -4,9 +4,9 @@ description: Reference for MCCEventLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # MCCEventLogs
@@ -29,4 +29,4 @@ This table includes logs for cache events. Can be used for performance metrics.
 
 ## Columns
   
-[!INCLUDE [mcceventlogs](.././tables/includes/mcceventlogs-include.md)]
+[!INCLUDE [mcceventlogs](./includes/mcceventlogs-include.md)]

@@ -4,9 +4,9 @@ description: Reference for OEPAirFlowTask table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # OEPAirFlowTask
@@ -29,4 +29,4 @@ Diagnostic logs for AirFlow task execution having task name, task details.
 
 ## Columns
   
-[!INCLUDE [oepairflowtask](.././tables/includes/oepairflowtask-include.md)]
+[!INCLUDE [oepairflowtask](./includes/oepairflowtask-include.md)]

@@ -4,9 +4,9 @@ description: Reference for ACSCallDiagnostics table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ACSCallDiagnostics
@@ -29,4 +29,4 @@ Diagnostics logs provide information about the media transfers that occur in a c
 
 ## Columns
   
-[!INCLUDE [acscalldiagnostics](.././tables/includes/acscalldiagnostics-include.md)]
+[!INCLUDE [acscalldiagnostics](./includes/acscalldiagnostics-include.md)]

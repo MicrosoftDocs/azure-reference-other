@@ -4,9 +4,9 @@ description: Reference for InsightsMetrics table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # InsightsMetrics
@@ -29,4 +29,4 @@ Table that stores metrics. 'Perf' table also stores many metrics and over time t
 
 ## Columns
   
-[!INCLUDE [insightsmetrics](.././tables/includes/insightsmetrics-include.md)]
+[!INCLUDE [insightsmetrics](./includes/insightsmetrics-include.md)]

@@ -4,9 +4,9 @@ description: Reference for DatabricksClusterLibraries table in Azure Monitor Log
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DatabricksClusterLibraries
@@ -29,4 +29,4 @@ Audit logs for actions taken on cluster libraries in Databricks.
 
 ## Columns
   
-[!INCLUDE [databricksclusterlibraries](.././tables/includes/databricksclusterlibraries-include.md)]
+[!INCLUDE [databricksclusterlibraries](./includes/databricksclusterlibraries-include.md)]

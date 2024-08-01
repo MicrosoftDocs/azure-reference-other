@@ -4,9 +4,9 @@ description: Reference for WVDAutoscaleEvaluationPooled table in Azure Monitor L
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # WVDAutoscaleEvaluationPooled
@@ -29,4 +29,4 @@ The results of an Azure Virtual Desktop Autoscale scaling plan evaluation on a h
 
 ## Columns
   
-[!INCLUDE [wvdautoscaleevaluationpooled](.././tables/includes/wvdautoscaleevaluationpooled-include.md)]
+[!INCLUDE [wvdautoscaleevaluationpooled](./includes/wvdautoscaleevaluationpooled-include.md)]

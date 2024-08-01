@@ -4,9 +4,9 @@ description: Reference for VMBoundPort table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # VMBoundPort
@@ -29,4 +29,4 @@ Traffic for open server ports on the monitored machine.
 
 ## Columns
   
-[!INCLUDE [vmboundport](.././tables/includes/vmboundport-include.md)]
+[!INCLUDE [vmboundport](./includes/vmboundport-include.md)]

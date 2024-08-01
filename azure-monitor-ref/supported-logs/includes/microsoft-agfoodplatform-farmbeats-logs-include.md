@@ -1,9 +1,9 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 06/03/2024
-ms.author: edbaynash
-author: EdB-MSFT
+ms.date: 07/30/2024
+ms.author: orens
+author: osalzberg
 ms.custom: Microsoft.AgFoodPlatform/farmBeats, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -19,7 +19,7 @@ ms.custom: Microsoft.AgFoodPlatform/farmBeats, naam
 |`InsightLogs` |Insight Logs |[AgriFoodInsightLogs](/azure/azure-monitor/reference/tables/agrifoodinsightlogs)<p>Logs for read operations on FarmBeats resources such as inisghts and inisight-attachments.|No|No||Yes |
 |`JobProcessedLogs` |Job Processed Logs |[AgriFoodJobProcessedLogs](/azure/azure-monitor/reference/tables/agrifoodjobprocessedlogs)<p>Logs indicating success or failure of job runs for farmOperationDataIngestionJob, farmOperationPeriodicJob, farmOperationEventHandlingJob, satelliteDataIngestionJob, weatherDataIngestionJob etc. These logs also contain reasons for failure of these jobs if any.|No|No|[Queries](/azure/azure-monitor/reference/queries/agrifoodjobprocessedlogs)|Yes |
 |`ModelInferenceLogs` |Model Inference Logs ||No|No||Yes |
-|`ProviderAuthLogs` |Provider Auth Logs ||No|No||Yes |
+|`ProviderAuthLogs` |Provider Auth Logs |[AgriFoodProviderAuthLogs](/azure/azure-monitor/reference/tables/agrifoodproviderauthlogs)<p>Logs for create, update, delete, cascade delete get and get all for oauth providers. It also has logs for get, get all and cascade delete for oauth tokens.|No|No||Yes |
 |`SatelliteLogs` |Satellite Logs |[AgriFoodSatelliteLogs](/azure/azure-monitor/reference/tables/agrifoodsatellitelogs)<p>Logs for create and get operations for Satellite data.|No|No||Yes |
 |`SensorManagementLogs` |Sensor Management Logs |[AgriFoodSensorManagementLogs](/azure/azure-monitor/reference/tables/agrifoodsensormanagementlogs)<p>Logs for sensors, sensors mappings, sensors events, sensors data models, sensors partner integration, devices, device data models etc.|No|No||Yes |
 |`WeatherLogs` |Weather Logs |[AgriFoodWeatherLogs](/azure/azure-monitor/reference/tables/agrifoodweatherlogs)<p>Logs for create, update, delete and get operations while ingesting weather data in FarmBeats.|No|No||Yes |

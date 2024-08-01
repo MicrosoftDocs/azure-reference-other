@@ -2,10 +2,10 @@
 title: Supported metrics - Microsoft.Storage/storageAccounts/fileServices
 description: Reference for Microsoft.Storage/storageAccounts/fileServices metrics in Azure Monitor.
 ms.topic: reference
-ms.service: azure-monitor
-ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/26/2024
+ms.author: edbaynash
+ms.service: azure-monitor
+ms.date: 07/30/2024
 ms.custom: Microsoft.Storage/storageAccounts/fileServices, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -18,7 +18,7 @@ ms.custom: Microsoft.Storage/storageAccounts/fileServices, naam
 The following table lists the metrics available for the Microsoft.Storage/storageAccounts/fileServices resource type.  
   
   
-[!INCLUDE[Microsoft.Storage/storageAccounts/fileServices](./includes/metrics-headings-include.md)]  
+[!INCLUDE [headings](./includes/metrics-headings.md)]  
   
   
   
@@ -26,4 +26,5 @@ For a list of supported logs, see [Supported log categories - Microsoft.Storage/
   
  
 
-[!INCLUDE[Microsoft.Storage/storageAccounts/fileServices](./includes/microsoft-storage-storageaccounts-fileservices-metrics-include.md)]
+[!INCLUDE [Microsoft.Storage/storageAccounts/fileServices](./includes/microsoft-storage-storageaccounts-fileservices-metrics-include.md)]  
+

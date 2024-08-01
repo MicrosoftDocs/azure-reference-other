@@ -4,9 +4,9 @@ description: Reference for ACSAuthIncomingOperations table in Azure Monitor Logs
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ACSAuthIncomingOperations
@@ -29,4 +29,4 @@ Communication Services logs of incoming requests to auth operations.
 
 ## Columns
   
-[!INCLUDE [acsauthincomingoperations](.././tables/includes/acsauthincomingoperations-include.md)]
+[!INCLUDE [acsauthincomingoperations](./includes/acsauthincomingoperations-include.md)]

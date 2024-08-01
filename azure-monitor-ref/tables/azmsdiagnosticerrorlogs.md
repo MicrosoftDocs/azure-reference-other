@@ -4,9 +4,9 @@ description: Reference for AZMSDiagnosticErrorLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 05/13/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AZMSDiagnosticErrorLogs
@@ -29,4 +29,4 @@ Captures aggregated diagnostic information such as client errors , server busy e
 
 ## Columns
   
-[!INCLUDE [azmsdiagnosticerrorlogs](.././tables/includes/azmsdiagnosticerrorlogs-include.md)]
+[!INCLUDE [azmsdiagnosticerrorlogs](./includes/azmsdiagnosticerrorlogs-include.md)]

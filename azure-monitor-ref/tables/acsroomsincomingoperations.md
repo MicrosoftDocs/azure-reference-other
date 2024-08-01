@@ -4,9 +4,9 @@ description: Reference for ACSRoomsIncomingOperations table in Azure Monitor Log
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ACSRoomsIncomingOperations
@@ -29,4 +29,4 @@ Communication Services logs of incoming requests to rooms operations, with summa
 
 ## Columns
   
-[!INCLUDE [acsroomsincomingoperations](.././tables/includes/acsroomsincomingoperations-include.md)]
+[!INCLUDE [acsroomsincomingoperations](./includes/acsroomsincomingoperations-include.md)]

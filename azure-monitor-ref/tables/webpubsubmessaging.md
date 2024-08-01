@@ -4,9 +4,9 @@ description: Reference for WebPubSubMessaging table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # WebPubSubMessaging
@@ -29,4 +29,4 @@ Messaging logs provide tracing information for the Azure Web PubSub hub messages
 
 ## Columns
   
-[!INCLUDE [webpubsubmessaging](.././tables/includes/webpubsubmessaging-include.md)]
+[!INCLUDE [webpubsubmessaging](./includes/webpubsubmessaging-include.md)]

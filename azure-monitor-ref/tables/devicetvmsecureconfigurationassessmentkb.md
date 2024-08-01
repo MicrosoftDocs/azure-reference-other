@@ -4,9 +4,9 @@ description: Reference for DeviceTvmSecureConfigurationAssessmentKB table in Azu
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DeviceTvmSecureConfigurationAssessmentKB
@@ -29,4 +29,4 @@ Knowledge base of various security configurations used by Threat & Vulnerability
 
 ## Columns
   
-[!INCLUDE [devicetvmsecureconfigurationassessmentkb](.././tables/includes/devicetvmsecureconfigurationassessmentkb-include.md)]
+[!INCLUDE [devicetvmsecureconfigurationassessmentkb](./includes/devicetvmsecureconfigurationassessmentkb-include.md)]

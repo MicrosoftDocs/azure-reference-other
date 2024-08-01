@@ -4,9 +4,9 @@ description: Reference for SucceededIngestion table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # SucceededIngestion
@@ -29,4 +29,4 @@ Succeeded ingestion operations logs provide information about successfully compl
 
 ## Columns
   
-[!INCLUDE [succeededingestion](.././tables/includes/succeededingestion-include.md)]
+[!INCLUDE [succeededingestion](./includes/succeededingestion-include.md)]

@@ -4,9 +4,9 @@ description: Reference for AZFWNetworkRule table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AZFWNetworkRule
@@ -29,4 +29,4 @@ Contains all Network Rule log data. Each match between data plane and network ru
 
 ## Columns
   
-[!INCLUDE [azfwnetworkrule](.././tables/includes/azfwnetworkrule-include.md)]
+[!INCLUDE [azfwnetworkrule](./includes/azfwnetworkrule-include.md)]

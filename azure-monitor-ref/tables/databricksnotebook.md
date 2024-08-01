@@ -4,9 +4,9 @@ description: Reference for DatabricksNotebook table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # DatabricksNotebook
@@ -29,4 +29,4 @@ Databricks Notebook audit logs.
 
 ## Columns
   
-[!INCLUDE [databricksnotebook](.././tables/includes/databricksnotebook-include.md)]
+[!INCLUDE [databricksnotebook](./includes/databricksnotebook-include.md)]

@@ -1,9 +1,9 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 03/26/2024
-ms.author: edbaynash
-author: EdB-MSFT
+ms.date: 07/30/2024
+ms.author: orens
+author: osalzberg
 ms.custom: Microsoft.DigitalTwins/digitalTwinsInstances, arm
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -18,4 +18,4 @@ ms.custom: Microsoft.DigitalTwins/digitalTwinsInstances, arm
 |`EventRoutesOperation` |EventRoutesOperation |[ADTEventRoutesOperation](/azure/azure-monitor/reference/tables/adteventroutesoperation)<p>Schema for Azure Digital Twins' Event Routes operations. The Event Routes Operation category tracks all events being published to endpoints, which are other Azure services.|No|No|[Queries](/azure/azure-monitor/reference/queries/adteventroutesoperation)|No |
 |`ModelsOperation` |ModelsOperation |[ADTModelsOperation](/azure/azure-monitor/reference/tables/adtmodelsoperation)<p>Schema for Azure Digital Twins' Models operations. The Models Operation category tracks all customer requests to manage models in a digital twins instance.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/adtmodelsoperation)|No |
 |`QueryOperation` |QueryOperation |[ADTQueryOperation](/azure/azure-monitor/reference/tables/adtqueryoperation)<p>Schema for Azure Digital Twins' Query operations. The Query Operation category tracks all customer requests to query their digital twins instance.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/adtqueryoperation)|No |
-|`ResourceProviderOperation` |ResourceProviderOperation ||No|Yes||Yes |
+|`ResourceProviderOperation` |ResourceProviderOperation ||No|No||Yes |

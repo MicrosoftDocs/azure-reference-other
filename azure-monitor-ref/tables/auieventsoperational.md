@@ -4,9 +4,9 @@ description: Reference for AUIEventsOperational table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AUIEventsOperational
@@ -29,4 +29,4 @@ Events generated using the service, for example GET requests or the execution ev
 
 ## Columns
   
-[!INCLUDE [auieventsoperational](.././tables/includes/auieventsoperational-include.md)]
+[!INCLUDE [auieventsoperational](./includes/auieventsoperational-include.md)]

@@ -4,9 +4,9 @@ description: Reference for AmlModelsEvent table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AmlModelsEvent
@@ -29,4 +29,4 @@ Events when ML model is accessed (read, created, or deleted). Incudes events whe
 
 ## Columns
   
-[!INCLUDE [amlmodelsevent](.././tables/includes/amlmodelsevent-include.md)]
+[!INCLUDE [amlmodelsevent](./includes/amlmodelsevent-include.md)]

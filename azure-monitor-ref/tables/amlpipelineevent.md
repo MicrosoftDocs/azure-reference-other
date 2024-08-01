@@ -4,9 +4,9 @@ description: Reference for AmlPipelineEvent table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AmlPipelineEvent
@@ -29,4 +29,4 @@ Events when ML pipeline draft or endpoint or module are accessed (read, created,
 
 ## Columns
   
-[!INCLUDE [amlpipelineevent](.././tables/includes/amlpipelineevent-include.md)]
+[!INCLUDE [amlpipelineevent](./includes/amlpipelineevent-include.md)]

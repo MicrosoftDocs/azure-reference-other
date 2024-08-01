@@ -4,9 +4,9 @@ description: Reference for ContainerLogV2 table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # ContainerLogV2
@@ -29,4 +29,4 @@ Kubernetes Container logs in V2 schema. This is the successor of ContainerLog. T
 
 ## Columns
   
-[!INCLUDE [containerlogv2](.././tables/includes/containerlogv2-include.md)]
+[!INCLUDE [containerlogv2](./includes/containerlogv2-include.md)]

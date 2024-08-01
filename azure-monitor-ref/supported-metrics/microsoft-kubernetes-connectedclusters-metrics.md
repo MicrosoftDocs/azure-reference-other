@@ -2,10 +2,10 @@
 title: Supported metrics - microsoft.kubernetes/connectedClusters
 description: Reference for microsoft.kubernetes/connectedClusters metrics in Azure Monitor.
 ms.topic: reference
-ms.service: azure-monitor
-ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 03/26/2024
+ms.author: edbaynash
+ms.service: azure-monitor
+ms.date: 07/30/2024
 ms.custom: microsoft.kubernetes/connectedClusters, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -18,7 +18,7 @@ ms.custom: microsoft.kubernetes/connectedClusters, naam
 The following table lists the metrics available for the microsoft.kubernetes/connectedClusters resource type.  
   
   
-[!INCLUDE[microsoft.kubernetes/connectedClusters](./includes/metrics-headings-include.md)]  
+[!INCLUDE [headings](./includes/metrics-headings.md)]  
   
   
   
@@ -26,4 +26,5 @@ For a list of supported logs, see [Supported log categories - microsoft.kubernet
   
  
 
-[!INCLUDE[microsoft.kubernetes/connectedClusters](./includes/microsoft-kubernetes-connectedclusters-metrics-include.md)]
+[!INCLUDE [microsoft.kubernetes/connectedClusters](./includes/microsoft-kubernetes-connectedclusters-metrics-include.md)]  
+

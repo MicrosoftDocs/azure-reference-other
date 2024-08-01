@@ -4,9 +4,9 @@ description: Reference for AZKVAuditLogs table in Azure Monitor Logs.
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 06/04/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AZKVAuditLogs
@@ -29,4 +29,4 @@ Audit logs can be used to monitor how and when your key vaults are accessed, and
 
 ## Columns
   
-[!INCLUDE [azkvauditlogs](.././tables/includes/azkvauditlogs-include.md)]
+[!INCLUDE [azkvauditlogs](./includes/azkvauditlogs-include.md)]

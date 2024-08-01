@@ -4,9 +4,9 @@ description: Reference for AADServicePrincipalSignInLogs table in Azure Monitor 
 ms.topic: reference
 ms.service: azure-monitor
 ms.subservice: logs
-ms.author: edbaynash
-author: EdB-MSFT
-ms.date: 03/05/2024
+ms.author: orens
+author: osalzberg
+ms.date: 07/30/2024
 ---
 
 # AADServicePrincipalSignInLogs
@@ -29,4 +29,4 @@ Service principal Azure Active Directory sign-in logs.
 
 ## Columns
   
-[!INCLUDE [aadserviceprincipalsigninlogs](.././tables/includes/aadserviceprincipalsigninlogs-include.md)]
+[!INCLUDE [aadserviceprincipalsigninlogs](./includes/aadserviceprincipalsigninlogs-include.md)]
