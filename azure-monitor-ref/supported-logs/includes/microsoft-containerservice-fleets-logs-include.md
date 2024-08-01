@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/01/2024
 ms.author: orens
 author: osalzberg
 ms.custom: Microsoft.ContainerService/fleets, naam
@@ -19,4 +19,4 @@ ms.custom: Microsoft.ContainerService/fleets, naam
 |`kube-audit` |Kubernetes Audit |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftcontainerservice)|Yes |
 |`kube-audit-admin` |Kubernetes Audit Admin Logs |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftcontainerservice)|Yes |
 |`kube-controller-manager` |Kubernetes Controller Manager |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftcontainerservice)|Yes |
-|`kube-scheduler` |Kubernetes Scheduler ||No|No||Yes |
+|`kube-scheduler` |Kubernetes Scheduler |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftcontainerservice)|Yes |
