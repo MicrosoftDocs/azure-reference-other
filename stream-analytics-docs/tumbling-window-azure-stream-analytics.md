@@ -3,9 +3,9 @@ title: "Tumbling Window (Azure Stream Analytics)"
 description: "Tumbling windows are a series of fixed-sized, non-overlapping and contiguous time intervals."
 applies_to: 
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 10/19/2020
+ms.date: 08/02/2024
 ---
 # Tumbling Window (Azure Stream Analytics)
   Tumbling windows are a series of fixed-sized, non-overlapping and contiguous time intervals. The following diagram illustrates a stream with a series of events and how they are mapped into 10-second tumbling windows.  

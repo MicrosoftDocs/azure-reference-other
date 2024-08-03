@@ -3,11 +3,9 @@ title: "UPPER (Azure Stream Analytics)"
 description: "Returns a character expression with lowercase character data converted to uppercase. "
 applies_to: 
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 04/22/2016
+ms.date: 08/02/2024
 ---
 # UPPER (Azure Stream Analytics)
   Returns a character expression with lowercase character data converted to uppercase.  

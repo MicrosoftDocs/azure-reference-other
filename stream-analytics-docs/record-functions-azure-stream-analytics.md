@@ -3,9 +3,9 @@ title: "Record Functions (Azure Stream Analytics)"
 description: "Record functions get record properties or values."
 applies_to: 
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 06/07/2019
+ms.date: 08/02/2024
 ---
 # Record Functions (Azure Stream Analytics)
 

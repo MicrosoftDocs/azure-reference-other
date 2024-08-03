@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/01/2024
 ms.author: orens
 author: osalzberg
 ms.custom: NGINX.NGINXPLUS/nginxDeployments, naam
@@ -14,4 +14,4 @@ ms.custom: NGINX.NGINXPLUS/nginxDeployments, naam
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
 |`NginxLogs` |NGINX Logs |[NGXOperationLogs](/azure/azure-monitor/reference/tables/ngxoperationlogs)<p>NGINX access and error logs captured by NGINXaaS.|Yes|No|[Queries](/azure/azure-monitor/reference/queries/ngxoperationlogs)|Yes |
-|`NginxSecurityLogs` |NGINX Security Logs |[NGXSecurityLogs](/azure/azure-monitor/reference/tables/ngxsecuritylogs)<p>NGINX security logs captured by NGINXaaS.|Yes|No|[Queries](/azure/azure-monitor/reference/queries/ngxsecuritylogs)|Yes |
+|`NginxSecurityLogs` |NGINX Security Logs ||No|No||Yes |

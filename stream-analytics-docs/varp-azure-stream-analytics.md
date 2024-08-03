@@ -3,11 +3,9 @@ title: "VARP (Azure Stream Analytics)"
 description: "Returns the statistical variance for the population for all values in a group. Null values are ignored.  "
 applies_to: 
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 04/22/2016
+ms.date: 08/02/2024
 ---
 # VARP (Azure Stream Analytics)
   Returns the statistical variance for the population for all values in a group. Null values are ignored.  

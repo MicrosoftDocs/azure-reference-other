@@ -3,9 +3,9 @@ title: Windowing (Azure Stream Analytics)
 description: This topic describes windowing functions. Includes the types of windows that are supported, and explains how you can use windows with various operators.
 applies_to:
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 06/07/2019
+ms.date: 08/02/2024
 ---
 # Windowing functions (Azure Stream Analytics)
 

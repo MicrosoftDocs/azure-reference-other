@@ -3,11 +3,9 @@ title: "GROUP BY (Azure Stream Analytics)"
 description: "Groups a selected set of rows into a set of summary rows by the values of one or more columns or expressions."
 applies_to: 
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 04/22/2016
+ms.date: 08/02/2024
 ---
 # GROUP BY (Azure Stream Analytics)
   Groups a selected set of rows into a set of summary rows by the values of one or more columns or expressions. One row is returned for each group. Aggregate functions in the SELECT clause’s \<select> list provide information about each group instead of individual rows.  

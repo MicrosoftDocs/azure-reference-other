@@ -3,9 +3,9 @@ title: "Reference Data JOIN (Azure Stream Analytics)"
 description: "Used to correlate persisted historical data or a slow changing dataset (aka. reference data) with the real-time event stream to make smarter decisions about the system."
 applies_to: 
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 03/31/2022
+ms.date: 08/02/2024
 ---
 # Reference Data JOIN (Azure Stream Analytics)
   In a usual scenario, we use an event processing engine to compute streaming data with very low latency. In many cases users need to correlate persisted historical data or a slow changing dataset (aka. reference data) with the real-time event stream to make smarter decisions about the system. For example, join my event stream to a static dataset which maps IP Addresses to locations. This is the only JOIN supported in Stream Analytics where a temporal bound is not necessary. Reference data can also be used to have device-specific threshold values.

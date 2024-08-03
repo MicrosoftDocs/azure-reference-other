@@ -3,11 +3,9 @@ title: "CONCAT (Azure Stream Analytics)"
 description: "Returns a string that is the result of concatenating two or more string values. "
 applies_to:
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 04/22/2016
+ms.date: 08/02/2024
 ---
 
 # CONCAT (Azure Stream Analytics)

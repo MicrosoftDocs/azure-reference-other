@@ -3,9 +3,9 @@ title: "& (Bitwise AND) (Azure Stream Analytics)"
 description: "Performs a bitwise logical AND operation between two integer values."
 applies_to:
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 09/15/2021
+ms.date: 08/02/2024
 ---
 
 # & (Bitwise AND) (Azure Stream Analytics)

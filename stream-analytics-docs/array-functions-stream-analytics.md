@@ -3,9 +3,9 @@ title: "Array Functions (Stream Analytics)"
 description: "Array functions perform actions against arrays return information in them.  "
 applies_to: 
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 06/07/2019
+ms.date: 08/02/2024
 ---
 
 # Array Functions (Stream Analytics)

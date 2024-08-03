@@ -3,9 +3,9 @@ title: Snapshot Window (Azure Stream Analytics)
 description: "Describes the Snapshot Window function supported by the Stream Analytics Query Language."
 applies_to:
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 07/10/2020
+ms.date: 08/02/2024
 ---
 
 # Snapshot window (Azure Stream Analytics)

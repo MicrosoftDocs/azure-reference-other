@@ -4,9 +4,9 @@ description: Returns a GeoJSON Polygon record. The result of a CreatePolygon can
 applies_to: 
   - "Azure"
 
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 03/22/2017
+ms.date: 08/02/2024
 ---
 # CreatePolygon (Azure Stream Analytics)
   Returns a GeoJSON Polygon record. The result of a CreatePolygon can be used as input to other Geospatial functions. The order of points must follow right-hand ring orientation, an easy way to check if the polygon orientation is correct is to imagine yourself walking from one point to the other in order of declaration, the inside of the polygon needs to be on your left side all the time.  

@@ -3,11 +3,9 @@ title: "LOWER (Azure Stream Analytics)"
 description: "Returns a character expression after converting uppercase character data to lowercase."
 applies_to: 
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 04/22/2016
+ms.date: 08/02/2024
 ---
 # LOWER (Azure Stream Analytics)
   Returns a character expression after converting uppercase character data to lowercase.  
