@@ -3,9 +3,9 @@ title: "INTO (Azure Stream Analytics)"
 description: "INTO explicitly specifies an output stream, and is always associated with an SELECT expression or specifies the shards count in an upstream step."
 applies_to: 
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 05/03/2016
+ms.date: 08/02/2024
 ---
 # INTO (Azure Stream Analytics)
 

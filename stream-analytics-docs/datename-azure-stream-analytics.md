@@ -3,11 +3,9 @@ title: "DATENAME (Azure Stream Analytics)"
 description: "Returns a character string that represents the specified datepart of the specified date."
 applies_to: 
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 04/22/2016
+ms.date: 08/02/2024
 ---
 # DATENAME (Azure Stream Analytics)
   Returns a character string that represents the specified datepart of the specified date.  

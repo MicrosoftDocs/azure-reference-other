@@ -3,11 +3,9 @@ title: "DATEDIFF (Azure Stream Analytics)"
 description: "Returns the count (signed integer) of the specified datepart boundaries crossed between the specified startdate and enddate."
 applies_to: 
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 04/22/2016
+ms.date: 08/02/2024
 ---
 # DATEDIFF (Azure Stream Analytics)
   Returns the count (signed integer) of the specified datepart boundaries crossed between the specified startdate and enddate.  

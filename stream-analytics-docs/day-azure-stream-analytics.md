@@ -3,11 +3,9 @@ title: "DAY (Azure Stream Analytics)"
 description: "Returns an integer representing the day (day of the month) of the specified date."
 applies_to: 
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 04/22/2016
+ms.date: 08/02/2024
 ---
 # DAY (Azure Stream Analytics)
   Returns an integer representing the day (day of the month) of the specified date.  

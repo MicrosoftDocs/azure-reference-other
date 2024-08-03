@@ -3,9 +3,9 @@ title: "OVER (Azure Stream Analytics)"
 description: "Defines the grouping of rows before an associated aggregate or analytic function is applied."
 applies_to: 
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 07/30/2019
+ms.date: 08/02/2024
 ---
 # OVER (Azure Stream Analytics)
 For each row, the OVER clause determines the grouping of rows before an associated aggregate or analytic function is applied. 

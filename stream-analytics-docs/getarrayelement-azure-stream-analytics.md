@@ -4,9 +4,9 @@ description: Returns the array element at the specified index. Useful for parsin
 applies_to: 
   - "Azure"
 
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 05/17/2018
+ms.date: 08/02/2024
 ---
 
 # GetArrayElement (Azure Stream Analytics)

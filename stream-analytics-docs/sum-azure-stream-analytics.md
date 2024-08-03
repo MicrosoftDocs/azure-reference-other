@@ -3,9 +3,9 @@ title: "SUM (Azure Stream Analytics)"
 description: "Returns the sum of all the values in the expression. SUM can be used with numeric columns only."
 applies_to: 
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 05/19/2020
+ms.date: 08/02/2024
 ---
 # SUM (Azure Stream Analytics)
   Returns the sum of all the values in the expression. SUM can be used with numeric columns only. NULL values are ignored. For all NULL values the result is also NULL.

@@ -3,11 +3,9 @@ title: "SIGN (Azure Stream Analytics)"
 description: "A mathematical function that returns the positive (+1), zero (0), or negative (-1) sign of the specified expression."
 applies_to: 
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 04/22/2016
+ms.date: 08/02/2024
 ---
 # SIGN (Azure Stream Analytics)
   A mathematical function that returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.  

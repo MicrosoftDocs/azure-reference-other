@@ -4,9 +4,9 @@ description: Returns a GeoJSON Point record. The result of a CreatePoint can be 
 applies_to: 
   - "Azure"
 
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 02/01/2017
+ms.date: 08/02/2024
 ---
 
 # CreatePoint (Azure Stream Analytics)
