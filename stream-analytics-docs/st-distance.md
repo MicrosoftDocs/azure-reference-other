@@ -3,9 +3,9 @@ title: ST_DISTANCE (Azure Stream Analytics)
 description: Returns the distance between two points in meters. If used with Polygons will return 0.
 applies_to: 
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 09/13/2019
+ms.date: 08/02/2024
 ---
 
 # ST_DISTANCE  (Azure Stream Analytics)

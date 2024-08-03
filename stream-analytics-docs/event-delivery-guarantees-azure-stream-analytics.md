@@ -3,11 +3,9 @@ title: "Event Delivery Guarantees (Azure Stream Analytics)"
 description: "Describes the event delivery mechanisms supported in Azure Stream Analytics."
 applies_to: 
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 12/17/2018
+ms.date: 08/02/2024
 ---
 # Event Delivery Guarantees (Azure Stream Analytics)
 

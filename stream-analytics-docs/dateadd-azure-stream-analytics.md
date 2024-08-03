@@ -3,11 +3,9 @@ title: "DATEADD (Azure Stream Analytics)"
 description: "Returns a specified date with the specified number interval (signed integer) added to a specified datepart of that date."
 applies_to: 
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 04/22/2016
+ms.date: 08/02/2024
 ---
 # DATEADD (Azure Stream Analytics)
   Returns a specified date with the specified number interval (signed integer) added to a specified datepart of that date.  

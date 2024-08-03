@@ -4,9 +4,9 @@ description: "Returns the starting position of the first occurrence of a pattern
 applies_to: 
   - "Azure"
 
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 04/22/2016
+ms.date: 08/02/2024
 ---
 # PATINDEX (Azure Stream Analytics)
   Returns the starting position of the first occurrence of a pattern in a specified expression, or 0 if the pattern is not found, on all valid nvarchar(max) data types.  

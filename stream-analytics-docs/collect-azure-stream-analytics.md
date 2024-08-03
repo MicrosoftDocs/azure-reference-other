@@ -3,11 +3,9 @@ title: "Collect (Azure Stream Analytics)"
 description: "Returns an array with all record values from the window. "
 applies_to: 
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 05/24/2016
+ms.date: 08/02/2024
 ---
 
 # Collect (Azure Stream Analytics)

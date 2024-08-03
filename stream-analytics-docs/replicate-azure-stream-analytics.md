@@ -3,11 +3,9 @@ title: "REPLICATE (Azure Stream Analytics)"
 description: "Repeats a string value a specified number of times."
 applies_to:
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 10/22/2021
+ms.date: 08/02/2024
 ---
 
 # REPLICATE (Azure Stream Analytics)

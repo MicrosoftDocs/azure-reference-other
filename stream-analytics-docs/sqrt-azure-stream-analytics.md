@@ -3,11 +3,9 @@ title: "SQRT (Azure Stream Analytics)"
 description: "A mathematical function that returns the square root of the specified float value."
 applies_to: 
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 04/22/2016
+ms.date: 08/02/2024
 ---
 
 # SQRT (Azure Stream Analytics)

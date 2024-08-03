@@ -7,9 +7,9 @@ applies_to:
 
 author: ahartoon
 ms.author: anboisve
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 11/7/2023
+ms.date: 08/02/2024
 
 ---
 # UNION (Azure Stream Analytics)

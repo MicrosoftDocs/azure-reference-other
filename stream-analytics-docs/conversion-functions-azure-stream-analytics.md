@@ -3,9 +3,9 @@ title: "Conversion Functions (Azure Stream Analytics)"
 description: "Lists the conversion functions supported by Stream Analytics Query Language."
 applies_to: 
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 06/07/2019
+ms.date: 08/02/2024
 ---
 # Conversion Functions (Azure Stream Analytics)
   Stream Analytics Query Language provides the following conversion functions:  

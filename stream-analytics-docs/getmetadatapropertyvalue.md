@@ -3,9 +3,9 @@ title: GetMetadataPropertyValue (Azure Stream Analytics)
 description: Queries input data for specific properties.
 applies_to: 
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 12/20/2022
+ms.date: 08/02/2024
 ---
 # GetMetadataPropertyValue (Azure Stream Analytics)
 

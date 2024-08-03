@@ -3,11 +3,9 @@ title: "TopOne (Azure Stream Analytics)"
 description: "Returns the top-rank record, where rank defines the ranking position of the event in the window according to the specified ordering."
 applies_to: 
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 9/20/2020
+ms.date: 08/02/2024
 ---
 # TopOne (Azure Stream Analytics)
   Returns the top-rank record, where rank defines the ranking position of the event in the window according to the specified ordering. Ordering/ranking is based on event columns and can be specified in ORDER BY clause.  

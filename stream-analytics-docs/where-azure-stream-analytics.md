@@ -3,11 +3,9 @@ title: "WHERE (Azure Stream Analytics)"
 description: "Specifies the search condition for the rows returned by the query. "
 applies_to:
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 04/22/2016
+ms.date: 08/02/2024
 ---
 # WHERE (Azure Stream Analytics)
   Specifies the search condition for the rows returned by the query.

@@ -3,11 +3,9 @@ title: "CASE (Azure Stream Analytics)"
 description: "Evaluates a list of conditions and returns one of multiple possible result expressions."
 applies_to: 
   - "Azure"
-
-
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 04/22/2016
+ms.date: 08/02/2024
 ---
 
 # CASE (Azure Stream Analytics)
