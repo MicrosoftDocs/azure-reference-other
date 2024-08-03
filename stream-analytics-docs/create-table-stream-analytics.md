@@ -4,11 +4,10 @@ description: "The Create table statement is used to define the schema of the pay
 author: ajetasin
 applies_to: 
   - "Azure"
-
 ms.author: ajetasi
 ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 08/02/2024
+ms.date: 03/07/2022
 ---
 # CREATE TABLE (Stream Analytics)
 

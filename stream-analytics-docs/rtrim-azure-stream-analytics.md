@@ -3,8 +3,6 @@ title: "RTRIM (Azure Stream Analytics)"
 description: "Removes the space character from the end of a string."
 applies_to:
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

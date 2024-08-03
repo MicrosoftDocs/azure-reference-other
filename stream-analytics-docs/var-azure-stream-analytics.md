@@ -3,8 +3,6 @@ title: "VAR (Azure Stream Analytics)"
 description: "Returns the statistical variance of all values in a group."
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

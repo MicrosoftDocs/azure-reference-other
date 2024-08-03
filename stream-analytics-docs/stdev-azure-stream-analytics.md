@@ -3,8 +3,6 @@ title: "STDEV (Azure Stream Analytics)"
 description: "Returns the statistical standard deviation of all values in a group. Null values are ignored. "
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

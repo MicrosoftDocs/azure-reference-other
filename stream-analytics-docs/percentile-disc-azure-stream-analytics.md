@@ -3,8 +3,6 @@ title: "Percentile_Disc (Azure Stream Analytics)"
 description: "Calculates a percentile based on entire data set."
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

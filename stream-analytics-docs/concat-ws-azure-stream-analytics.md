@@ -3,8 +3,6 @@ title: "CONCAT_WS (Azure Stream Analytics)"
 description: "Returns a string that is the result of concatenating two or more string values with a specified delimiter."
 applies_to:
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

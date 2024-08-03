@@ -3,8 +3,6 @@ title: "MONTH (Azure Stream Analytics)"
 description: "Returns an integer that represents the month of the specified date."
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

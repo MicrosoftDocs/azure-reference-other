@@ -3,8 +3,6 @@ title: "EXP (Azure Stream Analytics)"
 description: "A mathematical function that returns the exponential value of the specified  expression. "
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

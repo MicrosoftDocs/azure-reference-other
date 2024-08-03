@@ -3,8 +3,6 @@ title: "APPLY (Azure Stream Analytics)"
 description: "The APPLY operator allows you to invoke a table-valued function for each row returned by an outer table expression of a query."
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

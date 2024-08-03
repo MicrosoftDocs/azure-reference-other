@@ -3,8 +3,6 @@ title: "UNICODE (Azure Stream Analytics)"
 description: "Returns the integer value, as defined by the Unicode standard, for the first character of the input expression."
 applies_to:
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

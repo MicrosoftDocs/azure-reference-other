@@ -3,8 +3,6 @@ title: "TRANSLATE (Azure Stream Analytics)"
 description: "Returns a string after some specified characters are replaced by others."
 applies_to:
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

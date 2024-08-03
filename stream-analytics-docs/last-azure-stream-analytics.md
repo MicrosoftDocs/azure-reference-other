@@ -3,8 +3,6 @@ title: "LAST (Azure Stream Analytics)"
 description: "The LAST analytic operator allows one to look up the most recent event in an event stream within defined constraints."
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

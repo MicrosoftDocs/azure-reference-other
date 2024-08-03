@@ -3,8 +3,6 @@ title: "POWER (Azure Stream Analytics)"
 description: "A mathematical function that returns the value of the specified expression to the specified power. "
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

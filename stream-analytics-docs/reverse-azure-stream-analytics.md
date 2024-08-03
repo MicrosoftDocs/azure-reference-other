@@ -3,8 +3,6 @@ title: "REVERSE (Azure Stream Analytics)"
 description: "Returns the reverse order of a string value."
 applies_to:
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

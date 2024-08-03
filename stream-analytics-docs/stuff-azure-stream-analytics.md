@@ -3,8 +3,6 @@ title: "STUFF (Azure Stream Analytics)"
 description: "Inserts a string into another string"
 applies_to:
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

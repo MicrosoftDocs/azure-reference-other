@@ -3,8 +3,6 @@ title: "HAVING (Azure Stream Analytics)"
 description: "Specifies a search condition for a group or an aggregate. HAVING can be used only with the SELECT expression."
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

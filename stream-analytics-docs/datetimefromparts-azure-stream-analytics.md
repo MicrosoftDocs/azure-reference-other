@@ -3,8 +3,6 @@ title: "DATETIMEFROMPARTS (Azure Stream Analytics)"
 description: " Returns a datetime value for the specified date and time. "
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

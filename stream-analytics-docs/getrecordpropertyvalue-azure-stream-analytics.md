@@ -3,8 +3,6 @@ title: "GetRecordPropertyValue (Azure Stream Analytics)"
 description: "Returns the record value associated with the specified property. "
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

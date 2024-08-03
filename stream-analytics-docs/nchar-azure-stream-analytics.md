@@ -3,8 +3,6 @@ title: "NCHAR (Azure Stream Analytics)"
 description: "Returns the Unicode character with the specified integer code, as defined by the Unicode standard."
 applies_to:
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

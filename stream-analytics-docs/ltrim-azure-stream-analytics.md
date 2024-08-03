@@ -3,8 +3,6 @@ title: "LTRIM (Azure Stream Analytics)"
 description: "Removes the space character from the start a string."
 applies_to:
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

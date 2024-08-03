@@ -3,8 +3,6 @@ title: "LAG (Azure Stream Analytics)"
 description: "The LAG analytic operator allows one to look up the 'previous' event in an event stream, within certain constraints."
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

@@ -3,8 +3,6 @@ title: "LEN (Azure Stream Analytics)"
 description: "Returns the number of characters of the specified string expression, excluding trailing blanks."
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

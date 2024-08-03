@@ -3,8 +3,6 @@ title: "ISFIRST (Azure Stream Analytics)"
 description: "Returns 1 if the event is the first event within a given duration, or 0 otherwise."
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

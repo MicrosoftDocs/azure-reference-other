@@ -3,8 +3,6 @@ title: "WITH (Azure Stream Analytics)"
 description: "Specifies a temporary named result set which can be referenced by a FROM clause in the query."
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

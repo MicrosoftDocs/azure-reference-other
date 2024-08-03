@@ -3,8 +3,6 @@ title: "RIGHT (Azure Stream Analytics)"
 description: "Returns the right part of a character or a text."
 applies_to:
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

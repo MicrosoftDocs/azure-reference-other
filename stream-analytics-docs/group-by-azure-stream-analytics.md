@@ -3,8 +3,6 @@ title: "GROUP BY (Azure Stream Analytics)"
 description: "Groups a selected set of rows into a set of summary rows by the values of one or more columns or expressions."
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024

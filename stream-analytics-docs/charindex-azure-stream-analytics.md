@@ -3,8 +3,6 @@ title: "CHARINDEX (Azure Stream Analytics)"
 description: "Searches an expression for another expression and returns its starting position if found.  "
 applies_to: 
   - "Azure"
-
-
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
