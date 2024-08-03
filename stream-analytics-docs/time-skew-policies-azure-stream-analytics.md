@@ -5,9 +5,9 @@ applies_to:
   - "Azure"
 
 
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 07/06/2020
+ms.date: 08/02/2024
 ---
 # Time Skew Policies (Azure Stream Analytics)
   In Stream Analytics, all data stream events have a [timestamp](system-timestamp-stream-analytics.md) associated with them. Users can use the [TIMESTAMP BY](timestamp-by-azure-stream-analytics.md) keyword to choose between one of these two different times:

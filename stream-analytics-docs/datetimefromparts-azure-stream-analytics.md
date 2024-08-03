@@ -5,9 +5,9 @@ applies_to:
   - "Azure"
 
 
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 04/22/2016
+ms.date: 08/02/2024
 ---
 # DATETIMEFROMPARTS (Azure Stream Analytics)
   Returns a datetime value for the specified date and time.  

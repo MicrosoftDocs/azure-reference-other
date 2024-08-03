@@ -5,9 +5,9 @@ applies_to:
   - "Azure"
 
 
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 06/15/2016
+ms.date: 08/02/2024
 ---
 # REGEXMATCH (Azure Stream Analytics)
   Returns the starting position of the first occurrence of a pattern in a specified expression, or 0 if the pattern is not found, on all valid nvarchar(max) data types. Pattern is interpreted as single-line, case-insensitive, ECMAScript compatible regular expression.  

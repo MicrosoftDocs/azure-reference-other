@@ -2,9 +2,9 @@
 title: "NULLIF (Azure Stream Analytics)"
 description: "Returns a null value if the two specified expressions are equal."
 
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 11/22/2021
+ms.date: 08/02/2024
 
 ---
 

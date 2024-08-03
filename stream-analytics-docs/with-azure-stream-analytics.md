@@ -5,9 +5,9 @@ applies_to:
   - "Azure"
 
 
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 05/02/2016
+ms.date: 08/02/2024
 ---
 # WITH (Azure Stream Analytics)
   Specifies a temporary named result set which can be referenced by a FROM clause in the query. This is defined within the execution scope of a single SELECT statement.  

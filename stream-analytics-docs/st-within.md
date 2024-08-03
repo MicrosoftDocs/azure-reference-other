@@ -4,9 +4,9 @@ description: Returns 1 if a geography is within another, if not it will return 0
 applies_to: 
   - "Azure"
 
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 02/01/2017
+ms.date: 08/02/2024
 ---
 # ST_WITHIN (Azure Stream Analytics)
   Returns 1 if a geography is within another, if not it will return 0.  

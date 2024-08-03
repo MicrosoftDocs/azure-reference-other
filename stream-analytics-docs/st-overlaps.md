@@ -4,9 +4,9 @@ description: Returns 1 if a geography overlaps with another. If geographies do n
 applies_to: 
   - "Azure"
 
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 02/01/2017
+ms.date: 08/02/2024
 ---
 # ST_OVERLAPS (Azure Stream Analytics)
   Returns 1 if a geography overlaps with another. If geographies do not overlap or one is within another, it will return 0.  

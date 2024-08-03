@@ -3,9 +3,9 @@ title: Input Metadata Functions (Azure Stream Analytics)
 description: Lists the input metadata functions supported by Stream Analytics.
 applies_to: 
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 06/07/2019
+ms.date: 08/02/2024
 ---
 # Input Metadata Functions (Azure Stream Analytics)
 

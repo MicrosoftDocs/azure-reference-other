@@ -3,9 +3,9 @@ title: "ABS (Azure Stream Analytics)"
 description: "A mathematical function that returns the absolute (positive) value of the specified numeric expression. "
 applies_to: 
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 04/22/2016
+ms.date: 08/02/2024
 ---
 
 # ABS (Absolute value- Azure Stream Analytics)

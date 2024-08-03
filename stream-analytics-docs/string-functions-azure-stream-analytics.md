@@ -3,9 +3,9 @@ title: "String Functions (Azure Stream Analytics)"
 description: "Lists the String functions supported by Azure Stream Analytics."
 applies_to:
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 06/07/2019
+ms.date: 08/02/2024
 ---
 
 # String Functions (Azure Stream Analytics)

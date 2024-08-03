@@ -4,9 +4,9 @@ description: Returns 1 if a geography intersects with another. If geographies do
 applies_to: 
   - "Azure"
 
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 02/01/2017
+ms.date: 08/02/2024
 ---
 # ST_INTERSECTS (Azure Stream Analytics)
   Returns 1 if a geography intersects with another. If geographies do not intersect it will return 0.  

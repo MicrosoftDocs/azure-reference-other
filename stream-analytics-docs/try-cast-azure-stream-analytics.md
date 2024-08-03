@@ -3,9 +3,9 @@ title: TRY_CAST (Azure Stream Analytics)
 description: Returns a value cast to the specified data type if the cast succeeds; otherwise, returns null.
 applies_to: 
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 03/07/2022
+ms.date: 08/02/2024
 ---
 # TRY_CAST (Azure Stream Analytics)
 Returns a value cast to the specified data type if the cast succeeds; otherwise, returns NULL. Supports the [data types](data-types-azure-stream-analytics.md) in the Stream Analytics Query Language.

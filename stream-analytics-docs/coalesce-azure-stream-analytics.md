@@ -1,9 +1,9 @@
 ---
 title: "COALESCE (Azure Stream Analytics)"
 description: "Evaluates the arguments in order and returns the value of the first expression that initially does not evaluate to NULL."
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 01/28/2019
+ms.date: 08/02/2024
 ---
 # COALESCE (Azure Stream Analytics)
   Evaluates the arguments in order and returns the value of the first expression that initially does not evaluate to NULL. 

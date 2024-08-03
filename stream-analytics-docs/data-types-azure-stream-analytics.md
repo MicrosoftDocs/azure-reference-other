@@ -6,9 +6,9 @@ applies_to:
   - "Azure"
 
 ms.author: ebnkruma
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 03/07/2023
+ms.date: 08/02/2024
 ---
 
 # Data Types (Azure Stream Analytics)

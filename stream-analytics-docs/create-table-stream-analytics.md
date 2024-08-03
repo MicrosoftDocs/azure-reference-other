@@ -6,9 +6,9 @@ applies_to:
   - "Azure"
 
 ms.author: ajetasi
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 03/07/2022
+ms.date: 08/02/2024
 ---
 # CREATE TABLE (Stream Analytics)
 

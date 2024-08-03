@@ -4,9 +4,9 @@ description: "Returns a GeoJSON LineString record. The result of a CreateLineStr
 applies_to: 
   - "Azure"
 
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 03/22/2017
+ms.date: 08/02/2024
 ---
 # CreateLineString (Azure Stream Analytics) 
   Returns a GeoJSON LineString record. The result of a CreateLineString can be used as input to other Geospatial functions.  

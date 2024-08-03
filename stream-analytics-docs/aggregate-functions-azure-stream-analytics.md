@@ -3,9 +3,9 @@ title: "Aggregate Functions (Azure Stream Analytics)"
 description: "Aggregate functions perform a calculation on a set of values and return a single value. Except for the COUNT function, aggregate functions ignore null values."
 applies_to: 
   - "Azure"
-ms.service: stream-analytics
+ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 06/07/2019
+ms.date: 08/02/2024
 ---
 
 # Aggregate Functions (Azure Stream Analytics)
