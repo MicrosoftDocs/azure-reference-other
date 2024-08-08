@@ -3,7 +3,7 @@ ms.service: azure-monitor
 ms.topic: include
 author: EdB-MSFT
 ms.author: edbaynash
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -82,10 +82,10 @@ ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
 |Requests|**Region Failed Over**<br><br>Region Failed Over |`RegionFailover` |Count |Count |\<none\>|PT5M |Yes|
 |Requests|**Region Removed**<br><br>Region Removed |`RemoveRegion` |Count |Count |`Region`|PT5M |Yes|
 |Requests|**P99 Replication Latency**<br><br>P99 Replication Latency across source and target regions for geo-enabled account |`ReplicationLatency` |MilliSeconds |Minimum, Maximum, Average |`SourceRegion`, `TargetRegion`|PT1M |Yes|
-|Requests|**Server Side Latency**<br><br>Server Side Latency |`ServerSideLatency` |MilliSeconds |Average, Minimum, Maximum, Total |`DatabaseName`, `CollectionName`, `Region`, `ConnectionMode`, `OperationType`, `PublicAPIType`|PT1M, PT5M, PT1H, P1D |No|
-|Requests|**Server Side Latency Direct**<br><br>Server Side Latency in Direct Connection Mode |`ServerSideLatencyDirect` |MilliSeconds |Average, Minimum, Maximum, Total |`DatabaseName`, `CollectionName`, `Region`, `ConnectionMode`, `OperationType`, `PublicAPIType`, `APIType`|PT1M, PT5M, PT1H, P1D |No|
-|Requests|**Server Side Latency Gateway**<br><br>Server Side Latency in Gateway Connection Mode |`ServerSideLatencyGateway` |MilliSeconds |Average, Minimum, Maximum, Total |`DatabaseName`, `CollectionName`, `Region`, `ConnectionMode`, `OperationType`, `PublicAPIType`, `APIType`|PT1M, PT5M, PT1H, P1D |No|
-|Requests|**Service Availability**<br><br>Account requests availability at one hour, day or month granularity |`ServiceAvailability` |Percent |Minimum, Average, Maximum |\<none\>|PT1H |No|
+|Requests|**(deprecated) Server Side Latency**<br><br>"Server Side Latency" will be removed from Azure Monitor at the end of August 2025. Please use "Server Side Latency Direct" and "Server Side Latency Gateway" to monitor the latency instead. For more info about latency metrics, please refer to this /azure/cosmos-db/monitor-server-side-latency. |`ServerSideLatency` |MilliSeconds |Average, Minimum, Maximum, Total |`DatabaseName`, `CollectionName`, `Region`, `ConnectionMode`, `OperationType`, `PublicAPIType`|PT1M, PT5M, PT1H, P1D |No|
+|Requests|**Server Side Latency Direct**<br><br>Server Side Latency in Direct Connection Mode |`ServerSideLatencyDirect` |MilliSeconds |Average, Minimum, Maximum, Total |`DatabaseName`, `CollectionName`, `Region`, `ConnectionMode`, `OperationType`, `PublicAPIType`, `APIType`, `IsExternal`|PT1M, PT5M, PT1H, P1D |No|
+|Requests|**Server Side Latency Gateway**<br><br>Server Side Latency in Gateway Connection Mode |`ServerSideLatencyGateway` |MilliSeconds |Average, Minimum, Maximum, Total |`DatabaseName`, `CollectionName`, `Region`, `ConnectionMode`, `OperationType`, `PublicAPIType`, `APIType`, `IsExternal`|PT1M, PT5M, PT1H, P1D |No|
+|Requests|**Service Availability**<br><br>Account requests availability at one hour, day or month granularity |`ServiceAvailability` |Percent |Minimum, Average, Maximum |`IsExternal`|PT1H |No|
 |Requests|**Sql Container Created**<br><br>Sql Container Created |`SqlContainerCreate` |Count |Count |`ResourceName`, `ChildResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`, `OperationType`|PT5M |No|
 |Requests|**Sql Container Deleted**<br><br>Sql Container Deleted |`SqlContainerDelete` |Count |Count |`ResourceName`, `ChildResourceName`, `ApiKind`, `ApiKindResourceType`, `OperationType`|PT5M |No|
 |Requests|**Sql Container Throughput Updated**<br><br>Sql Container Throughput Updated |`SqlContainerThroughputUpdate` |Count |Count |`ResourceName`, `ChildResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`|PT5M |No|
@@ -94,6 +94,7 @@ ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
 |Requests|**Sql Database Deleted**<br><br>Sql Database Deleted |`SqlDatabaseDelete` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `OperationType`|PT5M |No|
 |Requests|**Sql Database Throughput Updated**<br><br>Sql Database Throughput Updated |`SqlDatabaseThroughputUpdate` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`|PT5M |No|
 |Requests|**Sql Database Updated**<br><br>Sql Database Updated |`SqlDatabaseUpdate` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`, `OperationType`|PT5M |No|
+|SLI|**Success Rate (Preview)**<br><br>Percentage of successful requests processed |`SuccessRatePreview` |Percent |Average |`LocationId`|PT1M |No|
 |Requests|**AzureTable Table Created**<br><br>AzureTable Table Created |`TableTableCreate` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`, `OperationType`|PT5M |No|
 |Requests|**AzureTable Table Deleted**<br><br>AzureTable Table Deleted |`TableTableDelete` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `OperationType`|PT5M |No|
 |Requests|**AzureTable Table Throughput Updated**<br><br>AzureTable Table Throughput Updated |`TableTableThroughputUpdate` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`|PT5M |No|

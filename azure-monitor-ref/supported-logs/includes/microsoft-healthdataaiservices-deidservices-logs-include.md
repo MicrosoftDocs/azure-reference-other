@@ -4,7 +4,7 @@ ms.topic: include
 ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
-ms.custom: microsoft.botservice/botservices, naam
+ms.custom: Microsoft.HealthDataAIServices/deidServices, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
 
@@ -13,4 +13,4 @@ ms.custom: microsoft.botservice/botservices, naam
   
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
-|`BotRequest` |Requests from the channels to the bot |[ABSBotRequests](/azure/azure-monitor/reference/tables/absbotrequests)<p>Logs of requests made by Azure Bot Service onbehalf of a bot such as requests from channel to bot and to other dependencies.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/absbotrequests)|Yes |
+|`AuditLogs` |Audit Logs ||No|No||Yes |

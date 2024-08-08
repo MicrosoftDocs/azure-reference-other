@@ -3,7 +3,7 @@ ms.service: azure-monitor
 ms.topic: include
 author: EdB-MSFT
 ms.author: edbaynash
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.custom: Microsoft.Devices/IotHubs, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -44,7 +44,7 @@ ms.custom: Microsoft.Devices/IotHubs, naam
 |**Routing: telemetry messages dropped**<br><br>The number of times messages were dropped by IoT Hub routing due to dead endpoints. This value does not count messages delivered to fallback route as dropped messages are not delivered there. |`d2c.telemetry.egress.dropped` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
 |**Routing: messages delivered to fallback**<br><br>The number of times IoT Hub routing delivered messages to the endpoint associated with the fallback route. |`d2c.telemetry.egress.fallback` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
 |**Routing: telemetry messages incompatible**<br><br>The number of times IoT Hub routing failed to deliver messages due to an incompatibility with the endpoint. This value does not include retries. |`d2c.telemetry.egress.invalid` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
-|**Routing: telemetry messages orphaned**<br><br>The number of times messages were orphaned by IoT Hub routing because they didn't match any routing rules (including the fallback rule).  |`d2c.telemetry.egress.orphaned` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
+|**Routing: telemetry messages orphaned**<br><br>The number of times messages were orphaned by IoT Hub routing because they didn't match any routing rules (including the fallback rule). |`d2c.telemetry.egress.orphaned` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
 |**Routing: telemetry messages delivered**<br><br>The number of times messages were successfully delivered to all endpoints using IoT Hub routing. If a message is routed to multiple endpoints, this value increases by one for each successful delivery. If a message is delivered to the same endpoint multiple times, this value increases by one for each successful delivery. |`d2c.telemetry.egress.success` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
 |**Telemetry message send attempts**<br><br>Number of device-to-cloud telemetry messages attempted to be sent to your IoT hub |`d2c.telemetry.ingress.allProtocol` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
 |**Number of throttling errors**<br><br>Number of throttling errors due to device throughput throttles |`d2c.telemetry.ingress.sendThrottle` |Count |Average, Minimum, Maximum, Total |\<none\>|PT1M |Yes|
