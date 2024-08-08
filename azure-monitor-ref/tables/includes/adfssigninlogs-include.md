@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: ADFSSignInLogs
@@ -15,7 +15,7 @@ ms.custom: ADFSSignInLogs
 | AppId | string | A unique ID of the Oauth Client ID in the request |
 | AuthenticationDetails | string | A record of each step of authentication undertaken in the sign-in |
 | AuthenticationProcessingDetails | string | Provides the details associated with authentication processor |
-| AuthenticationRequirement | string | Type of authentication required for the sign-in.  If set to multiFactorAuthentication, an MFA step was required.  If set to singleFactorAuthentication, no MFA was required |
+| AuthenticationRequirement | string | Type of authentication required for the sign-in. If set to multiFactorAuthentication, an MFA step was required. If set to singleFactorAuthentication, no MFA was required |
 | AuthenticationRequirementPolicies | string | Set of CA policies that apply to this sign-in, each as CA: policy name, and/or MFA: Per-user |
 | _BilledSize | real | The record size in bytes |
 | Category | string | Category of the sign-in event |

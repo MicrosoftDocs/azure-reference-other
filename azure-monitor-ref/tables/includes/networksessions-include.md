@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: NetworkSessions
@@ -39,9 +39,9 @@ ms.custom: NetworkSessions
 | DstResourceId | string | The resource Id of the destination device. |
 | DstUserAadId | string | The Azure AD account object ID of the user at the destination end of the session. |
 | DstUserDomain | string | The domain or computer name of the account at the destination of the session. |
-| DstUserName | string | The username of the identity associated with the session’s destination. |
+| DstUserName | string | The username of the identity associated with the session's destination. |
 | DstUserSid | string | The User ID of the identity associated with the session's destination. Typically, the identity used to authenticate a server. |
-| DstUserUpn | string | The UPN of the identity associated with the session’s destination. |
+| DstUserUpn | string | The UPN of the identity associated with the session's destination. |
 | DstZone | string | The network zone of the destination, as defined by the reporting device. |
 | DvcAction | string | If reported by an intermediary device such as a firewall, the action taken by device. |
 | DvcHostname | string | The device name of the device generating the message. |

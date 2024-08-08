@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: HDInsightHiveAndLLAPMetrics
@@ -17,7 +17,7 @@ ms.custom: HDInsightHiveAndLLAPMetrics
 | HostName | string | Name of host where log was emitted. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | MetricName | string | Name of the metric for the record (e.g. CacheCapacityRemaining, CacheCapacityRemainingPercentage,CacheCapacityTotal, etc). |
-| MetricNamespace | string | Category of metric (value of jmx query string  e.g. Hadoop:service=LlapDaemon,name=LlapDaemonCacheMetrics, etc).  |
+| MetricNamespace | string | Category of metric (value of jmx query string e.g. Hadoop:service=LlapDaemon,name=LlapDaemonCacheMetrics, etc).  |
 | MetricValue | real | Value of metric in the record. |
 | OperationName | string | The operation associated with log record. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

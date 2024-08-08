@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: ATCExpressRouteCircuitIpfix
@@ -36,7 +36,7 @@ ms.custom: ATCExpressRouteCircuitIpfix
 | NextHop | string | Next hop as per forwarding table. |
 | NumberOfBytes | long | Total number of bytes of packets captured in this flow. |
 | NumberOfPackets | long | Total number of packets captured in this flow. |
-| OperationName | string | The specific Azure Traffic Collector (ATC) operation that emitted this flow record. |
+| OperationName | string | The specific Azure Traffic Collector (ATC) operation that emitted this flow record. |
 | PeeringType | string | Express Route Circuit peering type. |
 | Protocol | int | Protocol type as specified in IP header. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

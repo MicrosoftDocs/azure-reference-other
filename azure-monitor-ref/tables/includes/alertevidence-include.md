@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: AlertEvidence
@@ -44,7 +44,7 @@ ms.custom: AlertEvidence
 | RemoteUrl | string | URL or fully qualified domain name (FQDN) that was being connected to. |
 | ServiceSource | string | Product or service that provided the alert information. |
 | SHA1 | string | SHA-1 of the file that the recorded action was applied to. |
-| SHA256 | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated—use the SHA1 column when available. |
+| SHA256 | string | SHA-256 of the file that the recorded action was applied to. This field is usually not populated-use the SHA1 column when available. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
 | ThreatFamily | string | Malware family that the suspicious or malicious file or process has been classified under. |
