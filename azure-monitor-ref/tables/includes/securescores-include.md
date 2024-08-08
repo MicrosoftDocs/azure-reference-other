@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: SecureScores
@@ -13,7 +13,7 @@ ms.custom: SecureScores
 | AssessedResourceId | string | The ID of the assessed resource |
 | _BilledSize | real | The record size in bytes |
 | CurrentScore | real | The current secure score per control |
-| DisplayName | string | The initiative�s name |
+| DisplayName | string | The initiative s name |
 | Environment | string | Data source environment. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsSnapshot | bool | Indicates whether the data was exported as part of a snapshot when 'true', or streamed in real-time when 'false'. |

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: AADDomainServicesDNSAuditsGeneral
@@ -79,7 +79,7 @@ ms.custom: AADDomainServicesDNSAuditsGeneral
 | OldPropertyValues | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName. Please see the Windows Server description of this event for the meaning of this field. |
 | OldScope | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName. Please see the Windows Server description of this event for the meaning of this field. |
 | operationName | string | Identifies the type of event emitted. |
-| operationVersion | string | Version string.  Reserved. |
+| operationVersion | string | Version string. Reserved. |
 | ParentHasSecureDelegation | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName. Please see the Windows Server description of this event for the meaning of this field. |
 | Policy | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName. Please see the Windows Server description of this event for the meaning of this field. |
 | ProcessingOrder | int | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName. Please see the Windows Server description of this event for the meaning of this field. |

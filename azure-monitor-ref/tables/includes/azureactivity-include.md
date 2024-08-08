@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: AzureActivity
@@ -13,9 +13,9 @@ ms.custom: AzureActivity
 | ActivityStatus | string |   |
 | ActivityStatusValue | string | Status of the operation in display-friendly format. Common values include Started, In Progress, Succeeded, Failed, Active, Resolved. |
 | ActivitySubstatus | string |   |
-| ActivitySubstatusValue | string | Substatus of the operation  in display-friendly format. E.g. OK (HTTP Status Code: 200). |
-| Authorization | string | Blob of RBAC properties of the event. Usually includes the “action”, “role” and “scope” properties. Stored as string. The use of Authorization_d should be preferred going forward. |
-| Authorization_d | dynamic | Blob of RBAC properties of the event. Usually includes the “action”, “role” and “scope” properties. Stored as dynamic column. |
+| ActivitySubstatusValue | string | Substatus of the operation in display-friendly format. E.g. OK (HTTP Status Code: 200). |
+| Authorization | string | Blob of RBAC properties of the event. Usually includes the "action", "role" and "scope" properties. Stored as string. The use of Authorization_d should be preferred going forward. |
+| Authorization_d | dynamic | Blob of RBAC properties of the event. Usually includes the "action", "role" and "scope" properties. Stored as dynamic column. |
 | _BilledSize | real | The record size in bytes |
 | Caller | string | GUID of the caller. |
 | CallerIpAddress | string | IP address of the user who has performed the operation UPN claim or SPN claim based on availability. |
@@ -27,7 +27,7 @@ ms.custom: AzureActivity
 | EventDataId | string | Unique identifier of an event. |
 | EventSubmissionTimestamp | datetime | Timestamp when the event became available for querying. |
 | Hierarchy | string | Management group hierarchy of the management group or subscription that event belongs to. |
-| HTTPRequest | string | Blob describing the Http Request. Usually includes the “clientRequestId”, “clientIpAddress” and “method” (HTTP method. For example, PUT). |
+| HTTPRequest | string | Blob describing the Http Request. Usually includes the "clientRequestId", "clientIpAddress" and "method" (HTTP method. For example, PUT). |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Level | string | Level of the event. One of the following values: Critical, Error, Warning, Informational and Verbose. |
 | OperationId | string | GUID of the operation |

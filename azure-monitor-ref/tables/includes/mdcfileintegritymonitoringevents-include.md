@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: MDCFileIntegrityMonitoringEvents
@@ -13,7 +13,7 @@ ms.custom: MDCFileIntegrityMonitoringEvents
 | AADTenantID | string | The AAD tenant ID of the subscription in which the monitored entity was created, renamed, modified or deleted. |
 | AzureResourceId | string | The Azure resource ID of the resource whose monitored entity was created, renamed, modified or deleted. |
 | _BilledSize | real | The record size in bytes |
-| ChangeType | string | The type of change that occurred on the entity. For 'File' entity must be either 'Created', 'Modified', 'Renamed' or 'Deleted'. For 'Registry' entity must be either 'RegistryKeyCreated', 'RegistryKeyDeleted', 'RegistryValueSet',  'RegistryValueDeleted', 'RegistryKeyRenamed'. |
+| ChangeType | string | The type of change that occurred on the entity. For 'File' entity must be either 'Created', 'Modified', 'Renamed' or 'Deleted'. For 'Registry' entity must be either 'RegistryKeyCreated', 'RegistryKeyDeleted', 'RegistryValueSet', 'RegistryValueDeleted', 'RegistryKeyRenamed'. |
 | CloudIdentifier | string | The cloud identifier of the resource. |
 | CloudProvider | string | The cloud provider of the resource. |
 | CloudResourceType | string | The type of the cloud resource. |
@@ -61,8 +61,8 @@ ms.custom: MDCFileIntegrityMonitoringEvents
 | OldValueFullRegistryKey | string | Relevant for 'Registry' monitored entity type. Holds the previous full registry key. |
 | OldValueName | string | Relevant for 'Registry' monitored entity type. Holds the previous registry value name. |
 | OldValueType | string | Relevant for 'Registry' monitored entity type. Holds the previous registry value type. |
-| OriginalFileName | string | Relevant for 'File' monitored entity type and for a 'Rename' change type. Holds the original name the file that was renamed, before the  rename occured. |
-| OriginalFilePath | string | Relevant for 'File' monitored entity type and for a 'Rename' change type. Holds the original path of the file that was renamed, before the  rename occured. |
+| OriginalFileName | string | Relevant for 'File' monitored entity type and for a 'Rename' change type. Holds the original name the file that was renamed, before the rename occured. |
+| OriginalFilePath | string | Relevant for 'File' monitored entity type and for a 'Rename' change type. Holds the original path of the file that was renamed, before the rename occured. |
 | RegistryHive | string | Relevant for 'Registry' monitored entity type. Holds the grouping configuration settings for the operating system and applications. |
 | RegistryKey | string | Relevant for 'Registry' monitored entity type. Holds the full registry key of the registry that was created or the new registry key of the registry that was renamed. |
 | RequestAccountDomain | string | Relevant for 'File' monitored entity type. Holds the domain of the account of the user that caused the file event. |

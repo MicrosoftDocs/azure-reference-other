@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: HDInsightSparkStageEvents
@@ -24,7 +24,7 @@ ms.custom: HDInsightSparkStageEvents
 | RDDInfo | string | Json containing information about RDDs used in the stage. |
 | Region | string | The region of the cluster running the stage. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| Role | string | The type of node  running the stage. |
+| Role | string | The type of node running the stage. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | StageId | string | The ID of the stage. |
 | StageName | string | The name of the stage. |

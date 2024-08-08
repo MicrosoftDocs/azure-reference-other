@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: HDInsightStormTopologyMetrics
@@ -10,17 +10,17 @@ ms.custom: HDInsightStormTopologyMetrics
 
 | Column | Type | Description |
 |---|---|---|
-| Acked | real | The number of Tuple “trees” successfully processed. A value of 0 is expected if no acking is done. |
+| Acked | real | The number of Tuple "trees" successfully processed. A value of 0 is expected if no acking is done. |
 | AssignedCPUPercent | real | Percent of CPU cores assigned to the topology. |
 | AssignedMemOffHeapMB | real | MB of off heap memory assigned to the topology. |
 | AssignedMemOnHeapMB | real | MB of on heap memory assigned to the topology. |
 | AssignedTotalMemMB | real | MB of total memory assigned to the topology. |
 | _BilledSize | real | The record size in bytes |
 | BoltId | string | The ID of the bolt. |
-| Capacity | real | If this is around 1.0, the corresponding Bolt is running as fast as it can, so you may want to increase the Bolt’s parallelism. This is (number executed * average execute latency) / measurement time. |
+| Capacity | real | If this is around 1.0, the corresponding Bolt is running as fast as it can, so you may want to increase the Bolt's parallelism. This is (number executed * average execute latency) / measurement time. |
 | ClusterName | string | The name of the cluster. |
 | ClusterType | string | The type of the cluster. |
-| CompleteLatencyMs | real | The average time (millisecond) a Tuple “tree” takes to be completely processed by the Topology. A value of 0 is expected if no acking is done. |
+| CompleteLatencyMs | real | The average time (millisecond) a Tuple "tree" takes to be completely processed by the Topology. A value of 0 is expected if no acking is done. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
 | Debug | bool | Boolean representing whether debug tracing is activated. |
 | Emitted | real | The number of Tuples emitted. |
@@ -34,7 +34,7 @@ ms.custom: HDInsightStormTopologyMetrics
 | ExecuteLatencyMs | real | The average time (millisecond) a Tuple spends in the execute method. The execute method may complete without sending an Ack for the tuple. |
 | Executors | int | The number of threads being used to execute a task. |
 | ExecutorsTotal | int | The total amount of executors currently used and already used to execute a task. |
-| Failed | real | The number of Tuple “trees” that were explicitly failed or timed out before acking was completed. A value of 0 is expected if no acking is done. |
+| Failed | real | The number of Tuple "trees" that were explicitly failed or timed out before acking was completed. A value of 0 is expected if no acking is done. |
 | HostName | string | Hostname of the host the record came from. |
 | Id | string | The name of the component the record is from (could be spout, bolt, or name of topology). |
 | InstanceName | string | Type of record shape (there are bolt, spout, topology, and topology_stats record shapes). |
