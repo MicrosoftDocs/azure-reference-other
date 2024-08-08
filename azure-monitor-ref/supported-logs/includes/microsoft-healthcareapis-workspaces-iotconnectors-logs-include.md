@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: Microsoft.HealthcareApis/workspaces/iotconnectors, naam
@@ -13,4 +13,4 @@ ms.custom: Microsoft.HealthcareApis/workspaces/iotconnectors, naam
   
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
-|`DiagnosticLogs` |Diagnostic logs ||No|No||Yes |
+|`DiagnosticLogs` |Diagnostic logs |[AHDSMedTechDiagnosticLogs](/azure/azure-monitor/reference/tables/ahdsmedtechdiagnosticlogs)<p>Actionable logs generated from your MedTech application.|Yes|No|[Queries](/azure/azure-monitor/reference/queries/ahdsmedtechdiagnosticlogs)|Yes |
