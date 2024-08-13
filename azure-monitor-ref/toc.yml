@@ -769,6 +769,9 @@ items:
           - name: Microsoft.HealthcareApis/workspaces/iotconnectors
             href: supported-logs/microsoft-healthcareapis-workspaces-iotconnectors-logs.md
             displayName: Diagnostic logs
+          - name: Microsoft.HealthDataAIServices/deidServices
+            href: supported-logs/microsoft-healthdataaiservices-deidservices-logs.md
+            displayName: Audit Logs
           - name: microsoft.insights/autoscalesettings
             href: supported-logs/microsoft-insights-autoscalesettings-logs.md
             displayName: Autoscale Evaluations,Autoscale Scale Actions

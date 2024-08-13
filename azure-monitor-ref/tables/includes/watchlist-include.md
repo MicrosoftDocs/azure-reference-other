@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: Watchlist
@@ -31,7 +31,7 @@ ms.custom: Watchlist
 | Tags | string | The JSON array of tags provided by user. |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | The timestamp (UTC) of when the event was generated. |
-| TimeToLive | datetime | The time to live for a Watchlist record, expressed as a date and time of day (e.g. 2020-08-20T17:00:00.9618037Z). Its original value is inherited from Watchlist’s default duration. If TimeToLive passes, the record is considered deleted. A record's duration can be extended at any time by updating the TimeToLive value. |
+| TimeToLive | datetime | The time to live for a Watchlist record, expressed as a date and time of day (e.g. 2020-08-20T17:00:00.9618037Z). Its original value is inherited from Watchlist's default duration. If TimeToLive passes, the record is considered deleted. A record's duration can be extended at any time by updating the TimeToLive value. |
 | Type | string | The name of the table |
 | UpdatedBy | dynamic | The JSON object with the user who last updated the Watchlist or Watchlist item, including: Object ID, email and name. |
 | WatchlistAlias | string | The unique string referring to the Watchlist. |

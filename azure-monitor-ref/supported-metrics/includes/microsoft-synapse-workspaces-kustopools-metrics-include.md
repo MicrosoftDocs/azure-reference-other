@@ -3,7 +3,7 @@ ms.service: azure-monitor
 ms.topic: include
 author: EdB-MSFT
 ms.author: edbaynash
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.custom: Microsoft.Synapse/workspaces/kustoPools, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -55,7 +55,7 @@ ms.custom: Microsoft.Synapse/workspaces/kustoPools, naam
 |Streaming Ingest|**Streaming Ingest Data Rate**<br><br>Streaming ingest data rate |`StreamingIngestDataRate` |Bytes |Average, Minimum, Maximum |\<none\>|PT1M |Yes|
 |Streaming Ingest|**Streaming Ingest Duration**<br><br>Streaming ingest duration in milliseconds |`StreamingIngestDuration` |MilliSeconds |Average, Minimum, Maximum |\<none\>|PT1M |Yes|
 |Streaming Ingest|**Streaming Ingest Result**<br><br>Streaming ingest result |`StreamingIngestResults` |Count |Count |`Result`|PT1M |Yes|
-|Streaming Ingest|**Streaming Ingest Utilization**<br><br>Streaming Ingest Utilization is the percentage of actual concurrent streaming ingestion requests performed, compared to the maximum number of concurrent streaming ingestion requests.  |`StreamingIngestUtilization` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
+|Streaming Ingest|**Streaming Ingest Utilization**<br><br>Streaming Ingest Utilization is the percentage of actual concurrent streaming ingestion requests performed, compared to the maximum number of concurrent streaming ingestion requests. |`StreamingIngestUtilization` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Query performance|**Total number of concurrent queries**<br><br>Total number of concurrent queries |`TotalNumberOfConcurrentQueries` |Count |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Cluster health|**Total number of extents**<br><br>Total number of data extents |`TotalNumberOfExtents` |Count |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Cluster health|**Total number of throttled commands**<br><br>Total number of throttled commands |`TotalNumberOfThrottledCommands` |Count |Average, Maximum, Minimum, Total |`CommandType`|PT1M |Yes|

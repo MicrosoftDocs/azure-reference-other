@@ -3,7 +3,7 @@ ms.service: azure-monitor
 ms.topic: include
 author: EdB-MSFT
 ms.author: edbaynash
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.custom: Microsoft.DBforMySQL/flexibleServers, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -32,9 +32,9 @@ ms.custom: Microsoft.DBforMySQL/flexibleServers, naam
 |Saturation|**CPU Credits Remaining**<br><br>CPU Credits Remaining |`cpu_credits_remaining` |Count |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**Host CPU Percent**<br><br>Host CPU Percent |`cpu_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**Data Storage Used**<br><br>Storage used by data files. |`data_storage_used` |Bytes |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
-|Availability|**HA IO Status**<br><br>Status for replication IO thread running  |`HA_IO_status` |Count |Maximum |\<none\>|PT1M |Yes|
+|Availability|**HA IO Status**<br><br>Status for replication IO thread running |`HA_IO_status` |Count |Maximum |\<none\>|PT1M |Yes|
 |Latency|**HA Replication Lag**<br><br>HA Replication lag in seconds |`HA_replication_lag` |Seconds |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
-|Availability|**HA SQL Status**<br><br>Status for replication SQL thread running  |`HA_SQL_status` |Count |Maximum |\<none\>|PT1M |Yes|
+|Availability|**HA SQL Status**<br><br>Status for replication SQL thread running |`HA_SQL_status` |Count |Maximum |\<none\>|PT1M |Yes|
 |Saturation|**Ibdata1 Storage Used**<br><br>Storage used by ibdata1 files. |`ibdata1_storage_used` |Bytes |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**InnoDB Buffer Pool Pages Data**<br><br>The number of pages in the InnoDB buffer pool containing data. |`Innodb_buffer_pool_pages_data` |Count |Total, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**InnoDB Buffer Pool Pages Dirty**<br><br>The current number of dirty pages in the InnoDB buffer pool. |`Innodb_buffer_pool_pages_dirty` |Count |Total, Maximum, Minimum |\<none\>|PT1M |Yes|
@@ -54,8 +54,8 @@ ms.custom: Microsoft.DBforMySQL/flexibleServers, naam
 |Traffic|**Host Network In**<br><br>Host Network ingress in bytes |`network_bytes_ingress` |Bytes |Total |\<none\>|PT1M |Yes|
 |Saturation|**Others Storage Used**<br><br>Storage used by other files. |`others_storage_used` |Bytes |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Traffic|**Queries**<br><br>Queries |`Queries` |Count |Total |\<none\>|PT1M |Yes|
-|Availability|**Replica IO Status**<br><br>Status for replication IO thread running  |`Replica_IO_Running` |Count |Maximum |\<none\>|PT1M |No|
-|Availability|**Replica SQL Status**<br><br>Status for replication SQL thread running  |`Replica_SQL_Running` |Count |Maximum |\<none\>|PT1M |No|
+|Availability|**Replica IO Status**<br><br>Status for replication IO thread running |`Replica_IO_Running` |Count |Maximum |\<none\>|PT1M |No|
+|Availability|**Replica SQL Status**<br><br>Status for replication SQL thread running |`Replica_SQL_Running` |Count |Maximum |\<none\>|PT1M |No|
 |Latency|**Replication Lag In Seconds**<br><br>Replication lag in seconds |`replication_lag` |Seconds |Average, Maximum, Minimum |\<none\>|PT1M |Yes|
 |Saturation|**Serverlog Storage Limit**<br><br>Serverlog Storage Limit |`serverlog_storage_limit` |Bytes |Maximum |\<none\>|PT1M |Yes|
 |Saturation|**Serverlog Storage Percent**<br><br>Serverlog Storage Percent |`serverlog_storage_percent` |Percent |Average, Maximum, Minimum |\<none\>|PT1M |Yes|

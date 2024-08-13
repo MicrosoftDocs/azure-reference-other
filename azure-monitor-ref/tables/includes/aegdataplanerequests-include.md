@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: AegDataPlaneRequests
@@ -10,9 +10,9 @@ ms.custom: AegDataPlaneRequests
 
 | Column | Type | Description |
 |---|---|---|
-| Authentication | string | The type of secret used for authentication when issuing requests. Key – request uses the SAS key, SASToken – request uses a SAS token generated from SAS key, AADAccessToken – Azure Active Directory issued JSON Web Token (JWT) token, Unknown – None of the above authentication types. OPTIONS requests will have Unknown authentication type. |
+| Authentication | string | The type of secret used for authentication when issuing requests. Key - request uses the SAS key, SASToken - request uses a SAS token generated from SAS key, AADAccessToken - Azure Active Directory issued JSON Web Token (JWT) token, Unknown - None of the above authentication types. OPTIONS requests will have Unknown authentication type. |
 | _BilledSize | real | The record size in bytes |
-| ClientIpAddress | string | The IP address of the client issuing the request. |
+| ClientIpAddress | string | The IP address of the client issuing the request. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | NetworkAccess | string | The type of network used by the client issuing the request. Allowed values are: PublicAccess - when connecting via public IP, PrivateAccess - when connecting via private link |
 | OperationName | string | The name of the operation. |

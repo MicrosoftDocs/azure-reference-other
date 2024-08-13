@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: AZFWNatRuleAggregation
@@ -25,5 +25,5 @@ ms.custom: AZFWNatRuleAggregation
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Timestamp (UTC) when the data plane log was created. |
 | TranslatedIp | string | Original Destination IP address of the packet is replaced with TranslatedIp. |
-| TranslatedPort | int | Original Destination port  of the packet is replaced with TranslatedPort. |
+| TranslatedPort | int | Original Destination port of the packet is replaced with TranslatedPort. |
 | Type | string | The name of the table |

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: AWSCloudWatch
@@ -16,5 +16,5 @@ ms.custom: AWSCloudWatch
 | Message | string | The data contained within logs from CloudWatch. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | TenantId | string | The Log Analytics workspace ID |
-| TimeGenerated | datetime | The timestamp (UTC) when the event was generated and equals to 'ExtractedTime' when included in message. If timestamp is missing, it’s set to the ingestion time. |
+| TimeGenerated | datetime | The timestamp (UTC) when the event was generated and equals to 'ExtractedTime' when included in message. If timestamp is missing, it's set to the ingestion time. |
 | Type | string | The name of the table |

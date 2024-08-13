@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: VMComputer
@@ -26,7 +26,7 @@ ms.custom: VMComputer
 | AzureResourceName | string | The Azure name for the resource. |
 | AzureServiceFabricClusterId | string | For service fabric clusters the cluster id of the server. |
 | AzureServiceFabricClusterName | string | For service fabric clusters the cluster name. |
-| AzureSize | string | The size of the Azure VM.�Only available for Azure VMs and VMSS instances. |
+| AzureSize | string | The size of the Azure VM. Only available for Azure VMs and VMSS instances. |
 | AzureSubscriptionId | string | The subscription ID of the server. Only available for Azure VMs and VMSS instances. |
 | AzureUpdateDomain | string | The update domain of the server. Only available for Azure VMs and VMSS instances. |
 | AzureVmId | string | The Azure ID of the server. Only available for Azure VMs and VMSS instances. |

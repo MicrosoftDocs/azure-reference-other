@@ -3,7 +3,7 @@ ms.service: azure-monitor
 ms.topic: include
 author: EdB-MSFT
 ms.author: edbaynash
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.custom: Microsoft.CognitiveServices/accounts, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -18,9 +18,10 @@ ms.custom: Microsoft.CognitiveServices/accounts, naam
 |Actions|**Action Occurences**<br><br>Number of times each action appears. |`ActionIdOccurrences` |Count |Total |`ActionId`, `Mode`, `RunId`|PT1M |Yes|
 |Namespaces Per Event|**Action Namespaces Per Event**<br><br>Average number of action namespaces per event. |`ActionNamespacesPerEvent` |Count |Average |`Mode`, `RunId`|PT1M |Yes|
 |Actions|**Actions Per Event**<br><br>Number of actions per event. |`ActionsPerEvent` |Count |Average |`Mode`, `RunId`|PT1M |Yes|
-|Azure OpenAI - Usage|**Active Tokens**<br><br>Total tokens minus cached tokens over a period of time. Applies to PTU and PTU-managed deployments.  Use this metric to understand your TPS or TPM based utilization for PTUs and compare to your benchmarks for target TPS or TPM for your scenarios. To breakdown API requests, you can add a filter or apply splitting by the following dimensions: ModelDeploymentName, ModelName, and ModelVersion. |`ActiveTokens` |Count |Minimum, Maximum, Average, Total |`Region`, `ModelDeploymentName`, `ModelName`, `ModelVersion`|PT1M |Yes|
+|Azure OpenAI - Usage|**Active Tokens**<br><br>Total tokens minus cached tokens over a period of time. Applies to PTU and PTU-managed deployments. Use this metric to understand your TPS or TPM based utilization for PTUs and compare to your benchmarks for target TPS or TPM for your scenarios. To breakdown API requests, you can add a filter or apply splitting by the following dimensions: ModelDeploymentName, ModelName, and ModelVersion. |`ActiveTokens` |Count |Minimum, Maximum, Average, Total |`Region`, `ModelDeploymentName`, `ModelName`, `ModelVersion`|PT1M |Yes|
 |SpeechServices - Usage|**Audio Seconds Transcribed**<br><br>Number of seconds transcribed |`AudioSecondsTranscribed` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |SpeechServices - Usage|**Audio Seconds Translated**<br><br>Number of seconds translated |`AudioSecondsTranslated` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
+|SpeechServices - Usage|**Avatar Model Hosting Seconds**<br><br>Number of Seconds. |`AvatarModelHostingSeconds` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |Azure OpenAI - HTTP Requests|**Prompt Token Cache Match Rate**<br><br>Percentage of the prompt tokens hit the cache, avaiable for PTU-managed. |`AzureOpenAIContextTokensCacheMatchRate` |Percent |Minimum, Maximum, Average |`Region`, `ModelDeploymentName`, `ModelName`, `ModelVersion`|PT1M |No|
 |Azure OpenAI - Usage|**Provisioned-managed Utilization**<br><br>Utilization % for a provisoned-managed deployment, calculated as (PTUs consumed / PTUs deployed) x 100. When utilization is greater than or equal to 100%, calls are throttled and error code 429 returned. To breakdown this metric, you can add a filter or apply splitting by the following dimensions: ModelDeploymentName, ModelName, ModelVersion and StreamType (Streaming vs non-streaming requests) |`AzureOpenAIProvisionedManagedUtilization` |Percent |Minimum, Maximum, Average |`Region`, `StreamType`, `ModelDeploymentName`, `ModelName`, `ModelVersion`|PT1M |No|
 |Azure OpenAI - Usage|**Provisioned-managed Utilization V2**<br><br>Utilization % for a provisoned-managed deployment, calculated as (PTUs consumed / PTUs deployed) x 100. When utilization is greater than or equal to 100%, calls are throttled and error code 429 returned. To breakdown this metric, you can add a filter or apply splitting by the following dimensions: ModelDeploymentName, ModelName, ModelVersion and StreamType (Streaming vs non-streaming requests) |`AzureOpenAIProvisionedManagedUtilizationV2` |Percent |Minimum, Maximum, Average |`Region`, `StreamType`, `ModelDeploymentName`, `ModelName`, `ModelVersion`|PT1M |No|
@@ -109,5 +110,6 @@ ms.custom: Microsoft.CognitiveServices/accounts, naam
 |Usage|**Total Transactions (Deprecated)**<br><br>Total number of transactions. |`TotalTransactions` |Count |Total |\<none\>|PT1M |Yes|
 |Estimations|**User Baseline Event Count**<br><br>Estimation for user defined baseline event count. |`UserBaselineEventCount` |Count |Total |`Mode`, `RunId`|PT1M |Yes|
 |Estimations|**User Baseline Reward**<br><br>Estimation for user defined baseline reward. |`UserBaselineReward` |Count |Total |`Mode`, `RunId`|PT1M |Yes|
+|SpeechServices - Usage|**Video Seconds Synthesized**<br><br>Number of seconds synthesized |`VideoSecondsSynthesized` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |SpeechServices - Usage|**Voice Model Hosting Hours**<br><br>Number of Hours. |`VoiceModelHostingHours` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|
 |SpeechServices - Usage|**Voice Model Training Minutes**<br><br>Number of Minutes. |`VoiceModelTrainingMinutes` |Count |Total |`ApiName`, `FeatureName`, `UsageChannel`, `Region`|PT1M |Yes|

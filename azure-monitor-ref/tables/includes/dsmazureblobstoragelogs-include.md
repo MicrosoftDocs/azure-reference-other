@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: DSMAzureBlobStorageLogs
@@ -18,7 +18,7 @@ ms.custom: DSMAzureBlobStorageLogs
 | _BilledSize | real | The record size in bytes |
 | CallerIpAddress | string | The IP address of the requester. |
 | Category | string | The category of requested operation. |
-| CorrelationId | string | The ID that is used to correlate resource logs with data sensitivity logs. |
+| CorrelationId | string | The ID that is used to correlate resource logs with data sensitivity logs. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Location | string | The location of storage account. |
 | OperationName | string | The type of REST operation that was performed. For example: GetBlob, DeleteBlob. |

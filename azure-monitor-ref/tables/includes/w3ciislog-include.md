@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: W3CIISLog
@@ -10,7 +10,7 @@ ms.custom: W3CIISLog
 
 | Column | Type | Description |
 |---|---|---|
-| AzureDeploymentID | string | Azure deployment ID of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent  when data is pulled from Azure storage. |
+| AzureDeploymentID | string | Azure deployment ID of the cloud service the log belongs to. Only populated when events are collected using Azure Diagnostics agent when data is pulled from Azure storage. |
 | _BilledSize | real | The record size in bytes |
 | cIP | string | IP address of the client that accessed the web server. |
 | Computer | string | Name of the computer that the event was collected from. |

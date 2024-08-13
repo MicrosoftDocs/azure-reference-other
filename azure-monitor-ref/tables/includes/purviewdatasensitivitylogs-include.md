@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: PurviewDataSensitivityLogs
@@ -19,7 +19,7 @@ ms.custom: PurviewDataSensitivityLogs
 | AssetType | string | Type of asset that was scanned: file, column, table, generic. |
 | _BilledSize | real | The record size in bytes |
 | Classification | dynamic | Names of the classifications found. |
-| ClassificationDetails | dynamic | List of classification details: ID, name, count, uniquecount, confidence. |
+| ClassificationDetails | dynamic | List of classification details: ID, name, count, uniquecount, confidence. |
 | ClassificationTrigger | string | The trigger for the classification event. |
 | FileExtension | string | File extension of the asset scanned. Only populated when asset type is a file. |
 | FileSize | long | File size of the asset scanned in bytes. Only populated when asset type is a file. |

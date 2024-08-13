@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: UCClient
@@ -52,7 +52,7 @@ ms.custom: UCClient
 | TimeGenerated | datetime | The time the snapshot generated this specific record. |
 | Type | string | The name of the table |
 | UpdateConnectivityLevel | string | Whether or not this device is maintaining a sufficiently cumulative and continuous connection to Windows Update so the update can progress optimally.  |
-| WUAutomaticUpdates | int | CSP: AllowAutoUpdate &'AuOptions'  Enables the IT admin to manage automatic update behavior to scan, download, and install updates. |
+| WUAutomaticUpdates | int | CSP: AllowAutoUpdate &'AuOptions' Enables the IT admin to manage automatic update behavior to scan, download, and install updates. |
 | WUDeadlineNoAutoRestart | int | CSP:ConfigureDeadlineNoAutoReboot. Devices will not automatically restart outside of active hours until the deadline is reached, 1 - Enabled 0 (default) - Disabled |
 | WUDODownloadMode | string | The WU DO DownloadMode configuration, brought over from Update Compliance. |
 | WUFeatureDeadlineDays | int | CSP: ConfigureDeadlineForFeatureUpdatesThe WU Feature Update deadline configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values >0 indicate the deadline in days. |
@@ -61,7 +61,7 @@ ms.custom: UCClient
 | WUFeaturePauseEndTime | datetime | CSP:PauseFEatureUpdatesEndTime The time WU Feature Update Pause will end, if activated, else null. |
 | WUFeaturePauseStartTime | datetime | CSP: PauseFeatureUpdatesStartTime. The time WU Feature Update Pause was activated, if activated, else null.eature Updates will be paused for 35 days from the specified start date. |
 | WUFeaturePauseState | string | Indicates pause status of device for FU, possible values are Paused, NotPaused, NotConfigured. |
-| WUNotificationLevel | int | CSP: UpdateNotificationLevel. This policy allows you to define what Windows Update notifications users see.  0 (default) � Use the default Windows Update notifications. 1 � Turn off all notifications, excluding restart warnings. 2 � Turn off all notifications, including restart warnings |
+| WUNotificationLevel | int | CSP: UpdateNotificationLevel. This policy allows you to define what Windows Update notifications users see. 0 (default) Use the default Windows Update notifications. 1 Turn off all notifications, excluding restart warnings. 2 Turn off all notifications, including restart warnings |
 | WUPauseUXDisabled | int | CSP: SetDisablePauseUXAccess. This policy allows the IT admin to disable the Pause Updates feature. When this policy is enabled, the user cannot access the Pause updates" feature. Supported values 0, 1. |
 | WUQualityDeadlineDays | int | CSP: ConfigureDeadlineForQualityUpdates The WU Qualty Update deadline configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values >0 indicate the deadline in days. |
 | WUQualityDeferralDays | int | CSP: DeferQualityUpdatesThe WU Quality Update Deferral configuration in days. -1 indicates not configured, 0 indicates configured but set to 0. Values >0 indicate the policy setting. |
@@ -69,6 +69,6 @@ ms.custom: UCClient
 | WUQualityPauseEndTime | datetime | CSP:PauseQualityUpdatesEndTimeThe time WU Quality Update Pause will end, if activated, else null. |
 | WUQualityPauseStartTime | datetime | CSP:PauseQualityUpdatesStartTime The time WU Quality Update Pause was activated; if activated; else null. |
 | WUQualityPauseState | string | Indicates pause status of device for QU, possible values are Paused, NotPaused, NotConfigured. |
-| WURestartNotification | int | CSP: AutoRestartRequiredNotificationDismissal. Allows the IT Admin to specify the method by which the auto-restart required notification is dismissed.The following list shows the supported values:  1 (default) = Auto Dismissal. 2 � User Dismissal. |
+| WURestartNotification | int | CSP: AutoRestartRequiredNotificationDismissal. Allows the IT Admin to specify the method by which the auto-restart required notification is dismissed.The following list shows the supported values: 1 (default) = Auto Dismissal. 2 User Dismissal. |
 | WUServiceURLConfigured | string | CSP:UpdateServiceUrl. The following list shows the supported values: Not configured. The device checks for updates from Microsoft Update. Set to a URL, such as http://abcd-srv:8530. The device checks for updates from the WSUS server at the specified URL. Not configured. The device checks for updates from Microsoft Update. Set to a URL, such as http://abcd-srv:8530. The device checks for updates from the WSUS server at the specified URL. |
 | WUUXDisabled | int | CSP:SetDisableUXWUAccess.This policy allows the IT admin to remove access to scan Windows Update. When this policy is enabled, the user cannot access the Windows Update scan, download, and install features. Default is 0. Supported values 0, 1. |

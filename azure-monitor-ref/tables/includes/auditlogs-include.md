@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: AuditLogs
@@ -10,7 +10,7 @@ ms.custom: AuditLogs
 
 | Column | Type | Description |
 |---|---|---|
-| AADOperationType | string | Type of the operation. Possible values are Add Update Delete and Other. |
+| AADOperationType | string | Type of the operation. Possible values are Add Update Delete and Other. |
 | AADTenantId | string | ID of the ADD tenant |
 | ActivityDateTime | datetime | Date and time the activity was performed in UTC. |
 | ActivityDisplayName | string | Activity name or the operation name. Examples include Create User and Add member to group. For full list see Azure AD activity list. |

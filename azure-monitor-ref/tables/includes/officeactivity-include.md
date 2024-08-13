@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: OfficeActivity
@@ -142,4 +142,4 @@ ms.custom: OfficeActivity
 | UserId | string | The UPN (User Principal Name) of the user who performed the action (specified in the Operation property) that resulted in the record being logged |
 | UserKey | string | An alternative ID for the user identified in the UserId property |
 | UserSharedWith | string | The user that a resource was shared with |
-| UserType | string | The type of user that performed the operation. See the UserType table for  details on the types of users |
+| UserType | string | The type of user that performed the operation. See the UserType table for details on the types of users |
