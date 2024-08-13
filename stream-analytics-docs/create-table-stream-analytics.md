@@ -1,8 +1,8 @@
 ---
 title: "CREATE TABLE (Stream Analytics)"
 description: "The Create table statement is used to define the schema of the payload of the events coming into Azure Stream Analytics."
-"author": "alicialimicrosoft",
-"ms.author": "ali",
+"author": "alicialimicrosoft"
+"ms.author": "ali"
 applies_to: 
   - "Azure"
 ms.service: azure-stream-analytics
