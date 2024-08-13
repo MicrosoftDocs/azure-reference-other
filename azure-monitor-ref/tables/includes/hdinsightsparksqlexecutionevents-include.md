@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: HDInsightSparkSQLExecutionEvents
@@ -22,7 +22,7 @@ ms.custom: HDInsightSparkSQLExecutionEvents
 | PhysicalPlanDescription | string | The description of the Physical/Logical plan of the Spark SQL execution. |
 | Region | string | The region of the cluster running the Spark SQL execution. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
-| Role | string | The type of node  running the Spark SQL execution. |
+| Role | string | The type of node running the Spark SQL execution. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | SparkPlanInfo | string | Json object containing information on the Spark SQL execution. |
 | StartTime | datetime | The time (UTC) the Spark SQL execution started. |

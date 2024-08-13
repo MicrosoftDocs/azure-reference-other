@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: ATCPrivatePeeringMetadata
@@ -18,7 +18,7 @@ ms.custom: ATCPrivatePeeringMetadata
 | IpMask | int | Mask of Virtual Network resource. |
 | IpSubnet | dynamic | Azure resource ID of subnet and subnet IP address. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
-| OperationName | string | The specific Azure Traffic Collector (ATC) operation that emitted this record. |
+| OperationName | string | The specific Azure Traffic Collector (ATC) operation that emitted this record. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SchemaVersion | string | Flow record schema version. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |

@@ -3,7 +3,7 @@ ms.service: azure-monitor
 ms.topic: include
 author: EdB-MSFT
 ms.author: edbaynash
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.custom: Microsoft.ServiceBus/Namespaces, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -37,4 +37,4 @@ ms.custom: Microsoft.ServiceBus/Namespaces, naam
 |**Successful Requests**<br><br>Total successful requests for a namespace |`SuccessfulRequests` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
 |**Throttled Requests.**<br><br>Throttled Requests for Microsoft.ServiceBus. |`ThrottledRequests` |Count |Total |`EntityName`, `OperationResult`, `MessagingErrorSubCode`|PT1M |No|
 |**User Errors.**<br><br>User Errors for Microsoft.ServiceBus. |`UserErrors` |Count |Total |`EntityName`, `OperationResult`|PT1M |No|
-|**Memory Usage (Deprecated)**<br><br>Service bus premium namespace memory usage metric. This metric is deprecated. Please use the  Memory Usage (NamespaceMemoryUsage) metric instead. |`WSXNS` |Percent |Maximum |`Replica`|PT1M |No|
+|**Memory Usage (Deprecated)**<br><br>Service bus premium namespace memory usage metric. This metric is deprecated. Please use the Memory Usage (NamespaceMemoryUsage) metric instead. |`WSXNS` |Percent |Maximum |`Replica`|PT1M |No|

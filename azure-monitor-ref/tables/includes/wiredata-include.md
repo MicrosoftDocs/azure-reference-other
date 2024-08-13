@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: WireData
@@ -18,9 +18,9 @@ ms.custom: WireData
 | Description | string | Description of the observed threat. |
 | Direction | string | Inbound or outbound |
 | FirstReportedDateTime | string | The first time the provider reported the threat. |
-| IndicatorThreatType | string | Threat indicator detected is one of the following values Botnet C2 CryptoMining Darknet DDos MaliciousUrl Malware Phishing Proxy PUA Watchlist. |
+| IndicatorThreatType | string | Threat indicator detected is one of the following values Botnet C2 CryptoMining Darknet DDos MaliciousUrl Malware Phishing Proxy PUA Watchlist. |
 | IPVersion | string | IP version |
-| IsActive | string | Indicates indicators are deactivated with True or False value. |
+| IsActive | string | Indicates indicators are deactivated with True or False value. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LastReportedDateTime | string | The last time the indicator was seen by Interflow. |
 | LatencyMilliseconds | int | Hold over field from old schema - attribute not collected |
@@ -55,6 +55,6 @@ ms.custom: WireData
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TimeGenerated | datetime | Time of the record |
-| TLPLevel | string | Traffic Light Protocol (TLP) Level is one of the defined values White Green Amber Red. |
+| TLPLevel | string | Traffic Light Protocol (TLP) Level is one of the defined values White Green Amber Red. |
 | TotalBytes | long | Total number of bytes sent during session |
 | Type | string | The name of the table |

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: IdentityInfo
@@ -58,7 +58,7 @@ ms.custom: IdentityInfo
 | State | string | The geographical state of the user account as defined in AAD |
 | StreetAddress | string | The office street address of the user account as defined in AAD |
 | Surname | string | The user account surname |
-| Tags | string | Relevant information on the user account which is important for investigation: Sensitive\ VIP\  Administrator |
+| Tags | string | Relevant information on the user account which is important for investigation: Sensitive\ VIP\ Administrator |
 | TenantId | string | The Log Analytics workspace ID |
 | TimeGenerated | datetime | Time when the event was generated (UTC) |
 | Type | string | The name of the table |

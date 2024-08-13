@@ -3,7 +3,7 @@ ms.service: azure-monitor
 ms.topic: include
 author: EdB-MSFT
 ms.author: edbaynash
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.custom: Microsoft.NotificationHubs/namespaces/notificationHubs, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -13,7 +13,7 @@ ms.custom: Microsoft.NotificationHubs/namespaces/notificationHubs, naam
 
 |Metric|Name in REST API|Unit|Aggregation|Dimensions|Time Grains|DS Export|
 |---|---|---|---|---|---|---|
-|**Incoming Messages**<br><br>The count of all successful send API calls.  |`incoming` |Count |Total |\<none\>|PT1M |Yes|
+|**Incoming Messages**<br><br>The count of all successful send API calls. |`incoming` |Count |Total |\<none\>|PT1M |Yes|
 |**All Incoming Failed Requests**<br><br>Total incoming failed requests for a notification hub |`incoming.all.failedrequests` |Count |Total |\<none\>|PT1M |Yes|
 |**All Incoming Requests**<br><br>Total incoming requests for a notification hub |`incoming.all.requests` |Count |Total |\<none\>|PT1M |Yes|
 |**Scheduled Push Notifications Sent**<br><br>Scheduled Push Notifications Sent |`incoming.scheduled` |Count |Total |\<none\>|PT1M |Yes|
@@ -77,7 +77,7 @@ ms.custom: Microsoft.NotificationHubs/namespaces/notificationHubs, naam
 |**WNS Throttled Notifications**<br><br>The count of pushes that failed because WNS is throttling this app (WNS status: 406 Not Acceptable). |`outgoing.wns.throttled` |Count |Total |\<none\>|PT1M |Yes|
 |**WNS Authorization Errors (Unreachable)**<br><br>Windows Live is not reachable. |`outgoing.wns.tokenproviderunreachable` |Count |Total |\<none\>|PT1M |Yes|
 |**WNS Authorization Errors (Wrong Token)**<br><br>The token provided to WNS is valid but for another application (WNS status: 403 Forbidden). This can happen if the ChannelURI in the registration is associated with another app. Check that the client app is associated with the same app whose credentials are in the notification hub. |`outgoing.wns.wrongtoken` |Count |Total |\<none\>|PT1M |Yes|
-|**Registration Operations**<br><br>The count of all successful registration operations (creations updates queries and deletions).  |`registration.all` |Count |Total |\<none\>|PT1M |Yes|
+|**Registration Operations**<br><br>The count of all successful registration operations (creations updates queries and deletions). |`registration.all` |Count |Total |\<none\>|PT1M |Yes|
 |**Registration Create Operations**<br><br>The count of all successful registration creations. |`registration.create` |Count |Total |\<none\>|PT1M |Yes|
 |**Registration Delete Operations**<br><br>The count of all successful registration deletions. |`registration.delete` |Count |Total |\<none\>|PT1M |Yes|
 |**Registration Read Operations**<br><br>The count of all successful registration queries. |`registration.get` |Count |Total |\<none\>|PT1M |Yes|

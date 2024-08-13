@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: SynapseSqlPoolDmsWorkers
@@ -30,7 +30,7 @@ ms.custom: SynapseSqlPoolDmsWorkers
 | RowsProcessed | int | The rows processed of the DMS workers. |
 | SourceInfo | string | The row count of the DMS workers. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
-| SqlSpId | int | The SQL  Sp Id for the DMS workers. |
+| SqlSpId | int | The SQL Sp Id for the DMS workers. |
 | StartTime | datetime | The startTime (UTC) of the DMS workers. |
 | Status | string | The status of the DMS workers. |
 | StepIndex | int | The step index of the DMS workers. |

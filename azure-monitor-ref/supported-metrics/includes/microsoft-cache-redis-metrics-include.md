@@ -3,7 +3,7 @@ ms.service: azure-monitor
 ms.topic: include
 author: EdB-MSFT
 ms.author: edbaynash
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.custom: Microsoft.Cache/redis, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -27,7 +27,7 @@ ms.custom: Microsoft.Cache/redis, naam
 |**CPU (Instance Based)**<br><br>The CPU utilization of the Azure Redis Cache server as a percentage. For more details, see https://aka.ms/redis/metrics. |`allpercentprocessortime` |Percent |Maximum |`ShardId`, `Port`, `Primary`|PT1M |Yes|
 |**Server Load (Instance Based)**<br><br>The percentage of cycles in which the Redis server is busy processing and not waiting idle for messages. For more details, see https://aka.ms/redis/metrics. |`allserverLoad` |Percent |Maximum |`ShardId`, `Port`, `Primary`|PT1M |Yes|
 |**Sets (Instance Based)**<br><br>The number of set operations to the cache. For more details, see https://aka.ms/redis/metrics. |`allsetcommands` |Count |Total |`ShardId`, `Port`, `Primary`|PT1M |Yes|
-|**Total Operations  (Instance Based)**<br><br>The total number of commands processed by the cache server. For more details, see https://aka.ms/redis/metrics. |`alltotalcommandsprocessed` |Count |Total |`ShardId`, `Port`, `Primary`|PT1M |Yes|
+|**Total Operations (Instance Based)**<br><br>The total number of commands processed by the cache server. For more details, see https://aka.ms/redis/metrics. |`alltotalcommandsprocessed` |Count |Total |`ShardId`, `Port`, `Primary`|PT1M |Yes|
 |**Total Keys (Instance Based)**<br><br>The total number of items in the cache. For more details, see https://aka.ms/redis/metrics. |`alltotalkeys` |Count |Maximum |`ShardId`, `Port`, `Primary`|PT1M |Yes|
 |**Used Memory (Instance Based)**<br><br>The amount of cache memory used for key/value pairs in the cache in MB. For more details, see https://aka.ms/redis/metrics. |`allusedmemory` |Bytes |Maximum |`ShardId`, `Port`, `Primary`|PT1M |Yes|
 |**Used Memory Percentage (Instance Based)**<br><br>The percentage of cache memory used for key/value pairs. For more details, see https://aka.ms/redis/metrics. |`allusedmemorypercentage` |Percent |Maximum |`ShardId`, `Port`, `Primary`|PT1M |Yes|

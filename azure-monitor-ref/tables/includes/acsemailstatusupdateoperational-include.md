@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: ACSEmailStatusUpdateOperational
@@ -26,7 +26,7 @@ ms.custom: ACSEmailStatusUpdateOperational
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SenderDomain | string | The domain portion of the SenderAddress used in sending emails. |
 | SenderUsername | string | The username portion of the SenderAddress used in sending emails. |
-| SmtpStatusCode | string | The SMTP status code returned from the recipient email server in response to  a send  mail request. |
+| SmtpStatusCode | string | The SMTP status code returned from the recipient email server in response to a send mail request. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | _SubscriptionId | string | A unique identifier for the subscription that the record is associated with |
 | TenantId | string | The Log Analytics workspace ID |

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/01/2024
+ms.date: 08/12/2024
 ms.author: orens
 author: osalzberg
 ms.custom: Microsoft.ContainerService/fleets, naam

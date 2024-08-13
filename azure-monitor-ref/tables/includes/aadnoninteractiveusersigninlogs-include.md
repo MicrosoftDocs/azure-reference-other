@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: AADNonInteractiveUserSignInLogs
@@ -19,7 +19,7 @@ ms.custom: AADNonInteractiveUserSignInLogs
 | AuthenticationMethodsUsed | string | List of authentication methods used. |
 | AuthenticationProcessingDetails | string | Provides the details associated with authentication processor. |
 | AuthenticationProtocol | string | Lists the protocol type or grant type used in the authentication. The possible values are: none, oAuth2, ropc, wsFederation, saml20, deviceCode, unknownFutureValue. For authentications that use protocols other than the possible values listed, the protocol type is listed as none. |
-| AuthenticationRequirement | string | Type of authentication required for the sign-in.  If set to multiFactorAuthentication, an MFA step was required.  If set to singleFactorAuthentication, no MFA was required. |
+| AuthenticationRequirement | string | Type of authentication required for the sign-in. If set to multiFactorAuthentication, an MFA step was required. If set to singleFactorAuthentication, no MFA was required. |
 | AuthenticationRequirementPolicies | string | Set of CA policies that apply to this sign-in, each as CA: policy name, and/or MFA: Per-user. |
 | AutonomousSystemNumber | string | Autonomous System Number for the network. |
 | _BilledSize | real | The record size in bytes |
@@ -64,7 +64,7 @@ ms.custom: AADNonInteractiveUserSignInLogs
 | RiskState | string | Risky user state. |
 | ServicePrincipalId | string | ID of the service principal who initiated the sign-in. |
 | SessionLifetimePolicies | string | Policies and settings that applied to the sign-in that enforced or revoked a session lifetime. |
-| SignInEventTypes | string | The types that are associated with the sign-in.  Examples include "interactive", "refreshToken", "managedIdentity", "continuousAccessEvaluation" and many more. |
+| SignInEventTypes | string | The types that are associated with the sign-in. Examples include "interactive", "refreshToken", "managedIdentity", "continuousAccessEvaluation" and many more. |
 | SignInIdentifierType | string | The type of sign in identifier. Possible values are: userPrincipalName, phoneNumber, proxyAddress, qrCode, onPremisesUserPrincipalName, unknownFutureValue. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
 | Status | string | Details of the sign-in status. |
