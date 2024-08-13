@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: NetworkAccessTraffic
@@ -54,7 +54,7 @@ ms.custom: NetworkAccessTraffic
 | TimeGenerated | datetime | The date and time (UTC) that the event was generated. |
 | TrafficType | string | The type of the target destination traffic. |
 | TransactionId | string | Unique identifier that representing a roundtrip of request response. |
-| TransportProtocol | string | The IP protocol used by the connection or session as listed in IANA protocol assignment. |
+| TransportProtocol | string | The IP protocol used by the connection or session as listed in IANA protocol assignment. |
 | Type | string | The name of the table |
 | UserId | string | A machine-readable, alphanumeric, unique representation of the source user. |
 | UserPrincipalName | string | The source username, including domain information when available. |

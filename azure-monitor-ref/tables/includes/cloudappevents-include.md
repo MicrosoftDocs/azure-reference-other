@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: CloudAppEvents
@@ -31,7 +31,7 @@ ms.custom: CloudAppEvents
 | IsAdminOperation | bool | Indicates whether the activity was performed by an administrator |
 | IsAnonymousProxy | bool | Indicates whether the IP address belongs to a known anonymous proxy |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
-| IsExternalUser | bool | Indicates whether a user inside the network doesn't belong to the organization’s domain |
+| IsExternalUser | bool | Indicates whether a user inside the network doesn't belong to the organization's domain |
 | IsImpersonated | bool | Indicates whether the activity was performed by one user for another (impersonated) user |
 | ISP | string | Internet service provider associated with the IP address |
 | ObjectId | string | Unique identifier of the object that the recorded action was applied to |

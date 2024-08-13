@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: PowerBIActivity
@@ -18,7 +18,7 @@ ms.custom: PowerBIActivity
 | _BilledSize | real | The record size in bytes |
 | DashboardId | string | The ID of the dashboard that the activity was performed on. |
 | DashboardName | string | The name of the dashboard where the event occurred. |
-| DataClassification | string | The data classification, if exists, for the dashboard where the event occurred. |
+| DataClassification | string | The data classification, if exists, for the dashboard where the event occurred. |
 | DatasetName | string | The name of the dataset where the event occurred. |
 | DistributionMethod | string | Indicates the distribution method of the content. |
 | EventOriginalType | string | The name of the user or admin activity that performed the activity. For a description of the most common operations/activities, see "Search the audit log" in the Office 365 Protection Center. For Exchange admin activity, this property identifies the name of the cmdlet that was run. For Dlp events, this can be "DlpRuleMatch", "DlpRuleUndo" or "DlpInfo", which are described under "DLP schema" below. |
@@ -34,13 +34,13 @@ ms.custom: PowerBIActivity
 | OrganizationId | string | The GUID for your organization's Office 365 tenant. This value will always be the same for your organization, regardless of the Office 365 service in which it occurs. |
 | OrgAppPermission | string | Permissions list for an organizational app (entire organization, specific users, or specific groups). |
 | PbiWorkspaceName | string | The name of the PowerBI workspace where the event occurred. |
-| RecordType | string | The type of operation indicated by the record. See the AuditLogRecordType table for details on the types of audit log records. |
+| RecordType | string | The type of operation indicated by the record. See the AuditLogRecordType table for details on the types of audit log records. |
 | ReportName | string | The name of the report where the event occurred. |
 | RequestId | string | A unique identifier for the request. |
 | Scope | string | Event can be created by a hosted Office 365 service or an on-premises server. Possible values are online and onprem. Note that SharePoint is the only workload currently sending events from on-premises to Office 365. |
 | SharingInformation | string | Information about the person to whom a sharing invitation is sent. |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |
-| SrcIpAddr | string | The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format. For some services, the value displayed in this property might be the IP address for a trusted application (for example, Office on the web apps) calling into the service on behalf of a user and not the IP address of the device used by person who performed the activity. Also, for Azure Active Directory-related events, the IP address isn't logged and the value for the ClientIP property is null. |
+| SrcIpAddr | string | The IP address of the device that was used when the activity was logged. The IP address is displayed in either an IPv4 or IPv6 address format. For some services, the value displayed in this property might be the IP address for a trusted application (for example, Office on the web apps) calling into the service on behalf of a user and not the IP address of the device used by person who performed the activity. Also, for Azure Active Directory-related events, the IP address isn't logged and the value for the ClientIP property is null. |
 | SwitchState | string | Information about the state of various tenant level switches. |
 | TargetAppName | string | The name of the app where the event occurred. |
 | TenantId | string | The Log Analytics workspace ID |

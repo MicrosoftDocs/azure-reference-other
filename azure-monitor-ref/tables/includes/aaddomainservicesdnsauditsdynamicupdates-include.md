@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: AADDomainServicesDNSAuditsDynamicUpdates
@@ -16,7 +16,7 @@ ms.custom: AADDomainServicesDNSAuditsDynamicUpdates
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | Name | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName. Please see the Windows Server description of this event for the meaning of this field. |
 | operationName | string | Identifies the type of event emitted. |
-| operationVersion | string | Version string.  Reserved. |
+| operationVersion | string | Version string. Reserved. |
 | RData | string | The context of this field is dependent on the Windows Event being emitted, represented in the OperationName. Please see the Windows Server description of this event for the meaning of this field. |
 | RecordId | string | Identifier for the underlying Windows event |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |

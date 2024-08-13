@@ -3,7 +3,7 @@ ms.service: azure-monitor
 ms.topic: include
 author: EdB-MSFT
 ms.author: edbaynash
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.custom: Oracle.Database/cloudVmClusters, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -60,7 +60,7 @@ ms.custom: Oracle.Database/cloudVmClusters, naam
 |Saturation|**OCPU Allocated (Oracle OCI Database)**<br><br>The actual number of OCPUs allocated by the service during the selected interval of time. (Statistic: Count, Interval: 1 minute) |`oracle_oci_database/OcpusAllocated` |Count |Minimum, Maximum, Average, Total |`Oracle.resourceId`, `deploymentType`|PT5M, PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
 |Saturation|**Parse Count (Total)**<br><br>The number of hard and soft parses during the selected interval. (Statistic: Sum, Interval: 1 minute) |`oracle_oci_database/ParseCount` |Count |Minimum, Maximum, Average |`Oracle.resourceId`, `Oracle.resourceName`, `deploymentType`, `instanceNumber`, `instanceName`, `hostName`, `Oracle.resourceType`|PT1M |Yes|
 |Saturation|**Parses By Type**<br><br>The number of hard or soft parses per second. (Statistic: Mean, Interval: 1 minute) |`oracle_oci_database/ParsesByType` |CountPerSecond |Minimum, Maximum, Average |`Oracle.resourceId`, `Oracle.resourceName`, `deploymentType`, `instanceNumber`, `instanceName`, `hostName`, `parseType`, `Oracle.resourceType`|PT1M |Yes|
-|Error|**Problematic Scheduled DBMS Jobs**<br><br>The problematic scheduled database jobs count.  Not applicable for container databases. (Statistic: Max, Interval: 15 minutes) |`oracle_oci_database/ProblematicScheduledDBMSJobs` |Count |Minimum, Maximum, Average, Total |`Oracle.resourceId`, `Oracle.resourceName`, `deploymentType`, `type`|PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
+|Error|**Problematic Scheduled DBMS Jobs**<br><br>The problematic scheduled database jobs count. Not applicable for container databases. (Statistic: Max, Interval: 15 minutes) |`oracle_oci_database/ProblematicScheduledDBMSJobs` |Count |Minimum, Maximum, Average, Total |`Oracle.resourceId`, `Oracle.resourceName`, `deploymentType`, `type`|PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|
 |Saturation|**Process Count**<br><br>The database processes count. Not applicable for pluggable databases. (Statistic: Max, Interval: 1 minute) |`oracle_oci_database/Processes` |Count |Minimum, Maximum, Average |`Oracle.resourceId`, `Oracle.resourceName`, `deploymentType`, `instanceNumber`, `instanceName`, `hostName`, `Oracle.resourceType`|PT1M |Yes|
 |Saturation|**Process Limit Utilization**<br><br>The process limit utilization. Not applicable for pluggable databases. (Statistic: Mean, Interval: 1 minute) |`oracle_oci_database/ProcessLimitUtilization` |Percent |Minimum, Maximum, Average |`Oracle.resourceId`, `Oracle.resourceName`, `deploymentType`, `instanceNumber`, `instanceName`, `hostName`, `Oracle.resourceType`|PT1M |Yes|
 |Saturation|**Reclaimable Fast Recovery Area**<br><br>The reclaimable fast recovery area. Not applicable for pluggable databases. (Statistic: Mean, Interval: 15 minutes) |`oracle_oci_database/ReclaimableFRA` |Percent |Minimum, Maximum, Average |`Oracle.resourceId`, `Oracle.resourceName`, `deploymentType`, `Oracle.resourceType`|PT15M, PT30M, PT1H, PT6H, PT12H, P1D |Yes|

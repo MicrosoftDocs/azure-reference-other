@@ -3,7 +3,7 @@ ms.service: azure-monitor
 ms.topic: include
 author: EdB-MSFT
 ms.author: edbaynash
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.custom: Microsoft.EventGrid/namespaces, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -25,7 +25,7 @@ ms.custom: Microsoft.EventGrid/namespaces, naam
 |**MQTT: Failed Subscription Operations**<br><br>The number of failed subscription operations (Subscribe, Unsubscribe). This metric is incremented for every topic filter within a subscription request. |`Mqtt.FailedSubscriptionOperations` |Count |Total |`Protocol`, `OperationType`, `Error`|PT1M |Yes|
 |**MQTT: Request Count**<br><br>The number of MQTT requests. |`Mqtt.RequestCount` |Count |Total |`OperationType`, `Protocol`, `Error`, `Result`|PT1M |Yes|
 |**MQTT: Successful Delivered Messages**<br><br>The number of messages delivered by the namespace. There are no failures for this operation. |`Mqtt.SuccessfulDeliveredMessages` |Count |Total |`QoS`, `Protocol`|PT1M |Yes|
-|**MQTT: Successful Published Messages**<br><br>The number of  MQTT messages that were published successfully into the namespace. |`Mqtt.SuccessfulPublishedMessages` |Count |Total |`QoS`, `Protocol`|PT1M |Yes|
+|**MQTT: Successful Published Messages**<br><br>The number of MQTT messages that were published successfully into the namespace. |`Mqtt.SuccessfulPublishedMessages` |Count |Total |`QoS`, `Protocol`|PT1M |Yes|
 |**MQTT: Successful Routed Messages**<br><br>The number of successful routed messages by the namespace. |`Mqtt.SuccessfulRoutedMessages` |Count |Total |\<none\>|PT1M |Yes|
 |**MQTT: Successful Subscription Operations**<br><br>The number of successful subscription operations (Subscribe, Unsubscribe). This metric is incremented for every topic filter within a subscription request. |`Mqtt.SuccessfulSubscriptionOperations` |Count |Total |`Protocol`, `OperationType`|PT1M |Yes|
 |**MQTT: Throughput**<br><br>The number of bytes published to or delivered by the namespace. |`Mqtt.Throughput` |Bytes |Total |`Direction`|PT1M |Yes|

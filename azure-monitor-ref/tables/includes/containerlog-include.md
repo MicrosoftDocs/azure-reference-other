@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.author: orens
 author: osalzberg
 ms.custom: ContainerLog
@@ -18,7 +18,7 @@ ms.custom: ContainerLog
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | LogEntry | string | Actual log line. |
 | LogEntrySource | string | Source of the log line. Possible values are stdout or stderr. |
-| Name | string | Unique name of the container the form  PODUid/ContainerName. |
+| Name | string | Unique name of the container the form PODUid/ContainerName. |
 | Repository | string | Used by Container solution only. Not populated by Azure Monitor for Containers. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
 | SourceSystem | string | The type of agent the event was collected by. For example, `OpsManager` for Windows agent, either direct connect or Operations Manager, `Linux` for all Linux agents, or `Azure` for Azure Diagnostics |

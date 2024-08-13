@@ -3,7 +3,7 @@ ms.service: azure-monitor
 ms.topic: include
 author: EdB-MSFT
 ms.author: edbaynash
-ms.date: 07/30/2024
+ms.date: 08/08/2024
 ms.custom: Microsoft.MachineLearningServices/workspaces, arm
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -55,7 +55,7 @@ ms.custom: Microsoft.MachineLearningServices/workspaces, arm
 |Resource|**NetworkInputMegabytes**<br><br>Network data received in megabytes. Metrics are aggregated in one minute intervals. |`NetworkInputMegabytes` |Count |Average, Maximum, Minimum, Total |`RunId`, `InstanceId`, `ComputeName`, `DeviceId`|PT1M |Yes|
 |Resource|**NetworkOutputMegabytes**<br><br>Network data sent in megabytes. Metrics are aggregated in one minute intervals. |`NetworkOutputMegabytes` |Count |Average, Maximum, Minimum, Total |`RunId`, `InstanceId`, `ComputeName`, `DeviceId`|PT1M |Yes|
 |Run|**Not Responding Runs**<br><br>Number of runs not responding for this workspace. Count is updated when a run enters Not Responding state. |`Not Responding Runs` |Count |Total, Average, Minimum, Maximum, Count |`Scenario`, `RunType`, `PublishedPipelineId`, `ComputeType`, `PipelineStepType`, `ExperimentName`|PT1M |Yes|
-|Run|**Not Started Runs**<br><br>Number of runs in Not Started state for this workspace. Count is updated when a request is received to create a run but run information has not yet been populated.  |`Not Started Runs` |Count |Total, Average, Minimum, Maximum, Count |`Scenario`, `RunType`, `PublishedPipelineId`, `ComputeType`, `PipelineStepType`, `ExperimentName`|PT1M |Yes|
+|Run|**Not Started Runs**<br><br>Number of runs in Not Started state for this workspace. Count is updated when a request is received to create a run but run information has not yet been populated. |`Not Started Runs` |Count |Total, Average, Minimum, Maximum, Count |`Scenario`, `RunType`, `PublishedPipelineId`, `ComputeType`, `PipelineStepType`, `ExperimentName`|PT1M |Yes|
 |Quota|**Preempted Cores**<br><br>Number of preempted cores |`Preempted Cores` |Count |Average, Maximum, Minimum, Total |`Scenario`, `ClusterName`|PT1M |Yes|
 |Quota|**Preempted Nodes**<br><br>Number of preempted nodes. These nodes are the low priority nodes which are taken away from the available node pool. |`Preempted Nodes` |Count |Average, Maximum, Minimum, Total |`Scenario`, `ClusterName`|PT1M |Yes|
 |Run|**Preparing Runs**<br><br>Number of runs that are preparing for this workspace. Count is updated when a run enters Preparing state while the run environment is being prepared. |`Preparing Runs` |Count |Total, Average, Minimum, Maximum, Count |`Scenario`, `RunType`, `PublishedPipelineId`, `ComputeType`, `PipelineStepType`, `ExperimentName`|PT1M |Yes|
