@@ -92,10 +92,10 @@ Values will be converted between float and bit with the following rules:
 
 | Data type | SQL | Power BI | Azure Cosmos DB | PostgreSQL | Azure Data Explorer |
 |-|-|-|-|-|-|
-| **bigint** | bigint, int, smallint, tinyint, all string types (ntext, nvarchar, char, …) | yes | numeric: integer | bigint | dynamic, int, long |
-| **float** | float, real, decimal, numeric, all string types ( ntext, nvarchar, char, …) | yes | number: fraction | double precision, numeric. Limited to 1.78E+308 | dynamic, real, double |
+| **bigint** | bigint, int, smallint, tinyint, all string types (ntext, nvarchar, char, …) | yes | numeric: integer | bigint<br /><br />If the column type is smallint or integer, error "incorrect binary data format" will occur. | dynamic, int, long |
+| **float** | float, real, decimal, numeric, all string types ( ntext, nvarchar, char, …) | yes | number: fraction | double precision, numeric. Limited to 1.78E+308<br /><br />If the column type is real, error "incorrect binary data format" will occur. | dynamic, real, double |
 | **nvarchar(max)** | All string types (ntext, nvarchar, char, uniqueidentifier…) | yes | string | character varying, text | dynamic, string |
-| **datetime** | datetime, datetime2, datetimeoffset, all string types ( ntext, nvarchar, char, …) | yes | datetime converted to string using ISO 8601 standard | timestamp, time. Timezone option supported but no time zone will be provided | dynamic, string, datetime |
+| **datetime** | datetime, datetime2, datetimeoffset, all string types ( ntext, nvarchar, char, …) | yes | datetime converted to string using ISO 8601 standard | timestamptz for UTC timestamp, timestamp otherwise | dynamic, string, datetime |
 | **bit** ([compatibility level 1.2](/azure/stream-analytics/stream-analytics-compatibility-level#compatibility-level-12) and above) | bigint, int, smallint, tinyint, bit, all string types (ntext, nvarchar, char, …) | yes | boolean: 1 is converted to true, 0 converted to false | bit | dynamic, bool |
 | **record** | Not supported,  "Record" string is outputted | Not supported,  "Record" string is outputted | JSON object | Not supported | dynamic, bool, long, datetime, byte array, real, double, string |
 | **array** | Not supported,  "Array" string is outputted | Not supported,  "Array" string is outputted | JSON object | Not supported | dynamic, string |
