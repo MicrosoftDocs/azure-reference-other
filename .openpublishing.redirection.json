@@ -8889,6 +8889,26 @@
    "source_path": "azure-monitor-ref/supported-logs/microsoft-timeseriesinsights-environments-logs.md",
    "redirect_url": "/azure/azure-monitor/reference",
    "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/queries/acsnetworktraversaldiagnostics.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/queries/acsnetworktraversalincomingoperations.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/acsnetworktraversaldiagnostics.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
+  },
+  {
+   "source_path": "azure-monitor-ref/tables/acsnetworktraversalincomingoperations.md",
+   "redirect_url": "/azure/azure-monitor/reference",
+   "redirect_document_id": false
   }
  ]
 }

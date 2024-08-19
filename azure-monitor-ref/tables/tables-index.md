@@ -4,7 +4,7 @@ description: Field definitions for Azure Monitor resource log / log analytics ta
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 07/30/2024
+ms.date: 08/19/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -629,8 +629,6 @@ Microsoft.Communication/CommunicationServices
 - [ACSCallClientOperations](acscallclientoperations.md)
 - [ACSCallClientMediaStatsTimeSeries](acscallclientmediastatstimeseries.md)
 - [ACSCallSummary](acscallsummary.md)
-- [ACSNetworkTraversalIncomingOperations](acsnetworktraversalincomingoperations.md)
-- [ACSNetworkTraversalDiagnostics](acsnetworktraversaldiagnostics.md)
 - [ACSEmailSendMailOperational](acsemailsendmailoperational.md)
 - [ACSEmailStatusUpdateOperational](acsemailstatusupdateoperational.md)
 - [ACSEmailUserEngagementOperational](acsemailuserengagementoperational.md)
