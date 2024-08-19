@@ -1526,10 +1526,6 @@ items:
             href: tables/acsemailuserengagementoperational.md
           - name: ACSJobRouterIncomingOperations
             href: tables/acsjobrouterincomingoperations.md
-          - name: ACSNetworkTraversalDiagnostics
-            href: tables/acsnetworktraversaldiagnostics.md
-          - name: ACSNetworkTraversalIncomingOperations
-            href: tables/acsnetworktraversalincomingoperations.md
           - name: ACSRoomsIncomingOperations
             href: tables/acsroomsincomingoperations.md
           - name: ACSSMSIncomingOperations
@@ -1620,6 +1616,8 @@ items:
             href: tables/agwfirewalllogs.md
           - name: AGWPerformanceLogs
             href: tables/agwperformancelogs.md
+          - name: AHDSDeidAuditLogs
+            href: tables/ahdsdeidauditlogs.md
           - name: AHDSDicomAuditLogs
             href: tables/ahdsdicomauditlogs.md
           - name: AHDSDicomDiagnosticLogs
@@ -2858,10 +2856,6 @@ items:
             href: queries/ACSEmailStatusUpdateOperational.md
           - name: ACSJobRouterIncomingOperations
             href: queries/ACSJobRouterIncomingOperations.md
-          - name: ACSNetworkTraversalDiagnostics
-            href: queries/ACSNetworkTraversalDiagnostics.md
-          - name: ACSNetworkTraversalIncomingOperations
-            href: queries/ACSNetworkTraversalIncomingOperations.md
           - name: ACSRoomsIncomingOperations
             href: queries/ACSRoomsIncomingOperations.md
           - name: ACSSMSIncomingOperations

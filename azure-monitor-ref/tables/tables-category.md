@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 07/22/2024
+ms.date: 08/19/2024
 ---
 
 # Azure Monitor Log Analytics log tables organized by category
@@ -201,8 +201,6 @@ ms.date: 07/22/2024
 - [ACSEmailStatusUpdateOperational](acsemailstatusupdateoperational.md)
 - [ACSEmailUserEngagementOperational](acsemailuserengagementoperational.md)
 - [ACSJobRouterIncomingOperations](acsjobrouterincomingoperations.md)
-- [ACSNetworkTraversalDiagnostics](acsnetworktraversaldiagnostics.md)
-- [ACSNetworkTraversalIncomingOperations](acsnetworktraversalincomingoperations.md)
 - [ACSRoomsIncomingOperations](acsroomsincomingoperations.md)
 - [ACSSMSIncomingOperations](acssmsincomingoperations.md)
 - [ADFActivityRun](adfactivityrun.md)

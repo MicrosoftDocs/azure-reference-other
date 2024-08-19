@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 06/24/2024
+ms.date: 08/19/2024
 ms.author: edbaynash
 author: EdB-MSFT
 ms.custom: Tables for microsoft.communication/communicationservices
@@ -28,8 +28,6 @@ ms.custom: Tables for microsoft.communication/communicationservices
 | [ACSEmailStatusUpdateOperational](/azure/azure-monitor/reference/tables/ACSEmailStatusUpdateOperational)<p>Email Communication Services logs for message and recipient depllivery status update operations. | resources | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/acsemailstatusupdateoperational)|
 | [ACSEmailUserEngagementOperational](/azure/azure-monitor/reference/tables/ACSEmailUserEngagementOperational)<p>Email Communication Services logs for message and recipient depllivery status update operations. | resources | LogManagement | No| -|
 | [ACSJobRouterIncomingOperations](/azure/azure-monitor/reference/tables/ACSJobRouterIncomingOperations)<p>Communication Services logs of incoming requests to Job Router operations. | resources | LogManagement | Yes| [Yes](/azure/azure-monitor/reference/queries/acsjobrouterincomingoperations)|
-| [ACSNetworkTraversalDiagnostics](/azure/azure-monitor/reference/tables/ACSNetworkTraversalDiagnostics)<p>Diagnostics logs provide information about the relay session connectivity and the data relayed. | resources | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/acsnetworktraversaldiagnostics)|
-| [ACSNetworkTraversalIncomingOperations](/azure/azure-monitor/reference/tables/ACSNetworkTraversalIncomingOperations)<p>Communication Services logs of incoming requests to Network Traversal operations. | resources | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/acsnetworktraversalincomingoperations)|
 | [ACSRoomsIncomingOperations](/azure/azure-monitor/reference/tables/ACSRoomsIncomingOperations)<p>Communication Services logs of incoming requests to rooms operations, with summaries of room object, lifespan, participants and roles count etc. | resources | LogManagement | Yes| [Yes](/azure/azure-monitor/reference/queries/acsroomsincomingoperations)|
 | [ACSSMSIncomingOperations](/azure/azure-monitor/reference/tables/ACSSMSIncomingOperations)<p>Communication Services logs of incoming requests to SMS operations. | resources | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/acssmsincomingoperations)|
 | [AzureActivity](/azure/azure-monitor/reference/tables/AzureActivity)<p>Entries from the Azure Activity log that provides insight into any subscription-level or management group level events that have occurred in Azure. | resources, audit, security | LogManagement | No| [Yes](/azure/azure-monitor/reference/queries/azureactivity)|
