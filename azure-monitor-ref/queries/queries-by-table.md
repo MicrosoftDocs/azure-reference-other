@@ -4,7 +4,7 @@ description: Azure Monitor log analytics queries by tables
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 07/01/2024
+ms.date: 08/19/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -269,21 +269,6 @@ ms.reviewer: lualderm
 - [Top 5 IP addresses per Job Router operation](ACSJobRouterIncomingOperations.md#top-5-ip-addresses-per-job-router-operation)
 - [Job Router operational errors](ACSJobRouterIncomingOperations.md#job-router-operational-errors)
 - [Job Router operation result counts](ACSJobRouterIncomingOperations.md#job-router-operation-result-counts)
-
-## [ACSNetworkTraversalDiagnostics](ACSNetworkTraversalDiagnostics.md)
-
-- [Network Traversal relay session data relayed per identity](ACSNetworkTraversalDiagnostics.md#network-traversal-relay-session-data-relayed-per-identity)
-- [Network Traversal relay session duration](ACSNetworkTraversalDiagnostics.md#network-traversal-relay-session-duration)
-- [Network Traversal relay session end reason](ACSNetworkTraversalDiagnostics.md#network-traversal-relay-session-end-reason)
-- [Network Traversal relay sessions per IP address](ACSNetworkTraversalDiagnostics.md#network-traversal-relay-sessions-per-ip-address)
-- [Network Traversal relay session start errors](ACSNetworkTraversalDiagnostics.md#network-traversal-relay-session-start-errors)
-
-## [ACSNetworkTraversalIncomingOperations](ACSNetworkTraversalIncomingOperations.md)
-
-- [Distinct Network Traversal operations](ACSNetworkTraversalIncomingOperations.md#distinct-network-traversal-operations)
-- [Calculate Network Traversal operation duration percentiles](ACSNetworkTraversalIncomingOperations.md#calculate-network-traversal-operation-duration-percentiles)
-- [Network Traversal operational errors](ACSNetworkTraversalIncomingOperations.md#network-traversal-operational-errors)
-- [Network Traversal operation result counts](ACSNetworkTraversalIncomingOperations.md#network-traversal-operation-result-counts)
 
 ## [ACSRoomsIncomingOperations](ACSRoomsIncomingOperations.md)
 
