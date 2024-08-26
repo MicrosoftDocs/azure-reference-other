@@ -4,7 +4,7 @@ description: Azure Monitor log analytics queries by tables
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 08/19/2024
+ms.date: 08/26/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -1043,6 +1043,13 @@ ms.reviewer: lualderm
 - [Failed operations count](CHSMManagementAuditLogs.md#failed-operations-count)
 - [Operations per user](CHSMManagementAuditLogs.md#operations-per-user)
 
+## [CHSMServiceOperationAuditLogs](CHSMServiceOperationAuditLogs.md)
+
+- [Are there any slow requests?](CHSMServiceOperationAuditLogs.md#are-there-any-slow-requests)
+- [How active has this Cloud HSM been?](CHSMServiceOperationAuditLogs.md#how-active-has-this-cloud-hsm-been)
+- [Are there any failures?](CHSMServiceOperationAuditLogs.md#are-there-any-failures)
+- [Who is calling this Cloud HSM?](CHSMServiceOperationAuditLogs.md#who-is-calling-this-cloud-hsm)
+
 ## [CIEventsAudit](CIEventsAudit.md)
 
 - [CIEventsAudit - API response codes line chart](CIEventsAudit.md#cieventsaudit---api-response-codes-line-chart)
@@ -1368,6 +1375,14 @@ ms.reviewer: lualderm
 ## [LogicAppWorkflowRuntime](LogicAppWorkflowRuntime.md)
 
 - [Count of failed workflow operations from Logic App Workflow Runtime](LogicAppWorkflowRuntime.md#count-of-failed-workflow-operations-from-logic-app-workflow-runtime)
+
+## [MDCDetectionDNSEvents](MDCDetectionDNSEvents.md)
+
+- [All DNS events where the domain queried was 'www.google.com' ordered by time](MDCDetectionDNSEvents.md#all-dns-events-where-the-domain-queried-was-wwwgooglecom-ordered-by-time)
+
+## [MDCDetectionFimEvents](MDCDetectionFimEvents.md)
+
+- [All FIM events for directories](MDCDetectionFimEvents.md#all-fim-events-for-directories)
 
 ## [MNFDeviceUpdates](MNFDeviceUpdates.md)
 

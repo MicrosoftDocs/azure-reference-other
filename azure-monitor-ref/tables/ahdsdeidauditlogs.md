@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: orens
 author: osalzberg
-ms.date: 08/19/2024
+ms.date: 08/26/2024
 ---
 
 # AHDSDeidAuditLogs
@@ -18,10 +18,10 @@ Data plane audit logs of privileged actions made against Azure Health Data Servi
 
 |Attribute|Value|
 |---|---|
-|**Resource types**|-|
-|**Categories**|-|
+|**Resource types**|microsoft.healthdataaiservices/deidservices|
+|**Categories**|Audit, Azure Resources|
 |**Solutions**| LogManagement|
-|**Basic log**|No|
+|**Basic log**|Yes|
 |**Ingestion-time transformation**|No|
 |**Sample Queries**|-|
 

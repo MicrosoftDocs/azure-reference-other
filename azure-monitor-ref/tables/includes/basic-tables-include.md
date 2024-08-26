@@ -3,7 +3,7 @@ ms.service: azure-monitor
 ms.topic: include
 author: EdB-MSFT
 ms.author: edbaynash
-ms.date:  08/08/2024
+ms.date:  08/26/2024
 ms.custom: Basic tables by service
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -28,6 +28,7 @@ ms.custom: Basic tables by service
 | Azure Data Manager for Energy  |  [OEPDataplaneLogs](/azure/azure-monitor/reference/tables/OEPDataplaneLogs) <br>|
 | Azure Data Transfer  |  [DataTransferOperations](/azure/azure-monitor/reference/tables/DataTransferOperations) <br>|
 | Azure Databricks Services  |  [DatabricksBrickStoreHttpGateway](/azure/azure-monitor/reference/tables/DatabricksBrickStoreHttpGateway) <br> [DatabricksDashboards](/azure/azure-monitor/reference/tables/DatabricksDashboards) <br> [DatabricksCloudStorageMetadata](/azure/azure-monitor/reference/tables/DatabricksCloudStorageMetadata) <br> [DatabricksPredictiveOptimization](/azure/azure-monitor/reference/tables/DatabricksPredictiveOptimization) <br> [DatabricksDataMonitoring](/azure/azure-monitor/reference/tables/DatabricksDataMonitoring) <br> [DatabricksIngestion](/azure/azure-monitor/reference/tables/DatabricksIngestion) <br> [DatabricksMarketplaceConsumer](/azure/azure-monitor/reference/tables/DatabricksMarketplaceConsumer) <br> [DatabricksLineageTracking](/azure/azure-monitor/reference/tables/DatabricksLineageTracking) <br> [DatabricksFilesystem](/azure/azure-monitor/reference/tables/DatabricksFilesystem) <br>|
+| Azure Health Data Services de-identification service  |  [AHDSDeidAuditLogs](/azure/azure-monitor/reference/tables/AHDSDeidAuditLogs) <br>|
 | Azure Managed CCF  |  [CCFApplicationLogs](/azure/azure-monitor/reference/tables/CCFApplicationLogs) <br>|
 | Azure Managed HSM  |  [AZKVAuditLogs](/azure/azure-monitor/reference/tables/AZKVAuditLogs) <br>|
 | Azure Managed Lustre  |  [AFSAuditLogs](/azure/azure-monitor/reference/tables/AFSAuditLogs) <br>|
