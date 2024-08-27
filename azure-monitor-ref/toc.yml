@@ -1289,6 +1289,8 @@ items:
             href: tables/microsoft-healthcareapis_services.md
           - name: microsoft.healthcareapis/workspaces
             href: tables/microsoft-healthcareapis_workspaces.md
+          - name: microsoft.healthdataaiservices/deidservices
+            href: tables/microsoft-healthdataaiservices_deidservices.md
           - name: microsoft.hybridcontainerservice/provisionedclusters
             href: tables/microsoft-hybridcontainerservice_provisionedclusters.md
           - name: microsoft.insights/autoscalesettings
@@ -1938,6 +1940,8 @@ items:
             href: tables/cdbtableapirequests.md
           - name: CHSMManagementAuditLogs
             href: tables/chsmmanagementauditlogs.md
+          - name: CHSMServiceOperationAuditLogs
+            href: tables/chsmserviceoperationauditlogs.md
           - name: CIEventsAudit
             href: tables/cieventsaudit.md
           - name: CIEventsOperational
@@ -2372,6 +2376,10 @@ items:
             href: tables/mcvpauditlogs.md
           - name: MCVPOperationLogs
             href: tables/mcvpoperationlogs.md
+          - name: MDCDetectionDNSEvents
+            href: tables/mdcdetectiondnsevents.md
+          - name: MDCDetectionFimEvents
+            href: tables/mdcdetectionfimevents.md
           - name: MDCFileIntegrityMonitoringEvents
             href: tables/mdcfileintegritymonitoringevents.md
           - name: MDECustomCollectionDeviceFileEvents
@@ -3064,6 +3072,8 @@ items:
             href: queries/CCFApplicationLogs.md
           - name: CHSMManagementAuditLogs
             href: queries/CHSMManagementAuditLogs.md
+          - name: CHSMServiceOperationAuditLogs
+            href: queries/CHSMServiceOperationAuditLogs.md
           - name: CIEventsAudit
             href: queries/CIEventsAudit.md
           - name: CIEventsOperational
@@ -3182,6 +3192,10 @@ items:
             href: queries/LASummaryLogs.md
           - name: LogicAppWorkflowRuntime
             href: queries/LogicAppWorkflowRuntime.md
+          - name: MDCDetectionDNSEvents
+            href: queries/MDCDetectionDNSEvents.md
+          - name: MDCDetectionFimEvents
+            href: queries/MDCDetectionFimEvents.md
           - name: MNFDeviceUpdates
             href: queries/MNFDeviceUpdates.md
           - name: MNFSystemSessionHistoryUpdates
