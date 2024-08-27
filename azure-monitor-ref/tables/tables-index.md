@@ -4,7 +4,7 @@ description: Field definitions for Azure Monitor resource log / log analytics ta
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 08/19/2024
+ms.date: 08/26/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -234,6 +234,7 @@ Microsoft.HardwareSecurityModules/cloudHsmClusters
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 - [CHSMManagementAuditLogs](chsmmanagementauditlogs.md)
+- [CHSMServiceOperationAuditLogs](chsmserviceoperationauditlogs.md)
 
 ### Azure Cosmos DB  
 
@@ -392,6 +393,12 @@ Microsoft.DigitalTwins/digitalTwinsInstances
 - [ADTEventRoutesOperation](adteventroutesoperation.md)
 - [ADTModelsOperation](adtmodelsoperation.md)
 - [ADTQueryOperation](adtqueryoperation.md)
+
+### Azure Health Data Services de-identification service  
+
+Microsoft.HealthDataAIServices/deidServices  
+
+- [AHDSDeidAuditLogs](ahdsdeidauditlogs.md)
 
 ### Azure HPC Cache  
 
