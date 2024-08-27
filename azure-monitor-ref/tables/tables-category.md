@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/19/2024
+ms.date: 08/26/2024
 ---
 
 # Azure Monitor Log Analytics log tables organized by category
@@ -54,6 +54,7 @@ ms.date: 08/19/2024
 - [AGWAccessLogs](agwaccesslogs.md)
 - [AGWFirewallLogs](agwfirewalllogs.md)
 - [AGWPerformanceLogs](agwperformancelogs.md)
+- [AHDSDeidAuditLogs](ahdsdeidauditlogs.md)
 - [AHDSDicomAuditLogs](ahdsdicomauditlogs.md)
 - [AKSAudit](aksaudit.md)
 - [AKSAuditAdmin](aksauditadmin.md)
@@ -118,6 +119,7 @@ ms.date: 08/19/2024
 - [CDBQueryRuntimeStatistics](cdbqueryruntimestatistics.md)
 - [CDBTableApiRequests](cdbtableapirequests.md)
 - [CHSMManagementAuditLogs](chsmmanagementauditlogs.md)
+- [CHSMServiceOperationAuditLogs](chsmserviceoperationauditlogs.md)
 - [CIEventsAudit](cieventsaudit.md)
 - [CassandraAudit](cassandraaudit.md)
 - [ChaosStudioExperimentEventLogs](chaosstudioexperimenteventlogs.md)
@@ -227,6 +229,7 @@ ms.date: 08/19/2024
 - [AGWAccessLogs](agwaccesslogs.md)
 - [AGWFirewallLogs](agwfirewalllogs.md)
 - [AGWPerformanceLogs](agwperformancelogs.md)
+- [AHDSDeidAuditLogs](ahdsdeidauditlogs.md)
 - [AHDSDicomAuditLogs](ahdsdicomauditlogs.md)
 - [AHDSDicomDiagnosticLogs](ahdsdicomdiagnosticlogs.md)
 - [AHDSMedTechDiagnosticLogs](ahdsmedtechdiagnosticlogs.md)
@@ -337,6 +340,7 @@ ms.date: 08/19/2024
 - [CDBQueryRuntimeStatistics](cdbqueryruntimestatistics.md)
 - [CDBTableApiRequests](cdbtableapirequests.md)
 - [CHSMManagementAuditLogs](chsmmanagementauditlogs.md)
+- [CHSMServiceOperationAuditLogs](chsmserviceoperationauditlogs.md)
 - [CIEventsAudit](cieventsaudit.md)
 - [CIEventsOperational](cieventsoperational.md)
 - [ChaosStudioExperimentEventLogs](chaosstudioexperimenteventlogs.md)
@@ -743,6 +747,8 @@ ms.date: 08/19/2024
 - [IdentityLogonEvents](identitylogonevents.md)
 - [IdentityQueryEvents](identityqueryevents.md)
 - [LinuxAuditLog](linuxauditlog.md)
+- [MDCDetectionDNSEvents](mdcdetectiondnsevents.md)
+- [MDCDetectionFimEvents](mdcdetectionfimevents.md)
 - [MDCFileIntegrityMonitoringEvents](mdcfileintegritymonitoringevents.md)
 - [MDECustomCollectionDeviceFileEvents](mdecustomcollectiondevicefileevents.md)
 - [McasShadowItReporting](mcasshadowitreporting.md)
