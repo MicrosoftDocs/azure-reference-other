@@ -1492,6 +1492,8 @@ items:
             href: tables/acicollaborationaudit.md
           - name: ACRConnectedClientList
             href: tables/acrconnectedclientlist.md
+          - name: ACREntraAuthenticationAuditLog
+            href: tables/acrentraauthenticationauditlog.md
           - name: ACSAdvancedMessagingOperations
             href: tables/acsadvancedmessagingoperations.md
           - name: ACSAuthIncomingOperations
@@ -2168,6 +2170,8 @@ items:
             href: tables/dynamicsummary.md
           - name: Dynamics365Activity
             href: tables/dynamics365activity.md
+          - name: EGNFailedHttpDataPlaneOperations
+            href: tables/egnfailedhttpdataplaneoperations.md
           - name: EGNFailedMqttConnections
             href: tables/egnfailedmqttconnections.md
           - name: EGNFailedMqttPublishedMessages
@@ -2176,6 +2180,8 @@ items:
             href: tables/egnfailedmqttsubscriptions.md
           - name: EGNMqttDisconnections
             href: tables/egnmqttdisconnections.md
+          - name: EGNSuccessfulHttpDataPlaneOperations
+            href: tables/egnsuccessfulhttpdataplaneoperations.md
           - name: EGNSuccessfulMqttConnections
             href: tables/egnsuccessfulmqttconnections.md
           - name: ETWEvent
@@ -2832,6 +2838,8 @@ items:
             href: queries/ACICollaborationAudit.md
           - name: ACRConnectedClientList
             href: queries/ACRConnectedClientList.md
+          - name: ACREntraAuthenticationAuditLog
+            href: queries/ACREntraAuthenticationAuditLog.md
           - name: ACSAdvancedMessagingOperations
             href: queries/ACSAdvancedMessagingOperations.md
           - name: ACSAuthIncomingOperations
@@ -3144,10 +3152,14 @@ items:
             href: queries/DeviceTvmSoftwareVulnerabilities.md
           - name: DnsEvents
             href: queries/DnsEvents.md
+          - name: EGNFailedHttpDataPlaneOperations
+            href: queries/EGNFailedHttpDataPlaneOperations.md
           - name: EGNFailedMqttConnections
             href: queries/EGNFailedMqttConnections.md
           - name: EGNMqttDisconnections
             href: queries/EGNMqttDisconnections.md
+          - name: EGNSuccessfulHttpDataPlaneOperations
+            href: queries/EGNSuccessfulHttpDataPlaneOperations.md
           - name: EGNSuccessfulMqttConnections
             href: queries/EGNSuccessfulMqttConnections.md
           - name: EmailAttachmentInfo

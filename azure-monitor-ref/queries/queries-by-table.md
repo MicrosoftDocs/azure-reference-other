@@ -4,7 +4,7 @@ description: Azure Monitor log analytics queries by tables
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 08/26/2024
+ms.date: 09/02/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -116,6 +116,10 @@ ms.reviewer: lualderm
 
 - [Unique Redis client IP addresses](ACRConnectedClientList.md#unique-redis-client-ip-addresses)
 - [Redis client connections per hour](ACRConnectedClientList.md#redis-client-connections-per-hour)
+
+## [ACREntraAuthenticationAuditLog](ACREntraAuthenticationAuditLog.md)
+
+- [Microsoft Entra authentication audit log](ACREntraAuthenticationAuditLog.md#microsoft-entra-authentication-audit-log)
 
 ## [ACSAdvancedMessagingOperations](ACSAdvancedMessagingOperations.md)
 
@@ -1214,6 +1218,10 @@ ms.reviewer: lualderm
 
 - [Clients Resolving Malicious Domains](DnsEvents.md#clients-resolving-malicious-domains)
 
+## [EGNFailedHttpDataPlaneOperations](EGNFailedHttpDataPlaneOperations.md)
+
+- [TLS 1.3 Lower query](EGNFailedHttpDataPlaneOperations.md#tls-13-lower-query)
+
 ## [EGNFailedMqttConnections](EGNFailedMqttConnections.md)
 
 - [Authentication error query](EGNFailedMqttConnections.md#authentication-error-query)
@@ -1222,6 +1230,10 @@ ms.reviewer: lualderm
 
 - [Disconnections reason query](EGNMqttDisconnections.md#disconnections-reason-query)
 - [Session disconnections query](EGNMqttDisconnections.md#session-disconnections-query)
+
+## [EGNSuccessfulHttpDataPlaneOperations](EGNSuccessfulHttpDataPlaneOperations.md)
+
+- [TLS 1.3 Lower query](EGNSuccessfulHttpDataPlaneOperations.md#tls-13-lower-query)
 
 ## [EGNSuccessfulMqttConnections](EGNSuccessfulMqttConnections.md)
 
