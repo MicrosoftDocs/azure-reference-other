@@ -3,7 +3,7 @@ ms.service: azure-monitor
 ms.topic: include
 author: EdB-MSFT
 ms.author: edbaynash
-ms.date: 08/08/2024
+ms.date: 09/02/2024
 ms.custom: Microsoft.Kusto/clusters, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -46,6 +46,9 @@ ms.custom: Microsoft.Kusto/clusters, naam
 |Materialized View health and performance|**Materialized View Health**<br><br>The health of the materialized view (1 for healthy, 0 for non-healthy) |`MaterializedViewHealth` |Count |Average |`Database`, `MaterializedViewName`|PT1M |Yes|
 |Materialized View health and performance|**Materialized View Records In Delta**<br><br>The number of records in the non-materialized part of the view |`MaterializedViewRecordsInDelta` |Count |Average |`Database`, `MaterializedViewName`|PT1M |Yes|
 |Materialized View health and performance|**Materialized View Result**<br><br>The result of the materialization process |`MaterializedViewResult` |Count |Average |`Database`, `MaterializedViewName`, `Result`|PT1M |Yes|
+|Partitioning|**Partitioning Percentage**<br><br>Percentage of records partitioned versus total number of records. |`PartitioningPercentage` |Percent |Average, Maximum, Minimum |`Database`, `Table`|PT1M |Yes|
+|Partitioning|**Partitioning Percentage Hot**<br><br>Percentage of records partitioned versus total number of records (in hot / cached extents only). |`PartitioningPercentageHot` |Percent |Average, Maximum, Minimum |`Database`, `Table`|PT1M |Yes|
+|Partitioning|**Processed Partitioned Records**<br><br>Number of records partitioned in measured time window. |`ProcessedPartitionedRecords` |Count |Average, Maximum, Minimum |`Database`, `Table`|PT1M |Yes|
 |Query performance|**Query duration**<br><br>Queries duration in seconds |`QueryDuration` |MilliSeconds |Average, Maximum, Minimum, Total |`QueryStatus`|PT1M |Yes|
 |Query performance|**Query Result**<br><br>Total number of queries. |`QueryResult` |Count |Count |`QueryStatus`|PT1M |No|
 |Ingestion health and performance|**Queue Length**<br><br>Number of pending messages in a component's queue. |`QueueLength` |Count |Average |`ComponentType`|PT1M |Yes|

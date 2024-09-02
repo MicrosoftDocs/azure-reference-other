@@ -7,7 +7,7 @@ services: azure-monitor
 ms.topic: reference
 ms.service: azure-monitor
 ms.custom: ignite-2022
-ms.date: 08/12/2024
+ms.date: 09/02/2024
 ms.reviewer: priyamishra
 ---
 
@@ -16,7 +16,7 @@ ms.reviewer: priyamishra
 > [!NOTE]
 > This list is largely auto-generated. Any modification made to this list via GitHub might be written over without warning. Contact the author of this article for details on how to make permanent updates.
 
-Last updated: 08/12/2024.
+Last updated: 09/02/2024.
 
 Azure Monitor provides several ways to interact with metrics, including charting them in the Azure portal, accessing them through the REST API, or querying them by using PowerShell or the Azure CLI (Command Line Interface).  
 
@@ -141,7 +141,7 @@ Following table lists metrics and log categories available for each resource typ
 |Microsoft.PlayFab <a name="microsoftplayfab"></a>|[titles](../supported-metrics/Microsoft-PlayFab-titles-metrics.md)<br>|[titles](../supported-logs/Microsoft-PlayFab-titles-logs.md)<br>|
 |Microsoft.PowerBI <a name="microsoftpowerbi"></a>|N/A|[tenants](../supported-logs/Microsoft-PowerBI-tenants-logs.md)<br>[tenants/workspaces](../supported-logs/Microsoft-PowerBI-tenants-workspaces-logs.md)<br>|
 |Microsoft.PowerBIDedicated <a name="microsoftpowerbidedicated"></a>|[capacities](../supported-metrics/Microsoft-PowerBIDedicated-capacities-metrics.md)<br>|[capacities](../supported-logs/Microsoft-PowerBIDedicated-capacities-logs.md)<br>|
-|Microsoft.ProviderHub <a name="microsoftproviderhub"></a>|N/A|[providerRegistrations](../supported-logs/Microsoft-ProviderHub-providerRegistrations-logs.md)<br>|
+|Microsoft.ProviderHub <a name="microsoftproviderhub"></a>|N/A|[providerMonitorSettings](../supported-logs/Microsoft-ProviderHub-providerMonitorSettings-logs.md)<br>[providerRegistrations](../supported-logs/Microsoft-ProviderHub-providerRegistrations-logs.md)<br>|
 |microsoft.purview <a name="microsoftpurview"></a>|[accounts](../supported-metrics/microsoft-purview-accounts-metrics.md)<br>|[accounts](../supported-logs/microsoft-purview-accounts-logs.md)<br>|
 |Microsoft.RecoveryServices <a name="microsoftrecoveryservices"></a>|[Vaults](../supported-metrics/Microsoft-RecoveryServices-Vaults-metrics.md)<br>|[Vaults](../supported-logs/Microsoft-RecoveryServices-Vaults-logs.md)<br>|
 |Microsoft.Relay <a name="microsoftrelay"></a>|[namespaces](../supported-metrics/Microsoft-Relay-namespaces-metrics.md)<br>|[namespaces](../supported-logs/Microsoft-Relay-namespaces-logs.md)<br>|
