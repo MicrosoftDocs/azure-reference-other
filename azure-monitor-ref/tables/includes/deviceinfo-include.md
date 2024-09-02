@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/08/2024
+ms.date: 09/02/2024
 ms.author: orens
 author: osalzberg
 ms.custom: DeviceInfo
@@ -13,16 +13,21 @@ ms.custom: DeviceInfo
 | AadDeviceId | string | Unique identifier for the device in Azure Active Directory. |
 | AdditionalFields | dynamic | Additional information about the entity or event. |
 | AssetValue | string | Indicates the value of a device as assigned by the user. |
+| AwsResourceName | string | Unique identifier of the AWS resource associated with the device. |
+| AzureResourceId | string | Unique identifier of the Azure resource associated with the device. |
 | _BilledSize | real | The record size in bytes |
 | ClientVersion | string | Version of the endpoint agent or sensor running on the machine. |
 | DeviceCategory | string | Broader classification that groups certain device types under the following categories: Endpoint, Network device, IoT, Unknown. |
+| DeviceDynamicTags | string | Device tags added and removed dynamically based on dynamic rules. |
 | DeviceId | string | Unique identifier for the device in the service. |
+| DeviceManualTags | string | Device tags created manually using the portal UI or public API. |
 | DeviceName | string | Fully qualified domain name (FQDN) of the device. |
 | DeviceObjectId | string | Unique identifier for the device in Azure AD. |
 | DeviceSubtype | string | Additional modifier for certain types of devices, for example, a mobile device can be a tablet or a smartphone; only available if device discovery finds enough information about this attribute. |
 | DeviceType | string | Type of device based on purpose and functionality, such as network device, workstation, server, mobile, gaming console, or printer. |
 | ExclusionReason | string | Indicates the reason for device exclusion. |
 | ExposureLevel | string | Indicates the exposure level of a device. |
+| GcpFullResourceName | string | Unique identifier of the AWS resource associated with the device. |
 | IsAzureADJoined | bool | Boolean indicator of whether machine is joined to the Azure Active Directory. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
 | IsExcluded | bool | Determines if the device is currently excluded from Microsoft Defender for Vulnerability Management experiences. |
