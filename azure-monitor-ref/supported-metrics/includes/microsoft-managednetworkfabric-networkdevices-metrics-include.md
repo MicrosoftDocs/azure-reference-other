@@ -3,7 +3,7 @@ ms.service: azure-monitor
 ms.topic: include
 author: EdB-MSFT
 ms.author: edbaynash
-ms.date: 07/30/2024
+ms.date: 09/02/2024
 ms.custom: Microsoft.ManagedNetworkFabric/networkDevices, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -39,6 +39,7 @@ ms.custom: Microsoft.ManagedNetworkFabric/networkDevices, naam
 |Interface State Counters|**Interface In Discards**<br><br>The number of inbound packets that were chosen to be discarded even though no errors had been detected to prevent their being deliverable to a higher-layer protocol. |`IfInDiscards` |Count |Average, Minimum, Maximum, Total, Count |`FabricId`, `InterfaceName`|PT1M |Yes|
 |Interface State Rate|**Interface In Discards Rate**<br><br>The rate of inbound packets that were chosen to be discarded even though no errors had been detected to prevent their being deliverable to a higher-layer protocol. |`IfInDiscardsRate` |Count |Average, Minimum, Maximum, Total, Count |`FabricId`, `InterfaceName`|PT1M |Yes|
 |Interface State Counters|**Interface In Errors**<br><br>For packet-oriented interfaces, the number of inbound packets that contained errors preventing them from being deliverable to a higher-layer protocol. |`IfInErrors` |Count |Average, Minimum, Maximum, Total, Count |`FabricId`, `InterfaceName`|PT1M |Yes|
+|Interface State Counters|**Interface In Errors Rate**<br><br>For packet-oriented interfaces, the rate of inbound packets that contained errors preventing them from being deliverable to a higher-layer protocol. |`IfInErrorsRate` |Count |Average, Minimum, Maximum, Total, Count |`FabricId`, `InterfaceName`|PT1M |Yes|
 |Interface State Counters|**Interface In FCS Errors**<br><br>Number of received packets which had errors in the frame check sequence (FCS), i.e., framing errors. |`IfInFcsErrors` |Count |Average, Minimum, Maximum, Total, Count |`FabricId`, `InterfaceName`|PT1M |Yes|
 |Interface State Counters|**Interface In Multicast Pkts**<br><br>The number of packets, delivered by this sub-layer to a higher (sub-)layer, that were addressed to a multicast address at this sub-layer. For a MAC-layer protocol, this includes both Group and Functional addresses. |`IfInMulticastPkts` |Count |Average, Minimum, Maximum, Total, Count |`FabricId`, `InterfaceName`|PT1M |Yes|
 |Interface State Counters|**Interface In Octets**<br><br>The total number of octets received on the interface, including framing characters. |`IfInOctets` |Count |Average, Minimum, Maximum, Total, Count |`FabricId`, `InterfaceName`|PT1M |Yes|
@@ -50,6 +51,7 @@ ms.custom: Microsoft.ManagedNetworkFabric/networkDevices, naam
 |Interface State Counters|**Interface Out Discards**<br><br>The number of outbound packets that were chosen to be discarded even though no errors had been detected to prevent their being transmitted. |`IfOutDiscards` |Count |Average, Minimum, Maximum, Total, Count |`FabricId`, `InterfaceName`|PT1M |Yes|
 |Interface State Rate|**Interface Out Discards Rate**<br><br>The rate of outbound packets that were chosen to be discarded even though no errors had been detected to prevent their being transmitted. |`IfOutDiscardsRate` |Count |Average, Minimum, Maximum, Total, Count |`FabricId`, `InterfaceName`|PT1M |Yes|
 |Interface State Counters|**Interface Out Errors**<br><br>For packet-oriented interfaces, the number of outbound packets that could not be transmitted because of errors. |`IfOutErrors` |Count |Average, Minimum, Maximum, Total, Count |`FabricId`, `InterfaceName`|PT1M |Yes|
+|Interface State Counters|**Interface Out Errors Rate**<br><br>For packet-oriented interfaces, the rate of outbound packets that could not be transmitted because of errors. |`IfOutErrorsRate` |Count |Average, Minimum, Maximum, Total, Count |`FabricId`, `InterfaceName`|PT1M |Yes|
 |Interface State Counters|**Interface Out Multicast Pkts**<br><br>The total number of packets that higher-level protocols requested be transmitted, and that were addressed to a multicast address at this sub-layer, including those that were discarded or not sent. For a MAC-layer protocol, this includes both Group and Functional addresses. |`IfOutMulticastPkts` |Count |Average, Minimum, Maximum, Total, Count |`FabricId`, `InterfaceName`|PT1M |Yes|
 |Interface State Counters|**Interface Out Octets**<br><br>The total number of octets transmitted out of the interface, including framing characters. |`IfOutOctets` |Count |Average, Minimum, Maximum, Total, Count |`FabricId`, `InterfaceName`|PT1M |Yes|
 |Interface State Counters|**Interface Out Pkts**<br><br>The total number of packets transmitted out of the interface, including all unicast, multicast, broadcast, and bad packets etc. |`IfOutPkts` |Count |Average, Minimum, Maximum, Total, Count |`FabricId`, `InterfaceName`|PT1M |Yes|

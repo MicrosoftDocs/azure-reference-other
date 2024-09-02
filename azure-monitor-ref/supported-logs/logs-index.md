@@ -4,7 +4,7 @@ description: Understand the supported services and event schemas for Azure Monit
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 08/08/2024
+ms.date: 09/02/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -112,7 +112,7 @@ Following table lists metrics and log categories available for each resource typ
 |Microsoft.PlayFab <a name="microsoftplayfab"></a>|[titles](../supported-metrics/Microsoft-PlayFab-titles-metrics.md)<br>|[titles](../supported-logs/Microsoft-PlayFab-titles-logs.md)<br>|
 |Microsoft.PowerBI <a name="microsoftpowerbi"></a>|N/A|[tenants](../supported-logs/Microsoft-PowerBI-tenants-logs.md)<br>[tenants/workspaces](../supported-logs/Microsoft-PowerBI-tenants-workspaces-logs.md)<br>|
 |Microsoft.PowerBIDedicated <a name="microsoftpowerbidedicated"></a>|[capacities](../supported-metrics/Microsoft-PowerBIDedicated-capacities-metrics.md)<br>|[capacities](../supported-logs/Microsoft-PowerBIDedicated-capacities-logs.md)<br>|
-|Microsoft.ProviderHub <a name="microsoftproviderhub"></a>|N/A|[providerRegistrations](../supported-logs/Microsoft-ProviderHub-providerRegistrations-logs.md)<br>|
+|Microsoft.ProviderHub <a name="microsoftproviderhub"></a>|N/A|[providerMonitorSettings](../supported-logs/Microsoft-ProviderHub-providerMonitorSettings-logs.md)<br>[providerRegistrations](../supported-logs/Microsoft-ProviderHub-providerRegistrations-logs.md)<br>|
 |microsoft.purview <a name="microsoftpurview"></a>|[accounts](../supported-metrics/microsoft-purview-accounts-metrics.md)<br>|[accounts](../supported-logs/microsoft-purview-accounts-logs.md)<br>|
 |Microsoft.RecoveryServices <a name="microsoftrecoveryservices"></a>|[Vaults](../supported-metrics/Microsoft-RecoveryServices-Vaults-metrics.md)<br>|[Vaults](../supported-logs/Microsoft-RecoveryServices-Vaults-logs.md)<br>|
 |Microsoft.Relay <a name="microsoftrelay"></a>|[namespaces](../supported-metrics/Microsoft-Relay-namespaces-metrics.md)<br>|[namespaces](../supported-logs/Microsoft-Relay-namespaces-logs.md)<br>|

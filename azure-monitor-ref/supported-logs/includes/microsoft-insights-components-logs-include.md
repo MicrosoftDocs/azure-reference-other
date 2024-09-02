@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/12/2024
+ms.date: 09/02/2024
 ms.author: orens
 author: osalzberg
 ms.custom: microsoft.insights/components, naam
@@ -15,12 +15,12 @@ ms.custom: microsoft.insights/components, naam
 |---|---|---|---|---|---|---|
 |`AppAvailabilityResults` |Availability results |[AppAvailabilityResults](/azure/azure-monitor/reference/tables/appavailabilityresults)<p>Application Insights availability test results.|No|Yes||No |
 |`AppBrowserTimings` |Browser timings |[AppBrowserTimings](/azure/azure-monitor/reference/tables/appbrowsertimings)<p>Application Insights browser timings.|No|Yes||No |
-|`AppDependencies` |Dependencies |[AppDependencies](/azure/azure-monitor/reference/tables/appdependencies)<p>Application Insights dependencies.|No|Yes||No |
+|`AppDependencies` |Dependencies |[AppDependencies](/azure/azure-monitor/reference/tables/appdependencies)<p>Application Insights dependencies.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/appdependencies)|No |
 |`AppEvents` |Events |[AppEvents](/azure/azure-monitor/reference/tables/appevents)<p>Application Insights events.|No|Yes||No |
-|`AppExceptions` |Exceptions |[AppExceptions](/azure/azure-monitor/reference/tables/appexceptions)<p>Application Insights exceptions.|No|Yes||No |
+|`AppExceptions` |Exceptions |[AppExceptions](/azure/azure-monitor/reference/tables/appexceptions)<p>Application Insights exceptions.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/appexceptions)|No |
 |`AppMetrics` |Metrics |[AppMetrics](/azure/azure-monitor/reference/tables/appmetrics)<p>Application Insights metrics.|No|Yes||No |
-|`AppPageViews` |Page views |[AppPageViews](/azure/azure-monitor/reference/tables/apppageviews)<p>Application Insights page views.|No|Yes||No |
+|`AppPageViews` |Page views |[AppPageViews](/azure/azure-monitor/reference/tables/apppageviews)<p>Application Insights page views.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/apppageviews)|No |
 |`AppPerformanceCounters` |Performance counters |[AppPerformanceCounters](/azure/azure-monitor/reference/tables/appperformancecounters)<p>Application Insights performance counters.|No|Yes||No |
-|`AppRequests` |Requests |[AppRequests](/azure/azure-monitor/reference/tables/apprequests)<p>Application Insights requests.|No|Yes||No |
+|`AppRequests` |Requests |[AppRequests](/azure/azure-monitor/reference/tables/apprequests)<p>Application Insights requests.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/apprequests)|No |
 |`AppSystemEvents` |System events |[AppSystemEvents](/azure/azure-monitor/reference/tables/appsystemevents)<p>Application Insights system events.|No|Yes||No |
 |`AppTraces` |Traces |[AppTraces](/azure/azure-monitor/reference/tables/apptraces)<p>Application Insights traces.|No|Yes||No |

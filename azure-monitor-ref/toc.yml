@@ -797,8 +797,9 @@ items:
               Controller Manager,Kubernetes Scheduler
           - name: Microsoft.Kusto/clusters
             href: supported-logs/microsoft-kusto-clusters-logs.md
-            displayName: Command,Failed ingestion,Ingestion batching,Journal,Query,Succeeded
-              ingestion,Table details,Table usage statistics
+            displayName: Command,Data operation,Failed ingestion,Ingestion
+              batching,Journal,Query,Succeeded ingestion,Table details,Table
+              usage statistics
           - name: microsoft.loadtestservice/loadtests
             href: supported-logs/microsoft-loadtestservice-loadtests-logs.md
             displayName: Azure Load Testing Operations
@@ -988,6 +989,10 @@ items:
           - name: Microsoft.PowerBIDedicated/capacities
             href: supported-logs/microsoft-powerbidedicated-capacities-logs.md
             displayName: Engine
+          - name: Microsoft.ProviderHub/providerMonitorSettings
+            href: supported-logs/microsoft-providerhub-providermonitorsettings-logs.md
+            displayName: Provisioning Operations,UserRP Http Incoming Requests,UserRP Http
+              Outgoing Requests
           - name: Microsoft.ProviderHub/providerRegistrations
             href: supported-logs/microsoft-providerhub-providerregistrations-logs.md
             displayName: Provisioning Operations,UserRP Http Incoming Requests,UserRP Http
@@ -1098,8 +1103,9 @@ items:
               Events,Big Data Pool Task Events
           - name: Microsoft.Synapse/workspaces/kustoPools
             href: supported-logs/microsoft-synapse-workspaces-kustopools-logs.md
-            displayName: Command,Failed ingestion,Ingestion batching,Journal,Query,Succeeded
-              ingestion,Table details,Table usage statistics
+            displayName: Command,Data operation,Failed ingestion,Ingestion
+              batching,Journal,Query,Succeeded ingestion,Table details,Table
+              usage statistics
           - name: Microsoft.Synapse/workspaces/scopePools
             href: supported-logs/microsoft-synapse-workspaces-scopepools-logs.md
             displayName: Scope Pool Scope Jobs Ended,Scope Pool Scope Jobs State Change
