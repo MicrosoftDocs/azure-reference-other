@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 09/02/2024
 ms.author: orens
 author: osalzberg
 ms.custom: Microsoft.Network/networkSecurityPerimeters, naam
@@ -13,7 +13,7 @@ ms.custom: Microsoft.Network/networkSecurityPerimeters, naam
   
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
-|`NspCrossPerimeterInboundAllowed` |Cross perimeter inbound access allowed by perimeter link. ||No|No||Yes |
+|`NspCrossPerimeterInboundAllowed` |Cross perimeter inbound access allowed by perimeter link. |[NSPAccessLogs](/azure/azure-monitor/reference/tables/nspaccesslogs)<p>Logs of Network Security Perimeter (NSP) inbound access allowed based on NSP access rules.|No|No||Yes |
 |`NspCrossPerimeterOutboundAllowed` |Cross perimeter outbound access allowed by perimeter link. ||No|No||Yes |
 |`NspIntraPerimeterInboundAllowed` |Inbound access allowed within same perimeter. |[NSPAccessLogs](/azure/azure-monitor/reference/tables/nspaccesslogs)<p>Logs of Network Security Perimeter (NSP) inbound access allowed based on NSP access rules.|No|No||Yes |
 |`NspOutboundAttempt` |Outbound attempted to same or different perimeter. |[NSPAccessLogs](/azure/azure-monitor/reference/tables/nspaccesslogs)<p>Logs of Network Security Perimeter (NSP) inbound access allowed based on NSP access rules.|No|No||Yes |

@@ -3,7 +3,7 @@ ms.service: azure-monitor
 ms.topic: include
 author: EdB-MSFT
 ms.author: edbaynash
-ms.date: 08/08/2024
+ms.date: 09/02/2024
 ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
 
 # NOTE:  This content is automatically generated using API calls to Azure. Any edits made on these files will be overwritten in the next run of the script. 
@@ -94,7 +94,6 @@ ms.custom: Microsoft.DocumentDB/DatabaseAccounts, naam
 |Requests|**Sql Database Deleted**<br><br>Sql Database Deleted |`SqlDatabaseDelete` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `OperationType`|PT5M |No|
 |Requests|**Sql Database Throughput Updated**<br><br>Sql Database Throughput Updated |`SqlDatabaseThroughputUpdate` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`|PT5M |No|
 |Requests|**Sql Database Updated**<br><br>Sql Database Updated |`SqlDatabaseUpdate` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`, `OperationType`|PT5M |No|
-|SLI|**Success Rate (Preview)**<br><br>Percentage of successful requests processed |`SuccessRatePreview` |Percent |Average |`LocationId`|PT1M |No|
 |Requests|**AzureTable Table Created**<br><br>AzureTable Table Created |`TableTableCreate` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`, `OperationType`|PT5M |No|
 |Requests|**AzureTable Table Deleted**<br><br>AzureTable Table Deleted |`TableTableDelete` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `OperationType`|PT5M |No|
 |Requests|**AzureTable Table Throughput Updated**<br><br>AzureTable Table Throughput Updated |`TableTableThroughputUpdate` |Count |Count |`ResourceName`, `ApiKind`, `ApiKindResourceType`, `IsThroughputRequest`|PT5M |No|

@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 09/02/2024
 ms.author: orens
 author: osalzberg
 ms.custom: ACSCallSummary
@@ -16,6 +16,7 @@ ms.custom: ACSCallSummary
 | CallType | string | Type of the call, for example P2P (peer to peer). |
 | Category | string | The log category of the event. Logs with the same log category and resource type will have the same properties fields. |
 | CorrelationId | string | The ID for correlated events. Can be used to identify correlated events between multiple tables. |
+| DiagnosticOptions | string | JSON containing the DiagnosticOptions provided during client initialization containing appName, appVersion and tags. |
 | EndpointId | string | The ID of the endpoint. |
 | EndpointType | string | Type of the endpoint, for example VoIP (voice over IP). |
 | Identifier | string | The indentifier of the call used to correlate. Can be used to identify correlated events between multiple tables. |
