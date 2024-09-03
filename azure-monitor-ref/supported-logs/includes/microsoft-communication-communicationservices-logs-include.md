@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/12/2024
+ms.date: 09/02/2024
 ms.author: orens
 author: osalzberg
 ms.custom: Microsoft.Communication/CommunicationServices, naam
@@ -13,7 +13,7 @@ ms.custom: Microsoft.Communication/CommunicationServices, naam
   
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
-|`AdvancedMessagingOperational` |Advanced Messaging Logs |[ACSAdvancedMessagingOperations](/azure/azure-monitor/reference/tables/acsadvancedmessagingoperations)<p>Communication Services logs of incoming requests to Advanced Messaging operations.|Yes|No|[Queries](/azure/azure-monitor/reference/queries/acsadvancedmessagingoperations)|Yes |
+|`AdvancedMessagingOperational` |Advanced Messaging Logs ||No|No||Yes |
 |`AuthOperational` |Operational Authentication Logs |[ACSAuthIncomingOperations](/azure/azure-monitor/reference/tables/acsauthincomingoperations)<p>Communication Services logs of incoming requests to auth operations.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/acsauthincomingoperations)|Yes |
 |`CallAutomationMediaSummary` |Call Automation Events Summary Logs |[ACSCallAutomationMediaSummary](/azure/azure-monitor/reference/tables/acscallautomationmediasummary)<p>Communication Services summary logs of Call Automation Media operations. Every entry corresponds to the result of a call to the Call Automation Media APIs. (e.g. Play, Recognize).|Yes|No|[Queries](/azure/azure-monitor/reference/queries/acscallautomationmediasummary)|Yes |
 |`CallAutomationOperational` |Operational Call Automation Logs |[ACSCallAutomationIncomingOperations](/azure/azure-monitor/reference/tables/acscallautomationincomingoperations)<p>Communication Services logs of incoming requests to Call Automation operations. Every entry corresponds to the result of a call to the Call Automation APIs, e.g. CreateCall, AnswerCall, Play, Recognize, etc.|Yes|No|[Queries](/azure/azure-monitor/reference/queries/acscallautomationincomingoperations)|Yes |
@@ -29,7 +29,7 @@ ms.custom: Microsoft.Communication/CommunicationServices, naam
 |`EmailSendMailOperational` |Email Service Send Mail Logs |[ACSEmailSendMailOperational](/azure/azure-monitor/reference/tables/acsemailsendmailoperational)<p>Email Communication Services logs for send operations.|No|No|[Queries](/azure/azure-monitor/reference/queries/acsemailsendmailoperational)|Yes |
 |`EmailStatusUpdateOperational` |Email Service Delivery Status Update Logs |[ACSEmailStatusUpdateOperational](/azure/azure-monitor/reference/tables/acsemailstatusupdateoperational)<p>Email Communication Services logs for message and recipient depllivery status update operations.|No|No|[Queries](/azure/azure-monitor/reference/queries/acsemailstatusupdateoperational)|Yes |
 |`EmailUserEngagementOperational` |Email Service User Engagement Logs |[ACSEmailUserEngagementOperational](/azure/azure-monitor/reference/tables/acsemailuserengagementoperational)<p>Email Communication Services logs for message and recipient depllivery status update operations.|No|No||Yes |
-|`JobRouterOperational` |Operational Job Router Logs |[ACSJobRouterIncomingOperations](/azure/azure-monitor/reference/tables/acsjobrouterincomingoperations)<p>Communication Services logs of incoming requests to Job Router operations.|Yes|No|[Queries](/azure/azure-monitor/reference/queries/acsjobrouterincomingoperations)|Yes |
+|`JobRouterOperational` |Operational Job Router Logs ||No|No||Yes |
 |`RoomsOperational` |Operational Rooms Logs |[ACSRoomsIncomingOperations](/azure/azure-monitor/reference/tables/acsroomsincomingoperations)<p>Communication Services logs of incoming requests to rooms operations, with summaries of room object, lifespan, participants and roles count etc.|Yes|No|[Queries](/azure/azure-monitor/reference/queries/acsroomsincomingoperations)|Yes |
 |`SMSOperational` |Operational SMS Logs |[ACSSMSIncomingOperations](/azure/azure-monitor/reference/tables/acssmsincomingoperations)<p>Communication Services logs of incoming requests to SMS operations.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/acssmsincomingoperations)|No |
 |`Usage` |Usage Records |[ACSBillingUsage](/azure/azure-monitor/reference/tables/acsbillingusage)<p>Usage records across all modes of Communication Services.|No|Yes|[Queries](/azure/azure-monitor/reference/queries/acsbillingusage)|No |

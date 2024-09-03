@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: orens
 author: osalzberg
-ms.date: 08/26/2024
+ms.date: 09/02/2024
 ---
 
 # MDCDetectionFimEvents
@@ -21,7 +21,7 @@ Events from this table are collected by the detection team in MDC.
 |**Resource types**|-|
 |**Categories**|Security|
 |**Solutions**| LogManagement|
-|**Basic log**|No|
+|**Basic log**|Yes|
 |**Ingestion-time transformation**|No|
 |**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/mdcdetectionfimevents)|
 

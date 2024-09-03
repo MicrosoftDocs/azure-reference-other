@@ -797,8 +797,9 @@ items:
               Controller Manager,Kubernetes Scheduler
           - name: Microsoft.Kusto/clusters
             href: supported-logs/microsoft-kusto-clusters-logs.md
-            displayName: Command,Failed ingestion,Ingestion batching,Journal,Query,Succeeded
-              ingestion,Table details,Table usage statistics
+            displayName: Command,Data operation,Failed ingestion,Ingestion
+              batching,Journal,Query,Succeeded ingestion,Table details,Table
+              usage statistics
           - name: microsoft.loadtestservice/loadtests
             href: supported-logs/microsoft-loadtestservice-loadtests-logs.md
             displayName: Azure Load Testing Operations
@@ -988,6 +989,10 @@ items:
           - name: Microsoft.PowerBIDedicated/capacities
             href: supported-logs/microsoft-powerbidedicated-capacities-logs.md
             displayName: Engine
+          - name: Microsoft.ProviderHub/providerMonitorSettings
+            href: supported-logs/microsoft-providerhub-providermonitorsettings-logs.md
+            displayName: Provisioning Operations,UserRP Http Incoming Requests,UserRP Http
+              Outgoing Requests
           - name: Microsoft.ProviderHub/providerRegistrations
             href: supported-logs/microsoft-providerhub-providerregistrations-logs.md
             displayName: Provisioning Operations,UserRP Http Incoming Requests,UserRP Http
@@ -1098,8 +1103,9 @@ items:
               Events,Big Data Pool Task Events
           - name: Microsoft.Synapse/workspaces/kustoPools
             href: supported-logs/microsoft-synapse-workspaces-kustopools-logs.md
-            displayName: Command,Failed ingestion,Ingestion batching,Journal,Query,Succeeded
-              ingestion,Table details,Table usage statistics
+            displayName: Command,Data operation,Failed ingestion,Ingestion
+              batching,Journal,Query,Succeeded ingestion,Table details,Table
+              usage statistics
           - name: Microsoft.Synapse/workspaces/scopePools
             href: supported-logs/microsoft-synapse-workspaces-scopepools-logs.md
             displayName: Scope Pool Scope Jobs Ended,Scope Pool Scope Jobs State Change
@@ -1492,6 +1498,8 @@ items:
             href: tables/acicollaborationaudit.md
           - name: ACRConnectedClientList
             href: tables/acrconnectedclientlist.md
+          - name: ACREntraAuthenticationAuditLog
+            href: tables/acrentraauthenticationauditlog.md
           - name: ACSAdvancedMessagingOperations
             href: tables/acsadvancedmessagingoperations.md
           - name: ACSAuthIncomingOperations
@@ -2168,6 +2176,8 @@ items:
             href: tables/dynamicsummary.md
           - name: Dynamics365Activity
             href: tables/dynamics365activity.md
+          - name: EGNFailedHttpDataPlaneOperations
+            href: tables/egnfailedhttpdataplaneoperations.md
           - name: EGNFailedMqttConnections
             href: tables/egnfailedmqttconnections.md
           - name: EGNFailedMqttPublishedMessages
@@ -2176,6 +2186,8 @@ items:
             href: tables/egnfailedmqttsubscriptions.md
           - name: EGNMqttDisconnections
             href: tables/egnmqttdisconnections.md
+          - name: EGNSuccessfulHttpDataPlaneOperations
+            href: tables/egnsuccessfulhttpdataplaneoperations.md
           - name: EGNSuccessfulMqttConnections
             href: tables/egnsuccessfulmqttconnections.md
           - name: ETWEvent
@@ -2832,6 +2844,8 @@ items:
             href: queries/ACICollaborationAudit.md
           - name: ACRConnectedClientList
             href: queries/ACRConnectedClientList.md
+          - name: ACREntraAuthenticationAuditLog
+            href: queries/ACREntraAuthenticationAuditLog.md
           - name: ACSAdvancedMessagingOperations
             href: queries/ACSAdvancedMessagingOperations.md
           - name: ACSAuthIncomingOperations
@@ -3144,10 +3158,14 @@ items:
             href: queries/DeviceTvmSoftwareVulnerabilities.md
           - name: DnsEvents
             href: queries/DnsEvents.md
+          - name: EGNFailedHttpDataPlaneOperations
+            href: queries/EGNFailedHttpDataPlaneOperations.md
           - name: EGNFailedMqttConnections
             href: queries/EGNFailedMqttConnections.md
           - name: EGNMqttDisconnections
             href: queries/EGNMqttDisconnections.md
+          - name: EGNSuccessfulHttpDataPlaneOperations
+            href: queries/EGNSuccessfulHttpDataPlaneOperations.md
           - name: EGNSuccessfulMqttConnections
             href: queries/EGNSuccessfulMqttConnections.md
           - name: EmailAttachmentInfo

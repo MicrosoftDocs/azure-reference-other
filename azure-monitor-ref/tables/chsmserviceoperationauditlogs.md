@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: orens
 author: osalzberg
-ms.date: 08/26/2024
+ms.date: 09/02/2024
 ---
 
 # CHSMServiceOperationAuditLogs
@@ -21,7 +21,7 @@ This table contains HSM Commands send to your Azure Cloud HSM resource's HSM par
 |**Resource types**|microsoft.hardwaresecuritymodules/cloudhsmclusters|
 |**Categories**|Azure Resources, Audit|
 |**Solutions**| LogManagement|
-|**Basic log**|No|
+|**Basic log**|Yes|
 |**Ingestion-time transformation**|No|
 |**Sample Queries**|[Yes](/azure/azure-monitor/reference/queries/chsmserviceoperationauditlogs)|
 

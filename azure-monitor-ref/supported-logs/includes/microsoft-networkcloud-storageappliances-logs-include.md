@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 09/02/2024
 ms.author: orens
 author: osalzberg
 ms.custom: Microsoft.NetworkCloud/storageAppliances, naam
@@ -14,5 +14,5 @@ ms.custom: Microsoft.NetworkCloud/storageAppliances, naam
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
 |`StorageApplianceAlert` |Storage Appliance alerts ||No|No||Yes |
-|`StorageApplianceAudit` |Storage Appliance audits |[NCSStorageLogs](/azure/azure-monitor/reference/tables/ncsstoragelogs)<p>All Logs from Nexus storage appliance other than audit & alert logs.|Yes|No||Yes |
-|`StorageApplianceLogs` |Storage Appliance logs |[NCSStorageLogs](/azure/azure-monitor/reference/tables/ncsstoragelogs)<p>All Logs from Nexus storage appliance other than audit & alert logs.|Yes|No||Yes |
+|`StorageApplianceAudit` |Storage Appliance audits ||No|No||Yes |
+|`StorageApplianceLogs` |Storage Appliance logs ||No|No||Yes |
