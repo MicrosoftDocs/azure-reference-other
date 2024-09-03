@@ -4,7 +4,7 @@ description: Field definitions for Azure Monitor resource log / log analytics ta
 author: EdB-MSFT
 ms.topic: reference
 ms.service: azure-monitor
-ms.date: 08/26/2024
+ms.date: 09/02/2024
 ms.author: edbaynash
 ms.reviewer: lualderm
 
@@ -218,6 +218,7 @@ Microsoft.Blockchain/blockchainMembers
 microsoft.cache/redis  
 
 - [ACRConnectedClientList](acrconnectedclientlist.md)
+- [ACREntraAuthenticationAuditLog](acrentraauthenticationauditlog.md)
 - [AzureActivity](azureactivity.md)
 - [AzureMetrics](azuremetrics.md)
 
@@ -814,6 +815,8 @@ Microsoft.EventGrid/namespaces
 - [EGNMqttDisconnections](egnmqttdisconnections.md)
 - [EGNFailedMqttPublishedMessages](egnfailedmqttpublishedmessages.md)
 - [EGNFailedMqttSubscriptions](egnfailedmqttsubscriptions.md)
+- [EGNSuccessfulHttpDataPlaneOperations](egnsuccessfulhttpdataplaneoperations.md)
+- [EGNFailedHttpDataPlaneOperations](egnfailedhttpdataplaneoperations.md)
 - [AzureDiagnostics](azurediagnostics.md)
 
 ### Event Grid Partner Namespaces  

@@ -6,7 +6,7 @@ ms.service: azure-monitor
 ms.subservice: logs
 ms.author: edbaynash
 author: EdB-MSFT
-ms.date: 08/26/2024
+ms.date: 09/02/2024
 ---
 
 # Azure Monitor Log Analytics log tables organized by category
@@ -44,6 +44,7 @@ ms.date: 08/26/2024
 - [AADUserRiskEvents](aaduserriskevents.md)
 - [ACICollaborationAudit](acicollaborationaudit.md)
 - [ACRConnectedClientList](acrconnectedclientlist.md)
+- [ACREntraAuthenticationAuditLog](acrentraauthenticationauditlog.md)
 - [ADFSSignInLogs](adfssigninlogs.md)
 - [ADPAudit](adpaudit.md)
 - [AEWAssignmentBlobLogs](aewassignmentbloblogs.md)
@@ -185,6 +186,7 @@ ms.date: 08/26/2024
 - [ABSBotRequests](absbotrequests.md)
 - [ACICollaborationAudit](acicollaborationaudit.md)
 - [ACRConnectedClientList](acrconnectedclientlist.md)
+- [ACREntraAuthenticationAuditLog](acrentraauthenticationauditlog.md)
 - [ACSAdvancedMessagingOperations](acsadvancedmessagingoperations.md)
 - [ACSAuthIncomingOperations](acsauthincomingoperations.md)
 - [ACSBillingUsage](acsbillingusage.md)
@@ -387,10 +389,12 @@ ms.date: 08/26/2024
 - [DevCenterBillingEventLogs](devcenterbillingeventlogs.md)
 - [DevCenterDiagnosticLogs](devcenterdiagnosticlogs.md)
 - [DevCenterResourceOperationLogs](devcenterresourceoperationlogs.md)
+- [EGNFailedHttpDataPlaneOperations](egnfailedhttpdataplaneoperations.md)
 - [EGNFailedMqttConnections](egnfailedmqttconnections.md)
 - [EGNFailedMqttPublishedMessages](egnfailedmqttpublishedmessages.md)
 - [EGNFailedMqttSubscriptions](egnfailedmqttsubscriptions.md)
 - [EGNMqttDisconnections](egnmqttdisconnections.md)
+- [EGNSuccessfulHttpDataPlaneOperations](egnsuccessfulhttpdataplaneoperations.md)
 - [EGNSuccessfulMqttConnections](egnsuccessfulmqttconnections.md)
 - [FailedIngestion](failedingestion.md)
 - [FunctionAppLogs](functionapplogs.md)

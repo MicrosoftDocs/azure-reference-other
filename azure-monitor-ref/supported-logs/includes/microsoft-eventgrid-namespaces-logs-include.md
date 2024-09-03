@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 07/30/2024
+ms.date: 09/02/2024
 ms.author: orens
 author: osalzberg
 ms.custom: Microsoft.EventGrid/namespaces, naam
@@ -18,5 +18,5 @@ ms.custom: Microsoft.EventGrid/namespaces, naam
 |`FailedMqttPublishedMessages` |Failed MQTT Published Messages |[EGNFailedMqttPublishedMessages](/azure/azure-monitor/reference/tables/egnfailedmqttpublishedmessages)<p>Log for failed MQTT published messages to an Event Grid namespace.|No|No||Yes |
 |`FailedMqttSubscriptionOperations` |Failed MQTT Subscription Operations ||No|No||Yes |
 |`MqttDisconnections` |MQTT Disconnections |[EGNMqttDisconnections](/azure/azure-monitor/reference/tables/egnmqttdisconnections)<p>Log for disconnected MQTT connections from an Event Grid namespace.|No|No|[Queries](/azure/azure-monitor/reference/queries/egnmqttdisconnections)|Yes |
-|`SuccessfulHttpDataPlaneOperations` |Successful HTTP data plane operations logs ||No|No||Yes |
+|`SuccessfulHttpDataPlaneOperations` |Successful HTTP data plane operations logs |[EGNSuccessfulHttpDataPlaneOperations](/azure/azure-monitor/reference/tables/egnsuccessfulhttpdataplaneoperations)<p>Log for successful HTTP data plane requests to an Event Grid namespace. It can be used for auditing purposes.|No|No|[Queries](/azure/azure-monitor/reference/queries/egnsuccessfulhttpdataplaneoperations)|Yes |
 |`SuccessfulMqttConnections` |Successful MQTT Connections |[EGNSuccessfulMqttConnections](/azure/azure-monitor/reference/tables/egnsuccessfulmqttconnections)<p>Log for successful MQTT connections to an Event Grid namesapce. This log can be used for auditing purposes.|No|No|[Queries](/azure/azure-monitor/reference/queries/egnsuccessfulmqttconnections)|Yes |

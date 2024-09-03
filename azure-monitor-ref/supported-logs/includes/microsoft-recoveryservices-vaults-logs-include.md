@@ -1,7 +1,7 @@
 ---
 ms.service: azure-monitor
 ms.topic: include
-ms.date: 08/12/2024
+ms.date: 09/02/2024
 ms.author: orens
 author: osalzberg
 ms.custom: Microsoft.RecoveryServices/Vaults, naam
@@ -14,10 +14,10 @@ ms.custom: Microsoft.RecoveryServices/Vaults, naam
 |Category|Category display name| Log table| [Supports basic log plan](/azure/azure-monitor/logs/basic-logs-configure?tabs=portal-1#compare-the-basic-and-analytics-log-data-plans)|[Supports ingestion-time transformation](/azure/azure-monitor/essentials/data-collection-transformations)| Example queries |Costs to export|
 |---|---|---|---|---|---|---|
 |`AddonAzureBackupAlerts` |Addon Azure Backup Alert Data |[AddonAzureBackupAlerts](/azure/azure-monitor/reference/tables/addonazurebackupalerts)|No|Yes||No |
-|`AddonAzureBackupJobs` |Addon Azure Backup Job Data |[AddonAzureBackupJobs](/azure/azure-monitor/reference/tables/addonazurebackupjobs)|No|Yes||No |
+|`AddonAzureBackupJobs` |Addon Azure Backup Job Data |[AddonAzureBackupJobs](/azure/azure-monitor/reference/tables/addonazurebackupjobs)|No|Yes|[Queries](/azure/azure-monitor/reference/queries/addonazurebackupjobs)|No |
 |`AddonAzureBackupPolicy` |Addon Azure Backup Policy Data |[AddonAzureBackupPolicy](/azure/azure-monitor/reference/tables/addonazurebackuppolicy)|No|Yes||No |
 |`AddonAzureBackupProtectedInstance` |Addon Azure Backup Protected Instance Data |[AddonAzureBackupProtectedInstance](/azure/azure-monitor/reference/tables/addonazurebackupprotectedinstance)|No|Yes||No |
-|`AddonAzureBackupStorage` |Addon Azure Backup Storage Data |[AddonAzureBackupStorage](/azure/azure-monitor/reference/tables/addonazurebackupstorage)|No|Yes||No |
+|`AddonAzureBackupStorage` |Addon Azure Backup Storage Data |[AddonAzureBackupStorage](/azure/azure-monitor/reference/tables/addonazurebackupstorage)|No|Yes|[Queries](/azure/azure-monitor/reference/queries/addonazurebackupstorage)|No |
 |`ASRReplicatedItems` |Azure Site Recovery Replicated Items Details |[ASRReplicatedItems](/azure/azure-monitor/reference/tables/asrreplicateditems)<p>This table contains details of Azure Site Recovery (ASR) replicated items, such as associated vault, policy, replication health, failover readiness. etc. Data is pushed once a day to this table for all replicated items, to provide the latest information for each item.|No|No|[Queries](/azure/azure-monitor/reference/queries/asrreplicateditems)|Yes |
 |`AzureBackupOperations` |Azure Backup Operations |[AzureBackupOperations](/azure/azure-monitor/reference/tables/azurebackupoperations)<p>This table contains details of Azure Backup operations.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurebackupoperations)|Yes |
 |`AzureBackupReport` |Azure Backup Reporting Data |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftrecoveryservices)|No |
@@ -28,4 +28,4 @@ ms.custom: Microsoft.RecoveryServices/Vaults, naam
 |`AzureSiteRecoveryReplicatedItems` |Azure Site Recovery Replicated Items |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftrecoveryservices)|No |
 |`AzureSiteRecoveryReplicationDataUploadRate` |Azure Site Recovery Replication Data Upload Rate |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftrecoveryservices)|No |
 |`AzureSiteRecoveryReplicationStats` |Azure Site Recovery Replication Stats |[AzureDiagnostics](/azure/azure-monitor/reference/tables/azurediagnostics)<p>Logs from multiple Azure resources.|No|No|[Queries](/azure/azure-monitor/reference/queries/azurediagnostics#queries-for-microsoftrecoveryservices)|No |
-|`CoreAzureBackup` |Core Azure Backup Data |[CoreAzureBackup](/azure/azure-monitor/reference/tables/coreazurebackup)|No|Yes||No |
+|`CoreAzureBackup` |Core Azure Backup Data |[CoreAzureBackup](/azure/azure-monitor/reference/tables/coreazurebackup)|No|Yes|[Queries](/azure/azure-monitor/reference/queries/coreazurebackup)|No |
