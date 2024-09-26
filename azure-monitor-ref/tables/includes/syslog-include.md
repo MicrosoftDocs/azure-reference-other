@@ -18,6 +18,7 @@ ms.custom: Syslog
 | HostIP | string | IP address of the system sending the message. |
 | HostName | string | Name of the system sending the message. |
 | _IsBillable | string | Specifies whether ingesting the data is billable. When _IsBillable is `false` ingestion isn't billed to your Azure account |
+| MG | guid | ID of the management group for System Center Operations Manager agents. |
 | ProcessID | int | ID of the process that generated the message. |
 | ProcessName | string | Name of the process that generated the message. |
 | _ResourceId | string | A unique identifier for the resource that the record is associated with |
