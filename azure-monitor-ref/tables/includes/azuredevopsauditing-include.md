@@ -11,7 +11,7 @@ ms.custom: AzureDevOpsAuditing
 | Column | Type | Description |
 |---|---|---|
 | ActivityId | string | Unique identifier for the action that occurred. |
-| ActorClientId | string | When the action was performed by a managed identity or other service principal, this value represents the client ID of that principal. Otherwise, this value is 00000000-0000-0000-0000-000000000000. When this field is populated, ActorCUID and ActorUserId will both be 00000000-0000-0000-0000-000000000000. |
+| ActorClientId | string | When the action was performed by a managed identity or other service principal, this value represents the client ID of that principal. Otherwise, this value is 00001111-aaaa-2222-bbbb-3333cccc4444. When this field is populated, ActorCUID and ActorUserId will both be 00000000-0000-0000-0000-000000000000. |
 | ActorCUID | string | When the action was performed by a user, this value represents a consistently unique identifier for that actor. Otherwise, this value is 00000000-0000-0000-0000-000000000000. When this field, along with ActorUserId, is populated, ActorClientId will be 00000000-0000-0000-0000-000000000000. |
 | ActorDisplayName | string | Display name of the user who initiated the auditing event to be logged. |
 | ActorUPN | string | The actor's user principal name. |
