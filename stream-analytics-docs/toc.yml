@@ -1,5 +1,5 @@
 items:
-- name: Stream Analytics Query Language
+- name: Azure Stream Analytics & Fabric Eventstream Query Language
   href: stream-analytics-query-language-reference.md
   expanded: true
   items:
