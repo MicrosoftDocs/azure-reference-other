@@ -7,10 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-
-:white_check_mark: Azure Stream Analytics]
-
 # Array Functions (Stream Analytics)
+
+:white_check_mark: Azure Stream Analytics] :white_check_mark: [Fabric Eventstream]
 
 Array functions perform actions against arrays and return information in them.  
   
