@@ -9,7 +9,8 @@ ms.date: 08/02/2024
 ---
 
 # Analytic Functions
-  Stream Analytics Query Language provides the following analytic functions:  
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   
 |Analytic functions| ...| ...| 
 |-|-|-| 

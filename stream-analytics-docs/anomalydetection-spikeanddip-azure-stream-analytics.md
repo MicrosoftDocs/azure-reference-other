@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # AnomalyDetection_SpikeAndDip
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Detects temporary anomalies in a time series event. 
 

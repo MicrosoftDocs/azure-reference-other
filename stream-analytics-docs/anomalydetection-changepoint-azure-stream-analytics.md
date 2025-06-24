@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # AnomalyDetection_ChangePoint
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Detects persistent anomalies in a time series event stream. The underlying machine learning model uses the Exchangeability Martingales algorithm.
 
