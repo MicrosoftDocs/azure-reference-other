@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
+:white_check_mark: Azure Stream Analytics]
+
 # Array Functions (Stream Analytics)
 
 Array functions perform actions against arrays and return information in them.  
