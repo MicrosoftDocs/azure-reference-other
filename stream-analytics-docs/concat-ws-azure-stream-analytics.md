@@ -1,5 +1,5 @@
 ---
-title: "CONCAT_WS (Azure Stream Analytics)"
+title: "CONCAT_WS"
 description: "Returns a string that is the result of concatenating two or more string values with a specified delimiter."
 applies_to:
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# CONCAT_WS (Azure Stream Analytics)
+# CONCAT_WS
 
 This function returns a string resulting from the concatenation, or joining, of two or more string values in an end-to-end manner. It separates those concatenated string values with the delimiter specified in the first function argument. `CONCAT_WS` indicates concatenate with separator.
 
@@ -57,5 +57,5 @@ FROM Input
 
 ## See Also
 
-- [CONCAT (Azure Stream Analytics)](concat-azure-stream-analytics.md)
-- [Substring (Azure Stream Analytics)](substring-azure-stream-analytics.md)
+- [CONCAT](concat-azure-stream-analytics.md)
+- [Substring](substring-azure-stream-analytics.md)

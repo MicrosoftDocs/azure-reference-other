@@ -1,5 +1,5 @@
 ---
-title: "Collect (Azure Stream Analytics)"
+title: "Collect"
 description: "Returns an array with all record values from the window. "
 applies_to: 
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# Collect (Azure Stream Analytics)
+# Collect
 Returns an array with all record values from the window.
 
  

@@ -1,5 +1,5 @@
 ---
-title: "CHARINDEX (Azure Stream Analytics)"
+title: "CHARINDEX"
 description: "Searches an expression for another expression and returns its starting position if found.  "
 applies_to: 
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# CHARINDEX (Azure Stream Analytics)
+# CHARINDEX
   Searches an expression for another expression and returns its starting position if found.  
   
  ## Syntax  

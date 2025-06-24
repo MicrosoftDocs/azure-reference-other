@@ -1,5 +1,5 @@
 ---
-title: Windowing (Azure Stream Analytics)
+title: Windowing
 description: This topic describes windowing functions. Includes the types of windows that are supported, and explains how you can use windows with various operators.
 applies_to:
   - "Azure"
@@ -7,7 +7,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# Windowing functions (Azure Stream Analytics)
+# Windowing functions
 
 In applications that process real-time events, it is common to perform some set-based computation (aggregation) or other operations over subsets of events that fall within some period of time. Because the concept of time is a fundamental necessity to complex event-processing systems, it’s important to have a simple way to work with the time component of query logic in the system. In Azure Stream Analytics, these subsets of events are defined through windows to represent groupings by time. This article describes windows and how they are defined, identifies the types of windows that are supported, and explains how you can use windows with various operators.
 
@@ -35,7 +35,7 @@ There are five types of windows:
 
 4. [Session Window &#40;Azure Stream Analytics&#41;](session-window-azure-stream-analytics.md)
 
-5. [Snapshot Window (Azure Stream Analytics)](snapshot-window-azure-stream-analytics.md)
+5. [Snapshot Window](snapshot-window-azure-stream-analytics.md)
 
  The maximum size of the window in all cases is 7 days.
 

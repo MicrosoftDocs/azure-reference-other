@@ -1,5 +1,5 @@
 ---
-title: "POWER (Azure Stream Analytics)"
+title: "POWER"
 description: "A mathematical function that returns the value of the specified expression to the specified power. "
 applies_to: 
   - "Azure"
@@ -7,7 +7,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# POWER (Azure Stream Analytics)
+# POWER
   A mathematical function that returns the value of the specified expression to the specified power.  
   
  ## Syntax  

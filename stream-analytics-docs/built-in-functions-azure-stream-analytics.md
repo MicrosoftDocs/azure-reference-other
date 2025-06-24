@@ -1,5 +1,5 @@
 ---
-title: "Built-in Functions (Azure Stream Analytics)"
+title: "Built-in Functions"
 description: "Lists the built-in functions supported by Stream Analytics Query Language"
 applies_to:
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# Built-in Functions (Azure Stream Analytics)
+# Built-in Functions
 
 Azure Stream Analytics provides some built-in functions. The categories of built-in functions are:
 

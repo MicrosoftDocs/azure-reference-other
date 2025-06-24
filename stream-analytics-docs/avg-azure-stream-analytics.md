@@ -1,5 +1,5 @@
 ---
-title: "AVG (Azure Stream Analytics)"
+title: "AVG"
 description: "Returns the average of the values in a group. Null values are ignored."
 applies_to: 
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# AVG (Azure Stream Analytics)
+# AVG
   Returns the average of the values in a group. Null values are ignored.  
   
  ## Syntax  

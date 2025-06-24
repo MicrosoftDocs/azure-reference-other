@@ -1,5 +1,5 @@
 ---
-title: MATCH_RECOGNIZE (Azure Stream Analytics)
+title: MATCH_RECOGNIZE
 description: Search for a set of events over a data stream in Stream Analytics Query Language.
 applies_to: 
   - "Azure"

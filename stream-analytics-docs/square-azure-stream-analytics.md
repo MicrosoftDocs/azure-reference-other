@@ -1,5 +1,5 @@
 ---
-title: "SQUARE (Azure Stream Analytics)"
+title: "SQUARE"
 description: "A mathematical function that returns the square of the specified float value. "
 applies_to: 
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# SQUARE (Azure Stream Analytics)
+# SQUARE
   A mathematical function that returns the square of the specified float value.  
   
  ## Syntax  

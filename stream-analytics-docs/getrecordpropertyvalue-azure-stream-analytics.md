@@ -1,5 +1,5 @@
 ---
-title: "GetRecordPropertyValue (Azure Stream Analytics)"
+title: "GetRecordPropertyValue"
 description: "Returns the record value associated with the specified property. "
 applies_to: 
   - "Azure"
@@ -7,7 +7,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# GetRecordPropertyValue (Azure Stream Analytics)
+# GetRecordPropertyValue
   Returns the record value associated with the specified property.  
   
  ## Syntax  

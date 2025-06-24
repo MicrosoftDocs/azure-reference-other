@@ -1,11 +1,11 @@
 ---
-title: "REPLACE (Azure Stream Analytics)"
+title: "REPLACE"
 description: Replaces all occurrences of a specified string value with another string value.
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# REPLACE (Azure Stream Analytics)
+# REPLACE
 
 Replaces all occurrences of a specified string value with another string value.
 
@@ -54,4 +54,4 @@ SELECT REPLACE(value, pattern, replacement) AS result FROM input
 
 ## See Also
 
-- [TRANSLATE (Azure Stream Analytics)](translate-azure-stream-analytics.md)
+- [TRANSLATE](translate-azure-stream-analytics.md)

@@ -1,5 +1,5 @@
 ---
-title: "MIN (Azure Stream Analytics)"
+title: "MIN"
 description: "Returns the minimum value in the expression."
 applies_to:
   - "Azure"
@@ -7,7 +7,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# MIN (Azure Stream Analytics)
+# MIN
 
 Returns the minimum value in the expression.
 

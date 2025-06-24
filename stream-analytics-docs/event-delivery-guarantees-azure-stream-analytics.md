@@ -1,5 +1,5 @@
 ---
-title: "Event Delivery Guarantees (Azure Stream Analytics)"
+title: "Event Delivery Guarantees"
 description: "Describes the event delivery mechanisms supported in Azure Stream Analytics."
 applies_to: 
   - "Azure"
@@ -7,7 +7,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# Event Delivery Guarantees (Azure Stream Analytics)
+# Event Delivery Guarantees
 
 Azure Stream Analytics query language extends the SQL syntax to enable complex computations over streams of events. With Stream Analytics there are some concepts related to Event Delivery worth discussing:
   

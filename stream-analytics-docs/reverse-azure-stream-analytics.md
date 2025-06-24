@@ -1,5 +1,5 @@
 ---
-title: "REVERSE (Azure Stream Analytics)"
+title: "REVERSE"
 description: "Returns the reverse order of a string value."
 applies_to:
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# REVERSE (Azure Stream Analytics)
+# REVERSE
 
 Returns the reverse order of a string value.
 

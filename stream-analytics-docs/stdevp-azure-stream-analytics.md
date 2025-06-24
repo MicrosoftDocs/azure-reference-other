@@ -1,5 +1,5 @@
 ---
-title: "STDEVP (Azure Stream Analytics)"
+title: "STDEVP"
 description: "Returns the statistical standard deviation for the population for all values in a group. Null values are ignored."
 applies_to: 
   - "Azure"
@@ -7,7 +7,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# STDEVP (Azure Stream Analytics)
+# STDEVP
   Returns the statistical standard deviation for the population for all values in a group. Null values are ignored.  
   
  ## Syntax  

@@ -1,5 +1,5 @@
 ---
-title: "STDEV (Azure Stream Analytics)"
+title: "STDEV"
 description: "Returns the statistical standard deviation of all values in a group. Null values are ignored. "
 applies_to: 
   - "Azure"
@@ -7,7 +7,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# STDEV (Azure Stream Analytics)
+# STDEV
   Returns the statistical standard deviation of all values in a group. Null values are ignored.  
   
  ## Syntax  

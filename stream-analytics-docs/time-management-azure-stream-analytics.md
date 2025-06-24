@@ -1,5 +1,5 @@
 ---
-title: "Time Management (Azure Stream Analytics)"
+title: "Time Management"
 description: "Stream Analytics provides language constructs to deal with the temporal aspects of the data."
 applies_to: 
   - "Azure"
@@ -7,7 +7,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# Time Management (Azure Stream Analytics)
+# Time Management
   Azure Stream Analytics query language extends SQL syntax to enable complex computations over streams of events. Stream Analytics provides language constructs to deal with the temporal aspects of the data. For example, it is possible to assign custom timestamps to the stream events, specify time window for aggregations, specify allowed time difference between two streams of data for JOIN operation, etc.  
  
  All time handling operations in Azure Stream Analytics are in UTC.

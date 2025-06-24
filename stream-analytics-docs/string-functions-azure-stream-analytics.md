@@ -1,5 +1,5 @@
 ---
-title: "String Functions (Azure Stream Analytics)"
+title: "String Functions"
 description: "Lists the String functions supported by Azure Stream Analytics."
 applies_to:
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# String Functions (Azure Stream Analytics)
+# String Functions
 
 Stream Analytics Query Language provides the following string functions:
 

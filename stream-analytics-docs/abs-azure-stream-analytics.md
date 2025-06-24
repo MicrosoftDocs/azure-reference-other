@@ -1,5 +1,5 @@
 ---
-title: "ABS (Azure Stream Analytics)"
+title: "ABS"
 description: "A mathematical function that returns the absolute (positive) value of the specified numeric expression. "
 applies_to: 
   - "Azure"

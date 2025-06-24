@@ -1,5 +1,5 @@
 ---
-title: "GetArrayLength (Azure Stream Analytics)"
+title: "GetArrayLength"
 description: "Returns the length of the specified array.  "
 applies_to: 
   - "Azure"
@@ -7,7 +7,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# GetArrayLength (Azure Stream Analytics)
+# GetArrayLength
   Returns the length of the specified array.  
   
  ## Syntax  

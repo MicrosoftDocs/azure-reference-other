@@ -1,5 +1,5 @@
 ---
-title: "FROM (Azure Stream Analytics)"
+title: "FROM"
 description: "Specifies the input stream or a step name associated in a WITH clause. The FROM clause is always required for any SELECT statement."
 applies_to: 
   - "Azure"
@@ -7,7 +7,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# FROM (Azure Stream Analytics)
+# FROM
   Specifies the input stream or a step name associated in a WITH clause. The FROM clause is always required for any SELECT statement.  
   
  ## Syntax  

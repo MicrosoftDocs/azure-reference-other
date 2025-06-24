@@ -1,5 +1,5 @@
 ---
-title: "Bitwise operators (Azure Stream Analytics)"
+title: "Bitwise operators"
 description: "Lists the Bitwise Operators supported by Azure Stream Analytics."
 applies_to:
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# Bitwise Operators (Azure Stream Analytics)
+# Bitwise Operators
 
 Bitwise operators perform bit manipulations between two expressions of any of the data types of the integer data type category.
 

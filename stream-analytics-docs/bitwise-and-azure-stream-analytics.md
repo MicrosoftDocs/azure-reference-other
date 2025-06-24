@@ -1,5 +1,5 @@
 ---
-title: "& (Bitwise AND) (Azure Stream Analytics)"
+title: "& (Bitwise AND)"
 description: "Performs a bitwise logical AND operation between two integer values."
 applies_to:
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# & (Bitwise AND) (Azure Stream Analytics)
+# & (Bitwise AND)
 
 Performs a bitwise logical AND operation between two integer values, evaluating each corresponding bit from both expressions.
 

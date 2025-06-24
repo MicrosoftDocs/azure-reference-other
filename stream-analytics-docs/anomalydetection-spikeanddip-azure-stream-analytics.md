@@ -1,5 +1,5 @@
 ---
-title: "AnomalyDetection_SpikeAndDip (Azure Stream Analytics)"
+title: "AnomalyDetection_SpikeAndDip"
 description: "Describes the AnomalyDetection_SpikeAndDip function supported by the Stream Analytics Query Language."
 applies_to: 
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# AnomalyDetection_SpikeAndDip (Azure Stream Analytics)
+# AnomalyDetection_SpikeAndDip
 
 Detects temporary anomalies in a time series event. 
 

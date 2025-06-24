@@ -1,5 +1,5 @@
 ---
-title: "Data Types (Azure Stream Analytics)"
+title: "Data Types"
 description: "Lists the data types supported by Azure Stream Analytics."
 applies_to:
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# Data Types (Azure Stream Analytics)
+# Data Types
 
 In Azure Stream Analytics, each record has a related data type. A data type describes (and constrains) the set of values that a record of that type can hold or an expression of that type can produce.
 

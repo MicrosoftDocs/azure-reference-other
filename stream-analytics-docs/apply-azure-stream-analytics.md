@@ -1,5 +1,5 @@
 ---
-title: "APPLY (Azure Stream Analytics)"
+title: "APPLY"
 description: "The APPLY operator allows you to invoke a table-valued function for each row returned by an outer table expression of a query."
 applies_to: 
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# APPLY (Azure Stream Analytics)
+# APPLY
   The APPLY operator allows you to invoke a table-valued function for each row returned by an outer table expression of a query. The table-valued function acts as the right input and the outer table expression acts as the left input. The right input is evaluated for each row from the left input and the rows produced are combined for the final output. The list of columns produced by the APPLY operator is the set of columns in the left input followed by the list of columns returned by the right input.  
   
  There are two forms of APPLY: CROSS APPLY and OUTER APPLY. 

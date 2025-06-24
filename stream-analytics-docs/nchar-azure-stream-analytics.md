@@ -1,5 +1,5 @@
 ---
-title: "NCHAR (Azure Stream Analytics)"
+title: "NCHAR"
 description: "Returns the Unicode character with the specified integer code, as defined by the Unicode standard."
 applies_to:
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# NCHAR (Azure Stream Analytics)
+# NCHAR
 
 Returns the Unicode character with the specified integer code, as defined by the Unicode standard.
 

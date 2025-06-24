@@ -1,5 +1,5 @@
 ---
-title: ST_INTERSECTS (Azure Stream Analytics)
+title: ST_INTERSECTS
 description: Returns 1 if a geography intersects with another. If geographies do not intersect it will return 0. 
 applies_to: 
   - "Azure"
@@ -8,7 +8,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# ST_INTERSECTS (Azure Stream Analytics)
+# ST_INTERSECTS
   Returns 1 if a geography intersects with another. If geographies do not intersect it will return 0.  
   
  ## Syntax  

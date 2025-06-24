@@ -1,5 +1,5 @@
 ---
-title: "CASE (Azure Stream Analytics)"
+title: "CASE"
 description: "Evaluates a list of conditions and returns one of multiple possible result expressions."
 applies_to: 
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# CASE (Azure Stream Analytics)
+# CASE
 
   Evaluates a list of conditions and returns one of multiple possible result expressions.  
   

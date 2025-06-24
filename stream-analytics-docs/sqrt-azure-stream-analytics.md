@@ -1,5 +1,5 @@
 ---
-title: "SQRT (Azure Stream Analytics)"
+title: "SQRT"
 description: "A mathematical function that returns the square root of the specified float value."
 applies_to: 
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# SQRT (Azure Stream Analytics)
+# SQRT
   A mathematical function that returns the square root of the specified float value.  
   
  ## Syntax  

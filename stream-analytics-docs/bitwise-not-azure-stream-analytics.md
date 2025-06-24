@@ -1,5 +1,5 @@
 ---
-title: "~ (Bitwise NOT) (Azure Stream Analytics)"
+title: "~ (Bitwise NOT)"
 description: "Performs a bitwise logical NOT operation on an integer value."
 applies_to:
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# ~ (Bitwise NOT) (Azure Stream Analytics)
+# ~ (Bitwise NOT)
 
 Performs a bitwise logical NOT operation on an integer value.
 

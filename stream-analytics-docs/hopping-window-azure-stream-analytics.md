@@ -1,5 +1,5 @@
 ---
-title: "Hopping Window (Azure Stream Analytics)"
+title: "Hopping Window"
 description: "Describes the Hopping window concept in Azure Stream Analytics."
 applies_to: 
   - "Azure"
@@ -8,7 +8,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# Hopping Window (Azure Stream Analytics)
+# Hopping Window
   Unlike [tumbling windows](tumbling-window-azure-stream-analytics.md), hopping windows model scheduled overlapping windows. A hopping window specification consist of three parameters: the *timeunit*, the *windowsize* (how long each window lasts) and the *hopsize* (by how much each window moves forward relative to the previous one). Additionally, *offsetsize* may be used as an optional fourth parameter.  Note that a tumbling window is simply a hopping window whose ‘hop’ is equal to its ‘size’.  
   
  The following illustration shows a stream with a series of events. Each box represents a hopping window and the events that are counted as part of that window, assuming that the ‘hop’ is 5, and the ‘size’ is 10.  

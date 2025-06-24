@@ -1,5 +1,5 @@
 ---
-title: "STUFF (Azure Stream Analytics)"
+title: "STUFF"
 description: "Inserts a string into another string"
 applies_to:
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# STUFF (Azure Stream Analytics)
+# STUFF
 
 Inserts a string into another string. It deletes a specified length of characters in the first string at the start position and then inserts the second string into the first string at the start position.
 

@@ -1,5 +1,5 @@
 ---
-title: Snapshot Window (Azure Stream Analytics)
+title: Snapshot Window
 description: "Describes the Snapshot Window function supported by the Stream Analytics Query Language."
 applies_to:
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# Snapshot window (Azure Stream Analytics)
+# Snapshot window
 
 Snapshot windows groups events that have the same timestamp. Unlike other windowing types, which require a specific window function (such as [SessionWindow()](session-window-azure-stream-analytics.md), you can apply a snapshot window by adding System.Timestamp() to the GROUP BY clause.
 

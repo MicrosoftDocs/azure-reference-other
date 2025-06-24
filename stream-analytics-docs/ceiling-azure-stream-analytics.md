@@ -1,5 +1,5 @@
 ---
-title: "CEILING (Azure Stream Analytics)"
+title: "CEILING"
 description: "A mathematical function that returns the smallest integer greater than or equal to the specified numeric expression."
 applies_to: 
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# CEILING (Azure Stream Analytics)
+# CEILING
   A mathematical function that returns the smallest integer greater than or equal to the specified numeric expression.  
   
  ## Syntax  

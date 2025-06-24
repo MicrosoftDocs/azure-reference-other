@@ -1,5 +1,5 @@
 ---
-title: "REPLICATE (Azure Stream Analytics)"
+title: "REPLICATE"
 description: "Repeats a string value a specified number of times."
 applies_to:
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# REPLICATE (Azure Stream Analytics)
+# REPLICATE
 
 Repeats a string value a specified number of times.
 
@@ -53,5 +53,5 @@ WHERE LEN(ProductLine) = 1
 
 ## See Also
 
-- [LEN (Azure Stream Analytics)](len-azure-stream-analytics.md)
-- [CONCAT (Azure Stream Analytics)](concat-azure-stream-analytics.md)
+- [LEN](len-azure-stream-analytics.md)
+- [CONCAT](concat-azure-stream-analytics.md)

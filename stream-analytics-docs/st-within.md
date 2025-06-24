@@ -1,5 +1,5 @@
 ---
-title: ST_WITHIN (Azure Stream Analytics)
+title: ST_WITHIN
 description: Returns 1 if a geography is within another, if not it will return 0.
 applies_to: 
   - "Azure"
@@ -8,7 +8,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# ST_WITHIN (Azure Stream Analytics)
+# ST_WITHIN
   Returns 1 if a geography is within another, if not it will return 0.  
   
  ## Syntax  

@@ -1,5 +1,5 @@
 ---
-title: GetArrayElement (Azure Stream Analytics)
+title: GetArrayElement
 description: Returns the array element at the specified index. Useful for parsing arrays and nested objects in JSON and AVRO data.
 applies_to: 
   - "Azure"
@@ -9,7 +9,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# GetArrayElement (Azure Stream Analytics)
+# GetArrayElement
 Returns the array element at the specified index. This function is useful for parsing arrays and nested objects in JSON and AVRO formatted input event data. For more examples, see [Parsing JSON and AVRO data](/azure/stream-analytics/stream-analytics-parsing-json). If you need to return all nested elements in an array, use [GetArrayElements](getarrayelements-azure-stream-analytics.md) instead.
   
  ## Syntax  

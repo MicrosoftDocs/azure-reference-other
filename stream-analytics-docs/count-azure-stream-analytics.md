@@ -1,5 +1,5 @@
 ---
-title: "COUNT (Azure Stream Analytics)"
+title: "COUNT"
 description: "Returns the number of items in a group. COUNT always returns a bigint data type value."
 applies_to: 
   - "Azure"
@@ -7,7 +7,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# COUNT (Azure Stream Analytics)
+# COUNT
   Returns the number of items in a group. COUNT always returns a bigint data type value.  
   
  ## Syntax  

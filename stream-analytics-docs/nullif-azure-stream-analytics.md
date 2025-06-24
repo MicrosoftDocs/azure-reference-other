@@ -1,5 +1,5 @@
 ---
-title: "NULLIF (Azure Stream Analytics)"
+title: "NULLIF"
 description: "Returns a null value if the two specified expressions are equal."
 
 ms.service: azure-stream-analytics
@@ -8,7 +8,7 @@ ms.date: 08/02/2024
 
 ---
 
-# NULLIF (Azure Stream Analytics)
+# NULLIF
 
 Returns a null value if the two specified expressions are equal. For example, `SELECT NULLIF(4,4) AS Same, NULLIF(5,7) AS Different ...` returns `NULL` for the first column (4 and 4) because the two input values are the same. The second column returns the first value (5) because the two input values are different.
 
@@ -49,6 +49,6 @@ FROM input
 
 ## See Also
 
-- [COALESCE (Azure Stream Analytics)](coalesce-azure-stream-analytics.md)
-- [NULLIF (Azure Stream Analytics)](nullif-azure-stream-analytics.md)
-- [CASE (Azure Stream Analytics)](case-azure-stream-analytics.md)
+- [COALESCE](coalesce-azure-stream-analytics.md)
+- [NULLIF](nullif-azure-stream-analytics.md)
+- [CASE](case-azure-stream-analytics.md)

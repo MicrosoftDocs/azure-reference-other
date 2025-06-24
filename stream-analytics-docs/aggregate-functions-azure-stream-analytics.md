@@ -1,5 +1,5 @@
 ---
-title: "Aggregate Functions (Azure Stream Analytics)"
+title: "Aggregate Functions"
 description: "Aggregate functions perform a calculation on a set of values and return a single value. Except for the COUNT function, aggregate functions ignore null values."
 applies_to: 
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# Aggregate Functions (Azure Stream Analytics)
+# Aggregate Functions
 
 Aggregate functions perform a calculation on a set of values and return a single value. Except for the COUNT function, aggregate functions ignore null values. Aggregate functions are frequently used with the GROUP BY clause of the SELECT statement.  
   

@@ -1,5 +1,5 @@
 ---
-title: "| (Bitwise OR) (Azure Stream Analytics)"
+title: "| (Bitwise OR)"
 description: "Performs a bitwise logical OR operation between two integer values."
 applies_to:
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# | (Bitwise OR) (Azure Stream Analytics)
+# | (Bitwise OR)
 
 Performs a bitwise logical OR operation between two integer values, evaluating each corresponding bit from both expressions.
 

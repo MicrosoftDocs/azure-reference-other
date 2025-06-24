@@ -1,5 +1,5 @@
 ---
-title: "WITH (Azure Stream Analytics)"
+title: "WITH"
 description: "Specifies a temporary named result set which can be referenced by a FROM clause in the query."
 applies_to: 
   - "Azure"
@@ -7,7 +7,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# WITH (Azure Stream Analytics)
+# WITH
   Specifies a temporary named result set which can be referenced by a FROM clause in the query. This is defined within the execution scope of a single SELECT statement.  
   
 > [!NOTE]  

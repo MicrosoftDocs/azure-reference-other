@@ -1,11 +1,11 @@
 ---
-title: "ROUND (Azure Stream Analytics)"
+title: "ROUND"
 description: "Returns a numeric value, rounded to the specified length or precision."
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# ROUND (Azure Stream Analytics)
+# ROUND
 
 Returns a numeric value, rounded to the specified length or precision.
 

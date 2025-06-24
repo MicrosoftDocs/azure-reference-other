@@ -1,5 +1,5 @@
 ---
-title: "ISFIRST (Azure Stream Analytics)"
+title: "ISFIRST"
 description: "Returns 1 if the event is the first event within a given duration, or 0 otherwise."
 applies_to: 
   - "Azure"
@@ -7,7 +7,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# ISFIRST (Azure Stream Analytics)
+# ISFIRST
 
 Returns 1 if the event is the first event within a given fixed interval, or 0 otherwise. The intervals are aligned the same way as tumbling windows (see [Tumbling Window](tumbling-window-azure-stream-analytics.md)). ISFIRST is not affected by predicates in WHERE clause, join conditions in JOIN clause, or grouping expressions in GROUP BY clause of the current query.
 ).  

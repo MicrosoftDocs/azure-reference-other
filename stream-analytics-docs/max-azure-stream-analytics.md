@@ -1,5 +1,5 @@
 ---
-title: "MAX (Azure Stream Analytics)"
+title: "MAX"
 description: "Returns the maximum value in the expression.  "
 applies_to:
   - "Azure"
@@ -7,7 +7,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# MAX (Azure Stream Analytics)
+# MAX
 
 Returns the maximum value in the expression.
 

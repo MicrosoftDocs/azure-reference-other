@@ -1,5 +1,5 @@
 ---
-title: "OVER (Azure Stream Analytics)"
+title: "OVER"
 description: "Defines the grouping of rows before an associated aggregate or analytic function is applied."
 applies_to: 
   - "Azure"
@@ -7,7 +7,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# OVER (Azure Stream Analytics)
+# OVER
 For each row, the OVER clause determines the grouping of rows before an associated aggregate or analytic function is applied. 
   
 You can use the OVER clause anywhere a scalar function is allowed. For example, you can use the OVER clause in the SELECT, WHERE, JOIN or GROUP BY clauses.

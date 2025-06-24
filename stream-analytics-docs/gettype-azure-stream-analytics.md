@@ -1,5 +1,5 @@
 ---
-title: "GetType (Azure Stream Analytics)"
+title: "GetType"
 description: "Returns a data type name of the value.  "
 applies_to: 
   - "Azure"
@@ -7,7 +7,7 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# GetType (Azure Stream Analytics)
+# GetType
   Returns a data type name of the value.  
   
  ## Syntax  

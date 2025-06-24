@@ -1,5 +1,5 @@
 ---
-title: "RIGHT (Azure Stream Analytics)"
+title: "RIGHT"
 description: "Returns the right part of a character or a text."
 applies_to:
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# RIGHT (Azure Stream Analytics)
+# RIGHT
 
 Returns the right part (from the end) of a character string with the specified number of characters.
 
@@ -47,5 +47,5 @@ FROM Input
 
 ## See Also
 
-- [LEFT (Azure Stream Analytics)](left-azure-stream-analytics.md)
-- [SUBSTRING (Azure Stream Analytics)](substring-azure-stream-analytics.md)
+- [LEFT](left-azure-stream-analytics.md)
+- [SUBSTRING](substring-azure-stream-analytics.md)

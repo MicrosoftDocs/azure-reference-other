@@ -1,5 +1,5 @@
 ---
-title: CreatePoint (Azure Stream Analytics)
+title: CreatePoint
 description: Returns a GeoJSON Point record. The result of a CreatePoint can be used as input to other Geospatial functions.
 applies_to: 
   - "Azure"
@@ -9,7 +9,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# CreatePoint (Azure Stream Analytics)
+# CreatePoint
   Returns a GeoJSON Point record. The result of a CreatePoint can be used as input to other Geospatial functions.  
   
  ## Syntax  

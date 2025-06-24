@@ -1,5 +1,5 @@
 ---
-title: "Analytic Functions (Azure Stream Analytics)"
+title: "Analytic Functions"
 description: "Lists the analytic functions supported by Stream Analytics Query Language"
 applies_to: 
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# Analytic Functions (Azure Stream Analytics)
+# Analytic Functions
   Stream Analytics Query Language provides the following analytic functions:  
   
 |Analytic functions| ...| ...| 

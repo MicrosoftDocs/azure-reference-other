@@ -1,5 +1,5 @@
 ---
-title: "SUBSTRING (Azure Stream Analytics)"
+title: "SUBSTRING"
 description: "Returns part of a character or a text."
 applies_to:
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# SUBSTRING (Azure Stream Analytics)
+# SUBSTRING
 
 Returns part of a character or a text.
 
@@ -54,5 +54,5 @@ FROM Input
 
 ## See Also
 
-- [LEFT (Azure Stream Analytics)](left-azure-stream-analytics.md)
-- [RIGHT (Azure Stream Analytics)](right-azure-stream-analytics.md)
+- [LEFT](left-azure-stream-analytics.md)
+- [RIGHT](right-azure-stream-analytics.md)

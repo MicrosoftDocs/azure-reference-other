@@ -1,5 +1,5 @@
 ---
-title: "UNICODE (Azure Stream Analytics)"
+title: "UNICODE"
 description: "Returns the integer value, as defined by the Unicode standard, for the first character of the input expression."
 applies_to:
   - "Azure"
@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# UNICODE (Azure Stream Analytics)
+# UNICODE
 
 Returns the integer value, as defined by the Unicode standard, for the first character of the input expression.
 
