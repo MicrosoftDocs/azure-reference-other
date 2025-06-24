@@ -9,6 +9,8 @@ ms.date: 08/02/2024
 ---
 
 # CHARINDEX
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Searches an expression for another expression and returns its starting position if found.  
   
  ## Syntax  

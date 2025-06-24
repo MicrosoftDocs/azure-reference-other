@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # LTRIM
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Removes any white-space characters from the start of a string - from the left : LEFT TRIM.
 

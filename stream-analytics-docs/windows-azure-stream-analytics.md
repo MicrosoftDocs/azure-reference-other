@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # Windows
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Windowing provides a way to aggregate events over various time intervals depending on specific window definitions. There are four kinds of temporal windows to choose from: [Tumbling](tumbling-window-azure-stream-analytics.md), [Hopping](hopping-window-azure-stream-analytics.md), [Sliding](sliding-window-azure-stream-analytics.md), and [Session](session-window-azure-stream-analytics.md).
 

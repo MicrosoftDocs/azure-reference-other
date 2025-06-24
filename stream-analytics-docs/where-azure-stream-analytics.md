@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # WHERE
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Specifies the search condition for the rows returned by the query.
 
  ## Syntax

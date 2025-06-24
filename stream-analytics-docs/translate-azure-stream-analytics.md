@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # TRANSLATE
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Returns the string provided as a first argument after some characters specified in the second argument are translated into a destination set of characters specified in the third argument.
 

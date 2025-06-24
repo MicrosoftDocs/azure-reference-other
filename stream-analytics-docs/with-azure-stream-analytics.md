@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # WITH
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Specifies a temporary named result set which can be referenced by a FROM clause in the query. This is defined within the execution scope of a single SELECT statement.  
   
 > [!NOTE]  

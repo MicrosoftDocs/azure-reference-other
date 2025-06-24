@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # GetArrayLength
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns the length of the specified array.  
   
  ## Syntax  

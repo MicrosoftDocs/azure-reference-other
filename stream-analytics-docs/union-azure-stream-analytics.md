@@ -13,6 +13,8 @@ ms.date: 08/02/2024
 
 ---
 # UNION
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Combines the results of two or more queries into a single result set that includes all the rows that belong to all queries in the union. The UNION operation is different from using joins that combine columns from two tables.  
   
  The following are basic rules for combining the result sets of two queries by using UNION:  

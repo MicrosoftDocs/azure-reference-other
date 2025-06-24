@@ -9,6 +9,8 @@ ms.date: 08/02/2024
 ---
 
 # Collect
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
 Returns an array with all record values from the window.
 
  

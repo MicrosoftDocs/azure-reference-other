@@ -8,6 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # Mathematical Functions
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 The following scalar functions perform a calculation, usually based on input values that are provided as arguments, and return a numeric value:  
   

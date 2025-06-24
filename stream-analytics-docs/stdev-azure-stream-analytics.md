@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # STDEV
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns the statistical standard deviation of all values in a group. Null values are ignored.  
   
  ## Syntax  

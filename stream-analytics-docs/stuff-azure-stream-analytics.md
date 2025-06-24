@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # STUFF
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Inserts a string into another string. It deletes a specified length of characters in the first string at the start position and then inserts the second string into the first string at the start position.
 

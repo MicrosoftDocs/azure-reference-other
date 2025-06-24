@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # SPACE
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Returns a string of repeated spaces.
 

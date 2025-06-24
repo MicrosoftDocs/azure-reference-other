@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # UPPER
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns a character expression with lowercase character data converted to uppercase.  
   
  ## Syntax  

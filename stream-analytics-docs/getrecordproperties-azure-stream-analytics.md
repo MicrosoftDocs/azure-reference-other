@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # GetRecordProperties
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns a dataset with record property names and values. The result of the GetRecordProperties function must be used with the [CROSS APPLY](apply-azure-stream-analytics.md) operator.  
   
  ## Syntax  

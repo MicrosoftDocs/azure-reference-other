@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # LAG
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
 The LAG analytic operator allows one to look up a "previous" event in an event stream, within certain constraints. It is very useful for computing the rate of growth of a variable, detecting when a variable crosses a threshold, or when a condition starts or stops being true. 
   
 In Stream Analytics, the scope of LAG (that is, how far back in history from the current event it needs to look) is always limited to a finite time interval, using the LIMIT DURATION clause. LAG can optionally be limited to only consider events that match the current event on a certain property or condition using the PARTITION BY and WHEN clauses.

@@ -8,6 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # MAX
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Returns the maximum value in the expression.
 

@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # LEN
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns the number of characters of the specified string expression, excluding trailing blanks.  
   
  ## Syntax  

@@ -6,6 +6,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # REPLACE
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Replaces all occurrences of a specified string value with another string value.
 

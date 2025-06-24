@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # DATEADD
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns a specified date with the specified number interval (signed integer) added to a specified datepart of that date.  
   
  ## Syntax  

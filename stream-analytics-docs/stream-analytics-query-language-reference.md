@@ -1,5 +1,5 @@
 ---
-title: "Stream Analytics Query Language Reference"
+title: "Azure Stream Analytics & Fabric Eventstream Query Language Reference"
 description: "Azure Stream Analytics offers a SQL-like query language for performing transformations and computations over streams of events."
 applies_to: 
   - "Azure"
@@ -7,10 +7,10 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# Stream Analytics Query Language Reference
+# Azure Stream Analytics & Eventstream Query Language Reference
   Azure Stream Analytics offers a SQL query language for performing transformations and computations over streams of events.  
   
-## Stream Analytics Query Language, a subset of T-SQL syntax  
+## A subset of T-SQL syntax  
  This document describes the syntax, usage and best practices for the Stream Analytics query language. All the examples used in this document rely on a toll booth scenario as described below.  
   
  Stream Analytics query language is a subset of standard T-SQL syntax for doing Streaming computations.  

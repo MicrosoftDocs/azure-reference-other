@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # ST_DISTANCE 
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Returns the geodesic distance between two points in meters. Cartesian distances require projection calculations and are not supported, but they can be implemented in user defined functions. If used with Polygons will return 0.  
   

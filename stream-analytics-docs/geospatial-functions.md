@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # GeoSpatial Functions
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
 In Stream Analytics, real-time geospatial analytics can be performed using the following capabilities:
 
 |Geospatial capabilities|...|...|  

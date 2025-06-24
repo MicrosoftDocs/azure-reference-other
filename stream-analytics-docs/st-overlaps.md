@@ -9,6 +9,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # ST_OVERLAPS
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns 1 if a geography overlaps with another. If geographies do not overlap or one is within another, it will return 0.  
   
  ## Syntax  

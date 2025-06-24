@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # & (Bitwise AND)
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Performs a bitwise logical AND operation between two integer values, evaluating each corresponding bit from both expressions.
 

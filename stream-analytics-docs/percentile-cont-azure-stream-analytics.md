@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # Percentile_Cont
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
 Calculates a percentile based on a continuous distribution of the entire data set. The result is interpolated and might not be equal to any of the specific values from the input set. 
   
  ## Syntax  

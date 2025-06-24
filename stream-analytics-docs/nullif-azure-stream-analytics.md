@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # NULLIF
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Returns a null value if the two specified expressions are equal. For example, `SELECT NULLIF(4,4) AS Same, NULLIF(5,7) AS Different ...` returns `NULL` for the first column (4 and 4) because the two input values are the same. The second column returns the first value (5) because the two input values are different.
 

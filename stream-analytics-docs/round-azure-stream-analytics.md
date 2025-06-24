@@ -6,6 +6,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # ROUND
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Returns a numeric value, rounded to the specified length or precision.
 

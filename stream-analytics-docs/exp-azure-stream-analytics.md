@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # EXP
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   A mathematical function that returns the exponential value of the specified **float** expression.  
   
  Syntax  

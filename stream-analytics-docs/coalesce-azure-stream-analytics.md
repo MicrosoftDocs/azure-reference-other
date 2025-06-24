@@ -6,7 +6,9 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # COALESCE
-  Evaluates the arguments in order and returns the value of the first expression that initially does not evaluate to NULL. 
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
+Evaluates the arguments in order and returns the value of the first expression that initially does not evaluate to NULL. 
 
 ## Syntax  
   

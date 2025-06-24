@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # OVER
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
 For each row, the OVER clause determines the grouping of rows before an associated aggregate or analytic function is applied. 
   
 You can use the OVER clause anywhere a scalar function is allowed. For example, you can use the OVER clause in the SELECT, WHERE, JOIN or GROUP BY clauses.

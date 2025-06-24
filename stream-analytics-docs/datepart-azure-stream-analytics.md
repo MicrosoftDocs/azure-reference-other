@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # DATEPART
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns an integer that represents the specified datepart of the specified date.  
   
  ## Syntax  

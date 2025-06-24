@@ -9,6 +9,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # ST_WITHIN
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns 1 if a geography is within another, if not it will return 0.  
   
  ## Syntax  

@@ -8,6 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # GetMetadataPropertyValue
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Queries input data for specific properties. There are three types of properties: Adapter, User, and Unique EventId.
   

@@ -8,7 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# MATCH_RECOGNIZE (Stream Analytics)
+# MATCH_RECOGNIZE 
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 The MATCH_RECOGNIZE clause is used to search for a set of events over a data stream. This clause enables you to define event patterns using regular expressions and aggregate methods to verify and extract values from the match.
 

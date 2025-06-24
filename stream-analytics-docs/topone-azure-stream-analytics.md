@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # TopOne
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns the top-rank record, where rank defines the ranking position of the event in the window according to the specified ordering. Ordering/ranking is based on event columns and can be specified in ORDER BY clause.  
   
  ## Syntax  

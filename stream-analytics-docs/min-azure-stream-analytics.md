@@ -8,6 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # MIN
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Returns the minimum value in the expression.
 

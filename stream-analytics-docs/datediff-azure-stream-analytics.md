@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # DATEDIFF
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns the count (signed integer) of the specified datepart boundaries crossed between the specified startdate and enddate.  
   
  ## Syntax  

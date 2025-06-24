@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # REPLICATE
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Repeats a string value a specified number of times.
 

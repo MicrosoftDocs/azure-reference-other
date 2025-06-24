@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # Percentile_Disc
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
 Calculates a percentile based on entire data set. For a given percentile value P, PERCENTILE_DISC sorts the values of the expression in the ORDER BY clause and returns the value within the smallest cumulative distance that is greater than or equal to P. For example, PERCENTILE_DISC (0.5) will compute the 50th percentile (that is, the median) of an expression. PERCENTILE_DISC calculates the percentile based on a discrete distribution of the data values; the result is equal to a specific value from the input data.
   
  ## Syntax  

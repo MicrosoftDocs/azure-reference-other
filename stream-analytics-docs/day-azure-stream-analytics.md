@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # DAY
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns an integer representing the day (day of the month) of the specified date.  
   
  ## Syntax  

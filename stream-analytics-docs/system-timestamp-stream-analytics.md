@@ -1,5 +1,5 @@
 ---
-title: "System.Timestamp() (Stream Analytics)"
+title: "System.Timestamp()"
 description: "System.Timestamp() is a system property that can be used to retrieve the event’s timestamp. "
 applies_to: 
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# System.Timestamp() (Stream Analytics)
+# System.Timestamp() 
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Every event at every stage of the query in Azure Stream Analytics has a timestamp associated with it. System.Timestamp() is a system property that can be used to retrieve the event’s timestamp.  
   
  Below, we describe how Azure Stream Analytics assigns timestamps to events.  

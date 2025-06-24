@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # FROM
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Specifies the input stream or a step name associated in a WITH clause. The FROM clause is always required for any SELECT statement.  
   
  ## Syntax  

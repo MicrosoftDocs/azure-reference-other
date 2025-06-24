@@ -8,6 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # ISFIRST
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Returns 1 if the event is the first event within a given fixed interval, or 0 otherwise. The intervals are aligned the same way as tumbling windows (see [Tumbling Window](tumbling-window-azure-stream-analytics.md)). ISFIRST is not affected by predicates in WHERE clause, join conditions in JOIN clause, or grouping expressions in GROUP BY clause of the current query.
 ).  

@@ -9,6 +9,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # CreateLineString 
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns a GeoJSON LineString record. The result of a CreateLineString can be used as input to other Geospatial functions.  
   
  Be aware that when declaring LineStrings:  

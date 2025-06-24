@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # ^ (Bitwise exclusive OR)
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Performs a bitwise logical exclusive OR (XOR) operation between two integer values, evaluating each corresponding bit from both expressions.
 

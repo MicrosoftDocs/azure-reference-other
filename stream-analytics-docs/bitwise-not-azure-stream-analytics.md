@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # ~ (Bitwise NOT)
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Performs a bitwise logical NOT operation on an integer value.
 

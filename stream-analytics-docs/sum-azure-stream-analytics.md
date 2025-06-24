@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # SUM
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns the sum of all the values in the expression. SUM can be used with numeric columns only. NULL values are ignored. For all NULL values the result is also NULL.
   
  ## Syntax  

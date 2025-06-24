@@ -8,6 +8,9 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # GROUP BY
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
+
   Groups a selected set of rows into a set of summary rows by the values of one or more columns or expressions. One row is returned for each group. Aggregate functions in the SELECT clause’s \<select> list provide information about each group instead of individual rows.  
   
  ## Syntax  

@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # Bitwise Operators
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Bitwise operators perform bit manipulations between two expressions of any of the data types of the integer data type category.
 

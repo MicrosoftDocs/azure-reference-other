@@ -10,6 +10,8 @@ ms.date: 08/02/2024
 ---
 
 # CreatePoint
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns a GeoJSON Point record. The result of a CreatePoint can be used as input to other Geospatial functions.  
   
  ## Syntax  

@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # Input Metadata Functions
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
 
 Sometimes in real-time data analytics, there is a requirement to query on the metadata of a property in the data input. This can be done in Azure Stream Analytics using the [GetMetadataPropertyValue](getmetadatapropertyvalue.md) function.
 

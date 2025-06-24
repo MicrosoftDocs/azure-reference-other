@@ -8,7 +8,9 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # COUNT
-  Returns the number of items in a group. COUNT always returns a bigint data type value.  
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
+Returns the number of items in a group. COUNT always returns a bigint data type value.  
   
  ## Syntax  
   

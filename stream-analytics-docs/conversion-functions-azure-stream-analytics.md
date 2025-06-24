@@ -8,7 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # Conversion Functions
-  Stream Analytics Query Language provides the following conversion functions:  
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   
 |Conversion functions|...|...|  
 |-|-|-|  

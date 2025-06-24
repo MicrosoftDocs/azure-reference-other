@@ -8,6 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # Event Delivery Guarantees
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Azure Stream Analytics query language extends the SQL syntax to enable complex computations over streams of events. With Stream Analytics there are some concepts related to Event Delivery worth discussing:
   

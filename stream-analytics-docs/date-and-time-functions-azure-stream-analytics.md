@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # Date and Time Functions
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Stream Analytics Query Language provides the following date and time functions:  
   
 |Date time functions|...|...|  

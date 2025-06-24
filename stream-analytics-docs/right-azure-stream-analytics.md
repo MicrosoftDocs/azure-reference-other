@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # RIGHT
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Returns the right part (from the end) of a character string with the specified number of characters.
 

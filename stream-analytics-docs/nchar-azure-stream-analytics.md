@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # NCHAR
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Returns the Unicode character with the specified integer code, as defined by the Unicode standard.
 

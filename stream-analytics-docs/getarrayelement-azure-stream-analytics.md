@@ -10,6 +10,8 @@ ms.date: 08/02/2024
 ---
 
 # GetArrayElement
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
 Returns the array element at the specified index. This function is useful for parsing arrays and nested objects in JSON and AVRO formatted input event data. For more examples, see [Parsing JSON and AVRO data](/azure/stream-analytics/stream-analytics-parsing-json). If you need to return all nested elements in an array, use [GetArrayElements](getarrayelements-azure-stream-analytics.md) instead.
   
  ## Syntax  

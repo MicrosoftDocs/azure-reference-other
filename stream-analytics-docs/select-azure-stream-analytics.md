@@ -8,7 +8,9 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # SELECT
-  Retrieves rows from input streams and enables the selection of one or many columns from one or many input streams in Azure Stream Analytics. The main clauses used with a SELECT expression can be summarized as:  
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
+Retrieves rows from input streams and enables the selection of one or many columns from one or many input streams in Azure Stream Analytics. The main clauses used with a SELECT expression can be summarized as:  
   
 ```SQL   
 [ WITH <Result_Set_name>]   

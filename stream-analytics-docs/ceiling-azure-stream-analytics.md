@@ -9,6 +9,8 @@ ms.date: 08/02/2024
 ---
 
 # CEILING
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   A mathematical function that returns the smallest integer greater than or equal to the specified numeric expression.  
   
  ## Syntax  

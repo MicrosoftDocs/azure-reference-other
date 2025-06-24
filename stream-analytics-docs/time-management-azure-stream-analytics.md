@@ -8,9 +8,11 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # Time Management
-  Azure Stream Analytics query language extends SQL syntax to enable complex computations over streams of events. Stream Analytics provides language constructs to deal with the temporal aspects of the data. For example, it is possible to assign custom timestamps to the stream events, specify time window for aggregations, specify allowed time difference between two streams of data for JOIN operation, etc.  
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
+Query language extends SQL syntax to enable complex computations over streams of events. Stream Analytics provides language constructs to deal with the temporal aspects of the data. For example, it is possible to assign custom timestamps to the stream events, specify time window for aggregations, specify allowed time difference between two streams of data for JOIN operation, etc.  
  
- All time handling operations in Azure Stream Analytics are in UTC.
+ All time handling operations are in UTC.
  
  
 |Item|Summary|  

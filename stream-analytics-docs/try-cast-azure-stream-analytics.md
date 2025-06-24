@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # TRY_CAST
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
 Returns a value cast to the specified data type if the cast succeeds; otherwise, returns NULL. Supports the [data types](data-types-azure-stream-analytics.md) in the Stream Analytics Query Language.
 
 For example, the clause `TRY_CAST ('this is a string' AS bigint)` results in a NULL since the input string cannot be converted into the `bigint` data type. If you need the cast to fail when there is an incompatible data type, use [CAST](cast-azure-stream-analytics.md) function instead.

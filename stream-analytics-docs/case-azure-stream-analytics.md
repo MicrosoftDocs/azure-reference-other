@@ -9,8 +9,9 @@ ms.date: 08/02/2024
 ---
 
 # CASE
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
-  Evaluates a list of conditions and returns one of multiple possible result expressions.  
+Evaluates a list of conditions and returns one of multiple possible result expressions.  
   
  The CASE expression has two formats:  
   

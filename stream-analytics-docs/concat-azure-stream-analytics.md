@@ -9,6 +9,7 @@ ms.date: 08/02/2024
 ---
 
 # CONCAT
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Returns a string that is the result of concatenating two or more string values.
 

@@ -8,8 +8,9 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # Query Language Elements
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
-Azure Stream Analytics provides a variety of  elements for building queries. They are summarized below.
+The query language provides a variety of  elements for building queries. They are summarized below.
 
 |Element|Summary|
 |-------------|-------------|

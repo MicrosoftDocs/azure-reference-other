@@ -9,7 +9,9 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # CreatePolygon
-  Returns a GeoJSON Polygon record. The result of a CreatePolygon can be used as input to other Geospatial functions. The order of points must follow right-hand ring orientation, an easy way to check if the polygon orientation is correct is to imagine yourself walking from one point to the other in order of declaration, the inside of the polygon needs to be on your left side all the time.  
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
+Returns a GeoJSON Polygon record. The result of a CreatePolygon can be used as input to other Geospatial functions. The order of points must follow right-hand ring orientation, an easy way to check if the polygon orientation is correct is to imagine yourself walking from one point to the other in order of declaration, the inside of the polygon needs to be on your left side all the time.  
   
  Be aware that when declaring polygons:  
   

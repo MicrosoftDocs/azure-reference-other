@@ -9,7 +9,9 @@ ms.date: 08/02/2024
 ---
 
 # AVG
-  Returns the average of the values in a group. Null values are ignored.  
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
+Returns the average of the values in a group. Null values are ignored.  
   
  ## Syntax  
   

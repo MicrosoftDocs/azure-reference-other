@@ -8,6 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # INTO
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
 
 ## INTO (Output Stream)
 INTO explicitly specifies an output stream, and is always associated with an SELECT expression.  If not specified, the default output stream is "output".
