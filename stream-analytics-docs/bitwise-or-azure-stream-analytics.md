@@ -132,10 +132,10 @@ Returns:
 
 ## See Also
 
-- [Bitwise Operators &#40;Azure Stream Analytics&#41;](bitwise-operators-azure-stream-analytics.md)
-- [& (Bitwise AND) &#40;Azure Stream Analytics&#41;](bitwise-and-azure-stream-analytics.md)
-- [^ (Bitwise Exclusive OR) &#40;Azure Stream Analytics&#41;](bitwise-xor-azure-stream-analytics.md)
+- [Bitwise Operators](bitwise-operators-azure-stream-analytics.md)
+- [& (Bitwise AND)](bitwise-and-azure-stream-analytics.md)
+- [^ (Bitwise Exclusive OR)](bitwise-xor-azure-stream-analytics.md)
 - [~ (Bitwise NOT)&#40;Azure Stream Analytics&#41;](bitwise-not-azure-stream-analytics.md)
-- [Data Types Overview &#40;Azure Stream Analytics&#41;](data-types-azure-stream-analytics.md)
-- [Conversion Functions &#40;Azure Stream Analytics&#41;](conversion-functions-azure-stream-analytics.md)
-- [Built-in Functions &#40;Azure Stream Analytics&#41;](built-in-functions-azure-stream-analytics.md)
+- [Data Types Overview](data-types-azure-stream-analytics.md)
+- [Conversion Functions](conversion-functions-azure-stream-analytics.md)
+- [Built-in Functions](built-in-functions-azure-stream-analytics.md)

@@ -39,7 +39,7 @@ names and abbreviations may be used in the query.
   
  A big integer which specifies the number of timeunits in the interval. For instance,  
 ISFIRST(minute, 15) will look at 15-minute intervals. The start times of the intervals are  
-aligned in the same way as in tumbling windows (see [Tumbling Window &#40;Azure Stream Analytics&#41;](tumbling-window-azure-stream-analytics.md)).  
+aligned in the same way as in tumbling windows (see [Tumbling Window](tumbling-window-azure-stream-analytics.md)).  
   
  **[ OVER ( partition_by_clause [when_clause]) ]**  
   
@@ -98,7 +98,7 @@ WHERE
 ```  
   
 ## See Also  
- [LAG &#40;Azure Stream Analytics&#41;](lag-azure-stream-analytics.md)   
- [LAST &#40;Azure Stream Analytics&#41;](last-azure-stream-analytics.md)  
+ [LAG](lag-azure-stream-analytics.md)   
+ [LAST](last-azure-stream-analytics.md)  
   
   

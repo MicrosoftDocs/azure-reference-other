@@ -42,15 +42,15 @@ FROM TollTagEntry TIMESTAMP BY EntryTime
 ## In this section  
  Refer to the following topics for guidance on using the Stream Analytics query language.  
   
--   [Built-in Functions &#40;Azure Stream Analytics&#41;](built-in-functions-azure-stream-analytics.md)  
+-   [Built-in Functions](built-in-functions-azure-stream-analytics.md)  
   
--   [Data Types &#40;Azure Stream Analytics&#41;](data-types-azure-stream-analytics.md)  
+-   [Data Types](data-types-azure-stream-analytics.md)  
   
--   [Query Language Elements &#40;Azure Stream Analytics&#41;](query-language-elements-azure-stream-analytics.md)  
+-   [Query Language Elements](query-language-elements-azure-stream-analytics.md)  
   
--   [Time Management &#40;Azure Stream Analytics&#41;](time-management-azure-stream-analytics.md)  
+-   [Time Management](time-management-azure-stream-analytics.md)  
   
--   [Windowing &#40;Azure Stream Analytics&#41;](windowing-azure-stream-analytics.md)  
+-   [Windowing](windowing-azure-stream-analytics.md)  
   
 ## See Also  
   

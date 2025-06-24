@@ -56,9 +56,9 @@ For example, input events are generated once every minute for a *select** query.
 
   
 ## See Also  
- [Time Management &#40;Azure Stream Analytics&#41;](time-management-azure-stream-analytics.md)   
+ [Time Management](time-management-azure-stream-analytics.md)   
  [System.Timestamp()  &#40;Stream Analytics&#41;](system-timestamp-stream-analytics.md)   
- [TIMESTAMP BY &#40;Azure Stream Analytics&#41;](timestamp-by-azure-stream-analytics.md)  
+ [TIMESTAMP BY](timestamp-by-azure-stream-analytics.md)  
  [Event Order Consideration](/azure/stream-analytics/stream-analytics-out-of-order-and-late-events)
   
   

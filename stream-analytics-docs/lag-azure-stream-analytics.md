@@ -123,7 +123,7 @@ WHERE
 ```
   
 ## See Also  
- [ISFIRST &#40;Azure Stream Analytics&#41;](isfirst-azure-stream-analytics.md)   
- [LAST &#40;Azure Stream Analytics&#41;](last-azure-stream-analytics.md)  
+ [ISFIRST](isfirst-azure-stream-analytics.md)   
+ [LAST](last-azure-stream-analytics.md)  
   
   

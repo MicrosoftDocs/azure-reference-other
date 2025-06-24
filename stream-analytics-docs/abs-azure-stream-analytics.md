@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# ABS (Absolute value- Azure Stream Analytics)
+# ABS (Absolute value)
 
 :white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 

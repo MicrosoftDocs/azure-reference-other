@@ -25,11 +25,11 @@ Aggregate functions can be used as expressions only in the following:
   
 |Aggregate functions | ... | ...|  
 |-|-|-|  
-|[AVG &#40;Azure Stream Analytics&#41;](avg-azure-stream-analytics.md)|[COUNT &#40;Azure Stream Analytics&#41;](count-azure-stream-analytics.md)|[Collect &#40;Azure Stream Analytics&#41;](collect-azure-stream-analytics.md)|
-|[CollectTOP &#40;Azure Stream Analytics&#41;](collecttop-azure-stream-analytics.md)|[MAX &#40;Azure Stream Analytics&#41;](max-azure-stream-analytics.md)|[MIN &#40;Azure Stream Analytics&#41;](min-azure-stream-analytics.md)|
-|[Percentile_Cont &#40;Azure Stream Analytics&#41;](percentile-cont-azure-stream-analytics.md)  | [Percentile_Disc &#40;Azure Stream Analytics&#41;](percentile-disc-azure-stream-analytics.md) |[STDEV &#40;Azure Stream Analytics&#41;](stdev-azure-stream-analytics.md)|
-|[STDEVP &#40;Azure Stream Analytics&#41;](stdevp-azure-stream-analytics.md)|[SUM &#40;Azure Stream Analytics&#41;](sum-azure-stream-analytics.md)| [TopOne &#40;Azure Stream Analytics&#41;](topone-azure-stream-analytics.md)|
-|[VAR &#40;Azure Stream Analytics&#41;](var-azure-stream-analytics.md)|[VARP &#40;Azure Stream Analytics&#41;](varp-azure-stream-analytics.md)|
+|[AVG](avg-azure-stream-analytics.md)|[COUNT](count-azure-stream-analytics.md)|[Collect](collect-azure-stream-analytics.md)|
+|[CollectTOP](collecttop-azure-stream-analytics.md)|[MAX](max-azure-stream-analytics.md)|[MIN](min-azure-stream-analytics.md)|
+|[Percentile_Cont](percentile-cont-azure-stream-analytics.md)  | [Percentile_Disc](percentile-disc-azure-stream-analytics.md) |[STDEV](stdev-azure-stream-analytics.md)|
+|[STDEVP](stdevp-azure-stream-analytics.md)|[SUM](sum-azure-stream-analytics.md)| [TopOne](topone-azure-stream-analytics.md)|
+|[VAR](var-azure-stream-analytics.md)|[VARP](varp-azure-stream-analytics.md)|
   
 ## See Also  
 

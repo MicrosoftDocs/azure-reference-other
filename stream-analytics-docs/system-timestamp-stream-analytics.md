@@ -67,7 +67,7 @@ GROUP BY TumblingWindow(minute, 1), userId
   
 ```  
   
- The timestamp of the result of the aggregate is the end of the time window to which this result corresponds. Please see [Windowing &#40;Azure Stream Analytics&#41;](windowing-azure-stream-analytics.md) articles describing different window types in Azure Stream Analytics.  
+ The timestamp of the result of the aggregate is the end of the time window to which this result corresponds. Please see [Windowing](windowing-azure-stream-analytics.md) articles describing different window types in Azure Stream Analytics.  
   
 ### **INNER JOIN**  
   

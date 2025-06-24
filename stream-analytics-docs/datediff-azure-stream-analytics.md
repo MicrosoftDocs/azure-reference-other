@@ -64,6 +64,6 @@ WHERE Toll > 5
 ```  
   
 > [!NOTE]  
->  In Stream Analytics Query Language there is a special use of DATEDIFF function when used inside a JOIN condition. See [JOIN &#40;Azure Stream Analytics&#41;](join-azure-stream-analytics.md).  
+>  In Stream Analytics Query Language there is a special use of DATEDIFF function when used inside a JOIN condition. See [JOIN](join-azure-stream-analytics.md).  
   
   

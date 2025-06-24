@@ -29,7 +29,7 @@ GROUP BY <group by spec>
 ## Arguments  
  **<window_type>**  
   
- Specifies any Azure Stream Analytics supported Windowing. See [Windowing &#40;Azure Stream Analytics&#41;](windowing-azure-stream-analytics.md).  
+ Specifies any Azure Stream Analytics supported Windowing. See [Windowing](windowing-azure-stream-analytics.md).  
   
  **\< column_expression >**  
   

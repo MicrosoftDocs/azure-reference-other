@@ -69,7 +69,7 @@ FROM input
 ```  
   
 ## See Also  
- [ISFIRST &#40;Azure Stream Analytics&#41;](isfirst-azure-stream-analytics.md)   
- [LAG &#40;Azure Stream Analytics&#41;](lag-azure-stream-analytics.md)  
+ [ISFIRST](isfirst-azure-stream-analytics.md)   
+ [LAG](lag-azure-stream-analytics.md)  
   
   

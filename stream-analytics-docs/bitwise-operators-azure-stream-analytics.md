@@ -43,6 +43,6 @@ Stream Analytics Query Language provides the following bitwise operators:
 
 ## See Also
 
-- [Data Types Overview &#40;Azure Stream Analytics&#41;](data-types-azure-stream-analytics.md)
-- [Conversion Functions &#40;Azure Stream Analytics&#41;](conversion-functions-azure-stream-analytics.md)
-- [Built-in Functions &#40;Azure Stream Analytics&#41;](built-in-functions-azure-stream-analytics.md)
+- [Data Types Overview](data-types-azure-stream-analytics.md)
+- [Conversion Functions](conversion-functions-azure-stream-analytics.md)
+- [Built-in Functions](built-in-functions-azure-stream-analytics.md)

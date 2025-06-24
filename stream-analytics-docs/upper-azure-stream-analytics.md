@@ -32,6 +32,6 @@ FROM Input
 ```  
   
 ## See Also  
- [LOWER &#40;Azure Stream Analytics&#41;](lower-azure-stream-analytics.md)  
+ [LOWER](lower-azure-stream-analytics.md)  
   
   

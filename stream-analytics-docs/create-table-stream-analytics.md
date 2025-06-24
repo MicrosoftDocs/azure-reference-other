@@ -51,7 +51,7 @@ CREATE TABLE
   
 -   data_type  
   
-     The data types which are supported by Azure Stream Analytics. See [Data Types &#40;Azure Stream Analytics&#41;](data-types-azure-stream-analytics.md).  
+     The data types which are supported by Azure Stream Analytics. See [Data Types](data-types-azure-stream-analytics.md).  
   
 ## Examples  
 

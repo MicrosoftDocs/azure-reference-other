@@ -23,8 +23,8 @@ ms.date: 08/02/2024
 |[Date and Time functions](date-and-time-functions-azure-stream-analytics.md)|Stream Analytics provides a variety of date and time functions for use.|  
   
 ## See Also  
- [Built-in Functions &#40;Azure Stream Analytics&#41;](built-in-functions-azure-stream-analytics.md)   
- [Data Types &#40;Azure Stream Analytics&#41;](data-types-azure-stream-analytics.md)   
+ [Built-in Functions](built-in-functions-azure-stream-analytics.md)   
+ [Data Types](data-types-azure-stream-analytics.md)   
  [Event Delivery Guarantees&#40;Azure Stream Analytics&#41;](event-delivery-guarantees-azure-stream-analytics.md)  
   
   

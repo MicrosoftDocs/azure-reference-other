@@ -27,27 +27,27 @@ After a window operation, the timestamp of an event will differ from the origina
 
 There are five types of windows:
 
-1. [Tumbling Window &#40;Azure Stream Analytics&#41;](tumbling-window-azure-stream-analytics.md)
+1. [Tumbling Window](tumbling-window-azure-stream-analytics.md)
 
-2. [Hopping Window &#40;Azure Stream Analytics&#41;](hopping-window-azure-stream-analytics.md)
+2. [Hopping Window](hopping-window-azure-stream-analytics.md)
 
-3. [Sliding Window &#40;Azure Stream Analytics&#41;](sliding-window-azure-stream-analytics.md)
+3. [Sliding Window](sliding-window-azure-stream-analytics.md)
 
-4. [Session Window &#40;Azure Stream Analytics&#41;](session-window-azure-stream-analytics.md)
+4. [Session Window](session-window-azure-stream-analytics.md)
 
 5. [Snapshot Window](snapshot-window-azure-stream-analytics.md)
 
  The maximum size of the window in all cases is 7 days.
 
-You can aggregate over multiple time windows in the same GROUP BY statement using the [Windows &#40;Azure Stream Analytics&#41;](windows-azure-stream-analytics.md) function.
+You can aggregate over multiple time windows in the same GROUP BY statement using the [Windows](windows-azure-stream-analytics.md) function.
 
 ## See Also  
 
-[Built-in Functions &#40;Azure Stream Analytics&#41;](built-in-functions-azure-stream-analytics.md)   
-[Aggregate Functions &#40;Azure Stream Analytics&#41;](aggregate-functions-azure-stream-analytics.md)   
-[Analytic Functions &#40;Azure Stream Analytics&#41;](analytic-functions-azure-stream-analytics.md)   
+[Built-in Functions](built-in-functions-azure-stream-analytics.md)   
+[Aggregate Functions](aggregate-functions-azure-stream-analytics.md)   
+[Analytic Functions](analytic-functions-azure-stream-analytics.md)   
 [Array Functions &#40;Stream Analytics&#41;](array-functions-stream-analytics.md)   
-[Conversion Functions &#40;Azure Stream Analytics&#41;](conversion-functions-azure-stream-analytics.md)   
-[Date and Time Functions &#40;Azure Stream Analytics&#41;](date-and-time-functions-azure-stream-analytics.md)   
-[Record Functions &#40;Azure Stream Analytics&#41;](record-functions-azure-stream-analytics.md)  
+[Conversion Functions](conversion-functions-azure-stream-analytics.md)   
+[Date and Time Functions](date-and-time-functions-azure-stream-analytics.md)   
+[Record Functions](record-functions-azure-stream-analytics.md)  
   
