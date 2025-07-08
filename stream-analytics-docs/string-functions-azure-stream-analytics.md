@@ -1,5 +1,5 @@
 ---
-title: "String Functions (Azure Stream Analytics)"
+title: "String Functions"
 description: "Lists the String functions supported by Azure Stream Analytics."
 applies_to:
   - "Azure"
@@ -8,7 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# String Functions (Azure Stream Analytics)
+# String Functions
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Stream Analytics Query Language provides the following string functions:
 
@@ -97,10 +98,10 @@ Stream Analytics Query Language provides the following string functions:
 
 ## See Also
 
-- [Built-in Functions &#40;Azure Stream Analytics&#41;](built-in-functions-azure-stream-analytics.md)
-- [Aggregate Functions &#40;Azure Stream Analytics&#41;](aggregate-functions-azure-stream-analytics.md)
-- [Analytic Functions &#40;Azure Stream Analytics&#41;](analytic-functions-azure-stream-analytics.md)
+- [Built-in Functions](built-in-functions-azure-stream-analytics.md)
+- [Aggregate Functions](aggregate-functions-azure-stream-analytics.md)
+- [Analytic Functions](analytic-functions-azure-stream-analytics.md)
 - [Array Functions &#40;Stream Analytics&#41;](array-functions-stream-analytics.md)
-- [Conversion Functions &#40;Azure Stream Analytics&#41;](conversion-functions-azure-stream-analytics.md)
-- [Date and Time Functions &#40;Azure Stream Analytics&#41;](date-and-time-functions-azure-stream-analytics.md)
-- [Record Functions &#40;Azure Stream Analytics&#41;](record-functions-azure-stream-analytics.md)
+- [Conversion Functions](conversion-functions-azure-stream-analytics.md)
+- [Date and Time Functions](date-and-time-functions-azure-stream-analytics.md)
+- [Record Functions](record-functions-azure-stream-analytics.md)

@@ -1,5 +1,5 @@
 ---
-title: "DATEADD (Azure Stream Analytics)"
+title: "DATEADD"
 description: "Returns a specified date with the specified number interval (signed integer) added to a specified datepart of that date."
 applies_to: 
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# DATEADD (Azure Stream Analytics)
+# DATEADD
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns a specified date with the specified number interval (signed integer) added to a specified datepart of that date.  
   
  ## Syntax  

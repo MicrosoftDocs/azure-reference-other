@@ -1,5 +1,5 @@
 ---
-title: "VAR (Azure Stream Analytics)"
+title: "VAR"
 description: "Returns the statistical variance of all values in a group."
 applies_to: 
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# VAR (Azure Stream Analytics)
+# VAR
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns the statistical variance of all values in a group. Null values are ignored.  
   
  ## Syntax  

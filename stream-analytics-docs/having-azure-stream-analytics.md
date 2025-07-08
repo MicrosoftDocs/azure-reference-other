@@ -1,5 +1,5 @@
 ---
-title: "HAVING (Azure Stream Analytics)"
+title: "HAVING"
 description: "Specifies a search condition for a group or an aggregate. HAVING can be used only with the SELECT expression."
 applies_to: 
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# HAVING (Azure Stream Analytics)
+# HAVING
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Specifies a search condition for a group or an aggregate. HAVING can be used only with the SELECT expression. HAVING is typically used in a GROUP BY clause. When GROUP BY is not used, HAVING behaves like a WHERE clause.  
   
  ## Syntax  

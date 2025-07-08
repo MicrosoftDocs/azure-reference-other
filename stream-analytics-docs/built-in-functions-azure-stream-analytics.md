@@ -1,6 +1,6 @@
 ---
-title: "Built-in Functions (Azure Stream Analytics)"
-description: "Lists the built-in functions supported by Stream Analytics Query Language"
+title: "Built-in Functions"
+description: "Lists the built-in functions supported by Query Language"
 applies_to:
   - "Azure"
 ms.service: azure-stream-analytics
@@ -8,9 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# Built-in Functions (Azure Stream Analytics)
-
-Azure Stream Analytics provides some built-in functions. The categories of built-in functions are:
+# Built-in Functions
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 ## Types of Functions
 

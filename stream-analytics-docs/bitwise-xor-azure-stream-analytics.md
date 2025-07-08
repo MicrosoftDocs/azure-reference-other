@@ -1,5 +1,5 @@
 ---
-title: "^ (Bitwise exclusive OR) (Azure Stream Analytics)"
+title: "^ (Bitwise exclusive OR)"
 description: "Performs a bitwise logical exclusive OR operation between two integer values."
 applies_to:
   - "Azure"
@@ -8,7 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# ^ (Bitwise exclusive OR) (Azure Stream Analytics)
+# ^ (Bitwise exclusive OR)
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Performs a bitwise logical exclusive OR (XOR) operation between two integer values, evaluating each corresponding bit from both expressions.
 
@@ -133,10 +134,10 @@ Returns:
 
 ## See also
 
-- [Bitwise Operators &#40;Azure Stream Analytics&#41;](bitwise-operators-azure-stream-analytics.md)
-- [& (Bitwise AND) &#40;Azure Stream Analytics&#41;](bitwise-and-azure-stream-analytics.md)
-- [| (Bitwise OR) &#40;Azure Stream Analytics&#41;](bitwise-or-azure-stream-analytics.md)
+- [Bitwise Operators](bitwise-operators-azure-stream-analytics.md)
+- [& (Bitwise AND)](bitwise-and-azure-stream-analytics.md)
+- [| (Bitwise OR)](bitwise-or-azure-stream-analytics.md)
 - [~ (Bitwise NOT)&#40;Azure Stream Analytics&#41;](bitwise-not-azure-stream-analytics.md)
-- [Data Types Overview &#40;Azure Stream Analytics&#41;](data-types-azure-stream-analytics.md)
-- [Conversion Functions &#40;Azure Stream Analytics&#41;](conversion-functions-azure-stream-analytics.md)
-- [Built-in Functions &#40;Azure Stream Analytics&#41;](built-in-functions-azure-stream-analytics.md)
+- [Data Types Overview](data-types-azure-stream-analytics.md)
+- [Conversion Functions](conversion-functions-azure-stream-analytics.md)
+- [Built-in Functions](built-in-functions-azure-stream-analytics.md)

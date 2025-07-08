@@ -1,5 +1,5 @@
 ---
-title: "AnomalyDetection_ChangePoint (Azure Stream Analytics)"
+title: "AnomalyDetection_ChangePoint"
 description: "Describes the AnomalyDetection_ChangePoint function supported by the Stream Analytics Query Language."
 applies_to: 
   - "Azure"
@@ -8,7 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# AnomalyDetection_ChangePoint (Azure Stream Analytics)
+# AnomalyDetection_ChangePoint
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Detects persistent anomalies in a time series event stream. The underlying machine learning model uses the Exchangeability Martingales algorithm.
 

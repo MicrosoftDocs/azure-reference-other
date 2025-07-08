@@ -1,6 +1,6 @@
 ---
-title: "Data Types (Azure Stream Analytics)"
-description: "Lists the data types supported by Azure Stream Analytics."
+title: "Data Types"
+description: "Lists the supported data types."
 applies_to:
   - "Azure"
 ms.service: azure-stream-analytics
@@ -8,9 +8,10 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# Data Types (Azure Stream Analytics)
+# Data Types
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
-In Azure Stream Analytics, each record has a related data type. A data type describes (and constrains) the set of values that a record of that type can hold or an expression of that type can produce.
+Each record has a related data type. A data type describes (and constrains) the set of values that a record of that type can hold or an expression of that type can produce.
 
 Please note that it is records that have a type and not columns. Each record of a column can have a different type. If this will be transparent for most applications, it allows straightforward handling of schema drift scenarios and other unusual typing patterns.
 

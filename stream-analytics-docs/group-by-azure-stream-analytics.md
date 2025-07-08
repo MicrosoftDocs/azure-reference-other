@@ -1,5 +1,5 @@
 ---
-title: "GROUP BY (Azure Stream Analytics)"
+title: "GROUP BY"
 description: "Groups a selected set of rows into a set of summary rows by the values of one or more columns or expressions."
 applies_to: 
   - "Azure"
@@ -7,7 +7,10 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# GROUP BY (Azure Stream Analytics)
+# GROUP BY
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
+
   Groups a selected set of rows into a set of summary rows by the values of one or more columns or expressions. One row is returned for each group. Aggregate functions in the SELECT clause’s \<select> list provide information about each group instead of individual rows.  
   
  ## Syntax  
@@ -29,7 +32,7 @@ GROUP BY <group by spec>
 ## Arguments  
  **<window_type>**  
   
- Specifies any Azure Stream Analytics supported Windowing. See [Windowing &#40;Azure Stream Analytics&#41;](windowing-azure-stream-analytics.md).  
+ Specifies any Azure Stream Analytics supported Windowing. See [Windowing](windowing-azure-stream-analytics.md).  
   
  **\< column_expression >**  
   
