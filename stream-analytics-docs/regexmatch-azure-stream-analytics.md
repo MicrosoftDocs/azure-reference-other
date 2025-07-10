@@ -1,5 +1,5 @@
 ---
-title: "REGEXMATCH (Azure Stream Analytics)"
+title: "REGEXMATCH"
 description: "Returns the starting position of the first occurrence of a pattern in a specified expression, or 0 if the pattern is not found, on all valid nvarchar(max) data types."
 applies_to: 
   - "Azure"
@@ -7,8 +7,10 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# REGEXMATCH (Azure Stream Analytics)
-  Returns the starting position of the first occurrence of a pattern in a specified expression, or 0 if the pattern is not found, on all valid nvarchar(max) data types. Pattern is interpreted as single-line, case-insensitive, ECMAScript compatible regular expression.  
+# REGEXMATCH
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
+Returns the starting position of the first occurrence of a pattern in a specified expression, or 0 if the pattern is not found, on all valid nvarchar(max) data types. Pattern is interpreted as single-line, case-insensitive, ECMAScript compatible regular expression.  
   
  ## Syntax  
   

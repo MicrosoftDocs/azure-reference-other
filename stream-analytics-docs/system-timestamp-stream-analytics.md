@@ -1,5 +1,5 @@
 ---
-title: "System.Timestamp() (Stream Analytics)"
+title: "System.Timestamp()"
 description: "System.Timestamp() is a system property that can be used to retrieve the event’s timestamp. "
 applies_to: 
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# System.Timestamp() (Stream Analytics)
+# System.Timestamp() 
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Every event at every stage of the query in Azure Stream Analytics has a timestamp associated with it. System.Timestamp() is a system property that can be used to retrieve the event’s timestamp.  
   
  Below, we describe how Azure Stream Analytics assigns timestamps to events.  
@@ -67,7 +69,7 @@ GROUP BY TumblingWindow(minute, 1), userId
   
 ```  
   
- The timestamp of the result of the aggregate is the end of the time window to which this result corresponds. Please see [Windowing &#40;Azure Stream Analytics&#41;](windowing-azure-stream-analytics.md) articles describing different window types in Azure Stream Analytics.  
+ The timestamp of the result of the aggregate is the end of the time window to which this result corresponds. Please see [Windowing](windowing-azure-stream-analytics.md) articles describing different window types in Azure Stream Analytics.  
   
 ### **INNER JOIN**  
   

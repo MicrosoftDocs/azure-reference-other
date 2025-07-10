@@ -1,5 +1,5 @@
 ---
-title: Windowing (Azure Stream Analytics)
+title: Windowing
 description: This topic describes windowing functions. Includes the types of windows that are supported, and explains how you can use windows with various operators.
 applies_to:
   - "Azure"
@@ -7,7 +7,8 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# Windowing functions (Azure Stream Analytics)
+# Windowing functions
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 In applications that process real-time events, it is common to perform some set-based computation (aggregation) or other operations over subsets of events that fall within some period of time. Because the concept of time is a fundamental necessity to complex event-processing systems, it’s important to have a simple way to work with the time component of query logic in the system. In Azure Stream Analytics, these subsets of events are defined through windows to represent groupings by time. This article describes windows and how they are defined, identifies the types of windows that are supported, and explains how you can use windows with various operators.
 
@@ -27,27 +28,27 @@ After a window operation, the timestamp of an event will differ from the origina
 
 There are five types of windows:
 
-1. [Tumbling Window &#40;Azure Stream Analytics&#41;](tumbling-window-azure-stream-analytics.md)
+1. [Tumbling Window](tumbling-window-azure-stream-analytics.md)
 
-2. [Hopping Window &#40;Azure Stream Analytics&#41;](hopping-window-azure-stream-analytics.md)
+2. [Hopping Window](hopping-window-azure-stream-analytics.md)
 
-3. [Sliding Window &#40;Azure Stream Analytics&#41;](sliding-window-azure-stream-analytics.md)
+3. [Sliding Window](sliding-window-azure-stream-analytics.md)
 
-4. [Session Window &#40;Azure Stream Analytics&#41;](session-window-azure-stream-analytics.md)
+4. [Session Window](session-window-azure-stream-analytics.md)
 
-5. [Snapshot Window (Azure Stream Analytics)](snapshot-window-azure-stream-analytics.md)
+5. [Snapshot Window](snapshot-window-azure-stream-analytics.md)
 
  The maximum size of the window in all cases is 7 days.
 
-You can aggregate over multiple time windows in the same GROUP BY statement using the [Windows &#40;Azure Stream Analytics&#41;](windows-azure-stream-analytics.md) function.
+You can aggregate over multiple time windows in the same GROUP BY statement using the [Windows](windows-azure-stream-analytics.md) function.
 
 ## See Also  
 
-[Built-in Functions &#40;Azure Stream Analytics&#41;](built-in-functions-azure-stream-analytics.md)   
-[Aggregate Functions &#40;Azure Stream Analytics&#41;](aggregate-functions-azure-stream-analytics.md)   
-[Analytic Functions &#40;Azure Stream Analytics&#41;](analytic-functions-azure-stream-analytics.md)   
+[Built-in Functions](built-in-functions-azure-stream-analytics.md)   
+[Aggregate Functions](aggregate-functions-azure-stream-analytics.md)   
+[Analytic Functions](analytic-functions-azure-stream-analytics.md)   
 [Array Functions &#40;Stream Analytics&#41;](array-functions-stream-analytics.md)   
-[Conversion Functions &#40;Azure Stream Analytics&#41;](conversion-functions-azure-stream-analytics.md)   
-[Date and Time Functions &#40;Azure Stream Analytics&#41;](date-and-time-functions-azure-stream-analytics.md)   
-[Record Functions &#40;Azure Stream Analytics&#41;](record-functions-azure-stream-analytics.md)  
+[Conversion Functions](conversion-functions-azure-stream-analytics.md)   
+[Date and Time Functions](date-and-time-functions-azure-stream-analytics.md)   
+[Record Functions](record-functions-azure-stream-analytics.md)  
   

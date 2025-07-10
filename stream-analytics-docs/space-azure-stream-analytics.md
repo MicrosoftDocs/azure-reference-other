@@ -1,5 +1,5 @@
 ---
-title: "SPACE (Azure Stream Analytics)"
+title: "SPACE"
 description: "Returns a string of repeated spaces."
 applies_to:
   - "Azure"
@@ -8,7 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# SPACE (Azure Stream Analytics)
+# SPACE
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Returns a string of repeated spaces.
 
@@ -42,5 +43,5 @@ FROM Input
 
 ## See Also
 
-- [RTRIM (Azure Stream Analytics)](rtrim-azure-stream-analytics.md)
-- [LTRIM (Azure Stream Analytics)](ltrim-azure-stream-analytics.md)
+- [RTRIM](rtrim-azure-stream-analytics.md)
+- [LTRIM](ltrim-azure-stream-analytics.md)

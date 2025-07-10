@@ -1,5 +1,5 @@
 ---
-title: CreateLineString (Azure Stream Analytics)
+title: CreateLineString
 description: "Returns a GeoJSON LineString record. The result of a CreateLineString can be used as input to other Geospatial functions."
 applies_to: 
   - "Azure"
@@ -8,7 +8,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# CreateLineString (Azure Stream Analytics) 
+# CreateLineString 
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns a GeoJSON LineString record. The result of a CreateLineString can be used as input to other Geospatial functions.  
   
  Be aware that when declaring LineStrings:  

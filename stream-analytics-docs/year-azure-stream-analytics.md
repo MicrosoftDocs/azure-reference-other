@@ -1,5 +1,5 @@
 ---
-title: "YEAR (Azure Stream Analytics)"
+title: "YEAR"
 description: "Returns an integer that represents the year of the specified date."
 applies_to: 
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# YEAR (Azure Stream Analytics)
+# YEAR
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns an integer that represents the year of the specified date  
   
  ## Syntax  

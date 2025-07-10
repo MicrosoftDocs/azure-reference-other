@@ -1,5 +1,5 @@
 ---
-title: "RTRIM (Azure Stream Analytics)"
+title: "RTRIM"
 description: "Removes the space character from the end of a string."
 applies_to:
   - "Azure"
@@ -8,7 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# RTRIM (Azure Stream Analytics)
+# RTRIM
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Removes any white-space characters from the end of a string - from the right : RIGHT TRIM.
 

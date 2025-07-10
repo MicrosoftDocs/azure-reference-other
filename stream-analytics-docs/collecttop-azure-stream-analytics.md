@@ -1,5 +1,5 @@
 ---
-title: "CollectTOP (Azure Stream Analytics)"
+title: "CollectTOP"
 description: "Returns an array of ranked records, where rank defines the ranking position of the event in the window according to the specified ordering."
 applies_to: 
   - "Azure"
@@ -8,8 +8,10 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# CollectTOP (Azure Stream Analytics)
-  Returns an array of ranked records, where rank defines the ranking position of the event in the window according to the specified ordering. Ordering/ranking is based on event columns and can be specified in ORDER BY clause.  
+# CollectTOP
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
+Returns an array of ranked records, where rank defines the ranking position of the event in the window according to the specified ordering. Ordering/ranking is based on event columns and can be specified in ORDER BY clause.  
   
  ## Syntax  
   

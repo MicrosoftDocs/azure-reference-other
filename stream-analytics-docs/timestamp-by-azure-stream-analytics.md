@@ -1,11 +1,12 @@
 ---
-title: "TIMESTAMP BY (Azure Stream Analytics)"
+title: "TIMESTAMP BY"
 description: The TIMESTAMP BY clause allows specifying custom timestamp values.
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# TIMESTAMP BY (Azure Stream Analytics)
+# TIMESTAMP BY
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 All data stream events have a timestamp associated with them. By default, events from Event Hub and IoT Hub are timestamped based on when the event was received by the Event Hub or IoT Hub; events from Blob storage are timestamped by the blob's last modified time. The timestamp of an event doesn't change if you re-start or re-run your job. 
 

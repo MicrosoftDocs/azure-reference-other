@@ -1,5 +1,5 @@
 ---
-title: "REVERSE (Azure Stream Analytics)"
+title: "REVERSE"
 description: "Returns the reverse order of a string value."
 applies_to:
   - "Azure"
@@ -8,7 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# REVERSE (Azure Stream Analytics)
+# REVERSE
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Returns the reverse order of a string value.
 

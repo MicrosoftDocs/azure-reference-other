@@ -1,5 +1,5 @@
 ---
-title: CAST (Azure Stream Analytics)
+title: CAST
 description: Converts an expression of one data type to another within the supported types in Stream Analytics Query Language.
 applies_to:
   - "Azure"
@@ -8,7 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# CAST (Azure Stream Analytics)
+# CAST
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Converts an expression of one data type to another within the supported [data types](data-types-azure-stream-analytics.md) in Stream Analytics Query Language.
 

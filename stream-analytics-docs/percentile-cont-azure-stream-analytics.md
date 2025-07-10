@@ -1,5 +1,5 @@
 ---
-title: "Percentile_Cont (Azure Stream Analytics)"
+title: "Percentile_Cont"
 description: "Calculates a percentile based on a continuous distribution of the entire data set."
 applies_to: 
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# Percentile_Cont (Azure Stream Analytics)
+# Percentile_Cont
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
 Calculates a percentile based on a continuous distribution of the entire data set. The result is interpolated and might not be equal to any of the specific values from the input set. 
   
  ## Syntax  
