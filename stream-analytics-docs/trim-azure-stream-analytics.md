@@ -1,5 +1,5 @@
 ---
-title: "TRIM (Azure Stream Analytics)"
+title: "TRIM"
 description: "Removes the space character from the start and end of a string."
 applies_to:
   - "Azure"
@@ -8,7 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# TRIM (Azure Stream Analytics)
+# TRIM
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Removes any white-space characters from the start and end of a string.
 

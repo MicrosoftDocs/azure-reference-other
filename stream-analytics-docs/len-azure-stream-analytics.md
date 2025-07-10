@@ -1,5 +1,5 @@
 ---
-title: "LEN (Azure Stream Analytics)"
+title: "LEN"
 description: "Returns the number of characters of the specified string expression, excluding trailing blanks."
 applies_to: 
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# LEN (Azure Stream Analytics)
+# LEN
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns the number of characters of the specified string expression, excluding trailing blanks.  
   
  ## Syntax  

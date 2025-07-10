@@ -1,5 +1,5 @@
 ---
-title: "LAST (Azure Stream Analytics)"
+title: "LAST"
 description: "The LAST analytic operator allows one to look up the most recent event in an event stream within defined constraints."
 applies_to: 
   - "Azure"
@@ -7,8 +7,10 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# LAST (Azure Stream Analytics)
-  The LAST analytic operator allows one to look up the most recent event in an event stream within defined constraints.  It is useful in the scenarios like computing last known good value (e.g. not null), finding last time when event matched certain criteria, etc.  
+# LAST
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
+The LAST analytic operator allows one to look up the most recent event in an event stream within defined constraints.  It is useful in the scenarios like computing last known good value (e.g. not null), finding last time when event matched certain criteria, etc.  
   
 In Stream Analytics, the scope of LAST (that is, how far back in history from the current event it needs to look) is always limited to a finite time interval, using the LIMIT DURATION clause. LAST can optionally be limited to only consider events that match the current event on a certain property or condition using the PARTITION BY and WHEN clauses. LAST is not affected by predicates in WHERE clause, join conditions in JOIN clause, or grouping expressions in GROUP BY clause of the current query.
   
@@ -69,7 +71,7 @@ FROM input
 ```  
   
 ## See Also  
- [ISFIRST &#40;Azure Stream Analytics&#41;](isfirst-azure-stream-analytics.md)   
- [LAG &#40;Azure Stream Analytics&#41;](lag-azure-stream-analytics.md)  
+ [ISFIRST](isfirst-azure-stream-analytics.md)   
+ [LAG](lag-azure-stream-analytics.md)  
   
   

@@ -1,5 +1,5 @@
 ---
-title: "Sliding Window (Azure Stream Analytics)"
+title: "Sliding Window"
 description: "When using a sliding window, the system is asked to logically consider all possible windows of a given length."
 applies_to:
   - "Azure"
@@ -8,7 +8,9 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# Sliding Window (Azure Stream Analytics)
+# Sliding Window
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   When using a sliding window, the system is asked to logically consider all possible windows of a given length. As the number of such windows would be infinite, Azure Stream Analytics instead outputs events only for those points in time when the content of the window actually changes, in other words when an event entered or exits the window.
 
 The following diagram illustrates a stream with a series of events and how they are mapped into sliding windows of 10 seconds.

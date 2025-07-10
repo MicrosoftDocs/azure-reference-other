@@ -1,5 +1,5 @@
 ---
-title: "ABS (Azure Stream Analytics)"
+title: "ABS"
 description: "A mathematical function that returns the absolute (positive) value of the specified numeric expression. "
 applies_to: 
   - "Azure"
@@ -8,8 +8,11 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# ABS (Absolute value- Azure Stream Analytics)
-  A mathematical function that returns the absolute (positive) value of the specified numeric expression.  
+# ABS (Absolute value)
+
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
+A mathematical function that returns the absolute (positive) value of the specified numeric expression.  
   
  ## Syntax  
   

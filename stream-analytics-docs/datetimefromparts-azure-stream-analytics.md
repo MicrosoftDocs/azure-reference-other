@@ -1,5 +1,5 @@
 ---
-title: "DATETIMEFROMPARTS (Azure Stream Analytics)"
+title: "DATETIMEFROMPARTS"
 description: " Returns a datetime value for the specified date and time. "
 applies_to: 
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# DATETIMEFROMPARTS (Azure Stream Analytics)
+# DATETIMEFROMPARTS
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns a datetime value for the specified date and time.  
   
  ## Syntax  

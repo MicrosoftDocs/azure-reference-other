@@ -1,12 +1,14 @@
 ---
-title: "COALESCE (Azure Stream Analytics)"
+title: "COALESCE"
 description: "Evaluates the arguments in order and returns the value of the first expression that initially does not evaluate to NULL."
 ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# COALESCE (Azure Stream Analytics)
-  Evaluates the arguments in order and returns the value of the first expression that initially does not evaluate to NULL. 
+# COALESCE
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
+Evaluates the arguments in order and returns the value of the first expression that initially does not evaluate to NULL. 
 
 ## Syntax  
   

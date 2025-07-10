@@ -1,5 +1,5 @@
 ---
-title: "DATEPART (Azure Stream Analytics)"
+title: "DATEPART"
 description: "Returns an integer that represents the specified datepart of the specified date.  "
 applies_to: 
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# DATEPART (Azure Stream Analytics)
+# DATEPART
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns an integer that represents the specified datepart of the specified date.  
   
  ## Syntax  

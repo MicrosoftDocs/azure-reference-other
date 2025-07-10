@@ -1,5 +1,5 @@
 ---
-title: "Mathematical Functions (Azure Stream Analytics)"
+title: "Mathematical Functions"
 description: "Lists the mathematical functions supported by Azure Stream Analytics."
 applies_to: 
   - "Azure"
@@ -7,7 +7,8 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# Mathematical Functions (Azure Stream Analytics)
+# Mathematical Functions
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 The following scalar functions perform a calculation, usually based on input values that are provided as arguments, and return a numeric value:  
   
