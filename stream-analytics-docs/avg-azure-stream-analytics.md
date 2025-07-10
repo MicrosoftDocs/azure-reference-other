@@ -1,5 +1,5 @@
 ---
-title: "AVG (Azure Stream Analytics)"
+title: "AVG"
 description: "Returns the average of the values in a group. Null values are ignored."
 applies_to: 
   - "Azure"
@@ -8,8 +8,10 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# AVG (Azure Stream Analytics)
-  Returns the average of the values in a group. Null values are ignored.  
+# AVG
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
+Returns the average of the values in a group. Null values are ignored.  
   
  ## Syntax  
   

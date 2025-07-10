@@ -1,5 +1,5 @@
 ---
-title: "JOIN (Azure Stream Analytics)"
+title: "JOIN"
 description: "JOIN in the Azure Stream Analytics query language are used to combine records from two or more input sources."
 applies_to: 
   - "Azure"
@@ -7,10 +7,12 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# JOIN (Azure Stream Analytics)
-  Like standard T-SQL, JOIN in the Azure Stream Analytics query language are used to combine records from two or more input sources.  JOIN in Azure Stream Analytics are temporal in nature, meaning that each JOIN must provide some limits on how far the matching rows can be separated in time.  For instance, saying "join TollBoothEntry events with TollBoothExit events when they occur on the same LicensePlate and TollId and within 5 minutes of each other" is legitimate; but "join TollBoothEntry events with TollBoothExit events when they occur on the LicensePlate and TollId" is not – it would match each TollBoothEntry with an unbounded and potentially infinite collection of all TollBoothExit to the same LicensePlate and TollId.  
+# JOIN
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
+Like standard T-SQL, JOIN in the Azure Stream Analytics query language are used to combine records from two or more input sources.  JOIN in Azure Stream Analytics are temporal in nature, meaning that each JOIN must provide some limits on how far the matching rows can be separated in time.  For instance, saying "join TollBoothEntry events with TollBoothExit events when they occur on the same LicensePlate and TollId and within 5 minutes of each other" is legitimate; but "join TollBoothEntry events with TollBoothExit events when they occur on the LicensePlate and TollId" is not – it would match each TollBoothEntry with an unbounded and potentially infinite collection of all TollBoothExit to the same LicensePlate and TollId.  
   
- The time bounds for the relationship are specified inside the ON clause of the JOIN, using the DATEDIFF function.  The maximum DATEDIFF size is seven days. For more information on its general use, see [DATEDIFF &#40;Azure Stream Analytics&#41;](datediff-azure-stream-analytics.md). When DATEDIFF is used inside the JOIN condition, the second and third parameter gain special treatment.  
+The time bounds for the relationship are specified inside the ON clause of the JOIN, using the DATEDIFF function.  The maximum DATEDIFF size is seven days. For more information on its general use, see [DATEDIFF](datediff-azure-stream-analytics.md). When DATEDIFF is used inside the JOIN condition, the second and third parameter gain special treatment.  
  
  Additionally, SELECT * cannot be used in JOIN statements.  
   

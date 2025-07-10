@@ -1,5 +1,5 @@
 ---
-title: "CONCAT (Azure Stream Analytics)"
+title: "CONCAT"
 description: "Returns a string that is the result of concatenating two or more string values. "
 applies_to:
   - "Azure"
@@ -8,7 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# CONCAT (Azure Stream Analytics)
+# CONCAT
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Returns a string that is the result of concatenating two or more string values.
 
@@ -48,5 +49,5 @@ FROM Input
 
 ## See Also
 
-- [CONCAT_WS (Azure Stream Analytics)](concat-ws-azure-stream-analytics.md)
-- [Substring (Azure Stream Analytics)](substring-azure-stream-analytics.md)
+- [CONCAT_WS](concat-ws-azure-stream-analytics.md)
+- [Substring](substring-azure-stream-analytics.md)

@@ -1,5 +1,5 @@
 ---
-title: "~ (Bitwise NOT) (Azure Stream Analytics)"
+title: "~ (Bitwise NOT)"
 description: "Performs a bitwise logical NOT operation on an integer value."
 applies_to:
   - "Azure"
@@ -8,7 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# ~ (Bitwise NOT) (Azure Stream Analytics)
+# ~ (Bitwise NOT)
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Performs a bitwise logical NOT operation on an integer value.
 
@@ -119,10 +120,10 @@ Returns:
 
 ## See Also
 
-- [Bitwise Operators &#40;Azure Stream Analytics&#41;](bitwise-operators-azure-stream-analytics.md)
+- [Bitwise Operators](bitwise-operators-azure-stream-analytics.md)
 - [& (Bitwise AND)&#40;Azure Stream Analytics&#41;](bitwise-and-azure-stream-analytics.md)
-- [| (Bitwise OR) &#40;Azure Stream Analytics&#41;](bitwise-or-azure-stream-analytics.md)
-- [^ (Bitwise Exclusive OR) &#40;Azure Stream Analytics&#41;](bitwise-xor-azure-stream-analytics.md)
-- [Data Types Overview &#40;Azure Stream Analytics&#41;](data-types-azure-stream-analytics.md)
-- [Conversion Functions &#40;Azure Stream Analytics&#41;](conversion-functions-azure-stream-analytics.md)
-- [Built-in Functions &#40;Azure Stream Analytics&#41;](built-in-functions-azure-stream-analytics.md)
+- [| (Bitwise OR)](bitwise-or-azure-stream-analytics.md)
+- [^ (Bitwise Exclusive OR)](bitwise-xor-azure-stream-analytics.md)
+- [Data Types Overview](data-types-azure-stream-analytics.md)
+- [Conversion Functions](conversion-functions-azure-stream-analytics.md)
+- [Built-in Functions](built-in-functions-azure-stream-analytics.md)

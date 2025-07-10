@@ -1,5 +1,5 @@
 ---
-title: "CREATE TABLE (Stream Analytics)"
+title: "CREATE TABLE "
 description: "The Create table statement is used to define the schema of the payload of the events coming into Azure Stream Analytics."
 author: alicialimicrosoft
 applies_to: 
@@ -9,7 +9,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 03/07/2022
 ---
-# CREATE TABLE (Stream Analytics)
+# CREATE TABLE 
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
 
 The CREATE TABLE statement is used to define the schema of the payload of the events coming into Azure Stream Analytics. This allows the user to explicitly define the data types of each named column for the payload of incoming events. This will inform the job of the input schema, and prevent type inference.
 
@@ -51,7 +53,7 @@ CREATE TABLE
   
 -   data_type  
   
-     The data types which are supported by Azure Stream Analytics. See [Data Types &#40;Azure Stream Analytics&#41;](data-types-azure-stream-analytics.md).  
+     The data types which are supported by Azure Stream Analytics. See [Data Types](data-types-azure-stream-analytics.md).  
   
 ## Examples  
 

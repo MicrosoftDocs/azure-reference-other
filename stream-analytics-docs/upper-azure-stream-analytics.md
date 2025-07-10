@@ -1,5 +1,5 @@
 ---
-title: "UPPER (Azure Stream Analytics)"
+title: "UPPER"
 description: "Returns a character expression with lowercase character data converted to uppercase. "
 applies_to: 
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# UPPER (Azure Stream Analytics)
+# UPPER
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns a character expression with lowercase character data converted to uppercase.  
   
  ## Syntax  
@@ -32,6 +34,6 @@ FROM Input
 ```  
   
 ## See Also  
- [LOWER &#40;Azure Stream Analytics&#41;](lower-azure-stream-analytics.md)  
+ [LOWER](lower-azure-stream-analytics.md)  
   
   

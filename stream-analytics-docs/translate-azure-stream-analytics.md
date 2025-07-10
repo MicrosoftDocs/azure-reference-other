@@ -1,5 +1,5 @@
 ---
-title: "TRANSLATE (Azure Stream Analytics)"
+title: "TRANSLATE"
 description: "Returns a string after some specified characters are replaced by others."
 applies_to:
   - "Azure"
@@ -8,7 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# TRANSLATE (Azure Stream Analytics)
+# TRANSLATE
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Returns the string provided as a first argument after some characters specified in the second argument are translated into a destination set of characters specified in the third argument.
 
@@ -79,4 +80,4 @@ FROM Input
 
 ## See Also
 
-- [REPLACE (Azure Stream Analytics)](replace-azure-stream-analytics.md)
+- [REPLACE](replace-azure-stream-analytics.md)

@@ -1,5 +1,5 @@
 ---
-title: "MAX (Azure Stream Analytics)"
+title: "MAX"
 description: "Returns the maximum value in the expression.  "
 applies_to:
   - "Azure"
@@ -7,7 +7,8 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# MAX (Azure Stream Analytics)
+# MAX
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Returns the maximum value in the expression.
 

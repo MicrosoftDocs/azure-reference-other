@@ -1,5 +1,5 @@
 ---
-title: "SIGN (Azure Stream Analytics)"
+title: "SIGN"
 description: "A mathematical function that returns the positive (+1), zero (0), or negative (-1) sign of the specified expression."
 applies_to: 
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# SIGN (Azure Stream Analytics)
+# SIGN
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   A mathematical function that returns the positive (+1), zero (0), or negative (-1) sign of the specified expression.  
   
  ## Syntax  

@@ -1,5 +1,5 @@
 ---
-title: "EXP (Azure Stream Analytics)"
+title: "EXP"
 description: "A mathematical function that returns the exponential value of the specified  expression. "
 applies_to: 
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# EXP (Azure Stream Analytics)
+# EXP
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   A mathematical function that returns the exponential value of the specified **float** expression.  
   
  Syntax  

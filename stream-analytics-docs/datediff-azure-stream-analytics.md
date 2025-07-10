@@ -1,5 +1,5 @@
 ---
-title: "DATEDIFF (Azure Stream Analytics)"
+title: "DATEDIFF"
 description: "Returns the count (signed integer) of the specified datepart boundaries crossed between the specified startdate and enddate."
 applies_to: 
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# DATEDIFF (Azure Stream Analytics)
+# DATEDIFF
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns the count (signed integer) of the specified datepart boundaries crossed between the specified startdate and enddate.  
   
  ## Syntax  
@@ -64,6 +66,6 @@ WHERE Toll > 5
 ```  
   
 > [!NOTE]  
->  In Stream Analytics Query Language there is a special use of DATEDIFF function when used inside a JOIN condition. See [JOIN &#40;Azure Stream Analytics&#41;](join-azure-stream-analytics.md).  
+>  In Stream Analytics Query Language there is a special use of DATEDIFF function when used inside a JOIN condition. See [JOIN](join-azure-stream-analytics.md).  
   
   

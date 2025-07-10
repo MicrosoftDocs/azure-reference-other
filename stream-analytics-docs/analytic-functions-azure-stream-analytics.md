@@ -1,5 +1,5 @@
 ---
-title: "Analytic Functions (Azure Stream Analytics)"
+title: "Analytic Functions"
 description: "Lists the analytic functions supported by Stream Analytics Query Language"
 applies_to: 
   - "Azure"
@@ -8,12 +8,13 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# Analytic Functions (Azure Stream Analytics)
-  Stream Analytics Query Language provides the following analytic functions:  
+# Analytic Functions
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   
 |Analytic functions| ...| ...| 
 |-|-|-| 
-|[ISFIRST &#40;Azure Stream Analytics&#41;](isfirst-azure-stream-analytics.md)|[LAG &#40;Azure Stream Analytics&#41;](lag-azure-stream-analytics.md)|[LAST &#40;Azure Stream Analytics&#41;](last-azure-stream-analytics.md)|
+|[ISFIRST](isfirst-azure-stream-analytics.md)|[LAG](lag-azure-stream-analytics.md)|[LAST](last-azure-stream-analytics.md)|
 |[AnomalyDetection_SpikeAndDip](anomalydetection-spikeanddip-azure-stream-analytics.md)|[AnomalyDetection_ChangePoint](anomalydetection-changepoint-azure-stream-analytics.md)||
   
 Note that analytic functions in Stream Analytics query language, unlike in T-SQL, are evaluated first. In Stream Analytics query language:

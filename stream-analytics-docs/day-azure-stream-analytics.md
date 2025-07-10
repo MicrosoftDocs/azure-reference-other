@@ -1,5 +1,5 @@
 ---
-title: "DAY (Azure Stream Analytics)"
+title: "DAY"
 description: "Returns an integer representing the day (day of the month) of the specified date."
 applies_to: 
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# DAY (Azure Stream Analytics)
+# DAY
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns an integer representing the day (day of the month) of the specified date.  
   
  ## Syntax  

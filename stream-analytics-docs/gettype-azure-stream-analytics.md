@@ -1,5 +1,5 @@
 ---
-title: "GetType (Azure Stream Analytics)"
+title: "GetType"
 description: "Returns a data type name of the value.  "
 applies_to: 
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# GetType (Azure Stream Analytics)
+# GetType
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Returns a data type name of the value.  
   
  ## Syntax  
@@ -23,7 +25,7 @@ GetType (expression)
  Is any valid expression.  
   
 ## Return Types  
- Returns data type name of the expression. The type of the returned name is nvarchar(max). Please see all supported data types in [Data Types &#40;Azure Stream Analytics&#41;](data-types-azure-stream-analytics.md).  
+ Returns data type name of the expression. The type of the returned name is nvarchar(max). Please see all supported data types in [Data Types](data-types-azure-stream-analytics.md).  
   
 ## Examples  
   

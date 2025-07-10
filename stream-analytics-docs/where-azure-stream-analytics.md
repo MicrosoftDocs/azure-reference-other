@@ -1,5 +1,5 @@
 ---
-title: "WHERE (Azure Stream Analytics)"
+title: "WHERE"
 description: "Specifies the search condition for the rows returned by the query. "
 applies_to:
   - "Azure"
@@ -7,7 +7,9 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# WHERE (Azure Stream Analytics)
+# WHERE
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+
   Specifies the search condition for the rows returned by the query.
 
  ## Syntax

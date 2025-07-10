@@ -1,5 +1,5 @@
 ---
-title: "Time Skew Policies (Azure Stream Analytics)"
+title: "Time Skew Policies"
 description: "Describes how to handle temporal nature and timing of arrival of events in Azure Stream Analytics."
 applies_to: 
   - "Azure"
@@ -7,8 +7,10 @@ ms.service: azure-stream-analytics
 ms.topic: reference
 ms.date: 08/02/2024
 ---
-# Time Skew Policies (Azure Stream Analytics)
-  In Stream Analytics, all data stream events have a [timestamp](system-timestamp-stream-analytics.md) associated with them. Users can use the [TIMESTAMP BY](timestamp-by-azure-stream-analytics.md) keyword to choose between one of these two different times:
+# Time Skew Policies
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream 
+
+All data stream events have a [timestamp](system-timestamp-stream-analytics.md) associated with them. Users can use the [TIMESTAMP BY](timestamp-by-azure-stream-analytics.md) keyword to choose between one of these two different times:
 - **Application time**, that is to say the time the events are produced (as marked by the application/device generating the events). When using application time, you can either process all events using a global timeline, or analyse each device/partition using its own timeline using [substreams](/azure/stream-analytics/stream-analytics-time-handling#handle-time-variation-with-substreams);
 - **Arrival time**, the time the event reached the cloud (e.g. arrival time in IoT Hub or Event Hub).
   
@@ -56,9 +58,9 @@ For example, input events are generated once every minute for a *select** query.
 
   
 ## See Also  
- [Time Management &#40;Azure Stream Analytics&#41;](time-management-azure-stream-analytics.md)   
+ [Time Management](time-management-azure-stream-analytics.md)   
  [System.Timestamp()  &#40;Stream Analytics&#41;](system-timestamp-stream-analytics.md)   
- [TIMESTAMP BY &#40;Azure Stream Analytics&#41;](timestamp-by-azure-stream-analytics.md)  
+ [TIMESTAMP BY](timestamp-by-azure-stream-analytics.md)  
  [Event Order Consideration](/azure/stream-analytics/stream-analytics-out-of-order-and-late-events)
   
   

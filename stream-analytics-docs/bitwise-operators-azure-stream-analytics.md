@@ -1,5 +1,5 @@
 ---
-title: "Bitwise operators (Azure Stream Analytics)"
+title: "Bitwise operators"
 description: "Lists the Bitwise Operators supported by Azure Stream Analytics."
 applies_to:
   - "Azure"
@@ -8,7 +8,8 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 
-# Bitwise Operators (Azure Stream Analytics)
+# Bitwise Operators
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
 Bitwise operators perform bit manipulations between two expressions of any of the data types of the integer data type category.
 
@@ -43,6 +44,6 @@ Stream Analytics Query Language provides the following bitwise operators:
 
 ## See Also
 
-- [Data Types Overview &#40;Azure Stream Analytics&#41;](data-types-azure-stream-analytics.md)
-- [Conversion Functions &#40;Azure Stream Analytics&#41;](conversion-functions-azure-stream-analytics.md)
-- [Built-in Functions &#40;Azure Stream Analytics&#41;](built-in-functions-azure-stream-analytics.md)
+- [Data Types Overview](data-types-azure-stream-analytics.md)
+- [Conversion Functions](conversion-functions-azure-stream-analytics.md)
+- [Built-in Functions](built-in-functions-azure-stream-analytics.md)
