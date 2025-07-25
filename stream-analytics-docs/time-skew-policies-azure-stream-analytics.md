@@ -8,7 +8,7 @@ ms.topic: reference
 ms.date: 08/02/2024
 ---
 # Time Skew Policies
-:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream 
+:white_check_mark: Azure Stream Analytics
 
 All data stream events have a [timestamp](system-timestamp-stream-analytics.md) associated with them. Users can use the [TIMESTAMP BY](timestamp-by-azure-stream-analytics.md) keyword to choose between one of these two different times:
 - **Application time**, that is to say the time the events are produced (as marked by the application/device generating the events). When using application time, you can either process all events using a global timeline, or analyse each device/partition using its own timeline using [substreams](/azure/stream-analytics/stream-analytics-time-handling#handle-time-variation-with-substreams);
