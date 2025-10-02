@@ -152,5 +152,5 @@ DATEDIFF ( datepart , input_source1, input_source2 )
   
  The second input source in the Join. Internally the timestamp associated with the events from this input_source is passed into the function.  
   
-### Return Type  
- Returns the number of units in dateparts that elapsed from the timestamp of input_source1 to the timestamp of input_source2. The returned value can be negative if the timestamp of second input_source is greater than the first.    
+### Return Value
+ Returns the count (as a signed integer) of the specified datepart boundaries crossed from the timestamp of input_source1 to the timestamp of input_source2. The returned value can be negative if the timestamp of input_source1 is greater than the timestamp of input_source2.  
