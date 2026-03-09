@@ -8,6 +8,8 @@ ms.date: 03/04/2026
 # TIMESTAMP BY
 :white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
+[!INCLUDE [stream-analytics-fabric-event-stream-query-language](./includes/stream-analytics-fabric-event-stream-query-language.md)]
+
 All data stream events have a timestamp associated with them. By default, events from Event Hubs and IoT Hub are timestamped based on when the event was received by the Event Hubs or IoT Hub; events from Blob storage are timestamped by the blob's last modified time. The timestamp of an event doesn't change if you restart or rerun your job. 
 
 Many streaming applications require using the exact timestamp that an event occurred, rather than the arrival time. For example, in a Point of Sales application one might need event timestamps corresponding to the time a payment was logged, rather than the time a payment event reaches the event ingestion service. Additionally, geo-distributed systems and network latencies might contribute to unpredictable arrival times, making the use of an application time more reliable in a streaming application. For these cases, the TIMESTAMP BY clause allows specifying custom timestamp values. The value can be any field from the event payload or expression of type **DATETIME**. String values conforming to any of **ISO 8601** formats are also supported.  
