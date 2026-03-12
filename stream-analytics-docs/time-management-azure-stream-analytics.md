@@ -5,12 +5,14 @@ applies_to:
   - "Azure"
 ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 08/02/2024
+ms.date: 03/04/2026
 ---
 # Time Management
-:white_check_mark: Azure Stream Analytics
+:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
 
-Query language extends SQL syntax to enable complex computations over streams of events. Stream Analytics provides language constructs to deal with the temporal aspects of the data. For example, it is possible to assign custom timestamps to the stream events, specify time window for aggregations, specify allowed time difference between two streams of data for JOIN operation, etc.  
+[!INCLUDE [stream-analytics-fabric-event-stream-query-language](./includes/stream-analytics-fabric-event-stream-query-language.md)]
+
+Query language extends SQL syntax to enable complex computations over streams of events. Stream Analytics provides language constructs to deal with the temporal aspects of the data. For example, it's possible to assign custom timestamps to the stream events, specify time window for aggregations, specify allowed time difference between two streams of data for JOIN operation, etc.  
  
  All time handling operations are in UTC.
  
@@ -22,7 +24,7 @@ Query language extends SQL syntax to enable complex computations over streams of
 |[Time Skew Policies](time-skew-policies-azure-stream-analytics.md)|Policies for Out of Order and Late Arrival Events.|  
 |[Aggregate functions](aggregate-functions-azure-stream-analytics.md) over [time window](windowing-azure-stream-analytics.md)|Aggregate functions are used to perform a calculation on a set of values from a time window and return a single value.|  
 |[DATEDIFF in JOIN predicate](join-azure-stream-analytics.md)|Specify time boundaries for JOIN operations|  
-|[Date and Time functions](date-and-time-functions-azure-stream-analytics.md)|Stream Analytics provides a variety of date and time functions for use.|  
+|[Date and Time functions](date-and-time-functions-azure-stream-analytics.md)|Stream Analytics provides various date and time functions for use.|  
   
 ## See Also  
  [Built-in Functions](built-in-functions-azure-stream-analytics.md)   
