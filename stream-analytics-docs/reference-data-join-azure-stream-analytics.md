@@ -5,15 +5,15 @@ applies_to:
   - "Azure"
 ms.service: azure-stream-analytics
 ms.topic: reference
-ms.date: 08/02/2024
+ms.date: 06/24/2026
 ---
 # Reference Data JOIN
-:white_check_mark: Azure Stream Analytics :white_check_mark: Fabric Eventstream
+:white_check_mark: Azure Stream Analytics
 
 In a usual scenario, we use an event processing engine to compute streaming data with very low latency. In many cases users need to correlate persisted historical data or a slow changing dataset (aka. reference data) with the real-time event stream to make smarter decisions about the system. For example, join my event stream to a static dataset which maps IP Addresses to locations. This is the only JOIN supported in Stream Analytics where a temporal bound is not necessary. Reference data can also be used to have device-specific threshold values.
   
 ## Example  
- If a commercial vehicle is registered with the Toll Company, they can pass through the toll booth without being stopped for inspection. We will use a commercial vehicle registration lookup table to identify all commercial vehicles with expired registration.  
+If a commercial vehicle is registered with the Toll Company, they can pass through the toll booth without being stopped for inspection. We will use a commercial vehicle registration lookup table to identify all commercial vehicles with expired registration.  
   
 ```SQL  
 SELECT I1.EntryTime, I1.LicensePlate, I1.TollId, R.RegistrationId  
