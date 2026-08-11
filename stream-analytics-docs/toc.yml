@@ -169,6 +169,8 @@ items:
               href: concat-azure-stream-analytics.md
             - name: CONCAT_WS
               href: concat-ws-azure-stream-analytics.md
+            - name: JSON_PARSE
+              href: json-parse-azure-stream-analytics.md
             - name: LEFT
               href: left-azure-stream-analytics.md
             - name: LEN
